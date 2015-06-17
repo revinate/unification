@@ -1,3 +1,27 @@
+/* .logo-sprite is extended by .logo */
+.primary-menu.nav.nav-tabs .logo-sprite {
+  background-image: url('../img/primary-menu-logo.png');
+}
+
+@media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  /* .logo-sprite is extended by .logo */
+  .primary-menu.nav.nav-tabs .logo-sprite {
+    background-image: url('../img/primary-menu-logo-retina.png');
+    background-size: 85px 13px;
+  }
+}
+
+.primary-menu.nav.nav-tabs .logo {
+  @extend .logo-sprite;
+  width: 85px;
+  height: 13px;
+  background-position: 0 0;
+  background-color: transparent;
+  text-indent: -1000px;
+  overflow: hidden;
+  margin: 5px 20px 0 0;
+}
+
 .primary-menu.nav.nav-tabs {
   font-size: 11px;
   text-transform: uppercase;
@@ -28,6 +52,14 @@
   &.primary-menu-item-bordered {
     border-left: 1px $brand-primary solid;
     padding: 0 10px;
+  }
+  &.logo {
+    &:hover,
+    &:active,
+    &:focus {
+      color: transparent;
+      background-color: transparent;
+    }
   }
 }
 

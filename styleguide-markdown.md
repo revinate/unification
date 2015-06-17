@@ -40,6 +40,9 @@ classes are needed:
       <div class="container">
 
         <ul class="primary-menu nav nav-tabs" role="tablist">
+          <li class="logo-item">
+            <a class="logo" href="#home">Revinate</a>
+          </li>
           <li role="presentation" class="active">
             <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Dashboard</a>
           </li>
