@@ -1,0 +1,346 @@
+<!doctype html>
+<html class="sg">
+
+<head>
+  <meta charset="utf-8">
+  <title>Revinate Styleguide</title>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <style rel="stylesheet">
+    #styleguide .sg-canvas .container {
+      width: 100% !important;
+    }
+    #styleguide .sg-canvas .l-app {
+      background: #F3F3F4;
+    }
+  </style>
+</head>
+
+<body class="sg">
+  <div id="styleguide" class="l-app">
+    <header class="l-header">
+      <div class="l-header-top"></div>
+      <div class="l-header-bottom"></div>
+    </header>
+    <main class="l-main">
+      <div class="container">
+        <div class="l-main-content pd-xl mg-t-xl">
+          <div class="styleguide">
+            <div>
+              <h1 id="revinate-style-guide" class="sg">Revinate Style Guide</h1>
+              <p class="sg">Our styleguide/css is based off of Twitter Bootstrap. The documentation below highlights the customizations and extra classes you need to add to your project.</p>
+              <section class="sg-section sg-section-general">
+                <h2 id="general" class="sg">General</h2>
+                <section class="sg-block sg-section-general-layout">
+                  <div class="sg-text">
+                    <h3 id="general-layout" class="sg">General Layout</h3>
+                    <p class="sg">This is the overall structure of every page. Content goes inside div with class
+                      <code class="sg">.l-main-content</code>
+                    </p>
+                  </div>
+                  <div class="sg-example">
+                    <div class="sg-canvas">
+                      <div class="l-app">
+                        <header class="l-header">
+                          <div class="l-header-top"></div>
+                          <div class="l-header-bottom"></div>
+                        </header>
+                        <main class="l-main">
+                          <div class="container">
+                            <div class="l-main-content pd-md mg-t-xl">
+                              <!-- content goes here -->
+                              <p>Content Goes Here</p>
+                            </div>
+                          </div>
+                        </main>
+                        <footer class="l-footer">
+                          <p class="copyright pd-md copyright">&#xA9; Revinate 2015. All Rights Reserved.</p>
+                        </footer>
+                      </div>
+                    </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;l-app&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">header</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;l-header&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;l-header-top&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;l-header-bottom&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">header</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">main</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;l-main&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;container&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;l-main-content pd-md mg-t-xl&quot;</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- content goes here --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content Goes Here<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">main</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">footer</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;l-footer&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;copyright pd-md copyright&quot;</span>&gt;</span>&amp;copy; Revinate 2015. All Rights Reserved.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">footer</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+                  </div>
+                </section>
+                <section class="sg-block sg-section-primary-menu">
+                  <div class="sg-text">
+                    <h3 id="primary-menu" class="sg">Primary Menu</h3>
+                    <p class="sg">The primary navigation component is based off of Twitter Bootstrap tabs plugin. The tabs navigation is inside
+                      <code class="sg">.l-header-top</code>and the tabs content is inside
+                      <code class="sg">.l-header-bottom</code>. In order to have custom styles, the following 2 classes are needed:</p>
+                    <p class="sg">
+                      <code class="sg">.primary-menu-item-bordered</code>ads border to the right aligned menu items and
+                      <code class="sg">.primary-menu-item-icon</code>is needed for menu items the use icon like &quot;Help&quot; and &quot;Settings&quot;</p>
+                    <p class="sg"></p>
+                  </div>
+                  <div class="sg-example">
+                    <div class="sg-canvas">
+                      <header class="l-header">
+                        <div class="l-header-top">
+                          <div class="container">
+
+                            <ul class="primary-menu nav nav-tabs" role="tablist">
+                              <li role="presentation" class="active">
+                                <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Dashboard</a>
+                              </li>
+                              <li role="presentation">
+                                <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Feedback</a>
+                              </li>
+                              <li role="presentation">
+                                <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Marketing</a>
+                              </li>
+                              <li role="presentation">
+                                <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Management</a>
+                              </li>
+                              <li role="presentation" class="pull-right">
+                                <a href="#settings" class="primary-menu-item-bordered" aria-controls="settings" role="tab" data-toggle="tab">
+                                  <span class="label label-success">On duty</span>
+                                </a>
+                              </li>
+                              <li role="presentation" class="dropdown pull-right">
+                                <a class="dropdown-toggle primary-menu-item-bordered primary-menu-item-icon" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                  <i class="fa fa-gear"></i>
+                                </a>
+                                <ul class="dropdown-menu" role="menu">
+                                  <li>
+                                    <a href="#">Action</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Another action</a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li role="presentation" class="dropdown pull-right">
+                                <a class="dropdown-toggle primary-menu-item-bordered primary-menu-item-icon" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                  <i class="fa fa-question-circle"></i>
+                                </a>
+                                <ul class="dropdown-menu" role="menu">
+                                  <li>
+                                    <a href="#">Action</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Another action</a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li role="presentation" class="dropdown pull-right">
+                                <a class="dropdown-toggle primary-menu-item-bordered" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                  Property
+                                  <i class="fa fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-menu" role="menu">
+                                  <li>
+                                    <a href="#">Action</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Another action</a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+
+                          </div>
+                        </div>
+
+                        <div class="l-header-bottom">
+                          <div class="container">
+
+                            <div class="tab-content">
+                              <div role="tabpanel" class="tab-pane active" id="home"></div>
+                              <div role="tabpanel" class="tab-pane" id="profile">Feedback</div>
+                              <div role="tabpanel" class="tab-pane" id="messages">Marketing</div>
+                              <div role="tabpanel" class="tab-pane" id="settings">Management</div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </header>
+                    </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">header</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;l-header&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;l-header-top&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;container&quot;</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;primary-menu nav nav-tabs&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;tablist&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;presentation&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;active&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#home&quot;</span> <span class="hljs-attribute">aria-controls</span>=<span class="hljs-value">&quot;home&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;tab&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;tab&quot;</span>&gt;</span>Dashboard<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;presentation&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#profile&quot;</span> <span class="hljs-attribute">aria-controls</span>=<span class="hljs-value">&quot;profile&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;tab&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;tab&quot;</span>&gt;</span>Feedback<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;presentation&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#messages&quot;</span> <span class="hljs-attribute">aria-controls</span>=<span class="hljs-value">&quot;messages&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;tab&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;tab&quot;</span>&gt;</span>Marketing<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;presentation&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#settings&quot;</span> <span class="hljs-attribute">aria-controls</span>=<span class="hljs-value">&quot;settings&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;tab&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;tab&quot;</span>&gt;</span>Management<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;presentation&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;pull-right&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#settings&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;primary-menu-item-bordered&quot;</span> <span class="hljs-attribute">aria-controls</span>=<span class="hljs-value">&quot;settings&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;tab&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;tab&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;label label-success&quot;</span>&gt;</span>On duty<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;presentation&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dropdown pull-right&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dropdown-toggle primary-menu-item-bordered primary-menu-item-icon&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;dropdown&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;button&quot;</span>
+          <span class="hljs-attribute">aria-expanded</span>=<span class="hljs-value">&quot;false&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;fa fa-gear&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dropdown-menu&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;menu&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;presentation&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dropdown pull-right&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dropdown-toggle primary-menu-item-bordered primary-menu-item-icon&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;dropdown&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;button&quot;</span>
+          <span class="hljs-attribute">aria-expanded</span>=<span class="hljs-value">&quot;false&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;fa fa-question-circle&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dropdown-menu&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;menu&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;presentation&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dropdown pull-right&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dropdown-toggle primary-menu-item-bordered&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;dropdown&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">aria-expanded</span>=<span class="hljs-value">&quot;false&quot;</span>&gt;</span>
+            Property
+            <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;fa fa-angle-down&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dropdown-menu&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;menu&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;l-header-bottom&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;container&quot;</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;tab-content&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;tabpanel&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;tab-pane active&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;home&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;tabpanel&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;tab-pane&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;profile&quot;</span>&gt;</span>Feedback<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;tabpanel&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;tab-pane&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;messages&quot;</span>&gt;</span>Marketing<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;tabpanel&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;tab-pane&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;settings&quot;</span>&gt;</span>Management<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+                  </div>
+                </section>
+              </section>
+
+              <section class="sg-section sg-section-buttons">
+                <h2 id="buttons" class="sg">Buttons</h2>
+                <section class="sg-block sg-section-default-buttons">
+                  <div class="sg-text">
+                    <h3 id="default-buttons" class="sg">Default Buttons</h3>
+                    <p class="sg">Create all types of buttons with the following code snippets.</p>
+                  </div>
+                  <div class="sg-example">
+                    <div class="sg-canvas">
+                      <button class="btn btn-default">Default</button>
+                      <button class="btn btn-primary">Default</button>
+                      <button class="btn btn-success">Default</button>
+                      <button class="btn btn-danger">Default</button>
+                      <button class="btn btn-warning">Default</button>
+                      <button class="btn btn-info">Default</button>
+                      <button class="btn btn-link">Default</button>
+                    </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-default&quot;</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-primary&quot;</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-success&quot;</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-danger&quot;</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-warning&quot;</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-info&quot;</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-link&quot;</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
+                  </div>
+                </section>
+                <section class="sg-block sg-section-dropdown-buttons">
+                  <div class="sg-text">
+                    <h3 id="dropdown-buttons" class="sg">Dropdown Buttons</h3>
+                    <p class="sg">Create all types of buttons with the following code snippets.</p>
+                  </div>
+                  <div class="sg-example">
+                    <div class="sg-canvas">
+                      <button class="btn btn-default">Default</button>
+                      <button class="btn btn-primary">Default</button>
+                      <button class="btn btn-success">Default</button>
+                      <button class="btn btn-danger">Default</button>
+                      <button class="btn btn-warning">Default</button>
+                      <button class="btn btn-info">Default</button>
+                      <button class="btn btn-link">Default</button>
+                    </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-default&quot;</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-primary&quot;</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-success&quot;</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-danger&quot;</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-warning&quot;</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-info&quot;</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-link&quot;</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
+                  </div>
+                </section>
+                <section class="sg-block sg-section-icon-buttons">
+                  <div class="sg-text">
+                    <h3 id="icon-buttons" class="sg">Icon Buttons</h3>
+                    <p class="sg">Create all types of buttons with the following code snippets.</p>
+                  </div>
+                  <div class="sg-example">
+                    <div class="sg-canvas">
+                      <button class="btn btn-default">Default</button>
+                      <button class="btn btn-primary">Default</button>
+                      <button class="btn btn-success">Default</button>
+                      <button class="btn btn-danger">Default</button>
+                      <button class="btn btn-warning">Default</button>
+                      <button class="btn btn-info">Default</button>
+                      <button class="btn btn-link">Default</button>
+                    </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-default&quot;</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-primary&quot;</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-success&quot;</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-danger&quot;</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-warning&quot;</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-info&quot;</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-link&quot;</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
+                  </div>
+                </section>
+              </section>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="l-footer pd-md">
+      <p class="copyright">&#xA9; Revinate Styleguide 2015. All Rights Reserved</p>
+    </footer>
+  </div>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
+  <script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
+</body>
+
+</html>

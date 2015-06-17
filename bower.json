@@ -1,0 +1,7 @@
+{
+  "name": "Revinate Unification",
+  "version": "0.0.1",
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.4"
+  }
+}

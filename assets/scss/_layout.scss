@@ -1,0 +1,26 @@
+.l-header {
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+}
+
+.l-header-top {
+  height: 26px;
+  background-color: darken($brand-primary,10%);
+}
+
+.l-header-bottom {
+  height: 54px;
+  background-color: $brand-primary;
+}
+
+.l-main-content {
+  background-color: #FFFFFF;
+  border: 1px #D9D9D9 solid;
+  border-radius: 3px;
+}
+
+.l-footer {
+  text-align: center;
+  font-size: 12px;
+}
