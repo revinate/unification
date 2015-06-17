@@ -48,10 +48,6 @@ classes are needed:
           </li>
           <li
             role="presentation">
-            <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Feedback</a>
-          </li>
-          <li
-            role="presentation">
             <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Marketing</a>
           </li>
           <li role="presentation">
