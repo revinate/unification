@@ -14,6 +14,10 @@
     div.l-app#styleguide
       header.l-header
         .l-header-top
+          .container
+            ul.primary-menu.nav.nav-tabs
+              li.logo-item
+                a.logo Revinate
         .l-header-bottom
       main.l-main
         .container
