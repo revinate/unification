@@ -100,7 +100,41 @@ classes are needed:
       <div class="container">
 
         <div class="tab-content">
-          <div role="tabpanel" class="tab-pane active" id="home"></div>
+          <div role="tabpanel" class="tab-pane active" id="home">
+
+            <button type="button" class="btn btn-primary btn-header active mg-r-sm">
+              <i class="fa fa-user mg-r-xs"></i> All Feedbacks
+            </button>
+
+            <div class="btn-group mg-r-sm">
+              <button type="button" class="btn btn-primary btn-header dropdown-toggle" data-toggle="dropdown"
+                      aria-expanded="false">
+                <i class="fa fa-wechat mg-r-xs"></i> Reviews <i class="fa fa-angle-down"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+
+            <button type="button" class="btn btn-primary btn-header btn-header-dark btn-rounded pull-right mg-l-sm">
+              <i class="fa fa-book mg-r-xs"></i> Guests
+            </button>
+
+            <button type="button"
+                    class="btn btn-sm btn-primary btn-header btn-header-dark btn-circle pull-right mg-l-sm">
+              <i class="fa fa-bookmark"></i>
+            </button>
+
+            <button type="button"
+                    class="btn btn-sm btn-primary btn-header btn-header-dark btn-circle pull-right mg-l-sm">
+              <i class="fa fa-star"></i>
+            </button>
+
+          </div>
           <div role="tabpanel" class="tab-pane" id="profile">Feedback</div>
           <div role="tabpanel" class="tab-pane" id="messages">Marketing</div>
           <div role="tabpanel" class="tab-pane" id="settings">Management</div>
@@ -146,10 +180,19 @@ Create all types of buttons with the following code snippets.
 Create all types of buttons with the following code snippets.
 
     @example
-    button.btn.btn-default Default
-    button.btn.btn-primary Default
-    button.btn.btn-success Default
-    button.btn.btn-danger Default
-    button.btn.btn-warning Default
-    button.btn.btn-info Default
-    button.btn.btn-link Default
+    <button class="btn btn-default">
+      <i class="fa fa-facebook mg-r-xs"></i>
+      Default
+    </button>
+    <button class="btn btn-success">
+      <i class="fa fa-twitter mg-r-xs"></i>
+      Default
+    </button>
+    <button class="btn btn-primary">
+      <i class="fa fa-linkedin mg-r-xs"></i>
+      Default
+    </button>
+    <button class="btn btn-info">
+      <i class="fa fa-instagram mg-r-xs"></i>
+      Default
+    </button>
