@@ -15,30 +15,60 @@
     #styleguide .sg-canvas .l-app {
       background: #F3F3F4;
     }
+    #styleguide .sg-canvas .l-header {
+      position: relative;
+      z-index: 1;
+    }
+    body.sg {
+      padding-top: 30px;
+    }
+    .sg-text,
+    .sg-example {
+      float: none;
+      width: 100% !important;
+    }
+    nav.sidebar-menu.affix-top {
+      margin-top: 100px;
+    }
   </style>
 </head>
 
 <body class="sg">
-  <div id="styleguide" class="l-app">
+  <div class="l-app" id="styleguide">
     <header class="l-header">
       <div class="l-header-top">
         <div class="container">
           <ul class="primary-menu nav nav-tabs">
             <li class="logo-item">
-              <a class="logo">Revinate</a>
+              <a class="logo" href="#">Revinate</a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="l-header-bottom"></div>
     </header>
     <main class="l-main">
       <div class="container">
-        <div class="l-main-content pd-xl mg-t-xl">
-          <div class="styleguide">
+        <div class="l-main-content row pd-xl mg-t-xl">
+          <div class="styleguide-header col-sm-12">
+            <h1>Revinate Style Guide</h1>
+            <p>Our styleguide/css is based off of Twitter Bootstrap. The documentation below highlights the customizations and extra classes you need to add to your project.</p>
+          </div>
+          <div class="styleguide-menu col-sm-3">
+
+            <nav class="sidebar-menu hidden-xs hidden-sm">
+              <ul class="nav bs-docs-sidenav">
+                <li>
+                  <a href="#general">General</a>
+                </li>
+                <li>
+                  <a href="#buttons">Buttons</a>
+                </li>
+              </ul>
+            </nav>
+
+          </div>
+          <div class="styleguide col-sm-9">
             <div>
-              <h1 id="revinate-style-guide" class="sg">Revinate Style Guide</h1>
-              <p class="sg">Our styleguide/css is based off of Twitter Bootstrap. The documentation below highlights the customizations and extra classes you need to add to your project.</p>
               <section class="sg-section sg-section-general">
                 <h2 id="general" class="sg">General</h2>
                 <section class="sg-block sg-section-general-layout">
@@ -105,19 +135,16 @@
 
                             <ul class="primary-menu nav nav-tabs" role="tablist">
                               <li class="logo-item">
-                                <a class="logo" href="#home">Revinate</a>
+                                <a class="logo" href="#dashboard">Revinate</a>
                               </li>
                               <li role="presentation" class="active">
-                                <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Dashboard</a>
+                                <a href="#dashboard" aria-controls="home" role="tab" data-toggle="tab">Dashboard</a>
                               </li>
                               <li role="presentation">
-                                <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Marketing</a>
-                              </li>
-                              <li role="presentation">
-                                <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Management</a>
+                                <a href="#marketing" aria-controls="messages" role="tab" data-toggle="tab">Marketing</a>
                               </li>
                               <li role="presentation" class="pull-right">
-                                <a href="#settings" class="primary-menu-item-bordered" aria-controls="settings" role="tab" data-toggle="tab">
+                                <a href="#" class="primary-menu-item-bordered">
                                   <span class="label label-success">On duty</span>
                                 </a>
                               </li>
@@ -170,10 +197,10 @@
                           <div class="container">
 
                             <div class="tab-content">
-                              <div role="tabpanel" class="tab-pane active" id="home">
+                              <div role="tabpanel" class="tab-pane active" id="dashboard">
 
                                 <button type="button" class="btn btn-primary btn-header active mg-r-sm">
-                                  <i class="fa fa-user mg-r-xs"></i>All Feedback
+                                  <i class="fa fa-user mg-r-xs"></i>All Feedbacks
                                 </button>
 
                                 <div class="btn-group mg-r-sm">
@@ -211,9 +238,8 @@
                                 </button>
 
                               </div>
-                              <div role="tabpanel" class="tab-pane" id="profile">Feedback</div>
-                              <div role="tabpanel" class="tab-pane" id="messages">Marketing</div>
-                              <div role="tabpanel" class="tab-pane" id="settings">Management</div>
+                              <div role="tabpanel" class="tab-pane" id="marketing">Feedback</div>
+                              <div role="tabpanel" class="tab-pane" id="engagement">Marketing</div>
                             </div>
 
                           </div>
@@ -225,19 +251,16 @@
 
       <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;primary-menu nav nav-tabs&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;tablist&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;logo-item&quot;</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;logo&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#home&quot;</span>&gt;</span>Revinate<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;logo&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#dashboard&quot;</span>&gt;</span>Revinate<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;presentation&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;active&quot;</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#home&quot;</span> <span class="hljs-attribute">aria-controls</span>=<span class="hljs-value">&quot;home&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;tab&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;tab&quot;</span>&gt;</span>Dashboard<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#dashboard&quot;</span> <span class="hljs-attribute">aria-controls</span>=<span class="hljs-value">&quot;home&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;tab&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;tab&quot;</span>&gt;</span>Dashboard<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;presentation&quot;</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#messages&quot;</span> <span class="hljs-attribute">aria-controls</span>=<span class="hljs-value">&quot;messages&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;tab&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;tab&quot;</span>&gt;</span>Marketing<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;presentation&quot;</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#settings&quot;</span> <span class="hljs-attribute">aria-controls</span>=<span class="hljs-value">&quot;settings&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;tab&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;tab&quot;</span>&gt;</span>Management<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#marketing&quot;</span> <span class="hljs-attribute">aria-controls</span>=<span class="hljs-value">&quot;messages&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;tab&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;tab&quot;</span>&gt;</span>Marketing<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;presentation&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;pull-right&quot;</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#settings&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;primary-menu-item-bordered&quot;</span> <span class="hljs-attribute">aria-controls</span>=<span class="hljs-value">&quot;settings&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;tab&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;tab&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;primary-menu-item-bordered&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;label label-success&quot;</span>&gt;</span>On duty<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
@@ -292,10 +315,10 @@
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;container&quot;</span>&gt;</span>
 
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;tab-content&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;tabpanel&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;tab-pane active&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;home&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;tabpanel&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;tab-pane active&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;dashboard&quot;</span>&gt;</span>
 
           <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-primary btn-header active mg-r-sm&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;fa fa-user mg-r-xs&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>All Feedback
+            <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;fa fa-user mg-r-xs&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>All Feedbacks
           <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 
           <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn-group mg-r-sm&quot;</span>&gt;</span>
@@ -333,9 +356,8 @@
           <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 
         <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;tabpanel&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;tab-pane&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;profile&quot;</span>&gt;</span>Feedback<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;tabpanel&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;tab-pane&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;messages&quot;</span>&gt;</span>Marketing<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;tabpanel&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;tab-pane&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;settings&quot;</span>&gt;</span>Management<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;tabpanel&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;tab-pane&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;marketing&quot;</span>&gt;</span>Feedback<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;tabpanel&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;tab-pane&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;engagement&quot;</span>&gt;</span>Marketing<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
@@ -444,9 +466,20 @@
       <p class="copyright">&#xA9; Revinate Styleguide 2015. All Rights Reserved</p>
     </footer>
   </div>
+
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
   <script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
+  <script>
+    $('.sidebar-menu').affix({
+      offset: {
+        top: 100,
+        bottom: function() {
+          return (this.bottom = $('.l-footer').outerHeight(true))
+        }
+      }
+    });
+  </script>
 </body>
 
 </html>

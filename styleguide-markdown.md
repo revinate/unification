@@ -1,10 +1,3 @@
-Revinate Style Guide
-=================
-
-Our styleguide/css is based off of Twitter Bootstrap. The documentation below highlights the customizations and extra
- classes you need to add to your project.
-
-
 General
 -------
 
@@ -41,29 +34,22 @@ classes are needed:
 
         <ul class="primary-menu nav nav-tabs" role="tablist">
           <li class="logo-item">
-            <a class="logo" href="#home">Revinate</a>
+            <a class="logo" href="#dashboard">Revinate</a>
           </li>
           <li role="presentation" class="active">
-            <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Dashboard</a>
-          </li>
-          <li
-            role="presentation">
-            <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Marketing</a>
+            <a href="#dashboard" aria-controls="home" role="tab" data-toggle="tab">Dashboard</a>
           </li>
           <li role="presentation">
-            <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Management</a>
+            <a href="#marketing" aria-controls="messages" role="tab" data-toggle="tab">Marketing</a>
           </li>
           <li role="presentation" class="pull-right">
-            <a href="#settings" class="primary-menu-item-bordered" aria-controls="settings" role="tab"
-               data-toggle="tab">
+            <a href="#" class="primary-menu-item-bordered">
               <span class="label label-success">On duty</span>
             </a>
           </li>
           <li role="presentation" class="dropdown pull-right">
             <a class="dropdown-toggle primary-menu-item-bordered primary-menu-item-icon" data-toggle="dropdown"
-               href="#"
-               role="button"
-               aria-expanded="false">
+               href="#" role="button" aria-expanded="false">
               <i class="fa fa-gear"></i>
             </a>
             <ul class="dropdown-menu" role="menu">
@@ -100,7 +86,7 @@ classes are needed:
       <div class="container">
 
         <div class="tab-content">
-          <div role="tabpanel" class="tab-pane active" id="home">
+          <div role="tabpanel" class="tab-pane active" id="dashboard">
 
             <button type="button" class="btn btn-primary btn-header active mg-r-sm">
               <i class="fa fa-user mg-r-xs"></i> All Feedback
@@ -135,9 +121,8 @@ classes are needed:
             </button>
 
           </div>
-          <div role="tabpanel" class="tab-pane" id="profile">Feedback</div>
-          <div role="tabpanel" class="tab-pane" id="messages">Marketing</div>
-          <div role="tabpanel" class="tab-pane" id="settings">Management</div>
+          <div role="tabpanel" class="tab-pane" id="marketing">Feedback</div>
+          <div role="tabpanel" class="tab-pane" id="engagement">Marketing</div>
         </div>
 
       </div>

@@ -8,25 +8,65 @@
     <style rel='stylesheet'>
       #styleguide .sg-canvas .container {width: 100% !important;}
       #styleguide .sg-canvas .l-app {background: #F3F3F4;}
+      #styleguide .sg-canvas .l-header { position: relative; z-index: 1; }
+      body.sg { padding-top: 30px; }
+      .sg-text, .sg-example { float: none; width: 100% !important; }
+      nav.sidebar-menu.affix-top { margin-top: 100px; }
     </style>
 
 ### Body
-    div.l-app#styleguide
-      header.l-header
-        .l-header-top
-          .container
-            ul.primary-menu.nav.nav-tabs
-              li.logo-item
-                a.logo Revinate
-        .l-header-bottom
-      main.l-main
-        .container
-          .l-main-content.pd-xl.mg-t-xl
-            div.styleguide
-              div(sg-content)
-      footer.l-footer.pd-md
-        p.copyright &copy; Revinate Styleguide 2015. All Rights Reserved
 
-    script(src="bower_components/jquery/dist/jquery.min.js")
-    script(src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.min.js")
-    script(src='https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js')
+    <div class="l-app" id="styleguide">
+      <header class="l-header">
+        <div class="l-header-top">
+          <div class="container">
+            <ul class="primary-menu nav nav-tabs">
+              <li class="logo-item">
+                <a class="logo" href="#">Revinate</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main class="l-main">
+        <div class="container">
+          <div class="l-main-content row pd-xl mg-t-xl">
+            <div class="styleguide-header col-sm-12">
+              <h1>Revinate Style Guide</h1>
+              <p>Our styleguide/css is based off of Twitter Bootstrap. The documentation below highlights the
+              customizations and extra classes you need to add to your project.</p>
+            </div>
+            <div class="styleguide-menu col-sm-3">
+
+              <nav class="sidebar-menu hidden-xs hidden-sm">
+                <ul class="nav bs-docs-sidenav">
+                  <li><a href="#general">General</a></li>
+                  <li><a href="#buttons">Buttons</a></li>
+                </ul>
+              </nav>
+
+            </div>
+            <div class="styleguide col-sm-9">
+              <div sg-content></div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="l-footer pd-md">
+        <p class="copyright">&copy; Revinate Styleguide 2015. All Rights Reserved</p>
+      </footer>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
+    <script>
+    $('.sidebar-menu').affix({
+      offset: {
+        top: 100,
+        bottom: function () {
+          return (this.bottom = $('.l-footer').outerHeight(true))
+        }
+      }
+    });
+    </script>
