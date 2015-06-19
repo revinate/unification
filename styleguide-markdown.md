@@ -1,10 +1,3 @@
-Revinate Style Guide
-=================
-
-Our styleguide/css is based off of Twitter Bootstrap. The documentation below highlights the customizations and extra
- classes you need to add to your project.
-
-
 General
 -------
 
