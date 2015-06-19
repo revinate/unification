@@ -8,6 +8,8 @@
     <style rel='stylesheet'>
       #styleguide .sg-canvas .container {width: 100% !important;}
       #styleguide .sg-canvas .l-app {background: #F3F3F4;}
+      #styleguide .sg-canvas .l-header { position: relative; z-index: 1; }
+      body.sg { padding-top: 30px; }
     </style>
 
 ### Body
@@ -18,7 +20,6 @@
             ul.primary-menu.nav.nav-tabs
               li.logo-item
                 a.logo Revinate
-        .l-header-bottom
       main.l-main
         .container
           .l-main-content.pd-xl.mg-t-xl

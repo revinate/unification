@@ -15,6 +15,13 @@
     #styleguide .sg-canvas .l-app {
       background: #F3F3F4;
     }
+    #styleguide .sg-canvas .l-header {
+      position: relative;
+      z-index: 1;
+    }
+    body.sg {
+      padding-top: 30px;
+    }
   </style>
 </head>
 
@@ -30,7 +37,6 @@
           </ul>
         </div>
       </div>
-      <div class="l-header-bottom"></div>
     </header>
     <main class="l-main">
       <div class="container">
@@ -113,9 +119,6 @@
                               <li role="presentation">
                                 <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Marketing</a>
                               </li>
-                              <li role="presentation">
-                                <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Management</a>
-                              </li>
                               <li role="presentation" class="pull-right">
                                 <a href="#settings" class="primary-menu-item-bordered" aria-controls="settings" role="tab" data-toggle="tab">
                                   <span class="label label-success">On duty</span>
@@ -173,7 +176,7 @@
                               <div role="tabpanel" class="tab-pane active" id="home">
 
                                 <button type="button" class="btn btn-primary btn-header active mg-r-sm">
-                                  <i class="fa fa-user mg-r-xs"></i>All Feedback
+                                  <i class="fa fa-user mg-r-xs"></i>All Feedbacks
                                 </button>
 
                                 <div class="btn-group mg-r-sm">
@@ -232,9 +235,6 @@
         <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;presentation&quot;</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#messages&quot;</span> <span class="hljs-attribute">aria-controls</span>=<span class="hljs-value">&quot;messages&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;tab&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;tab&quot;</span>&gt;</span>Marketing<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;presentation&quot;</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#settings&quot;</span> <span class="hljs-attribute">aria-controls</span>=<span class="hljs-value">&quot;settings&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;tab&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;tab&quot;</span>&gt;</span>Management<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;presentation&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;pull-right&quot;</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#settings&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;primary-menu-item-bordered&quot;</span> <span class="hljs-attribute">aria-controls</span>=<span class="hljs-value">&quot;settings&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;tab&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;tab&quot;</span>&gt;</span>
@@ -295,7 +295,7 @@
         <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;tabpanel&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;tab-pane active&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;home&quot;</span>&gt;</span>
 
           <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-primary btn-header active mg-r-sm&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;fa fa-user mg-r-xs&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>All Feedback
+            <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;fa fa-user mg-r-xs&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>All Feedbacks
           <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 
           <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn-group mg-r-sm&quot;</span>&gt;</span>

@@ -50,9 +50,6 @@ classes are needed:
             role="presentation">
             <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Marketing</a>
           </li>
-          <li role="presentation">
-            <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Management</a>
-          </li>
           <li role="presentation" class="pull-right">
             <a href="#settings" class="primary-menu-item-bordered" aria-controls="settings" role="tab"
                data-toggle="tab">
