@@ -30,21 +30,27 @@
 
 .primary-menu.nav.nav-tabs > li {
   margin-bottom: 0;
+  &:focus {
+    outline: none;
+  }
 }
 
 .primary-menu.nav.nav-tabs > li > a {
   margin-right: 0;
   height: 26px;
   line-height: 28px;
-  color: #74797E;
+  color: $r_brand-primary-light;
   border: none;
   border-radius: 0;
   padding: 0 20px;
-  &:hover,
   &:active,
   &:focus {
+    color: $r_brand-primary-light;
+    background-color: transparent;
+  }
+  &:hover {
     color: #FFFFFF;
-    background-color: #283745;
+    background-color: $brand-primary;
   }
   &.primary-menu-item-icon {
     font-size: 1.8em;
@@ -52,10 +58,14 @@
   &.primary-menu-item-bordered {
     border-left: 1px $brand-primary solid;
     padding: 0 10px;
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $r_brand-primary-dark;
+    }
   }
   &.logo {
     &:hover,
-    &:active,
     &:focus {
       color: transparent;
       background-color: transparent;
@@ -63,11 +73,79 @@
   }
 }
 
+.primary-menu.nav.nav-tabs > li.open > a,
+.primary-menu.nav.nav-tabs > li.open > a:hover,
+.primary-menu.nav.nav-tabs > li.open > a:focus,
+.primary-menu.nav.nav-tabs > li.open > a:active {
+  color: #ffffff;
+  background-color: transparent;
+}
+
 .primary-menu.nav.nav-tabs > li.active > a,
 .primary-menu.nav.nav-tabs > li.active > a:hover,
 .primary-menu.nav.nav-tabs > li.active > a:focus,
 .primary-menu.nav.nav-tabs > li.active > a:active {
   color: #FFFFFF;
-  background-color: #283745;
+  background-color: $brand-primary;
   border: none;
+  &.logo {
+    background-color: transparent;
+  }
 }
+
+.primary-menu.nav.nav-tabs .dropdown-menu {
+  background-color: $r_brand-primary-dark;
+  margin-top: 1px;
+  font-size: 12px;
+  border: none;
+  min-width: 100%;
+  padding: 0;
+  > li > a {
+    padding: 6px 10px 3px;
+    border-bottom: $brand-primary 1px solid;
+    color: $r_brand-primary-light;
+    &:hover {
+      color: #ffffff;
+      background-color: $r_brand-primary-dark;
+    }
+  }
+  > li:last-child a {
+    border-bottom: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
