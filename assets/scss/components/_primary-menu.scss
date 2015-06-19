@@ -93,27 +93,6 @@
   }
 }
 
-.primary-menu.nav.nav-tabs .dropdown-menu {
-  background-color: $r_brand-primary-dark;
-  margin-top: 1px;
-  font-size: 12px;
-  border: none;
-  min-width: 100%;
-  padding: 0;
-  > li > a {
-    padding: 6px 10px 3px;
-    border-bottom: $brand-primary 1px solid;
-    color: $r_brand-primary-light;
-    &:hover {
-      color: #ffffff;
-      background-color: $r_brand-primary-dark;
-    }
-  }
-  > li:last-child a {
-    border-bottom: none;
-  }
-}
-
 
 
 
