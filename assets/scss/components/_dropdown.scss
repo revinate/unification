@@ -26,6 +26,10 @@
       color: #ffffff;
       background-color: $r_brand-primary-dark;
     }
+    .badge {
+      color: #ffffff;
+      font-weight: bold;
+    }
   }
   > li:last-child a {
     border-bottom: none;

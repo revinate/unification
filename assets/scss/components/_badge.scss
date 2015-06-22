@@ -1,0 +1,18 @@
+.badge {
+  display: inline-block;
+  min-width: 22px;
+  height: 20px;
+  font-size: .75em;
+  text-align: center;
+  line-height: 20px;
+  padding: 0;
+  &.badge-danger {
+    background-color: $brand-danger;
+    color: #ffffff;
+  }
+  &.badge-default {
+    background-color: transparent;
+    color: inherit;
+    font-size: 1em;
+  }
+}

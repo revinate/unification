@@ -37,7 +37,10 @@ classes are needed:
             <a class="logo" href="#dashboard">Revinate</a>
           </li>
           <li role="presentation" class="active">
-            <a href="#dashboard" aria-controls="home" role="tab" data-toggle="tab">Dashboard</a>
+            <a href="#dashboard" aria-controls="home" role="tab" data-toggle="tab">
+              Dashboard
+              <i class="fa fa-circle text-danger"></i>
+            </a>
           </li>
           <li role="presentation">
             <a href="#marketing" aria-controls="messages" role="tab" data-toggle="tab">Marketing</a>
@@ -89,20 +92,20 @@ classes are needed:
           <div role="tabpanel" class="tab-pane active" id="dashboard">
 
             <button type="button" class="btn btn-primary btn-header active mg-r-sm">
-              <i class="fa fa-user mg-r-xs"></i> All Feedbacks
+              <i class="fa fa-user mg-r-xs"></i> All Feedback
             </button>
 
             <div class="btn-group mg-r-sm">
               <button type="button" class="btn btn-primary btn-header dropdown-toggle" data-toggle="dropdown"
                       aria-expanded="false">
-                <i class="fa fa-wechat mg-r-xs"></i> Reviews <i class="fa fa-angle-down"></i>
+                <i class="fa fa-heart mg-r-xs"></i> Sentiment Analysis <i class="fa fa-angle-down"></i> <span
+                class="badge badge-danger pull-right mg-l-sm">42</span>
               </button>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
+                <li><a href="#">Action <span class="badge badge-default pull-right mg-l-sm">6</span></a></li>
+                <li><a href="#">Another action <span class="badge badge-default pull-right mg-l-sm">4</span></a></li>
+                <li><a href="#">Something else here <span class="badge badge-default pull-right mg-l-sm">12</span></a></li>
+                <li><a href="#">Separated link <span class="badge badge-default pull-right mg-l-sm">2</span></a></li>
               </ul>
             </div>
 
