@@ -109,17 +109,17 @@ classes are needed:
               </ul>
             </div>
 
-            <button type="button" class="btn btn-primary btn-header btn-header-dark btn-rounded pull-right mg-l-sm">
+            <button type="button" class="btn btn-primary btn-header btn-rounded pull-right mg-l-sm">
               <i class="fa fa-book mg-r-xs"></i> Guests
             </button>
 
             <button type="button"
-                    class="btn btn-sm btn-primary btn-header btn-header-dark btn-circle pull-right mg-l-sm">
+                    class="btn btn-sm btn-primary btn-header btn-circle pull-right mg-l-sm">
               <i class="fa fa-bookmark"></i>
             </button>
 
             <button type="button"
-                    class="btn btn-sm btn-primary btn-header btn-header-dark btn-circle pull-right mg-l-sm">
+                    class="btn btn-sm btn-primary btn-header btn-circle pull-right mg-l-sm">
               <i class="fa fa-star"></i>
             </button>
 
