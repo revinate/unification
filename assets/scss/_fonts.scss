@@ -8,7 +8,10 @@
   url('../fonts/lato-black/lato-black-webfont.svg#latoblack') format('svg');
   font-weight: normal;
   font-style: normal;
+}
 
+.FontLatoBlack {
+  font-family: 'LatoBlack';
 }
 
 @font-face {
@@ -23,6 +26,10 @@
   font-style: italic;
 }
 
+.FontLatoBlackItalic {
+  font-family: 'LatoBlackItatic';
+}
+
 @font-face {
   font-family: 'LatoBold';
   src: url('../fonts/lato-bold/lato-bold-webfont.eot');
@@ -33,6 +40,10 @@
   url('../fonts/lato-bold/lato-bold-webfont.svg#latobold') format('svg');
   font-weight: normal;
   font-style: normal;
+}
+
+.FontLatoBold {
+  font-family: 'LatoBold';
 }
 
 @font-face {
@@ -47,6 +58,10 @@
   font-style: italic;
 }
 
+.FontLatoBoldItalic {
+  font-family: 'LatoBoldItalic';
+}
+
 @font-face {
   font-family: 'LatoHairline';
   src: url('../fonts/lato-hairline/lato-hairline-webfont.eot');
@@ -59,8 +74,12 @@
   font-style: normal;
 }
 
-@font-face {
+.FontLatoHairline {
   font-family: 'LatoHairline';
+}
+
+@font-face {
+  font-family: 'LatoHairlineItalic';
   src: url('../fonts/lato-hairline/lato-hairlineitalic-webfont.eot');
   src: url('../fonts/lato-hairline/lato-hairlineitalic-webfont.eot?#iefix') format('embedded-opentype'),
   url('../fonts/lato-hairline/lato-hairlineitalic-webfont.woff2') format('woff2'),
@@ -69,6 +88,10 @@
   url('../fonts/lato-hairline/lato-hairlineitalic-webfont.svg#latohairline_italic') format('svg');
   font-weight: normal;
   font-style: italic;
+}
+
+.lato-hairline-italic {
+  font-family: 'LatoHairlineItalic';
 }
 
 @font-face {
@@ -83,6 +106,10 @@
   font-style: normal;
 }
 
+.lato-light {
+  font-family: 'LatoHairlineItalic';
+}
+
 @font-face {
   font-family: 'LatoLightItalic';
   src: url('../fonts/lato-light/lato-lightitalic-webfont.eot');
@@ -93,6 +120,10 @@
   url('../fonts/lato-light/lato-lightitalic-webfont.svg#latolight_italic') format('svg');
   font-weight: normal;
   font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: 'LatoHairlineItalic';
 }
 
 @font-face {
@@ -107,6 +138,10 @@
   font-style: normal;
 }
 
+.lato {
+  font-family: 'Lato';
+}
+
 @font-face {
   font-family: 'LatoItalic';
   src: url('../fonts/lato-regular/lato-italic-webfont.eot');
@@ -117,6 +152,10 @@
   url('../fonts/lato-regular/lato-italic-webfont.svg#latoitalic') format('svg');
   font-weight: normal;
   font-style: italic;
+}
+
+.lato-italic {
+  font-family: 'LatoItalic';
 }
 
 @font-face {
