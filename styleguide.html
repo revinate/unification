@@ -39,7 +39,7 @@
       <div class="l-header-top">
         <div class="container">
           <ul class="primary-menu nav nav-tabs">
-            <li class="logo-item">
+            <li class="primary-menu-item-logo">
               <a class="logo" href="#">Revinate</a>
             </li>
           </ul>
@@ -51,7 +51,11 @@
         <div class="l-main-content row pd-xl mg-t-xl">
           <div class="styleguide-header col-sm-12">
             <h1>Revinate Style Guide</h1>
-            <p>Our styleguide/css is based off of Twitter Bootstrap. The documentation below highlights the customizations and extra classes you need to add to your project.</p>
+            <p>Our styleguide/css is based off of
+              <a href="http://getbootstrap.com/">Twitter Bootstrap
+              </a>, and uses
+              <a href="https://smacss.com/">SMACSS (Scalable and Module Architecture for CSS)
+              </a>. This documentation contains code examples, and highlights extra classes needed on top of Twitter Bootstrap classes.</p>
           </div>
           <div class="styleguide-menu col-sm-3">
 
@@ -119,7 +123,8 @@
                 <section class="sg-block sg-section-primary-menu">
                   <div class="sg-text">
                     <h3 id="primary-menu" class="sg">Primary Menu</h3>
-                    <p class="sg">This component is based off of Twitter Bootstrap tabs plugin. The tabbed menu is inside
+                    <p class="sg">This component is based off of
+                      <a href="http://getbootstrap.com/javascript/#tabs" class="sg">Twitter Bootstrap tabs component</a>. The tabbed menu is inside
                       <code class="sg">.l-header-top</code>and the tabbed content is inside
                       <code class="sg">.l-header-bottom</code>.</p>
                     <p class="sg">
@@ -132,14 +137,14 @@
                         <code class="sg">.primary-menu-item-icon</code>needed by icon menu items. i.e. &apos;Help&apos; &amp; &apos;Settings&apos;</li>
                       <li class="sg">
                         <code class="sg">.primary-menu-item-logo</code>needed by the logo
-                        <code class="sg">li</code>
+                        <code class="sg">&lt;li&gt;</code>
                       </li>
                       <li class="sg">
                         <code class="sg">.primary-menu-item-text</code>needed by text only
-                        <code class="sg">li</code>. i.e. property name w/o dropdown</li>
+                        <code class="sg">&lt;li&gt;</code>. i.e. property name without dropdown</li>
                       <li class="sg">
                         <code class="sg">.primary-menu-item-label</code>needed by
-                        <code class="sg">li</code>that contains a
+                        <code class="sg">&lt;li&gt;</code>that contains a
                         <code class="sg">.label</code>. i.e. &apos;On Duty&apos;</li>
                     </ul>
                     <p class="sg">
@@ -147,7 +152,8 @@
                     </p>
                     <ul class="sg">
                       <li class="sg">If you wish to use this component with
-                        <strong class="sg">jQuery</strong>, make sure the primary menu &apos;a&apos; tags have the attribute
+                        <strong class="sg">jQuery</strong>, make sure the primary menu
+                        <code class="sg">&lt;a&gt;</code>tags have the attribute
                         <code class="sg">data-toggle=&apos;tab&apos;</code>, otherwise remove the attribute.</li>
                     </ul>
                     <p class="sg"></p>

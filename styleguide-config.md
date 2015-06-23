@@ -21,7 +21,7 @@
         <div class="l-header-top">
           <div class="container">
             <ul class="primary-menu nav nav-tabs">
-              <li class="logo-item">
+              <li class="primary-menu-item-logo">
                 <a class="logo" href="#">Revinate</a>
               </li>
             </ul>
@@ -33,8 +33,10 @@
           <div class="l-main-content row pd-xl mg-t-xl">
             <div class="styleguide-header col-sm-12">
               <h1>Revinate Style Guide</h1>
-              <p>Our styleguide/css is based off of Twitter Bootstrap. The documentation below highlights the
-              customizations and extra classes you need to add to your project.</p>
+              <p>Our styleguide/css is based off of <a href="http://getbootstrap.com/">Twitter
+              Bootstrap</a>, and uses <a href="https://smacss.com/">SMACSS (Scalable and Module Architecture for
+              CSS)</a>. This documentation contains code examples, and highlights extra classes needed on top of
+              Twitter Bootstrap classes.</p>
             </div>
             <div class="styleguide-menu col-sm-3">
 
