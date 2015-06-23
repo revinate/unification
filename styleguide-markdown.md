@@ -32,7 +32,7 @@ tabbed content is inside `.l-header-bottom`.
 
 
 **jQuery vs Angular**
-- If you wish to use this component with **jQuery**, make sure the primary 'a' tags have the attribute
+- If you wish to use this component with **jQuery**, make sure the primary menu 'a' tags have the attribute
 `data-toggle='tab'`, otherwise remove the attribute.
 
 
