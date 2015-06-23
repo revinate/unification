@@ -40,8 +40,8 @@
 
               <nav class="sidebar-menu hidden-xs hidden-sm">
                 <ul class="nav bs-docs-sidenav">
-                  <li><a href="#general">General</a></li>
-                  <li><a href="#buttons">Buttons</a></li>
+                  <li><a href="#general">General Layout</a></li>
+                  <li><a href="#buttons">Primary Menu</a></li>
                 </ul>
               </nav>
 

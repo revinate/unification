@@ -20,12 +20,21 @@ This is the overall structure of every page. Content goes inside div with class 
 
 ### Primary Menu
 
-The primary navigation component is based off of Twitter Bootstrap tabs plugin. The tabs navigation is inside `
-.l-header-top` and the tabs content is inside `.l-header-bottom`. In order to have custom styles, the following 2
-classes are needed:
+This component is based off of Twitter Bootstrap tabs plugin. The tabbed menu is inside `.l-header-top` and the
+tabbed content is inside `.l-header-bottom`.
 
-`.primary-menu-item-bordered` ads border to the right aligned menu items and
-`.primary-menu-item-icon` is needed for menu items the use icon like "Help" and "Settings"
+**Extra classes**
+- `.primary-menu-item-bordered` adds a border to right menu items
+- `.primary-menu-item-icon` needed by icon menu items. i.e. 'Help' & 'Settings'
+- `.primary-menu-item-logo` needed by the logo `li`
+- `.primary-menu-item-text` needed by text only `li`. i.e. property name w/o dropdown
+- `.primary-menu-item-label` needed by `li` that contains a `.label`. i.e. 'On Duty'
+
+
+**jQuery vs Angular**
+- If you wish to use this component with **jQuery**, make sure the primary 'a' tags have the attribute
+`data-toggle='tab'`, otherwise remove the attribute.
+
 
     @example
     <header class="l-header">
@@ -33,26 +42,24 @@ classes are needed:
       <div class="container">
 
         <ul class="primary-menu nav nav-tabs" role="tablist">
-          <li class="logo-item">
+          <li class="primary-menu-item-logo">
             <a class="logo" href="#dashboard">Revinate</a>
           </li>
-          <li role="presentation" class="active">
-            <a href="#dashboard" aria-controls="home" role="tab" data-toggle="tab">
+          <li class="active">
+            <a href="#dashboard" aria-controls="dashboard" role="tab" data-toggle="tab">
               Dashboard
               <i class="fa fa-circle text-danger"></i>
             </a>
           </li>
-          <li role="presentation">
-            <a href="#marketing" aria-controls="messages" role="tab" data-toggle="tab">Marketing</a>
+          <li>
+            <a href="#marketing" aria-controls="marketing" role="tab" data-toggle="tab">Marketing</a>
           </li>
-          <li role="presentation" class="pull-right">
-            <a href="#" class="primary-menu-item-bordered">
-              <span class="label label-success">On duty</span>
-            </a>
+          <li class="pull-right primary-menu-item-bordered primary-menu-item-label">
+            <span class="label label-success">On duty</span>
           </li>
-          <li role="presentation" class="dropdown pull-right">
+          <li class="dropdown pull-right">
             <a class="dropdown-toggle primary-menu-item-bordered primary-menu-item-icon" data-toggle="dropdown"
-               href="#" role="button" aria-expanded="false">
+               href="#" aria-expanded="false">
               <i class="fa fa-gear"></i>
             </a>
             <ul class="dropdown-menu" role="menu">
@@ -60,9 +67,9 @@ classes are needed:
               <li><a href="#">Another action</a></li>
             </ul>
           </li>
-          <li role="presentation" class="dropdown pull-right">
+          <li class="dropdown pull-right">
             <a class="dropdown-toggle primary-menu-item-bordered primary-menu-item-icon" data-toggle="dropdown" href="#"
-               role="button" aria-expanded="false">
+               aria-expanded="false">
               <i class="fa fa-question-circle"></i>
             </a>
             <ul class="dropdown-menu" role="menu">
@@ -70,8 +77,8 @@ classes are needed:
               <li><a href="#">Another action</a></li>
             </ul>
           </li>
-          <li role="presentation" class="dropdown pull-right">
-            <a class="dropdown-toggle primary-menu-item-bordered" data-toggle="dropdown" href="#" role="button"
+          <li class="dropdown pull-right">
+            <a class="dropdown-toggle primary-menu-item-bordered" data-toggle="dropdown" href="#"
                aria-expanded="false">
               Property <i class="fa fa-angle-down"></i>
             </a>
@@ -80,107 +87,63 @@ classes are needed:
               <li><a href="#">Another action</a></li>
             </ul>
           </li>
+          <li class="primary-menu-item-bordered primary-menu-item-text pull-right">Property</li>
         </ul>
 
       </div>
     </div>
 
     <div class="l-header-bottom">
-      <div class="container">
+      <div class="tab-content container">
 
-        <div class="tab-content">
-          <div role="tabpanel" class="tab-pane active" id="dashboard">
+        <!-- dashboard tab content -->
+        <div role="tabpanel" class="tab-pane active" id="dashboard">
 
-            <button type="button" class="btn btn-primary btn-header active mg-r-sm">
-              <i class="fa fa-user mg-r-xs"></i> All Feedback
+          <button type="button" class="btn btn-primary btn-header active mg-r-sm">
+            <i class="fa fa-user mg-r-xs"></i> All Feedback
+          </button>
+
+          <div class="btn-group mg-r-sm">
+            <button type="button" class="btn btn-primary btn-header dropdown-toggle" data-toggle="dropdown"
+                    aria-expanded="false">
+              <i class="fa fa-heart mg-r-xs"></i> Sentiment Analysis <i class="fa fa-angle-down"></i> <span
+              class="badge badge-danger pull-right mg-l-sm">42</span>
             </button>
-
-            <div class="btn-group mg-r-sm">
-              <button type="button" class="btn btn-primary btn-header dropdown-toggle" data-toggle="dropdown"
-                      aria-expanded="false">
-                <i class="fa fa-heart mg-r-xs"></i> Sentiment Analysis <i class="fa fa-angle-down"></i> <span
-                class="badge badge-danger pull-right mg-l-sm">42</span>
-              </button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action <span class="badge badge-default pull-right mg-l-sm">6</span></a></li>
-                <li><a href="#">Another action <span class="badge badge-default pull-right mg-l-sm">4</span></a></li>
-                <li><a href="#">Something else here <span class="badge badge-default pull-right mg-l-sm">12</span></a></li>
-                <li><a href="#">Separated link <span class="badge badge-default pull-right mg-l-sm">2</span></a></li>
-              </ul>
-            </div>
-
-            <button type="button" class="btn btn-primary btn-header btn-rounded pull-right mg-l-sm">
-              <i class="fa fa-book mg-r-xs"></i> Guests
-            </button>
-
-            <button type="button"
-                    class="btn btn-sm btn-primary btn-header btn-circle pull-right mg-l-sm">
-              <i class="fa fa-bookmark"></i>
-            </button>
-
-            <button type="button"
-                    class="btn btn-sm btn-primary btn-header btn-circle pull-right mg-l-sm">
-              <i class="fa fa-star"></i>
-            </button>
-
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action <span class="badge badge-default pull-right mg-l-sm">6</span></a></li>
+              <li><a href="#">Another action <span class="badge badge-default pull-right mg-l-sm">4</span></a></li>
+              <li><a href="#">Something else here <span class="badge badge-default pull-right mg-l-sm">12</span></a></li>
+              <li><a href="#">Separated link <span class="badge badge-default pull-right mg-l-sm">2</span></a></li>
+            </ul>
           </div>
-          <div role="tabpanel" class="tab-pane" id="marketing">Feedback</div>
-          <div role="tabpanel" class="tab-pane" id="engagement">Marketing</div>
+
+          <button type="button" class="btn btn-primary btn-header btn-rounded pull-right mg-l-sm">
+            <i class="fa fa-book mg-r-xs"></i> Guests
+          </button>
+
+          <button type="button"
+                  class="btn btn-sm btn-primary btn-header btn-circle pull-right mg-l-sm">
+            <i class="fa fa-bookmark"></i>
+          </button>
+
+          <button type="button"
+                  class="btn btn-sm btn-primary btn-header btn-circle pull-right mg-l-sm">
+            <i class="fa fa-star"></i>
+          </button>
+
+        </div>
+
+        <!-- marketing tab content -->
+        <div role="tabpanel" class="tab-pane" id="marketing">
+          <button type="button" class="btn btn-primary btn-header active mg-r-sm">
+            <i class="fa fa-paper-plane mg-r-xs"></i> Campaigns
+          </button>
+          <button type="button" class="btn btn-primary btn-header mg-r-sm">
+            <i class="fa fa-list-alt mg-r-xs"></i> List
+          </button>
         </div>
 
       </div>
     </div>
 
   </header>
-
-
-Buttons
--------
-
-### Default Buttons
-
-Create all types of buttons with the following code snippets.
-
-    @example
-    button.btn.btn-default Default
-    button.btn.btn-primary Default
-    button.btn.btn-success Default
-    button.btn.btn-danger Default
-    button.btn.btn-warning Default
-    button.btn.btn-info Default
-    button.btn.btn-link Default
-
-### Dropdown Buttons
-
-Create all types of buttons with the following code snippets.
-
-    @example
-    button.btn.btn-default Default
-    button.btn.btn-primary Default
-    button.btn.btn-success Default
-    button.btn.btn-danger Default
-    button.btn.btn-warning Default
-    button.btn.btn-info Default
-    button.btn.btn-link Default
-
-### Icon Buttons
-
-Create all types of buttons with the following code snippets.
-
-    @example
-    <button class="btn btn-default">
-      <i class="fa fa-facebook mg-r-xs"></i>
-      Default
-    </button>
-    <button class="btn btn-success">
-      <i class="fa fa-twitter mg-r-xs"></i>
-      Default
-    </button>
-    <button class="btn btn-primary">
-      <i class="fa fa-linkedin mg-r-xs"></i>
-      Default
-    </button>
-    <button class="btn btn-info">
-      <i class="fa fa-instagram mg-r-xs"></i>
-      Default
-    </button>
