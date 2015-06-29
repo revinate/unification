@@ -48,6 +48,17 @@
   &.primary-menu-item-label {
     line-height: 26px;
     padding: 0 0 0 10px !important;
+    a {
+      padding: 0;
+      &:hover {
+        background-color: $r_brand-primary-dark;
+      }
+      button {
+        padding: 0px 5px;
+        line-height: 1.4;
+        margin-top: -3px;
+      }
+    }
   }
 }
 
