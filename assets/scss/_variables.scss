@@ -113,6 +113,11 @@ $border-radius-base:        4px !default;
 $border-radius-large:       6px !default;
 $border-radius-small:       3px !default;
 
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius-base:         $border-radius-base !default;
+$btn-border-radius-large:        $border-radius-large !default;
+$btn-border-radius-small:        $border-radius-small !default;
+
 //** Global color for active items (e.g., navs or dropdowns).
 $component-active-color:    #fff !default;
 //** Global background color for active items (e.g., navs or dropdowns).
@@ -491,6 +496,7 @@ $jumbotron-color:                inherit !default;
 $jumbotron-bg:                   $gray-lighter !default;
 $jumbotron-heading-color:        inherit !default;
 $jumbotron-font-size:            ceil(($font-size-base * 1.5)) !default;
+$jumbotron-heading-font-size:    ceil(($font-size-base * 4.5)) !default;
 
 
 //== Form states and alerts
