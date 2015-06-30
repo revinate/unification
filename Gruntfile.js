@@ -11,11 +11,17 @@ module.exports = function(grunt) {
 					title: 'Revinate Styleguide'
 				}
 			}
+		},
+		serve: {
+			options: {
+				port: 9000
+			}
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-styledown');
+	grunt.loadNpmTasks('grunt-serve');
 
-	grunt.registerTask('default', ['styledown']);
+	grunt.registerTask('default', ['styledown', 'serve']);
 
 };

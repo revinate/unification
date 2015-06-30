@@ -3,8 +3,8 @@
 ### Head
     <link rel='stylesheet' href='https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.css" />
-    <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/app.css" />
     <style rel='stylesheet'>
       #styleguide .sg-canvas .container {width: 100% !important;}
       #styleguide .sg-canvas .l-app {background: #F3F3F4;}
@@ -39,7 +39,7 @@
               Twitter Bootstrap classes.</p>
               <p>PS. In order to optimize css load time, we have removed the following unnecessary Twitter Bootstrap
               includes: print, glyphicons, progress bars and carousel. If you wish to use any of these styles, please
-              uncomment the respective line(s) in /assets/scss/bootstrap.scss and compile sass.
+              uncomment the respective line(s) in /scss/bootstrap.scss and compile sass.
               </p>
             </div>
             <div class="styleguide-menu col-sm-3">
