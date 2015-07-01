@@ -175,17 +175,17 @@
 }
 
 @font-face {
-  font-family: 'SwedenSansBold';
-  src: url('/fonts/swedensans/swedensansbold-webfont.eot');
-  src: url('/fonts/swedensans/swedensansbold-webfont.eot?#iefix') format('embedded-opentype'),
-  url('/fonts/swedensans/swedensansbold-webfont.woff2') format('woff2'),
-  url('/fonts/swedensans/swedensansbold-webfont.woff') format('woff'),
-  url('/fonts/swedensans/swedensansbold-webfont.ttf') format('truetype'),
-  url('/fonts/swedensans/swedensansbold-webfont.svg#sweden_sansbold') format('svg');
+  font-family: 'Gram';
+  src: url('/fonts/gram-regular/gram.regular-webfont.eot');
+  src: url('/fonts/gram-regular/gram.regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/gram-regular/gram.regular-webfont.woff2') format('woff2'),
+  url('/fonts/gram-regular/gram.regular-webfont.woff') format('woff'),
+  url('/fonts/gram-regular/gram.regular-webfont.ttf') format('truetype'),
+  url('/fonts/gram-regular/gram.regular-webfont.svg#gram.regularregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-.FontSwedenSans {
-  font-family: 'SwedenSansBold';
+.FontGram {
+  font-family: 'Gram';
 }
