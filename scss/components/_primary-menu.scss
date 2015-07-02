@@ -80,8 +80,17 @@
     color: #FFFFFF;
     background-color: $brand-primary;
   }
+  &.highlight {
+    color: #ffffff;
+  }
+  i {
+    font-size: .75em;
+  }
   &.primary-menu-item-icon {
-    font-size: 1.5em;
+    i {
+      font-size: 1.5em;
+      line-height: 1.2em;
+    }
   }
   &.primary-menu-item-bordered {
     border-left: 1px $brand-primary solid;
@@ -129,39 +138,3 @@
   padding: 0 5px;
   margin-top: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
