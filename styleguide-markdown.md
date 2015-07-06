@@ -30,6 +30,8 @@ tabbed content is inside `.l-header-bottom`.
 - `.primary-menu-item-logo` needed by the logo `<li>`
 - `.primary-menu-item-text` needed by text only `<li>`. i.e. property name without dropdown
 - `.primary-menu-item-label` needed by `<li>` that contains a `.label`. i.e. 'On Duty'
+- `.highlight` or `.active` can be added to `<a>` in top right menu items (i.e. settings, help). to indicate the menu
+ item is active.
 
 
 **jQuery vs Angular**
@@ -112,10 +114,11 @@ tabbed content is inside `.l-header-bottom`.
               class="badge badge-danger pull-right mg-l-sm">42</span>
             </button>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Action <span class="badge badge-default pull-right mg-l-sm">6</span></a></li>
-              <li><a href="#">Another action <span class="badge badge-default pull-right mg-l-sm">4</span></a></li>
-              <li><a href="#">Something else here <span class="badge badge-default pull-right mg-l-sm">12</span></a></li>
-              <li><a href="#">Separated link <span class="badge badge-default pull-right mg-l-sm">2</span></a></li>
+              <li><a class="has-badge" href="#">Action <span class="badge badge-default">6</span></a></li>
+              <li><a class="has-badge" href="#">Another action <span class="badge badge-default">40</span></a></li>
+              <li><a class="has-badge" href="#">Something else here this is very large
+                <span class="badge badge-default">12</span></a></li>
+              <li><a class="has-badge" href="#">Separated link <span class="badge badge-default">212</span></a></li>
             </ul>
           </div>
 
@@ -149,3 +152,11 @@ tabbed content is inside `.l-header-bottom`.
     </div>
 
   </header>
+
+
+### Integration
+
+- Add the unification repo (`git@github.com:revinate/unification`) to your project, preferably with bower;
+- Copy `css_images/` & `fonts/` directories to the root of the public folder;
+- In the head of every page, make sure you have `link` tags to `css/bootstrap.css` & `css/app.css`.
+

@@ -5,9 +5,16 @@
   padding: 6px 0;
   border: 1px $gray-lighter solid;
   > li > a {
+    position: relative;
     padding: 6px 12px;
-    &:hover {
+    &.has-badge {
+      padding-right: 45px;
+    }
+    &:hover,
+    &:active,
+    &:focus {
       background-color: $gray-lighter;
+      outline: none;
     }
   }
   > li:last-child a {
@@ -22,13 +29,18 @@
   margin-top: 1px; // overrides .nav-tabs .dropdown-menu
   > li > a {
     color: $r_brand-primary-light;
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus {
       color: #ffffff;
       background-color: $r_brand-primary-dark;
     }
     .badge {
       color: #ffffff;
       font-weight: bold;
+      position: absolute;
+      right: 12px;
+      text-align: right;
     }
   }
   > li:last-child a {

@@ -80,7 +80,8 @@
     color: #FFFFFF;
     background-color: $brand-primary;
   }
-  &.highlight {
+  &.highlight,
+  &.active {
     color: #ffffff;
   }
   i {
