@@ -35,7 +35,7 @@
     outline: none;
   }
   &.primary-menu-item-bordered {
-    border-left: 1px $brand-primary solid;
+    border-left: 1px $r_brand-primary solid;
     padding: 0 10px;
   }
   &.primary-menu-item-text,
@@ -78,7 +78,7 @@
   }
   &:hover {
     color: #FFFFFF;
-    background-color: $brand-primary;
+    background-color: $r_brand-primary;
   }
   &.highlight,
   &.active {
@@ -94,7 +94,7 @@
     }
   }
   &.primary-menu-item-bordered {
-    border-left: 1px $brand-primary solid;
+    border-left: 1px $r_brand-primary solid;
     padding: 0 10px;
     &:hover,
     &:active,
@@ -124,7 +124,7 @@
 .primary-menu.nav.nav-tabs > li.active > a:focus,
 .primary-menu.nav.nav-tabs > li.active > a:active {
   color: #FFFFFF;
-  background-color: $brand-primary;
+  background-color: $r_brand-primary;
   border: none;
   &.primary-menu-item-logo {
     background-color: transparent;

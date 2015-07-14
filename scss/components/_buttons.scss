@@ -27,9 +27,30 @@
     margin-top: 3px;
   }
   &.btn-primary {
-    background-color: darken($brand-primary,3%);
+    background-color: darken($r_brand-primary,3%);
     &.active,
-    &:hover {
+    &:hover,
+    &:active {
+      background-color: $r_brand-primary-dark;
+    }
+  }
+
+  .btn-group.open & {
+    background-color: darken($r_brand-primary,3%);
+    &.active,
+    &:hover,
+    &:active {
+      background-color: $r_brand-primary-dark;
+    }
+  }
+}
+
+.btn-header.dropdown-toggle {
+  .btn-group.open & {
+    background-color: darken($r_brand-primary,3%);
+    &.active,
+    &:hover,
+    &:active {
       background-color: $r_brand-primary-dark;
     }
   }
