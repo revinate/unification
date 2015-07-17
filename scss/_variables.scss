@@ -19,9 +19,9 @@ $brand-primary:         #3BA1F8 !default;
 $brand-success:         #83AD47 !default;
 $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
-$brand-danger:          #FF4F50 !default;
+$brand-danger:          #F55949 !default;
 
-$r_brand-primary:       #3BA1F8;
+$r_brand-primary:       #283745;
 $r_brand-primary-dark:  darken($r_brand-primary, 10%);
 $r_brand-primary-light: #74797E;
 
@@ -355,7 +355,7 @@ $container-desktop:            (940px + $grid-gutter-width) !default;
 $container-md:                 $container-desktop !default;
 
 // Large screen / wide desktop
-$container-large-desktop:      (1140px + $grid-gutter-width) !default;
+$container-large-desktop:      (1240px + $grid-gutter-width) !default;
 //** For `$screen-lg-min` and up.
 $container-lg:                 $container-large-desktop !default;
 
@@ -389,6 +389,7 @@ $navbar-default-link-disabled-bg:          transparent !default;
 $navbar-default-brand-color:               $navbar-default-link-color !default;
 $navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 10%) !default;
 $navbar-default-brand-hover-bg:            transparent !default;
+$navbar-default-brand-hover-bg-color:      #202C37 !default;
 
 // Navbar toggle
 $navbar-default-toggle-hover-bg:           #ddd !default;

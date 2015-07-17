@@ -31,6 +31,7 @@
 
 .primary-menu.nav.nav-tabs > li {
   margin-bottom: 0;
+  position: relative;
   &:focus {
     outline: none;
   }
@@ -71,14 +72,15 @@
   border: none;
   border-radius: 0;
   padding: 0 20px;
+  letter-spacing: .2em;
   &:active,
   &:focus {
     color: $r_brand-primary-light;
     background-color: transparent;
   }
   &:hover {
-    color: #FFFFFF;
-    background-color: $r_brand-primary;
+    color: $r_brand-primary-light;
+    background-color: $r_brand-primary-light;
   }
   &.highlight,
   &.active {
@@ -91,6 +93,9 @@
     i {
       font-size: 1.3em;
       line-height: 1.5em;
+    }
+    &.current-active-page {
+      color: #3CBFA2;
     }
   }
   &.primary-menu-item-bordered {
@@ -123,6 +128,18 @@
 .primary-menu.nav.nav-tabs > li.active > a:hover,
 .primary-menu.nav.nav-tabs > li.active > a:focus,
 .primary-menu.nav.nav-tabs > li.active > a:active {
+  background-color: $navbar-default-brand-hover-bg-color;
+  border: none;
+  &.primary-menu-item-logo {
+    background-color: transparent;
+  }
+}
+
+.primary-menu.nav.nav-tabs > li.current-active-page > a,
+.primary-menu.nav.nav-tabs > li.current-active-page.active > a,
+.primary-menu.nav.nav-tabs > li.current-active-page.active > a:hover,
+.primary-menu.nav.nav-tabs > li.current-active-page.active > a:focus,
+.primary-menu.nav.nav-tabs > li.current-active-page.active > a:active {
   color: #FFFFFF;
   background-color: $r_brand-primary;
   border: none;
@@ -138,4 +155,15 @@
   display: inline-block;
   padding: 0 5px;
   margin-top: 5px;
+}
+
+.primary-menu.nav.nav-tabs > li .signal {
+  position: absolute;
+  top: 8px;
+  right: 3px;
+}
+
+.primary-menu.nav.nav-tabs button {
+  text-transform: uppercase;
+  letter-spacing: .12em;
 }

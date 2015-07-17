@@ -19,8 +19,11 @@
 .l-header-bottom {
   height: 54px;
   padding-top: 10px;
-  background-color: $r_brand-primary;
-  font-family: LatoBold;
+  background-color: $navbar-default-brand-hover-bg-color;
+  font-family: Lato;
+  &.current-active-page {
+    background-color: $r_brand-primary;
+  }
 }
 
 .l-main-content {
