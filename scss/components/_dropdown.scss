@@ -52,6 +52,7 @@
 .l-header .primary-menu .dropdown-menu {
   font-size: 14px;
   padding: 0;
+  min-width: 120px;
   > li > a {
     border-bottom: $r_brand-primary 1px solid;
     padding: 6px 10px 3px;
