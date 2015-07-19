@@ -62,6 +62,9 @@
       }
     }
   }
+  &.primary-menu-item-icon {
+    width: 40px;
+  }
 }
 
 .primary-menu.nav.nav-tabs > li > a {
@@ -166,4 +169,21 @@
 .primary-menu.nav.nav-tabs button {
   text-transform: uppercase;
   letter-spacing: .12em;
+}
+
+@media (max-width: $screen-xs-max) {
+  .primary-menu.nav.nav-tabs > li {
+    width: 15%;
+    > a {
+      overflow: hidden;
+    }
+    .signal {
+      right: inherit;
+      left: 5px;
+    }
+    &.primary-menu-item-logo {
+      width: 15px;
+      overflow: hidden;
+    }
+  }
 }
