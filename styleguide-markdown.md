@@ -61,7 +61,7 @@ tabbed content is inside `.l-header-bottom`.
           <li class="pull-right primary-menu-item-bordered primary-menu-item-label">
             <span class="label label-success">On duty</span>
           </li>
-          <li class="dropdown pull-right">
+          <li class="dropdown pull-right primary-menu-item-icon">
             <a class="dropdown-toggle primary-menu-item-bordered primary-menu-item-icon" data-toggle="dropdown"
                href="#" aria-expanded="false">
               <i class="fa fa-gear"></i>
@@ -71,7 +71,7 @@ tabbed content is inside `.l-header-bottom`.
               <li><a href="#">Another action</a></li>
             </ul>
           </li>
-          <li class="dropdown pull-right">
+          <li class="dropdown pull-right primary-menu-item-icon">
             <a class="dropdown-toggle primary-menu-item-bordered primary-menu-item-icon" data-toggle="dropdown" href="#"
                aria-expanded="false">
               <i class="fa fa-question-circle"></i>
