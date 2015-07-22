@@ -19,7 +19,7 @@
   background-color: transparent;
   text-indent: -1000px;
   overflow: hidden;
-  margin: 5px 20px 0 0;
+  margin: 6px 20px 0 0;
   display: inline-block;
 }
 
@@ -45,7 +45,7 @@
     color: $r_brand-primary-light;
   }
   &.primary-menu-item-text {
-    line-height: 28px;
+    line-height: 30px;
   }
   &.primary-menu-item-label {
     line-height: 26px;
@@ -70,7 +70,7 @@
 .primary-menu.nav.nav-tabs > li > a {
   margin-right: 0;
   height: 26px;
-  line-height: 28px;
+  line-height: 30px;
   color: $r_brand-primary-light;
   border: none;
   border-radius: 0;
