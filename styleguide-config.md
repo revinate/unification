@@ -9,7 +9,6 @@
       #styleguide .sg-canvas .container {width: 100% !important;}
       #styleguide .sg-canvas .l-app {background: #F3F3F4;}
       #styleguide .sg-canvas .l-header { position: relative; z-index: 1; }
-      body.sg { padding-top: 30px; }
       .sg-text, .sg-example { float: none; width: 100% !important; }
       nav.sidebar-menu.affix-top { margin-top: 100px; }
     </style>
