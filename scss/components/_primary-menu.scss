@@ -82,16 +82,12 @@
     color: $r_brand-primary-light;
     background-color: $r_brand-primary;
   }
-  //&:hover {
-  //  color: $r_brand-primary-light;
-  //  background-color: transparent;
-  //}
   &.highlight,
   &.active {
     color: #ffffff;
   }
   i {
-    font-size: .75em;
+    font-size: .7em;
     &.text-danger {
       color: $brand-danger;
     }
@@ -111,6 +107,7 @@
     &:hover,
     &:active,
     &:focus {
+      color: #fff;
       background-color: $r_brand-primary-dark;
     }
   }
