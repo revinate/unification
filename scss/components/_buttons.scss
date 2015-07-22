@@ -4,9 +4,9 @@
   transition: all .2s;
 
   i:first-child {
-    -webkit-transition: all .2s;
-    -moz-transition: all .2s;
-    transition: all .2s;
+    //-webkit-transition: all .2s;
+    //-moz-transition: all .2s;
+    //transition: all .2s;
     font-size: 1.4em;
     vertical-align: middle;
   }
@@ -20,9 +20,7 @@
   border: none;
   color: lighten(#74797E,15%);
   padding: 8px 12px;
-  &:hover,
-  &.active,
-  .open & {
+  &.active {
     i:first-child {
       color: #3CBFA2;
     }
