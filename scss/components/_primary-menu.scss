@@ -77,14 +77,15 @@
   padding: 0 20px;
   letter-spacing: .2em;
   &:active,
-  &:focus {
-    color: $r_brand-primary-light;
-    background-color: transparent;
-  }
+  &:focus,
   &:hover {
     color: $r_brand-primary-light;
-    background-color: $r_brand-primary-light;
+    background-color: $r_brand-primary;
   }
+  //&:hover {
+  //  color: $r_brand-primary-light;
+  //  background-color: transparent;
+  //}
   &.highlight,
   &.active {
     color: #ffffff;
@@ -134,7 +135,7 @@
 .primary-menu.nav.nav-tabs > li.active > a:hover,
 .primary-menu.nav.nav-tabs > li.active > a:focus,
 .primary-menu.nav.nav-tabs > li.active > a:active {
-  background-color: $navbar-default-brand-hover-bg-color;
+  background-color: $r_brand-primary;
   border: none;
   &.primary-menu-item-logo {
     background-color: transparent;
