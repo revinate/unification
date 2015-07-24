@@ -15,8 +15,8 @@
 
 .btn-header {
   border: none;
-  color: lighten(#74797E,15%);
-  padding: 8px 12px;
+  color: $r_brand-primary-lighter;
+  padding: 8px 12px 6px;
   &.active {
     i:first-child {
       color: #3CBFA2;
@@ -27,16 +27,16 @@
     margin-top: 3px;
   }
   &.btn-primary {
-    background-color: darken($r_brand-primary,3%);
+    background-color: $r_brand-primary-dark;
     &.active,
     &:hover,
     &:active {
-      background-color: $r_brand-primary-dark;
+      background-color: $r_brand-primary-darker;
     }
   }
 
   .btn-group.open & {
-    background-color: darken($r_brand-primary,3%);
+    background-color: darken($r_brand-primary,5%);
     &.active,
     &:hover,
     &:active {
@@ -47,7 +47,7 @@
 
 .btn-header.dropdown-toggle {
   .btn-group.open & {
-    background-color: darken($r_brand-primary,3%);
+    background-color: darken($r_brand-primary,5%);
     &.active,
     &:hover,
     &:active {

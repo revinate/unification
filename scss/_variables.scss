@@ -21,9 +21,11 @@ $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #F55949 !default;
 
-$r_brand-primary:       #202C37;
-$r_brand-primary-dark:  darken($r_brand-primary, 5%);
-$r_brand-primary-light: #74797E;
+$r_brand-primary:           #283745;
+$r_brand-primary-dark:      #202C37;
+$r_brand-primary-darker:    #182129;
+$r_brand-primary-light:     #74797E;
+$r_brand-primary-lighter:   #939BA2;
 
 //== Scaffolding
 //

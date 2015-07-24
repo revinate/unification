@@ -29,16 +29,16 @@
 
 
 .l-header .dropdown-menu {
-  background-color: $r_brand-primary-dark;
+  background-color: $r_brand-primary-darker;
   border: none;
   margin-top: 1px; // overrides .nav-tabs .dropdown-menu
   > li > a {
-    color: $r_brand-primary-light;
+    color: $r_brand-primary-lighter;
     &:hover,
     &:active,
     &:focus {
       color: #ffffff;
-      background-color: $r_brand-primary-dark;
+      background-color: $r_brand-primary-darker;
     }
     .badge {
       color: #ffffff;

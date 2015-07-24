@@ -6,7 +6,7 @@
 
 .l-header-top {
   height: 26px;
-  background-color: $r_brand-primary-dark;
+  background-color: $r_brand-primary-darker;
   font-family: 'Gram', sans-serif;
   font-weight: 300;
   letter-spacing: .12em;
@@ -15,12 +15,12 @@
 .l-header-bottom {
   min-height: 54px;
   padding-top: 8px;
-  background-color: $navbar-default-brand-hover-bg-color;
+  background-color: $r_brand-primary;
   font-family: Lato;
   position: relative;
-  &.current-active-page {
-    background-color: $r_brand-primary;
-  }
+  //&.current-active-page {
+  //  background-color: $r_brand-primary;
+  //}
 }
 
 .l-main-content {

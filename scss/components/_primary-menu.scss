@@ -58,7 +58,7 @@
       button {
         padding: 0px 5px;
         line-height: 1.4;
-        margin-top: -3px;
+        margin-top: -4px;
       }
     }
   }
@@ -68,6 +68,7 @@
 }
 
 .primary-menu.nav.nav-tabs > li > a {
+  cursor: default;
   margin-right: 0;
   height: 26px;
   line-height: 30px;
@@ -79,7 +80,7 @@
   &:active,
   &:focus,
   &:hover {
-    color: $r_brand-primary-light;
+    color: #ffffff;
     background-color: $r_brand-primary;
   }
   &.highlight,
@@ -87,7 +88,7 @@
     color: #ffffff;
   }
   i {
-    font-size: .7em;
+    font-size: .65em;
     &.text-danger {
       color: $brand-danger;
     }
@@ -107,7 +108,7 @@
     &:hover,
     &:active,
     &:focus {
-      color: #fff;
+      color: #ffffff;
       background-color: $r_brand-primary-dark;
     }
   }
@@ -133,6 +134,7 @@
 .primary-menu.nav.nav-tabs > li.active > a:focus,
 .primary-menu.nav.nav-tabs > li.active > a:active {
   background-color: $r_brand-primary;
+  color: #ffffff;
   border: none;
   &.primary-menu-item-logo {
     background-color: transparent;
@@ -163,8 +165,9 @@
 
 .primary-menu.nav.nav-tabs > li .signal {
   position: absolute;
-  top: 8px;
-  right: 3px;
+  top: 9px;
+  right: 5px;
+  font-size: .65em;
 }
 
 .primary-menu.nav.nav-tabs button {
@@ -180,7 +183,7 @@
     }
     .signal {
       right: inherit;
-      left: 5px;
+      left: 3px;
     }
     &.primary-menu-item-logo {
       width: 15px;
