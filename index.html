@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Revinate Styleguide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.css" />
   <link rel="stylesheet" href="css/app.css" />
@@ -19,25 +20,25 @@
           <li class="logo-item">
             <a class="logo" href="#home" aria-controls="home" role="tab" data-toggle="tab">Revinate</a>
           </li>
-          <li role="presentation" class="active">
+          <li role="presentation" class="active hidden-xs">
             <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
               Dashboard
               <i class="fa fa-circle text-danger signal"></i>
             </a>
           </li>
-          <li role="presentation">
+          <li role="presentation" class="hidden-xs">
             <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
               Feedback
             </a>
           </li>
-          <li role="presentation">
+          <li role="presentation" class="hidden-xs">
             <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Marketing</a>
           </li>
-          <li role="presentation">
+          <li role="presentation" class="hidden-xs">
             <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Management</a>
           </li>
 
-          <li class="primary-menu-item-label primary-menu-item-bordered pull-right">
+          <li class="primary-menu-item-label primary-menu-item-bordered pull-right hidden-xs">
             <a href="">
               <button class="btn btn-primary btn-xs btn-info">
                 On Duty
@@ -57,7 +58,8 @@
               <li><a href="#">Logout</a></li>
             </ul>
           </li>
-          <li role="presentation" class="dropdown pull-right primary-menu-item-icon">
+
+          <li role="presentation" class="dropdown pull-right primary-menu-item-icon hidden-xs">
             <a class="dropdown-toggle primary-menu-item-bordered primary-menu-item-icon" data-toggle="dropdown" href="#"
                role="button" aria-expanded="false">
               <i class="revicon-help-circle"></i>
@@ -67,7 +69,7 @@
               <li><a href="#">Another action</a></li>
             </ul>
           </li>
-          <li role="presentation" class="dropdown pull-right">
+          <li role="presentation" class="dropdown pull-right hidden-xs">
             <a class="dropdown-toggle primary-menu-item-bordered" data-toggle="dropdown" href="#" role="button"
                aria-expanded="false">
               The Avertine Hotel, Las Vegas <i class="fa fa-angle-down"></i>
@@ -77,7 +79,7 @@
               <li><a href="#">Another action</a></li>
             </ul>
           </li>
-          <li class="primary-menu-item-text primary-menu-item-bordered pull-right">
+          <li class="primary-menu-item-text primary-menu-item-bordered pull-right hidden-xs">
             Property
           </li>
         </ul>
@@ -88,7 +90,7 @@
     <div class="l-header-bottom">
       <div class="container">
 
-        <div class="tab-content">
+        <div class="tab-content hidden-xs">
           <div role="tabpanel" class="tab-pane active" id="home">
 
             <button type="button" class="btn btn-primary btn-header active mg-r-sm">
@@ -141,6 +143,14 @@
           <div role="tabpanel" class="tab-pane" id="messages">Marketing</div>
           <div role="tabpanel" class="tab-pane" id="settings">Management</div>
         </div>
+
+
+          <button type="button" class="btn btn-primary btn-header btn-block visible-xs active">
+            <i class="revicon-request-center"></i>
+            Request Center
+            <span class="badge badge-danger mg-l-sm">123</span>
+            <i class="fa fa-angle-down mg-l-xs"></i>
+          </button>
 
       </div>
     </div>

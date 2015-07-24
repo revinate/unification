@@ -5,11 +5,14 @@
 }
 
 .l-header-top {
-  height: 26px;
+  height: 40px;
   background-color: $r_brand-primary-darker;
   font-family: 'Gram', sans-serif;
   font-weight: 300;
   letter-spacing: .12em;
+  @media (min-width: $screen-sm-min) {
+    height: 26px;
+  }
 }
 
 .l-header-bottom {
@@ -18,9 +21,6 @@
   background-color: $r_brand-primary;
   font-family: Lato;
   position: relative;
-  //&.current-active-page {
-  //  background-color: $r_brand-primary;
-  //}
 }
 
 .l-main-content {
