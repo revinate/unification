@@ -70,6 +70,19 @@
       max-width: 36px;
     }
   }
+  &.prop-selector {
+    max-width: 285px;
+    a {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    &.primary-menu-item-text {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
 }
 
 .primary-menu.nav.nav-tabs > li > a {

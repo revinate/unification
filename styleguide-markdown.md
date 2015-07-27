@@ -81,7 +81,7 @@ tabbed content is inside `.l-header-bottom`.
               <li><a href="#">Another action</a></li>
             </ul>
           </li>
-          <li class="dropdown pull-right">
+          <li class="dropdown pull-right prop-selector">
             <a class="dropdown-toggle primary-menu-item-bordered" data-toggle="dropdown" href="#"
                aria-expanded="false">
               Property <i class="fa fa-angle-down"></i>
@@ -91,7 +91,7 @@ tabbed content is inside `.l-header-bottom`.
               <li><a href="#">Another action</a></li>
             </ul>
           </li>
-          <li class="primary-menu-item-bordered primary-menu-item-text pull-right">Property</li>
+          <li class="primary-menu-item-bordered primary-menu-item-text pull-right prop-selector">Property</li>
         </ul>
 
       </div>
