@@ -76,6 +76,9 @@
       text-overflow: ellipsis;
       overflow: hidden;
       white-space: nowrap;
+      i {
+        padding: 10px 5px
+      }
     }
     &.primary-menu-item-text {
       text-overflow: ellipsis;

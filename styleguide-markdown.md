@@ -84,7 +84,8 @@ tabbed content is inside `.l-header-bottom`.
           <li class="dropdown pull-right prop-selector">
             <a class="dropdown-toggle primary-menu-item-bordered" data-toggle="dropdown" href="#"
                aria-expanded="false">
-              Property <i class="fa fa-angle-down"></i>
+               <i class="fa fa-angle-down pull-right"></i>
+               Property
             </a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="#">Action</a></li>
