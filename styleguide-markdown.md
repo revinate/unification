@@ -155,6 +155,24 @@ tabbed content is inside `.l-header-bottom`.
   </header>
 
 
+### Headers and Breadcrumbs
+
+- Find Page Headers and Header tags here
+- All breadcrumbs and h1 tags go inside of div class="page-header"
+
+
+    @example
+    <div class="page-header">
+        <h3 class="breadcrumbs">
+            <a href="#">Page 1</a> &raquo;
+            <a href="#">Page 2</a> &raquo;
+            Current Page
+        </h3>
+        <h1>Page Header (h1)</h1>
+        <h2>Section Header (h2)</h2>
+        <h3>Header (h3)</h3>
+    </div>
+
 ### Integration
 
 - Add the unification repo (`git@github.com:revinate/unification`) to your project, preferably with bower;

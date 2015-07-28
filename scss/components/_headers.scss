@@ -1,0 +1,21 @@
+.page-header {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  border-bottom: none;
+  h1 {
+    color: #25323E;
+    font-size: 32px;
+    @extend .FontLatoLight;
+    font-weight: 300;
+    line-height: 1;
+    padding: 20px 0;
+    margin: 0;
+  }
+  h3.breadcrumbs {
+    font-size: 13px;
+    @extend .FontLatoLight;
+    margin: 0;
+    font-weight: 300;
+
+  }
+}
