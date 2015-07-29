@@ -77,10 +77,10 @@ tabbed content is inside `.l-header-bottom`.
                            href="#"
                            role="button"
                            aria-expanded="false"
-                           data-placement="bottom"
-                           data-trigger="hover"
-                           bs-popover
-                           data-content="Help & Feedback">
+                           rel="tooltip"
+                           bs-tooltip
+                           data-title="Help & Feedback"
+                           data-placement="bottom">
               <i class="fa fa-question-circle"></i>
             </a>
             <ul class="dropdown-menu" role="menu">
