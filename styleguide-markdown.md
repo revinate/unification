@@ -72,8 +72,15 @@ tabbed content is inside `.l-header-bottom`.
             </ul>
           </li>
           <li class="dropdown pull-right primary-menu-item-icon">
-            <a class="dropdown-toggle primary-menu-item-bordered primary-menu-item-icon" data-toggle="dropdown" href="#"
-               aria-expanded="false">
+            <a class="dropdown-toggle primary-menu-item-bordered primary-menu-item-icon" d
+                           ata-toggle="dropdown"
+                           href="#"
+                           role="button"
+                           aria-expanded="false"
+                           data-placement="bottom"
+                           data-trigger="hover"
+                           bs-popover
+                           data-content="Help & Feedback">
               <i class="fa fa-question-circle"></i>
             </a>
             <ul class="dropdown-menu" role="menu">

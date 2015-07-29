@@ -47,10 +47,10 @@
           </li>
 
           <li role="presentation" class="dropdown pull-right primary-menu-item-icon">
-            <a class="dropdown-toggle primary-menu-item-bordered primary-menu-item-icon" data-toggle="dropdown"
+            <a class="dropdown-toggle primary-menu-item-bordered primary-menu-item-icon"
                href="#"
                role="button"
-               aria-expanded="false" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+               aria-expanded="false" data-toggle="dropdown">
               <i class="revicon-cog"></i>
             </a>
             <ul class="dropdown-menu" role="menu">
@@ -60,8 +60,15 @@
           </li>
 
           <li role="presentation" class="dropdown pull-right primary-menu-item-icon hidden-xs">
-            <a class="dropdown-toggle primary-menu-item-bordered primary-menu-item-icon" data-toggle="dropdown" href="#"
-               role="button" aria-expanded="false">
+            <a class="dropdown-toggle primary-menu-item-bordered primary-menu-item-icon" d
+               ata-toggle="dropdown"
+               href="#"
+               role="button"
+               aria-expanded="false"
+               data-placement="bottom"
+               data-trigger="hover"
+               bs-popover
+               data-content="Help & Feedback">
               <i class="revicon-help-circle"></i>
             </a>
             <ul class="dropdown-menu" role="menu">
@@ -228,6 +235,10 @@
 
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
-
+<script>
+    $(document).ready(function(){
+        $('[data-tip="tooltip"]').tooltip();
+    });
+</script>
 </body>
 </html>
