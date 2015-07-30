@@ -103,7 +103,10 @@
   padding: 0 20px;
   letter-spacing: .2em;
   &:active,
-  &:focus,
+  &:focus {
+    background-color: transparent;
+  }
+
   &:hover {
     color: #ffffff;
     background-color: $r_brand-primary;
@@ -161,9 +164,7 @@
 }
 
 .primary-menu.nav.nav-tabs > li.active > a,
-.primary-menu.nav.nav-tabs > li.active > a:hover,
-.primary-menu.nav.nav-tabs > li.active > a:focus,
-.primary-menu.nav.nav-tabs > li.active > a:active {
+.primary-menu.nav.nav-tabs > li.active > a:hover {
   background-color: $r_brand-primary;
   color: #ffffff;
   border: none;
