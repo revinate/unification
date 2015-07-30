@@ -2,8 +2,8 @@
   -webkit-transition: all .2s;
   -moz-transition: all .2s;
   transition: all .2s;
-  text-transform: uppercase;
-  font-family: 'Gram', sans-serif;
+  //text-transform: uppercase;
+  //font-family: 'Gram', sans-serif;
 
   i:first-child {
     font-size: 1.4em;
@@ -19,8 +19,8 @@
   border: none;
   color: $r_brand-primary-lighter;
   padding: 7px 12px;
-  text-transform: inherit;
-  font-family: Lato;
+  //text-transform: inherit;
+  //font-family: Lato;
   &.active {
     i:first-child {
       color: #3CBFA2;
