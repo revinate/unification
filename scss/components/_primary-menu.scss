@@ -35,6 +35,9 @@
 .primary-menu.nav.nav-tabs > li {
   margin-bottom: 0;
   position: relative;
+  &.hastooltip {
+    position: initial;
+  }
   &:focus {
     outline: none;
   }
