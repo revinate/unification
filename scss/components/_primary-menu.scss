@@ -105,6 +105,7 @@
   border-radius: 0;
   padding: 0 20px;
   letter-spacing: .2em;
+  transition: all 0.2s ease;
   &:active,
   &:focus {
     background-color: transparent;
