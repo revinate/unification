@@ -128,6 +128,8 @@
   &.primary-menu-item-icon {
     i {
       font-size: 1.4em;
+      position: relative;
+      right: 1px;
       @media (min-width: $screen-sm-min) {
         font-size: 1.2em;
         line-height: 1.5em;
