@@ -164,8 +164,12 @@ tabbed content is inside `.l-header-bottom`.
 
 ### Headers and Breadcrumbs
 
-- Find Page Headers and Header tags here
-- All breadcrumbs and h1 tags go inside of div class="page-header"
+Herein lies the structure and styling of all page headers, header tags and breadcrumbs
+
+**Page Header**
+- All breadcrumbs and h1 tags go inside of `.page-header`, which provides the appropriate margin and padding.
+- Breadcrumbs are added using anchor tags inside of `h3.breadcrumbs`, separated by ` &raquo; `
+- All other header tags can go directly into `.l-main-content`
 
 
     @example
@@ -176,9 +180,10 @@ tabbed content is inside `.l-header-bottom`.
             Current Page
         </h3>
         <h1>Page Header (h1)</h1>
+    </div>
         <h2>Section Header (h2)</h2>
         <h3>Header (h3)</h3>
-    </div>
+
 
 ### Integration
 
