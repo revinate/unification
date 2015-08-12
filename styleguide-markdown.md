@@ -167,22 +167,27 @@ tabbed content is inside `.l-header-bottom`.
 Herein lies the structure and styling of all page headers, header tags and breadcrumbs
 
 **Page Header**
-- All breadcrumbs and h1 tags go inside of `.page-header`, which provides the appropriate margin and padding.
-- Breadcrumbs are added using anchor tags inside of `h3.breadcrumbs`, separated by ` &raquo; `
+- Every page should have a page header that includes a page title. You can also add breadcrumbs where needed, and a
+call to action button to the right (Zone 1).
 - All other header tags can go directly into `.l-main-content`
+- In Inguest right now, breadcrumbs are anchor tags inside of `h3.breadcrumbs`, separated by ` &raquo; `. We should
+stick to the bootstrap markup for consistency. For backwards compatibility, both markup works.
+
 
 
     @example
-    <div class="page-header">
-        <h3 class="breadcrumbs">
-            <a href="#">Page 1</a> &raquo;
-            <a href="#">Page 2</a> &raquo;
-            Current Page
-        </h3>
-        <h1>Page Header (h1)</h1>
-    </div>
-        <h2>Section Header (h2)</h2>
-        <h3>Header (h3)</h3>
+    <header class="page-header">
+      <ol class="breadcrumb">
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li>
+        <li class="active">Current Page</li>
+      </ol>
+      <h1>Page Title</h1>
+      <a href="#" class="btn btn-primary">Call to Action</a>
+    </header>
+
+    <h2>Section Header (h2)</h2>
+    <h3>Header (h3)</h3>
 
 
 ### Integration

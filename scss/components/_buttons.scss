@@ -7,6 +7,28 @@
   line-height: 1.5;
   letter-spacing: .1em;
 
+  color: #444;
+  &.btn-primary,
+  &.btn-success,
+  &.btn-danger,
+  &.btn-warning,
+  &.btn-info {
+    color: white;
+  }
+
+  &.btn-default {
+    background-color: #D8D8D8;
+    &:hover {
+      background-color: darken(#D8D8D8,5%);
+    }
+  }
+
+  &.btn-secondary {
+    color: #FFF;
+    background-color: #3CBFA2;
+  }
+
+
   border-radius: 3px;
   padding: 10px 20px 8px;
   font-size: 12px;

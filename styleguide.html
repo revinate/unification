@@ -446,35 +446,47 @@
                       <strong class="sg">Page Header</strong>
                     </p>
                     <ul class="sg">
-                      <li class="sg">All breadcrumbs and h1 tags go inside of
-                        <code class="sg">.page-header</code>, which provides the appropriate margin and padding.</li>
-                      <li class="sg">Breadcrumbs are added using anchor tags inside of
-                        <code class="sg">h3.breadcrumbs</code>, separated by
-                        <code class="sg">&amp;raquo;</code>
-                      </li>
+                      <li class="sg">Every page should have a page header that includes a page title. You can also add breadcrumbs where needed, and a call to action button to the right (Zone 1).</li>
                       <li class="sg">All other header tags can go directly into
                         <code class="sg">.l-main-content</code>
                       </li>
+                      <li class="sg">In Inguest right now, breadcrumbs are anchor tags inside of
+                        <code class="sg">h3.breadcrumbs</code>, separated by
+                        <code class="sg">&amp;raquo;</code>. We should stick to the bootstrap markup for consistency. For backwards compatibility, both markup works.</li>
                     </ul>
                   </div>
                   <div class="sg-example">
                     <div class="sg-canvas">
-                      <div class="page-header">
-                        <h3 class="breadcrumbs">
-                          <a href="#">Page 1</a>&#xBB;
-                          <a href="#">Page 2</a>&#xBB; Current Page
-                        </h3>
-                        <h1>Page Header (h1)</h1>
-                      </div>
+                      <header class="page-header">
+                        <ol class="breadcrumb">
+                          <li>
+                            <a href="#">Page 1</a>
+                          </li>
+                          <li>
+                            <a href="#">Page 2</a>
+                          </li>
+                          <li class="active">Current Page</li>
+                        </ol>
+                        <h1>Page Title</h1>
+                        <a href="#" class="btn btn-primary">Call to Action</a>
+                      </header>
+
                       <h2>Section Header (h2)</h2>
                       <h3>Header (h3)</h3>
-                    </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;page-header&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;breadcrumbs&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>Page 1<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>&amp;raquo;
-    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>Page 2<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>&amp;raquo; Current Page
-  <span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Page Header (h1)<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                    </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">header</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;page-header&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">ol</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;breadcrumb&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>Page 1<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>Page 2<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;active&quot;</span>&gt;</span>Current Page<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Page Title<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-primary&quot;</span>&gt;</span>Call to Action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">header</span>&gt;</span>
+
 <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>Section Header (h2)<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span>Header (h3)<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span></pre>
                   </div>

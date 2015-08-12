@@ -12,3 +12,12 @@ body {
 .text-blue {
   color: #3BA1F8 !important;
 }
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
