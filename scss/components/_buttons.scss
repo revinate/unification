@@ -2,8 +2,33 @@
   -webkit-transition: all .2s;
   -moz-transition: all .2s;
   transition: all .2s;
-  //text-transform: uppercase;
-  //font-family: 'Gram', sans-serif;
+
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: .1em;
+
+  border-radius: 3px;
+  padding: 10px 20px 8px;
+  font-size: 12px;
+
+  &.btn-xs, &.btn-sm, &.btn-lg {
+    border-radius: 3px;
+  }
+
+  &.btn-xs {
+    padding: 3px 7px 2px;
+    font-size: 11px;
+  }
+
+  &.btn-sm {
+    padding: 6px 10px 5px;
+    font-size: 11px;
+  }
+
+  &.btn-lg {
+    padding: 15px 40px 13px;
+    font-size: 14px;
+  }
 
   i:first-child {
     font-size: 1.4em;
@@ -19,8 +44,7 @@
   border: none;
   color: $r_brand-primary-lighter;
   padding: 7px 12px;
-  //text-transform: inherit;
-  //font-family: Lato;
+
   &.active {
     i:first-child {
       color: #3CBFA2;
@@ -29,7 +53,9 @@
   }
   &.btn-sm {
     margin-top: 3px;
+    padding: 7px 12px;
   }
+
   &.btn-primary {
     background-color: $r_brand-primary-dark;
     &.active,
@@ -60,11 +86,11 @@
   }
 }
 
-.btn-rounded {
+.btn.btn-rounded {
   border-radius: 40px;
 }
 
-.btn-circle {
+.btn.btn-circle {
   border-radius: 100%;
   width: 33px;
   height: 33px;
