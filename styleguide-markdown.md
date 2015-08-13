@@ -170,7 +170,7 @@ Herein lies the structure and styling of all page headers, header tags and bread
 - Every page should have a page header that includes a page title. You can also add breadcrumbs where needed, and a
 call to action button to the right (Zone 1).
 - All other header tags can go directly into `.l-main-content`
-- In Inguest right now, breadcrumbs are anchor tags inside of `h3.breadcrumbs`, separated by ` &raquo; `. We should
+- In Inguest right now, breadcrumbs are anchor tags inside of `ol.breadcrumb li`, separated by. We should
 stick to the bootstrap markup for consistency. For backwards compatibility, both markup works.
 
 
