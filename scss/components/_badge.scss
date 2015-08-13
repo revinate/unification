@@ -6,8 +6,6 @@
   text-align: center;
   line-height: 20px;
   padding: 0 5px;
-  //text-transform: uppercase;
-  //font-family: 'Gram', sans-serif;
   &.badge-danger {
     background-color: $brand-danger;
     color: #ffffff;
@@ -17,4 +15,10 @@
     color: inherit;
     font-size: 1em;
   }
+}
+span.label {
+  text-transform: uppercase;
+  font-family: 'Gram', sans-serif;
+  font-weight: normal;
+  font-size: 12px;
 }
