@@ -63,6 +63,9 @@
 }
 
 .btn-header {
+  text-transform: none;
+  letter-spacing: .01em;
+  font-size: 14px;
   border: none;
   color: $r_brand-primary-lighter;
   padding: 7px 12px;
@@ -79,10 +82,12 @@
   }
 
   &.btn-primary {
+    color: $r_brand-primary-lighter;
     background-color: $r_brand-primary-dark;
     &.active,
     &:hover,
     &:active {
+      color: #ffffff;
       background-color: $r_brand-primary-darker;
     }
   }
