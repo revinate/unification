@@ -59,7 +59,7 @@ tabbed content is inside `.l-header-bottom`.
             <a href="#marketing" aria-controls="marketing" role="tab" data-toggle="tab">Marketing</a>
           </li>
           <li class="pull-right primary-menu-item-bordered primary-menu-item-label">
-            <span class="label label-success">On duty</span>
+            <span class="label label-success badge-label">On duty</span>
           </li>
           <li class="dropdown pull-right primary-menu-item-icon">
             <a class="dropdown-toggle primary-menu-item-bordered primary-menu-item-icon" data-toggle="dropdown"
