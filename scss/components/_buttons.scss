@@ -7,6 +7,9 @@
   line-height: 1.5;
   letter-spacing: .1em;
 
+  @extend .FontLatoBold;
+  font-weight: bold;
+
   color: #444;
   &.btn-primary,
   &.btn-success,
