@@ -73,6 +73,9 @@
   color: $r_brand-primary-lighter;
   padding: 7px 12px;
 
+  @extend .FontLato;
+  font-weight: normal;
+
   &.active {
     i:first-child {
       color: #3CBFA2;
