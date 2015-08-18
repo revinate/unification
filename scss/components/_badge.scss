@@ -15,7 +15,25 @@
     color: inherit;
     font-size: 1em;
   }
+  &.on-duty {
+    background-color: $brand-success;
+  }
+  &.off-duty {
+    background-color: $brand-danger;
+  }
+  &.on-property {
+    background-color: $r_brand-tertiary;
+  }
+  &.pre-sale {
+    background-color: $r_brand-secondary;
+  }
+  &.post-sale {
+    background-color: #9B9B9B;
+  }
+  font-weight: normal;
+  @extend .FontLatoLight;
 }
+
 span.label, .badge-label button {
   text-transform: uppercase;
   font-family: 'Gram', sans-serif !important;
@@ -26,6 +44,7 @@ span.label, .badge-label button {
   display: inline-block !important;
   padding: 0 5px !important;
 }
+
 //remove margin between on duty list items
 .on-duty-list-item {
   margin-right: 0;

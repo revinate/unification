@@ -1,6 +1,17 @@
 .label {
-  //text-transform: uppercase;
-  //font-family: 'Gram', sans-serif;
-  //padding: .3em .6em .2em;
-  //font-size: 1em;
+  &.on-duty {
+    background-color: $brand-success;
+  }
+  &.off-duty {
+    background-color: $brand-danger;
+  }
+  &.on-property {
+    background-color: $r_brand-tertiary;
+  }
+  &.pre-sale {
+    background-color: $r_brand-secondary;
+  }
+  &.post-sale {
+    background-color: #9B9B9B;
+  }
 }
