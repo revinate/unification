@@ -21,6 +21,10 @@
 - To visualize the styleguide in your local env., run `grunt` from the terminal and visit `http://localhost:9000`
 
 ### Compile Sass
-
-- `cd assets/`
 - `compass compile` or `compass watch`
+
+### How to Deploy
+- run `cd deploy_scripts`
+- run `bundle install` (First time only)
+- run `cap production deploy` 
+
