@@ -22,6 +22,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-styledown');
 	grunt.loadNpmTasks('grunt-serve');
 
-	grunt.registerTask('default', ['styledown', 'serve']);
+	grunt.registerTask('default', ['styledown']);
+	grunt.registerTask('serve', ['styledown', 'serve']);
 
 };
