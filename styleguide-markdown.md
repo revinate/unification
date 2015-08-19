@@ -91,7 +91,7 @@ tabbed content is inside `.l-header-bottom`.
           <li class="dropdown pull-right prop-selector">
             <a class="dropdown-toggle primary-menu-item-bordered" data-toggle="dropdown" href="#"
                aria-expanded="false">
-               <i class="fa fa-angle-down pull-right"></i>
+               <i class="revicon-dropdown pull-right"></i>
                Property
             </a>
             <ul class="dropdown-menu" role="menu">
@@ -118,7 +118,7 @@ tabbed content is inside `.l-header-bottom`.
           <div class="btn-group mg-r-sm">
             <button type="button" class="btn btn-primary btn-header dropdown-toggle" data-toggle="dropdown"
                     aria-expanded="false">
-              <i class="fa fa-heart mg-r-xs"></i> Sentiment Analysis <i class="fa fa-angle-down"></i> <span
+              <i class="fa fa-heart mg-r-xs"></i> Sentiment Analysis <i class="revicon-dropdown"></i> <span
               class="badge badge-danger pull-right mg-l-sm">42</span>
             </button>
             <ul class="dropdown-menu" role="menu">
