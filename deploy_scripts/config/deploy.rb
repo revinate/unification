@@ -14,7 +14,6 @@ set :normalize_asset_timestamps, false
 before "deploy:restart", "deploy:npm"
 after "deploy:npm", "deploy:bower"
 after "deploy:bower", "deploy:grunt"
-after "deploy:grunt", "deploy:compass"
 
 desc "Npm install"
 deploy.task :npm do
@@ -29,11 +28,6 @@ end
 desc "Grunt"
 deploy.task :grunt do
     run "cd #{release_path} && grunt"
-end
-
-desc "Compass compile"
-deploy.task :compass do
-    run "cd #{release_path}/assets && compass compile"
 end
 
 desc "Restart Apache"
