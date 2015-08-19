@@ -27,7 +27,7 @@ end
 
 desc "Grunt"
 deploy.task :grunt do
-    run "cd #{release_path} && grunt"
+    run "cd #{release_path} && grunt deploy"
 end
 
 desc "Restart Apache"
