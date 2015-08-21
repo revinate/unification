@@ -1,10 +1,12 @@
 .alert-page {
   text-align: center;
+  min-height: 550px;
   img.alert-icon {
-    margin: 20px 0;
+    margin: 20px 0 0;
   }
   h1 {
     @extend .FontLatoLight;
+    margin: 20px 0;
   }
   .btn {
     margin: 20px 0;
