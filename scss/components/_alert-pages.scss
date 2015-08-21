@@ -1,3 +1,12 @@
 .alert-page {
   text-align: center;
+  img.alert-icon {
+    margin: 20px 0;
+  }
+  h1 {
+    @extend .FontLatoLight;
+  }
+  .btn {
+    margin: 20px 0;
+  }
 }
