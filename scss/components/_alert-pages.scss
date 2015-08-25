@@ -1,13 +1,15 @@
 .alert-page {
   text-align: center;
   min-height: 550px;
-  float: none;
   img.alert-icon {
     margin: 20px 0 0;
   }
   h1 {
     @extend .FontLatoLight;
     margin: 20px 0;
+  }
+  textarea {
+    margin-top: 20px;
   }
   .btn {
     margin: 20px 0;
