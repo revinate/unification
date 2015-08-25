@@ -21,3 +21,10 @@ body {
 .clearfix:after {
   clear: both;
 }
+
+
+.input-group {
+  input.form-control {
+    height: 38px;
+  }
+}
