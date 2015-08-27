@@ -67,7 +67,7 @@
       overflow: hidden;
       white-space: nowrap;
       i {
-        padding: 10px 5px;
+        padding: 6px 5px;
       }
     }
     &.primary-menu-item-text {
@@ -107,7 +107,7 @@
     color: #ffffff;
   }
   i {
-    font-size: .65em;
+    font-size: 1em;
     &.text-danger {
       color: $brand-danger;
     }
