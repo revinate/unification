@@ -18,4 +18,7 @@
     background-color: white;
     border-bottom: 1px solid #ddd !important;
   }
+  &.table-hover > tbody > tr:hover {
+    background: #E0EFFD;
+  }
 }
