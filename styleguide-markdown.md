@@ -189,6 +189,67 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
     <h2>Section Header (h2)</h2>
     <h3>Header (h3)</h3>
 
+### Tables
+
+- All tables use `.table`
+- Row striping is controlled by `.table-striped`
+- Hover interaction (only when entire row is interactive), use `.table-hover`
+
+
+**Panel Table**
+- Panel tables and headers are wrapped in  `.panel`
+- `.panel-default` applies the border
+- Panel header is wrapped in `header.panel-heading` with title in `h3.panel-title` and subtext in `small` tag
+- `button` elements may be included in the header, and will align right by default
+
+
+    @example
+    <div class="panel panel-default">
+        <header class="panel-heading">
+            <h3 class="panel-title">Full Guest Cycle Communication
+                <small>Recurring, Event Driven Guest Messages</small>
+            </h3>
+            <button class="btn btn-primary">New Campaign</button>
+        </header>
+        <div class="panel-body panel-body-table">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                        <th>Column 3</th>
+                        <th>Column 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
 ### Integration
 

@@ -71,6 +71,9 @@
                   <a href="#headers-and-breadcrumbs">Headers and Breadcrumbs</a>
                 </li>
                 <li>
+                  <a href="#tables">Tables</a>
+                </li>
+                <li>
                   <a href="#integration">Integration</a>
                 </li>
               </ul>
@@ -488,6 +491,133 @@
 
 <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>Section Header (h2)<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span>Header (h3)<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span></pre>
+                  </div>
+                </section>
+                <section class="sg-block sg-section-tables">
+                  <div class="sg-text">
+                    <h3 id="tables" class="sg">Tables</h3>
+                    <ul class="sg">
+                      <li class="sg">All tables use
+                        <code class="sg">.table</code>
+                      </li>
+                      <li class="sg">Row striping is controlled by
+                        <code class="sg">.table-striped</code>
+                      </li>
+                      <li class="sg">Hover interaction (only when entire row is interactive), use
+                        <code class="sg">.table-hover</code>
+                      </li>
+                    </ul>
+                    <p class="sg">
+                      <strong class="sg">Panel Table</strong>
+                    </p>
+                    <ul class="sg">
+                      <li class="sg">Panel tables and headers are wrapped in
+                        <code class="sg">.panel</code>
+                      </li>
+                      <li class="sg">
+                        <code class="sg">.panel-default</code>applies the border</li>
+                      <li class="sg">Panel header is wrapped in
+                        <code class="sg">header.panel-heading</code>with title in
+                        <code class="sg">h3.panel-title</code>and subtext in
+                        <code class="sg">small</code>tag</li>
+                      <li class="sg">
+                        <code class="sg">button</code>elements may be included in the header, and will align right by default</li>
+                    </ul>
+                  </div>
+                  <div class="sg-example">
+                    <div class="sg-canvas">
+                      <div class="panel panel-default">
+                        <header class="panel-heading">
+                          <h3 class="panel-title">Full Guest Cycle Communication
+                            <small>Recurring, Event Driven Guest Messages</small>
+                          </h3>
+                          <button class="btn btn-primary">New Campaign</button>
+                        </header>
+                        <div class="panel-body panel-body-table">
+                          <table class="table table-striped table-hover">
+                            <thead>
+                              <tr>
+                                <th>Column 1</th>
+                                <th>Column 2</th>
+                                <th>Column 3</th>
+                                <th>Column 4</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Data 1</td>
+                                <td>Data 2</td>
+                                <td>Data 3</td>
+                                <td>Data 4</td>
+                              </tr>
+                              <tr>
+                                <td>Data 1</td>
+                                <td>Data 2</td>
+                                <td>Data 3</td>
+                                <td>Data 4</td>
+                              </tr>
+                              <tr>
+                                <td>Data 1</td>
+                                <td>Data 2</td>
+                                <td>Data 3</td>
+                                <td>Data 4</td>
+                              </tr>
+                              <tr>
+                                <td>Data 1</td>
+                                <td>Data 2</td>
+                                <td>Data 3</td>
+                                <td>Data 4</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;panel panel-default&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">header</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;panel-heading&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;panel-title&quot;</span>&gt;</span>Full Guest Cycle Communication
+      <span class="hljs-tag">&lt;<span class="hljs-title">small</span>&gt;</span>Recurring, Event Driven Guest Messages<span class="hljs-tag">&lt;/<span class="hljs-title">small</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-primary&quot;</span>&gt;</span>New Campaign<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">header</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;panel-body panel-body-table&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">table</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;table table-striped table-hover&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Column 1<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Column 2<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Column 3<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Column 4<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">thead</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">tbody</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 1<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 2<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 3<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 4<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 1<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 2<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 3<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 4<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 1<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 2<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 3<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 4<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 1<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 2<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 3<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 4<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
                   </div>
                 </section>
                 <section class="sg-block sg-section-integration">
