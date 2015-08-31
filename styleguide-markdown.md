@@ -251,6 +251,29 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
         </div>
     </div>
 
+
+###Buttons
+
+- `.btn` can be applied to button and anchor elements
+- 4 buttons sizes `.btn-xs .btn-sm .btn-lg` medium is the default size
+- Button colors are `.btn-default .btn-primary .btn-secondary .btn-success .btn-danger .btn-info .btn-warning`
+
+
+    @example
+    <button class="btn btn-xs btn-default">XSmall</button>
+    <button class="btn btn-sm btn-default">Small</button>
+    <button class="btn btn-default">Medium</button>
+    <button class="btn btn-lg btn-default">Large</button>
+    <br />
+    <br />
+    <button class="btn btn-default">Default</button>
+    <button class="btn btn-primary">Primary</button>
+    <button class="btn btn-secondary">Secondary</button>
+    <button class="btn btn-success">Success</button>
+    <button class="btn btn-danger">Danger</button>
+    <button class="btn btn-info">Info</button>
+    <button class="btn btn-warning">Warning</button>
+
 ### Integration
 
 - Add the unification repo (`git@github.com:revinate/unification`) to your project, preferably with bower;
