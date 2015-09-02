@@ -49,6 +49,9 @@
                   <li><a href="#general-layout">General Layout</a></li>
                   <li><a href="#primary-menu">Primary Menu</a></li>
                   <li><a href="#headers-and-breadcrumbs">Headers and Breadcrumbs</a></li>
+                  <li><a href="#tables">Tables</a></li>
+                  <li><a href="#buttons">Buttons</a></li>
+                  <li><a href="#labels-and-badges">Labels &amp; Badges</a></li>
                   <li><a href="#integration">Integration</a></li>
                 </ul>
               </nav>

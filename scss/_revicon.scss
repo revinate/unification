@@ -23,6 +23,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.revicon-dropdown:before {
+  content: "\e60a";
+}
 .revicon-revinate-logo:before {
   content: "\e609";
 }
@@ -53,3 +56,35 @@
 .revicon-request-center:before {
   content: "\e608";
 }
+
+
+//.revicon-revinate-logo:before {
+//  content: "\e609";
+//}
+//.revicon-compass-2:before {
+//  content: "\e600";
+//}
+//.revicon-task-checklist:before {
+//  content: "\e601";
+//}
+//.revicon-phone-book-2:before {
+//  content: "\e602";
+//}
+//.revicon-smartphone-iphone:before {
+//  content: "\e603";
+//}
+//.revicon-help-circle:before {
+//  content: "\e604";
+//}
+//.revicon-email-send-1:before {
+//  content: "\e605";
+//}
+//.revicon-speed-gauge:before {
+//  content: "\e606";
+//}
+//.revicon-cog:before {
+//  content: "\e607";
+//}
+//.revicon-request-center:before {
+//  content: "\e608";
+//}

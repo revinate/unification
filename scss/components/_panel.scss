@@ -12,6 +12,14 @@
         @extend .FontLatoLight;
       }
     }
+    .hidden-link {
+      font-size: .75em;
+      span {  color: white;  }
+      &:hover {
+        color: $brand-primary;
+        text-decoration: none;
+      }
+    }
     .btn {
       float: right;
       margin-top: 3px;
@@ -19,5 +27,11 @@
   }
   .panel-body.panel-body-table {
     padding: 0 !important;
+  }
+  .panel-footer {
+    padding: 15px 20px;
+    .pagination, .pager {
+      margin: 0 !important;
+    }
   }
 }

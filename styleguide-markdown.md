@@ -91,7 +91,7 @@ tabbed content is inside `.l-header-bottom`.
           <li class="dropdown pull-right prop-selector">
             <a class="dropdown-toggle primary-menu-item-bordered" data-toggle="dropdown" href="#"
                aria-expanded="false">
-               <i class="fa fa-angle-down pull-right"></i>
+               <i class="fa fa-caret-down pull-right"></i>
                Property
             </a>
             <ul class="dropdown-menu" role="menu">
@@ -118,7 +118,7 @@ tabbed content is inside `.l-header-bottom`.
           <div class="btn-group mg-r-sm">
             <button type="button" class="btn btn-primary btn-header dropdown-toggle" data-toggle="dropdown"
                     aria-expanded="false">
-              <i class="fa fa-heart mg-r-xs"></i> Sentiment Analysis <i class="fa fa-angle-down"></i> <span
+              <i class="fa fa-heart mg-r-xs"></i> Sentiment Analysis <i class="fa fa-caret-down mg-l-xs"></i> <span
               class="badge badge-danger pull-right mg-l-sm">42</span>
             </button>
             <ul class="dropdown-menu" role="menu">
@@ -189,6 +189,113 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
     <h2>Section Header (h2)</h2>
     <h3>Header (h3)</h3>
 
+### Tables
+
+- All tables use `.table`
+- Row striping is controlled by `.table-striped`
+- Hover interaction (only when entire row is interactive), use `.table-hover`
+
+
+**Panel Table**
+- Panel tables and headers are wrapped in  `.panel`
+- `.panel-default` applies the border
+- Panel header is wrapped in `header.panel-heading` with title in `h3.panel-title` and subtext in `small` tag
+- `button` elements may be included in the header, and will align right by default
+
+
+    @example
+    <div class="panel panel-default">
+        <header class="panel-heading">
+            <h3 class="panel-title">Full Guest Cycle Communication
+                <small>Recurring, Event Driven Guest Messages</small>
+            </h3>
+            <button class="btn btn-primary">New Campaign</button>
+        </header>
+        <div class="panel-body panel-body-table">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                        <th>Column 3</th>
+                        <th>Column 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+###Buttons
+
+- `.btn` can be applied to button and anchor elements
+- 4 buttons sizes `.btn-xs .btn-sm .btn-lg` medium is the default size
+- Button colors are `.btn-default .btn-primary .btn-secondary .btn-success .btn-danger .btn-info .btn-warning`
+
+
+    @example
+    <button class="btn btn-xs btn-default">XSmall</button>
+    <button class="btn btn-sm btn-default">Small</button>
+    <button class="btn btn-default">Medium</button>
+    <button class="btn btn-lg btn-default">Large</button>
+    <br />
+    <br />
+    <button class="btn btn-default">Default</button>
+    <button class="btn btn-primary">Primary</button>
+    <button class="btn btn-secondary">Secondary</button>
+    <button class="btn btn-success">Success</button>
+    <button class="btn btn-danger">Danger</button>
+    <button class="btn btn-info">Info</button>
+    <button class="btn btn-warning">Warning</button>
+
+
+###Labels and Badges
+
+    @example
+    <span class="label label-default">Default</span>
+    <span class="label label-primary">Primary</span>
+    <span class="label label-success">Success</span>
+    <span class="label label-info">Info</span>
+    <span class="label label-warning">Warning</span>
+    <br />
+    <br />
+    <span class="label on-duty">On Duty</span>
+    <span class="label off-duty">Off Duty</span>
+    <span class="label on-property">On Property</span>
+    <span class="label pre-sale">Pre Sale</span>
+    <span class="label post-sale">Post Sale</span>
+    <br /><br />
+    <span class="badge on-duty">On Duty</span>
+    <span class="badge off-duty">Off Duty</span>
+    <span class="badge on-property">On Property</span>
+    <span class="badge pre-sale">Pre Sale</span>
+    <span class="badge post-sale">Post Sale</span>
 
 ### Integration
 
