@@ -1,0 +1,74 @@
+.nav-pills-numbered {
+  text-align: center;
+  li {
+    float: none;
+    display: table-cell;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 30px;
+      width: 100%;
+      height: 1px;
+      z-index: 1;
+      left: -50%;
+      background-color: $brand-primary;
+    }
+    &.disabled {
+      &:before {
+        background-color: #777;
+      }
+    }
+    &:first-child {
+      &:before {
+        width: 0;
+        background-color: transparent;
+      }
+    }
+
+    a {
+      background-color: transparent !important;
+      &:hover, &:focus, &:active {
+        background-color: transparent !important;
+      }
+    }
+    &.active a {
+      background-color: transparent !important;
+      color: $r_brand-secondary;
+      &:hover, &:active, &:focus {
+        color: $r_brand-secondary;
+      }
+    }
+  }
+}
+
+$nav-pills-numbered-index-size: 30px;
+
+.nav-pills-numbered-index {
+  position: relative;
+  z-index: 2;
+  width: $nav-pills-numbered-index-size;
+  height: $nav-pills-numbered-index-size;
+  line-height: $nav-pills-numbered-index-size;
+  border-radius: $nav-pills-numbered-index-size;
+  display: block;
+  text-align: center;
+  margin: 5px auto 15px;
+  color: $brand-primary;
+  border: 1px $brand-primary solid;
+  background-color: white;
+  &:hover {
+    color: white;
+    background-color: $brand-primary;
+  }
+  .active & {
+    color: white;
+    background-color: $r_brand-secondary;
+    border: 1px $r_brand-secondary solid;
+  }
+  .disabled & {
+    color: #777;
+    border: 1px #777 solid;
+    background-color: #F3F3F4;
+  }
+}
