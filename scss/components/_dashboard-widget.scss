@@ -25,6 +25,12 @@
   > tbody > tr > td:first-child {
     padding-left: 20px;
   }
+  > thead > tr > th:first-child {
+    padding-left: 20px;
+  }
+  > thead > tr > th:last-child {
+    padding-right: 20px;
+  }
   > tbody > tr > td:last-child {
     padding-right: 20px;
     text-align: right;
