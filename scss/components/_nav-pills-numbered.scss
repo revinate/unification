@@ -30,13 +30,31 @@
       background-color: transparent !important;
       &:hover, &:focus, &:active {
         background-color: transparent !important;
+        color: $brand-primary;
+        .nav-pills-numbered-index {
+          color: white;
+          background-color: $brand-primary;
+        }
       }
     }
     &.active a {
       background-color: transparent !important;
       color: $r_brand-secondary;
+      cursor: default;
       &:hover, &:active, &:focus {
         color: $r_brand-secondary;
+        .nav-pills-numbered-index {
+          color: white;
+          background-color: $r_brand-secondary;
+        }
+      }
+    }
+    &.disabled a {
+      &:hover, &:active, &:focus {
+        .nav-pills-numbered-index {
+          color: #777;
+          background-color: #F3F3F4;
+        }
       }
     }
   }
@@ -57,10 +75,6 @@ $nav-pills-numbered-index-size: 30px;
   color: $brand-primary;
   border: 1px $brand-primary solid;
   background-color: white;
-  &:hover {
-    color: white;
-    background-color: $brand-primary;
-  }
   .active & {
     color: white;
     background-color: $r_brand-secondary;
