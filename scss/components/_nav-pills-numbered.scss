@@ -12,13 +12,20 @@
       height: 1px;
       z-index: 1;
       left: -50%;
-      background-color: $brand-primary;
+      background-color: darken(#F3F3F4,3%);
     }
-    &.disabled {
-      &:before {
-        background-color: #777;
-      }
-    }
+    // have this commented out for now until we figure out whether we want previous tabs in the promotion
+    // flow to be disabled or not.
+    //&.disabled {
+    //  &:before {
+    //    background-color: #777;
+    //  }
+    //}
+    //&.active {
+    //  &:before {
+    //    background-color: $brand-primary !important;
+    //  }
+    //}
     &:first-child {
       &:before {
         width: 0;
@@ -42,10 +49,10 @@
       color: $r_brand-secondary;
       cursor: default;
       &:hover, &:active, &:focus {
-        color: $r_brand-secondary;
+        color: $r_brand-secondary !important;
         .nav-pills-numbered-index {
-          color: white;
-          background-color: $r_brand-secondary;
+          color: white !important;
+          background-color: $r_brand-secondary !important;
         }
       }
     }
@@ -76,13 +83,13 @@ $nav-pills-numbered-index-size: 30px;
   border: 1px $brand-primary solid;
   background-color: white;
   .active & {
-    color: white;
-    background-color: $r_brand-secondary;
-    border: 1px $r_brand-secondary solid;
+    color: white !important;
+    background-color: $r_brand-secondary !important;
+    border: 1px $r_brand-secondary solid !important;
   }
   .disabled & {
     color: #777;
-    border: 1px #777 solid;
+    border: 1px darken(#F3F3F4,3%) solid;
     background-color: #F3F3F4;
   }
 }
