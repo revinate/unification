@@ -1,0 +1,40 @@
+.nav-pills-terciary {
+  border-bottom: 2px #F3F3F4 solid;
+  li {
+    a {
+      color: #777;
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 4px;
+        background-color: transparent;
+      }
+    }
+
+    /* reset bootstrap default styles */
+    &.active, &.disabled, &:hover, &.active:hover {
+      a {
+        color: #777;
+        background-color: transparent;
+        &:hover {
+          color: #777;
+        }
+      }
+    }
+
+    &.active {
+      a {
+        color: #444;
+        @extend .FontLatoBold;
+        &:after {
+          background-color: $r-brand-secondary;
+        }
+      }
+    }
+
+  }
+}
