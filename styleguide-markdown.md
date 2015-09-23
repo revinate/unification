@@ -194,6 +194,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
 - All tables use `.table`
 - Row striping is controlled by `.table-striped`
 - Hover interaction (only when entire row is interactive), use `.table-hover`
+- Table sortable icons controlled by adding `.fa .fa-sort` and toggling `.fa-sort-asc` and `.fa-sort-desc`
 
 
 **Panel Table**
@@ -216,8 +217,8 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
                 <thead>
                     <tr>
                         <th>Column 1</th>
-                        <th>Column 2</th>
-                        <th>Column 3</th>
+                        <th><a href="#">Column 2 <i class="fa fa-sort fa-sort-asc"></i></a></th>
+                        <th><a href="#">Column 3 <i class="fa fa-sort fa-sort-desc"></i></a></th>
                         <th>Column 4</th>
                     </tr>
                 </thead>
