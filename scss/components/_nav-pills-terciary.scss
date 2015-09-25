@@ -6,6 +6,7 @@
     a {
       color: #777;
       position: relative;
+      background-color: transparent;
       &:after {
         content: '';
         position: absolute;
@@ -18,10 +19,10 @@
     }
 
     /* reset bootstrap default styles */
-    &.active, &.disabled, &:hover, &.active:hover {
+    &.active, &.disabled, &:hover, &.active:hover, &:active, &:visited, &:focus {
       a {
         color: #777;
-        background-color: transparent;
+        background-color: transparent !important;
         &:hover {
           color: #777;
         }
