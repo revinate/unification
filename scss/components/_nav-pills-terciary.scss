@@ -1,7 +1,7 @@
 .nav-pills-terciary {
   border-bottom: 2px #F3F3F4 solid;
   clear: both;
-  float: none;
+  float: none !important;
   li {
     a {
       color: #777;
