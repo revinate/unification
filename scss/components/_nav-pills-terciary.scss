@@ -30,11 +30,27 @@
       a {
         color: #444;
         @extend .FontLatoBold;
+        &:hover {
+          color: #444 !important;
+        }
         &:after {
           background-color: $r-brand-secondary;
         }
       }
     }
-
+    a {
+      &:hover {
+        color: #444 !important;
+      }
+    }
+    &.disabled {
+      a {
+        color: #ccc;
+        &:hover {
+          color: #ccc !important;
+        }
+      }
+    }
   }
+
 }
