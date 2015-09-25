@@ -21,4 +21,15 @@
   &.table-hover > tbody > tr:hover {
     background: #E0EFFD;
   }
+  > thead > tr > th {
+    .fa-sort {
+      position: relative;
+      &.fa-sort-desc {
+        top: -2px;
+      }
+      &.fa-sort-asc {
+        top: 4px;
+      }
+    }
+  }
 }
