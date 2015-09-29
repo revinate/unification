@@ -32,4 +32,11 @@
       }
     }
   }
+  &.upload-table {
+    tbody > tr > td {
+      span {
+        word-break: break-word;
+      }
+    }
+  }
 }
