@@ -1,8 +1,9 @@
-.nav-pills-terciary {
+.nav-pills-terciary,
+.nav-pills-tertiary {
   border-bottom: 2px #F3F3F4 solid;
   clear: both;
   float: none !important;
-  >li>a:focus, >li>a:hover {
+  > li > a:focus, > li > a:hover {
     background: transparent !important;
   }
   li {
