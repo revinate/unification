@@ -1,9 +1,16 @@
-.nav-pills-terciary {
+.nav-pills-terciary,
+.nav-pills-tertiary {
   border-bottom: 2px #F3F3F4 solid;
+  clear: both;
+  float: none !important;
+  > li > a:focus, > li > a:hover {
+    background: transparent !important;
+  }
   li {
     a {
-      color: #777;
+      color: #3BA1FF;
       position: relative;
+      background-color: transparent;
       &:after {
         content: '';
         position: absolute;
@@ -16,10 +23,10 @@
     }
 
     /* reset bootstrap default styles */
-    &.active, &.disabled, &:hover, &.active:hover {
+    &.active, &.disabled, &:hover, &.active:hover, &:active, &:visited, &:focus {
       a {
         color: #777;
-        background-color: transparent;
+        background-color: transparent !important;
         &:hover {
           color: #777;
         }
@@ -30,11 +37,27 @@
       a {
         color: #444;
         @extend .FontLatoBold;
+        &:hover {
+          color: #444 !important;
+        }
         &:after {
           background-color: $r-brand-secondary;
         }
       }
     }
-
+    a {
+      &:hover {
+        color: #444 !important;
+      }
+    }
+    &.disabled {
+      a {
+        color: #ccc;
+        &:hover {
+          color: #ccc !important;
+        }
+      }
+    }
   }
+
 }
