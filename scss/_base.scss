@@ -36,3 +36,6 @@ body {
 .text-on {
   color: $brand-success;
 }
+strong {
+  @extend .FontLatoBold;
+}
