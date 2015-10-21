@@ -145,5 +145,6 @@
   letter-spacing: inherit;
   &:hover {
     text-decoration: underline;
+    color: darken(#3BA1F8,10%);
   }
 }
