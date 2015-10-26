@@ -1,0 +1,33 @@
+.property-select-item {
+  background: #f6fbfe;
+  border-radius: 3px;
+  border: 1px solid #d8d8d8;
+  padding: 30px 10px 0;
+  margin: 15px;
+  text-align: center;
+  img {
+    margin: 0 auto 10px;
+  }
+  .property-select-item-title {
+    color: #444;
+    @extend .FontLatoBold;
+    span {
+      display: block;
+      @extend .FontLato;
+      font-size: 0.7em;
+      line-height: 2;
+    }
+  }
+}
+form.prop-search {
+  input[type=text] {
+    border-radius: 25px 0 0 25px;
+  }
+  .fetch-accounts {
+    float: none;
+    margin-top: 0;
+    border-radius: 0 25px 25px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
