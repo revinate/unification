@@ -8,6 +8,10 @@
   img {
     margin: 0 auto 10px;
   }
+  div.property-select-item-logo.no-logo {
+    width: 65px;
+    opacity: 0.3;
+  }
   .property-select-item-title {
     color: #444;
     @extend .FontLatoBold;
