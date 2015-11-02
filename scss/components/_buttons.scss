@@ -155,14 +155,18 @@
 .btn-group-bordered {
   border-radius: 3px;
   border: 2px $brand-primary solid;
-  .btn-default {
+  .btn-default,
+  .btn-default.dropdown-toggle {
     background-color: white;
     border-color: white;
     color: $brand-primary !important;
-    &:hover {
+    &:hover, &.active, &:active, &:focus {
       color: white !important;
       background-color: $brand-primary !important;
       border-color: $brand-primary;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
     }
   }
   .btn-primary {
@@ -197,6 +201,12 @@
           border-top-left-radius: 0;
         }
       }
+    }
+  }
+  .dropdown-menu {
+    margin-top: 2px;
+    .divider {
+      background-color: $gray-lighter;
     }
   }
 }
