@@ -151,3 +151,24 @@
     color: darken(#3BA1F8,10%);
   }
 }
+
+.btn-group-bordered {
+  border-radius: 3px;
+  border: 2px $brand-primary solid;
+  .btn-default {
+    background-color: white;
+    border-color: white;
+    color: $brand-primary !important;
+    &:hover {
+      color: white !important;
+      background-color: $brand-primary !important;
+      border-color: $brand-primary;
+    }
+  }
+  .btn-primary {
+    border-color: $brand-primary !important;
+    &:hover, &:focus, &.active, &:active {
+      background-color: $brand_primary;
+    }
+  }
+}
