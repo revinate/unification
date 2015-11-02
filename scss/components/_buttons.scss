@@ -173,25 +173,28 @@
   }
   .btn {
     &:last-child {
-      border-bottom-left-radius: 2px;
-      border-top-left-radius: 2px;
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
     }
     &:first-child {
-      border-bottom-left-radius: 2px;
-      border-top-left-radius: 2px;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
     }
-
-    .btn-group {
-      &:last-child {
-        .btn {
-          border-bottom-left-radius: 2px;
-          border-top-left-radius: 2px;
+  }
+  .btn-group {
+    &:last-child {
+      .btn {
+        &:first-child, &:last-child {
+          border-bottom-right-radius: 0;
+          border-top-right-radius: 0;
         }
       }
-      &:first-child {
-        .btn {
-          border-bottom-left-radius: 2px;
-          border-top-left-radius: 2px;
+    }
+    &:first-child {
+      .btn {
+        &:first-child, &:last-child {
+          border-bottom-left-radius: 0;
+          border-top-left-radius: 0;
         }
       }
     }
