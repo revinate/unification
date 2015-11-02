@@ -209,4 +209,9 @@
       background-color: $gray-lighter;
     }
   }
+
+  .btn.double-spaced,
+  .btn-group.double-spaced {
+    width: 1.5%;
+  }
 }
