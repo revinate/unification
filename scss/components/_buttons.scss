@@ -154,11 +154,18 @@
 
 .btn-group-bordered {
   border-radius: 3px;
-  border: 2px $brand-primary solid;
+  border-color: $brand-primary;
+  border-style: solid;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 1px;
+  border-right-width: 1px;
   .btn-default,
   .btn-default.dropdown-toggle {
     background-color: white;
     border-color: white;
+    border-left-color: $brand-primary;
+    border-right-color: $brand-primary;
     color: $brand-primary !important;
     &:hover, &.active, &:active, &:focus {
       color: white !important;
@@ -176,6 +183,8 @@
     }
   }
   .btn {
+    border-top-width: 0;
+    border-bottom-width: 0;
     &:last-child {
       border-bottom-right-radius: 0;
       border-top-right-radius: 0;
@@ -209,7 +218,7 @@
       background-color: $gray-lighter;
     }
   }
-  
+
   .btn.double-spaced,
   .btn-group.double-spaced {
     width: 1.5%;
