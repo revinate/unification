@@ -1,7 +1,22 @@
+html, body {
+  height: 100%;
+}
 body {
   background: $body-bg;
   font-family: Lato;
   font-weight: 300;
+  &.l-no-navigation-page {
+    background-color: $r_brand-primary;
+    span.logo {
+      color: #fff;
+      display: block;
+      clear: both;
+      margin: 0 auto;
+      padding: 20px 0 0;
+      font-size: 1.5em;
+      text-align: center;
+    }
+  }
 }
 
 .form-group,

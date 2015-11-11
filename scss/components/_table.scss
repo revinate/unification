@@ -39,4 +39,9 @@
       }
     }
   }
+  &.table-vert-middle {
+    tbody > tr > td {
+      vertical-align: middle;
+    }
+  }
 }
