@@ -11,27 +11,21 @@
       #styleguide .sg-canvas .l-app {background: #F3F3F4;}
       #styleguide .sg-canvas .l-header { position: relative; z-index: 1; }
       .sg-text, .sg-example { float: none; width: 100% !important; }
-      nav.sidebar-menu.affix-top { margin-top: 100px; }
+      #styleguide .styleguide-header {background: #283745; font-family: "LatoLight", Helvetica, Arial, Sans-serif;}
+      #styleguide .styleguide-header h1 {color: #3cbfa2; margin-top: 0;}
+      #styleguide .styleguide-header p {color: white;}
+      #styleguide .sidebar-menu.affix {top: 20px;}
+      #styleguide h2.sg {margin-top: 0;}
     </style>
 
 ### Body
 
     <div class="l-app" id="styleguide">
-      <header class="l-header">
-        <div class="l-header-top">
-          <div class="container">
-            <ul class="primary-menu nav nav-tabs">
-              <li class="primary-menu-item-logo">
-                <a class="logo" href="#">Revinate</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </header>
+
       <main class="l-main">
         <div class="container">
-          <div class="l-main-content row pd-xl mg-t-xl">
-            <div class="styleguide-header col-sm-12">
+            <div class="styleguide-header row pd-xl mg-t-xl">
+            <div class="col-lg-12">
               <h1>Revinate Style Guide</h1>
               <p>Our styleguide/css is based off of <a href="http://getbootstrap.com/">Twitter
               Bootstrap</a>, and uses <a href="https://smacss.com/">SMACSS (Scalable and Module Architecture for
@@ -41,7 +35,9 @@
               includes: print, glyphicons, progress bars and carousel. If you wish to use any of these styles, please
               uncomment the respective line(s) in /scss/bootstrap.scss and compile sass.
               </p>
+              </div>
             </div>
+            <div class="l-main-content row pd-xl">
             <div class="styleguide-menu col-sm-3">
 
               <nav class="sidebar-menu hidden-xs hidden-sm">
@@ -76,7 +72,9 @@
     <script>
     $('.sidebar-menu').affix({
       offset: {
-        top: 100,
+        top: function () {
+          return (this.top = $('.styleguide-header').outerHeight(true))
+        },
         bottom: function () {
           return (this.bottom = $('.l-footer').outerHeight(true))
         }
