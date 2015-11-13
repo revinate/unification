@@ -1,22 +1,11 @@
 # Styleguide options
 
 ### Head
-    <link rel='stylesheet' href='https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.css'>
+    <link rel='stylesheet' href='css/styledown.css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/app.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style rel='stylesheet'>
-      #styleguide .sg-canvas .container {width: 100% !important;}
-      #styleguide .sg-canvas .l-app {background: #F3F3F4;}
-      #styleguide .sg-canvas .l-header { position: relative; z-index: 1; }
-      .sg-text, .sg-example { float: none; width: 100% !important; }
-      #styleguide .styleguide-header {background: #283745; font-family: "LatoLight", Helvetica, Arial, Sans-serif;}
-      #styleguide .styleguide-header h1 {color: #3cbfa2; margin-top: 0;}
-      #styleguide .styleguide-header p {color: white;}
-      #styleguide .sidebar-menu.affix {top: 20px;}
-      #styleguide h2.sg {margin-top: 0;}
-    </style>
 
 ### Body
 
@@ -24,8 +13,11 @@
 
       <main class="l-main">
         <div class="container">
-            <div class="styleguide-header row pd-xl mg-t-xl">
+            <div class="styleguide-header row pd-xl">
             <div class="col-lg-12">
+            <span class="logo">
+            <i class="revicon-revinate-logo"></i>
+            </span>
               <h1>Revinate Style Guide</h1>
               <p>Our styleguide/css is based off of <a href="http://getbootstrap.com/">Twitter
               Bootstrap</a>, and uses <a href="https://smacss.com/">SMACSS (Scalable and Module Architecture for
@@ -62,7 +54,7 @@
         </div>
       </main>
       <footer class="l-footer pd-md">
-        <p class="copyright">&copy; Revinate Styleguide 2015. All Rights Reserved</p>
+        <i class="revicon-revinate-logo"></i>
       </footer>
     </div>
 
@@ -79,5 +71,9 @@
           return (this.bottom = $('.l-footer').outerHeight(true))
         }
       }
+    });
+    $('.bs-docs-sidenav li a').click(function(){
+        $(this).parent('li').siblings().find('a').removeClass('active');
+        $(this).addClass('active');
     });
     </script>

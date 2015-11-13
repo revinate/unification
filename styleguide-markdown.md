@@ -1,6 +1,3 @@
-General
--------
-
 ### General Layout
 
 This is the overall structure of every page. Content goes inside div with class `.l-main-content`
