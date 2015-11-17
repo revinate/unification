@@ -27,7 +27,7 @@ h3.sg {
   border-bottom: solid 1px #979797;
   display: block;
   margin: 0 0 20px;
-  padding: 0 0 5px;
+  padding: 20px 0 5px;
   line-height: 1.33;
 }
 
@@ -300,4 +300,7 @@ span.logo i {
 #styleguide .l-footer i {
   font-size: 2em;
   color: #9b9b9b;
+}
+#styleguide .styleguide.col-sm-9 {
+  top: -20px;
 }

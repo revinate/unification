@@ -10,3 +10,23 @@
     padding-right: 10px;
   }
 }
+form {
+  .row {
+    margin-bottom: 15px;
+    .fa {
+      position: absolute;
+      top: 11px;
+      left: 22px;
+      color: #4c4c4c;
+    }
+    label {
+      @extend .FontLatoBold;
+    }
+    input[type="text"], input[type="email"], input[type="password"] {
+      width: 100%;
+      &.with-icon {
+        padding-left: 27px;
+      }
+    }
+  }
+}
