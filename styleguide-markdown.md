@@ -323,8 +323,6 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
 
 **Basic Form**
 
-Basic forms follow bootstrap layout.
-
 - Text inputs, textareas and select boxes will fill the space of whatever span they are put into, and will need `.form-control` for styling. We have abandoned the `form-group` class for the bootstrap traditional `.row` and `.span-{size}-{number}` classes.
 - Elements can be centered by applying the `.center-col` class to the column div.
 - Checkboxes and radio buttons get an additional wrapper div of `.checkbox` and `.radio` respectively.  Labels should also wrap input elements here.
