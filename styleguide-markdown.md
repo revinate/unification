@@ -563,7 +563,9 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
                             </tr>
                             <tr>
                                 <td>
-                                    Metric Title 2
+                                    <a href="#">
+                                        Metric Link 2
+                                    </a>
                                 </td>
                                 <td>
                                     Metric attribute
