@@ -20,7 +20,7 @@
             </span>
               <h1>Revinate Style Guide</h1>
               <p>Our styleguide/css is based off of <a href="http://getbootstrap.com/">Twitter
-              Bootstrap</a>, and uses <a href="https://smacss.com/">SMACSS (Scalable and Module Architecture for
+              Bootstrap</a>, and uses <a href="https://smacss.com/">SMACSS (Scalable and Modular Architecture for
               CSS)</a>. This documentation contains code examples, and highlights extra classes needed on top of
               Twitter Bootstrap classes.</p>
               <p>PS. In order to optimize css load time, we have removed the following unnecessary Twitter Bootstrap
