@@ -1,6 +1,3 @@
-General
--------
-
 ### General Layout
 
 This is the overall structure of every page. Content goes inside div with class `.l-main-content`
@@ -312,7 +309,6 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
 
 ### Tertiary Navigation
 
-
     @example
     <ul class="nav nav-pills nav-pills-terciary">
       <li><a href="#">Nav Element</a></li>
@@ -322,7 +318,274 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
       <li class="disabled"><a href="#">Nav Element</a></li>
     </ul>
 
+
+### Forms
+
+**Basic Form**
+
+- Text inputs, textareas and select boxes will fill the space of whatever span they are put into, and will need `.form-control` for styling. We have abandoned the `form-group` class for the bootstrap traditional `.row` and `.span-{size}-{number}` classes.
+- Elements can be centered by applying the `.center-col` class to the column div.
+- Checkboxes and radio buttons get an additional wrapper div of `.checkbox` and `.radio` respectively.  Labels should also wrap input elements here.
+- Submit button uses standard button styles, but can be made a block element by applying the `.full-width` class.
+
+
+    @example
+    <form role="form" action="" method="POST">
+        <div class="row">
+            <div class="col-lg-12">
+            <label for="_username">Label For Inputs</label>
+                <input type="text" class="form-control" id="username" name="_username" value="" placeholder="12-column text field with label, no icon">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8">
+                <i class="fa fa-key"></i>
+                <input type="password" class="form-control with-icon" id="password" name="_password" placeholder="8-column text field with icon - no label">
+            </div>
+        </div>
+        <div class="row">
+            <div class="center-col col-lg-6">
+                <textarea class="form-control" rows="6" placeholder="6-column textarea, centered"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <select class="form-control">
+                    <option value="0" selected>4-Column Select Dropdown</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="_remember_me"> Checkbox
+                    </label>
+                    <div class="pull-right">
+                        <a href="#">Need more Info?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+                    <div class="col-lg-12">
+                        <div class="radio">
+                            <label><input type="radio" />Radio Button</input>
+                        </div>
+                    </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <button type="submit" class="btn btn-primary btn-lg full-width">Submit Button</button>
+            </div>
+        </div>
+    </form>
+
+
+### Dashboards
+
+**Dashboard Widgets**
+
+    @example
+    <div class="row">
+        <div class="col-md-4">
+            <div class="dashboard-widget">
+                <h4 class="dashboard-widget-title">
+                    Widget Title
+                </h4>
+                <p class="dashboard-widget-metrics">
+                    $1,000,000.00
+                </p>
+                <div class="table-responsive">
+                    <table class="dashboard-widget-table table table-striped">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Metric Title
+                                </td>
+                                <td>
+                                    $50
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Metric Title 2
+                                </td>
+                                <td>
+                                    $150
+                                </td>
+                             </tr>
+                         </tbody>
+                     </table>
+                </div>
+            </div>
+         </div>
+
+        <div class="col-md-4">
+            <div class="dashboard-widget">
+                <h4 class="dashboard-widget-title">
+                    Widget Title
+                </h4>
+                <p class="dashboard-widget-metrics">
+                    $1,000,000.00
+                </p>
+                <div class="table-responsive">
+                    <table class="dashboard-widget-table table table-striped">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Metric Title
+                                </td>
+                                <td>
+                                    $50
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Metric Title 2
+                                </td>
+                                <td>
+                                    $150
+                                </td>
+                             </tr>
+                         </tbody>
+                     </table>
+                </div>
+            </div>
+         </div>
+
+    <div class="col-md-4">
+            <div class="dashboard-widget">
+                <h4 class="dashboard-widget-title">
+                    Widget Title
+                </h4>
+                <p class="dashboard-widget-metrics">
+                    $1,000,000.00
+                </p>
+                <div class="table-responsive">
+                    <table class="dashboard-widget-table table table-striped">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Metric Title
+                                </td>
+                                <td>
+                                    $50
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Metric Title 2
+                                </td>
+                                <td>
+                                    $150
+                                </td>
+                             </tr>
+                         </tbody>
+                     </table>
+                </div>
+            </div>
+         </div>
+     </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="dashboard-widget">
+                <h4 class="dashboard-widget-title">
+                    Widget Title
+                </h4>
+                <p class="dashboard-widget-metrics">
+                    $1,000,000.00
+                </p>
+                <div class="table-responsive">
+                    <table class="dashboard-widget-table table table-striped">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Metric Title
+                                </td>
+                                <td>
+                                    Metric attribute
+                                </td>
+                                <td>
+                                    Mettric attribute 2
+                                </td>
+                                <td>
+                                    $50
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Metric Title 2
+                                </td>
+                                <td>
+                                    Metric attribute
+                                </td>
+                                <td>
+                                    Mettric attribute 2
+                                </td>
+                                <td>
+                                    $150
+                                </td>
+                             </tr>
+                         </tbody>
+                     </table>
+                </div>
+            </div>
+         </div>
+        <div class="col-md-6">
+            <div class="dashboard-widget">
+                <h4 class="dashboard-widget-title">
+                    Widget Title
+                </h4>
+                <p class="dashboard-widget-metrics">
+                    $1,000,000.00
+                </p>
+                <div class="table-responsive">
+                    <table class="dashboard-widget-table table table-striped">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Metric Title
+                                </td>
+                                <td>
+                                    Metric attribute
+                                </td>
+                                <td>
+                                    Mettric attribute 2
+                                </td>
+                                <td>
+                                    $50
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        Metric Link 2
+                                    </a>
+                                </td>
+                                <td>
+                                    Metric attribute
+                                </td>
+                                <td>
+                                    Mettric attribute 2
+                                </td>
+                                <td>
+                                    $150
+                                </td>
+                             </tr>
+                         </tbody>
+                     </table>
+                </div>
+            </div>
+         </div>
+     </div>
+
 ### Integration
+
 
 - Add the unification repo (`git@github.com:revinate/unification`) to your project, preferably with bower;
 - Copy `css_images/` & `fonts/` directories to the root of the public folder;

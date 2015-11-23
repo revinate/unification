@@ -1,47 +1,35 @@
 # Styleguide options
 
 ### Head
-    <link rel='stylesheet' href='https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.css'>
+    <link rel='stylesheet' href='css/styledown.css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/app.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style rel='stylesheet'>
-      #styleguide .sg-canvas .container {width: 100% !important;}
-      #styleguide .sg-canvas .l-app {background: #F3F3F4;}
-      #styleguide .sg-canvas .l-header { position: relative; z-index: 1; }
-      .sg-text, .sg-example { float: none; width: 100% !important; }
-      nav.sidebar-menu.affix-top { margin-top: 100px; }
-    </style>
 
 ### Body
 
     <div class="l-app" id="styleguide">
-      <header class="l-header">
-        <div class="l-header-top">
-          <div class="container">
-            <ul class="primary-menu nav nav-tabs">
-              <li class="primary-menu-item-logo">
-                <a class="logo" href="#">Revinate</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </header>
+
       <main class="l-main">
         <div class="container">
-          <div class="l-main-content row pd-xl mg-t-xl">
-            <div class="styleguide-header col-sm-12">
+            <div class="styleguide-header row pd-xl">
+            <div class="col-lg-12">
+            <span class="logo">
+            <i class="revicon-revinate-logo"></i>
+            </span>
               <h1>Revinate Style Guide</h1>
               <p>Our styleguide/css is based off of <a href="http://getbootstrap.com/">Twitter
-              Bootstrap</a>, and uses <a href="https://smacss.com/">SMACSS (Scalable and Module Architecture for
+              Bootstrap</a>, and uses <a href="https://smacss.com/">SMACSS (Scalable and Modular Architecture for
               CSS)</a>. This documentation contains code examples, and highlights extra classes needed on top of
               Twitter Bootstrap classes.</p>
               <p>PS. In order to optimize css load time, we have removed the following unnecessary Twitter Bootstrap
               includes: print, glyphicons, progress bars and carousel. If you wish to use any of these styles, please
               uncomment the respective line(s) in /scss/bootstrap.scss and compile sass.
               </p>
+              </div>
             </div>
+            <div class="l-main-content row pd-xl">
             <div class="styleguide-menu col-sm-3">
 
               <nav class="sidebar-menu hidden-xs hidden-sm">
@@ -54,6 +42,8 @@
                   <li><a href="#labels-and-badges">Labels &amp; Badges</a></li>
                   <li><a href="#wizard-navigation">Wizard Navigation</a></li>
                   <li><a href="#tertiary-navigation">Tertiary Navigation</a></li>
+                  <li><a href="#forms">Forms</a></li>
+                  <li><a href="#dashboards">Dashboards</a></li>
                   <li><a href="#integration">Integration</a></li>
                 </ul>
               </nav>
@@ -66,7 +56,7 @@
         </div>
       </main>
       <footer class="l-footer pd-md">
-        <p class="copyright">&copy; Revinate Styleguide 2015. All Rights Reserved</p>
+        <i class="revicon-revinate-logo"></i>
       </footer>
     </div>
 
@@ -76,10 +66,16 @@
     <script>
     $('.sidebar-menu').affix({
       offset: {
-        top: 100,
+        top: function () {
+          return (this.top = $('.styleguide-header').outerHeight(true))
+        },
         bottom: function () {
           return (this.bottom = $('.l-footer').outerHeight(true))
         }
       }
+    });
+    $('.bs-docs-sidenav li a').click(function(){
+        $(this).parent('li').siblings().find('a').removeClass('active');
+        $(this).addClass('active');
     });
     </script>
