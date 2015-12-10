@@ -44,6 +44,7 @@
                   <li><a href="#tertiary-navigation">Tertiary Navigation</a></li>
                   <li><a href="#forms">Forms</a></li>
                   <li><a href="#dashboards">Dashboards</a></li>
+                  <li><a href="#alerts">Alerts</a></li>
                   <li><a href="#integration">Integration</a></li>
                 </ul>
               </nav>

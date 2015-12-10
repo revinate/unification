@@ -362,7 +362,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
             <div class="col-lg-12">
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox" name="_remember_me"> Checkbox
+                        <input type="checkbox" value=""> Checkbox
                     </label>
                     <div class="pull-right">
                         <a href="#">Need more Info?</a>
@@ -372,9 +372,29 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
         </div>
         <div class="row">
                     <div class="col-lg-12">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value=""> Inline Checkbox
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value=""> Inline Checkbox
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="" disabled > Inline Checkbox
+                            </label>
+                    </div>
+                </div>
+        <div class="row">
+                    <div class="col-lg-12">
                         <div class="radio">
-                            <label><input type="radio" />Radio Button</input>
+                            <label><input type="radio" value="" />Radio Button</label>
                         </div>
+                    </div>
+        </div>
+        <div class="row">
+                    <div class="col-lg-12">
+                            <label class="radio-inline"><input type="radio" name="optradio" />Radio Inline</label>
+                            <label class="radio-inline"><input type="radio" name="optradio" />Radio Inline</label>
+                            <label class="radio-inline"><input type="radio" name="optradio" disabled />Radio Inline</label>
                     </div>
         </div>
         <div class="row">
@@ -583,6 +603,40 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
             </div>
          </div>
      </div>
+
+### Alerts
+
+- Revinate uses standard bootstrap alerts.
+- Close button can be included with `.fade .in` to add a nice little animation on close.
+
+
+    @example
+    <div class="alert alert-success">
+        <strong>
+            Success!
+        </strong>
+        This alert box could indicate a successful or positive action.
+    </div>
+    <div class="alert alert-info fade in">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>
+            Info!
+        </strong>
+        This alert box could indicate a neutral informative change or action.
+    </div>
+    <div class="alert alert-warning">
+        <strong>
+            Warning!
+        </strong>
+        This alert box could indicate a warning that might need attention.
+    </div>
+    <div class="alert alert-danger fade in">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>
+            Danger!
+        </strong>
+        This alert box could indicate a dangerous or potentially negative action.
+    </div>
 
 ### Integration
 
