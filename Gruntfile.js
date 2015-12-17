@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 		styledown: {
 			build: {
 				files: {
-					'styleguide.html': ['styleguide-markdown.md']
+					'index.html': ['styleguide-markdown.md']
 				},
 				options: {
 					config: 'styleguide-config.md',
