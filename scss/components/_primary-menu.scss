@@ -76,6 +76,13 @@
       white-space: nowrap;
     }
   }
+  &.primary-menu-item-logo {
+    span.logo {
+      i.revicon-revinate-logo{
+        font-size: 0.95em;
+      }
+    }
+  }
 }
 
 .primary-menu.nav.nav-tabs > li > a {

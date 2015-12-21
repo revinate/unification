@@ -43,9 +43,9 @@ tabbed content is inside `.l-header-bottom`.
       <div class="container">
 
         <ul class="primary-menu nav nav-tabs" role="tablist">
-          <li class="primary-menu-item-logo">
-            <a class="logo" href="#dashboard">Revinate</a>
-          </li>
+         <li class="primary-menu-item-logo primary-menu-item-text">
+                             <span class="logo" title="Revinate"><i class="revicon-revinate-logo"></i></span>
+                         </li>
           <li class="active">
             <a href="#dashboard" aria-controls="dashboard" role="tab" data-toggle="tab">
               Dashboard
