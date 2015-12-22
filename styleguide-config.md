@@ -2,7 +2,7 @@
 
 ### Head
     <link rel='stylesheet' href='css/styledown.css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/app.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,6 +45,8 @@
                   <li><a href="#forms">Forms</a></li>
                   <li><a href="#dashboards">Dashboards</a></li>
                   <li><a href="#alerts">Alerts</a></li>
+                  <li><a href="#typography-and-lists">Typography &amp; Lists</a></li>
+                  <li><a href="#charts">Charts</a></li>
                   <li><a href="#integration">Integration</a></li>
                 </ul>
               </nav>
