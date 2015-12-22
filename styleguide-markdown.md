@@ -638,6 +638,124 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
         This alert box could indicate a dangerous or potentially negative action.
     </div>
 
+
+### Typography and Lists
+
+
+    @example
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eros lacus, scelerisque bibendum neque eget, varius dictum elit. Praesent fermentum laoreet metus, quis interdum orci. Pellentesque eu sodales lectus. Curabitur nec dui id erat sodales venenatis sit amet eget libero. Curabitur vestibulum risus sapien, vel sodales eros rhoncus pretium. Mauris mattis vitae mi sed feugiat. Curabitur quis condimentum tellus. Aenean ultrices leo euismod augue lacinia posuere. Aliquam nunc quam, <strong>bold text</strong> dictum et enim at, molestie commodo lectus. Aliquam elit magna, finibus id mi non, ullamcorper luctus risus. Nam auctor nulla sit amet dignissim accumsan. Fusce et ex metus. Suspendisse potenti.</p>
+
+    <p>Nunc mi magna, euismod ut interdum id, egestas id diam. Sed faucibus faucibus quam in semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam nec quam orci. Duis felis mi, eleifend at est in, condimentum placerat dolor. Donec dapibus ex vitae metus ornare tincidunt. Duis auctor congue maximus. Curabitur eget neque mauris. Vivamus pretium mi a tortor fermentum rhoncus. Pellentesque id porttitor quam, vitae volutpat est. Mauris et iaculis risus. Nam nisi sapien, condimentum sit amet lacus quis, pellentesque scelerisque erat. Nullam iaculis lectus sit amet est elementum faucibus.</p>
+
+    <ul>
+        <li>
+            List Item
+        </li>
+        <li>
+            List Item
+        </li>
+        <li>
+            List Item
+        </li>
+        <li>
+            List Item
+        </li>
+        <li>
+            List Item
+        </li>
+    </ul>
+
+    <ol>
+        <li>
+            List Item
+        </li>
+        <li>
+            List Item
+        </li>
+        <li>
+            List Item
+        </li>
+        <li>
+            List Item
+        </li>
+        <li>
+            List Item
+        </li>
+    </ol>
+
+
+###Charts
+
+    @example
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {packages: ['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+          // Callback that creates and populates a data table,
+          // instantiates the pie chart, passes in the data and
+          // draws it.
+        function drawChart() {
+
+            // Create the data table.
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Topping');
+            data.addColumn('number', 'Slices');
+            data.addRows([
+              ['Mushrooms', 3],
+              ['Onions', 1],
+              ['Olives', 1],
+              ['Zucchini', 1],
+              ['Pepperoni', 2]
+            ]);
+            // Create the data table.
+            var data2 = new google.visualization.DataTable();
+            data2.addColumn('string', 'Topping');
+            data2.addColumn('number', 'Slices');
+            data2.addRows([
+              ['Mushrooms', 3],
+              ['Onions', 1],
+              ['Olives', 15],
+              ['Zucchini', 1],
+              ['Pepperoni', 2]
+            ]);
+            // Create the data table.
+            var data3 = new google.visualization.DataTable();
+            data3.addColumn('string', 'Year');
+            data3.addColumn('number', 'Sales');
+            data3.addColumn('number', 'Expenses');
+            data3.addRows([
+              ['2004', 1000, 400],
+              ['2005', 1170, 460],
+              ['2006',  860, 580],
+              ['2007', 1030, 540]
+            ]);
+
+            // Set chart options
+            var options = {'title':'Chart Example',
+                           'width': '100%',
+                           'height': 300};
+
+            // Instantiate and draw our chart, passing in some options.
+            var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+            var chart2 = new google.visualization.BarChart(document.getElementById('chart_div2'));
+            chart2.draw(data2, options);
+            var chart3 = new google.visualization.LineChart(document.getElementById('chart_div3'));
+            chart3.draw(data3, options);
+
+          }
+    </script>
+    <h3>Pie Chart</h3>
+    <div id="chart_div"></div>
+
+    <h3>Chart 2</h3>
+    <div id="chart_div2"></div>
+
+    <h3>Line Chart</h3>
+    <div id="chart_div3"></div>
+
+
 ### Integration
 
 
