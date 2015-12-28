@@ -686,6 +686,11 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
 
 ###Charts
 
+
+- Charting uses Google Charts
+- Draw charts with reSize function to make them responsive on window resize.
+
+
     @example
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
@@ -730,12 +735,40 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
               ['2006',  860, 580],
               ['2007', 1030, 540]
             ]);
-
+            // Create the data table.
+            var data4 = new google.visualization.DataTable();
+            data4.addColumn('string', 'Topping');
+            data4.addColumn('number', 'Slices');
+            data4.addRows([
+              ['Mushrooms', 3],
+              ['Onions', 1],
+              ['Olives', 1],
+              ['Zucchini', 1],
+              ['Pepperoni', 2]
+            ]);
+            // Create the data table.
+            var data5 = google.visualization.arrayToDataTable([
+              ['Topping', 'Slices', { role: 'style' }],
+              ['Musrooms', 3, 'brown'],
+              ['Onions', 2, 'gold'],
+              ['Olives', 3, 'green'],
+              ['Pepperoni', 1, 'red' ]
+            ]);
+            // Create the data table.
+            var data6 = new google.visualization.DataTable();
+            data6.addColumn('string', 'Year');
+            data6.addColumn('number', 'Sales');
+            data6.addColumn('number', 'Expenses');
+            data6.addRows([
+              ['2004', 1000, 400],
+              ['2005', 1170, 460],
+              ['2006',  860, 580],
+              ['2007', 1030, 540]
+            ]);
             // Set chart options
             var options = {'title':'Chart Example',
-                           'width': '100%',
                            'height': 300,
-                           //'colors':['#000000', '#111111', '#222222', '#333333'],
+                           // add Revinate colors here 'colors':['#000000', '#111111', '#222222', '#333333'],
                            'is3D': true,
                            'vAxis': {
                                'gridlines': { count: 4 },
@@ -745,25 +778,66 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
                                'title': 'Horizontal Axis'
                            }
                            };
+            var dashOptions = {'is3D': true
+                           };
 
-            // Instantiate and draw our chart, passing in some options.
+            // Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive
+            function reSize () {
             var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
             chart.draw(data, options);
             var chart2 = new google.visualization.BarChart(document.getElementById('chart_div2'));
             chart2.draw(data2, options);
             var chart3 = new google.visualization.LineChart(document.getElementById('chart_div3'));
             chart3.draw(data3, options);
-
+            var chart4 = new google.visualization.PieChart(document.getElementById('chart_div4'));
+            chart4.draw(data4, dashOptions);
+            var chart5 = new google.visualization.BarChart(document.getElementById('chart_div5'));
+            chart5.draw(data5, dashOptions);
+            var chart6 = new google.visualization.LineChart(document.getElementById('chart_div6'));
+            chart6.draw(data6, dashOptions);
+            }
+            window.onload = reSize();
+            window.onresize = reSize;
           }
     </script>
     <h3>Pie Chart</h3>
     <div id="chart_div"></div>
 
-    <h3>Chart 2</h3>
+    <h3>Bar Chart</h3>
     <div id="chart_div2"></div>
 
     <h3>Line Chart</h3>
     <div id="chart_div3"></div>
+
+    <h3>Dashboard Charts</h3>
+    <div class="row">
+       <div class="col-md-4">
+          <div class="dashboard-widget">
+             <h4 class="dashboard-widget-title">
+                Widget Title
+             </h4>
+             <div id="chart_div4"></div>
+          </div>
+       </div>
+
+       <div class="col-md-4">
+          <div class="dashboard-widget">
+             <h4 class="dashboard-widget-title">
+                Widget Title
+             </h4>
+             <div id="chart_div5"></div>
+          </div>
+       </div>
+
+       <div class="col-md-4">
+          <div class="dashboard-widget">
+             <h4 class="dashboard-widget-title">
+                Widget Title
+             </h4>
+             <div id="chart_div6"></div>
+          </div>
+       </div>
+    </div>
 
 
 ### Integration
