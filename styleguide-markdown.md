@@ -734,7 +734,17 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
             // Set chart options
             var options = {'title':'Chart Example',
                            'width': '100%',
-                           'height': 300};
+                           'height': 300,
+                           //'colors':['#000000', '#111111', '#222222', '#333333'],
+                           'is3D': true,
+                           'vAxis': {
+                               'gridlines': { count: 4 },
+                               'title': 'Vertical Axis'
+                           },
+                           'hAxis': {
+                               'title': 'Horizontal Axis'
+                           }
+                           };
 
             // Instantiate and draw our chart, passing in some options.
             var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
