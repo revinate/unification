@@ -1640,14 +1640,15 @@
                           ['Pepperoni', 2]
                         ]);
                         // Create the data table.
-                        var data5 = google.visualization.arrayToDataTable([
+                        var data5 = new google.visualization.arrayToDataTable([
                           ['Topping', 'Slices', {
                             role: 'style'
                           }],
-                          ['Musrooms', 3, 'brown'],
-                          ['Onions', 2, 'gold'],
-                          ['Olives', 3, 'green'],
-                          ['Pepperoni', 1, 'red']
+                          ['Mushrooms', 3, 'brown'],
+                          ['Onions', 1, 'gold'],
+                          ['Olives', 1, 'green'],
+                          ['Zucchini', 1, 'yellow'],
+                          ['Pepperoni', 2, 'red']
                         ]);
                         // Create the data table.
                         var data6 = new google.visualization.DataTable();
@@ -1677,7 +1678,8 @@
                           }
                         };
                         var dashOptions = {
-                          'is3D': true
+                          'is3D': true,
+                          'legend': 'none'
                         };
 
                         // Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive
@@ -1794,14 +1796,15 @@
       [<span class="hljs-string">&apos;Pepperoni&apos;</span>, <span class="hljs-number">2</span>]
     ]);
     <span class="hljs-comment">// Create the data table.</span>
-    <span class="hljs-keyword">var</span> data5 = google.visualization.arrayToDataTable([
+    <span class="hljs-keyword">var</span> data5 = <span class="hljs-keyword">new</span> google.visualization.arrayToDataTable([
       [<span class="hljs-string">&apos;Topping&apos;</span>, <span class="hljs-string">&apos;Slices&apos;</span>, {
         role: <span class="hljs-string">&apos;style&apos;</span>
       }],
-      [<span class="hljs-string">&apos;Musrooms&apos;</span>, <span class="hljs-number">3</span>, <span class="hljs-string">&apos;brown&apos;</span>],
-      [<span class="hljs-string">&apos;Onions&apos;</span>, <span class="hljs-number">2</span>, <span class="hljs-string">&apos;gold&apos;</span>],
-      [<span class="hljs-string">&apos;Olives&apos;</span>, <span class="hljs-number">3</span>, <span class="hljs-string">&apos;green&apos;</span>],
-      [<span class="hljs-string">&apos;Pepperoni&apos;</span>, <span class="hljs-number">1</span>, <span class="hljs-string">&apos;red&apos;</span>]
+      [<span class="hljs-string">&apos;Mushrooms&apos;</span>, <span class="hljs-number">3</span>, <span class="hljs-string">&apos;brown&apos;</span>],
+      [<span class="hljs-string">&apos;Onions&apos;</span>, <span class="hljs-number">1</span>, <span class="hljs-string">&apos;gold&apos;</span>],
+      [<span class="hljs-string">&apos;Olives&apos;</span>, <span class="hljs-number">1</span>, <span class="hljs-string">&apos;green&apos;</span>],
+      [<span class="hljs-string">&apos;Zucchini&apos;</span>, <span class="hljs-number">1</span>, <span class="hljs-string">&apos;yellow&apos;</span>],
+      [<span class="hljs-string">&apos;Pepperoni&apos;</span>, <span class="hljs-number">2</span>, <span class="hljs-string">&apos;red&apos;</span>]
     ]);
     <span class="hljs-comment">// Create the data table.</span>
     <span class="hljs-keyword">var</span> data6 = <span class="hljs-keyword">new</span> google.visualization.DataTable();
@@ -1831,7 +1834,8 @@
       }
     };
     <span class="hljs-keyword">var</span> dashOptions = {
-      <span class="hljs-string">&apos;is3D&apos;</span>: <span class="hljs-literal">true</span>
+      <span class="hljs-string">&apos;is3D&apos;</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-string">&apos;legend&apos;</span>: <span class="hljs-string">&apos;none&apos;</span>
     };
 
     <span class="hljs-comment">// Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive</span>

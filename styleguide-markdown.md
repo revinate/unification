@@ -747,12 +747,13 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
               ['Pepperoni', 2]
             ]);
             // Create the data table.
-            var data5 = google.visualization.arrayToDataTable([
-              ['Topping', 'Slices', { role: 'style' }],
-              ['Musrooms', 3, 'brown'],
-              ['Onions', 2, 'gold'],
-              ['Olives', 3, 'green'],
-              ['Pepperoni', 1, 'red' ]
+            var data5 = new google.visualization.arrayToDataTable([
+              ['Topping', 'Slices', {role: 'style'}],
+              ['Mushrooms', 3, 'brown'],
+              ['Onions', 1, 'gold'],
+              ['Olives', 1, 'green'],
+              ['Zucchini', 1, 'yellow'],
+              ['Pepperoni', 2, 'red']
             ]);
             // Create the data table.
             var data6 = new google.visualization.DataTable();
@@ -778,7 +779,8 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
                                'title': 'Horizontal Axis'
                            }
                            };
-            var dashOptions = {'is3D': true
+            var dashOptions = {'is3D': true,
+                               'legend': 'none'
                            };
 
             // Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive
