@@ -1663,23 +1663,35 @@
                         ]);
                         // Set chart options
                         var options = {
-                          'title': 'Chart Example',
-                          'height': 300,
+                          title: 'Chart Example',
+                          height: 300,
                           // add Revinate colors here 'colors':['#000000', '#111111', '#222222', '#333333'],
-                          'is3D': true,
-                          'vAxis': {
-                            'gridlines': {
+                          is3D: true,
+                          vAxis: {
+                            gridlines: {
                               count: 4
                             },
-                            'title': 'Vertical Axis'
+                            title: 'Vertical Axis',
+                            titleTextStyle: {
+                              fontSize: 10,
+                              color: '#AAAAAA',
+                              fontName: 'LatoBold',
+                              italic: false
+                            }
                           },
-                          'hAxis': {
-                            'title': 'Horizontal Axis'
+                          hAxis: {
+                            title: 'Horizontal Axis',
+                            titleTextStyle: {
+                              fontSize: 10,
+                              color: '#AAAAAA',
+                              fontName: 'LatoBold',
+                              italic: false
+                            }
                           }
                         };
                         var dashOptions = {
-                          'is3D': true,
-                          'legend': 'none'
+                          is3D: true,
+                          legend: 'none'
                         };
 
                         // Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive
@@ -1819,23 +1831,35 @@
     ]);
     <span class="hljs-comment">// Set chart options</span>
     <span class="hljs-keyword">var</span> options = {
-      <span class="hljs-string">&apos;title&apos;</span>: <span class="hljs-string">&apos;Chart Example&apos;</span>,
-      <span class="hljs-string">&apos;height&apos;</span>: <span class="hljs-number">300</span>,
+      title: <span class="hljs-string">&apos;Chart Example&apos;</span>,
+      height: <span class="hljs-number">300</span>,
       <span class="hljs-comment">// add Revinate colors here &apos;colors&apos;:[&apos;#000000&apos;, &apos;#111111&apos;, &apos;#222222&apos;, &apos;#333333&apos;],</span>
-      <span class="hljs-string">&apos;is3D&apos;</span>: <span class="hljs-literal">true</span>,
-      <span class="hljs-string">&apos;vAxis&apos;</span>: {
-        <span class="hljs-string">&apos;gridlines&apos;</span>: {
+      is3D: <span class="hljs-literal">true</span>,
+      vAxis: {
+        gridlines: {
           count: <span class="hljs-number">4</span>
         },
-        <span class="hljs-string">&apos;title&apos;</span>: <span class="hljs-string">&apos;Vertical Axis&apos;</span>
+        title: <span class="hljs-string">&apos;Vertical Axis&apos;</span>,
+        titleTextStyle: {
+          fontSize: <span class="hljs-number">10</span>,
+          color: <span class="hljs-string">&apos;#AAAAAA&apos;</span>,
+          fontName: <span class="hljs-string">&apos;LatoBold&apos;</span>,
+          italic: <span class="hljs-literal">false</span>
+        }
       },
-      <span class="hljs-string">&apos;hAxis&apos;</span>: {
-        <span class="hljs-string">&apos;title&apos;</span>: <span class="hljs-string">&apos;Horizontal Axis&apos;</span>
+      hAxis: {
+        title: <span class="hljs-string">&apos;Horizontal Axis&apos;</span>,
+        titleTextStyle: {
+          fontSize: <span class="hljs-number">10</span>,
+          color: <span class="hljs-string">&apos;#AAAAAA&apos;</span>,
+          fontName: <span class="hljs-string">&apos;LatoBold&apos;</span>,
+          italic: <span class="hljs-literal">false</span>
+        }
       }
     };
     <span class="hljs-keyword">var</span> dashOptions = {
-      <span class="hljs-string">&apos;is3D&apos;</span>: <span class="hljs-literal">true</span>,
-      <span class="hljs-string">&apos;legend&apos;</span>: <span class="hljs-string">&apos;none&apos;</span>
+      is3D: <span class="hljs-literal">true</span>,
+      legend: <span class="hljs-string">&apos;none&apos;</span>
     };
 
     <span class="hljs-comment">// Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive</span>

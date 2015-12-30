@@ -767,20 +767,32 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
               ['2007', 1030, 540]
             ]);
             // Set chart options
-            var options = {'title':'Chart Example',
-                           'height': 300,
+            var options = {title: 'Chart Example',
+                           height: 300,
                            // add Revinate colors here 'colors':['#000000', '#111111', '#222222', '#333333'],
-                           'is3D': true,
-                           'vAxis': {
-                               'gridlines': { count: 4 },
-                               'title': 'Vertical Axis'
+                           is3D: true,
+                           vAxis: {
+                               gridlines: { count: 4 },
+                               title: 'Vertical Axis',
+                               titleTextStyle: {
+                                fontSize: 10,
+                                color: '#AAAAAA',
+                                fontName: 'LatoBold',
+                                italic: false
+                               }
                            },
-                           'hAxis': {
-                               'title': 'Horizontal Axis'
+                           hAxis: {
+                               title: 'Horizontal Axis',
+                               titleTextStyle: {
+                                fontSize: 10,
+                                color: '#AAAAAA',
+                                fontName: 'LatoBold',
+                                italic: false
+                               }
                            }
                            };
-            var dashOptions = {'is3D': true,
-                               'legend': 'none'
+            var dashOptions = {is3D: true,
+                               legend: 'none'
                            };
 
             // Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive
