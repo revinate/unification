@@ -689,6 +689,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
 
 - Charting uses Google Charts
 - Draw charts with reSize function to make them responsive on window resize.
+- Axis labels are LatoBold and all caps.  Capitalization must be done explicitly, as google charts doesn't support textTransform.
 
 
     @example
@@ -773,7 +774,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
                            is3D: true,
                            vAxis: {
                                gridlines: { count: 4 },
-                               title: 'Vertical Axis',
+                               title: 'VERTICAL AXIS',
                                titleTextStyle: {
                                 fontSize: 10,
                                 color: '#AAAAAA',
@@ -782,7 +783,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
                                }
                            },
                            hAxis: {
-                               title: 'Horizontal Axis',
+                               title: 'HORIZONTAL AXIS',
                                titleTextStyle: {
                                 fontSize: 10,
                                 color: '#AAAAAA',
