@@ -793,7 +793,26 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
                            }
                            };
             var dashOptions = {is3D: true,
-                               legend: 'none'
+                           backgroundColor: 'transparent',
+                           vAxis: {
+                               gridlines: { count: 4 },
+                               title: 'VERTICAL AXIS',
+                               titleTextStyle: {
+                                fontSize: 10,
+                                color: '#AAAAAA',
+                                fontName: 'LatoBold',
+                                italic: false
+                               }
+                           },
+                           hAxis: {
+                               title: 'HORIZONTAL AXIS',
+                               titleTextStyle: {
+                                fontSize: 10,
+                                color: '#AAAAAA',
+                                fontName: 'LatoBold',
+                                italic: false
+                               }
+                           }
                            };
 
             // Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive
@@ -826,7 +845,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
 
     <h3>Dashboard Charts</h3>
     <div class="row">
-       <div class="col-md-4">
+       <div class="col-md-6">
           <div class="dashboard-widget">
              <h4 class="dashboard-widget-title">
                 Widget Title
@@ -835,7 +854,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
           </div>
        </div>
 
-       <div class="col-md-4">
+       <div class="col-md-6">
           <div class="dashboard-widget">
              <h4 class="dashboard-widget-title">
                 Widget Title
@@ -843,8 +862,10 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
              <div id="chart_div5"></div>
           </div>
        </div>
+    </div>
 
-       <div class="col-md-4">
+    <div class="row">
+       <div class="col-md-6">
           <div class="dashboard-widget">
              <h4 class="dashboard-widget-title">
                 Widget Title

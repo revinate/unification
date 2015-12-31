@@ -1692,7 +1692,28 @@
                         };
                         var dashOptions = {
                           is3D: true,
-                          legend: 'none'
+                          backgroundColor: 'transparent',
+                          vAxis: {
+                            gridlines: {
+                              count: 4
+                            },
+                            title: 'VERTICAL AXIS',
+                            titleTextStyle: {
+                              fontSize: 10,
+                              color: '#AAAAAA',
+                              fontName: 'LatoBold',
+                              italic: false
+                            }
+                          },
+                          hAxis: {
+                            title: 'HORIZONTAL AXIS',
+                            titleTextStyle: {
+                              fontSize: 10,
+                              color: '#AAAAAA',
+                              fontName: 'LatoBold',
+                              italic: false
+                            }
+                          }
                         };
 
                         // Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive
@@ -1725,7 +1746,7 @@
 
                     <h3>Dashboard Charts</h3>
                     <div class="row">
-                      <div class="col-md-4">
+                      <div class="col-md-6">
                         <div class="dashboard-widget">
                           <h4 class="dashboard-widget-title">
                             Widget Title
@@ -1734,7 +1755,7 @@
                         </div>
                       </div>
 
-                      <div class="col-md-4">
+                      <div class="col-md-6">
                         <div class="dashboard-widget">
                           <h4 class="dashboard-widget-title">
                             Widget Title
@@ -1742,8 +1763,10 @@
                           <div id="chart_div5"></div>
                         </div>
                       </div>
+                    </div>
 
-                      <div class="col-md-4">
+                    <div class="row">
+                      <div class="col-md-6">
                         <div class="dashboard-widget">
                           <h4 class="dashboard-widget-title">
                             Widget Title
@@ -1860,7 +1883,28 @@
     };
     <span class="hljs-keyword">var</span> dashOptions = {
       is3D: <span class="hljs-literal">true</span>,
-      legend: <span class="hljs-string">&apos;none&apos;</span>
+      backgroundColor: <span class="hljs-string">&apos;transparent&apos;</span>,
+      vAxis: {
+        gridlines: {
+          count: <span class="hljs-number">4</span>
+        },
+        title: <span class="hljs-string">&apos;VERTICAL AXIS&apos;</span>,
+        titleTextStyle: {
+          fontSize: <span class="hljs-number">10</span>,
+          color: <span class="hljs-string">&apos;#AAAAAA&apos;</span>,
+          fontName: <span class="hljs-string">&apos;LatoBold&apos;</span>,
+          italic: <span class="hljs-literal">false</span>
+        }
+      },
+      hAxis: {
+        title: <span class="hljs-string">&apos;HORIZONTAL AXIS&apos;</span>,
+        titleTextStyle: {
+          fontSize: <span class="hljs-number">10</span>,
+          color: <span class="hljs-string">&apos;#AAAAAA&apos;</span>,
+          fontName: <span class="hljs-string">&apos;LatoBold&apos;</span>,
+          italic: <span class="hljs-literal">false</span>
+        }
+      }
     };
 
     <span class="hljs-comment">// Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive</span>
@@ -1893,7 +1937,7 @@
 
 <span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span>Dashboard Charts<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-4&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-6&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dashboard-widget&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dashboard-widget-title&quot;</span>&gt;</span>
         Widget Title
@@ -1902,7 +1946,7 @@
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-4&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-6&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dashboard-widget&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dashboard-widget-title&quot;</span>&gt;</span>
         Widget Title
@@ -1910,8 +1954,10 @@
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;chart_div5&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-4&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-6&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dashboard-widget&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dashboard-widget-title&quot;</span>&gt;</span>
         Widget Title
