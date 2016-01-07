@@ -773,6 +773,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
             var chartColors = ['#8F7EC2', '#2598B8', '#5FC782', '#ECDE31', '#F55949', '#AE85D4', '#5FC2C2', '#9ACC54', '#F5A61D', '#B6744A'];
             var options = {title: 'Chart Example',
                            backgroundColor: 'transparent',
+                           pointShape: 'circle',
                            titleTextStyle: {
                              fontName: 'LatoBold',
                              fontSize: 14
