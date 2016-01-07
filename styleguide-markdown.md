@@ -267,10 +267,10 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
     <button class="btn btn-default">Default</button>
     <button class="btn btn-primary">Primary</button>
     <button class="btn btn-secondary">Secondary</button>
-    <button class="btn btn-success">Success</button>
+    <!--button class="btn btn-success">Success</button-->
     <button class="btn btn-danger">Danger</button>
     <button class="btn btn-info">Info</button>
-    <button class="btn btn-warning">Warning</button>
+    <!--button class="btn btn-warning">Warning</button-->
 
 
 ###Labels and Badges
@@ -748,13 +748,15 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
               ['Pepperoni', 2]
             ]);
             // Create the data table.
-            var data5 = new google.visualization.arrayToDataTable([
-              ['Topping', 'Slices', {role: 'style'}],
-              ['Mushrooms', 3, 'brown'],
-              ['Onions', 1, 'gold'],
-              ['Olives', 1, 'green'],
-              ['Zucchini', 1, 'yellow'],
-              ['Pepperoni', 2, 'red']
+            var data5 = new google.visualization.DataTable();
+            data5.addColumn('string', 'Topping');
+            data5.addColumn('number', 'Slices');
+            data5.addRows([
+              ['Mushrooms', 3],
+              ['Onions', 1],
+              ['Olives', 15],
+              ['Zucchini', 1],
+              ['Pepperoni', 2]
             ]);
             // Create the data table.
             var data6 = new google.visualization.DataTable();
@@ -768,13 +770,29 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
               ['2007', 1030, 540]
             ]);
             // Set chart options
+            var chartColors = ['#8F7EC2', '#2598B8', '#5FC782', '#ECDE31', '#F55949', '#AE85D4', '#5FC2C2', '#9ACC54', '#F5A61D', '#B6744A'];
             var options = {title: 'Chart Example',
+                           backgroundColor: 'transparent',
+                           titleTextStyle: {
+                             fontName: 'LatoBold',
+                             fontSize: 14
+                           },
+                           legend: {
+                             textStyle: {
+                              fontSize: 13
+                             }
+                           },
+                           fontName: 'Lato',
                            height: 300,
-                           // add Revinate colors here 'colors':['#000000', '#111111', '#222222', '#333333'],
+                           colors:chartColors,
                            is3D: true,
                            vAxis: {
                                gridlines: { count: 4 },
                                title: 'VERTICAL AXIS',
+                               textStyle: {
+                                fontName: 'Lato',
+                                fontSize: '13',
+                               },
                                titleTextStyle: {
                                 fontSize: 10,
                                 color: '#AAAAAA',
@@ -784,6 +802,10 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
                            },
                            hAxis: {
                                title: 'HORIZONTAL AXIS',
+                               textStyle: {
+                                fontName: 'Lato',
+                                fontSize: '13',
+                               },
                                titleTextStyle: {
                                 fontSize: 10,
                                 color: '#AAAAAA',
@@ -791,29 +813,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
                                 italic: false
                                }
                            }
-                           };
-            var dashOptions = {is3D: true,
-                           backgroundColor: 'transparent',
-                           vAxis: {
-                               gridlines: { count: 4 },
-                               title: 'VERTICAL AXIS',
-                               titleTextStyle: {
-                                fontSize: 10,
-                                color: '#AAAAAA',
-                                fontName: 'LatoBold',
-                                italic: false
-                               }
-                           },
-                           hAxis: {
-                               title: 'HORIZONTAL AXIS',
-                               titleTextStyle: {
-                                fontSize: 10,
-                                color: '#AAAAAA',
-                                fontName: 'LatoBold',
-                                italic: false
-                               }
-                           }
-                           };
+                          };
 
             // Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive
             function reSize () {
@@ -824,11 +824,11 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
             var chart3 = new google.visualization.LineChart(document.getElementById('chart_div3'));
             chart3.draw(data3, options);
             var chart4 = new google.visualization.PieChart(document.getElementById('chart_div4'));
-            chart4.draw(data4, dashOptions);
+            chart4.draw(data4, options);
             var chart5 = new google.visualization.BarChart(document.getElementById('chart_div5'));
-            chart5.draw(data5, dashOptions);
+            chart5.draw(data5, options);
             var chart6 = new google.visualization.LineChart(document.getElementById('chart_div6'));
-            chart6.draw(data6, dashOptions);
+            chart6.draw(data6, options);
             }
             window.onload = reSize();
             window.onresize = reSize;
@@ -873,6 +873,79 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
              <div id="chart_div6"></div>
           </div>
        </div>
+    </div>
+
+
+### Modals
+
+
+    @example
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#smModal">Small Modal</button>
+    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#mdModal">Meduim Modal</button>
+    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#lgModal">Large Modal</button>
+
+    <!-- Small Modal -->
+    <div id="smModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-sm">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the small modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Medium Modal -->
+    <div id="mdModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the medium modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Large Modal -->
+    <div id="lgModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the large modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
     </div>
 
 
