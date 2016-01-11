@@ -195,6 +195,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
 
 
 **Panel Table**
+
 - Panel tables and headers are wrapped in  `.panel`
 - `.panel-default` applies the border
 - Panel header is wrapped in `header.panel-heading` with title in `h3.panel-title` and subtext in `small` tag
@@ -943,6 +944,9 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
 
 ### Modals
 
+- Modals use standard bootstrap modal markup.
+- `.modal-sm` and `.modal-lg` are used for small and large modals. Modals are medium-sized by default.
+
 
     @example
     <!-- Trigger the modal with a button -->
@@ -964,6 +968,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
             <p>Some text in the small modal.</p>
           </div>
           <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Save</button>
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>
         </div>
@@ -985,6 +990,8 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
             <p>Some text in the medium modal.</p>
           </div>
           <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Save</button>
+            <button type="button" class="btn btn-secondary">Cancel</button>
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>
         </div>
@@ -1006,6 +1013,8 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
             <p>Some text in the large modal.</p>
           </div>
           <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Save</button>
+            <button type="button" class="btn btn-secondary">Cancel</button>
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>
         </div>
