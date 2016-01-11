@@ -79,6 +79,9 @@
                   <a href="#modals">Modals</a>
                 </li>
                 <li>
+                  <a href="#pagination">Pagination</a>
+                </li>
+                <li>
                   <a href="#integration">Integration</a>
                 </li>
               </ul>
@@ -1773,7 +1776,7 @@
                       <div class="col-md-6">
                         <div class="dashboard-widget">
                           <h4 class="dashboard-widget-title">
-                            Widget Title
+                            Dashboard Pie Chart
                           </h4>
                           <div id="chart_div4"></div>
                         </div>
@@ -1782,7 +1785,7 @@
                       <div class="col-md-6">
                         <div class="dashboard-widget">
                           <h4 class="dashboard-widget-title">
-                            Widget Title
+                            Dashboard Bar Chart
                           </h4>
                           <div id="chart_div5"></div>
                         </div>
@@ -1793,7 +1796,7 @@
                       <div class="col-md-6">
                         <div class="dashboard-widget">
                           <h4 class="dashboard-widget-title">
-                            Widget Title
+                            Dashboard Line Chart
                           </h4>
                           <div id="chart_div6"></div>
                         </div>
@@ -1987,7 +1990,7 @@
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-6&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dashboard-widget&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dashboard-widget-title&quot;</span>&gt;</span>
-        Widget Title
+        Dashboard Pie Chart
       <span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;chart_div4&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
@@ -1996,7 +1999,7 @@
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-6&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dashboard-widget&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dashboard-widget-title&quot;</span>&gt;</span>
-        Widget Title
+        Dashboard Bar Chart
       <span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;chart_div5&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
@@ -2007,7 +2010,7 @@
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-6&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dashboard-widget&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dashboard-widget-title&quot;</span>&gt;</span>
-        Widget Title
+        Dashboard Line Chart
       <span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;chart_div6&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
@@ -2158,6 +2161,99 @@
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
                 </div>
               </section>
+              <section class="sg-block sg-section-pagination">
+                <div class="sg-text">
+                  <h3 id="pagination" class="sg">Pagination</h3>
+                  <ul class="sg">
+                    <li class="sg">Standard bootstrap pagination applies</li>
+                    <li class="sg">Classes
+                      <code class="sg">.disabled</code>and
+                      <code class="sg">.active</code>are applied to li elements.</li>
+                  </ul>
+                </div>
+                <div class="sg-example">
+                  <div class="sg-canvas">
+                    <nav>
+                      <ul class="pagination">
+                        <li>
+                          <a href="#" aria-label="Previous First Page">
+                            <span aria-hidden="true">&#xAB;</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&#x2039;</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">1</a>
+                        </li>
+                        <li>
+                          <a href="#">2</a>
+                        </li>
+                        <li>
+                          <a href="#">3</a>
+                        </li>
+                        <li>
+                          <a href="#">4</a>
+                        </li>
+                        <li class="active">
+                          <a href="#">5</a>
+                        </li>
+                        <li class="disabled">
+                          <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&#x203A;</span>
+                          </a>
+                        </li>
+                        <li class="disabled">
+                          <a href="#" aria-label="Next Last Page">
+                            <span aria-hidden="true">&#xBB;</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">nav</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;pagination&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">&quot;Previous First Page&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">&quot;true&quot;</span>&gt;</span>&amp;laquo;<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">&quot;Previous&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">&quot;true&quot;</span>&gt;</span>&amp;lsaquo;<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;active&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;disabled&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">&quot;Previous&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">&quot;true&quot;</span>&gt;</span>&amp;rsaquo;<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;disabled&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">&quot;Next Last Page&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">&quot;true&quot;</span>&gt;</span>&amp;raquo;<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span></pre>
+                </div>
+              </section>
+
               <section class="sg-block sg-section-integration">
                 <h3 id="integration" class="sg">Integration</h3>
                 <ul class="sg">

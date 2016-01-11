@@ -877,7 +877,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
        <div class="col-md-6">
           <div class="dashboard-widget">
              <h4 class="dashboard-widget-title">
-                Widget Title
+                Dashboard Pie Chart
              </h4>
              <div id="chart_div4"></div>
           </div>
@@ -886,7 +886,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
        <div class="col-md-6">
           <div class="dashboard-widget">
              <h4 class="dashboard-widget-title">
-                Widget Title
+                Dashboard Bar Chart
              </h4>
              <div id="chart_div5"></div>
           </div>
@@ -897,7 +897,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
        <div class="col-md-6">
           <div class="dashboard-widget">
              <h4 class="dashboard-widget-title">
-                Widget Title
+                Dashboard Line Chart
              </h4>
              <div id="chart_div6"></div>
           </div>
@@ -976,6 +976,45 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
 
       </div>
     </div>
+    
+    
+###Pagination
+
+
+- Standard bootstrap pagination applies
+- Classes `.disabled` and `.active` are applied to li elements.
+
+
+    @example
+    <nav>
+      <ul class="pagination">
+        <li>
+          <a href="#" aria-label="Previous First Page">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&lsaquo;</span>
+          </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li class="active"><a href="#">5</a></li>
+        <li class="disabled">
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&rsaquo;</span>
+          </a>
+        </li>
+        <li class="disabled">
+          <a href="#" aria-label="Next Last Page">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
 
 ### Integration

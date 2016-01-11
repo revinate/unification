@@ -48,6 +48,7 @@
                   <li><a href="#typography-and-lists">Typography &amp; Lists</a></li>
                   <li><a href="#charts">Charts</a></li>
                   <li><a href="#modals">Modals</a></li>
+                  <li><a href="#pagination">Pagination</a></li>
                   <li><a href="#integration">Integration</a></li>
                 </ul>
               </nav>
