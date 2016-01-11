@@ -199,6 +199,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
 - `.panel-default` applies the border
 - Panel header is wrapped in `header.panel-heading` with title in `h3.panel-title` and subtext in `small` tag
 - `button` elements may be included in the header, and will align right by default
+- The table below features a multi-select column header.
 
 
     @example
@@ -216,7 +217,42 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
                         <th>Column 1</th>
                         <th><a href="#">Column 2 <i class="fa fa-sort fa-sort-asc"></i></a></th>
                         <th><a href="#">Column 3 <i class="fa fa-sort fa-sort-desc"></i></a</th>
-                        <th>Column 4</th>
+                        <th>
+                            <div class="btn-group">
+                                <button type="button" class="multiselect dropdown-toggle btn btn-small btn-default" data-toggle="dropdown" title="None selected">
+                                    <span class="multiselect-selected-text">
+                                        All Senders
+                                    </span> 
+                                        <b class="caret"></b>
+                                </button>
+                                <ul class="multiselect-container dropdown-menu">
+                                    <li class="multiselect-item multiselect-all">
+                                        <a tabindex="0" class="multiselect-all">
+                                            <label class="checkbox">
+                                                <input type="checkbox" value="multiselect-all"> 
+                                                    &nbsp;All
+                                            </label>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="0">
+                                            <label class="checkbox">
+                                                <input type="checkbox" value="-1"> 
+                                                    &nbsp;Group
+                                            </label>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="0">
+                                            <label class="checkbox">
+                                                <input type="checkbox" value="376"> 
+                                                    &nbsp;Revinate HQ Hotel
+                                            </label>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -1015,6 +1051,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
         </li>
       </ul>
     </nav>
+            
 
 
 ### Integration

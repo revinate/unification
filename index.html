@@ -540,6 +540,7 @@
                       <code class="sg">small</code>tag</li>
                     <li class="sg">
                       <code class="sg">button</code>elements may be included in the header, and will align right by default</li>
+                    <li class="sg">The table below features a multi-select column header.</li>
                   </ul>
                 </div>
                 <div class="sg-example">
@@ -564,7 +565,39 @@
                               <th>
                                 <a href="#">Column 3
                                   <i class="fa fa-sort fa-sort-desc"></i>
-                                  <th>Column 4</th>
+                                  <th>
+                                    <div class="btn-group">
+                                      <button type="button" class="multiselect dropdown-toggle btn btn-small btn-default" data-toggle="dropdown" title="None selected">
+                                        <span class="multiselect-selected-text">
+                                          All Senders
+                                        </span>
+                                        <b class="caret"></b>
+                                      </button>
+                                      <ul class="multiselect-container dropdown-menu">
+                                        <li class="multiselect-item multiselect-all">
+                                          <a tabindex="0" class="multiselect-all">
+                                            <label class="checkbox">
+                                              <input type="checkbox" value="multiselect-all">&#xA0;All
+                                            </label>
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a tabindex="0">
+                                            <label class="checkbox">
+                                              <input type="checkbox" value="-1">&#xA0;Group
+                                            </label>
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a tabindex="0">
+                                            <label class="checkbox">
+                                              <input type="checkbox" value="376">&#xA0;Revinate HQ Hotel
+                                            </label>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </th>
                                 </a>
                               </th>
                             </tr>
@@ -619,7 +652,39 @@
             &lt;a href=&quot;#&quot;&gt;Column 3
               &lt;i class=&quot;fa fa-sort fa-sort-desc&quot;&gt;&lt;/i&gt;
               &lt;/a&lt;/th&gt;
-              &lt;th&gt;Column 4&lt;/th&gt;
+              &lt;th&gt;
+                &lt;div class=&quot;btn-group&quot;&gt;
+                  &lt;button type=&quot;button&quot; class=&quot;multiselect dropdown-toggle btn btn-small btn-default&quot; data-toggle=&quot;dropdown&quot; title=&quot;None selected&quot;&gt;
+                    &lt;span class=&quot;multiselect-selected-text&quot;&gt;
+                      All Senders
+                    &lt;/span&gt;
+                    &lt;b class=&quot;caret&quot;&gt;&lt;/b&gt;
+                  &lt;/button&gt;
+                  &lt;ul class=&quot;multiselect-container dropdown-menu&quot;&gt;
+                    &lt;li class=&quot;multiselect-item multiselect-all&quot;&gt;
+                      &lt;a tabindex=&quot;0&quot; class=&quot;multiselect-all&quot;&gt;
+                        &lt;label class=&quot;checkbox&quot;&gt;
+                          &lt;input type=&quot;checkbox&quot; value=&quot;multiselect-all&quot;&gt;&amp;nbsp;All
+                        &lt;/label&gt;
+                      &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                      &lt;a tabindex=&quot;0&quot;&gt;
+                        &lt;label class=&quot;checkbox&quot;&gt;
+                          &lt;input type=&quot;checkbox&quot; value=&quot;-1&quot;&gt;&amp;nbsp;Group
+                        &lt;/label&gt;
+                      &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                      &lt;a tabindex=&quot;0&quot;&gt;
+                        &lt;label class=&quot;checkbox&quot;&gt;
+                          &lt;input type=&quot;checkbox&quot; value=&quot;376&quot;&gt;&amp;nbsp;Revinate HQ Hotel
+                        &lt;/label&gt;
+                      &lt;/a&gt;
+                    &lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/div&gt;
+              &lt;/th&gt;
         &lt;/tr&gt;
       &lt;/thead&gt;
       &lt;tbody&gt;
