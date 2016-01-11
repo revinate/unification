@@ -697,6 +697,23 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
     <script type="text/javascript">
         google.charts.load('current', {packages: ['corechart']});
         google.charts.setOnLoadCallback(drawChart);
+        // Merge Recursive Function so that we can have default and custom options for chart titles, etc.
+        function MergeRecursive(obj1, obj2) {
+          for (var p in obj2) {
+            try {
+              // Property in destination object set; update its value.
+              if ( obj2[p].constructor==Object ) {
+                obj1[p] = MergeRecursive(obj1[p], obj2[p]);
+              } else {
+                obj1[p] = obj2[p];
+              }
+            } catch(e) {
+              // Property in destination object not set; create it and set its value.
+              obj1[p] = obj2[p];
+            }
+          }
+          return obj1;
+        }
 
           // Callback that creates and populates a data table,
           // instantiates the pie chart, passes in the data and
@@ -770,69 +787,77 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
               ['2007', 1030, 540]
             ]);
             // Set chart options
-            var chartColors = ['#8F7EC2', '#2598B8', '#5FC782', '#ECDE31', '#F55949', '#AE85D4', '#5FC2C2', '#9ACC54', '#F5A61D', '#B6744A'];
-            var options = {title: 'Chart Example',
-                           backgroundColor: 'transparent',
-                           pointSize: '5',
-                           pointShape: {
-                             type: 'circle'
-                           },
-                           titleTextStyle: {
-                             fontName: 'LatoBold',
-                             fontSize: 14
-                           },
-                           legend: {
-                             textStyle: {
-                              fontSize: 13
-                             }
-                           },
-                           fontName: 'Lato',
-                           height: 300,
-                           colors:chartColors,
-                           is3D: true,
-                           vAxis: {
-                               gridlines: { count: 4 },
-                               title: 'VERTICAL AXIS',
-                               textStyle: {
-                                fontName: 'Lato',
-                                fontSize: '13',
-                               },
-                               titleTextStyle: {
-                                fontSize: 10,
-                                color: '#AAAAAA',
-                                fontName: 'LatoBold',
-                                italic: false
-                               }
-                           },
-                           hAxis: {
-                               title: 'HORIZONTAL AXIS',
-                               textStyle: {
-                                fontName: 'Lato',
-                                fontSize: '13',
-                               },
-                               titleTextStyle: {
-                                fontSize: 10,
-                                color: '#AAAAAA',
-                                fontName: 'LatoBold',
-                                italic: false
-                               }
-                           }
-                          };
+           var defaultOptions = {
+                colors: ['#8F7EC2', '#2598B8', '#5FC782', '#ECDE31', '#F55949', '#AE85D4', '#5FC2C2', '#9ACC54', '#F5A61D', '#B6744A'],
+                backgroundColor: 'transparent',
+                height: 300,
+                is3D: true,
+                fontName: 'Lato',
+                fontSize: 13,
+                pointSize: '5',
+                pointShape: {
+                    type: 'circle'
+                },
+                titleTextStyle: {
+                    fontName: 'LatoBold',
+                    fontSize: 14
+                },
+                vAxis: {
+                    gridlines: {
+                    count: 4
+                    },
+                    titleTextStyle: {
+                        fontSize: 10,
+                        color: '#AAAAAA',
+                        fontName: 'LatoBold',
+                        italic: false
+                    }
+                },
+                hAxis: {
+                    titleTextStyle: {
+                        fontSize: 10,
+                        color: '#AAAAAA',
+                        fontName: 'LatoBold',
+                        italic: false
+                    }
+                }
+            };
+            var options1 = {
+                title: 'Popularity of Pizza Toppings'
+            };
+            var options2 = {
+                title: 'Popularity of Pizza Toppings by Slice',
+                vAxis: {
+                    title: 'Pizza Toppings'
+                },
+                hAxis: {
+                    title: '# of Slices'
+                }
+            };
+            var options3 = {
+                title: 'Sales vs Expenditures',
+                vAxis: {
+                    title: 'Amount of Dollars (USD)'
+                },
+                hAxis: {
+                    title: 'Year'
+                }
+            };
 
             // Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive
             function reSize () {
             var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-            chart.draw(data, options);
+            chart.draw(data, MergeRecursive(defaultOptions, options1));
             var chart2 = new google.visualization.BarChart(document.getElementById('chart_div2'));
-            chart2.draw(data2, options);
+            chart2.draw(data2, MergeRecursive(defaultOptions, options2));
             var chart3 = new google.visualization.LineChart(document.getElementById('chart_div3'));
-            chart3.draw(data3, options);
+            chart3.draw(data3, MergeRecursive(defaultOptions, options3));
             var chart4 = new google.visualization.PieChart(document.getElementById('chart_div4'));
-            chart4.draw(data4, options);
+            chart4.draw(data4, MergeRecursive(defaultOptions, options1));
             var chart5 = new google.visualization.BarChart(document.getElementById('chart_div5'));
-            chart5.draw(data5, options);
+            chart5.draw(data5, MergeRecursive(defaultOptions, options2));
             var chart6 = new google.visualization.LineChart(document.getElementById('chart_div6'));
-            chart6.draw(data6, options);
+            chart6.draw(data6, MergeRecursive(defaultOptions, options3));
             }
             window.onload = reSize();
             window.onresize = reSize;

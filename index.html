@@ -1593,6 +1593,23 @@
                         packages: ['corechart']
                       });
                       google.charts.setOnLoadCallback(drawChart);
+                       // Merge Recursive Function so that we can have default and custom options for chart titles, etc.
+                      function MergeRecursive(obj1, obj2) {
+                        for (var p in obj2) {
+                          try {
+                            // Property in destination object set; update its value.
+                            if (obj2[p].constructor == Object) {
+                              obj1[p] = MergeRecursive(obj1[p], obj2[p]);
+                            } else {
+                              obj1[p] = obj2[p];
+                            }
+                          } catch (e) {
+                            // Property in destination object not set; create it and set its value.
+                            obj1[p] = obj2[p];
+                          }
+                        }
+                        return obj1;
+                      }
 
                        // Callback that creates and populates a data table,
                        // instantiates the pie chart, passes in the data and
@@ -1666,10 +1683,13 @@
                           ['2007', 1030, 540]
                         ]);
                         // Set chart options
-                        var chartColors = ['#8F7EC2', '#2598B8', '#5FC782', '#ECDE31', '#F55949', '#AE85D4', '#5FC2C2', '#9ACC54', '#F5A61D', '#B6744A'];
-                        var options = {
-                          title: 'Chart Example',
+                        var defaultOptions = {
+                          colors: ['#8F7EC2', '#2598B8', '#5FC782', '#ECDE31', '#F55949', '#AE85D4', '#5FC2C2', '#9ACC54', '#F5A61D', '#B6744A'],
                           backgroundColor: 'transparent',
+                          height: 300,
+                          is3D: true,
+                          fontName: 'Lato',
+                          fontSize: 13,
                           pointSize: '5',
                           pointShape: {
                             type: 'circle'
@@ -1678,23 +1698,9 @@
                             fontName: 'LatoBold',
                             fontSize: 14
                           },
-                          legend: {
-                            textStyle: {
-                              fontSize: 13
-                            }
-                          },
-                          fontName: 'Lato',
-                          height: 300,
-                          colors: chartColors,
-                          is3D: true,
                           vAxis: {
                             gridlines: {
                               count: 4
-                            },
-                            title: 'VERTICAL AXIS',
-                            textStyle: {
-                              fontName: 'Lato',
-                              fontSize: '13',
                             },
                             titleTextStyle: {
                               fontSize: 10,
@@ -1704,11 +1710,6 @@
                             }
                           },
                           hAxis: {
-                            title: 'HORIZONTAL AXIS',
-                            textStyle: {
-                              fontName: 'Lato',
-                              fontSize: '13',
-                            },
                             titleTextStyle: {
                               fontSize: 10,
                               color: '#AAAAAA',
@@ -1717,21 +1718,42 @@
                             }
                           }
                         };
+                        var options1 = {
+                          title: 'Popularity of Pizza Toppings'
+                        };
+                        var options2 = {
+                          title: 'Popularity of Pizza Toppings by Slice',
+                          vAxis: {
+                            title: 'Pizza Toppings'
+                          },
+                          hAxis: {
+                            title: '# of Slices'
+                          }
+                        };
+                        var options3 = {
+                          title: 'Sales vs Expenditures',
+                          vAxis: {
+                            title: 'Amount of Dollars (USD)'
+                          },
+                          hAxis: {
+                            title: 'Year'
+                          }
+                        };
 
                         // Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive
                         function reSize() {
                           var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-                          chart.draw(data, options);
+                          chart.draw(data, MergeRecursive(defaultOptions, options1));
                           var chart2 = new google.visualization.BarChart(document.getElementById('chart_div2'));
-                          chart2.draw(data2, options);
+                          chart2.draw(data2, MergeRecursive(defaultOptions, options2));
                           var chart3 = new google.visualization.LineChart(document.getElementById('chart_div3'));
-                          chart3.draw(data3, options);
+                          chart3.draw(data3, MergeRecursive(defaultOptions, options3));
                           var chart4 = new google.visualization.PieChart(document.getElementById('chart_div4'));
-                          chart4.draw(data4, options);
+                          chart4.draw(data4, MergeRecursive(defaultOptions, options1));
                           var chart5 = new google.visualization.BarChart(document.getElementById('chart_div5'));
-                          chart5.draw(data5, options);
+                          chart5.draw(data5, MergeRecursive(defaultOptions, options2));
                           var chart6 = new google.visualization.LineChart(document.getElementById('chart_div6'));
-                          chart6.draw(data6, options);
+                          chart6.draw(data6, MergeRecursive(defaultOptions, options3));
                         }
                         window.onload = reSize();
                         window.onresize = reSize;
@@ -1783,6 +1805,23 @@
     packages: [<span class="hljs-string">&apos;corechart&apos;</span>]
   });
   google.charts.setOnLoadCallback(drawChart);
+  <span class="hljs-comment">// Merge Recursive Function so that we can have default and custom options for chart titles, etc.</span>
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">MergeRecursive</span><span class="hljs-params">(obj1, obj2)</span> </span>{
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> p <span class="hljs-keyword">in</span> obj2) {
+      <span class="hljs-keyword">try</span> {
+        <span class="hljs-comment">// Property in destination object set; update its value.</span>
+        <span class="hljs-keyword">if</span> (obj2[p].constructor == <span class="hljs-built_in">Object</span>) {
+          obj1[p] = MergeRecursive(obj1[p], obj2[p]);
+        } <span class="hljs-keyword">else</span> {
+          obj1[p] = obj2[p];
+        }
+      } <span class="hljs-keyword">catch</span> (e) {
+        <span class="hljs-comment">// Property in destination object not set; create it and set its value.</span>
+        obj1[p] = obj2[p];
+      }
+    }
+    <span class="hljs-keyword">return</span> obj1;
+  }
 
   <span class="hljs-comment">// Callback that creates and populates a data table,</span>
   <span class="hljs-comment">// instantiates the pie chart, passes in the data and</span>
@@ -1856,12 +1895,15 @@
       [<span class="hljs-string">&apos;2007&apos;</span>, <span class="hljs-number">1030</span>, <span class="hljs-number">540</span>]
     ]);
     <span class="hljs-comment">// Set chart options</span>
-    <span class="hljs-keyword">var</span> chartColors = [<span class="hljs-string">&apos;#8F7EC2&apos;</span>, <span class="hljs-string">&apos;#2598B8&apos;</span>, <span class="hljs-string">&apos;#5FC782&apos;</span>, <span class="hljs-string">&apos;#ECDE31&apos;</span>, <span class="hljs-string">&apos;#F55949&apos;</span>, <span class="hljs-string">&apos;#AE85D4&apos;</span>, <span class="hljs-string">&apos;#5FC2C2&apos;</span>, <span class="hljs-string">&apos;#9ACC54&apos;</span>,
-      <span class="hljs-string">&apos;#F5A61D&apos;</span>, <span class="hljs-string">&apos;#B6744A&apos;</span>
-    ];
-    <span class="hljs-keyword">var</span> options = {
-      title: <span class="hljs-string">&apos;Chart Example&apos;</span>,
+    <span class="hljs-keyword">var</span> defaultOptions = {
+      colors: [<span class="hljs-string">&apos;#8F7EC2&apos;</span>, <span class="hljs-string">&apos;#2598B8&apos;</span>, <span class="hljs-string">&apos;#5FC782&apos;</span>, <span class="hljs-string">&apos;#ECDE31&apos;</span>, <span class="hljs-string">&apos;#F55949&apos;</span>, <span class="hljs-string">&apos;#AE85D4&apos;</span>, <span class="hljs-string">&apos;#5FC2C2&apos;</span>, <span class="hljs-string">&apos;#9ACC54&apos;</span>, <span class="hljs-string">&apos;#F5A61D&apos;</span>,
+        <span class="hljs-string">&apos;#B6744A&apos;</span>
+      ],
       backgroundColor: <span class="hljs-string">&apos;transparent&apos;</span>,
+      height: <span class="hljs-number">300</span>,
+      is3D: <span class="hljs-literal">true</span>,
+      fontName: <span class="hljs-string">&apos;Lato&apos;</span>,
+      fontSize: <span class="hljs-number">13</span>,
       pointSize: <span class="hljs-string">&apos;5&apos;</span>,
       pointShape: {
         type: <span class="hljs-string">&apos;circle&apos;</span>
@@ -1870,23 +1912,9 @@
         fontName: <span class="hljs-string">&apos;LatoBold&apos;</span>,
         fontSize: <span class="hljs-number">14</span>
       },
-      legend: {
-        textStyle: {
-          fontSize: <span class="hljs-number">13</span>
-        }
-      },
-      fontName: <span class="hljs-string">&apos;Lato&apos;</span>,
-      height: <span class="hljs-number">300</span>,
-      colors: chartColors,
-      is3D: <span class="hljs-literal">true</span>,
       vAxis: {
         gridlines: {
           count: <span class="hljs-number">4</span>
-        },
-        title: <span class="hljs-string">&apos;VERTICAL AXIS&apos;</span>,
-        textStyle: {
-          fontName: <span class="hljs-string">&apos;Lato&apos;</span>,
-          fontSize: <span class="hljs-string">&apos;13&apos;</span>,
         },
         titleTextStyle: {
           fontSize: <span class="hljs-number">10</span>,
@@ -1896,11 +1924,6 @@
         }
       },
       hAxis: {
-        title: <span class="hljs-string">&apos;HORIZONTAL AXIS&apos;</span>,
-        textStyle: {
-          fontName: <span class="hljs-string">&apos;Lato&apos;</span>,
-          fontSize: <span class="hljs-string">&apos;13&apos;</span>,
-        },
         titleTextStyle: {
           fontSize: <span class="hljs-number">10</span>,
           color: <span class="hljs-string">&apos;#AAAAAA&apos;</span>,
@@ -1909,21 +1932,42 @@
         }
       }
     };
+    <span class="hljs-keyword">var</span> options1 = {
+      title: <span class="hljs-string">&apos;Popularity of Pizza Toppings&apos;</span>
+    };
+    <span class="hljs-keyword">var</span> options2 = {
+      title: <span class="hljs-string">&apos;Popularity of Pizza Toppings by Slice&apos;</span>,
+      vAxis: {
+        title: <span class="hljs-string">&apos;Pizza Toppings&apos;</span>
+      },
+      hAxis: {
+        title: <span class="hljs-string">&apos;# of Slices&apos;</span>
+      }
+    };
+    <span class="hljs-keyword">var</span> options3 = {
+      title: <span class="hljs-string">&apos;Sales vs Expenditures&apos;</span>,
+      vAxis: {
+        title: <span class="hljs-string">&apos;Amount of Dollars (USD)&apos;</span>
+      },
+      hAxis: {
+        title: <span class="hljs-string">&apos;Year&apos;</span>
+      }
+    };
 
     <span class="hljs-comment">// Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive</span>
     <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reSize</span><span class="hljs-params">()</span> </span>{
       <span class="hljs-keyword">var</span> chart = <span class="hljs-keyword">new</span> google.visualization.PieChart(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;chart_div&apos;</span>));
-      chart.draw(data, options);
+      chart.draw(data, MergeRecursive(defaultOptions, options1));
       <span class="hljs-keyword">var</span> chart2 = <span class="hljs-keyword">new</span> google.visualization.BarChart(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;chart_div2&apos;</span>));
-      chart2.draw(data2, options);
+      chart2.draw(data2, MergeRecursive(defaultOptions, options2));
       <span class="hljs-keyword">var</span> chart3 = <span class="hljs-keyword">new</span> google.visualization.LineChart(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;chart_div3&apos;</span>));
-      chart3.draw(data3, options);
+      chart3.draw(data3, MergeRecursive(defaultOptions, options3));
       <span class="hljs-keyword">var</span> chart4 = <span class="hljs-keyword">new</span> google.visualization.PieChart(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;chart_div4&apos;</span>));
-      chart4.draw(data4, options);
+      chart4.draw(data4, MergeRecursive(defaultOptions, options1));
       <span class="hljs-keyword">var</span> chart5 = <span class="hljs-keyword">new</span> google.visualization.BarChart(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;chart_div5&apos;</span>));
-      chart5.draw(data5, options);
+      chart5.draw(data5, MergeRecursive(defaultOptions, options2));
       <span class="hljs-keyword">var</span> chart6 = <span class="hljs-keyword">new</span> google.visualization.LineChart(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;chart_div6&apos;</span>));
-      chart6.draw(data6, options);
+      chart6.draw(data6, MergeRecursive(defaultOptions, options3));
     }
     <span class="hljs-built_in">window</span>.onload = reSize();
     <span class="hljs-built_in">window</span>.onresize = reSize;
