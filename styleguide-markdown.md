@@ -680,7 +680,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
 
 
     @example
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eros lacus, scelerisque bibendum neque eget, varius dictum elit. Praesent fermentum laoreet metus, quis interdum orci. Pellentesque eu sodales lectus. Curabitur nec dui id erat sodales venenatis sit amet eget libero. Curabitur vestibulum risus sapien, vel sodales eros rhoncus pretium. Mauris mattis vitae mi sed feugiat. Curabitur quis condimentum tellus. Aenean ultrices leo euismod augue lacinia posuere. Aliquam nunc quam, <strong>bold text</strong>&nbsp;dictum et enim at, molestie commodo lectus. Aliquam elit magna, finibus id mi non, ullamcorper luctus risus. Nam auctor nulla sit amet dignissim accumsan. Fusce et ex metus. Suspendisse potenti.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eros lacus, scelerisque bibendum neque eget, varius dictum elit. Praesent <a href="#" data-toggle="tooltip" title="first tooltip">tooltip</a>&nbsp;fermentum laoreet metus, quis interdum orci. Pellentesque eu sodales lectus. Curabitur nec dui id erat sodales venenatis sit amet eget libero. Curabitur vestibulum risus sapien, vel sodales eros rhoncus pretium. Mauris mattis vitae mi sed feugiat. Curabitur quis condimentum tellus. Aenean ultrices leo euismod augue lacinia posuere. Aliquam nunc quam, <strong>bold text</strong>&nbsp;dictum et enim at, molestie commodo lectus. Aliquam elit magna, finibus id mi non, ullamcorper luctus risus. Nam auctor nulla sit amet dignissim accumsan. Fusce et ex metus. Suspendisse potenti.</p>
 
     <p>Nunc mi magna, euismod ut interdum id, egestas id diam. Sed faucibus faucibus quam in semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam nec quam orci. Duis felis mi, eleifend at est in, condimentum placerat dolor. Donec dapibus ex vitae metus ornare tincidunt. Duis auctor congue maximus. Curabitur eget neque mauris. Vivamus pretium mi a tortor fermentum rhoncus. Pellentesque id porttitor quam, vitae volutpat est. Mauris et iaculis risus. Nam nisi sapien, condimentum sit amet lacus quis, pellentesque scelerisque erat. Nullam iaculis lectus sit amet est elementum faucibus.</p>
 
@@ -906,9 +906,24 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
 
     @example
     <!-- Trigger the modal with a button -->
-    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#smModal">Small Modal</button>
-    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#mdModal">Meduim Modal</button>
-    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#lgModal">Large Modal</button>
+    <button 
+        type="button" 
+        class="btn btn-primary btn-sm" 
+        data-toggle="modal" 
+        data-target="#smModal">Small Modal
+    </button>
+    <button 
+        type="button" 
+        class="btn btn-primary btn-sm" 
+        data-toggle="modal" 
+        data-target="#mdModal">Meduim Modal
+    </button>
+    <button 
+        type="button" 
+        class="btn btn-primary btn-sm" 
+        data-toggle="modal" 
+        data-target="#lgModal">Large Modal
+    </button>
 
     <!-- Small Modal -->
     <div id="smModal" class="modal fade" role="dialog">
@@ -924,8 +939,15 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
             <p>Some text in the small modal.</p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Save</button>
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button 
+                type="button" 
+                class="btn btn-primary">Save
+            </button>
+            <button 
+                type="button" 
+                class="btn btn-default" 
+                data-dismiss="modal">Close
+            </button>
           </div>
         </div>
 
@@ -946,9 +968,19 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
             <p>Some text in the medium modal.</p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Save</button>
-            <button type="button" class="btn btn-secondary">Cancel</button>
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button 
+                type="button" 
+                class="btn btn-primary">Save
+            </button>
+            <button 
+                type="button" 
+                class="btn btn-secondary">Cancel
+            </button>
+            <button 
+                type="button" 
+                class="btn btn-default" 
+                data-dismiss="modal">Close
+            </button>
           </div>
         </div>
 
@@ -969,14 +1001,64 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
             <p>Some text in the large modal.</p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Save</button>
-            <button type="button" class="btn btn-secondary">Cancel</button>
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button 
+                type="button" 
+                class="btn btn-primary">Save
+            </button>
+            <button 
+                type="button" 
+                class="btn btn-secondary">Cancel
+            </button>
+            <button 
+                type="button" 
+                class="btn btn-default" 
+                data-dismiss="modal">Close
+            </button>
           </div>
         </div>
 
       </div>
     </div>
+    
+
+    
+###Tooltips
+
+
+- Tooltips are controlled with the `data-toggle` and `title` attributes. 
+- Position tooltips with `data-placement` attribute.
+
+    
+    @example
+    <button 
+        type="button" 
+        class="btn btn-xs btn-primary" 
+        data-toggle="tooltip" 
+        data-placement="left" 
+        title="Tooltip on left">Tooltip on left
+    </button>
+    <button 
+        type="button" 
+        class="btn btn-xs btn-primary" 
+        data-toggle="tooltip" 
+        data-placement="top" 
+        title="Tooltip on top">Tooltip on top
+    </button>
+    <button 
+        type="button" 
+        class="btn btn-xs btn-primary" 
+        data-toggle="tooltip" 
+        data-placement="bottom" 
+        title="Tooltip on bottom">Tooltip on bottom
+    </button>
+    <button 
+        type="button" 
+        class="btn btn-xs btn-primary" 
+        data-toggle="tooltip" 
+        data-placement="right" 
+        title="Tooltip on right">Tooltip on right
+    </button>
+    
     
     
 ###Pagination
@@ -999,11 +1081,21 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
             <span aria-hidden="true">&lsaquo;</span>
           </a>
         </li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li class="active"><a href="#">5</a></li>
+        <li>
+            <a href="#">1</a>
+        </li>
+        <li>
+            <a href="#">2</a>
+        </li>
+        <li>
+            <a href="#">3</a>
+        </li>
+        <li>
+            <a href="#">4</a>
+        </li>
+        <li class="active">
+            <a href="#">5</a>
+        </li>
         <li class="disabled">
           <a href="#" aria-label="Previous">
             <span aria-hidden="true">&rsaquo;</span>
