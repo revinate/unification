@@ -1554,7 +1554,7 @@
                 <div class="sg-example">
                   <div class="sg-canvas">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eros lacus, scelerisque bibendum neque eget, varius dictum elit. Praesent fermentum laoreet metus, quis interdum orci. Pellentesque eu sodales lectus. Curabitur nec dui id erat sodales venenatis sit amet eget libero. Curabitur vestibulum risus sapien, vel sodales eros rhoncus pretium. Mauris mattis vitae mi sed feugiat. Curabitur quis condimentum tellus. Aenean ultrices leo euismod augue lacinia posuere. Aliquam nunc quam,
-                      <strong>bold text</strong>dictum et enim at, molestie commodo lectus. Aliquam elit magna, finibus id mi non, ullamcorper luctus risus. Nam auctor nulla sit amet dignissim accumsan. Fusce et ex metus. Suspendisse potenti.</p>
+                      <strong>bold text</strong>&#xA0;dictum et enim at, molestie commodo lectus. Aliquam elit magna, finibus id mi non, ullamcorper luctus risus. Nam auctor nulla sit amet dignissim accumsan. Fusce et ex metus. Suspendisse potenti.</p>
 
                     <p>Nunc mi magna, euismod ut interdum id, egestas id diam. Sed faucibus faucibus quam in semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam nec quam orci. Duis felis mi, eleifend at est in, condimentum placerat dolor. Donec dapibus ex vitae metus ornare tincidunt. Duis auctor congue maximus. Curabitur eget neque mauris. Vivamus pretium mi a tortor fermentum rhoncus. Pellentesque id porttitor quam, vitae volutpat est. Mauris et iaculis risus. Nam nisi sapien, condimentum sit amet lacus quis, pellentesque scelerisque erat. Nullam iaculis lectus sit amet est elementum faucibus.</p>
 
@@ -1597,8 +1597,8 @@
   Praesent fermentum laoreet metus, quis interdum orci. Pellentesque eu sodales lectus. Curabitur nec dui id erat sodales
   venenatis sit amet eget libero. Curabitur vestibulum risus sapien, vel sodales eros rhoncus pretium. Mauris mattis vitae
   mi sed feugiat. Curabitur quis condimentum tellus. Aenean ultrices leo euismod augue lacinia posuere. Aliquam nunc quam,
-  <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>bold text<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span>dictum et enim at, molestie commodo lectus. Aliquam elit magna, finibus id mi non, ullamcorper luctus
-  risus. Nam auctor nulla sit amet dignissim accumsan. Fusce et ex metus. Suspendisse potenti.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>bold text<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span>&amp;nbsp;dictum et enim at, molestie commodo lectus. Aliquam elit magna, finibus id mi non, ullamcorper
+  luctus risus. Nam auctor nulla sit amet dignissim accumsan. Fusce et ex metus. Suspendisse potenti.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Nunc mi magna, euismod ut interdum id, egestas id diam. Sed faucibus faucibus quam in semper. Cum sociis natoque penatibus
   et magnis dis parturient montes, nascetur ridiculus mus. Nam nec quam orci. Duis felis mi, eleifend at est in, condimentum
@@ -1691,60 +1691,16 @@
                         data.addRows([
                           ['Mushrooms', 3],
                           ['Onions', 1],
-                          ['Olives', 1],
+                          ['Olives', 15],
                           ['Zucchini', 1],
                           ['Pepperoni', 2]
                         ]);
                         // Create the data table.
                         var data2 = new google.visualization.DataTable();
-                        data2.addColumn('string', 'Topping');
-                        data2.addColumn('number', 'Slices');
+                        data2.addColumn('string', 'Year');
+                        data2.addColumn('number', 'Sales');
+                        data2.addColumn('number', 'Expenses');
                         data2.addRows([
-                          ['Mushrooms', 3],
-                          ['Onions', 1],
-                          ['Olives', 15],
-                          ['Zucchini', 1],
-                          ['Pepperoni', 2]
-                        ]);
-                        // Create the data table.
-                        var data3 = new google.visualization.DataTable();
-                        data3.addColumn('string', 'Year');
-                        data3.addColumn('number', 'Sales');
-                        data3.addColumn('number', 'Expenses');
-                        data3.addRows([
-                          ['2004', 1000, 400],
-                          ['2005', 1170, 460],
-                          ['2006', 860, 580],
-                          ['2007', 1030, 540]
-                        ]);
-                        // Create the data table.
-                        var data4 = new google.visualization.DataTable();
-                        data4.addColumn('string', 'Topping');
-                        data4.addColumn('number', 'Slices');
-                        data4.addRows([
-                          ['Mushrooms', 3],
-                          ['Onions', 1],
-                          ['Olives', 1],
-                          ['Zucchini', 1],
-                          ['Pepperoni', 2]
-                        ]);
-                        // Create the data table.
-                        var data5 = new google.visualization.DataTable();
-                        data5.addColumn('string', 'Topping');
-                        data5.addColumn('number', 'Slices');
-                        data5.addRows([
-                          ['Mushrooms', 3],
-                          ['Onions', 1],
-                          ['Olives', 15],
-                          ['Zucchini', 1],
-                          ['Pepperoni', 2]
-                        ]);
-                        // Create the data table.
-                        var data6 = new google.visualization.DataTable();
-                        data6.addColumn('string', 'Year');
-                        data6.addColumn('number', 'Sales');
-                        data6.addColumn('number', 'Expenses');
-                        data6.addRows([
                           ['2004', 1000, 400],
                           ['2005', 1170, 460],
                           ['2006', 860, 580],
@@ -1805,7 +1761,7 @@
                           },
                           hAxis: {
                             title: 'Year'
-                          }
+                          },
                         };
 
                         // Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive
@@ -1813,15 +1769,15 @@
                           var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
                           chart.draw(data, MergeRecursive(defaultOptions, options1));
                           var chart2 = new google.visualization.BarChart(document.getElementById('chart_div2'));
-                          chart2.draw(data2, MergeRecursive(defaultOptions, options2));
+                          chart2.draw(data, MergeRecursive(defaultOptions, options2));
                           var chart3 = new google.visualization.LineChart(document.getElementById('chart_div3'));
-                          chart3.draw(data3, MergeRecursive(defaultOptions, options3));
+                          chart3.draw(data2, MergeRecursive(defaultOptions, options3));
                           var chart4 = new google.visualization.PieChart(document.getElementById('chart_div4'));
-                          chart4.draw(data4, MergeRecursive(defaultOptions, options1));
+                          chart4.draw(data, MergeRecursive(defaultOptions, options1));
                           var chart5 = new google.visualization.BarChart(document.getElementById('chart_div5'));
-                          chart5.draw(data5, MergeRecursive(defaultOptions, options2));
+                          chart5.draw(data, MergeRecursive(defaultOptions, options2));
                           var chart6 = new google.visualization.LineChart(document.getElementById('chart_div6'));
-                          chart6.draw(data6, MergeRecursive(defaultOptions, options3));
+                          chart6.draw(data2, MergeRecursive(defaultOptions, options3));
                         }
                         window.onload = reSize();
                         window.onresize = reSize;
@@ -1903,60 +1859,16 @@
     data.addRows([
       [<span class="hljs-string">&apos;Mushrooms&apos;</span>, <span class="hljs-number">3</span>],
       [<span class="hljs-string">&apos;Onions&apos;</span>, <span class="hljs-number">1</span>],
-      [<span class="hljs-string">&apos;Olives&apos;</span>, <span class="hljs-number">1</span>],
+      [<span class="hljs-string">&apos;Olives&apos;</span>, <span class="hljs-number">15</span>],
       [<span class="hljs-string">&apos;Zucchini&apos;</span>, <span class="hljs-number">1</span>],
       [<span class="hljs-string">&apos;Pepperoni&apos;</span>, <span class="hljs-number">2</span>]
     ]);
     <span class="hljs-comment">// Create the data table.</span>
     <span class="hljs-keyword">var</span> data2 = <span class="hljs-keyword">new</span> google.visualization.DataTable();
-    data2.addColumn(<span class="hljs-string">&apos;string&apos;</span>, <span class="hljs-string">&apos;Topping&apos;</span>);
-    data2.addColumn(<span class="hljs-string">&apos;number&apos;</span>, <span class="hljs-string">&apos;Slices&apos;</span>);
+    data2.addColumn(<span class="hljs-string">&apos;string&apos;</span>, <span class="hljs-string">&apos;Year&apos;</span>);
+    data2.addColumn(<span class="hljs-string">&apos;number&apos;</span>, <span class="hljs-string">&apos;Sales&apos;</span>);
+    data2.addColumn(<span class="hljs-string">&apos;number&apos;</span>, <span class="hljs-string">&apos;Expenses&apos;</span>);
     data2.addRows([
-      [<span class="hljs-string">&apos;Mushrooms&apos;</span>, <span class="hljs-number">3</span>],
-      [<span class="hljs-string">&apos;Onions&apos;</span>, <span class="hljs-number">1</span>],
-      [<span class="hljs-string">&apos;Olives&apos;</span>, <span class="hljs-number">15</span>],
-      [<span class="hljs-string">&apos;Zucchini&apos;</span>, <span class="hljs-number">1</span>],
-      [<span class="hljs-string">&apos;Pepperoni&apos;</span>, <span class="hljs-number">2</span>]
-    ]);
-    <span class="hljs-comment">// Create the data table.</span>
-    <span class="hljs-keyword">var</span> data3 = <span class="hljs-keyword">new</span> google.visualization.DataTable();
-    data3.addColumn(<span class="hljs-string">&apos;string&apos;</span>, <span class="hljs-string">&apos;Year&apos;</span>);
-    data3.addColumn(<span class="hljs-string">&apos;number&apos;</span>, <span class="hljs-string">&apos;Sales&apos;</span>);
-    data3.addColumn(<span class="hljs-string">&apos;number&apos;</span>, <span class="hljs-string">&apos;Expenses&apos;</span>);
-    data3.addRows([
-      [<span class="hljs-string">&apos;2004&apos;</span>, <span class="hljs-number">1000</span>, <span class="hljs-number">400</span>],
-      [<span class="hljs-string">&apos;2005&apos;</span>, <span class="hljs-number">1170</span>, <span class="hljs-number">460</span>],
-      [<span class="hljs-string">&apos;2006&apos;</span>, <span class="hljs-number">860</span>, <span class="hljs-number">580</span>],
-      [<span class="hljs-string">&apos;2007&apos;</span>, <span class="hljs-number">1030</span>, <span class="hljs-number">540</span>]
-    ]);
-    <span class="hljs-comment">// Create the data table.</span>
-    <span class="hljs-keyword">var</span> data4 = <span class="hljs-keyword">new</span> google.visualization.DataTable();
-    data4.addColumn(<span class="hljs-string">&apos;string&apos;</span>, <span class="hljs-string">&apos;Topping&apos;</span>);
-    data4.addColumn(<span class="hljs-string">&apos;number&apos;</span>, <span class="hljs-string">&apos;Slices&apos;</span>);
-    data4.addRows([
-      [<span class="hljs-string">&apos;Mushrooms&apos;</span>, <span class="hljs-number">3</span>],
-      [<span class="hljs-string">&apos;Onions&apos;</span>, <span class="hljs-number">1</span>],
-      [<span class="hljs-string">&apos;Olives&apos;</span>, <span class="hljs-number">1</span>],
-      [<span class="hljs-string">&apos;Zucchini&apos;</span>, <span class="hljs-number">1</span>],
-      [<span class="hljs-string">&apos;Pepperoni&apos;</span>, <span class="hljs-number">2</span>]
-    ]);
-    <span class="hljs-comment">// Create the data table.</span>
-    <span class="hljs-keyword">var</span> data5 = <span class="hljs-keyword">new</span> google.visualization.DataTable();
-    data5.addColumn(<span class="hljs-string">&apos;string&apos;</span>, <span class="hljs-string">&apos;Topping&apos;</span>);
-    data5.addColumn(<span class="hljs-string">&apos;number&apos;</span>, <span class="hljs-string">&apos;Slices&apos;</span>);
-    data5.addRows([
-      [<span class="hljs-string">&apos;Mushrooms&apos;</span>, <span class="hljs-number">3</span>],
-      [<span class="hljs-string">&apos;Onions&apos;</span>, <span class="hljs-number">1</span>],
-      [<span class="hljs-string">&apos;Olives&apos;</span>, <span class="hljs-number">15</span>],
-      [<span class="hljs-string">&apos;Zucchini&apos;</span>, <span class="hljs-number">1</span>],
-      [<span class="hljs-string">&apos;Pepperoni&apos;</span>, <span class="hljs-number">2</span>]
-    ]);
-    <span class="hljs-comment">// Create the data table.</span>
-    <span class="hljs-keyword">var</span> data6 = <span class="hljs-keyword">new</span> google.visualization.DataTable();
-    data6.addColumn(<span class="hljs-string">&apos;string&apos;</span>, <span class="hljs-string">&apos;Year&apos;</span>);
-    data6.addColumn(<span class="hljs-string">&apos;number&apos;</span>, <span class="hljs-string">&apos;Sales&apos;</span>);
-    data6.addColumn(<span class="hljs-string">&apos;number&apos;</span>, <span class="hljs-string">&apos;Expenses&apos;</span>);
-    data6.addRows([
       [<span class="hljs-string">&apos;2004&apos;</span>, <span class="hljs-number">1000</span>, <span class="hljs-number">400</span>],
       [<span class="hljs-string">&apos;2005&apos;</span>, <span class="hljs-number">1170</span>, <span class="hljs-number">460</span>],
       [<span class="hljs-string">&apos;2006&apos;</span>, <span class="hljs-number">860</span>, <span class="hljs-number">580</span>],
@@ -2019,7 +1931,7 @@
       },
       hAxis: {
         title: <span class="hljs-string">&apos;Year&apos;</span>
-      }
+      },
     };
 
     <span class="hljs-comment">// Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive</span>
@@ -2027,15 +1939,15 @@
       <span class="hljs-keyword">var</span> chart = <span class="hljs-keyword">new</span> google.visualization.PieChart(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;chart_div&apos;</span>));
       chart.draw(data, MergeRecursive(defaultOptions, options1));
       <span class="hljs-keyword">var</span> chart2 = <span class="hljs-keyword">new</span> google.visualization.BarChart(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;chart_div2&apos;</span>));
-      chart2.draw(data2, MergeRecursive(defaultOptions, options2));
+      chart2.draw(data, MergeRecursive(defaultOptions, options2));
       <span class="hljs-keyword">var</span> chart3 = <span class="hljs-keyword">new</span> google.visualization.LineChart(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;chart_div3&apos;</span>));
-      chart3.draw(data3, MergeRecursive(defaultOptions, options3));
+      chart3.draw(data2, MergeRecursive(defaultOptions, options3));
       <span class="hljs-keyword">var</span> chart4 = <span class="hljs-keyword">new</span> google.visualization.PieChart(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;chart_div4&apos;</span>));
-      chart4.draw(data4, MergeRecursive(defaultOptions, options1));
+      chart4.draw(data, MergeRecursive(defaultOptions, options1));
       <span class="hljs-keyword">var</span> chart5 = <span class="hljs-keyword">new</span> google.visualization.BarChart(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;chart_div5&apos;</span>));
-      chart5.draw(data5, MergeRecursive(defaultOptions, options2));
+      chart5.draw(data, MergeRecursive(defaultOptions, options2));
       <span class="hljs-keyword">var</span> chart6 = <span class="hljs-keyword">new</span> google.visualization.LineChart(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;chart_div6&apos;</span>));
-      chart6.draw(data6, MergeRecursive(defaultOptions, options3));
+      chart6.draw(data2, MergeRecursive(defaultOptions, options3));
     }
     <span class="hljs-built_in">window</span>.onload = reSize();
     <span class="hljs-built_in">window</span>.onresize = reSize;

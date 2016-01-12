@@ -680,7 +680,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
 
 
     @example
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eros lacus, scelerisque bibendum neque eget, varius dictum elit. Praesent fermentum laoreet metus, quis interdum orci. Pellentesque eu sodales lectus. Curabitur nec dui id erat sodales venenatis sit amet eget libero. Curabitur vestibulum risus sapien, vel sodales eros rhoncus pretium. Mauris mattis vitae mi sed feugiat. Curabitur quis condimentum tellus. Aenean ultrices leo euismod augue lacinia posuere. Aliquam nunc quam, <strong>bold text</strong> dictum et enim at, molestie commodo lectus. Aliquam elit magna, finibus id mi non, ullamcorper luctus risus. Nam auctor nulla sit amet dignissim accumsan. Fusce et ex metus. Suspendisse potenti.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eros lacus, scelerisque bibendum neque eget, varius dictum elit. Praesent fermentum laoreet metus, quis interdum orci. Pellentesque eu sodales lectus. Curabitur nec dui id erat sodales venenatis sit amet eget libero. Curabitur vestibulum risus sapien, vel sodales eros rhoncus pretium. Mauris mattis vitae mi sed feugiat. Curabitur quis condimentum tellus. Aenean ultrices leo euismod augue lacinia posuere. Aliquam nunc quam, <strong>bold text</strong>&nbsp;dictum et enim at, molestie commodo lectus. Aliquam elit magna, finibus id mi non, ullamcorper luctus risus. Nam auctor nulla sit amet dignissim accumsan. Fusce et ex metus. Suspendisse potenti.</p>
 
     <p>Nunc mi magna, euismod ut interdum id, egestas id diam. Sed faucibus faucibus quam in semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam nec quam orci. Duis felis mi, eleifend at est in, condimentum placerat dolor. Donec dapibus ex vitae metus ornare tincidunt. Duis auctor congue maximus. Curabitur eget neque mauris. Vivamus pretium mi a tortor fermentum rhoncus. Pellentesque id porttitor quam, vitae volutpat est. Mauris et iaculis risus. Nam nisi sapien, condimentum sit amet lacus quis, pellentesque scelerisque erat. Nullam iaculis lectus sit amet est elementum faucibus.</p>
 
@@ -764,60 +764,16 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
             data.addRows([
               ['Mushrooms', 3],
               ['Onions', 1],
-              ['Olives', 1],
+              ['Olives', 15],
               ['Zucchini', 1],
               ['Pepperoni', 2]
             ]);
             // Create the data table.
             var data2 = new google.visualization.DataTable();
-            data2.addColumn('string', 'Topping');
-            data2.addColumn('number', 'Slices');
+            data2.addColumn('string', 'Year');
+            data2.addColumn('number', 'Sales');
+            data2.addColumn('number', 'Expenses');
             data2.addRows([
-              ['Mushrooms', 3],
-              ['Onions', 1],
-              ['Olives', 15],
-              ['Zucchini', 1],
-              ['Pepperoni', 2]
-            ]);
-            // Create the data table.
-            var data3 = new google.visualization.DataTable();
-            data3.addColumn('string', 'Year');
-            data3.addColumn('number', 'Sales');
-            data3.addColumn('number', 'Expenses');
-            data3.addRows([
-              ['2004', 1000, 400],
-              ['2005', 1170, 460],
-              ['2006',  860, 580],
-              ['2007', 1030, 540]
-            ]);
-            // Create the data table.
-            var data4 = new google.visualization.DataTable();
-            data4.addColumn('string', 'Topping');
-            data4.addColumn('number', 'Slices');
-            data4.addRows([
-              ['Mushrooms', 3],
-              ['Onions', 1],
-              ['Olives', 1],
-              ['Zucchini', 1],
-              ['Pepperoni', 2]
-            ]);
-            // Create the data table.
-            var data5 = new google.visualization.DataTable();
-            data5.addColumn('string', 'Topping');
-            data5.addColumn('number', 'Slices');
-            data5.addRows([
-              ['Mushrooms', 3],
-              ['Onions', 1],
-              ['Olives', 15],
-              ['Zucchini', 1],
-              ['Pepperoni', 2]
-            ]);
-            // Create the data table.
-            var data6 = new google.visualization.DataTable();
-            data6.addColumn('string', 'Year');
-            data6.addColumn('number', 'Sales');
-            data6.addColumn('number', 'Expenses');
-            data6.addRows([
               ['2004', 1000, 400],
               ['2005', 1170, 460],
               ['2006',  860, 580],
@@ -878,7 +834,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
                 },
                 hAxis: {
                     title: 'Year'
-                }
+                },
             };
 
             // Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive
@@ -886,15 +842,15 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
             var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
             chart.draw(data, MergeRecursive(defaultOptions, options1));
             var chart2 = new google.visualization.BarChart(document.getElementById('chart_div2'));
-            chart2.draw(data2, MergeRecursive(defaultOptions, options2));
+            chart2.draw(data, MergeRecursive(defaultOptions, options2));
             var chart3 = new google.visualization.LineChart(document.getElementById('chart_div3'));
-            chart3.draw(data3, MergeRecursive(defaultOptions, options3));
+            chart3.draw(data2, MergeRecursive(defaultOptions, options3));
             var chart4 = new google.visualization.PieChart(document.getElementById('chart_div4'));
-            chart4.draw(data4, MergeRecursive(defaultOptions, options1));
+            chart4.draw(data, MergeRecursive(defaultOptions, options1));
             var chart5 = new google.visualization.BarChart(document.getElementById('chart_div5'));
-            chart5.draw(data5, MergeRecursive(defaultOptions, options2));
+            chart5.draw(data, MergeRecursive(defaultOptions, options2));
             var chart6 = new google.visualization.LineChart(document.getElementById('chart_div6'));
-            chart6.draw(data6, MergeRecursive(defaultOptions, options3));
+            chart6.draw(data2, MergeRecursive(defaultOptions, options3));
             }
             window.onload = reSize();
             window.onresize = reSize;
