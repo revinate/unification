@@ -287,11 +287,13 @@ code.sg:first-child {
 #styleguide .sidebar-menu ul li a {
   font-family: Lato;
   color: #283767;
+  border-left: 3px solid transparent;
 }
 #styleguide .sidebar-menu ul li a:hover, #styleguide .sidebar-menu ul li.active a {
   font-family: LatoBold;
   font-weight: bold;
   background: transparent;
+  border-left-color: #3BA1F8;
 }
 #styleguide h2.sg {
   margin-top: 0;
