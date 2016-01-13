@@ -1655,6 +1655,8 @@
                     <li class="sg">Charting uses Google Charts</li>
                     <li class="sg">Draw charts with reSize function to make them responsive on window resize.</li>
                     <li class="sg">Axis labels are LatoBold and all caps. Capitalization must be done explicitly, as google charts doesn&apos;t support textTransform.</li>
+                    <li class="sg">jQuery
+                      <code class="sg">.extend</code>method is used to merge default options array with custom options per chart.</li>
                   </ul>
                 </div>
                 <div class="sg-example">
@@ -1665,23 +1667,6 @@
                         packages: ['corechart']
                       });
                       google.charts.setOnLoadCallback(drawChart);
-                       // Merge Recursive Function so that we can have default and custom options for chart titles, etc.
-                      function MergeRecursive(obj1, obj2) {
-                        for (var p in obj2) {
-                          try {
-                            // Property in destination object set; update its value.
-                            if (obj2[p].constructor == Object) {
-                              obj1[p] = MergeRecursive(obj1[p], obj2[p]);
-                            } else {
-                              obj1[p] = obj2[p];
-                            }
-                          } catch (e) {
-                            // Property in destination object not set; create it and set its value.
-                            obj1[p] = obj2[p];
-                          }
-                        }
-                        return obj1;
-                      }
 
                        // Callback that creates and populates a data table,
                        // instantiates the pie chart, passes in the data and
@@ -1771,17 +1756,17 @@
                         // Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive
                         function reSize() {
                           var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-                          chart.draw(data, MergeRecursive(defaultOptions, options1));
+                          chart.draw(data, $.extend(true, {}, defaultOptions, options1));
                           var chart2 = new google.visualization.BarChart(document.getElementById('chart_div2'));
-                          chart2.draw(data, MergeRecursive(defaultOptions, options2));
+                          chart2.draw(data, $.extend(true, {}, defaultOptions, options2));
                           var chart3 = new google.visualization.LineChart(document.getElementById('chart_div3'));
-                          chart3.draw(data2, MergeRecursive(defaultOptions, options3));
+                          chart3.draw(data2, $.extend(true, {}, defaultOptions, options3));
                           var chart4 = new google.visualization.PieChart(document.getElementById('chart_div4'));
-                          chart4.draw(data, MergeRecursive(defaultOptions, options1));
+                          chart4.draw(data, $.extend(true, {}, defaultOptions, options1));
                           var chart5 = new google.visualization.BarChart(document.getElementById('chart_div5'));
-                          chart5.draw(data, MergeRecursive(defaultOptions, options2));
+                          chart5.draw(data, $.extend(true, {}, defaultOptions, options2));
                           var chart6 = new google.visualization.LineChart(document.getElementById('chart_div6'));
-                          chart6.draw(data2, MergeRecursive(defaultOptions, options3));
+                          chart6.draw(data2, $.extend(true, {}, defaultOptions, options3));
                         }
                         window.onload = reSize();
                         window.onresize = reSize;
@@ -1833,23 +1818,6 @@
     packages: [<span class="hljs-string">&apos;corechart&apos;</span>]
   });
   google.charts.setOnLoadCallback(drawChart);
-  <span class="hljs-comment">// Merge Recursive Function so that we can have default and custom options for chart titles, etc.</span>
-  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">MergeRecursive</span><span class="hljs-params">(obj1, obj2)</span> </span>{
-    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> p <span class="hljs-keyword">in</span> obj2) {
-      <span class="hljs-keyword">try</span> {
-        <span class="hljs-comment">// Property in destination object set; update its value.</span>
-        <span class="hljs-keyword">if</span> (obj2[p].constructor == <span class="hljs-built_in">Object</span>) {
-          obj1[p] = MergeRecursive(obj1[p], obj2[p]);
-        } <span class="hljs-keyword">else</span> {
-          obj1[p] = obj2[p];
-        }
-      } <span class="hljs-keyword">catch</span> (e) {
-        <span class="hljs-comment">// Property in destination object not set; create it and set its value.</span>
-        obj1[p] = obj2[p];
-      }
-    }
-    <span class="hljs-keyword">return</span> obj1;
-  }
 
   <span class="hljs-comment">// Callback that creates and populates a data table,</span>
   <span class="hljs-comment">// instantiates the pie chart, passes in the data and</span>
@@ -1941,17 +1909,17 @@
     <span class="hljs-comment">// Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive</span>
     <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reSize</span><span class="hljs-params">()</span> </span>{
       <span class="hljs-keyword">var</span> chart = <span class="hljs-keyword">new</span> google.visualization.PieChart(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;chart_div&apos;</span>));
-      chart.draw(data, MergeRecursive(defaultOptions, options1));
+      chart.draw(data, $.extend(<span class="hljs-literal">true</span>, {}, defaultOptions, options1));
       <span class="hljs-keyword">var</span> chart2 = <span class="hljs-keyword">new</span> google.visualization.BarChart(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;chart_div2&apos;</span>));
-      chart2.draw(data, MergeRecursive(defaultOptions, options2));
+      chart2.draw(data, $.extend(<span class="hljs-literal">true</span>, {}, defaultOptions, options2));
       <span class="hljs-keyword">var</span> chart3 = <span class="hljs-keyword">new</span> google.visualization.LineChart(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;chart_div3&apos;</span>));
-      chart3.draw(data2, MergeRecursive(defaultOptions, options3));
+      chart3.draw(data2, $.extend(<span class="hljs-literal">true</span>, {}, defaultOptions, options3));
       <span class="hljs-keyword">var</span> chart4 = <span class="hljs-keyword">new</span> google.visualization.PieChart(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;chart_div4&apos;</span>));
-      chart4.draw(data, MergeRecursive(defaultOptions, options1));
+      chart4.draw(data, $.extend(<span class="hljs-literal">true</span>, {}, defaultOptions, options1));
       <span class="hljs-keyword">var</span> chart5 = <span class="hljs-keyword">new</span> google.visualization.BarChart(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;chart_div5&apos;</span>));
-      chart5.draw(data, MergeRecursive(defaultOptions, options2));
+      chart5.draw(data, $.extend(<span class="hljs-literal">true</span>, {}, defaultOptions, options2));
       <span class="hljs-keyword">var</span> chart6 = <span class="hljs-keyword">new</span> google.visualization.LineChart(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;chart_div6&apos;</span>));
-      chart6.draw(data2, MergeRecursive(defaultOptions, options3));
+      chart6.draw(data2, $.extend(<span class="hljs-literal">true</span>, {}, defaultOptions, options3));
     }
     <span class="hljs-built_in">window</span>.onload = reSize();
     <span class="hljs-built_in">window</span>.onresize = reSize;

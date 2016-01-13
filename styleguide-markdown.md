@@ -727,6 +727,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
 - Charting uses Google Charts
 - Draw charts with reSize function to make them responsive on window resize.
 - Axis labels are LatoBold and all caps.  Capitalization must be done explicitly, as google charts doesn't support textTransform.
+- jQuery `.extend` method is used to merge default options array with custom options per chart.
 
 
     @example
@@ -734,23 +735,6 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
     <script type="text/javascript">
         google.charts.load('current', {packages: ['corechart']});
         google.charts.setOnLoadCallback(drawChart);
-        // Merge Recursive Function so that we can have default and custom options for chart titles, etc.
-        function MergeRecursive(obj1, obj2) {
-          for (var p in obj2) {
-            try {
-              // Property in destination object set; update its value.
-              if ( obj2[p].constructor==Object ) {
-                obj1[p] = MergeRecursive(obj1[p], obj2[p]);
-              } else {
-                obj1[p] = obj2[p];
-              }
-            } catch(e) {
-              // Property in destination object not set; create it and set its value.
-              obj1[p] = obj2[p];
-            }
-          }
-          return obj1;
-        }
 
           // Callback that creates and populates a data table,
           // instantiates the pie chart, passes in the data and
@@ -840,17 +824,17 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
             // Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive
             function reSize () {
             var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-            chart.draw(data, MergeRecursive(defaultOptions, options1));
+            chart.draw(data, $.extend(true, {}, defaultOptions, options1));
             var chart2 = new google.visualization.BarChart(document.getElementById('chart_div2'));
-            chart2.draw(data, MergeRecursive(defaultOptions, options2));
+            chart2.draw(data, $.extend(true, {}, defaultOptions, options2));
             var chart3 = new google.visualization.LineChart(document.getElementById('chart_div3'));
-            chart3.draw(data2, MergeRecursive(defaultOptions, options3));
+            chart3.draw(data2, $.extend(true, {}, defaultOptions, options3));
             var chart4 = new google.visualization.PieChart(document.getElementById('chart_div4'));
-            chart4.draw(data, MergeRecursive(defaultOptions, options1));
+            chart4.draw(data, $.extend(true, {}, defaultOptions, options1));
             var chart5 = new google.visualization.BarChart(document.getElementById('chart_div5'));
-            chart5.draw(data, MergeRecursive(defaultOptions, options2));
+            chart5.draw(data, $.extend(true, {}, defaultOptions, options2));
             var chart6 = new google.visualization.LineChart(document.getElementById('chart_div6'));
-            chart6.draw(data2, MergeRecursive(defaultOptions, options3));
+            chart6.draw(data2, $.extend(true, {}, defaultOptions, options3));
             }
             window.onload = reSize();
             window.onresize = reSize;
