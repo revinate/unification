@@ -805,19 +805,19 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
             var options2 = {
                 title: 'Popularity of Pizza Toppings by Slice',
                 vAxis: {
-                    title: 'Pizza Toppings'
+                    title: 'PIZZA TOPPINGS'
                 },
                 hAxis: {
-                    title: '# of Slices'
+                    title: '# OF SLICES'
                 }
             };
             var options3 = {
                 title: 'Sales vs Expenditures',
                 vAxis: {
-                    title: 'Amount of Dollars (USD)'
+                    title: 'AMOUNT OF DOLLARS (USD)'
                 },
                 hAxis: {
-                    title: 'Year'
+                    title: 'YEAR'
                 },
             };
 
