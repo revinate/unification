@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap-toggle/css/bootstrap-toggle.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 ### Body
@@ -66,6 +67,7 @@
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap-toggle/js/bootstrap-toggle.js"></script>
     <script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
     <script>
     $('.bs-docs-sidenav li').click(function(){

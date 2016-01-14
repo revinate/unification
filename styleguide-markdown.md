@@ -435,6 +435,22 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
                     </div>
         </div>
         <div class="row">
+            <div class="col-lg-12">
+                <div class="checkbox">
+                    <label><input type="checkbox" data-toggle="toggle" data-size="large">On/Off Switch Large</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" data-toggle="toggle" data-size="normal">On/Off Switch Normal</label>
+                </div>
+                <div class="checkbox disabled">
+                    <label><input type="checkbox" data-toggle="toggle" data-size="small" disabled>On/Off Switch Small (disabled)</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" data-toggle="toggle" data-size="mini">On/Off Switch Mini</label>
+                </div>
+            </div>
+        </div>    
+        <div class="row">
             <div class="col-lg-4">
                 <button type="submit" class="btn btn-primary btn-lg full-width">Submit Button</button>
             </div>
