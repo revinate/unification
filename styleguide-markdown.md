@@ -744,6 +744,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
 - Draw charts with reSize function to make them responsive on window resize.
 - Axis labels are LatoBold and all caps.  Capitalization must be done explicitly, as google charts doesn't support textTransform.
 - jQuery `.extend` method is used to merge default options array with custom options per chart.
+- Colors (10-12 hex values for data); should appear in this order for distinctive color contrast purposes `#8F7EC2, #2598B8, #5FC782, #ECDE31, #F55949, #AE85D4, #5FC2C2, #9ACC54, #F5A61D, #B6744A`
 
 
     @example
