@@ -396,6 +396,17 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
             </div>
         </div>
         <div class="row">
+            <div class="col-lg-4">
+                <label>Select with Search Box</label>
+                <select class="selectpicker" data-live-search="true">
+                    <option value="0">select with search</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-lg-12">
                 <div class="checkbox">
                     <label>
