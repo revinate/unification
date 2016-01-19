@@ -219,40 +219,11 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
                         <th><a href="#">Column 2 <i class="fa fa-sort fa-sort-asc"></i></a></th>
                         <th><a href="#">Column 3 <i class="fa fa-sort fa-sort-desc"></i></a</th>
                         <th>
-                            <div class="btn-group">
-                                <button type="button" class="multiselect dropdown-toggle btn btn-small btn-default" data-toggle="dropdown" title="None selected">
-                                    <span class="multiselect-selected-text">
-                                        All Senders
-                                    </span> 
-                                        <b class="caret"></b>
-                                </button>
-                                <ul class="multiselect-container dropdown-menu">
-                                    <li class="multiselect-item multiselect-all">
-                                        <a tabindex="0" class="multiselect-all">
-                                            <label class="checkbox">
-                                                <input type="checkbox" value="multiselect-all"> 
-                                                    &nbsp;All
-                                            </label>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a tabindex="0">
-                                            <label class="checkbox">
-                                                <input type="checkbox" value="-1"> 
-                                                    &nbsp;Group
-                                            </label>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a tabindex="0">
-                                            <label class="checkbox">
-                                                <input type="checkbox" value="376"> 
-                                                    &nbsp;Revinate HQ Hotel
-                                            </label>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <select class="selectpicker" multiple>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select> 
                         </th>
                     </tr>
                 </thead>
@@ -427,7 +398,6 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
             <div class="col-lg-4">
                 <label>MultiSelect</label>
                 <select class="selectpicker" multiple>
-                    <option value="0">select with search</option>
                     <option value="1">Option 1</option>
                     <option value="2">Option 2</option>
                     <option value="3">Option 3</option>
