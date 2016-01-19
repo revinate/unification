@@ -397,6 +397,23 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
         </div>
         <div class="row">
             <div class="col-lg-4">
+                <label>Select with OptGroups</label>
+                <select class="selectpicker">
+                  <optgroup label="Picnic">
+                    <option>Mustard</option>
+                    <option>Ketchup</option>
+                    <option>Relish</option>
+                  </optgroup>
+                  <optgroup label="Camping">
+                    <option>Tent</option>
+                    <option>Flashlight</option>
+                    <option>Toilet Paper</option>
+                  </optgroup>
+                </select>
+            </div>
+        </div>        
+        <div class="row">
+            <div class="col-lg-4">
                 <label>Select with Search Box</label>
                 <select class="selectpicker" data-live-search="true">
                     <option value="0">select with search</option>
@@ -406,6 +423,17 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
                 </select>
             </div>
         </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <label>MultiSelect</label>
+                <select class="selectpicker" multiple>
+                    <option value="0">select with search</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </div>
+        </div>        
         <div class="row">
             <div class="col-lg-12">
                 <div class="checkbox">
