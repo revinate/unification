@@ -219,7 +219,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
                         <th><a href="#">Column 2 <i class="fa fa-sort fa-sort-asc"></i></a></th>
                         <th><a href="#">Column 3 <i class="fa fa-sort fa-sort-desc"></i></a</th>
                         <th>
-                            <select class="selectpicker" multiple>
+                            <select class="selectpicker" multiple title="Select Multiple">
                                 <option value="1">Option 1</option>
                                 <option value="2">Option 2</option>
                                 <option value="3">Option 3</option>
@@ -369,7 +369,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
         <div class="row">
             <div class="col-lg-4">
                 <label>Select with OptGroups</label>
-                <select class="selectpicker">
+                <select class="selectpicker" title="Option Groups">
                   <optgroup label="Picnic">
                     <option>Mustard</option>
                     <option>Ketchup</option>
@@ -386,7 +386,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
         <div class="row">
             <div class="col-lg-4">
                 <label>Select with Search Box</label>
-                <select class="selectpicker" data-live-search="true">
+                <select class="selectpicker" data-live-search="true" title="Search Options">
                     <option value="0">select with search</option>
                     <option value="1">Option 1</option>
                     <option value="2">Option 2</option>
@@ -397,7 +397,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
         <div class="row">
             <div class="col-lg-4">
                 <label>MultiSelect</label>
-                <select class="selectpicker" multiple>
+                <select class="selectpicker" multiple title="Select Multiple">
                     <option value="1">Option 1</option>
                     <option value="2">Option 2</option>
                     <option value="3">Option 3</option>
