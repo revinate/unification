@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="bower_components/bootstrap-toggle/css/bootstrap-toggle.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body class="sg">
+<body data-spy="scroll" data-target="#myScrollSpy" data-offset="50" class="sg">
   <div class="l-app" id="styleguide">
 
     <main class="l-main">
@@ -32,64 +33,73 @@
           </div>
         </div>
         <div class="l-main-content row pd-xl">
-          <div class="styleguide-menu col-sm-3">
 
-            <nav class="sidebar-menu hidden-xs hidden-sm">
-              <ul class="nav bs-docs-sidenav">
-                <li>
-                  <a href="#general-layout">General Layout</a>
-                </li>
-                <li>
-                  <a href="#primary-menu">Primary Menu</a>
-                </li>
-                <li>
-                  <a href="#headers-and-breadcrumbs">Headers and Breadcrumbs</a>
-                </li>
-                <li>
-                  <a href="#tables">Tables</a>
-                </li>
-                <li>
-                  <a href="#buttons">Buttons</a>
-                </li>
-                <li>
-                  <a href="#labels-and-badges">Labels &amp; Badges</a>
-                </li>
-                <li>
-                  <a href="#wizard-navigation">Wizard Navigation</a>
-                </li>
-                <li>
-                  <a href="#tertiary-navigation">Tertiary Navigation</a>
-                </li>
-                <li>
-                  <a href="#forms">Forms</a>
-                </li>
-                <li>
-                  <a href="#dashboards">Dashboards</a>
-                </li>
-                <li>
-                  <a href="#alerts">Alerts</a>
-                </li>
-                <li>
-                  <a href="#typography-and-lists">Typography &amp; Lists</a>
-                </li>
-                <li>
-                  <a href="#charts">Charts</a>
-                </li>
-                <li>
-                  <a href="#integration">Integration</a>
-                </li>
-              </ul>
-            </nav>
+          <nav class="sidebar-menu col-sm-3 hidden-xs hidden-sm" id="myScrollSpy">
+            <ul class="nav bs-docs-sidenav" data-spy="affix" data-offset-top="270">
+              <li>
+                <a href="#general-layout">General Layout</a>
+              </li>
+              <li>
+                <a href="#primary-menu">Primary Menu</a>
+              </li>
+              <li>
+                <a href="#headers-and-breadcrumbs">Headers and Breadcrumbs</a>
+              </li>
+              <li>
+                <a href="#tables">Tables</a>
+              </li>
+              <li>
+                <a href="#buttons">Buttons</a>
+              </li>
+              <li>
+                <a href="#labels-and-badges">Labels &amp; Badges</a>
+              </li>
+              <li>
+                <a href="#wizard-navigation">Wizard Navigation</a>
+              </li>
+              <li>
+                <a href="#tertiary-navigation">Tertiary Navigation</a>
+              </li>
+              <li>
+                <a href="#forms">Forms</a>
+              </li>
+              <li>
+                <a href="#dashboards">Dashboards</a>
+              </li>
+              <li>
+                <a href="#alerts">Alerts</a>
+              </li>
+              <li>
+                <a href="#typography-and-lists">Typography &amp; Lists</a>
+              </li>
+              <li>
+                <a href="#charts">Charts</a>
+              </li>
+              <li>
+                <a href="#modals">Modals</a>
+              </li>
+              <li>
+                <a href="#tooltips">Tooltips</a>
+              </li>
+              <li>
+                <a href="#pagination">Pagination</a>
+              </li>
+              <li>
+                <a href="#integration">Integration</a>
+              </li>
+            </ul>
+          </nav>
 
-          </div>
           <div class="styleguide col-sm-9">
             <div>
               <section class="sg-block sg-section-general-layout">
                 <div class="sg-text">
                   <h3 id="general-layout" class="sg">General Layout</h3>
                   <p class="sg">This is the overall structure of every page. Content goes inside div with class
-                    <code class="sg">.l-main-content</code>
-                  </p>
+                    <code class="sg">.l-main-content</code>. Everything inside follows the standard Bootstrap 12-column grid, using
+                    <code class="sg">.row</code>and
+                    <code class="sg">.col-xs- .col-sm- .col-md- .col-lg</code>. Using
+                    <code class="sg">.col-md-*</code>will stack on mobile and tile on desktop.</p>
                 </div>
                 <div class="sg-example">
                   <div class="sg-canvas">
@@ -103,6 +113,23 @@
                           <div class="l-main-content pd-md mg-t-xl">
                             <!-- content goes here -->
                             <p>Content Goes Here</p>
+                            <div class="row show-grid">
+                              <div class="col-md-1">
+                                <p>.col-md-1</p>
+                              </div>
+                              <div class="col-md-2">
+                                <p>.col-md-2</p>
+                              </div>
+                              <div class="col-md-3">
+                                <p>.col-md-3</p>
+                              </div>
+                              <div class="col-md-4">
+                                <p>.col-md-4</p>
+                              </div>
+                              <div class="col-md-2">
+                                <p>.col-md-2</p>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </main>
@@ -120,6 +147,23 @@
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;l-main-content pd-md mg-t-xl&quot;</span>&gt;</span>
         <span class="hljs-comment">&lt;!-- content goes here --&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content Goes Here<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row show-grid&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-1&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>.col-md-1<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-2&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>.col-md-2<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-3&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>.col-md-3<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-4&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>.col-md-4<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-2&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>.col-md-2<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">main</span>&gt;</span>
@@ -170,7 +214,6 @@
                       <code class="sg">&lt;a&gt;</code>tags have the attribute
                       <code class="sg">data-toggle=&apos;tab&apos;</code>, otherwise remove the attribute.</li>
                   </ul>
-                  <p class="sg"></p>
                 </div>
                 <div class="sg-example">
                   <div class="sg-canvas">
@@ -443,7 +486,8 @@
       <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">header</span>&gt;</span></pre>
                 </div>
               </section>
 
@@ -534,6 +578,7 @@
                       <code class="sg">small</code>tag</li>
                     <li class="sg">
                       <code class="sg">button</code>elements may be included in the header, and will align right by default</li>
+                    <li class="sg">The table below features a multi-select column header.</li>
                   </ul>
                 </div>
                 <div class="sg-example">
@@ -558,7 +603,13 @@
                               <th>
                                 <a href="#">Column 3
                                   <i class="fa fa-sort fa-sort-desc"></i>
-                                  <th>Column 4</th>
+                                  <th>
+                                    <select class="selectpicker" multiple title="Select Multiple">
+                                      <option value="1">Option 1</option>
+                                      <option value="2">Option 2</option>
+                                      <option value="3">Option 3</option>
+                                    </select>
+                                  </th>
                                 </a>
                               </th>
                             </tr>
@@ -613,7 +664,13 @@
             &lt;a href=&quot;#&quot;&gt;Column 3
               &lt;i class=&quot;fa fa-sort fa-sort-desc&quot;&gt;&lt;/i&gt;
               &lt;/a&lt;/th&gt;
-              &lt;th&gt;Column 4&lt;/th&gt;
+              &lt;th&gt;
+                &lt;select class=&quot;selectpicker&quot; multiple title=&quot;Select Multiple&quot;&gt;
+                  &lt;option value=&quot;1&quot;&gt;Option 1&lt;/option&gt;
+                  &lt;option value=&quot;2&quot;&gt;Option 2&lt;/option&gt;
+                  &lt;option value=&quot;3&quot;&gt;Option 3&lt;/option&gt;
+                &lt;/select&gt;
+              &lt;/th&gt;
         &lt;/tr&gt;
       &lt;/thead&gt;
       &lt;tbody&gt;
@@ -672,10 +729,10 @@
                     <button class="btn btn-default">Default</button>
                     <button class="btn btn-primary">Primary</button>
                     <button class="btn btn-secondary">Secondary</button>
-                    <button class="btn btn-success">Success</button>
+                    <!--button class="btn btn-success">Success</button-->
                     <button class="btn btn-danger">Danger</button>
                     <button class="btn btn-info">Info</button>
-                    <button class="btn btn-warning">Warning</button>
+                    <!--button class="btn btn-warning">Warning</button-->
                   </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-xs btn-default&quot;</span>&gt;</span>XSmall<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-sm btn-default&quot;</span>&gt;</span>Small<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-default&quot;</span>&gt;</span>Medium<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
@@ -685,10 +742,10 @@
 <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-default&quot;</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-primary&quot;</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-secondary&quot;</span>&gt;</span>Secondary<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-success&quot;</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-comment">&lt;!--button class=&quot;btn btn-success&quot;&gt;Success&lt;/button--&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-danger&quot;</span>&gt;</span>Danger<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-info&quot;</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-warning&quot;</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
+<span class="hljs-comment">&lt;!--button class=&quot;btn btn-warning&quot;&gt;Warning&lt;/button--&gt;</span></pre>
                 </div>
               </section>
 
@@ -849,6 +906,8 @@
                     <li class="sg">Checkboxes and radio buttons get an additional wrapper div of
                       <code class="sg">.checkbox</code>and
                       <code class="sg">.radio</code>respectively. Labels should also wrap input elements here.</li>
+                    <li class="sg">Custom select boxes for multiselect, live search and option groups use the bootstrap-select plugin. Details can be found at
+                      <a href="https://silviomoreto.github.io/bootstrap-select/examples/" target="_blank" class="sg">silviomoreto.github.io/bootstrap-select/examples/</a>.</li>
                     <li class="sg">Submit button uses standard button styles, but can be made a block element by applying the
                       <code class="sg">.full-width</code>class.</li>
                   </ul>
@@ -877,6 +936,44 @@
                         <div class="col-lg-4">
                           <select class="form-control">
                             <option value="0" selected>4-Column Select Dropdown</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <label>Select with OptGroups</label>
+                          <select class="selectpicker" title="Option Groups">
+                            <optgroup label="Picnic">
+                              <option>Mustard</option>
+                              <option>Ketchup</option>
+                              <option>Relish</option>
+                            </optgroup>
+                            <optgroup label="Camping">
+                              <option>Tent</option>
+                              <option>Flashlight</option>
+                              <option>Toilet Paper</option>
+                            </optgroup>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <label>Select with Search Box</label>
+                          <select class="selectpicker" data-live-search="true" title="Search Options">
+                            <option value="0">select with search</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <label>MultiSelect</label>
+                          <select class="selectpicker" multiple title="Select Multiple">
                             <option value="1">Option 1</option>
                             <option value="2">Option 2</option>
                             <option value="3">Option 3</option>
@@ -927,6 +1024,26 @@
                         </div>
                       </div>
                       <div class="row">
+                        <div class="col-lg-12">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" data-toggle="toggle" data-size="large">On/Off Switch Large</label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" data-toggle="toggle" data-size="normal">On/Off Switch Normal</label>
+                          </div>
+                          <div class="checkbox disabled">
+                            <label>
+                              <input type="checkbox" data-toggle="toggle" data-size="small" disabled>On/Off Switch Small (disabled)</label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" data-toggle="toggle" data-size="mini">On/Off Switch Mini</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
                         <div class="col-lg-4">
                           <button type="submit" class="btn btn-primary btn-lg full-width">Submit Button</button>
                         </div>
@@ -954,6 +1071,44 @@
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-lg-4&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-control&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;0&quot;</span> <span class="hljs-attribute">selected</span>&gt;</span>4-Column Select Dropdown<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;1&quot;</span>&gt;</span>Option 1<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;2&quot;</span>&gt;</span>Option 2<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;3&quot;</span>&gt;</span>Option 3<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-lg-4&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Select with OptGroups<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;selectpicker&quot;</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">&quot;Option Groups&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">optgroup</span> <span class="hljs-attribute">label</span>=<span class="hljs-value">&quot;Picnic&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Mustard<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Ketchup<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Relish<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">optgroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">optgroup</span> <span class="hljs-attribute">label</span>=<span class="hljs-value">&quot;Camping&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Tent<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Flashlight<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Toilet Paper<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">optgroup</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-lg-4&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Select with Search Box<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;selectpicker&quot;</span> <span class="hljs-attribute">data-live-search</span>=<span class="hljs-value">&quot;true&quot;</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">&quot;Search Options&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;0&quot;</span>&gt;</span>select with search<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;1&quot;</span>&gt;</span>Option 1<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;2&quot;</span>&gt;</span>Option 2<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;3&quot;</span>&gt;</span>Option 3<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-lg-4&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>MultiSelect<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;selectpicker&quot;</span> <span class="hljs-attribute">multiple</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">&quot;Select Multiple&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;1&quot;</span>&gt;</span>Option 1<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;2&quot;</span>&gt;</span>Option 2<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;3&quot;</span>&gt;</span>Option 3<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
@@ -1001,6 +1156,26 @@
         <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;radio&quot;</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;optradio&quot;</span> /&gt;</span>Radio Inline<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;radio-inline&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;radio&quot;</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;optradio&quot;</span> <span class="hljs-attribute">disabled</span> /&gt;</span>Radio Inline<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-lg-12&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;checkbox&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;checkbox&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;toggle&quot;</span> <span class="hljs-attribute">data-size</span>=<span class="hljs-value">&quot;large&quot;</span>&gt;</span>On/Off Switch Large<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;checkbox&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;checkbox&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;toggle&quot;</span> <span class="hljs-attribute">data-size</span>=<span class="hljs-value">&quot;normal&quot;</span>&gt;</span>On/Off Switch Normal<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;checkbox disabled&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;checkbox&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;toggle&quot;</span> <span class="hljs-attribute">data-size</span>=<span class="hljs-value">&quot;small&quot;</span> <span class="hljs-attribute">disabled</span>&gt;</span>On/Off Switch Small (disabled)<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;checkbox&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;checkbox&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;toggle&quot;</span> <span class="hljs-attribute">data-size</span>=<span class="hljs-value">&quot;mini&quot;</span>&gt;</span>On/Off Switch Mini<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
@@ -1482,8 +1657,9 @@
                 </div>
                 <div class="sg-example">
                   <div class="sg-canvas">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eros lacus, scelerisque bibendum neque eget, varius dictum elit. Praesent fermentum laoreet metus, quis interdum orci. Pellentesque eu sodales lectus. Curabitur nec dui id erat sodales venenatis sit amet eget libero. Curabitur vestibulum risus sapien, vel sodales eros rhoncus pretium. Mauris mattis vitae mi sed feugiat. Curabitur quis condimentum tellus. Aenean ultrices leo euismod augue lacinia posuere. Aliquam nunc quam,
-                      <strong>bold text</strong>dictum et enim at, molestie commodo lectus. Aliquam elit magna, finibus id mi non, ullamcorper luctus risus. Nam auctor nulla sit amet dignissim accumsan. Fusce et ex metus. Suspendisse potenti.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eros lacus, scelerisque bibendum neque eget, varius dictum elit. Praesent
+                      <a href="#" data-toggle="tooltip" title="first tooltip">tooltip</a>&#xA0;fermentum laoreet metus, quis interdum orci. Pellentesque eu sodales lectus. Curabitur nec dui id erat sodales venenatis sit amet eget libero. Curabitur vestibulum risus sapien, vel sodales eros rhoncus pretium. Mauris mattis vitae mi sed feugiat. Curabitur quis condimentum tellus. Aenean ultrices leo euismod augue lacinia posuere. Aliquam nunc quam,
+                      <strong>bold text</strong>&#xA0;dictum et enim at, molestie commodo lectus. Aliquam elit magna, finibus id mi non, ullamcorper luctus risus. Nam auctor nulla sit amet dignissim accumsan. Fusce et ex metus. Suspendisse potenti.</p>
 
                     <p>Nunc mi magna, euismod ut interdum id, egestas id diam. Sed faucibus faucibus quam in semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam nec quam orci. Duis felis mi, eleifend at est in, condimentum placerat dolor. Donec dapibus ex vitae metus ornare tincidunt. Duis auctor congue maximus. Curabitur eget neque mauris. Vivamus pretium mi a tortor fermentum rhoncus. Pellentesque id porttitor quam, vitae volutpat est. Mauris et iaculis risus. Nam nisi sapien, condimentum sit amet lacus quis, pellentesque scelerisque erat. Nullam iaculis lectus sit amet est elementum faucibus.</p>
 
@@ -1523,11 +1699,13 @@
                       </li>
                     </ol>
                   </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eros lacus, scelerisque bibendum neque eget, varius dictum elit.
-  Praesent fermentum laoreet metus, quis interdum orci. Pellentesque eu sodales lectus. Curabitur nec dui id erat sodales
-  venenatis sit amet eget libero. Curabitur vestibulum risus sapien, vel sodales eros rhoncus pretium. Mauris mattis vitae
-  mi sed feugiat. Curabitur quis condimentum tellus. Aenean ultrices leo euismod augue lacinia posuere. Aliquam nunc quam,
-  <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>bold text<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span>dictum et enim at, molestie commodo lectus. Aliquam elit magna, finibus id mi non, ullamcorper luctus
-  risus. Nam auctor nulla sit amet dignissim accumsan. Fusce et ex metus. Suspendisse potenti.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  Praesent
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;tooltip&quot;</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">&quot;first tooltip&quot;</span>&gt;</span>tooltip<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>&amp;nbsp;fermentum laoreet metus, quis interdum orci. Pellentesque eu sodales lectus. Curabitur nec dui id erat
+  sodales venenatis sit amet eget libero. Curabitur vestibulum risus sapien, vel sodales eros rhoncus pretium. Mauris mattis
+  vitae mi sed feugiat. Curabitur quis condimentum tellus. Aenean ultrices leo euismod augue lacinia posuere. Aliquam nunc
+  quam,
+  <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>bold text<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span>&amp;nbsp;dictum et enim at, molestie commodo lectus. Aliquam elit magna, finibus id mi non, ullamcorper
+  luctus risus. Nam auctor nulla sit amet dignissim accumsan. Fusce et ex metus. Suspendisse potenti.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Nunc mi magna, euismod ut interdum id, egestas id diam. Sed faucibus faucibus quam in semper. Cum sociis natoque penatibus
   et magnis dis parturient montes, nascetur ridiculus mus. Nam nec quam orci. Duis felis mi, eleifend at est in, condimentum
@@ -1576,6 +1754,16 @@
               <section class="sg-block sg-section-charts">
                 <div class="sg-text">
                   <h3 id="charts" class="sg">Charts</h3>
+                  <ul class="sg">
+                    <li class="sg">Charting uses Google Charts</li>
+                    <li class="sg">Draw charts with reSize function to make them responsive on window resize.</li>
+                    <li class="sg">Axis labels are LatoBold and all caps. Capitalization must be done explicitly, as google charts doesn&apos;t support textTransform.</li>
+                    <li class="sg">jQuery
+                      <code class="sg">.extend</code>method is used to merge default options array with custom options per chart.</li>
+                    <li class="sg">Colors (10-12 hex values for data); should appear in this order for distinctive color contrast purposes
+                      <code class="sg">#8F7EC2, #2598B8, #5FC782, #ECDE31, #F55949, #AE85D4, #5FC2C2, #9ACC54, #F5A61D, #B6744A</code>
+                    </li>
+                  </ul>
                 </div>
                 <div class="sg-example">
                   <div class="sg-canvas">
@@ -1598,58 +1786,138 @@
                         data.addRows([
                           ['Mushrooms', 3],
                           ['Onions', 1],
-                          ['Olives', 1],
-                          ['Zucchini', 1],
-                          ['Pepperoni', 2]
-                        ]);
-                        // Create the data table.
-                        var data2 = new google.visualization.DataTable();
-                        data2.addColumn('string', 'Topping');
-                        data2.addColumn('number', 'Slices');
-                        data2.addRows([
-                          ['Mushrooms', 3],
-                          ['Onions', 1],
                           ['Olives', 15],
                           ['Zucchini', 1],
                           ['Pepperoni', 2]
                         ]);
                         // Create the data table.
-                        var data3 = new google.visualization.DataTable();
-                        data3.addColumn('string', 'Year');
-                        data3.addColumn('number', 'Sales');
-                        data3.addColumn('number', 'Expenses');
-                        data3.addRows([
+                        var data2 = new google.visualization.DataTable();
+                        data2.addColumn('string', 'Year');
+                        data2.addColumn('number', 'Sales');
+                        data2.addColumn('number', 'Expenses');
+                        data2.addRows([
                           ['2004', 1000, 400],
                           ['2005', 1170, 460],
                           ['2006', 860, 580],
                           ['2007', 1030, 540]
                         ]);
-
                         // Set chart options
-                        var options = {
-                          'title': 'Chart Example',
-                          'width': '100%',
-                          'height': 300
+                        var defaultOptions = {
+                          colors: ['#8F7EC2', '#2598B8', '#5FC782', '#ECDE31', '#F55949', '#AE85D4', '#5FC2C2', '#9ACC54', '#F5A61D', '#B6744A'],
+                          backgroundColor: 'transparent',
+                          height: 300,
+                          is3D: true,
+                          fontName: 'Lato',
+                          fontSize: 13,
+                          pointSize: '5',
+                          pointShape: {
+                            type: 'circle'
+                          },
+                          titleTextStyle: {
+                            fontName: 'LatoBold',
+                            fontSize: 14
+                          },
+                          vAxis: {
+                            gridlines: {
+                              count: 4
+                            },
+                            titleTextStyle: {
+                              fontSize: 10,
+                              color: '#AAAAAA',
+                              fontName: 'LatoBold',
+                              italic: false
+                            }
+                          },
+                          hAxis: {
+                            titleTextStyle: {
+                              fontSize: 10,
+                              color: '#AAAAAA',
+                              fontName: 'LatoBold',
+                              italic: false
+                            }
+                          }
+                        };
+                        var options1 = {
+                          title: 'Popularity of Pizza Toppings'
+                        };
+                        var options2 = {
+                          title: 'Popularity of Pizza Toppings by Slice',
+                          vAxis: {
+                            title: 'PIZZA TOPPINGS'
+                          },
+                          hAxis: {
+                            title: '# OF SLICES'
+                          }
+                        };
+                        var options3 = {
+                          title: 'Sales vs Expenditures',
+                          vAxis: {
+                            title: 'AMOUNT OF DOLLARS (USD)'
+                          },
+                          hAxis: {
+                            title: 'YEAR'
+                          },
                         };
 
-                        // Instantiate and draw our chart, passing in some options.
-                        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-                        chart.draw(data, options);
-                        var chart2 = new google.visualization.BarChart(document.getElementById('chart_div2'));
-                        chart2.draw(data2, options);
-                        var chart3 = new google.visualization.LineChart(document.getElementById('chart_div3'));
-                        chart3.draw(data3, options);
-
+                        // Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive
+                        function reSize() {
+                          var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+                          chart.draw(data, $.extend(true, {}, defaultOptions, options1));
+                          var chart2 = new google.visualization.BarChart(document.getElementById('chart_div2'));
+                          chart2.draw(data, $.extend(true, {}, defaultOptions, options2));
+                          var chart3 = new google.visualization.LineChart(document.getElementById('chart_div3'));
+                          chart3.draw(data2, $.extend(true, {}, defaultOptions, options3));
+                          var chart4 = new google.visualization.PieChart(document.getElementById('chart_div4'));
+                          chart4.draw(data, $.extend(true, {}, defaultOptions, options1));
+                          var chart5 = new google.visualization.BarChart(document.getElementById('chart_div5'));
+                          chart5.draw(data, $.extend(true, {}, defaultOptions, options2));
+                          var chart6 = new google.visualization.LineChart(document.getElementById('chart_div6'));
+                          chart6.draw(data2, $.extend(true, {}, defaultOptions, options3));
+                        }
+                        window.onload = reSize();
+                        window.onresize = reSize;
                       }
                     </script>
                     <h3>Pie Chart</h3>
                     <div id="chart_div"></div>
 
-                    <h3>Chart 2</h3>
+                    <h3>Bar Chart</h3>
                     <div id="chart_div2"></div>
 
                     <h3>Line Chart</h3>
                     <div id="chart_div3"></div>
+
+                    <h3>Dashboard Charts</h3>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="dashboard-widget">
+                          <h4 class="dashboard-widget-title">
+                            Dashboard Pie Chart
+                          </h4>
+                          <div id="chart_div4"></div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="dashboard-widget">
+                          <h4 class="dashboard-widget-title">
+                            Dashboard Bar Chart
+                          </h4>
+                          <div id="chart_div5"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="dashboard-widget">
+                          <h4 class="dashboard-widget-title">
+                            Dashboard Line Chart
+                          </h4>
+                          <div id="chart_div6"></div>
+                        </div>
+                      </div>
+                    </div>
                   </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text/javascript&quot;</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;https://www.gstatic.com/charts/loader.js&quot;</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text/javascript&quot;</span>&gt;</span><span class="javascript">
   google.charts.load(<span class="hljs-string">&apos;current&apos;</span>, {
@@ -1669,60 +1937,449 @@
     data.addRows([
       [<span class="hljs-string">&apos;Mushrooms&apos;</span>, <span class="hljs-number">3</span>],
       [<span class="hljs-string">&apos;Onions&apos;</span>, <span class="hljs-number">1</span>],
-      [<span class="hljs-string">&apos;Olives&apos;</span>, <span class="hljs-number">1</span>],
-      [<span class="hljs-string">&apos;Zucchini&apos;</span>, <span class="hljs-number">1</span>],
-      [<span class="hljs-string">&apos;Pepperoni&apos;</span>, <span class="hljs-number">2</span>]
-    ]);
-    <span class="hljs-comment">// Create the data table.</span>
-    <span class="hljs-keyword">var</span> data2 = <span class="hljs-keyword">new</span> google.visualization.DataTable();
-    data2.addColumn(<span class="hljs-string">&apos;string&apos;</span>, <span class="hljs-string">&apos;Topping&apos;</span>);
-    data2.addColumn(<span class="hljs-string">&apos;number&apos;</span>, <span class="hljs-string">&apos;Slices&apos;</span>);
-    data2.addRows([
-      [<span class="hljs-string">&apos;Mushrooms&apos;</span>, <span class="hljs-number">3</span>],
-      [<span class="hljs-string">&apos;Onions&apos;</span>, <span class="hljs-number">1</span>],
       [<span class="hljs-string">&apos;Olives&apos;</span>, <span class="hljs-number">15</span>],
       [<span class="hljs-string">&apos;Zucchini&apos;</span>, <span class="hljs-number">1</span>],
       [<span class="hljs-string">&apos;Pepperoni&apos;</span>, <span class="hljs-number">2</span>]
     ]);
     <span class="hljs-comment">// Create the data table.</span>
-    <span class="hljs-keyword">var</span> data3 = <span class="hljs-keyword">new</span> google.visualization.DataTable();
-    data3.addColumn(<span class="hljs-string">&apos;string&apos;</span>, <span class="hljs-string">&apos;Year&apos;</span>);
-    data3.addColumn(<span class="hljs-string">&apos;number&apos;</span>, <span class="hljs-string">&apos;Sales&apos;</span>);
-    data3.addColumn(<span class="hljs-string">&apos;number&apos;</span>, <span class="hljs-string">&apos;Expenses&apos;</span>);
-    data3.addRows([
+    <span class="hljs-keyword">var</span> data2 = <span class="hljs-keyword">new</span> google.visualization.DataTable();
+    data2.addColumn(<span class="hljs-string">&apos;string&apos;</span>, <span class="hljs-string">&apos;Year&apos;</span>);
+    data2.addColumn(<span class="hljs-string">&apos;number&apos;</span>, <span class="hljs-string">&apos;Sales&apos;</span>);
+    data2.addColumn(<span class="hljs-string">&apos;number&apos;</span>, <span class="hljs-string">&apos;Expenses&apos;</span>);
+    data2.addRows([
       [<span class="hljs-string">&apos;2004&apos;</span>, <span class="hljs-number">1000</span>, <span class="hljs-number">400</span>],
       [<span class="hljs-string">&apos;2005&apos;</span>, <span class="hljs-number">1170</span>, <span class="hljs-number">460</span>],
       [<span class="hljs-string">&apos;2006&apos;</span>, <span class="hljs-number">860</span>, <span class="hljs-number">580</span>],
       [<span class="hljs-string">&apos;2007&apos;</span>, <span class="hljs-number">1030</span>, <span class="hljs-number">540</span>]
     ]);
-
     <span class="hljs-comment">// Set chart options</span>
-    <span class="hljs-keyword">var</span> options = {
-      <span class="hljs-string">&apos;title&apos;</span>: <span class="hljs-string">&apos;Chart Example&apos;</span>,
-      <span class="hljs-string">&apos;width&apos;</span>: <span class="hljs-string">&apos;100%&apos;</span>,
-      <span class="hljs-string">&apos;height&apos;</span>: <span class="hljs-number">300</span>
+    <span class="hljs-keyword">var</span> defaultOptions = {
+      colors: [<span class="hljs-string">&apos;#8F7EC2&apos;</span>, <span class="hljs-string">&apos;#2598B8&apos;</span>, <span class="hljs-string">&apos;#5FC782&apos;</span>, <span class="hljs-string">&apos;#ECDE31&apos;</span>, <span class="hljs-string">&apos;#F55949&apos;</span>, <span class="hljs-string">&apos;#AE85D4&apos;</span>, <span class="hljs-string">&apos;#5FC2C2&apos;</span>, <span class="hljs-string">&apos;#9ACC54&apos;</span>, <span class="hljs-string">&apos;#F5A61D&apos;</span>,
+        <span class="hljs-string">&apos;#B6744A&apos;</span>
+      ],
+      backgroundColor: <span class="hljs-string">&apos;transparent&apos;</span>,
+      height: <span class="hljs-number">300</span>,
+      is3D: <span class="hljs-literal">true</span>,
+      fontName: <span class="hljs-string">&apos;Lato&apos;</span>,
+      fontSize: <span class="hljs-number">13</span>,
+      pointSize: <span class="hljs-string">&apos;5&apos;</span>,
+      pointShape: {
+        type: <span class="hljs-string">&apos;circle&apos;</span>
+      },
+      titleTextStyle: {
+        fontName: <span class="hljs-string">&apos;LatoBold&apos;</span>,
+        fontSize: <span class="hljs-number">14</span>
+      },
+      vAxis: {
+        gridlines: {
+          count: <span class="hljs-number">4</span>
+        },
+        titleTextStyle: {
+          fontSize: <span class="hljs-number">10</span>,
+          color: <span class="hljs-string">&apos;#AAAAAA&apos;</span>,
+          fontName: <span class="hljs-string">&apos;LatoBold&apos;</span>,
+          italic: <span class="hljs-literal">false</span>
+        }
+      },
+      hAxis: {
+        titleTextStyle: {
+          fontSize: <span class="hljs-number">10</span>,
+          color: <span class="hljs-string">&apos;#AAAAAA&apos;</span>,
+          fontName: <span class="hljs-string">&apos;LatoBold&apos;</span>,
+          italic: <span class="hljs-literal">false</span>
+        }
+      }
+    };
+    <span class="hljs-keyword">var</span> options1 = {
+      title: <span class="hljs-string">&apos;Popularity of Pizza Toppings&apos;</span>
+    };
+    <span class="hljs-keyword">var</span> options2 = {
+      title: <span class="hljs-string">&apos;Popularity of Pizza Toppings by Slice&apos;</span>,
+      vAxis: {
+        title: <span class="hljs-string">&apos;PIZZA TOPPINGS&apos;</span>
+      },
+      hAxis: {
+        title: <span class="hljs-string">&apos;# OF SLICES&apos;</span>
+      }
+    };
+    <span class="hljs-keyword">var</span> options3 = {
+      title: <span class="hljs-string">&apos;Sales vs Expenditures&apos;</span>,
+      vAxis: {
+        title: <span class="hljs-string">&apos;AMOUNT OF DOLLARS (USD)&apos;</span>
+      },
+      hAxis: {
+        title: <span class="hljs-string">&apos;YEAR&apos;</span>
+      },
     };
 
-    <span class="hljs-comment">// Instantiate and draw our chart, passing in some options.</span>
-    <span class="hljs-keyword">var</span> chart = <span class="hljs-keyword">new</span> google.visualization.PieChart(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;chart_div&apos;</span>));
-    chart.draw(data, options);
-    <span class="hljs-keyword">var</span> chart2 = <span class="hljs-keyword">new</span> google.visualization.BarChart(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;chart_div2&apos;</span>));
-    chart2.draw(data2, options);
-    <span class="hljs-keyword">var</span> chart3 = <span class="hljs-keyword">new</span> google.visualization.LineChart(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;chart_div3&apos;</span>));
-    chart3.draw(data3, options);
-
+    <span class="hljs-comment">// Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reSize</span><span class="hljs-params">()</span> </span>{
+      <span class="hljs-keyword">var</span> chart = <span class="hljs-keyword">new</span> google.visualization.PieChart(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;chart_div&apos;</span>));
+      chart.draw(data, $.extend(<span class="hljs-literal">true</span>, {}, defaultOptions, options1));
+      <span class="hljs-keyword">var</span> chart2 = <span class="hljs-keyword">new</span> google.visualization.BarChart(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;chart_div2&apos;</span>));
+      chart2.draw(data, $.extend(<span class="hljs-literal">true</span>, {}, defaultOptions, options2));
+      <span class="hljs-keyword">var</span> chart3 = <span class="hljs-keyword">new</span> google.visualization.LineChart(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;chart_div3&apos;</span>));
+      chart3.draw(data2, $.extend(<span class="hljs-literal">true</span>, {}, defaultOptions, options3));
+      <span class="hljs-keyword">var</span> chart4 = <span class="hljs-keyword">new</span> google.visualization.PieChart(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;chart_div4&apos;</span>));
+      chart4.draw(data, $.extend(<span class="hljs-literal">true</span>, {}, defaultOptions, options1));
+      <span class="hljs-keyword">var</span> chart5 = <span class="hljs-keyword">new</span> google.visualization.BarChart(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;chart_div5&apos;</span>));
+      chart5.draw(data, $.extend(<span class="hljs-literal">true</span>, {}, defaultOptions, options2));
+      <span class="hljs-keyword">var</span> chart6 = <span class="hljs-keyword">new</span> google.visualization.LineChart(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;chart_div6&apos;</span>));
+      chart6.draw(data2, $.extend(<span class="hljs-literal">true</span>, {}, defaultOptions, options3));
+    }
+    <span class="hljs-built_in">window</span>.onload = reSize();
+    <span class="hljs-built_in">window</span>.onresize = reSize;
   }
 </span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span>Pie Chart<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;chart_div&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span>Chart 2<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span>Bar Chart<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;chart_div2&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span>Line Chart<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;chart_div3&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;chart_div3&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span>Dashboard Charts<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-6&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dashboard-widget&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dashboard-widget-title&quot;</span>&gt;</span>
+        Dashboard Pie Chart
+      <span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;chart_div4&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-6&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dashboard-widget&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dashboard-widget-title&quot;</span>&gt;</span>
+        Dashboard Bar Chart
+      <span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;chart_div5&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-6&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dashboard-widget&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dashboard-widget-title&quot;</span>&gt;</span>
+        Dashboard Line Chart
+      <span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;chart_div6&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
                 </div>
               </section>
+
+              <section class="sg-block sg-section-modals">
+                <div class="sg-text">
+                  <h3 id="modals" class="sg">Modals</h3>
+                  <ul class="sg">
+                    <li class="sg">Modals use standard bootstrap modal markup.</li>
+                    <li class="sg">
+                      <code class="sg">.modal-sm</code>and
+                      <code class="sg">.modal-lg</code>are used for small and large modals. Modals are medium-sized by default.</li>
+                  </ul>
+                </div>
+                <div class="sg-example">
+                  <div class="sg-canvas">
+                    <!-- Trigger the modal with a button -->
+                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#smModal">Small Modal
+                    </button>
+                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#mdModal">Meduim Modal
+                    </button>
+                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#lgModal">Large Modal
+                    </button>
+
+                    <!-- Small Modal -->
+                    <div id="smModal" class="modal fade" role="dialog">
+                      <div class="modal-dialog modal-sm">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&#xD7;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p>Some text in the small modal.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Save
+                            </button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                            </button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <!-- Medium Modal -->
+                    <div id="mdModal" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&#xD7;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p>Some text in the medium modal.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Save
+                            </button>
+                            <button type="button" class="btn btn-secondary">Cancel
+                            </button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                            </button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <!-- Large Modal -->
+                    <div id="lgModal" class="modal fade" role="dialog">
+                      <div class="modal-dialog modal-lg">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&#xD7;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p>Some text in the large modal.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Save
+                            </button>
+                            <button type="button" class="btn btn-secondary">Cancel
+                            </button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                            </button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div><pre class="sg-code"><span class="hljs-comment">&lt;!-- Trigger the modal with a button --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-primary btn-sm&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;modal&quot;</span> <span class="hljs-attribute">data-target</span>=<span class="hljs-value">&quot;#smModal&quot;</span>&gt;</span>Small Modal
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-primary btn-sm&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;modal&quot;</span> <span class="hljs-attribute">data-target</span>=<span class="hljs-value">&quot;#mdModal&quot;</span>&gt;</span>Meduim Modal
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-primary btn-sm&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;modal&quot;</span> <span class="hljs-attribute">data-target</span>=<span class="hljs-value">&quot;#lgModal&quot;</span>&gt;</span>Large Modal
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Small Modal --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;smModal&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal fade&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;dialog&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-dialog modal-sm&quot;</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- Modal content--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-content&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-header&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;close&quot;</span> <span class="hljs-attribute">data-dismiss</span>=<span class="hljs-value">&quot;modal&quot;</span>&gt;</span>&amp;times;<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-title&quot;</span>&gt;</span>Modal Header<span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-body&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Some text in the small modal.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-footer&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-primary&quot;</span>&gt;</span>Save
+        <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-default&quot;</span> <span class="hljs-attribute">data-dismiss</span>=<span class="hljs-value">&quot;modal&quot;</span>&gt;</span>Close
+        <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Medium Modal --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;mdModal&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal fade&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;dialog&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-dialog&quot;</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- Modal content--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-content&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-header&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;close&quot;</span> <span class="hljs-attribute">data-dismiss</span>=<span class="hljs-value">&quot;modal&quot;</span>&gt;</span>&amp;times;<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-title&quot;</span>&gt;</span>Modal Header<span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-body&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Some text in the medium modal.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-footer&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-primary&quot;</span>&gt;</span>Save
+        <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-secondary&quot;</span>&gt;</span>Cancel
+        <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-default&quot;</span> <span class="hljs-attribute">data-dismiss</span>=<span class="hljs-value">&quot;modal&quot;</span>&gt;</span>Close
+        <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Large Modal --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;lgModal&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal fade&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;dialog&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-dialog modal-lg&quot;</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- Modal content--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-content&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-header&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;close&quot;</span> <span class="hljs-attribute">data-dismiss</span>=<span class="hljs-value">&quot;modal&quot;</span>&gt;</span>&amp;times;<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-title&quot;</span>&gt;</span>Modal Header<span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-body&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Some text in the large modal.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-footer&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-primary&quot;</span>&gt;</span>Save
+        <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-secondary&quot;</span>&gt;</span>Cancel
+        <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-default&quot;</span> <span class="hljs-attribute">data-dismiss</span>=<span class="hljs-value">&quot;modal&quot;</span>&gt;</span>Close
+        <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+                </div>
+              </section>
+
+              <section class="sg-block sg-section-tooltips">
+                <div class="sg-text">
+                  <h3 id="tooltips" class="sg">Tooltips</h3>
+                  <ul class="sg">
+                    <li class="sg">Tooltips are controlled with the
+                      <code class="sg">data-toggle</code>and
+                      <code class="sg">title</code>attributes.</li>
+                    <li class="sg">Position tooltips with
+                      <code class="sg">data-placement</code>attribute.</li>
+                  </ul>
+                </div>
+                <div class="sg-example">
+                  <div class="sg-canvas">
+                    <button type="button" class="btn btn-xs btn-primary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left
+                    </button>
+                    <button type="button" class="btn btn-xs btn-primary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top
+                    </button>
+                    <button type="button" class="btn btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom
+                    </button>
+                    <button type="button" class="btn btn-xs btn-primary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right
+                    </button>
+                  </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-xs btn-primary&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;tooltip&quot;</span> <span class="hljs-attribute">data-placement</span>=<span class="hljs-value">&quot;left&quot;</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">&quot;Tooltip on left&quot;</span>&gt;</span>Tooltip on left
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-xs btn-primary&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;tooltip&quot;</span> <span class="hljs-attribute">data-placement</span>=<span class="hljs-value">&quot;top&quot;</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">&quot;Tooltip on top&quot;</span>&gt;</span>Tooltip on top
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-xs btn-primary&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;tooltip&quot;</span> <span class="hljs-attribute">data-placement</span>=<span class="hljs-value">&quot;bottom&quot;</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">&quot;Tooltip on bottom&quot;</span>&gt;</span>Tooltip on bottom
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-xs btn-primary&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;tooltip&quot;</span> <span class="hljs-attribute">data-placement</span>=<span class="hljs-value">&quot;right&quot;</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">&quot;Tooltip on right&quot;</span>&gt;</span>Tooltip on right
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
+                </div>
+              </section>
+
+              <section class="sg-block sg-section-pagination">
+                <div class="sg-text">
+                  <h3 id="pagination" class="sg">Pagination</h3>
+                  <ul class="sg">
+                    <li class="sg">Standard bootstrap pagination applies</li>
+                    <li class="sg">Classes
+                      <code class="sg">.disabled</code>and
+                      <code class="sg">.active</code>are applied to li elements.</li>
+                  </ul>
+                </div>
+                <div class="sg-example">
+                  <div class="sg-canvas">
+                    <nav>
+                      <ul class="pagination">
+                        <li>
+                          <a href="#" aria-label="Previous First Page">
+                            <span aria-hidden="true">&#xAB;</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&#x2039;</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">1</a>
+                        </li>
+                        <li>
+                          <a href="#">2</a>
+                        </li>
+                        <li>
+                          <a href="#">3</a>
+                        </li>
+                        <li>
+                          <a href="#">4</a>
+                        </li>
+                        <li class="active">
+                          <a href="#">5</a>
+                        </li>
+                        <li class="disabled">
+                          <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&#x203A;</span>
+                          </a>
+                        </li>
+                        <li class="disabled">
+                          <a href="#" aria-label="Next Last Page">
+                            <span aria-hidden="true">&#xBB;</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">nav</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;pagination&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">&quot;Previous First Page&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">&quot;true&quot;</span>&gt;</span>&amp;laquo;<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">&quot;Previous&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">&quot;true&quot;</span>&gt;</span>&amp;lsaquo;<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;active&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;disabled&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">&quot;Previous&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">&quot;true&quot;</span>&gt;</span>&amp;rsaquo;<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;disabled&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">&quot;Next Last Page&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">&quot;true&quot;</span>&gt;</span>&amp;raquo;<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span></pre>
+                </div>
+              </section>
+
               <section class="sg-block sg-section-integration">
                 <h3 id="integration" class="sg">Integration</h3>
                 <ul class="sg">
@@ -1750,22 +2407,15 @@
 
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
+  <script src="bower_components/bootstrap-toggle/js/bootstrap-toggle.js"></script>
+  <script src="bower_components/bootstrap-select/js/bootstrap-select.js"></script>
   <script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
   <script>
-    $('.sidebar-menu').affix({
-      offset: {
-        top: function() {
-          return (this.top = $('.styleguide-header').outerHeight(true))
-        },
-        bottom: function() {
-          return (this.bottom = $('.l-footer').outerHeight(true))
-        }
-      }
-    });
-    $('.bs-docs-sidenav li a').click(function() {
-      $(this).parent('li').siblings().find('a').removeClass('active');
+    $('.bs-docs-sidenav li').click(function() {
+      $(this).siblings('li').removeClass('active');
       $(this).addClass('active');
     });
+    $('[data-toggle="tooltip"]').tooltip();
   </script>
 </body>
 

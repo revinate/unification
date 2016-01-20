@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap-toggle/css/bootstrap-toggle.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 ### Body
@@ -30,11 +31,10 @@
               </div>
             </div>
             <div class="l-main-content row pd-xl">
-            <div class="styleguide-menu col-sm-3">
 
-              <nav class="sidebar-menu hidden-xs hidden-sm">
-                <ul class="nav bs-docs-sidenav">
-                  <li><a href="#general-layout">General Layout</a></li>
+              <nav class="sidebar-menu col-sm-3 hidden-xs hidden-sm" id="myScrollSpy">
+                <ul class="nav bs-docs-sidenav" data-spy="affix" data-offset-top="270">
+                  <li><a href="#general-layout">General Layout</a></li>  
                   <li><a href="#primary-menu">Primary Menu</a></li>
                   <li><a href="#headers-and-breadcrumbs">Headers and Breadcrumbs</a></li>
                   <li><a href="#tables">Tables</a></li>
@@ -47,11 +47,13 @@
                   <li><a href="#alerts">Alerts</a></li>
                   <li><a href="#typography-and-lists">Typography &amp; Lists</a></li>
                   <li><a href="#charts">Charts</a></li>
+                  <li><a href="#modals">Modals</a></li>
+                  <li><a href="#tooltips">Tooltips</a></li>
+                  <li><a href="#pagination">Pagination</a></li>
                   <li><a href="#integration">Integration</a></li>
                 </ul>
               </nav>
 
-            </div>
             <div class="styleguide col-sm-9">
               <div sg-content></div>
             </div>
@@ -65,20 +67,13 @@
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap-toggle/js/bootstrap-toggle.js"></script>
+    <script src="bower_components/bootstrap-select/js/bootstrap-select.js"></script>
     <script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
     <script>
-    $('.sidebar-menu').affix({
-      offset: {
-        top: function () {
-          return (this.top = $('.styleguide-header').outerHeight(true))
-        },
-        bottom: function () {
-          return (this.bottom = $('.l-footer').outerHeight(true))
-        }
-      }
-    });
-    $('.bs-docs-sidenav li a').click(function(){
-        $(this).parent('li').siblings().find('a').removeClass('active');
+    $('.bs-docs-sidenav li').click(function(){
+        $(this).siblings('li').removeClass('active');
         $(this).addClass('active');
     });
+      $('[data-toggle="tooltip"]').tooltip();
     </script>

@@ -1,6 +1,7 @@
 ### General Layout
 
-This is the overall structure of every page. Content goes inside div with class `.l-main-content`
+This is the overall structure of every page. Content goes inside div with class `.l-main-content`.
+Everything inside follows the standard Bootstrap 12-column grid, using `.row` and `.col-xs- .col-sm- .col-md- .col-lg`. Using  `.col-md-*` will stack on mobile and tile on desktop.
 
     @example
     div.l-app
@@ -12,6 +13,17 @@ This is the overall structure of every page. Content goes inside div with class 
           .l-main-content.pd-md.mg-t-xl
             <!-- content goes here -->
             p Content Goes Here
+            .row.show-grid
+              .col-md-1
+                p .col-md-1
+              .col-md-2
+                p .col-md-2
+              .col-md-3
+                p .col-md-3
+              .col-md-4
+                p .col-md-4
+              .col-md-2
+                p .col-md-2
       footer.l-footer
         p.copyright.pd-md.copyright &copy; Revinate 2015. All Rights Reserved.
 
@@ -155,8 +167,7 @@ tabbed content is inside `.l-header-bottom`.
 
       </div>
     </div>
-
-  </header>
+    </header>
 
 
 ### Headers and Breadcrumbs
@@ -195,10 +206,12 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
 
 
 **Panel Table**
+
 - Panel tables and headers are wrapped in  `.panel`
 - `.panel-default` applies the border
 - Panel header is wrapped in `header.panel-heading` with title in `h3.panel-title` and subtext in `small` tag
 - `button` elements may be included in the header, and will align right by default
+- The table below features a multi-select column header.
 
 
     @example
@@ -216,7 +229,13 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
                         <th>Column 1</th>
                         <th><a href="#">Column 2 <i class="fa fa-sort fa-sort-asc"></i></a></th>
                         <th><a href="#">Column 3 <i class="fa fa-sort fa-sort-desc"></i></a</th>
-                        <th>Column 4</th>
+                        <th>
+                            <select class="selectpicker" multiple title="Select Multiple">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select> 
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -267,10 +286,10 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
     <button class="btn btn-default">Default</button>
     <button class="btn btn-primary">Primary</button>
     <button class="btn btn-secondary">Secondary</button>
-    <button class="btn btn-success">Success</button>
+    <!--button class="btn btn-success">Success</button-->
     <button class="btn btn-danger">Danger</button>
     <button class="btn btn-info">Info</button>
-    <button class="btn btn-warning">Warning</button>
+    <!--button class="btn btn-warning">Warning</button-->
 
 
 ###Labels and Badges
@@ -326,6 +345,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
 - Text inputs, textareas and select boxes will fill the space of whatever span they are put into, and will need `.form-control` for styling. We have abandoned the `form-group` class for the bootstrap traditional `.row` and `.span-{size}-{number}` classes.
 - Elements can be centered by applying the `.center-col` class to the column div.
 - Checkboxes and radio buttons get an additional wrapper div of `.checkbox` and `.radio` respectively.  Labels should also wrap input elements here.
+- Custom select boxes for multiselect, live search and option groups use the bootstrap-select plugin. Details can be found at <a href="https://silviomoreto.github.io/bootstrap-select/examples/" target="_blank">silviomoreto.github.io/bootstrap-select/examples/</a>.
 - Submit button uses standard button styles, but can be made a block element by applying the `.full-width` class.
 
 
@@ -358,6 +378,44 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
                 </select>
             </div>
         </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <label>Select with OptGroups</label>
+                <select class="selectpicker" title="Option Groups">
+                  <optgroup label="Picnic">
+                    <option>Mustard</option>
+                    <option>Ketchup</option>
+                    <option>Relish</option>
+                  </optgroup>
+                  <optgroup label="Camping">
+                    <option>Tent</option>
+                    <option>Flashlight</option>
+                    <option>Toilet Paper</option>
+                  </optgroup>
+                </select>
+            </div>
+        </div>        
+        <div class="row">
+            <div class="col-lg-4">
+                <label>Select with Search Box</label>
+                <select class="selectpicker" data-live-search="true" title="Search Options">
+                    <option value="0">select with search</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <label>MultiSelect</label>
+                <select class="selectpicker" multiple title="Select Multiple">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </div>
+        </div>        
         <div class="row">
             <div class="col-lg-12">
                 <div class="checkbox">
@@ -397,6 +455,22 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
                             <label class="radio-inline"><input type="radio" name="optradio" disabled />Radio Inline</label>
                     </div>
         </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="checkbox">
+                    <label><input type="checkbox" data-toggle="toggle" data-size="large">On/Off Switch Large</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" data-toggle="toggle" data-size="normal">On/Off Switch Normal</label>
+                </div>
+                <div class="checkbox disabled">
+                    <label><input type="checkbox" data-toggle="toggle" data-size="small" disabled>On/Off Switch Small (disabled)</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" data-toggle="toggle" data-size="mini">On/Off Switch Mini</label>
+                </div>
+            </div>
+        </div>    
         <div class="row">
             <div class="col-lg-4">
                 <button type="submit" class="btn btn-primary btn-lg full-width">Submit Button</button>
@@ -643,7 +717,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
 
 
     @example
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eros lacus, scelerisque bibendum neque eget, varius dictum elit. Praesent fermentum laoreet metus, quis interdum orci. Pellentesque eu sodales lectus. Curabitur nec dui id erat sodales venenatis sit amet eget libero. Curabitur vestibulum risus sapien, vel sodales eros rhoncus pretium. Mauris mattis vitae mi sed feugiat. Curabitur quis condimentum tellus. Aenean ultrices leo euismod augue lacinia posuere. Aliquam nunc quam, <strong>bold text</strong> dictum et enim at, molestie commodo lectus. Aliquam elit magna, finibus id mi non, ullamcorper luctus risus. Nam auctor nulla sit amet dignissim accumsan. Fusce et ex metus. Suspendisse potenti.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eros lacus, scelerisque bibendum neque eget, varius dictum elit. Praesent <a href="#" data-toggle="tooltip" title="first tooltip">tooltip</a>&nbsp;fermentum laoreet metus, quis interdum orci. Pellentesque eu sodales lectus. Curabitur nec dui id erat sodales venenatis sit amet eget libero. Curabitur vestibulum risus sapien, vel sodales eros rhoncus pretium. Mauris mattis vitae mi sed feugiat. Curabitur quis condimentum tellus. Aenean ultrices leo euismod augue lacinia posuere. Aliquam nunc quam, <strong>bold text</strong>&nbsp;dictum et enim at, molestie commodo lectus. Aliquam elit magna, finibus id mi non, ullamcorper luctus risus. Nam auctor nulla sit amet dignissim accumsan. Fusce et ex metus. Suspendisse potenti.</p>
 
     <p>Nunc mi magna, euismod ut interdum id, egestas id diam. Sed faucibus faucibus quam in semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam nec quam orci. Duis felis mi, eleifend at est in, condimentum placerat dolor. Donec dapibus ex vitae metus ornare tincidunt. Duis auctor congue maximus. Curabitur eget neque mauris. Vivamus pretium mi a tortor fermentum rhoncus. Pellentesque id porttitor quam, vitae volutpat est. Mauris et iaculis risus. Nam nisi sapien, condimentum sit amet lacus quis, pellentesque scelerisque erat. Nullam iaculis lectus sit amet est elementum faucibus.</p>
 
@@ -686,6 +760,14 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
 
 ###Charts
 
+
+- Charting uses Google Charts
+- Draw charts with reSize function to make them responsive on window resize.
+- Axis labels are LatoBold and all caps.  Capitalization must be done explicitly, as google charts doesn't support textTransform.
+- jQuery `.extend` method is used to merge default options array with custom options per chart.
+- Colors (10-12 hex values for data); should appear in this order for distinctive color contrast purposes `#8F7EC2, #2598B8, #5FC782, #ECDE31, #F55949, #AE85D4, #5FC2C2, #9ACC54, #F5A61D, #B6744A`
+
+
     @example
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
@@ -704,56 +786,351 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
             data.addRows([
               ['Mushrooms', 3],
               ['Onions', 1],
-              ['Olives', 1],
-              ['Zucchini', 1],
-              ['Pepperoni', 2]
-            ]);
-            // Create the data table.
-            var data2 = new google.visualization.DataTable();
-            data2.addColumn('string', 'Topping');
-            data2.addColumn('number', 'Slices');
-            data2.addRows([
-              ['Mushrooms', 3],
-              ['Onions', 1],
               ['Olives', 15],
               ['Zucchini', 1],
               ['Pepperoni', 2]
             ]);
             // Create the data table.
-            var data3 = new google.visualization.DataTable();
-            data3.addColumn('string', 'Year');
-            data3.addColumn('number', 'Sales');
-            data3.addColumn('number', 'Expenses');
-            data3.addRows([
+            var data2 = new google.visualization.DataTable();
+            data2.addColumn('string', 'Year');
+            data2.addColumn('number', 'Sales');
+            data2.addColumn('number', 'Expenses');
+            data2.addRows([
               ['2004', 1000, 400],
               ['2005', 1170, 460],
               ['2006',  860, 580],
               ['2007', 1030, 540]
             ]);
-
             // Set chart options
-            var options = {'title':'Chart Example',
-                           'width': '100%',
-                           'height': 300};
+           var defaultOptions = {
+                colors: ['#8F7EC2', '#2598B8', '#5FC782', '#ECDE31', '#F55949', '#AE85D4', '#5FC2C2', '#9ACC54', '#F5A61D', '#B6744A'],
+                backgroundColor: 'transparent',
+                height: 300,
+                is3D: true,
+                fontName: 'Lato',
+                fontSize: 13,
+                pointSize: '5',
+                pointShape: {
+                    type: 'circle'
+                },
+                titleTextStyle: {
+                    fontName: 'LatoBold',
+                    fontSize: 14
+                },
+                vAxis: {
+                    gridlines: {
+                    count: 4
+                    },
+                    titleTextStyle: {
+                        fontSize: 10,
+                        color: '#AAAAAA',
+                        fontName: 'LatoBold',
+                        italic: false
+                    }
+                },
+                hAxis: {
+                    titleTextStyle: {
+                        fontSize: 10,
+                        color: '#AAAAAA',
+                        fontName: 'LatoBold',
+                        italic: false
+                    }
+                }
+            };
+            var options1 = {
+                title: 'Popularity of Pizza Toppings'
+            };
+            var options2 = {
+                title: 'Popularity of Pizza Toppings by Slice',
+                vAxis: {
+                    title: 'PIZZA TOPPINGS'
+                },
+                hAxis: {
+                    title: '# OF SLICES'
+                }
+            };
+            var options3 = {
+                title: 'Sales vs Expenditures',
+                vAxis: {
+                    title: 'AMOUNT OF DOLLARS (USD)'
+                },
+                hAxis: {
+                    title: 'YEAR'
+                },
+            };
 
-            // Instantiate and draw our chart, passing in some options.
+            // Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive
+            function reSize () {
             var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-            chart.draw(data, options);
+            chart.draw(data, $.extend(true, {}, defaultOptions, options1));
             var chart2 = new google.visualization.BarChart(document.getElementById('chart_div2'));
-            chart2.draw(data2, options);
+            chart2.draw(data, $.extend(true, {}, defaultOptions, options2));
             var chart3 = new google.visualization.LineChart(document.getElementById('chart_div3'));
-            chart3.draw(data3, options);
-
+            chart3.draw(data2, $.extend(true, {}, defaultOptions, options3));
+            var chart4 = new google.visualization.PieChart(document.getElementById('chart_div4'));
+            chart4.draw(data, $.extend(true, {}, defaultOptions, options1));
+            var chart5 = new google.visualization.BarChart(document.getElementById('chart_div5'));
+            chart5.draw(data, $.extend(true, {}, defaultOptions, options2));
+            var chart6 = new google.visualization.LineChart(document.getElementById('chart_div6'));
+            chart6.draw(data2, $.extend(true, {}, defaultOptions, options3));
+            }
+            window.onload = reSize();
+            window.onresize = reSize;
           }
     </script>
     <h3>Pie Chart</h3>
     <div id="chart_div"></div>
 
-    <h3>Chart 2</h3>
+    <h3>Bar Chart</h3>
     <div id="chart_div2"></div>
 
     <h3>Line Chart</h3>
     <div id="chart_div3"></div>
+
+    <h3>Dashboard Charts</h3>
+    <div class="row">
+       <div class="col-md-6">
+          <div class="dashboard-widget">
+             <h4 class="dashboard-widget-title">
+                Dashboard Pie Chart
+             </h4>
+             <div id="chart_div4"></div>
+          </div>
+       </div>
+
+       <div class="col-md-6">
+          <div class="dashboard-widget">
+             <h4 class="dashboard-widget-title">
+                Dashboard Bar Chart
+             </h4>
+             <div id="chart_div5"></div>
+          </div>
+       </div>
+    </div>
+
+    <div class="row">
+       <div class="col-md-6">
+          <div class="dashboard-widget">
+             <h4 class="dashboard-widget-title">
+                Dashboard Line Chart
+             </h4>
+             <div id="chart_div6"></div>
+          </div>
+       </div>
+    </div>
+
+
+### Modals
+
+- Modals use standard bootstrap modal markup.
+- `.modal-sm` and `.modal-lg` are used for small and large modals. Modals are medium-sized by default.
+
+
+    @example
+    <!-- Trigger the modal with a button -->
+    <button 
+        type="button" 
+        class="btn btn-primary btn-sm" 
+        data-toggle="modal" 
+        data-target="#smModal">Small Modal
+    </button>
+    <button 
+        type="button" 
+        class="btn btn-primary btn-sm" 
+        data-toggle="modal" 
+        data-target="#mdModal">Meduim Modal
+    </button>
+    <button 
+        type="button" 
+        class="btn btn-primary btn-sm" 
+        data-toggle="modal" 
+        data-target="#lgModal">Large Modal
+    </button>
+
+    <!-- Small Modal -->
+    <div id="smModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-sm">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the small modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button 
+                type="button" 
+                class="btn btn-primary">Save
+            </button>
+            <button 
+                type="button" 
+                class="btn btn-default" 
+                data-dismiss="modal">Close
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Medium Modal -->
+    <div id="mdModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the medium modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button 
+                type="button" 
+                class="btn btn-primary">Save
+            </button>
+            <button 
+                type="button" 
+                class="btn btn-secondary">Cancel
+            </button>
+            <button 
+                type="button" 
+                class="btn btn-default" 
+                data-dismiss="modal">Close
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Large Modal -->
+    <div id="lgModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the large modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button 
+                type="button" 
+                class="btn btn-primary">Save
+            </button>
+            <button 
+                type="button" 
+                class="btn btn-secondary">Cancel
+            </button>
+            <button 
+                type="button" 
+                class="btn btn-default" 
+                data-dismiss="modal">Close
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+
+    
+###Tooltips
+
+
+- Tooltips are controlled with the `data-toggle` and `title` attributes. 
+- Position tooltips with `data-placement` attribute.
+
+    
+    @example
+    <button 
+        type="button" 
+        class="btn btn-xs btn-primary" 
+        data-toggle="tooltip" 
+        data-placement="left" 
+        title="Tooltip on left">Tooltip on left
+    </button>
+    <button 
+        type="button" 
+        class="btn btn-xs btn-primary" 
+        data-toggle="tooltip" 
+        data-placement="top" 
+        title="Tooltip on top">Tooltip on top
+    </button>
+    <button 
+        type="button" 
+        class="btn btn-xs btn-primary" 
+        data-toggle="tooltip" 
+        data-placement="bottom" 
+        title="Tooltip on bottom">Tooltip on bottom
+    </button>
+    <button 
+        type="button" 
+        class="btn btn-xs btn-primary" 
+        data-toggle="tooltip" 
+        data-placement="right" 
+        title="Tooltip on right">Tooltip on right
+    </button>
+    
+    
+    
+###Pagination
+
+
+- Standard bootstrap pagination applies
+- Classes `.disabled` and `.active` are applied to li elements.
+
+
+    @example
+    <nav>
+      <ul class="pagination">
+        <li>
+          <a href="#" aria-label="Previous First Page">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&lsaquo;</span>
+          </a>
+        </li>
+        <li>
+            <a href="#">1</a>
+        </li>
+        <li>
+            <a href="#">2</a>
+        </li>
+        <li>
+            <a href="#">3</a>
+        </li>
+        <li>
+            <a href="#">4</a>
+        </li>
+        <li class="active">
+            <a href="#">5</a>
+        </li>
+        <li class="disabled">
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&rsaquo;</span>
+          </a>
+        </li>
+        <li class="disabled">
+          <a href="#" aria-label="Next Last Page">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+            
 
 
 ### Integration

@@ -250,8 +250,10 @@ code.sg:first-child {
 
 #styleguide .sg-canvas .container {
   width: 100% !important;
+  position: relative;
 }
 #styleguide .sg-canvas .l-app {
+  position: relative;
   background: #F3F3F4;
 }
 #styleguide .sg-canvas .l-header {
@@ -260,6 +262,7 @@ code.sg:first-child {
 }
 #styleguide .l-main {
   padding-bottom: 60px;
+  position: relative;
 }
 .sg-text, .sg-example {
   float: none;
@@ -278,17 +281,19 @@ code.sg:first-child {
 #styleguide .styleguide-header p {
   color: white;
 }
-#styleguide .sidebar-menu.affix {
+#styleguide .affix {
   top: 20px;
 }
 #styleguide .sidebar-menu ul li a {
   font-family: Lato;
   color: #283767;
+  border-left: 3px solid transparent;
 }
-#styleguide .sidebar-menu ul li a:hover, #styleguide .sidebar-menu ul li a.active {
+#styleguide .sidebar-menu ul li a:hover, #styleguide .sidebar-menu ul li.active a {
   font-family: LatoBold;
   font-weight: bold;
   background: transparent;
+  border-left-color: #3BA1F8;
 }
 #styleguide h2.sg {
   margin-top: 0;
