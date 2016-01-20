@@ -1,6 +1,7 @@
 ### General Layout
 
-This is the overall structure of every page. Content goes inside div with class `.l-main-content`
+This is the overall structure of every page. Content goes inside div with class `.l-main-content`.
+Everything inside follows the standard Bootstrap 12-column grid, using `.row` and `.col-xs- .col-sm- .col-md- .col-lg`. Using  `.col-md-*` will stack on mobile and tile on desktop.
 
     @example
     div.l-app
@@ -12,6 +13,17 @@ This is the overall structure of every page. Content goes inside div with class 
           .l-main-content.pd-md.mg-t-xl
             <!-- content goes here -->
             p Content Goes Here
+            .row.show-grid
+              .col-md-1
+                p .col-md-1
+              .col-md-2
+                p .col-md-2
+              .col-md-3
+                p .col-md-3
+              .col-md-4
+                p .col-md-4
+              .col-md-2
+                p .col-md-2
       footer.l-footer
         p.copyright.pd-md.copyright &copy; Revinate 2015. All Rights Reserved.
 
@@ -155,8 +167,7 @@ tabbed content is inside `.l-header-bottom`.
 
       </div>
     </div>
-
-  </header>
+    </header>
 
 
 ### Headers and Breadcrumbs

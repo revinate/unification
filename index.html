@@ -96,8 +96,10 @@
                 <div class="sg-text">
                   <h3 id="general-layout" class="sg">General Layout</h3>
                   <p class="sg">This is the overall structure of every page. Content goes inside div with class
-                    <code class="sg">.l-main-content</code>
-                  </p>
+                    <code class="sg">.l-main-content</code>. Everything inside follows the standard Bootstrap 12-column grid, using
+                    <code class="sg">.row</code>and
+                    <code class="sg">.col-xs- .col-sm- .col-md- .col-lg</code>. Using
+                    <code class="sg">.col-md-*</code>will stack on mobile and tile on desktop.</p>
                 </div>
                 <div class="sg-example">
                   <div class="sg-canvas">
@@ -111,6 +113,23 @@
                           <div class="l-main-content pd-md mg-t-xl">
                             <!-- content goes here -->
                             <p>Content Goes Here</p>
+                            <div class="row show-grid">
+                              <div class="col-md-1">
+                                <p>.col-md-1</p>
+                              </div>
+                              <div class="col-md-2">
+                                <p>.col-md-2</p>
+                              </div>
+                              <div class="col-md-3">
+                                <p>.col-md-3</p>
+                              </div>
+                              <div class="col-md-4">
+                                <p>.col-md-4</p>
+                              </div>
+                              <div class="col-md-2">
+                                <p>.col-md-2</p>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </main>
@@ -128,6 +147,23 @@
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;l-main-content pd-md mg-t-xl&quot;</span>&gt;</span>
         <span class="hljs-comment">&lt;!-- content goes here --&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content Goes Here<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row show-grid&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-1&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>.col-md-1<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-2&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>.col-md-2<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-3&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>.col-md-3<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-4&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>.col-md-4<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-2&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>.col-md-2<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">main</span>&gt;</span>
@@ -178,7 +214,6 @@
                       <code class="sg">&lt;a&gt;</code>tags have the attribute
                       <code class="sg">data-toggle=&apos;tab&apos;</code>, otherwise remove the attribute.</li>
                   </ul>
-                  <p class="sg"></p>
                 </div>
                 <div class="sg-example">
                   <div class="sg-canvas">
@@ -451,7 +486,8 @@
       <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">header</span>&gt;</span></pre>
                 </div>
               </section>
 
