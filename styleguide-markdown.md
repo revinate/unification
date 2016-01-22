@@ -289,7 +289,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
     <!--button class="btn btn-success">Success</button-->
     <button class="btn btn-danger">Danger</button>
     <button class="btn btn-info">Info</button>
-    <!--button class="btn btn-warning">Warning</button-->
+    <button class="btn btn-link">Link</button>
 
 
 ###Labels and Badges
@@ -967,7 +967,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
             </button>
             <button 
                 type="button" 
-                class="btn btn-default" 
+                class="btn btn-link" 
                 data-dismiss="modal">Close
             </button>
           </div>
@@ -1000,7 +1000,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
             </button>
             <button 
                 type="button" 
-                class="btn btn-default" 
+                class="btn btn-link" 
                 data-dismiss="modal">Close
             </button>
           </div>
@@ -1033,7 +1033,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
             </button>
             <button 
                 type="button" 
-                class="btn btn-default" 
+                class="btn btn-link" 
                 data-dismiss="modal">Close
             </button>
           </div>
