@@ -20,9 +20,9 @@
   }
 
   &.btn-default {
-    background-color: #D8D8D8;
+    background-color: #E6E6E6;
     &:hover {
-      background-color: darken(#D8D8D8, 5%);
+      background-color: darken(#E6E6E6, 5%);
     }
   }
 
@@ -239,6 +239,16 @@
         font-weight: normal;
         font-family: Lato;
       }
+      &:hover, &.active, &:active, &:focus {
+        background: white;
+      }
+    }
+  }
+}
+.toggle-group {
+  .btn {
+    &.btn-default.toggle-handle {
+      background: white;
     }
   }
 }
