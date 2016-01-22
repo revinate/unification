@@ -100,6 +100,11 @@
                     <code class="sg">.row</code>and
                     <code class="sg">.col-xs- .col-sm- .col-md- .col-lg</code>. Using
                     <code class="sg">.col-md-*</code>will stack on mobile and tile on desktop.</p>
+                  <ul class="sg">
+                    <li class="sg">spinner is created using
+                      <code class="sg">.spinner</code>and including
+                      <code class="sg">.bounce1 .bounce2 .bounce3</code>divs. For M and E, please use the spinner directive.</li>
+                  </ul>
                 </div>
                 <div class="sg-example">
                   <div class="sg-canvas">
@@ -113,21 +118,30 @@
                           <div class="l-main-content pd-md mg-t-xl">
                             <!-- content goes here -->
                             <p>Content Goes Here</p>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <div class="spinner">
+                                  <div class="bounce1"></div>
+                                  <div class="bounce2"></div>
+                                  <div class="bounce3"></div>
+                                </div>
+                              </div>
+                            </div>
                             <div class="row show-grid">
                               <div class="col-md-1">
-                                <p>.col-md-1</p>
+                                <p>1 col</p>
                               </div>
                               <div class="col-md-2">
-                                <p>.col-md-2</p>
+                                <p>2 col</p>
                               </div>
                               <div class="col-md-3">
-                                <p>.col-md-3</p>
+                                <p>2 col</p>
                               </div>
                               <div class="col-md-4">
-                                <p>.col-md-4</p>
+                                <p>4 col</p>
                               </div>
                               <div class="col-md-2">
-                                <p>.col-md-2</p>
+                                <p>2 col</p>
                               </div>
                             </div>
                           </div>
@@ -147,21 +161,30 @@
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;l-main-content pd-md mg-t-xl&quot;</span>&gt;</span>
         <span class="hljs-comment">&lt;!-- content goes here --&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content Goes Here<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-12&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;spinner&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;bounce1&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;bounce2&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;bounce3&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row show-grid&quot;</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-1&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>.col-md-1<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>1 col<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-2&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>.col-md-2<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>2 col<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-3&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>.col-md-3<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>2 col<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-4&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>.col-md-4<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>4 col<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-2&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>.col-md-2<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>2 col<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>

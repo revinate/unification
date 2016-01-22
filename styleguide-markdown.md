@@ -2,6 +2,8 @@
 
 This is the overall structure of every page. Content goes inside div with class `.l-main-content`.
 Everything inside follows the standard Bootstrap 12-column grid, using `.row` and `.col-xs- .col-sm- .col-md- .col-lg`. Using  `.col-md-*` will stack on mobile and tile on desktop.
+- spinner is created using `.spinner` and including `.bounce1 .bounce2 .bounce3` divs.  For M and E, please use the spinner directive.
+
 
     @example
     div.l-app
@@ -12,18 +14,25 @@ Everything inside follows the standard Bootstrap 12-column grid, using `.row` an
         .container
           .l-main-content.pd-md.mg-t-xl
             <!-- content goes here -->
-            p Content Goes Here
+            p Content Goes Here            
+            .row
+              .col-md-12
+                .spinner
+                  .bounce1
+                  .bounce2
+                  .bounce3            
             .row.show-grid
               .col-md-1
-                p .col-md-1
+                p 1 col
               .col-md-2
-                p .col-md-2
+                p 2 col
               .col-md-3
-                p .col-md-3
+                p 2 col
               .col-md-4
-                p .col-md-4
+                p 4 col
               .col-md-2
-                p .col-md-2
+                p 2 col
+
       footer.l-footer
         p.copyright.pd-md.copyright &copy; Revinate 2015. All Rights Reserved.
 
