@@ -379,8 +379,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <select class="form-control">
-                    <option value="0" selected>4-Column Select Dropdown</option>
+                <select class="selectpicker" title="4-Column Select Dropdown">
                     <option value="1">Option 1</option>
                     <option value="2">Option 2</option>
                     <option value="3">Option 3</option>
