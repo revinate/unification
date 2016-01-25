@@ -23,15 +23,15 @@ Everything inside follows the standard Bootstrap 12-column grid, using `.row` an
                   .bounce3            
             .row.show-grid
               .col-md-1
-                p 1 col
+                p col-1
               .col-md-2
-                p 2 col
+                p col-2
               .col-md-3
-                p 2 col
+                p col-3
               .col-md-4
-                p 4 col
+                p col-4
               .col-md-2
-                p 2 col
+                p col-2
 
       footer.l-footer
         p.copyright.pd-md.copyright &copy; Revinate 2015. All Rights Reserved.
