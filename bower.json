@@ -3,5 +3,8 @@
   "version": "0.0.1",
   "devDependencies": {
     "bootstrap-sass-official": "~3.3.4"
+  },
+  "dependencies": {
+    "angular-bootstrap": "~1.1.1"
   }
 }

@@ -298,6 +298,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
     <button class="btn btn-danger">Danger</button>
     <button class="btn btn-info">Info</button>
     <button class="btn btn-link">Link</button>
+    <button class="btn btn-internal">Internal Use Only</button>
 
 
 ###Labels and Badges
