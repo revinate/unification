@@ -362,8 +362,9 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
     <form role="form" action="" method="POST">
         <div class="row">
             <div class="col-lg-12">
-            <label for="_username">Label For Inputs</label>
+                <label for="_username">Label For Inputs</label>
                 <input type="text" class="form-control" id="username" name="_username" value="" placeholder="12-column text field with label, no icon">
+                <p class="help-block">Helper text goes here</p>
             </div>
         </div>
         <div class="row">
