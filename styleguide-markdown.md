@@ -298,7 +298,6 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
     <button class="btn btn-danger">Danger</button>
     <button class="btn btn-info">Info</button>
     <button class="btn btn-link">Link</button>
-    <button class="btn btn-internal">Internal Use Only</button>
 
 
 ###Labels and Badges
@@ -360,15 +359,10 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
 
     @example
     <form role="form" action="" method="POST">
-        <div class="form-group">
-            <label class="control-label">Date Picker</label>
-            <input type="text" class="form-control" ng-model="selectedDate" name="date" bs-datepicker/>
-        </div>
         <div class="row">
             <div class="col-lg-12">
-                <label for="_username">Label For Inputs</label>
+            <label for="_username">Label For Inputs</label>
                 <input type="text" class="form-control" id="username" name="_username" value="" placeholder="12-column text field with label, no icon">
-                <p class="help-block">Helper text goes here</p>
             </div>
         </div>
         <div class="row">

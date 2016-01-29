@@ -13,7 +13,7 @@
 </head>
 
 <body data-spy="scroll" data-target="#myScrollSpy" data-offset="50" class="sg">
-  <div class="l-app" id="styleguide" ng-app="main">
+  <div class="l-app" id="styleguide">
 
     <main class="l-main">
       <div class="container">
@@ -32,7 +32,7 @@
             </p>
           </div>
         </div>
-        <div class="l-main-content row pd-xl" ng-controller="MainCtrl">
+        <div class="l-main-content row pd-xl">
 
           <nav class="sidebar-menu col-sm-3 hidden-xs hidden-sm" id="myScrollSpy">
             <ul class="nav bs-docs-sidenav" data-spy="affix" data-offset-top="270">
@@ -755,7 +755,6 @@
                     <button class="btn btn-danger">Danger</button>
                     <button class="btn btn-info">Info</button>
                     <button class="btn btn-link">Link</button>
-                    <button class="btn btn-internal">Internal Use Only</button>
                   </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-xs btn-default&quot;</span>&gt;</span>XSmall<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-sm btn-default&quot;</span>&gt;</span>Small<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-default&quot;</span>&gt;</span>Medium<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
@@ -767,8 +766,7 @@
 <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-secondary&quot;</span>&gt;</span>Secondary<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-danger&quot;</span>&gt;</span>Danger<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-info&quot;</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-link&quot;</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-internal&quot;</span>&gt;</span>Internal Use Only<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-link&quot;</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
                 </div>
               </section>
 
@@ -938,15 +936,10 @@
                 <div class="sg-example">
                   <div class="sg-canvas">
                     <form role="form" action="" method="POST">
-                      <div class="form-group">
-                        <label class="control-label">Date Picker</label>
-                        <input type="text" class="form-control" ng-model="selectedDate" name="date" bs-datepicker="">
-                      </div>
                       <div class="row">
                         <div class="col-lg-12">
                           <label for="_username">Label For Inputs</label>
                           <input type="text" class="form-control" id="username" name="_username" value="" placeholder="12-column text field with label, no icon">
-                          <p class="help-block">Helper text goes here</p>
                         </div>
                       </div>
                       <div class="row">
@@ -1077,15 +1070,10 @@
                       </div>
                     </form>
                   </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;form&quot;</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">&quot;&quot;</span> <span class="hljs-attribute">method</span>=<span class="hljs-value">&quot;POST&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;control-label&quot;</span>&gt;</span>Date Picker<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-control&quot;</span> <span class="hljs-attribute">ng-model</span>=<span class="hljs-value">&quot;selectedDate&quot;</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;date&quot;</span> <span class="hljs-attribute">bs-datepicker</span>/&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-lg-12&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;_username&quot;</span>&gt;</span>Label For Inputs<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-control&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;username&quot;</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;_username&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;&quot;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&quot;12-column text field with label, no icon&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;help-block&quot;</span>&gt;</span>Helper text goes here<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
@@ -2438,13 +2426,9 @@
 
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
-  <script src="bower_components/angular/angular.min.js"></script>
-  <script src="bower_components/angular-strap/dist/angular-strap.min.js"></script>
-  <script src="bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
   <script src="bower_components/bootstrap-toggle/js/bootstrap-toggle.js"></script>
   <script src="bower_components/bootstrap-select/js/bootstrap-select.js"></script>
   <script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
-  <script src="js/main.js"></script>
   <script>
     $('.bs-docs-sidenav li').click(function() {
       $(this).siblings('li').removeClass('active');

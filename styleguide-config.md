@@ -10,7 +10,7 @@
 
 ### Body
 
-    <div class="l-app" id="styleguide" ng-app="main">
+    <div class="l-app" id="styleguide">
 
       <main class="l-main">
         <div class="container">
@@ -30,7 +30,7 @@
               </p>
               </div>
             </div>
-            <div class="l-main-content row pd-xl" ng-controller="MainCtrl">
+            <div class="l-main-content row pd-xl">
 
               <nav class="sidebar-menu col-sm-3 hidden-xs hidden-sm" id="myScrollSpy">
                 <ul class="nav bs-docs-sidenav" data-spy="affix" data-offset-top="270">
@@ -67,13 +67,9 @@
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/angular-strap/dist/angular-strap.min.js"></script>
-    <script src="bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
     <script src="bower_components/bootstrap-toggle/js/bootstrap-toggle.js"></script>
     <script src="bower_components/bootstrap-select/js/bootstrap-select.js"></script>
     <script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
-    <script src="js/main.js"></script>
     <script>
     $('.bs-docs-sidenav li').click(function(){
         $(this).siblings('li').removeClass('active');

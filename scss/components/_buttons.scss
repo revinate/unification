@@ -36,16 +36,6 @@
     }
   }
 
-  &.btn-internal {
-    color: #ffffff;
-    background-color: #6f5499;
-    border-color: darken(#6f5499,10%);
-    &:hover {
-      color: #ffffff;
-      background-color: darken(#6f5499, 10%);
-    }
-  }
-
   border-radius: 3px;
   padding: 10px 20px 8px;
   font-size: 12px;
