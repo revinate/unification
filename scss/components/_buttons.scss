@@ -31,8 +31,16 @@
     background-color: white;
     border-color: #2295F7;
     &:hover {
-      color: darken(#2295F7, 10%);
-      border-color: darken(#2295F7, 10%);
+      background-color: #EBF5FE;
+    }
+  }
+  &.btn-delete {
+    color: #888;
+    background-color: white;
+    border-color: #888;
+    &:hover {
+      color: darken(#888, 10%);
+      border-color: darken(#888, 10%);
     }
   }
 
@@ -150,8 +158,8 @@
   color: #2295F7;
   padding: 10px 10px 8px;
   &:hover {
-    text-decoration: underline;
-    color: darken(#2295F7,5%);
+    text-decoration: none;
+    color: #0876D5;
   }
 }
 

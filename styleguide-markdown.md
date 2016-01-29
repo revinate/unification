@@ -282,7 +282,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
 
 - `.btn` can be applied to button and anchor elements
 - 4 buttons sizes `.btn-xs .btn-sm .btn-lg` medium is the default size
-- Button colors are `.btn-default .btn-primary .btn-secondary .btn-success .btn-danger .btn-info .btn-warning`
+- Button colors are `.btn-default .btn-primary .btn-secondary .btn-success .btn-danger .btn-info .btn-warning .btn-delete`
 
 
     @example
@@ -297,6 +297,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
     <button class="btn btn-secondary">Secondary</button>
     <button class="btn btn-danger">Danger</button>
     <button class="btn btn-info">Info</button>
+    <button class="btn btn-delete">Delete</button>
     <button class="btn btn-link">Link</button>
 
 
@@ -931,6 +932,8 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
 
 - Modals use standard bootstrap modal markup.
 - `.modal-sm` and `.modal-lg` are used for small and large modals. Modals are medium-sized by default.
+- Small modals may have no more than 2 Calls to Action.
+- If a modal contains a Delete action, use `.btn-delete` to apply appropriate styles and float it to the left.
 
 
     @example
@@ -939,25 +942,66 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
         type="button" 
         class="btn btn-primary btn-sm" 
         data-toggle="modal" 
-        data-target="#smModal">Small Modal
+        data-target="#smModal">Small Modal 1CTA
     </button>
     <button 
         type="button" 
         class="btn btn-primary btn-sm" 
         data-toggle="modal" 
-        data-target="#mdModal">Meduim Modal
+        data-target="#smModal2">Small Modal 2CTA
+    </button>
+    <br />
+    <br />
+    <button 
+        type="button" 
+        class="btn btn-primary btn-sm" 
+        data-toggle="modal" 
+        data-target="#mdModal">Meduim Modal 1CTA
     </button>
     <button 
         type="button" 
         class="btn btn-primary btn-sm" 
         data-toggle="modal" 
-        data-target="#lgModal">Large Modal
+        data-target="#mdModal2">Meduim Modal 2CTA
+    </button>
+    <button 
+        type="button" 
+        class="btn btn-primary btn-sm" 
+        data-toggle="modal" 
+        data-target="#mdModal3">Meduim Modal 3CTA
+    </button>
+    <br />
+    <br />
+    <button 
+        type="button" 
+        class="btn btn-primary btn-sm" 
+        data-toggle="modal" 
+        data-target="#lgModal">Large Modal 1CTA
+    </button>
+    <button 
+        type="button" 
+        class="btn btn-primary btn-sm" 
+        data-toggle="modal" 
+        data-target="#lgModal2">Large Modal 2CTA
+    </button>
+    <button 
+        type="button" 
+        class="btn btn-primary btn-sm" 
+        data-toggle="modal" 
+        data-target="#lgModal3">Large Modal 3CTA
+    </button>
+    <br />
+    <br />
+    <button 
+        type="button" 
+        class="btn btn-primary btn-sm" 
+        data-toggle="modal" 
+        data-target="#deleteModal">Modal with Delete
     </button>
 
-    <!-- Small Modal -->
+    <!-- Small Modal One CTA -->
     <div id="smModal" class="modal fade" role="dialog">
       <div class="modal-dialog modal-sm">
-
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
@@ -970,23 +1014,43 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
           <div class="modal-footer">
             <button 
                 type="button" 
-                class="btn btn-primary">Save
+                class="btn btn-primary">Primary CTA
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Small Modal Two CTAs -->
+    <div id="smModal2" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the small modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button 
+                type="button" 
+                class="btn btn-primary">Primary CTA
             </button>
             <button 
                 type="button" 
                 class="btn btn-link" 
-                data-dismiss="modal">Close
+                data-dismiss="modal">Link
             </button>
           </div>
         </div>
-
       </div>
     </div>
 
-    <!-- Medium Modal -->
+    <!-- Medium Modal 1CTA -->
     <div id="mdModal" class="modal fade" role="dialog">
       <div class="modal-dialog">
-
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
@@ -999,27 +1063,74 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
           <div class="modal-footer">
             <button 
                 type="button" 
-                class="btn btn-primary">Save
+                class="btn btn-primary">Primary CTA
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Medium Modal 2CTA -->
+    <div id="mdModal2" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the medium modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button 
+                type="button" 
+                class="btn btn-primary">Primary CTA
             </button>
             <button 
                 type="button" 
-                class="btn btn-secondary">Cancel
+                class="btn btn-secondary">Secondary CTA
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Medium Modal 3CTA -->
+    <div id="mdModal3" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the medium modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button 
+                type="button" 
+                class="btn btn-primary">Primary CTA
+            </button>
+            <button 
+                type="button" 
+                class="btn btn-secondary">Secondary CTA
             </button>
             <button 
                 type="button" 
                 class="btn btn-link" 
-                data-dismiss="modal">Close
+                data-dismiss="modal">Link
             </button>
           </div>
         </div>
-
       </div>
     </div>
 
-    <!-- Large Modal -->
+
+    <!-- Large Modal 1CTA-->
     <div id="lgModal" class="modal fade" role="dialog">
       <div class="modal-dialog modal-lg">
-
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
@@ -1032,20 +1143,98 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
           <div class="modal-footer">
             <button 
                 type="button" 
-                class="btn btn-primary">Save
+                class="btn btn-primary">Primary CTA
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Large Modal 2CTA-->
+    <div id="lgModal2" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the large modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button 
+                type="button" 
+                class="btn btn-primary">Primary CTA
             </button>
             <button 
                 type="button" 
-                class="btn btn-secondary">Cancel
+                class="btn btn-secondary">Secondary CTA
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Large Modal 3CTA-->
+    <div id="lgModal3" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the large modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button 
+                type="button" 
+                class="btn btn-primary">Primary CTA
+            </button>
+            <button 
+                type="button" 
+                class="btn btn-secondary">Secondary CTA
             </button>
             <button 
                 type="button" 
                 class="btn btn-link" 
-                data-dismiss="modal">Close
+                data-dismiss="modal">Link
             </button>
           </div>
         </div>
-
+      </div>
+    </div>
+    
+    <!-- Delete Button-->
+    <div id="deleteModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the large modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button 
+                type="button" 
+                class="btn btn-primary">Primary CTA
+            </button>
+            <button 
+                type="button" 
+                class="btn btn-secondary">Secondary CTA
+            </button>
+            <button 
+                type="button" 
+                class="btn btn-delete" 
+                data-dismiss="modal">Delete
+            </button>
+          </div>
+        </div>
       </div>
     </div>
     
