@@ -309,3 +309,7 @@ span.logo i {
 #styleguide .styleguide.col-sm-9 {
   top: -20px;
 }
+#styleguide .row.show-grid > div {
+  background: #ccc;
+  border: 1px solid #444;
+}

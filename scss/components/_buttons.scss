@@ -20,15 +20,28 @@
   }
 
   &.btn-default {
-    background-color: #D8D8D8;
+    background-color: #E6E6E6;
     &:hover {
-      background-color: darken(#D8D8D8, 5%);
+      background-color: darken(#E6E6E6, 5%);
     }
   }
 
   &.btn-secondary {
-    color: #FFF;
-    background-color: $r_brand-secondary;
+    color: #2295F7;
+    background-color: white;
+    border-color: #2295F7;
+    &:hover {
+      background-color: #EBF5FE;
+    }
+  }
+  &.btn-delete {
+    color: #888;
+    background-color: white;
+    border-color: #888;
+    &:hover {
+      color: darken(#888, 10%);
+      border-color: darken(#888, 10%);
+    }
   }
 
   border-radius: 3px;
@@ -142,14 +155,11 @@
 }
 
 .btn.btn-link {
-  padding: 0;
-  color: #3BA1F8;
-  text-transform: none;
-  font: 300 14px/1.5 Lato !important;
-  letter-spacing: inherit;
+  color: #2295F7;
+  padding: 10px 10px 8px;
   &:hover {
-    text-decoration: underline;
-    color: darken(#3BA1F8,10%);
+    text-decoration: none;
+    color: #0876D5;
   }
 }
 
@@ -239,6 +249,16 @@
         font-weight: normal;
         font-family: Lato;
       }
+      &:hover, &.active, &:active, &:focus {
+        background: white;
+      }
+    }
+  }
+}
+.toggle-group {
+  .btn {
+    &.btn-default.toggle-handle {
+      background: white;
     }
   }
 }
