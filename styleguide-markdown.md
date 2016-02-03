@@ -1089,7 +1089,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
             </button>
             <button 
                 type="button" 
-                class="btn btn-secondary">Secondary CTA
+                class="btn btn-link">Link
             </button>
           </div>
         </div>
@@ -1169,7 +1169,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
             </button>
             <button 
                 type="button" 
-                class="btn btn-secondary">Secondary CTA
+                class="btn btn-link">Link
             </button>
           </div>
         </div>
