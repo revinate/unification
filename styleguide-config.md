@@ -10,9 +10,9 @@
 
 ### Body
 
-    <div class="l-app" id="styleguide">
+    <div class="l-app" id="styleguide" ng-app="main">
 
-      <main class="l-main">
+      <main class="l-main" ng-controller="MainCtrl">
         <div class="container">
             <div class="styleguide-header row pd-xl">
             <div class="col-lg-12">
@@ -67,9 +67,13 @@
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-strap/dist/angular-strap.min.js"></script>
+    <script src="bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
     <script src="bower_components/bootstrap-toggle/js/bootstrap-toggle.js"></script>
     <script src="bower_components/bootstrap-select/js/bootstrap-select.js"></script>
     <script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
+    <script src="js/main.js"></script>
     <script>
     $('.bs-docs-sidenav li').click(function(){
         $(this).siblings('li').removeClass('active');

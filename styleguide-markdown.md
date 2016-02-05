@@ -364,6 +364,14 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
 
     @example
     <form role="form" action="" method="POST">
+        <div class="form-group">
+          <label class="control-label">Date Picker</label>
+          <input type="text" class="form-control" ng-model="selectedDate" name="date" bs-datepicker/>
+        </div>
+        <div class="form-group">
+          <label class="control-label">Time Picker</label>
+          <input type="text" class="form-control" ng-model="selectedTime" data-minute-step="1" data-time-type="string" data-time-format="HH:mm" bs-timepicker="">
+        </div>
         <div class="row">
             <div class="col-lg-12">
               <label for="_username">Label For Inputs</label>
