@@ -299,6 +299,10 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
     <button class="btn btn-info">Info</button>
     <button class="btn btn-delete">Delete</button>
     <button class="btn btn-link">Link</button>
+    <br />
+    <br />
+    <button class="btn btn-internal-primary">Internal Use - primary</button>
+    <button class="btn btn-internal-secondary">Internal Use - secondary</button>
 
 
 ###Labels and Badges

@@ -34,6 +34,27 @@
       background-color: #EBF5FE;
     }
   }
+
+  &.btn-internal-primary {
+    color: #ffffff;
+    background-color: #6f5499;
+    border-color: darken(#6f5499, 10%);
+    &:hover {
+      color: #ffffff;
+      background-color: darken(#6f5499, 10%);
+    }
+  }
+
+  &.btn-internal-secondary {
+    color: #6f5499;
+    background-color: #ffffff;
+    border-color: #6f5499;
+    &:hover {
+      color: #6f5499;
+      background-color: darken(#6f5499, 10%);
+    }
+  }
+
   &.btn-delete {
     color: #888;
     background-color: white;
@@ -255,6 +276,7 @@
     }
   }
 }
+
 .toggle-group {
   .btn {
     &.btn-default.toggle-handle {
