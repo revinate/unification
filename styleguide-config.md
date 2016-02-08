@@ -10,9 +10,9 @@
 
 ### Body
 
-    <div class="l-app" id="styleguide" ng-app="main">
+    <div class="l-app" id="styleguide">
 
-      <main class="l-main" ng-controller="MainCtrl">
+      <main class="l-main">
         <div class="container">
             <div class="styleguide-header row pd-xl">
             <div class="col-lg-12">
@@ -54,8 +54,8 @@
                 </ul>
               </nav>
 
-            <div class="styleguide col-sm-9">
-              <div sg-content></div>
+            <div class="styleguide col-sm-9" ng-app="main">
+              <div sg-content ng-controller="MainCtrl"></div>
             </div>
           </div>
         </div>
