@@ -10,6 +10,8 @@
     padding-right: 10px;
   }
 }
+
+
 form {
   .row, .form-group {
     margin-bottom: 15px;
@@ -19,9 +21,6 @@ form {
       left: 22px;
       color: #4c4c4c;
     }
-    label {
-      @extend .FontLatoBold;
-    }
     input[type="text"], input[type="email"], input[type="password"] {
       width: 100%;
       &.with-icon {
@@ -30,6 +29,7 @@ form {
     }
   }
 }
+
 // Bootstrap Select Styles
 .bootstrap-select {
   .dropdown-menu {
@@ -37,6 +37,14 @@ form {
       background-color: #EBF5FE;
       color: #3BA1F8;
     }
+  }
+}
+
+label {
+  @extend .FontLatoBold;
+  .checkbox &,
+  .radio & {
+    @extend .FontLato;
   }
 }
 

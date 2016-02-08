@@ -946,45 +946,34 @@
                 <div class="sg-example">
                   <div class="sg-canvas">
                     <form role="form" action="" method="POST">
-                      <div class="form-group">
-                        <label class="control-label">Date Picker</label>
-                        <input type="text" class="form-control" ng-model="selectedDate" name="date" bs-datepicker="">
-                      </div>
-                      <div class="form-group">
-                        <label class="control-label">Time Picker</label>
-                        <input type="text" class="form-control" ng-model="selectedTime" data-minute-step="1" data-time-type="string" data-time-format="HH:mm" bs-timepicker="">
-                      </div>
                       <div class="row">
-                        <div class="col-lg-12">
+                        <div class="form-group col-sm-6 col-md-4">
+                          <label class="control-label">Date Picker</label>
+                          <input type="text" class="form-control" ng-model="selectedDate" name="date" bs-datepicker="">
+                        </div>
+                        <div class="form-group col-sm-6 col-md-4">
+                          <label class="control-label">Time Picker</label>
+                          <input type="text" class="form-control" ng-model="selectedTime" data-minute-step="1" data-time-type="string" data-time-format="HH:mm" bs-timepicker="">
+                        </div>
+                        <div class="form-group col-sm-6 col-md-4">
                           <label for="_username">Label For Inputs</label>
-                          <input type="text" class="form-control" id="username" name="_username" value="" placeholder="12-column text field with label, no icon">
-                          <p class="help-block">Helper text goes here</p>
+                          <input type="text" class="form-control" id="username" name="_username" value="">
                         </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-lg-8">
-                          <i class="fa fa-key"></i>
-                          <input type="password" class="form-control with-icon" id="password" name="_password" placeholder="8-column text field with icon - no label">
+                        <div class="form-group col-sm-6 col-md-4">
+                          <label for="_username">Input w/ icon</label>
+                          <input type="password" class="form-control" placeholder="Enter password">
                         </div>
-                      </div>
-                      <div class="row">
-                        <div class="center-col col-lg-6">
-                          <textarea class="form-control" rows="6" placeholder="6-column textarea, centered"></textarea>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-lg-4">
-                          <select class="selectpicker" title="4-Column Select Dropdown">
+                        <div class="fom-group col-sm-6 col-md-4">
+                          <label for="_username">Select Input</label>
+                          <select class="selectpicker form-control" title="4-Column Select Dropdown">
                             <option value="1">Option 1</option>
                             <option value="2">Option 2</option>
                             <option value="3">Option 3</option>
                           </select>
                         </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-lg-4">
+                        <div class="form-group col-sm-6 col-md-4">
                           <label>Select with OptGroups</label>
-                          <select class="selectpicker" title="Option Groups">
+                          <select class="selectpicker form-control" title="Option Groups">
                             <optgroup label="Picnic">
                               <option>Mustard</option>
                               <option>Ketchup</option>
@@ -997,26 +986,37 @@
                             </optgroup>
                           </select>
                         </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-lg-4">
+                        <div class="form-group col-sm-6">
                           <label>Select with Search Box</label>
-                          <select class="selectpicker" data-live-search="true" title="Search Options">
+                          <select class="form-control selectpicker" data-live-search="true" title="Search Options">
                             <option value="0">select with search</option>
                             <option value="1">Option 1</option>
                             <option value="2">Option 2</option>
                             <option value="3">Option 3</option>
                           </select>
                         </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-lg-4">
+                        <div class="form-group col-sm-6">
                           <label>MultiSelect</label>
-                          <select class="selectpicker" multiple title="Select Multiple">
+                          <select class="form-control selectpicker" multiple title="Select Multiple">
                             <option value="1">Option 1</option>
                             <option value="2">Option 2</option>
                             <option value="3">Option 3</option>
                           </select>
+                        </div>
+                        <div class="form-group col-sm-12">
+                          <label for="_username">Input w/ icon</label>
+                          <textarea class="form-control" rows="6" placeholder="6-column textarea, centered"></textarea>
+                          <span class="help-block">Help text goes here.</span>
+                        </div>
+                        <div class="form-group col-sm-6 has-error">
+                          <label class="control-label" for="_username">Input w/ error</label>
+                          <input type="text" class="form-control" placeholder="Enter info">
+                          <span class="help-block">Error message goes here</span>
+                        </div>
+                        <div class="form-group col-sm-6 has-success">
+                          <label class="control-label" for="_username">Input w/ success</label>
+                          <input type="text" class="form-control" placeholder="Enter info">
+                          <span class="help-block">Success message goes here</span>
                         </div>
                       </div>
                       <div class="row">
@@ -1032,7 +1032,7 @@
                         </div>
                       </div>
                       <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-lg-12 checkbox">
                           <label class="checkbox-inline">
                             <input type="checkbox" value="">Inline Checkbox
                           </label>
@@ -1053,7 +1053,7 @@
                         </div>
                       </div>
                       <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-lg-12 radio">
                           <label class="radio-inline">
                             <input type="radio" name="optradio">Radio Inline</label>
                           <label class="radio-inline">
@@ -1089,46 +1089,35 @@
                       </div>
                     </form>
                   </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;form&quot;</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">&quot;&quot;</span> <span class="hljs-attribute">method</span>=<span class="hljs-value">&quot;POST&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;control-label&quot;</span>&gt;</span>Date Picker<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-control&quot;</span> <span class="hljs-attribute">ng-model</span>=<span class="hljs-value">&quot;selectedDate&quot;</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;date&quot;</span> <span class="hljs-attribute">bs-datepicker</span>/&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;control-label&quot;</span>&gt;</span>Time Picker<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-control&quot;</span> <span class="hljs-attribute">ng-model</span>=<span class="hljs-value">&quot;selectedTime&quot;</span> <span class="hljs-attribute">data-minute-step</span>=<span class="hljs-value">&quot;1&quot;</span> <span class="hljs-attribute">data-time-type</span>=<span class="hljs-value">&quot;string&quot;</span> <span class="hljs-attribute">data-time-format</span>=<span class="hljs-value">&quot;HH:mm&quot;</span>
-    <span class="hljs-attribute">bs-timepicker</span>=<span class="hljs-value">&quot;&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-lg-12&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group col-sm-6 col-md-4&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;control-label&quot;</span>&gt;</span>Date Picker<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-control&quot;</span> <span class="hljs-attribute">ng-model</span>=<span class="hljs-value">&quot;selectedDate&quot;</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;date&quot;</span> <span class="hljs-attribute">bs-datepicker</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group col-sm-6 col-md-4&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;control-label&quot;</span>&gt;</span>Time Picker<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-control&quot;</span> <span class="hljs-attribute">ng-model</span>=<span class="hljs-value">&quot;selectedTime&quot;</span> <span class="hljs-attribute">data-minute-step</span>=<span class="hljs-value">&quot;1&quot;</span> <span class="hljs-attribute">data-time-type</span>=<span class="hljs-value">&quot;string&quot;</span> <span class="hljs-attribute">data-time-format</span>=<span class="hljs-value">&quot;HH:mm&quot;</span>
+      <span class="hljs-attribute">bs-timepicker</span>=<span class="hljs-value">&quot;&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group col-sm-6 col-md-4&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;_username&quot;</span>&gt;</span>Label For Inputs<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-control&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;username&quot;</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;_username&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;&quot;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&quot;12-column text field with label, no icon&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;help-block&quot;</span>&gt;</span>Helper text goes here<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-control&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;username&quot;</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;_username&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-lg-8&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;fa fa-key&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;password&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-control with-icon&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;password&quot;</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;_password&quot;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&quot;8-column text field with icon - no label&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group col-sm-6 col-md-4&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;_username&quot;</span>&gt;</span>Input w/ icon<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;password&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-control&quot;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&quot;Enter password&quot;</span> /&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;center-col col-lg-6&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-control&quot;</span> <span class="hljs-attribute">rows</span>=<span class="hljs-value">&quot;6&quot;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&quot;6-column textarea, centered&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-lg-4&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;selectpicker&quot;</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">&quot;4-Column Select Dropdown&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;fom-group col-sm-6 col-md-4&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;_username&quot;</span>&gt;</span>Select Input<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;selectpicker form-control&quot;</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">&quot;4-Column Select Dropdown&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;1&quot;</span>&gt;</span>Option 1<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;2&quot;</span>&gt;</span>Option 2<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;3&quot;</span>&gt;</span>Option 3<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-lg-4&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group col-sm-6 col-md-4&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Select with OptGroups<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;selectpicker&quot;</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">&quot;Option Groups&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;selectpicker form-control&quot;</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">&quot;Option Groups&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">optgroup</span> <span class="hljs-attribute">label</span>=<span class="hljs-value">&quot;Picnic&quot;</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Mustard<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Ketchup<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
@@ -1141,26 +1130,37 @@
         <span class="hljs-tag">&lt;/<span class="hljs-title">optgroup</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-lg-4&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group col-sm-6&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Select with Search Box<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;selectpicker&quot;</span> <span class="hljs-attribute">data-live-search</span>=<span class="hljs-value">&quot;true&quot;</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">&quot;Search Options&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-control selectpicker&quot;</span> <span class="hljs-attribute">data-live-search</span>=<span class="hljs-value">&quot;true&quot;</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">&quot;Search Options&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;0&quot;</span>&gt;</span>select with search<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;1&quot;</span>&gt;</span>Option 1<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;2&quot;</span>&gt;</span>Option 2<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;3&quot;</span>&gt;</span>Option 3<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-lg-4&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group col-sm-6&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>MultiSelect<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;selectpicker&quot;</span> <span class="hljs-attribute">multiple</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">&quot;Select Multiple&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-control selectpicker&quot;</span> <span class="hljs-attribute">multiple</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">&quot;Select Multiple&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;1&quot;</span>&gt;</span>Option 1<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;2&quot;</span>&gt;</span>Option 2<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;3&quot;</span>&gt;</span>Option 3<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group col-sm-12&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;_username&quot;</span>&gt;</span>Input w/ icon<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-control&quot;</span> <span class="hljs-attribute">rows</span>=<span class="hljs-value">&quot;6&quot;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&quot;6-column textarea, centered&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;help-block&quot;</span>&gt;</span>Help text goes here.<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group col-sm-6 has-error&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;control-label&quot;</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;_username&quot;</span>&gt;</span>Input w/ error<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-control&quot;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&quot;Enter info&quot;</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;help-block&quot;</span>&gt;</span>Error message goes here<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group col-sm-6 has-success&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;control-label&quot;</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;_username&quot;</span>&gt;</span>Input w/ success<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-control&quot;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&quot;Enter info&quot;</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;help-block&quot;</span>&gt;</span>Success message goes here<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
@@ -1176,7 +1176,7 @@
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-lg-12&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-lg-12 checkbox&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;checkbox-inline&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;checkbox&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;&quot;</span>&gt;</span>Inline Checkbox
       <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
@@ -1197,7 +1197,7 @@
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-lg-12&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-lg-12 radio&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;radio-inline&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;radio&quot;</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;optradio&quot;</span> /&gt;</span>Radio Inline<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;radio-inline&quot;</span>&gt;</span>

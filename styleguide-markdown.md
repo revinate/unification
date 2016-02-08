@@ -364,79 +364,79 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
 
     @example
     <form role="form" action="" method="POST">
-        <div class="form-group">
-          <label class="control-label">Date Picker</label>
-          <input type="text" class="form-control" ng-model="selectedDate" name="date" bs-datepicker/>
-        </div>
-        <div class="form-group">
-          <label class="control-label">Time Picker</label>
-          <input type="text" class="form-control" ng-model="selectedTime" data-minute-step="1" data-time-type="string" data-time-format="HH:mm" bs-timepicker="">
-        </div>
         <div class="row">
-            <div class="col-lg-12">
-              <label for="_username">Label For Inputs</label>
-              <input type="text" class="form-control" id="username" name="_username" value="" placeholder="12-column text field with label, no icon">
-              <p class="help-block">Helper text goes here</p>
+            <div class="form-group col-sm-6 col-md-4">
+                <label class="control-label">Date Picker</label>
+                <input type="text" class="form-control" ng-model="selectedDate" name="date" bs-datepicker/>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-8">
-                <i class="fa fa-key"></i>
-                <input type="password" class="form-control with-icon" id="password" name="_password" placeholder="8-column text field with icon - no label">
+            <div class="form-group col-sm-6 col-md-4">
+                <label class="control-label">Time Picker</label>
+                <input type="text" class="form-control" ng-model="selectedTime" data-minute-step="1" data-time-type="string" data-time-format="HH:mm" bs-timepicker="">
             </div>
-        </div>
-        <div class="row">
-            <div class="center-col col-lg-6">
-                <textarea class="form-control" rows="6" placeholder="6-column textarea, centered"></textarea>
+            <div class="form-group col-sm-6 col-md-4">
+                <label for="_username">Label For Inputs</label>
+                <input type="text" class="form-control" id="username" name="_username" value="">
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4">
-                <select class="selectpicker" title="4-Column Select Dropdown">
+            <div class="form-group col-sm-6 col-md-4">
+                <label for="_username">Input w/ icon</label>
+                <input type="password" class="form-control" placeholder="Enter password"/>
+            </div>
+            <div class="fom-group col-sm-6 col-md-4">
+                <label for="_username">Select Input</label>
+                <select class="selectpicker form-control" title="4-Column Select Dropdown">
                     <option value="1">Option 1</option>
                     <option value="2">Option 2</option>
                     <option value="3">Option 3</option>
                 </select>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4">
+            <div class="form-group col-sm-6 col-md-4">
                 <label>Select with OptGroups</label>
-                <select class="selectpicker" title="Option Groups">
-                  <optgroup label="Picnic">
-                    <option>Mustard</option>
-                    <option>Ketchup</option>
-                    <option>Relish</option>
-                  </optgroup>
-                  <optgroup label="Camping">
-                    <option>Tent</option>
-                    <option>Flashlight</option>
-                    <option>Toilet Paper</option>
-                  </optgroup>
+                <select class="selectpicker form-control" title="Option Groups">
+                    <optgroup label="Picnic">
+                        <option>Mustard</option>
+                        <option>Ketchup</option>
+                        <option>Relish</option>
+                    </optgroup>
+                    <optgroup label="Camping">
+                        <option>Tent</option>
+                        <option>Flashlight</option>
+                        <option>Toilet Paper</option>
+                    </optgroup>
                 </select>
             </div>
-        </div>        
-        <div class="row">
-            <div class="col-lg-4">
+            <div class="form-group col-sm-6">
                 <label>Select with Search Box</label>
-                <select class="selectpicker" data-live-search="true" title="Search Options">
+                <select class="form-control selectpicker" data-live-search="true" title="Search Options">
                     <option value="0">select with search</option>
                     <option value="1">Option 1</option>
                     <option value="2">Option 2</option>
                     <option value="3">Option 3</option>
                 </select>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4">
+            <div class="form-group col-sm-6">
                 <label>MultiSelect</label>
-                <select class="selectpicker" multiple title="Select Multiple">
+                <select class="form-control selectpicker" multiple title="Select Multiple">
                     <option value="1">Option 1</option>
                     <option value="2">Option 2</option>
                     <option value="3">Option 3</option>
                 </select>
             </div>
-        </div>        
+            <div class="form-group col-sm-12">
+                <label for="_username">Input w/ icon</label>
+                <textarea class="form-control" rows="6" placeholder="6-column textarea, centered"></textarea>
+                <span class="help-block">Help text goes here.</span>
+            </div>
+            <div class="form-group col-sm-6 has-error">
+                <label class="control-label" for="_username">Input w/ error</label>
+                <input type="text" class="form-control" placeholder="Enter info"/>
+                <span class="help-block">Error message goes here</span>
+            </div>
+            <div class="form-group col-sm-6 has-success">
+                <label class="control-label" for="_username">Input w/ success</label>
+                <input type="text" class="form-control" placeholder="Enter info"/>
+                <span class="help-block">Success message goes here</span>
+            </div>
+        </div>            
         <div class="row">
             <div class="col-lg-12">
                 <div class="checkbox">
@@ -450,31 +450,31 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
             </div>
         </div>
         <div class="row">
-                    <div class="col-lg-12">
-                            <label class="checkbox-inline">
-                                <input type="checkbox" value=""> Inline Checkbox
-                            </label>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" value=""> Inline Checkbox
-                            </label>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" value="" disabled > Inline Checkbox
-                            </label>
-                    </div>
-                </div>
-        <div class="row">
-                    <div class="col-lg-12">
-                        <div class="radio">
-                            <label><input type="radio" value="" />Radio Button</label>
-                        </div>
-                    </div>
+            <div class="col-lg-12 checkbox">
+                <label class="checkbox-inline">
+                    <input type="checkbox" value=""> Inline Checkbox
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" value=""> Inline Checkbox
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" value="" disabled > Inline Checkbox
+                </label>
+            </div>
         </div>
         <div class="row">
-                    <div class="col-lg-12">
-                            <label class="radio-inline"><input type="radio" name="optradio" />Radio Inline</label>
-                            <label class="radio-inline"><input type="radio" name="optradio" />Radio Inline</label>
-                            <label class="radio-inline"><input type="radio" name="optradio" disabled />Radio Inline</label>
-                    </div>
+            <div class="col-lg-12">
+                <div class="radio">
+                    <label><input type="radio" value="" />Radio Button</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 radio">
+                <label class="radio-inline"><input type="radio" name="optradio" />Radio Inline</label>
+                <label class="radio-inline"><input type="radio" name="optradio" />Radio Inline</label>
+                <label class="radio-inline"><input type="radio" name="optradio" disabled />Radio Inline</label>
+            </div>
         </div>
         <div class="row">
             <div class="col-lg-12">
