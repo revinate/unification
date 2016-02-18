@@ -355,7 +355,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
 
 **Basic Form**
 
-- Text inputs, textareas and select boxes will fill the space of whatever span they are put into, and will need `.form-control` for styling. We have abandoned the `form-group` class for the bootstrap traditional `.row` and `.span-{size}-{number}` classes.
+- Text inputs, textareas and select boxes will fill the space of whatever span they are put into, and will need `.form-control` for styling. We use the `.form-group` class and the bootstrap traditional `.row` and `.span-{size}-{number}` classes.
 - Elements can be centered by applying the `.center-col` class to the column div.
 - Checkboxes and radio buttons get an additional wrapper div of `.checkbox` and `.radio` respectively.  Labels should also wrap input elements here.
 - Custom select boxes for multiselect, live search and option groups use the bootstrap-select plugin. Details can be found at <a href="https://silviomoreto.github.io/bootstrap-select/examples/" target="_blank">silviomoreto.github.io/bootstrap-select/examples/</a>.
@@ -878,6 +878,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
                 hAxis: {
                     title: 'YEAR'
                 },
+                focusTarget: 'category'
             };
 
             // Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive
