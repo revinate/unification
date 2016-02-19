@@ -221,6 +221,8 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
 - Panel header is wrapped in `header.panel-heading` with title in `h3.panel-title` and subtext in `small` tag
 - `button` elements may be included in the header, and will align right by default
 - The table below features a multi-select column header.
+- When a table row has multiple actions, put the actions under a dropdown, otherwise just use a simple link. Refer to 
+the "Actions" column in the table below.
 
 
     @example
@@ -237,7 +239,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
                     <tr>
                         <th>Column 1</th>
                         <th><a href="#">Column 2 <i class="fa fa-sort fa-sort-asc"></i></a></th>
-                        <th><a href="#">Column 3 <i class="fa fa-sort fa-sort-desc"></i></a</th>
+                        <th><a href="#">Column 3 <i class="fa fa-sort fa-sort-desc"></i></a></th>
                         <th>
                             <select class="selectpicker" multiple title="Select Multiple">
                                 <option value="1">Option 1</option>
@@ -245,6 +247,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
                                 <option value="3">Option 3</option>
                             </select> 
                         </th>
+                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -253,24 +256,50 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
                         <td>Data 2</td>
                         <td>Data 3</td>
                         <td>Data 4</td>
+                        <td>
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1" aria-haspopup="true">
+                                    Actions
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu" id="menu1">
+                                    <li><a href="#">Action 1</a></li>
+                                    <li><a href="#">Action 2</a></li>
+                                </ul>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td>Data 1</td>
                         <td>Data 2</td>
                         <td>Data 3</td>
                         <td>Data 4</td>
+                        <td>
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#menu2" aria-haspopup="true">
+                                    Actions
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu" id="menu2">
+                                    <li><a href="#">Action 1</a></li>
+                                    <li><a href="#">Action 2</a></li>
+                                </ul>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td>Data 1</td>
                         <td>Data 2</td>
                         <td>Data 3</td>
                         <td>Data 4</td>
+                        <td><a href="#">Action</a></td>
                     </tr>
                     <tr>
                         <td>Data 1</td>
                         <td>Data 2</td>
                         <td>Data 3</td>
                         <td>Data 4</td>
+                        <td><a href="#">Action</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -303,6 +332,16 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
     <br />
     <button class="btn btn-internal-primary">Internal Use - primary</button>
     <button class="btn btn-internal-secondary">Internal Use - secondary</button>
+    <br />
+    <br />
+    <button class="btn btn-default btn-sm" disabled="disabled">Default (disabled)</button>
+    <button class="btn btn-primary btn-sm" disabled="disabled">Primary (disabled)</button>
+    <button class="btn btn-secondary btn-sm" disabled="disabled">Secondary (disabled)</button>
+    <button class="btn btn-danger btn-sm" disabled="disabled">Danger (disabled)</button>
+   
+    <button class="btn btn-info btn-sm" disabled="disabled">Info (disabled)</button>
+    <button class="btn btn-delete btn-sm" disabled="disabled">Delete (disabled)</button>
+    <button class="btn btn-link btn-sm" disabled="disabled">Link (disabled)</button>
 
 
 ###Labels and Badges
