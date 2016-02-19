@@ -602,6 +602,7 @@
                     <li class="sg">
                       <code class="sg">button</code>elements may be included in the header, and will align right by default</li>
                     <li class="sg">The table below features a multi-select column header.</li>
+                    <li class="sg">When a table row has multiple actions, put the actions under a dropdown, otherwise just use a simple link. Refer to the &quot;Actions&quot; column in the table below.</li>
                   </ul>
                 </div>
                 <div class="sg-example">
@@ -626,15 +627,16 @@
                               <th>
                                 <a href="#">Column 3
                                   <i class="fa fa-sort fa-sort-desc"></i>
-                                  <th>
-                                    <select class="selectpicker" multiple title="Select Multiple">
-                                      <option value="1">Option 1</option>
-                                      <option value="2">Option 2</option>
-                                      <option value="3">Option 3</option>
-                                    </select>
-                                  </th>
                                 </a>
                               </th>
+                              <th>
+                                <select class="selectpicker" multiple title="Select Multiple">
+                                  <option value="1">Option 1</option>
+                                  <option value="2">Option 2</option>
+                                  <option value="3">Option 3</option>
+                                </select>
+                              </th>
+                              <th>Actions</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -643,88 +645,166 @@
                               <td>Data 2</td>
                               <td>Data 3</td>
                               <td>Data 4</td>
+                              <td>
+                                <div class="dropdown">
+                                  <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1" aria-haspopup="true">
+                                    Actions
+                                    <b class="caret"></b>
+                                  </a>
+                                  <ul class="dropdown-menu" id="menu1">
+                                    <li>
+                                      <a href="#">Action 1</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">Action 2</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </td>
                             </tr>
                             <tr>
                               <td>Data 1</td>
                               <td>Data 2</td>
                               <td>Data 3</td>
                               <td>Data 4</td>
+                              <td>
+                                <div class="dropdown">
+                                  <a class="dropdown-toggle" data-toggle="dropdown" href="#menu2" aria-haspopup="true">
+                                    Actions
+                                    <b class="caret"></b>
+                                  </a>
+                                  <ul class="dropdown-menu" id="menu2">
+                                    <li>
+                                      <a href="#">Action 1</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">Action 2</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </td>
                             </tr>
                             <tr>
                               <td>Data 1</td>
                               <td>Data 2</td>
                               <td>Data 3</td>
                               <td>Data 4</td>
+                              <td>
+                                <a href="#">Action</a>
+                              </td>
                             </tr>
                             <tr>
                               <td>Data 1</td>
                               <td>Data 2</td>
                               <td>Data 3</td>
                               <td>Data 4</td>
+                              <td>
+                                <a href="#">Action</a>
+                              </td>
                             </tr>
                           </tbody>
                         </table>
                       </div>
                     </div>
-                  </div><pre class="sg-code">&lt;div class=&quot;panel panel-default&quot;&gt;
-  &lt;header class=&quot;panel-heading&quot;&gt;
-    &lt;h3 class=&quot;panel-title&quot;&gt;Full Guest Cycle Communication
-      &lt;small&gt;Recurring, Event Driven Guest Messages&lt;/small&gt;
-    &lt;/h3&gt;
-    &lt;button class=&quot;btn btn-primary&quot;&gt;New Campaign&lt;/button&gt;
-  &lt;/header&gt;
-  &lt;div class=&quot;panel-body panel-body-table&quot;&gt;
-    &lt;table class=&quot;table table-striped table-hover&quot;&gt;
-      &lt;thead&gt;
-        &lt;tr&gt;
-          &lt;th&gt;Column 1&lt;/th&gt;
-          &lt;th&gt;
-            &lt;a href=&quot;#&quot;&gt;Column 2
-              &lt;i class=&quot;fa fa-sort fa-sort-asc&quot;&gt;&lt;/i&gt;
-            &lt;/a&gt;
-          &lt;/th&gt;
-          &lt;th&gt;
-            &lt;a href=&quot;#&quot;&gt;Column 3
-              &lt;i class=&quot;fa fa-sort fa-sort-desc&quot;&gt;&lt;/i&gt;
-              &lt;/a&lt;/th&gt;
-              &lt;th&gt;
-                &lt;select class=&quot;selectpicker&quot; multiple title=&quot;Select Multiple&quot;&gt;
-                  &lt;option value=&quot;1&quot;&gt;Option 1&lt;/option&gt;
-                  &lt;option value=&quot;2&quot;&gt;Option 2&lt;/option&gt;
-                  &lt;option value=&quot;3&quot;&gt;Option 3&lt;/option&gt;
-                &lt;/select&gt;
-              &lt;/th&gt;
-        &lt;/tr&gt;
-      &lt;/thead&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;Data 1&lt;/td&gt;
-          &lt;td&gt;Data 2&lt;/td&gt;
-          &lt;td&gt;Data 3&lt;/td&gt;
-          &lt;td&gt;Data 4&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;Data 1&lt;/td&gt;
-          &lt;td&gt;Data 2&lt;/td&gt;
-          &lt;td&gt;Data 3&lt;/td&gt;
-          &lt;td&gt;Data 4&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;Data 1&lt;/td&gt;
-          &lt;td&gt;Data 2&lt;/td&gt;
-          &lt;td&gt;Data 3&lt;/td&gt;
-          &lt;td&gt;Data 4&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;Data 1&lt;/td&gt;
-          &lt;td&gt;Data 2&lt;/td&gt;
-          &lt;td&gt;Data 3&lt;/td&gt;
-          &lt;td&gt;Data 4&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</pre>
+                  </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;panel panel-default&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">header</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;panel-heading&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;panel-title&quot;</span>&gt;</span>Full Guest Cycle Communication
+      <span class="hljs-tag">&lt;<span class="hljs-title">small</span>&gt;</span>Recurring, Event Driven Guest Messages<span class="hljs-tag">&lt;/<span class="hljs-title">small</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-primary&quot;</span>&gt;</span>New Campaign<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">header</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;panel-body panel-body-table&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">table</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;table table-striped table-hover&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Column 1<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>Column 2
+              <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;fa fa-sort fa-sort-asc&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>Column 3
+              <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;fa fa-sort fa-sort-desc&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;selectpicker&quot;</span> <span class="hljs-attribute">multiple</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">&quot;Select Multiple&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;1&quot;</span>&gt;</span>Option 1<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;2&quot;</span>&gt;</span>Option 2<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;3&quot;</span>&gt;</span>Option 3<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Actions<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">thead</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">tbody</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 1<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 2<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 3<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 4<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dropdown&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dropdown-toggle&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;dropdown&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#menu1&quot;</span> <span class="hljs-attribute">aria-haspopup</span>=<span class="hljs-value">&quot;true&quot;</span>&gt;</span>
+                Actions
+                <span class="hljs-tag">&lt;<span class="hljs-title">b</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;caret&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">b</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dropdown-menu&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;menu1&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>Action 1<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>Action 2<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 1<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 2<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 3<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 4<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dropdown&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dropdown-toggle&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;dropdown&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#menu2&quot;</span> <span class="hljs-attribute">aria-haspopup</span>=<span class="hljs-value">&quot;true&quot;</span>&gt;</span>
+                Actions
+                <span class="hljs-tag">&lt;<span class="hljs-title">b</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;caret&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">b</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dropdown-menu&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;menu2&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>Action 1<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>Action 2<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 1<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 2<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 3<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 4<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 1<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 2<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 3<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 4<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
                 </div>
               </section>
 
@@ -760,6 +840,16 @@
                     <br>
                     <button class="btn btn-internal-primary">Internal Use - primary</button>
                     <button class="btn btn-internal-secondary">Internal Use - secondary</button>
+                    <br>
+                    <br>
+                    <button class="btn btn-default btn-sm" disabled="disabled">Default (disabled)</button>
+                    <button class="btn btn-primary btn-sm" disabled="disabled">Primary (disabled)</button>
+                    <button class="btn btn-secondary btn-sm" disabled="disabled">Secondary (disabled)</button>
+                    <button class="btn btn-danger btn-sm" disabled="disabled">Danger (disabled)</button>
+
+                    <button class="btn btn-info btn-sm" disabled="disabled">Info (disabled)</button>
+                    <button class="btn btn-delete btn-sm" disabled="disabled">Delete (disabled)</button>
+                    <button class="btn btn-link btn-sm" disabled="disabled">Link (disabled)</button>
                   </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-xs btn-default&quot;</span>&gt;</span>XSmall<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-sm btn-default&quot;</span>&gt;</span>Small<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-default&quot;</span>&gt;</span>Medium<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
@@ -776,7 +866,17 @@
 <span class="hljs-tag">&lt;<span class="hljs-title">br</span> /&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">br</span> /&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-internal-primary&quot;</span>&gt;</span>Internal Use - primary<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-internal-secondary&quot;</span>&gt;</span>Internal Use - secondary<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-internal-secondary&quot;</span>&gt;</span>Internal Use - secondary<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">br</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">br</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-default btn-sm&quot;</span> <span class="hljs-attribute">disabled</span>=<span class="hljs-value">&quot;disabled&quot;</span>&gt;</span>Default (disabled)<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-primary btn-sm&quot;</span> <span class="hljs-attribute">disabled</span>=<span class="hljs-value">&quot;disabled&quot;</span>&gt;</span>Primary (disabled)<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-secondary btn-sm&quot;</span> <span class="hljs-attribute">disabled</span>=<span class="hljs-value">&quot;disabled&quot;</span>&gt;</span>Secondary (disabled)<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-danger btn-sm&quot;</span> <span class="hljs-attribute">disabled</span>=<span class="hljs-value">&quot;disabled&quot;</span>&gt;</span>Danger (disabled)<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-info btn-sm&quot;</span> <span class="hljs-attribute">disabled</span>=<span class="hljs-value">&quot;disabled&quot;</span>&gt;</span>Info (disabled)<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-delete btn-sm&quot;</span> <span class="hljs-attribute">disabled</span>=<span class="hljs-value">&quot;disabled&quot;</span>&gt;</span>Delete (disabled)<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-link btn-sm&quot;</span> <span class="hljs-attribute">disabled</span>=<span class="hljs-value">&quot;disabled&quot;</span>&gt;</span>Link (disabled)<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
                 </div>
               </section>
 

@@ -24,6 +24,11 @@
     &:hover {
       background-color: darken(#E6E6E6, 5%);
     }
+    &[disabled=disabled] {
+      &:hover {
+        background-color: #E6E6E6;
+      }
+    }
   }
 
   &.btn-secondary {
@@ -32,6 +37,11 @@
     border-color: #2295F7;
     &:hover {
       background-color: #EBF5FE;
+    }
+    &[disabled=disabled] {
+      &:hover {
+        background-color: white;
+      }
     }
   }
 
