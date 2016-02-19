@@ -928,8 +928,8 @@
                   </p>
                   <ul class="sg">
                     <li class="sg">Text inputs, textareas and select boxes will fill the space of whatever span they are put into, and will need
-                      <code class="sg">.form-control</code>for styling. We have abandoned the
-                      <code class="sg">form-group</code>class for the bootstrap traditional
+                      <code class="sg">.form-control</code>for styling. We use the
+                      <code class="sg">.form-group</code>class and the bootstrap traditional
                       <code class="sg">.row</code>and
                       <code class="sg">.span-{size}-{number}</code>classes.</li>
                     <li class="sg">Elements can be centered by applying the
@@ -1905,6 +1905,7 @@
                           hAxis: {
                             title: 'YEAR'
                           },
+                          focusTarget: 'category'
                         };
 
                         // Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive
@@ -2058,6 +2059,7 @@
       hAxis: {
         title: <span class="hljs-string">&apos;YEAR&apos;</span>
       },
+      focusTarget: <span class="hljs-string">&apos;category&apos;</span>
     };
 
     <span class="hljs-comment">// Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive</span>

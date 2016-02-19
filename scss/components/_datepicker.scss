@@ -3,19 +3,31 @@
   .btn {
     padding: 5px;
     background: transparent;
-    background-color: transparent;
     border: none;
+    @extend .FontLatoBold;
     &.btn-default,
     &.btn-primary,
     &.btn-info,
     &.btn-today {
       border: none;
     }
+    .text-muted {
+      color: #999;
+      @extend .FontLatoLight;
+    }
+    &:hover {
+      background: #EBF5FE;
+      color: #3BA1F8;
+      .text-muted {
+        color: #3BA1F8;
+      }
+    }
   }
   .btn-today {
-    color: $r_brand-secondary;
+    color: #333;
   }
   .btn-primary {
-    color: $brand-primary;
+    color: #28A68A;
+    background: #DBF0EB;
   }
 }
