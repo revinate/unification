@@ -27,6 +27,12 @@
   }
 }
 
+.dropdown {
+  .dropdown-menu.open {
+    display: block;
+  }
+}
+
 .dropdown-menu.datepicker {
   min-width: 220px;
 }
