@@ -44,6 +44,7 @@
                   <li><a href="#tertiary-navigation">Tertiary Navigation</a></li>
                   <li><a href="#forms">Forms</a></li>
                   <li><a href="#dashboards">Dashboards</a></li>
+                  <li><a href="#collapse-accordion">Collapse/Accordion</a></li>
                   <li><a href="#alerts">Alerts</a></li>
                   <li><a href="#typography-and-lists">Typography &amp; Lists</a></li>
                   <li><a href="#charts">Charts</a></li>
