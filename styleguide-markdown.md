@@ -258,7 +258,7 @@ the "Actions" column in the table below.
                         <td>Data 4</td>
                         <td>
                             <div class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1" aria-haspopup="true">
+                                <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="menu1">
                                     Actions
                                     <b class="caret"></b>
                                 </a>
@@ -276,7 +276,7 @@ the "Actions" column in the table below.
                         <td>Data 4</td>
                         <td>
                             <div class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#menu2" aria-haspopup="true">
+                                <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="menu2">
                                     Actions
                                     <b class="caret"></b>
                                 </a>
