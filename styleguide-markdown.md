@@ -221,7 +221,7 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
 - Panel header is wrapped in `header.panel-heading` with title in `h3.panel-title` and subtext in `small` tag
 - `button` elements may be included in the header, and will align right by default
 - The table below features a multi-select column header.
-- When a table row has multiple actions, put the actions under a dropdown, otherwise just use a simple link. Refer to 
+- When a table row has multiple actions, put the actions under a dropdown, otherwise just use a simple link. Refer to
 the "Actions" column in the table below.
 
 
@@ -234,7 +234,7 @@ the "Actions" column in the table below.
             <button class="btn btn-primary">New Campaign</button>
         </header>
         <div class="panel-body panel-body-table">
-            <table class="table table-striped table-hover">
+            <table class="table table-striped">
                 <thead>
                     <tr>
                         <th>Column 1</th>
@@ -245,7 +245,7 @@ the "Actions" column in the table below.
                                 <option value="1">Option 1</option>
                                 <option value="2">Option 2</option>
                                 <option value="3">Option 3</option>
-                            </select> 
+                            </select>
                         </th>
                         <th>Actions</th>
                     </tr>
@@ -338,7 +338,7 @@ the "Actions" column in the table below.
     <button class="btn btn-primary btn-sm" disabled="disabled">Primary (disabled)</button>
     <button class="btn btn-secondary btn-sm" disabled="disabled">Secondary (disabled)</button>
     <button class="btn btn-danger btn-sm" disabled="disabled">Danger (disabled)</button>
-   
+
     <button class="btn btn-info btn-sm" disabled="disabled">Info (disabled)</button>
     <button class="btn btn-delete btn-sm" disabled="disabled">Delete (disabled)</button>
     <button class="btn btn-link btn-sm" disabled="disabled">Link (disabled)</button>
@@ -1038,64 +1038,64 @@ the "Actions" column in the table below.
 
     @example
     <!-- Trigger the modal with a button -->
-    <button 
-        type="button" 
-        class="btn btn-primary btn-sm" 
-        data-toggle="modal" 
+    <button
+        type="button"
+        class="btn btn-primary btn-sm"
+        data-toggle="modal"
         data-target="#smModal">Small Modal 1CTA
     </button>
-    <button 
-        type="button" 
-        class="btn btn-primary btn-sm" 
-        data-toggle="modal" 
+    <button
+        type="button"
+        class="btn btn-primary btn-sm"
+        data-toggle="modal"
         data-target="#smModal2">Small Modal 2CTA
     </button>
     <br />
     <br />
-    <button 
-        type="button" 
-        class="btn btn-primary btn-sm" 
-        data-toggle="modal" 
+    <button
+        type="button"
+        class="btn btn-primary btn-sm"
+        data-toggle="modal"
         data-target="#mdModal">Meduim Modal 1CTA
     </button>
-    <button 
-        type="button" 
-        class="btn btn-primary btn-sm" 
-        data-toggle="modal" 
+    <button
+        type="button"
+        class="btn btn-primary btn-sm"
+        data-toggle="modal"
         data-target="#mdModal2">Meduim Modal 2CTA
     </button>
-    <button 
-        type="button" 
-        class="btn btn-primary btn-sm" 
-        data-toggle="modal" 
+    <button
+        type="button"
+        class="btn btn-primary btn-sm"
+        data-toggle="modal"
         data-target="#mdModal3">Meduim Modal 3CTA
     </button>
     <br />
     <br />
-    <button 
-        type="button" 
-        class="btn btn-primary btn-sm" 
-        data-toggle="modal" 
+    <button
+        type="button"
+        class="btn btn-primary btn-sm"
+        data-toggle="modal"
         data-target="#lgModal">Large Modal 1CTA
     </button>
-    <button 
-        type="button" 
-        class="btn btn-primary btn-sm" 
-        data-toggle="modal" 
+    <button
+        type="button"
+        class="btn btn-primary btn-sm"
+        data-toggle="modal"
         data-target="#lgModal2">Large Modal 2CTA
     </button>
-    <button 
-        type="button" 
-        class="btn btn-primary btn-sm" 
-        data-toggle="modal" 
+    <button
+        type="button"
+        class="btn btn-primary btn-sm"
+        data-toggle="modal"
         data-target="#lgModal3">Large Modal 3CTA
     </button>
     <br />
     <br />
-    <button 
-        type="button" 
-        class="btn btn-primary btn-sm" 
-        data-toggle="modal" 
+    <button
+        type="button"
+        class="btn btn-primary btn-sm"
+        data-toggle="modal"
         data-target="#deleteModal">Modal with Delete
     </button>
 
@@ -1112,15 +1112,15 @@ the "Actions" column in the table below.
             <p>Some text in the small modal.</p>
           </div>
           <div class="modal-footer">
-            <button 
-                type="button" 
+            <button
+                type="button"
                 class="btn btn-primary">Primary CTA
             </button>
           </div>
         </div>
       </div>
     </div>
-    
+
     <!-- Small Modal Two CTAs -->
     <div id="smModal2" class="modal fade" role="dialog">
       <div class="modal-dialog modal-sm">
@@ -1134,13 +1134,13 @@ the "Actions" column in the table below.
             <p>Some text in the small modal.</p>
           </div>
           <div class="modal-footer">
-            <button 
-                type="button" 
+            <button
+                type="button"
                 class="btn btn-primary">Primary CTA
             </button>
-            <button 
-                type="button" 
-                class="btn btn-link" 
+            <button
+                type="button"
+                class="btn btn-link"
                 data-dismiss="modal">Link
             </button>
           </div>
@@ -1161,8 +1161,8 @@ the "Actions" column in the table below.
             <p>Some text in the medium modal.</p>
           </div>
           <div class="modal-footer">
-            <button 
-                type="button" 
+            <button
+                type="button"
                 class="btn btn-primary">Primary CTA
             </button>
           </div>
@@ -1183,19 +1183,19 @@ the "Actions" column in the table below.
             <p>Some text in the medium modal.</p>
           </div>
           <div class="modal-footer">
-            <button 
-                type="button" 
+            <button
+                type="button"
                 class="btn btn-primary">Primary CTA
             </button>
-            <button 
-                type="button" 
+            <button
+                type="button"
                 class="btn btn-link">Link
             </button>
           </div>
         </div>
       </div>
     </div>
-    
+
     <!-- Medium Modal 3CTA -->
     <div id="mdModal3" class="modal fade" role="dialog">
       <div class="modal-dialog">
@@ -1209,17 +1209,17 @@ the "Actions" column in the table below.
             <p>Some text in the medium modal.</p>
           </div>
           <div class="modal-footer">
-            <button 
-                type="button" 
+            <button
+                type="button"
                 class="btn btn-primary">Primary CTA
             </button>
-            <button 
-                type="button" 
+            <button
+                type="button"
                 class="btn btn-secondary">Secondary CTA
             </button>
-            <button 
-                type="button" 
-                class="btn btn-link" 
+            <button
+                type="button"
+                class="btn btn-link"
                 data-dismiss="modal">Link
             </button>
           </div>
@@ -1241,15 +1241,15 @@ the "Actions" column in the table below.
             <p>Some text in the large modal.</p>
           </div>
           <div class="modal-footer">
-            <button 
-                type="button" 
+            <button
+                type="button"
                 class="btn btn-primary">Primary CTA
             </button>
           </div>
         </div>
       </div>
     </div>
-    
+
     <!-- Large Modal 2CTA-->
     <div id="lgModal2" class="modal fade" role="dialog">
       <div class="modal-dialog modal-lg">
@@ -1263,19 +1263,19 @@ the "Actions" column in the table below.
             <p>Some text in the large modal.</p>
           </div>
           <div class="modal-footer">
-            <button 
-                type="button" 
+            <button
+                type="button"
                 class="btn btn-primary">Primary CTA
             </button>
-            <button 
-                type="button" 
+            <button
+                type="button"
                 class="btn btn-link">Link
             </button>
           </div>
         </div>
       </div>
     </div>
-    
+
     <!-- Large Modal 3CTA-->
     <div id="lgModal3" class="modal fade" role="dialog">
       <div class="modal-dialog modal-lg">
@@ -1289,24 +1289,24 @@ the "Actions" column in the table below.
             <p>Some text in the large modal.</p>
           </div>
           <div class="modal-footer">
-            <button 
-                type="button" 
+            <button
+                type="button"
                 class="btn btn-primary">Primary CTA
             </button>
-            <button 
-                type="button" 
+            <button
+                type="button"
                 class="btn btn-secondary">Secondary CTA
             </button>
-            <button 
-                type="button" 
-                class="btn btn-link" 
+            <button
+                type="button"
+                class="btn btn-link"
                 data-dismiss="modal">Link
             </button>
           </div>
         </div>
       </div>
     </div>
-    
+
     <!-- Delete Button-->
     <div id="deleteModal" class="modal fade" role="dialog">
       <div class="modal-dialog modal-lg">
@@ -1320,65 +1320,65 @@ the "Actions" column in the table below.
             <p>Some text in the large modal.</p>
           </div>
           <div class="modal-footer">
-            <button 
-                type="button" 
+            <button
+                type="button"
                 class="btn btn-primary">Primary CTA
             </button>
-            <button 
-                type="button" 
+            <button
+                type="button"
                 class="btn btn-secondary">Secondary CTA
             </button>
-            <button 
-                type="button" 
-                class="btn btn-delete" 
+            <button
+                type="button"
+                class="btn btn-delete"
                 data-dismiss="modal">Delete
             </button>
           </div>
         </div>
       </div>
     </div>
-    
 
-    
+
+
 ###Tooltips
 
 
-- Tooltips are controlled with the `data-toggle` and `title` attributes. 
+- Tooltips are controlled with the `data-toggle` and `title` attributes.
 - Position tooltips with `data-placement` attribute.
 
-    
+
     @example
-    <button 
-        type="button" 
-        class="btn btn-xs btn-primary" 
-        data-toggle="tooltip" 
-        data-placement="left" 
+    <button
+        type="button"
+        class="btn btn-xs btn-primary"
+        data-toggle="tooltip"
+        data-placement="left"
         title="Tooltip on left">Tooltip on left
     </button>
-    <button 
-        type="button" 
-        class="btn btn-xs btn-primary" 
-        data-toggle="tooltip" 
-        data-placement="top" 
+    <button
+        type="button"
+        class="btn btn-xs btn-primary"
+        data-toggle="tooltip"
+        data-placement="top"
         title="Tooltip on top">Tooltip on top
     </button>
-    <button 
-        type="button" 
-        class="btn btn-xs btn-primary" 
-        data-toggle="tooltip" 
-        data-placement="bottom" 
+    <button
+        type="button"
+        class="btn btn-xs btn-primary"
+        data-toggle="tooltip"
+        data-placement="bottom"
         title="Tooltip on bottom">Tooltip on bottom
     </button>
-    <button 
-        type="button" 
-        class="btn btn-xs btn-primary" 
-        data-toggle="tooltip" 
-        data-placement="right" 
+    <button
+        type="button"
+        class="btn btn-xs btn-primary"
+        data-toggle="tooltip"
+        data-placement="right"
         title="Tooltip on right">Tooltip on right
     </button>
-    
-    
-    
+
+
+
 ###Pagination
 
 
@@ -1426,7 +1426,7 @@ the "Actions" column in the table below.
         </li>
       </ul>
     </nav>
-            
+
 
 
 ### Integration
@@ -1435,4 +1435,3 @@ the "Actions" column in the table below.
 - Add the unification repo (`git@github.com:revinate/unification`) to your project, preferably with bower;
 - Copy `css_images/` & `fonts/` directories to the root of the public folder;
 - In the head of every page, make sure you have `link` tags to `css/bootstrap.css` & `css/app.css`.
-
