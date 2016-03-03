@@ -51,6 +51,7 @@
                   <li><a href="#modals">Modals</a></li>
                   <li><a href="#tooltips">Tooltips</a></li>
                   <li><a href="#pagination">Pagination</a></li>
+                  <li><a href="#filters">Filters</a></li>
                   <li><a href="#integration">Integration</a></li>
                 </ul>
               </nav>

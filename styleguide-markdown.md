@@ -1428,6 +1428,47 @@ the "Actions" column in the table below.
     </nav>
 
 
+###Filters
+
+
+- Filter bar for Rep and Surveys
+
+
+    @example
+    <div class="row main-filter-bar">
+        <div class="col-md-3 form-group">
+            <label>Filter Label</label>
+            <input type="text" class="form-control" />
+        </div>
+        <div class="col-md-3 form-group">
+            <label>Filter Label</label>
+            <input type="text" class="form-control" />
+        </div>
+        <div class="col-md-3 form-group">
+            <label>Filter Label</label>
+            <input type="text" class="form-control" />
+        </div>
+        <div class="col-md-3 form-group">
+            <label>Filter Label</label>
+            <select class="selectpicker form-control" title="Select One">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+        <div class="col-md-3 form-group">
+            <label>Filter Label</label>
+            <select class="form-control selectpicker" multiple title="Select Multiple">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>  
+        <div class="col-md-3 apply-filters">
+            <button class="btn btn-primary btn-sm">Apply Filter</button>
+        </div>
+    </div>
+
 
 ### Integration
 
