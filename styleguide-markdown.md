@@ -223,15 +223,16 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
 - The table below features a multi-select column header.
 - When a table row has multiple actions, put the actions under a dropdown, otherwise just use a simple link. Refer to
 the "Actions" column in the table below.
+- When table rows are clickable or draggable, use hover table.
 
 
     @example
     <div class="panel panel-default">
         <header class="panel-heading">
-            <h3 class="panel-title">Full Guest Cycle Communication
-                <small>Recurring, Event Driven Guest Messages</small>
+            <h3 class="panel-title">Default Table
+                <small>List of entities</small>
             </h3>
-            <button class="btn btn-primary">New Campaign</button>
+            <button class="btn btn-primary">New Entity</button>
         </header>
         <div class="panel-body panel-body-table">
             <table class="table table-striped">
@@ -294,6 +295,72 @@ the "Actions" column in the table below.
                         <td>Data 4</td>
                         <td><a href="#">Action</a></td>
                     </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <header class="panel-heading">
+            <h3 class="panel-title">Hover Table
+                <small>List of draggable and clickable entities</small>
+            </h3>
+            <button class="btn btn-primary">New Campaign</button>
+        </header>
+        <div class="panel-body panel-body-table">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Column 1</th>
+                        <th><a href="#">Column 2 <i class="fa fa-sort fa-sort-asc"></i></a></th>
+                        <th><a href="#">Column 3 <i class="fa fa-sort fa-sort-desc"></i></a></th>
+                        <th>
+                            <select class="selectpicker" multiple title="Select Multiple">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                        </th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                        <td>
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="menu1">
+                                    Actions
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu" id="menu1">
+                                    <li><a href="#">Action 1</a></li>
+                                    <li><a href="#">Action 2</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                        <td>
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="menu2">
+                                    Actions
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu" id="menu2">
+                                    <li><a href="#">Action 1</a></li>
+                                    <li><a href="#">Action 2</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
                     <tr>
                         <td>Data 1</td>
                         <td>Data 2</td>
@@ -305,7 +372,6 @@ the "Actions" column in the table below.
             </table>
         </div>
     </div>
-
 
 ###Buttons
 
@@ -514,23 +580,7 @@ the "Actions" column in the table below.
                 <label class="radio-inline"><input type="radio" name="optradio" />Radio Inline</label>
                 <label class="radio-inline"><input type="radio" name="optradio" disabled />Radio Inline</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="checkbox">
-                    <label><input type="checkbox" data-toggle="toggle" data-size="large">On/Off Switch Large</label>
-                </div>
-                <div class="checkbox">
-                    <label><input type="checkbox" data-toggle="toggle" data-size="normal">On/Off Switch Normal</label>
-                </div>
-                <div class="checkbox disabled">
-                    <label><input type="checkbox" data-toggle="toggle" data-size="small" disabled>On/Off Switch Small (disabled)</label>
-                </div>
-                <div class="checkbox">
-                    <label><input type="checkbox" data-toggle="toggle" data-size="mini">On/Off Switch Mini</label>
-                </div>
-            </div>
-        </div>    
+        </div>  
         <div class="row">
             <div class="col-lg-4">
                 <button type="submit" class="btn btn-primary btn-lg full-width">Submit Button</button>
@@ -538,6 +588,60 @@ the "Actions" column in the table below.
         </div>
     </form>
 
+
+### Switches
+
+**Angular UI Switch**
+
+- To install, run `bower install --save angular-ui-switch` and include the directive's javascript. You don't have to include the css,
+because it's incorporated in the LSG.
+- refer to https://github.com/xpepermint/angular-ui-switch  for more info.
+
+
+    @example
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="checkbox checkbox-switch">
+              <label for='example1' class='control-label'>
+              <switch id='example1' on='On' off='Off' ng-model="angularUiSwitch.example1"></switch>
+               Default Switch <small>{{angularUiSwitch.example1}}</small></label>
+            </div>
+            <div class="checkbox checkbox-switch">
+              <label for='example4' class='control-label'>
+              <switch class='primary' id='example4' on='On' off='Off' ng-model="angularUiSwitch.example4"></switch>
+               Primary Switch <small>{{angularUiSwitch.example4}}</small></label>
+            </div>
+            <div class="checkbox checkbox-switch">
+              <label for='example5' class='control-label'>
+              <switch class='danger' id='example5' on='On' off='Off' ng-model="angularUiSwitch.example5"></switch>
+               Danger Switch <small>{{angularUiSwitch.example5}}</small></label>
+            </div>
+            <div class="checkbox checkbox-switch">
+              <label for='example2' class='control-label'>
+              <switch id='example2' disabled='true' on='On' off='Off' ng-model="angularUiSwitch.example2"></switch>
+               Disabled Switch <small>{{angularUiSwitch.example2}}</small></label>
+            </div>
+            <div class="checkbox checkbox-switch">
+              <label for='example3' class='control-label'>
+              <switch class='success wide' id='example3' on='On' off='Off' ng-model="angularUiSwitch.example3"></switch>
+               Success Wide Switch <small>{{angularUiSwitch.example3}}</small></label>
+            </div>
+            <!--
+            <div class="checkbox">
+                <label><input type="checkbox" data-toggle="toggle" data-size="large">On/Off Switch Large</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" data-toggle="toggle" data-size="normal">On/Off Switch Normal</label>
+            </div>
+            <div class="checkbox disabled">
+                <label><input type="checkbox" data-toggle="toggle" data-size="small" disabled>On/Off Switch Small (disabled)</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" data-toggle="toggle" data-size="mini">On/Off Switch Mini</label>
+            </div>
+            -->
+        </div>
+    </div>  
 
 ### Dashboards
 

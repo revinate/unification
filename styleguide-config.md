@@ -43,6 +43,7 @@
                   <li><a href="#wizard-navigation">Wizard Navigation</a></li>
                   <li><a href="#tertiary-navigation">Tertiary Navigation</a></li>
                   <li><a href="#forms">Forms</a></li>
+                  <li><a href="#switches">Switches</a></li>
                   <li><a href="#dashboards">Dashboards</a></li>
                   <li><a href="#collapse-accordion">Collapse/Accordion</a></li>
                   <li><a href="#alerts">Alerts</a></li>
@@ -71,6 +72,7 @@
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-strap/dist/angular-strap.min.js"></script>
     <script src="bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
+    <script src="bower_components/angular-ui-switch/angular-ui-switch.js"></script>
     <script src="bower_components/bootstrap-toggle/js/bootstrap-toggle.js"></script>
     <script src="bower_components/bootstrap-select/js/bootstrap-select.js"></script>
     <script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
