@@ -591,57 +591,79 @@ the "Actions" column in the table below.
 
 ### Switches
 
-**Angular UI Switch**
+**Angular & Jquery switches**
 
-- To install, run `bower install --save angular-ui-switch` and include the directive's javascript. You don't have to include the css,
-because it's incorporated in the LSG.
-- refer to https://github.com/xpepermint/angular-ui-switch  for more info.
+- Since the plugins were mostly developed in-house, you'll find the javascript in the unification repo under
+`/js/rev-jq-switch.js` (for jquery) and `/js/rev-ng-switch.js` (for angular).
 
 
     @example
     <div class="row">
         <div class="col-lg-12">
-            <div class="checkbox checkbox-switch">
+            <h5>Angular</h5>
+            <div class="checkbox checkbox-rev-switch">
               <label for='example1' class='control-label'>
-              <switch id='example1' on='On' off='Off' ng-model="angularUiSwitch.example1"></switch>
+              <rev-ng-switch id='example1' on='On' off='Off' ng-model="angularUiSwitch.example1"></rev-ng-switch>
                Default Switch <small>{{angularUiSwitch.example1}}</small></label>
             </div>
-            <div class="checkbox checkbox-switch">
+            <div class="checkbox checkbox-rev-switch">
               <label for='example4' class='control-label'>
-              <switch class='primary' id='example4' on='On' off='Off' ng-model="angularUiSwitch.example4"></switch>
+              <rev-ng-switch class='primary' id='example4' on='On' off='Off' ng-model="angularUiSwitch.example4"></rev-ng-switch>
                Primary Switch <small>{{angularUiSwitch.example4}}</small></label>
             </div>
-            <div class="checkbox checkbox-switch">
+            <div class="checkbox checkbox-rev-switch">
               <label for='example5' class='control-label'>
-              <switch class='danger' id='example5' on='On' off='Off' ng-model="angularUiSwitch.example5"></switch>
+              <rev-ng-switch class='danger' id='example5' on='On' off='Off' ng-model="angularUiSwitch.example5"></rev-ng-switch>
                Danger Switch <small>{{angularUiSwitch.example5}}</small></label>
             </div>
-            <div class="checkbox checkbox-switch">
+            <div class="checkbox checkbox-rev-switch">
               <label for='example2' class='control-label'>
-              <switch id='example2' disabled='true' on='On' off='Off' ng-model="angularUiSwitch.example2"></switch>
+              <rev-ng-switch id='example2' disabled='true' on='On' off='Off' ng-model="angularUiSwitch.example2"></rev-ng-switch>
                Disabled Switch <small>{{angularUiSwitch.example2}}</small></label>
             </div>
-            <div class="checkbox checkbox-switch">
+            <div class="checkbox checkbox-rev-switch">
               <label for='example3' class='control-label'>
-              <switch class='success wide' id='example3' on='On' off='Off' ng-model="angularUiSwitch.example3"></switch>
+              <rev-ng-switch class='success wide' id='example3' on='On' off='Off' ng-model="angularUiSwitch.example3"></rev-ng-switch>
                Success Wide Switch <small>{{angularUiSwitch.example3}}</small></label>
             </div>
-            <!--
-            <div class="checkbox">
-                <label><input type="checkbox" data-toggle="toggle" data-size="large">On/Off Switch Large</label>
-            </div>
-            <div class="checkbox">
-                <label><input type="checkbox" data-toggle="toggle" data-size="normal">On/Off Switch Normal</label>
-            </div>
-            <div class="checkbox disabled">
-                <label><input type="checkbox" data-toggle="toggle" data-size="small" disabled>On/Off Switch Small (disabled)</label>
-            </div>
-            <div class="checkbox">
-                <label><input type="checkbox" data-toggle="toggle" data-size="mini">On/Off Switch Mini</label>
-            </div>
-            -->
         </div>
-    </div>  
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-12">
+            <h5>JQuery</h5>
+            <div class="checkbox checkbox-rev-switch">
+              <label class='control-label'>
+                <input data-rev-jq-switch='true' on='On' off='Off' checked="checked" type='checkbox'/> Default Switch
+              </label>
+            </div>
+            <div class="checkbox checkbox-rev-switch">
+              <label class='control-label'>
+                <input class='primary' type='checkbox' checked="checked" data-rev-jq-switch='true' on='On' off='Off'/> Primary Switch
+              </label>
+            </div>
+            <div class="checkbox checkbox-rev-switch">
+              <label class='control-label'>
+                <input class='danger' type='checkbox' data-rev-jq-switch='true' on='On' off='Off' checked='checked'/> Danger Switch
+              </label>
+            </div>
+            <div class="checkbox checkbox-rev-switch">
+              <label class='control-label'>
+                <input type='checkbox' data-rev-jq-switch='true' on='On' off='Off' disabled='disabled' checked='checked'/> Disabled Switch (on)
+              </label>
+            </div>
+            <div class="checkbox checkbox-rev-switch">
+              <label class='control-label'>
+                <input type='checkbox' data-rev-jq-switch='true' on='On' off='Off' disabled='disabled'/> Disabled Switch (off)
+              </label>
+            </div>
+            <div class="checkbox checkbox-rev-switch">
+              <label class='control-label'>
+                <input class='success wide' data-rev-jq-switch='true' type='checkbox' on='On' off='Off' checked="checked"/> Wide Switch
+              </label>
+            </div>
+        </div>
+    </div>
 
 ### Dashboards
 
@@ -1531,6 +1553,47 @@ because it's incorporated in the LSG.
       </ul>
     </nav>
 
+
+###Filters
+
+
+- Filter bar for Rep and Surveys
+
+
+    @example
+    <div class="row main-filter-bar">
+        <div class="col-md-3 form-group">
+            <label>Filter Label</label>
+            <input type="text" class="form-control" />
+        </div>
+        <div class="col-md-3 form-group">
+            <label>Filter Label</label>
+            <input type="text" class="form-control" />
+        </div>
+        <div class="col-md-3 form-group">
+            <label>Filter Label</label>
+            <input type="text" class="form-control" />
+        </div>
+        <div class="col-md-3 form-group">
+            <label>Filter Label</label>
+            <select class="selectpicker form-control" title="Select One">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+        <div class="col-md-3 form-group">
+            <label>Filter Label</label>
+            <select class="form-control selectpicker" multiple title="Select Multiple">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>  
+        <div class="col-md-3 apply-filters">
+            <button class="btn btn-primary btn-sm">Apply Filter</button>
+        </div>
+    </div>
 
 
 ### Integration

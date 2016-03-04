@@ -52,6 +52,7 @@
                   <li><a href="#modals">Modals</a></li>
                   <li><a href="#tooltips">Tooltips</a></li>
                   <li><a href="#pagination">Pagination</a></li>
+                  <li><a href="#filters">Filters</a></li>
                   <li><a href="#integration">Integration</a></li>
                 </ul>
               </nav>
@@ -72,7 +73,8 @@
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-strap/dist/angular-strap.min.js"></script>
     <script src="bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
-    <script src="bower_components/angular-ui-switch/angular-ui-switch.js"></script>
+    <script src="js/rev-ng-switch.js"></script>
+    <script src="js/rev-jq-switch.js"></script>
     <script src="bower_components/bootstrap-toggle/js/bootstrap-toggle.js"></script>
     <script src="bower_components/bootstrap-select/js/bootstrap-select.js"></script>
     <script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
@@ -83,4 +85,5 @@
         $(this).addClass('active');
     });
       $('[data-toggle="tooltip"]').tooltip();
+      $('[data-rev-jq-switch=true]').revSwitch();
     </script>

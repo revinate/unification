@@ -2,7 +2,7 @@
 
 	'use strict';
 
-	var app = angular.module('main', ['mgcrea.ngStrap', 'mgcrea.ngStrap.datepicker', 'uiSwitch']);
+	var app = angular.module('main', ['mgcrea.ngStrap', 'mgcrea.ngStrap.datepicker', 'revSwitch']);
 
 	app.controller('MainCtrl', function ($scope) {
 		$scope.selectedDate = new Date();

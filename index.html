@@ -91,6 +91,9 @@
                 <a href="#pagination">Pagination</a>
               </li>
               <li>
+                <a href="#filters">Filters</a>
+              </li>
+              <li>
                 <a href="#integration">Integration</a>
               </li>
             </ul>
@@ -1470,121 +1473,166 @@
                 <div class="sg-text">
                   <h3 id="switches" class="sg">Switches</h3>
                   <p class="sg">
-                    <strong class="sg">Angular UI Switch</strong>
+                    <strong class="sg">Angular &amp; Jquery switches</strong>
                   </p>
                   <ul class="sg">
-                    <li class="sg">To install, run
-                      <code class="sg">bower install --save angular-ui-switch</code>and include the directive&apos;s javascript. You don&apos;t have to include the css, because it&apos;s incorporated in the LSG.</li>
-                    <li class="sg">refer to
-                      <a href="https://github.com/xpepermint/angular-ui-switch" class="sg">https://github.com/xpepermint/angular-ui-switch</a>for more info.</li>
+                    <li class="sg">Since the plugins were mostly developed in-house, you&apos;ll find the javascript in the unification repo under
+                      <code class="sg">/js/rev-jq-switch.js</code>(for jquery) and
+                      <code class="sg">/js/rev-ng-switch.js</code>(for angular).</li>
                   </ul>
                 </div>
                 <div class="sg-example">
                   <div class="sg-canvas">
                     <div class="row">
                       <div class="col-lg-12">
-                        <div class="checkbox checkbox-switch">
+                        <h5>Angular</h5>
+                        <div class="checkbox checkbox-rev-switch">
                           <label for="example1" class="control-label">
-                            <switch id="example1" on="On" off="Off" ng-model="angularUiSwitch.example1"></switch>
+                            <rev-ng-switch id="example1" on="On" off="Off" ng-model="angularUiSwitch.example1"></rev-ng-switch>
                             Default Switch
                             <small>{{angularUiSwitch.example1}}</small>
                           </label>
                         </div>
-                        <div class="checkbox checkbox-switch">
+                        <div class="checkbox checkbox-rev-switch">
                           <label for="example4" class="control-label">
-                            <switch class="primary" id="example4" on="On" off="Off" ng-model="angularUiSwitch.example4"></switch>
+                            <rev-ng-switch class="primary" id="example4" on="On" off="Off" ng-model="angularUiSwitch.example4"></rev-ng-switch>
                             Primary Switch
                             <small>{{angularUiSwitch.example4}}</small>
                           </label>
                         </div>
-                        <div class="checkbox checkbox-switch">
+                        <div class="checkbox checkbox-rev-switch">
                           <label for="example5" class="control-label">
-                            <switch class="danger" id="example5" on="On" off="Off" ng-model="angularUiSwitch.example5"></switch>
+                            <rev-ng-switch class="danger" id="example5" on="On" off="Off" ng-model="angularUiSwitch.example5"></rev-ng-switch>
                             Danger Switch
                             <small>{{angularUiSwitch.example5}}</small>
                           </label>
                         </div>
-                        <div class="checkbox checkbox-switch">
+                        <div class="checkbox checkbox-rev-switch">
                           <label for="example2" class="control-label">
-                            <switch id="example2" disabled="true" on="On" off="Off" ng-model="angularUiSwitch.example2"></switch>
+                            <rev-ng-switch id="example2" disabled="true" on="On" off="Off" ng-model="angularUiSwitch.example2"></rev-ng-switch>
                             Disabled Switch
                             <small>{{angularUiSwitch.example2}}</small>
                           </label>
                         </div>
-                        <div class="checkbox checkbox-switch">
+                        <div class="checkbox checkbox-rev-switch">
                           <label for="example3" class="control-label">
-                            <switch class="success wide" id="example3" on="On" off="Off" ng-model="angularUiSwitch.example3"></switch>
+                            <rev-ng-switch class="success wide" id="example3" on="On" off="Off" ng-model="angularUiSwitch.example3"></rev-ng-switch>
                             Success Wide Switch
                             <small>{{angularUiSwitch.example3}}</small>
                           </label>
                         </div>
-                        <!--
-        <div class="checkbox">
-            <label><input type="checkbox" data-toggle="toggle" data-size="large">On/Off Switch Large</label>
-        </div>
-        <div class="checkbox">
-            <label><input type="checkbox" data-toggle="toggle" data-size="normal">On/Off Switch Normal</label>
-        </div>
-        <div class="checkbox disabled">
-            <label><input type="checkbox" data-toggle="toggle" data-size="small" disabled>On/Off Switch Small (disabled)</label>
-        </div>
-        <div class="checkbox">
-            <label><input type="checkbox" data-toggle="toggle" data-size="mini">On/Off Switch Mini</label>
-        </div>
-        -->
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <h5>JQuery</h5>
+                        <div class="checkbox checkbox-rev-switch">
+                          <label class="control-label">
+                            <input data-rev-jq-switch="true" on="On" off="Off" checked="checked" type="checkbox">Default Switch
+                          </label>
+                        </div>
+                        <div class="checkbox checkbox-rev-switch">
+                          <label class="control-label">
+                            <input class="primary" type="checkbox" checked="checked" data-rev-jq-switch="true" on="On" off="Off">Primary Switch
+                          </label>
+                        </div>
+                        <div class="checkbox checkbox-rev-switch">
+                          <label class="control-label">
+                            <input class="danger" type="checkbox" data-rev-jq-switch="true" on="On" off="Off" checked="checked">Danger Switch
+                          </label>
+                        </div>
+                        <div class="checkbox checkbox-rev-switch">
+                          <label class="control-label">
+                            <input type="checkbox" data-rev-jq-switch="true" on="On" off="Off" disabled="disabled" checked="checked">Disabled Switch (on)
+                          </label>
+                        </div>
+                        <div class="checkbox checkbox-rev-switch">
+                          <label class="control-label">
+                            <input type="checkbox" data-rev-jq-switch="true" on="On" off="Off" disabled="disabled">Disabled Switch (off)
+                          </label>
+                        </div>
+                        <div class="checkbox checkbox-rev-switch">
+                          <label class="control-label">
+                            <input class="success wide" data-rev-jq-switch="true" type="checkbox" on="On" off="Off" checked="checked">Wide Switch
+                          </label>
+                        </div>
                       </div>
                     </div>
                   </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-lg-12&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;checkbox checkbox-switch&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h5</span>&gt;</span>Angular<span class="hljs-tag">&lt;/<span class="hljs-title">h5</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;checkbox checkbox-rev-switch&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&apos;example1&apos;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;control-label&apos;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">switch</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&apos;example1&apos;</span> <span class="hljs-attribute">on</span>=<span class="hljs-value">&apos;On&apos;</span> <span class="hljs-attribute">off</span>=<span class="hljs-value">&apos;Off&apos;</span> <span class="hljs-attribute">ng-model</span>=<span class="hljs-value">&quot;angularUiSwitch.example1&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">switch</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">rev-ng-switch</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&apos;example1&apos;</span> <span class="hljs-attribute">on</span>=<span class="hljs-value">&apos;On&apos;</span> <span class="hljs-attribute">off</span>=<span class="hljs-value">&apos;Off&apos;</span> <span class="hljs-attribute">ng-model</span>=<span class="hljs-value">&quot;angularUiSwitch.example1&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">rev-ng-switch</span>&gt;</span>
         Default Switch
         <span class="hljs-tag">&lt;<span class="hljs-title">small</span>&gt;</span>{{angularUiSwitch.example1}}<span class="hljs-tag">&lt;/<span class="hljs-title">small</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;checkbox checkbox-switch&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;checkbox checkbox-rev-switch&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&apos;example4&apos;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;control-label&apos;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">switch</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;primary&apos;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&apos;example4&apos;</span> <span class="hljs-attribute">on</span>=<span class="hljs-value">&apos;On&apos;</span> <span class="hljs-attribute">off</span>=<span class="hljs-value">&apos;Off&apos;</span> <span class="hljs-attribute">ng-model</span>=<span class="hljs-value">&quot;angularUiSwitch.example4&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">switch</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">rev-ng-switch</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;primary&apos;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&apos;example4&apos;</span> <span class="hljs-attribute">on</span>=<span class="hljs-value">&apos;On&apos;</span> <span class="hljs-attribute">off</span>=<span class="hljs-value">&apos;Off&apos;</span> <span class="hljs-attribute">ng-model</span>=<span class="hljs-value">&quot;angularUiSwitch.example4&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">rev-ng-switch</span>&gt;</span>
         Primary Switch
         <span class="hljs-tag">&lt;<span class="hljs-title">small</span>&gt;</span>{{angularUiSwitch.example4}}<span class="hljs-tag">&lt;/<span class="hljs-title">small</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;checkbox checkbox-switch&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;checkbox checkbox-rev-switch&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&apos;example5&apos;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;control-label&apos;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">switch</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;danger&apos;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&apos;example5&apos;</span> <span class="hljs-attribute">on</span>=<span class="hljs-value">&apos;On&apos;</span> <span class="hljs-attribute">off</span>=<span class="hljs-value">&apos;Off&apos;</span> <span class="hljs-attribute">ng-model</span>=<span class="hljs-value">&quot;angularUiSwitch.example5&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">switch</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">rev-ng-switch</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;danger&apos;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&apos;example5&apos;</span> <span class="hljs-attribute">on</span>=<span class="hljs-value">&apos;On&apos;</span> <span class="hljs-attribute">off</span>=<span class="hljs-value">&apos;Off&apos;</span> <span class="hljs-attribute">ng-model</span>=<span class="hljs-value">&quot;angularUiSwitch.example5&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">rev-ng-switch</span>&gt;</span>
         Danger Switch
         <span class="hljs-tag">&lt;<span class="hljs-title">small</span>&gt;</span>{{angularUiSwitch.example5}}<span class="hljs-tag">&lt;/<span class="hljs-title">small</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;checkbox checkbox-switch&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;checkbox checkbox-rev-switch&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&apos;example2&apos;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;control-label&apos;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">switch</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&apos;example2&apos;</span> <span class="hljs-attribute">disabled</span>=<span class="hljs-value">&apos;true&apos;</span> <span class="hljs-attribute">on</span>=<span class="hljs-value">&apos;On&apos;</span> <span class="hljs-attribute">off</span>=<span class="hljs-value">&apos;Off&apos;</span> <span class="hljs-attribute">ng-model</span>=<span class="hljs-value">&quot;angularUiSwitch.example2&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">switch</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">rev-ng-switch</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&apos;example2&apos;</span> <span class="hljs-attribute">disabled</span>=<span class="hljs-value">&apos;true&apos;</span> <span class="hljs-attribute">on</span>=<span class="hljs-value">&apos;On&apos;</span> <span class="hljs-attribute">off</span>=<span class="hljs-value">&apos;Off&apos;</span> <span class="hljs-attribute">ng-model</span>=<span class="hljs-value">&quot;angularUiSwitch.example2&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">rev-ng-switch</span>&gt;</span>
         Disabled Switch
         <span class="hljs-tag">&lt;<span class="hljs-title">small</span>&gt;</span>{{angularUiSwitch.example2}}<span class="hljs-tag">&lt;/<span class="hljs-title">small</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;checkbox checkbox-switch&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;checkbox checkbox-rev-switch&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&apos;example3&apos;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;control-label&apos;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">switch</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;success wide&apos;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&apos;example3&apos;</span> <span class="hljs-attribute">on</span>=<span class="hljs-value">&apos;On&apos;</span> <span class="hljs-attribute">off</span>=<span class="hljs-value">&apos;Off&apos;</span> <span class="hljs-attribute">ng-model</span>=<span class="hljs-value">&quot;angularUiSwitch.example3&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">switch</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">rev-ng-switch</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;success wide&apos;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&apos;example3&apos;</span> <span class="hljs-attribute">on</span>=<span class="hljs-value">&apos;On&apos;</span> <span class="hljs-attribute">off</span>=<span class="hljs-value">&apos;Off&apos;</span> <span class="hljs-attribute">ng-model</span>=<span class="hljs-value">&quot;angularUiSwitch.example3&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">rev-ng-switch</span>&gt;</span>
         Success Wide Switch
         <span class="hljs-tag">&lt;<span class="hljs-title">small</span>&gt;</span>{{angularUiSwitch.example3}}<span class="hljs-tag">&lt;/<span class="hljs-title">small</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-comment">&lt;!--
-        &lt;div class=&quot;checkbox&quot;&gt;
-            &lt;label&gt;&lt;input type=&quot;checkbox&quot; data-toggle=&quot;toggle&quot; data-size=&quot;large&quot;&gt;On/Off Switch Large&lt;/label&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;checkbox&quot;&gt;
-            &lt;label&gt;&lt;input type=&quot;checkbox&quot; data-toggle=&quot;toggle&quot; data-size=&quot;normal&quot;&gt;On/Off Switch Normal&lt;/label&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;checkbox disabled&quot;&gt;
-            &lt;label&gt;&lt;input type=&quot;checkbox&quot; data-toggle=&quot;toggle&quot; data-size=&quot;small&quot; disabled&gt;On/Off Switch Small (disabled)&lt;/label&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;checkbox&quot;&gt;
-            &lt;label&gt;&lt;input type=&quot;checkbox&quot; data-toggle=&quot;toggle&quot; data-size=&quot;mini&quot;&gt;On/Off Switch Mini&lt;/label&gt;
-        &lt;/div&gt;
-        --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">hr</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-lg-12&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h5</span>&gt;</span>JQuery<span class="hljs-tag">&lt;/<span class="hljs-title">h5</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;checkbox checkbox-rev-switch&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;control-label&apos;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">data-rev-jq-switch</span>=<span class="hljs-value">&apos;true&apos;</span> <span class="hljs-attribute">on</span>=<span class="hljs-value">&apos;On&apos;</span> <span class="hljs-attribute">off</span>=<span class="hljs-value">&apos;Off&apos;</span> <span class="hljs-attribute">checked</span>=<span class="hljs-value">&quot;checked&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&apos;checkbox&apos;</span> /&gt;</span>Default Switch
+      <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;checkbox checkbox-rev-switch&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;control-label&apos;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;primary&apos;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&apos;checkbox&apos;</span> <span class="hljs-attribute">checked</span>=<span class="hljs-value">&quot;checked&quot;</span> <span class="hljs-attribute">data-rev-jq-switch</span>=<span class="hljs-value">&apos;true&apos;</span> <span class="hljs-attribute">on</span>=<span class="hljs-value">&apos;On&apos;</span> <span class="hljs-attribute">off</span>=<span class="hljs-value">&apos;Off&apos;</span> /&gt;</span>Primary Switch
+      <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;checkbox checkbox-rev-switch&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;control-label&apos;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;danger&apos;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&apos;checkbox&apos;</span> <span class="hljs-attribute">data-rev-jq-switch</span>=<span class="hljs-value">&apos;true&apos;</span> <span class="hljs-attribute">on</span>=<span class="hljs-value">&apos;On&apos;</span> <span class="hljs-attribute">off</span>=<span class="hljs-value">&apos;Off&apos;</span> <span class="hljs-attribute">checked</span>=<span class="hljs-value">&apos;checked&apos;</span> /&gt;</span>Danger Switch
+      <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;checkbox checkbox-rev-switch&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;control-label&apos;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&apos;checkbox&apos;</span> <span class="hljs-attribute">data-rev-jq-switch</span>=<span class="hljs-value">&apos;true&apos;</span> <span class="hljs-attribute">on</span>=<span class="hljs-value">&apos;On&apos;</span> <span class="hljs-attribute">off</span>=<span class="hljs-value">&apos;Off&apos;</span> <span class="hljs-attribute">disabled</span>=<span class="hljs-value">&apos;disabled&apos;</span> <span class="hljs-attribute">checked</span>=<span class="hljs-value">&apos;checked&apos;</span> /&gt;</span>Disabled Switch (on)
+      <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;checkbox checkbox-rev-switch&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;control-label&apos;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&apos;checkbox&apos;</span> <span class="hljs-attribute">data-rev-jq-switch</span>=<span class="hljs-value">&apos;true&apos;</span> <span class="hljs-attribute">on</span>=<span class="hljs-value">&apos;On&apos;</span> <span class="hljs-attribute">off</span>=<span class="hljs-value">&apos;Off&apos;</span> <span class="hljs-attribute">disabled</span>=<span class="hljs-value">&apos;disabled&apos;</span> /&gt;</span>Disabled Switch (off)
+      <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;checkbox checkbox-rev-switch&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;control-label&apos;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;success wide&apos;</span> <span class="hljs-attribute">data-rev-jq-switch</span>=<span class="hljs-value">&apos;true&apos;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&apos;checkbox&apos;</span> <span class="hljs-attribute">on</span>=<span class="hljs-value">&apos;On&apos;</span> <span class="hljs-attribute">off</span>=<span class="hljs-value">&apos;Off&apos;</span> <span class="hljs-attribute">checked</span>=<span class="hljs-value">&quot;checked&quot;</span> /&gt;</span>Wide Switch
+      <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
                 </div>
@@ -3116,6 +3164,84 @@
                 </div>
               </section>
 
+              <section class="sg-block sg-section-filters">
+                <div class="sg-text">
+                  <h3 id="filters" class="sg">Filters</h3>
+                  <ul class="sg">
+                    <li class="sg">Filter bar for Rep and Surveys</li>
+                  </ul>
+                </div>
+                <div class="sg-example">
+                  <div class="sg-canvas">
+                    <div class="row main-filter-bar">
+                      <div class="col-md-3 form-group">
+                        <label>Filter Label</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="col-md-3 form-group">
+                        <label>Filter Label</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="col-md-3 form-group">
+                        <label>Filter Label</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="col-md-3 form-group">
+                        <label>Filter Label</label>
+                        <select class="selectpicker form-control" title="Select One">
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                          <option value="3">Option 3</option>
+                        </select>
+                      </div>
+                      <div class="col-md-3 form-group">
+                        <label>Filter Label</label>
+                        <select class="form-control selectpicker" multiple title="Select Multiple">
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                          <option value="3">Option 3</option>
+                        </select>
+                      </div>
+                      <div class="col-md-3 apply-filters">
+                        <button class="btn btn-primary btn-sm">Apply Filter</button>
+                      </div>
+                    </div>
+                  </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row main-filter-bar&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-3 form-group&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Filter Label<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-control&quot;</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-3 form-group&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Filter Label<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-control&quot;</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-3 form-group&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Filter Label<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-control&quot;</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-3 form-group&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Filter Label<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;selectpicker form-control&quot;</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">&quot;Select One&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;1&quot;</span>&gt;</span>Option 1<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;2&quot;</span>&gt;</span>Option 2<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;3&quot;</span>&gt;</span>Option 3<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-3 form-group&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Filter Label<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-control selectpicker&quot;</span> <span class="hljs-attribute">multiple</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">&quot;Select Multiple&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;1&quot;</span>&gt;</span>Option 1<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;2&quot;</span>&gt;</span>Option 2<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;3&quot;</span>&gt;</span>Option 3<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-3 apply-filters&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-primary btn-sm&quot;</span>&gt;</span>Apply Filter<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+                </div>
+              </section>
+
               <section class="sg-block sg-section-integration">
                 <h3 id="integration" class="sg">Integration</h3>
                 <ul class="sg">
@@ -3146,7 +3272,8 @@
   <script src="bower_components/angular/angular.min.js"></script>
   <script src="bower_components/angular-strap/dist/angular-strap.min.js"></script>
   <script src="bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
-  <script src="bower_components/angular-ui-switch/angular-ui-switch.js"></script>
+  <script src="js/rev-ng-switch.js"></script>
+  <script src="js/rev-jq-switch.js"></script>
   <script src="bower_components/bootstrap-toggle/js/bootstrap-toggle.js"></script>
   <script src="bower_components/bootstrap-select/js/bootstrap-select.js"></script>
   <script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
@@ -3157,6 +3284,7 @@
       $(this).addClass('active');
     });
     $('[data-toggle="tooltip"]').tooltip();
+    $('[data-rev-jq-switch=true]').revSwitch();
   </script>
 </body>
 
