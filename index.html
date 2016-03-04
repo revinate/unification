@@ -2300,6 +2300,18 @@
                           ['2006', 860, 580],
                           ['2007', 1030, 540]
                         ]);
+                        // Create the data table.
+                        var data3 = new google.visualization.DataTable();
+                        data3.addColumn('string', 'Month');
+                        data3.addColumn('number', 'Future Bookings');
+                        data3.addColumn('number', 'Percentage Occupied');
+                        data3.addColumn('number', 'Percentage Unoccupied');
+                        data3.addRows([
+                          ['March', 180, 0.8, 0.2],
+                          ['April', 22, 0.45, 0.55],
+                          ['May', 79, 0.35, 0.65],
+                          ['June', 10, 0.25, 0.75]
+                        ]);
                         // Set chart options
                         var defaultOptions = {
                           colors: ['#8F7EC2', '#2598B8', '#5FC782', '#ECDE31', '#F55949', '#AE85D4', '#5FC2C2', '#9ACC54', '#F5A61D', '#B6744A'],
@@ -2333,7 +2345,8 @@
                               color: '#AAAAAA',
                               fontName: 'LatoBold',
                               italic: false
-                            }
+                            },
+                            slantedText: true
                           }
                         };
                         var options1 = {
@@ -2358,6 +2371,39 @@
                           },
                           focusTarget: 'category'
                         };
+                        var options4 = {
+                          title: 'Future Bookings vs %Occupied',
+                          isStacked: true,
+                          hAxis: {
+                            title: 'Month'
+                          },
+                          series: {
+                            0: {
+                              targetAxisIndex: 0
+                            },
+                            1: {
+                              type: 'bars',
+                              targetAxisIndex: 1,
+                            },
+                            2: {
+                              type: 'bars',
+                              targetAxisIndex: 1
+                            }
+                          },
+                          vAxes: {
+                            0: {
+                              title: 'Future Bookings',
+                              format: '#,###'
+                            },
+                            1: {
+                              title: 'Percentage Occupied',
+                              format: 'percent',
+                              viewWindow: {
+                                max: 1
+                              }
+                            }
+                          }
+                        };
 
                         // Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive
                         function reSize() {
@@ -2373,6 +2419,8 @@
                           chart5.draw(data, $.extend(true, {}, defaultOptions, options2));
                           var chart6 = new google.visualization.LineChart(document.getElementById('chart_div6'));
                           chart6.draw(data2, $.extend(true, {}, defaultOptions, options3));
+                          var chart7 = new google.visualization.LineChart(document.getElementById('chart_div7'));
+                          chart7.draw(data3, $.extend(true, {}, defaultOptions, options4));
                         }
                         window.onload = reSize();
                         window.onresize = reSize;
@@ -2418,6 +2466,17 @@
                         </div>
                       </div>
                     </div>
+
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="dashboard-widget">
+                          <h4 class="dashboard-widget-title">
+                            Combo Chart
+                          </h4>
+                          <div id="chart_div7"></div>
+                        </div>
+                      </div>
+                    </div>
                   </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text/javascript&quot;</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;https://www.gstatic.com/charts/loader.js&quot;</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text/javascript&quot;</span>&gt;</span><span class="javascript">
   google.charts.load(<span class="hljs-string">&apos;current&apos;</span>, {
@@ -2451,6 +2510,18 @@
       [<span class="hljs-string">&apos;2005&apos;</span>, <span class="hljs-number">1170</span>, <span class="hljs-number">460</span>],
       [<span class="hljs-string">&apos;2006&apos;</span>, <span class="hljs-number">860</span>, <span class="hljs-number">580</span>],
       [<span class="hljs-string">&apos;2007&apos;</span>, <span class="hljs-number">1030</span>, <span class="hljs-number">540</span>]
+    ]);
+    <span class="hljs-comment">// Create the data table.</span>
+    <span class="hljs-keyword">var</span> data3 = <span class="hljs-keyword">new</span> google.visualization.DataTable();
+    data3.addColumn(<span class="hljs-string">&apos;string&apos;</span>, <span class="hljs-string">&apos;Month&apos;</span>);
+    data3.addColumn(<span class="hljs-string">&apos;number&apos;</span>, <span class="hljs-string">&apos;Future Bookings&apos;</span>);
+    data3.addColumn(<span class="hljs-string">&apos;number&apos;</span>, <span class="hljs-string">&apos;Percentage Occupied&apos;</span>);
+    data3.addColumn(<span class="hljs-string">&apos;number&apos;</span>, <span class="hljs-string">&apos;Percentage Unoccupied&apos;</span>);
+    data3.addRows([
+      [<span class="hljs-string">&apos;March&apos;</span>, <span class="hljs-number">180</span>, <span class="hljs-number">0.8</span>, <span class="hljs-number">0.2</span>],
+      [<span class="hljs-string">&apos;April&apos;</span>, <span class="hljs-number">22</span>, <span class="hljs-number">0.45</span>, <span class="hljs-number">0.55</span>],
+      [<span class="hljs-string">&apos;May&apos;</span>, <span class="hljs-number">79</span>, <span class="hljs-number">0.35</span>, <span class="hljs-number">0.65</span>],
+      [<span class="hljs-string">&apos;June&apos;</span>, <span class="hljs-number">10</span>, <span class="hljs-number">0.25</span>, <span class="hljs-number">0.75</span>]
     ]);
     <span class="hljs-comment">// Set chart options</span>
     <span class="hljs-keyword">var</span> defaultOptions = {
@@ -2487,7 +2558,8 @@
           color: <span class="hljs-string">&apos;#AAAAAA&apos;</span>,
           fontName: <span class="hljs-string">&apos;LatoBold&apos;</span>,
           italic: <span class="hljs-literal">false</span>
-        }
+        },
+        slantedText: <span class="hljs-literal">true</span>
       }
     };
     <span class="hljs-keyword">var</span> options1 = {
@@ -2512,6 +2584,39 @@
       },
       focusTarget: <span class="hljs-string">&apos;category&apos;</span>
     };
+    <span class="hljs-keyword">var</span> options4 = {
+      title: <span class="hljs-string">&apos;Future Bookings vs %Occupied&apos;</span>,
+      isStacked: <span class="hljs-literal">true</span>,
+      hAxis: {
+        title: <span class="hljs-string">&apos;Month&apos;</span>
+      },
+      series: {
+        <span class="hljs-number">0</span>: {
+          targetAxisIndex: <span class="hljs-number">0</span>
+        },
+        <span class="hljs-number">1</span>: {
+          type: <span class="hljs-string">&apos;bars&apos;</span>,
+          targetAxisIndex: <span class="hljs-number">1</span>,
+        },
+        <span class="hljs-number">2</span>: {
+          type: <span class="hljs-string">&apos;bars&apos;</span>,
+          targetAxisIndex: <span class="hljs-number">1</span>
+        }
+      },
+      vAxes: {
+        <span class="hljs-number">0</span>: {
+          title: <span class="hljs-string">&apos;Future Bookings&apos;</span>,
+          format: <span class="hljs-string">&apos;#,###&apos;</span>
+        },
+        <span class="hljs-number">1</span>: {
+          title: <span class="hljs-string">&apos;Percentage Occupied&apos;</span>,
+          format: <span class="hljs-string">&apos;percent&apos;</span>,
+          viewWindow: {
+            max: <span class="hljs-number">1</span>
+          }
+        }
+      }
+    };
 
     <span class="hljs-comment">// Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive</span>
     <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reSize</span><span class="hljs-params">()</span> </span>{
@@ -2527,6 +2632,8 @@
       chart5.draw(data, $.extend(<span class="hljs-literal">true</span>, {}, defaultOptions, options2));
       <span class="hljs-keyword">var</span> chart6 = <span class="hljs-keyword">new</span> google.visualization.LineChart(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;chart_div6&apos;</span>));
       chart6.draw(data2, $.extend(<span class="hljs-literal">true</span>, {}, defaultOptions, options3));
+      <span class="hljs-keyword">var</span> chart7 = <span class="hljs-keyword">new</span> google.visualization.LineChart(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;chart_div7&apos;</span>));
+      chart7.draw(data3, $.extend(<span class="hljs-literal">true</span>, {}, defaultOptions, options4));
     }
     <span class="hljs-built_in">window</span>.onload = reSize();
     <span class="hljs-built_in">window</span>.onresize = reSize;
@@ -2569,6 +2676,17 @@
         Dashboard Line Chart
       <span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;chart_div6&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-12&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dashboard-widget&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dashboard-widget-title&quot;</span>&gt;</span>
+        Combo Chart
+      <span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;chart_div7&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>

@@ -1034,6 +1034,18 @@ the "Actions" column in the table below.
               ['2006',  860, 580],
               ['2007', 1030, 540]
             ]);
+            // Create the data table.
+            var data3 = new google.visualization.DataTable();
+            data3.addColumn('string', 'Month');
+            data3.addColumn('number', 'Future Bookings');
+            data3.addColumn('number', 'Percentage Occupied');
+            data3.addColumn('number', 'Percentage Unoccupied');
+            data3.addRows([
+              ['March', 180, 0.8, 0.2],
+              ['April', 22, 0.45, 0.55],
+              ['May',  79, 0.35, 0.65],
+              ['June', 10, 0.25, 0.75]
+            ]);
             // Set chart options
            var defaultOptions = {
                 colors: ['#8F7EC2', '#2598B8', '#5FC782', '#ECDE31', '#F55949', '#AE85D4', '#5FC2C2', '#9ACC54', '#F5A61D', '#B6744A'],
@@ -1067,7 +1079,8 @@ the "Actions" column in the table below.
                         color: '#AAAAAA',
                         fontName: 'LatoBold',
                         italic: false
-                    }
+                    },
+                    slantedText: true
                 }
             };
             var options1 = {
@@ -1092,6 +1105,39 @@ the "Actions" column in the table below.
                 },
                 focusTarget: 'category'
             };
+            var options4 = {
+                title: 'Future Bookings vs %Occupied',
+                isStacked: true, 
+                hAxis: {
+                    title: 'Month'
+                    },
+                 series: {
+                    0: {
+                        targetAxisIndex: 0
+                        },
+                    1: {
+                    type: 'bars', 
+                    targetAxisIndex: 1,
+                    },
+                    2: {
+                    type: 'bars',
+                    targetAxisIndex: 1                 
+                    }
+                 },
+                vAxes:{
+                    0: {
+                        title: 'Future Bookings', 
+                        format: '#,###'
+                        }, 
+                    1: {
+                        title: 'Percentage Occupied',  
+                        format: 'percent', 
+                        viewWindow: {
+                            max: 1
+                            }
+                        }
+                    }
+            };
 
             // Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive
             function reSize () {
@@ -1107,6 +1153,8 @@ the "Actions" column in the table below.
             chart5.draw(data, $.extend(true, {}, defaultOptions, options2));
             var chart6 = new google.visualization.LineChart(document.getElementById('chart_div6'));
             chart6.draw(data2, $.extend(true, {}, defaultOptions, options3));
+            var chart7 = new google.visualization.LineChart(document.getElementById('chart_div7'));
+            chart7.draw(data3, $.extend(true, {}, defaultOptions, options4));            
             }
             window.onload = reSize();
             window.onresize = reSize;
@@ -1151,6 +1199,17 @@ the "Actions" column in the table below.
              <div id="chart_div6"></div>
           </div>
        </div>
+    </div>
+    
+    <div class="row">   
+       <div class="col-md-12">
+          <div class="dashboard-widget">
+             <h4 class="dashboard-widget-title">
+                Combo Chart
+             </h4>
+             <div id="chart_div7"></div>
+          </div>
+       </div>       
     </div>
 
 
