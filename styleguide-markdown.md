@@ -991,7 +991,7 @@ the "Actions" column in the table below.
                         },
                     1: {
                     type: 'bars', 
-                    targetAxisIndex: 1
+                    targetAxisIndex: 1,
                     },
                     2: {
                     type: 'bars',
