@@ -408,7 +408,24 @@ the "Actions" column in the table below.
     <button class="btn btn-info btn-sm" disabled="disabled">Info (disabled)</button>
     <button class="btn btn-delete btn-sm" disabled="disabled">Delete (disabled)</button>
     <button class="btn btn-link btn-sm" disabled="disabled">Link (disabled)</button>
-
+    <br />
+    <br />
+    <button class="btn btn-circle btn-xs btn-default-secondary mg-r-xs"
+            data-toggle='tooltip' data-placement='bottom' title='Print'>
+      <i class="fa fa-print"></i>
+    </button>
+    <button class="btn btn-circle btn-xs btn-default-secondary mg-r-xs"
+            data-toggle='tooltip' data-placement='bottom' title='Share'>
+      <i class="fa fa-share-square-o"></i>
+    </button>
+    <button class="btn btn-circle btn-xs btn-default-secondary mg-r-xs"
+            data-toggle='tooltip' data-placement='bottom' title='Export PDF'>
+      <i class="fa fa-file-pdf-o"></i>
+    </button>
+    <button class="btn btn-circle btn-xs btn-default-secondary mg-r-xs"
+            data-toggle='tooltip' data-placement='bottom' title='Export SVG'>
+      <i class="fa fa-file-text-o"></i>
+    </button>
 
 ###Labels and Badges
 
@@ -1107,7 +1124,7 @@ the "Actions" column in the table below.
             };
             var options4 = {
                 title: 'Future Bookings vs %Occupied',
-                isStacked: true, 
+                isStacked: true,
                 hAxis: {
                     title: 'Month'
                     },
@@ -1116,7 +1133,7 @@ the "Actions" column in the table below.
                         targetAxisIndex: 0
                         },
                     1: {
-                    type: 'bars', 
+                    type: 'bars',
                     targetAxisIndex: 1,
                     },
                     2: {
@@ -1126,12 +1143,12 @@ the "Actions" column in the table below.
                  },
                 vAxes:{
                     0: {
-                        title: 'Future Bookings', 
+                        title: 'Future Bookings',
                         format: '#,###'
-                        }, 
+                        },
                     1: {
                         title: 'Percentage Occupied',  
-                        format: 'percent', 
+                        format: 'percent',
                         viewWindow: {
                             max: 1
                             }
@@ -1200,7 +1217,7 @@ the "Actions" column in the table below.
           </div>
        </div>
     </div>
-    
+
     <div class="row">   
        <div class="col-md-12">
           <div class="dashboard-widget">
