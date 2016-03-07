@@ -2,7 +2,7 @@
 
 	'use strict';
 
-	var app = angular.module('main', ['mgcrea.ngStrap', 'mgcrea.ngStrap.datepicker', 'revSwitch']);
+	var app = angular.module('main', ['mgcrea.ngStrap', 'mgcrea.ngStrap.datepicker', 'revSwitch', 'nya.bootstrap.select']);
 
 	app.controller('MainCtrl', function ($scope) {
 		$scope.selectedDate = new Date();
@@ -35,6 +35,19 @@
 		    "id": "4",
 		    "name": "<i class=\"icon-globe\"></i>&nbsp;qux"
 		  }
+		];
+
+		$scope.options = [ 'Alpha', 'Bravo', 'Charlie', 'Delta', 'Echo' ];
+
+		$scope.optgroupSelect = [
+		  {name: 'Alice', class: 'Class A'},
+		  {name: 'Bob', class: 'Class B'},
+		  {name: 'Carl', class: 'Class A'},
+		  {name: 'Daniel', class: 'Class B'},
+		  {name: 'Emi', class: 'Class A'},
+		  {name: 'Flank', class: 'Class B'},
+		  {name: 'George', class: 'Class C'},
+		  {name: 'Harry', class: 'Class C'}
 		];
 
 	});

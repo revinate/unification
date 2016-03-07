@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <title>Styleguide Index</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bower_components/nya-bootstrap-select/dist/css/nya-bs-select.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
   <link rel="stylesheet" href="css/bootstrap.css" />
   <link rel="stylesheet" href="css/app.css" />
 </head>
@@ -194,6 +195,52 @@
             <h1 class="page-title">Page Title</h1>
             <a href="#" class="page-cta btn btn-primary">Call to Action</a>
           </header>
+
+          <h3>Bootstrap Select (for angular)</h3>
+          <form action="" class="row">
+
+            <div class="form-group col-sm-3">
+              <label for="" class="control-label">Select</label>
+              <ol class="nya-bs-select block" ng-model="model1">
+                <li nya-bs-option="option in options">
+                  <a>{{ option }}</a>
+                </li>
+              </ol>
+              <p class="help-block">{{model1}}</p>
+            </div>
+
+            <div class="form-group col-sm-3">
+              <label for="" class="control-label">Select w/ OptGroup</label>
+              <ol class="nya-bs-select block" ng-model="model2">
+                <li nya-bs-option="option in optgroupSelect group by option.class">
+                  <span class="dropdown-header">{{$group}}</span>
+                  <a>{{option.name}}</a>
+                </li>
+              </ol>
+              <p class="help-block">{{model2}}</p>
+            </div>
+
+            <div class="form-group col-sm-3">
+              <label for="" class="control-label">Select w/ Search</label>
+              <ol class="nya-bs-select block" ng-model="model3" data-live-search='true'>
+                <li nya-bs-option="option in options">
+                  <a>{{ option }}</a>
+                </li>
+              </ol>
+              <p class="help-block">{{model3}}</p>
+            </div>
+
+            <div class="form-group col-sm-3">
+              <label for="" class="control-label">Select w/ Search</label>
+              <ol class="nya-bs-select block" ng-model="model4" multiple='true'>
+                <li nya-bs-option="option in options">
+                  <a>{{ option }}</a>
+                </li>
+              </ol>
+              <p class="help-block">{{model4}}</p>
+            </div>
+
+          </form>
 
           <h3>Nav Pills Numbered</h3>
 
@@ -486,8 +533,11 @@
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
 <script src="bower_components/angular/angular.min.js"></script>
+<script src="js/rev-ng-switch.js"></script>
+<script src="js/rev-jq-switch.js"></script>
 <script src="bower_components/angular-strap/dist/angular-strap.min.js"></script>
 <script src="bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
+<script src="bower_components/nya-bootstrap-select/dist/js/nya-bs-select.js"></script>
 <script src="bower_components/bootstrap-toggle/js/bootstrap-toggle.js"></script>
 <script src="bower_components/bootstrap-select/js/bootstrap-select.js"></script>
 <script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>

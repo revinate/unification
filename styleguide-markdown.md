@@ -597,7 +597,57 @@ the "Actions" column in the table below.
                 <label class="radio-inline"><input type="radio" name="optradio" />Radio Inline</label>
                 <label class="radio-inline"><input type="radio" name="optradio" disabled />Radio Inline</label>
             </div>
-        </div>  
+        </div>
+        <div action="" class="row">
+          <div class='col-xs-12'>
+            <h4>Bootstrap Select (for Angular)</h4>
+            <ul>
+              <li>refer to <a href='http://nya.io/nya-bootstrap-select/#!/main/getting-started'>nya-bootstrap-select</a> for full documentation</li>
+              <li>Use the .block class instead of .form-control</li>
+            </ul>
+          </div>
+          <div class="form-group col-sm-3">
+            <label for="" class="control-label">Select</label>
+            <ol class="nya-bs-select block" ng-model="model1">
+              <li nya-bs-option="option in options">
+                <a>{{ option }}</a>
+              </li>
+            </ol>
+            <p class="help-block">{{model1}}</p>
+          </div>
+
+          <div class="form-group col-sm-3">
+            <label for="" class="control-label">Select w/ OptGroup</label>
+            <ol class="nya-bs-select block" ng-model="model2">
+              <li nya-bs-option="option in optgroupSelect group by option.class">
+                <span class="dropdown-header">{{$group}}</span>
+                <a>{{option.name}}</a>
+              </li>
+            </ol>
+            <p class="help-block">{{model2}}</p>
+          </div>
+
+          <div class="form-group col-sm-3">
+            <label for="" class="control-label">Select w/ Search</label>
+            <ol class="nya-bs-select block" ng-model="model3" data-live-search='true'>
+              <li nya-bs-option="option in options">
+                <a>{{ option }}</a>
+              </li>
+            </ol>
+            <p class="help-block">{{model3}}</p>
+          </div>
+
+          <div class="form-group col-sm-3">
+            <label for="" class="control-label">Select w/ Search</label>
+            <ol class="nya-bs-select block" ng-model="model4" multiple='true'>
+              <li nya-bs-option="option in options">
+                <a>{{ option }}</a>
+              </li>
+            </ol>
+            <p class="help-block">{{model4}}</p>
+          </div>
+
+        </div>
         <div class="row">
             <div class="col-lg-4">
                 <button type="submit" class="btn btn-primary btn-lg full-width">Submit Button</button>

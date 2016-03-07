@@ -285,7 +285,8 @@
   }
 }
 
-.bootstrap-select {
+.bootstrap-select,
+.nya-bs-select {
   .btn {
     &.btn-default {
       background: white;
@@ -302,6 +303,19 @@
         background: white;
       }
     }
+  }
+}
+
+.nya-bs-select {
+  &.block {
+    width: 100% !important;
+  }
+}
+
+.nya-bs-option.selected {
+  a {
+    background-color: #EBF5FE;
+    color: #3BA1F8;
   }
 }
 

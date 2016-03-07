@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="bower_components/bootstrap-toggle/css/bootstrap-toggle.css" />
+    <link rel="stylesheet" href="bower_components/nya-bootstrap-select/dist/css/nya-bs-select.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 ### Body
@@ -77,6 +78,7 @@
     <script src="js/rev-jq-switch.js"></script>
     <script src="bower_components/bootstrap-toggle/js/bootstrap-toggle.js"></script>
     <script src="bower_components/bootstrap-select/js/bootstrap-select.js"></script>
+    <script src="bower_components/nya-bootstrap-select/dist/js/nya-bs-select.js"></script>
     <script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
     <script src="js/main.js"></script>
     <script>

@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="bower_components/bootstrap-toggle/css/bootstrap-toggle.css">
+  <link rel="stylesheet" href="bower_components/nya-bootstrap-select/dist/css/nya-bs-select.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -1364,6 +1365,57 @@
                             <input type="radio" name="optradio" disabled>Radio Inline</label>
                         </div>
                       </div>
+                      <div action="" class="row">
+                        <div class="col-xs-12">
+                          <h4>Bootstrap Select (for Angular)</h4>
+                          <ul>
+                            <li>refer to
+                              <a href="http://nya.io/nya-bootstrap-select/#!/main/getting-started">nya-bootstrap-select</a>for full documentation</li>
+                            <li>Use the .block class instead of .form-control</li>
+                          </ul>
+                        </div>
+                        <div class="form-group col-sm-3">
+                          <label for="" class="control-label">Select</label>
+                          <ol class="nya-bs-select block" ng-model="model1">
+                            <li nya-bs-option="option in options">
+                              <a>{{ option }}</a>
+                            </li>
+                          </ol>
+                          <p class="help-block">{{model1}}</p>
+                        </div>
+
+                        <div class="form-group col-sm-3">
+                          <label for="" class="control-label">Select w/ OptGroup</label>
+                          <ol class="nya-bs-select block" ng-model="model2">
+                            <li nya-bs-option="option in optgroupSelect group by option.class">
+                              <span class="dropdown-header">{{$group}}</span>
+                              <a>{{option.name}}</a>
+                            </li>
+                          </ol>
+                          <p class="help-block">{{model2}}</p>
+                        </div>
+
+                        <div class="form-group col-sm-3">
+                          <label for="" class="control-label">Select w/ Search</label>
+                          <ol class="nya-bs-select block" ng-model="model3" data-live-search="true">
+                            <li nya-bs-option="option in options">
+                              <a>{{ option }}</a>
+                            </li>
+                          </ol>
+                          <p class="help-block">{{model3}}</p>
+                        </div>
+
+                        <div class="form-group col-sm-3">
+                          <label for="" class="control-label">Select w/ Search</label>
+                          <ol class="nya-bs-select block" ng-model="model4" multiple="true">
+                            <li nya-bs-option="option in options">
+                              <a>{{ option }}</a>
+                            </li>
+                          </ol>
+                          <p class="help-block">{{model4}}</p>
+                        </div>
+
+                      </div>
                       <div class="row">
                         <div class="col-lg-4">
                           <button type="submit" class="btn btn-primary btn-lg full-width">Submit Button</button>
@@ -1487,6 +1539,57 @@
       <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;radio-inline&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;radio&quot;</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;optradio&quot;</span> <span class="hljs-attribute">disabled</span> /&gt;</span>Radio Inline<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">&quot;&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;col-xs-12&apos;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h4</span>&gt;</span>Bootstrap Select (for Angular)<span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>refer to
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&apos;http://nya.io/nya-bootstrap-select/#!/main/getting-started&apos;</span>&gt;</span>nya-bootstrap-select<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>for full documentation<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Use the .block class instead of .form-control<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group col-sm-3&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;control-label&quot;</span>&gt;</span>Select<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ol</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;nya-bs-select block&quot;</span> <span class="hljs-attribute">ng-model</span>=<span class="hljs-value">&quot;model1&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">nya-bs-option</span>=<span class="hljs-value">&quot;option in options&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span>&gt;</span>{{ option }}<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;help-block&quot;</span>&gt;</span>{{model1}}<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group col-sm-3&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;control-label&quot;</span>&gt;</span>Select w/ OptGroup<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ol</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;nya-bs-select block&quot;</span> <span class="hljs-attribute">ng-model</span>=<span class="hljs-value">&quot;model2&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">nya-bs-option</span>=<span class="hljs-value">&quot;option in optgroupSelect group by option.class&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dropdown-header&quot;</span>&gt;</span>{{$group}}<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span>&gt;</span>{{option.name}}<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;help-block&quot;</span>&gt;</span>{{model2}}<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group col-sm-3&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;control-label&quot;</span>&gt;</span>Select w/ Search<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ol</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;nya-bs-select block&quot;</span> <span class="hljs-attribute">ng-model</span>=<span class="hljs-value">&quot;model3&quot;</span> <span class="hljs-attribute">data-live-search</span>=<span class="hljs-value">&apos;true&apos;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">nya-bs-option</span>=<span class="hljs-value">&quot;option in options&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span>&gt;</span>{{ option }}<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;help-block&quot;</span>&gt;</span>{{model3}}<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group col-sm-3&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;control-label&quot;</span>&gt;</span>Select w/ Search<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ol</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;nya-bs-select block&quot;</span> <span class="hljs-attribute">ng-model</span>=<span class="hljs-value">&quot;model4&quot;</span> <span class="hljs-attribute">multiple</span>=<span class="hljs-value">&apos;true&apos;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">nya-bs-option</span>=<span class="hljs-value">&quot;option in options&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span>&gt;</span>{{ option }}<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;help-block&quot;</span>&gt;</span>{{model4}}<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-lg-4&quot;</span>&gt;</span>
@@ -3422,6 +3525,7 @@
   <script src="js/rev-jq-switch.js"></script>
   <script src="bower_components/bootstrap-toggle/js/bootstrap-toggle.js"></script>
   <script src="bower_components/bootstrap-select/js/bootstrap-select.js"></script>
+  <script src="bower_components/nya-bootstrap-select/dist/js/nya-bs-select.js"></script>
   <script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
   <script src="js/main.js"></script>
   <script>
