@@ -79,6 +79,8 @@
     <script src="bower_components/bootstrap-toggle/js/bootstrap-toggle.js"></script>
     <script src="bower_components/bootstrap-select/js/bootstrap-select.js"></script>
     <script src="bower_components/nya-bootstrap-select/dist/js/nya-bs-select.js"></script>
+    <script src="vendor_manual/lvlDragDrop/script/lvl-uuid.js"></script>
+    <script src="vendor_manual/lvlDragDrop/script/lvl-drag-drop.js"></script>
     <script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
     <script src="js/main.js"></script>
     <script>

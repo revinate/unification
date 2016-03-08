@@ -303,7 +303,7 @@ the "Actions" column in the table below.
     <div class="panel panel-default">
         <header class="panel-heading">
             <h3 class="panel-title">Hover Table
-                <small>List of draggable and clickable entities</small>
+                <small>List of draggable entities.</small>
             </h3>
             <button class="btn btn-primary">New Campaign</button>
         </header>
@@ -325,7 +325,7 @@ the "Actions" column in the table below.
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr draggable='true'>
                         <td>Data 1</td>
                         <td>Data 2</td>
                         <td>Data 3</td>
@@ -343,7 +343,7 @@ the "Actions" column in the table below.
                             </div>
                         </td>
                     </tr>
-                    <tr>
+                    <tr draggable='true'>
                         <td>Data 1</td>
                         <td>Data 2</td>
                         <td>Data 3</td>
@@ -361,7 +361,7 @@ the "Actions" column in the table below.
                             </div>
                         </td>
                     </tr>
-                    <tr>
+                    <tr draggable='true'>
                         <td>Data 1</td>
                         <td>Data 2</td>
                         <td>Data 3</td>
@@ -662,6 +662,9 @@ the "Actions" column in the table below.
 
 - Since the plugins were mostly developed in-house, you'll find the javascript in the unification repo under
 `/js/rev-jq-switch.js` (for jquery) and `/js/rev-ng-switch.js` (for angular).
+- If you provide an `on-change` function to the Angular directive, make sure this function keeps the `is-checked` value in sync.
+- If you don't provide an `on-change` function to the Angular directive, clicking the switch will toggle `is-checked` value
+- The angular directive calls the function setting the parameter called `value` to the current value of `is-checked`
 
 
     @example
@@ -670,27 +673,27 @@ the "Actions" column in the table below.
             <h5>Angular</h5>
             <div class="checkbox checkbox-rev-switch">
               <label for='example1' class='control-label'>
-              <rev-ng-switch id='example1' on='On' off='Off' ng-model="angularUiSwitch.example1"></rev-ng-switch>
+              <rev-ng-switch id='example1' is-checked="angularUiSwitch.example1"></rev-ng-switch>
                Default Switch <small>{{angularUiSwitch.example1}}</small></label>
             </div>
             <div class="checkbox checkbox-rev-switch">
               <label for='example4' class='control-label'>
-              <rev-ng-switch class='primary' id='example4' on='On' off='Off' ng-model="angularUiSwitch.example4"></rev-ng-switch>
+              <rev-ng-switch class='primary' id='example4' on='Yes' off='No' is-checked="angularUiSwitch.example4"></rev-ng-switch>
                Primary Switch <small>{{angularUiSwitch.example4}}</small></label>
             </div>
             <div class="checkbox checkbox-rev-switch">
               <label for='example5' class='control-label'>
-              <rev-ng-switch class='danger' id='example5' on='On' off='Off' ng-model="angularUiSwitch.example5"></rev-ng-switch>
+              <rev-ng-switch class='danger' id='example5' is-checked="angularUiSwitch.example5"></rev-ng-switch>
                Danger Switch <small>{{angularUiSwitch.example5}}</small></label>
             </div>
             <div class="checkbox checkbox-rev-switch">
               <label for='example2' class='control-label'>
-              <rev-ng-switch id='example2' disabled='true' on='On' off='Off' ng-model="angularUiSwitch.example2"></rev-ng-switch>
+              <rev-ng-switch id='example2' is-disabled='true' is-checked="angularUiSwitch.example2"></rev-ng-switch>
                Disabled Switch <small>{{angularUiSwitch.example2}}</small></label>
             </div>
             <div class="checkbox checkbox-rev-switch">
               <label for='example3' class='control-label'>
-              <rev-ng-switch class='success wide' id='example3' on='On' off='Off' ng-model="angularUiSwitch.example3"></rev-ng-switch>
+              <rev-ng-switch class='success wide' id='example3' is-checked="angularUiSwitch.example3" on-change="onChangeExample3(value)"></rev-ng-switch>
                Success Wide Switch <small>{{angularUiSwitch.example3}}</small></label>
             </div>
         </div>

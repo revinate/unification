@@ -15,6 +15,10 @@
 			example5: true,
 		};
 
+		$scope.onChangeExample3 = function(value) {
+			$scope.angularUiSwitch.example3 = !$scope.angularUiSwitch.example3;
+		}
+
 		$scope.selectedItem = "1";
 		$scope.selectedItems = ['1'];
 
