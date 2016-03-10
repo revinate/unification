@@ -27,7 +27,7 @@
       a {
         color: #777;
         background-color: transparent !important;
-        &:hover {
+        &:hover, &:focus {
           color: #777;
         }
       }
