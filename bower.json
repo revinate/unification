@@ -1,9 +1,4 @@
 {
   "name": "Revinate Unification",
-  "version": "0.0.1",
-  "devDependencies": {
-    "bootstrap-sass-official": "~3.3.4",
-    "angular-strap": "~2.3.7",
-    "nya-bootstrap-select": "~2.1.3"
-  }
+  "version": "0.0.1"
 }
