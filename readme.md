@@ -3,13 +3,11 @@
 ### Pre-requisites
 
 - NodeJS - [https://nodejs.org/]()
-- Bower - `npm install -g bower`
 - Compass - `gem install compass`
 
 ### Setup
 
 - Run `npm install`
-- Run `bower install`
 
 ### Update Styleguide
 
@@ -26,5 +24,4 @@
 ### How to Deploy
 - run `cd deploy_scripts`
 - run `bundle install` (First time only)
-- run `cap production deploy` 
-
+- run `cap production deploy`
