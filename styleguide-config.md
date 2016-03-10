@@ -74,7 +74,8 @@
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-strap/dist/angular-strap.min.js"></script>
     <script src="bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
-    <script src="js/rev-ng-switch.js"></script>
+    <script src="js/angular/styleguide.js"></script>
+    <script src="js/angular/rev-ng-switch.js"></script>
     <script src="js/rev-jq-switch.js"></script>
     <script src="bower_components/bootstrap-toggle/js/bootstrap-toggle.js"></script>
     <script src="bower_components/bootstrap-select/js/bootstrap-select.js"></script>

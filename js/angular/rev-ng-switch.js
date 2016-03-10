@@ -1,5 +1,4 @@
 (function() {
-  'use strict';
 
   var template = [
     '<span class="{{getStaticClasses()}}" ng-class="{disabled: isDisabled, checked: isChecked}" ng-click="onClick()">',
@@ -52,7 +51,7 @@
   };
 
   angular
-    .module('revSwitch', [])
+    .module('styleguide')
     .directive('revNgSwitch', directive);
 
 }());
