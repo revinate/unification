@@ -1,0 +1,17 @@
+ul.actions-nav {
+  li {
+    display: inline-block;
+    padding: 0 5px;
+    font-weight: bold;
+    a {
+      color: #333;
+      &:hover {
+        color: #3BA1F8;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      color: #3BA1F8;
+    }
+  }
+}
