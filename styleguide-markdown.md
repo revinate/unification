@@ -13,7 +13,7 @@ Everything inside follows the standard Bootstrap 12-column grid, using `.row` an
       main.l-main
         .container
           .l-main-content.pd-md.mg-t-xl
-            ul.actions-nav.pull-right
+            ul.global-actions-nav.pull-right
                 li
                     a
                         i.fa.fa-file-pdf-o
