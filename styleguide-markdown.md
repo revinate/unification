@@ -1123,11 +1123,14 @@ the "Actions" column in the table below.
               ['June', 10, 0.25, 0.75]
             ]);
             // Set chart options
+           var defaultColors = ['#8F7EC2', '#2598B8', '#5FC782', '#ECDE31', '#F55949', '#AE85D4', '#5FC2C2', '#9ACC54', '#F5A61D', '#B6744A'];
+           var comboColors = ['#ECDE31', '#8F7EC2', '#2598B8', '#5FC782', '#F55949', '#AE85D4', '#5FC2C2', '#9ACC54', '#F5A61D', '#B6744A'];
+           var bookingsColors = ['#ECDE31', '#2598B8', '#EEEEEE'];
            var defaultOptions = {
-                colors: ['#8F7EC2', '#2598B8', '#5FC782', '#ECDE31', '#F55949', '#AE85D4', '#5FC2C2', '#9ACC54', '#F5A61D', '#B6744A'],
+                colors: defaultColors,
                 backgroundColor: 'transparent',
                 height: 300,
-                is3D: true,
+                //is3D: true,
                 fontName: 'Lato',
                 fontSize: 13,
                 pointSize: '5',
@@ -1182,6 +1185,7 @@ the "Actions" column in the table below.
                 focusTarget: 'category'
             };
             var options4 = {
+                colors: bookingsColors,
                 title: 'Future Bookings vs %Occupied',
                 isStacked: true,
                 hAxis: {
@@ -1281,7 +1285,7 @@ the "Actions" column in the table below.
        <div class="col-md-12">
           <div class="dashboard-widget">
              <h4 class="dashboard-widget-title">
-                Combo Chart
+                Future Bookings Chart
              </h4>
              <div id="chart_div7"></div>
           </div>
