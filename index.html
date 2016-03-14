@@ -2479,11 +2479,14 @@
                           ['June', 10, 0.25, 0.75]
                         ]);
                         // Set chart options
+                        var defaultColors = ['#8F7EC2', '#2598B8', '#5FC782', '#ECDE31', '#F55949', '#AE85D4', '#5FC2C2', '#9ACC54', '#F5A61D', '#B6744A'];
+                        var comboColors = ['#ECDE31', '#8F7EC2', '#2598B8', '#5FC782', '#F55949', '#AE85D4', '#5FC2C2', '#9ACC54', '#F5A61D', '#B6744A'];
+                        var bookingsColors = ['#ECDE31', '#2598B8', '#EEEEEE'];
                         var defaultOptions = {
-                          colors: ['#8F7EC2', '#2598B8', '#5FC782', '#ECDE31', '#F55949', '#AE85D4', '#5FC2C2', '#9ACC54', '#F5A61D', '#B6744A'],
+                          colors: defaultColors,
                           backgroundColor: 'transparent',
                           height: 300,
-                          is3D: true,
+                          //is3D: true,
                           fontName: 'Lato',
                           fontSize: 13,
                           pointSize: '5',
@@ -2538,6 +2541,7 @@
                           focusTarget: 'category'
                         };
                         var options4 = {
+                          colors: bookingsColors,
                           title: 'Future Bookings vs %Occupied',
                           isStacked: true,
                           hAxis: {
@@ -2637,7 +2641,7 @@
                       <div class="col-md-12">
                         <div class="dashboard-widget">
                           <h4 class="dashboard-widget-title">
-                            Combo Chart
+                            Future Bookings Chart
                           </h4>
                           <div id="chart_div7"></div>
                         </div>
@@ -2690,13 +2694,18 @@
       [<span class="hljs-string">&apos;June&apos;</span>, <span class="hljs-number">10</span>, <span class="hljs-number">0.25</span>, <span class="hljs-number">0.75</span>]
     ]);
     <span class="hljs-comment">// Set chart options</span>
+    <span class="hljs-keyword">var</span> defaultColors = [<span class="hljs-string">&apos;#8F7EC2&apos;</span>, <span class="hljs-string">&apos;#2598B8&apos;</span>, <span class="hljs-string">&apos;#5FC782&apos;</span>, <span class="hljs-string">&apos;#ECDE31&apos;</span>, <span class="hljs-string">&apos;#F55949&apos;</span>, <span class="hljs-string">&apos;#AE85D4&apos;</span>, <span class="hljs-string">&apos;#5FC2C2&apos;</span>, <span class="hljs-string">&apos;#9ACC54&apos;</span>,
+      <span class="hljs-string">&apos;#F5A61D&apos;</span>, <span class="hljs-string">&apos;#B6744A&apos;</span>
+    ];
+    <span class="hljs-keyword">var</span> comboColors = [<span class="hljs-string">&apos;#ECDE31&apos;</span>, <span class="hljs-string">&apos;#8F7EC2&apos;</span>, <span class="hljs-string">&apos;#2598B8&apos;</span>, <span class="hljs-string">&apos;#5FC782&apos;</span>, <span class="hljs-string">&apos;#F55949&apos;</span>, <span class="hljs-string">&apos;#AE85D4&apos;</span>, <span class="hljs-string">&apos;#5FC2C2&apos;</span>, <span class="hljs-string">&apos;#9ACC54&apos;</span>,
+      <span class="hljs-string">&apos;#F5A61D&apos;</span>, <span class="hljs-string">&apos;#B6744A&apos;</span>
+    ];
+    <span class="hljs-keyword">var</span> bookingsColors = [<span class="hljs-string">&apos;#ECDE31&apos;</span>, <span class="hljs-string">&apos;#2598B8&apos;</span>, <span class="hljs-string">&apos;#EEEEEE&apos;</span>];
     <span class="hljs-keyword">var</span> defaultOptions = {
-      colors: [<span class="hljs-string">&apos;#8F7EC2&apos;</span>, <span class="hljs-string">&apos;#2598B8&apos;</span>, <span class="hljs-string">&apos;#5FC782&apos;</span>, <span class="hljs-string">&apos;#ECDE31&apos;</span>, <span class="hljs-string">&apos;#F55949&apos;</span>, <span class="hljs-string">&apos;#AE85D4&apos;</span>, <span class="hljs-string">&apos;#5FC2C2&apos;</span>, <span class="hljs-string">&apos;#9ACC54&apos;</span>, <span class="hljs-string">&apos;#F5A61D&apos;</span>,
-        <span class="hljs-string">&apos;#B6744A&apos;</span>
-      ],
+      colors: defaultColors,
       backgroundColor: <span class="hljs-string">&apos;transparent&apos;</span>,
       height: <span class="hljs-number">300</span>,
-      is3D: <span class="hljs-literal">true</span>,
+      <span class="hljs-comment">//is3D: true,</span>
       fontName: <span class="hljs-string">&apos;Lato&apos;</span>,
       fontSize: <span class="hljs-number">13</span>,
       pointSize: <span class="hljs-string">&apos;5&apos;</span>,
@@ -2751,6 +2760,7 @@
       focusTarget: <span class="hljs-string">&apos;category&apos;</span>
     };
     <span class="hljs-keyword">var</span> options4 = {
+      colors: bookingsColors,
       title: <span class="hljs-string">&apos;Future Bookings vs %Occupied&apos;</span>,
       isStacked: <span class="hljs-literal">true</span>,
       hAxis: {
@@ -2850,7 +2860,7 @@
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-12&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dashboard-widget&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dashboard-widget-title&quot;</span>&gt;</span>
-        Combo Chart
+        Future Bookings Chart
       <span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;chart_div7&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
