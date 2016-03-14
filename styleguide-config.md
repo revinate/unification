@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="libs/bootstrap-toggle/css/bootstrap-toggle.css" />
     <link rel="stylesheet" href="libs/nya-bootstrap-select/dist/css/nya-bs-select.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      #sort tbody {
+        cursor: move;
+      }
+    </style>
 
 ### Body
 
@@ -70,6 +75,7 @@
     </div>
 
     <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <script src="libs/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
     <script src="libs/angular/angular.min.js"></script>
     <script src="libs/angular-strap/dist/angular-strap.min.js"></script>
@@ -89,6 +95,16 @@
         $(this).siblings('li').removeClass('active');
         $(this).addClass('active');
     });
-      $('[data-toggle="tooltip"]').tooltip();
-      $('[data-rev-jq-switch=true]').revSwitch();
+    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-rev-jq-switch=true]').revSwitch();
+    var fixHelper = function(e, ui) {
+        ui.children().each(function() {
+            $(this).width($(this).width());
+        });
+        return ui;
+    };
+
+    $("#sort tbody").sortable({
+        helper: fixHelper
+    }).disableSelection();
     </script>

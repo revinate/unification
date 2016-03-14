@@ -308,13 +308,13 @@ the "Actions" column in the table below.
 
     <div class="panel panel-default">
         <header class="panel-heading">
-            <h3 class="panel-title">Hover Table
+            <h3 class="panel-title">Draggable Table
                 <small>List of draggable entities.</small>
             </h3>
             <button class="btn btn-primary">New Campaign</button>
         </header>
         <div class="panel-body panel-body-table">
-            <table class="table table-striped table-hover">
+            <table class="table table-striped table-hover" id="sort">
                 <thead>
                     <tr>
                         <th>Column 1</th>
