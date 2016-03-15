@@ -425,12 +425,12 @@ the "Actions" column in the table below.
       <i class="fa fa-share-square-o"></i>
     </button>
     <button class="btn btn-circle btn-xs btn-default-secondary mg-r-xs"
-            data-toggle='tooltip' data-placement='bottom' title='Export PDF'>
-      <i class="fa fa-file-pdf-o"></i>
+            data-toggle='tooltip' data-placement='bottom' title='Export to CSV'>
+      <i class="fa fa-file-text-o"></i>
     </button>
     <button class="btn btn-circle btn-xs btn-default-secondary mg-r-xs"
-            data-toggle='tooltip' data-placement='bottom' title='Export SVG'>
-      <i class="fa fa-file-text-o"></i>
+            data-toggle='tooltip' data-placement='bottom' title='Export to PDF'>
+      <i class="fa fa-file-pdf-o"></i>
     </button>
 
 ###Labels and Badges
