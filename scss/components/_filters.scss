@@ -3,12 +3,35 @@
   border-top: 1px solid #C8DBEE;
   border-bottom: 1px solid #C8DBEE;
   padding: 10px 0 0;
-  label {
-    font-size: 11px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  .apply-filters {
-    padding-top: 24px;
+  .form-group {
+    display: inline-block;
+    width: auto;
+    padding-right: 5px;
+    label {
+      font-size: 11px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #7A8CA1;
+    }
+    .form-control, select {
+      height: 28px;
+      padding: 6px 10px;
+      &.bootstrap-select {
+        padding: 0;
+      }
+    }
+    .bootstrap-select .btn {
+      height: 28px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      line-height: 1;
+    }
+    &.apply-filters {
+      padding-top: 24px;
+      .btn.btn-sm {
+        height: 28px;
+        padding: 6px 12px;
+      }
+    }
   }
 }
