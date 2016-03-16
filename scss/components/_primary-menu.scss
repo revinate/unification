@@ -75,6 +75,18 @@
       overflow: hidden;
       white-space: nowrap;
     }
+    &.always-active {
+      background: $r_brand-primary;
+      a {
+        color: #fff;
+        &:hover {
+          background: transparent;
+        }
+      }
+      &:hover {
+        background: $r_brand-primary;
+      }
+    }
   }
   &.primary-menu-item-logo {
     span.logo {
