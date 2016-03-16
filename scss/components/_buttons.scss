@@ -112,12 +112,12 @@
 }
 
 .btn-header {
-  text-transform: none;
   letter-spacing: .01em;
   font-size: 14px;
   border: none;
   color: $r_brand-primary-lighter;
   padding: 7px 12px;
+  text-transform: capitalize;
 
   @extend .FontLato;
   font-weight: normal;
