@@ -62,13 +62,14 @@
     }
   }
   &.prop-selector {
+    // see prop selector component for more specifics on dropdown
     max-width: 290px;
     a {
       text-overflow: ellipsis;
       overflow: hidden;
       white-space: nowrap;
       i {
-        padding: 6px 5px;
+        padding: 9px 5px;
       }
     }
     &.primary-menu-item-text {
