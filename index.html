@@ -297,7 +297,7 @@
                             <li class="pull-right primary-menu-item-bordered primary-menu-item-label">
                               <span class="label label-success badge-label">On duty</span>
                             </li>
-                            <li class="dropdown pull-right primary-menu-item-icon">
+                            <li class="dropdown pull-right primary-menu-item-icon" title="Settings" data-toggle="tooltip" data-placement="bottom">
                               <a class="dropdown-toggle primary-menu-item-bordered primary-menu-item-icon" data-toggle="dropdown" href="#" aria-expanded="false">
                                 <i class="fa fa-gear"></i>
                               </a>
@@ -310,8 +310,8 @@
                                 </li>
                               </ul>
                             </li>
-                            <li class="dropdown pull-right primary-menu-item-icon">
-                              <a class="dropdown-toggle primary-menu-item-bordered primary-menu-item-icon" d="" ata-toggle="dropdown" href="#" role="button" aria-expanded="false" rel="tooltip" bs-tooltip="" data-title="Help &amp; Feedback" data-placement="bottom">
+                            <li class="dropdown pull-right primary-menu-item-icon" title="Help &amp; Feedback" data-toggle="tooltip" data-placement="bottom">
+                              <a class="dropdown-toggle primary-menu-item-bordered primary-menu-item-icon" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
                                 <i class="fa fa-question-circle"></i>
                               </a>
                               <ul class="dropdown-menu" role="menu">
@@ -329,15 +329,57 @@
                                 Property
                               </a>
                               <ul class="dropdown-menu" role="menu">
-                                <li>
-                                  <a href="#">Action</a>
+                                <li class="underline account-switcher">
+                                  <h4>Switch Accounts</h4>
+                                  <ul id="header_account_selector" class="account_selector contact-selector property-selector">
+                                    <input type="hidden">
+                                    <li>
+                                      <input type="text" class="text property-input form-control" autocomplete="off">
+                                      <span class="focus">
+                                        <i class="icon icon_magnifying_glass"></i>
+                                      </span>
+                                    </li>
+                                  </ul>
+                                  <div class="contact-autocomplete" style="display:none;">
+                                    <ul style="display:none;">
+                                    </ul>
+                                    <div>type account name...</div>
+                                  </div>
                                 </li>
-                                <li>
-                                  <a href="#">Another action</a>
+                                <li class="underline">
+                                  <h4>Recently Accessed</h4>
+                                  <ul>
+                                    <li>
+                                      <a href="/goto-hotel-id/352/">
+                                        Trump International Hotel Las Vegas, NV
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/goto-hotel-id/352/">
+                                        Trump International Hotel Las Vegas, NV
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/goto-hotel-id/352/">
+                                        Trump International Hotel Las Vegas, NV
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/goto-hotel-id/352/">
+                                        Trump International Hotel Las Vegas, NV
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li class="underline full-account-list">
+                                  <a class="bordered" href="/hotel-selection">
+                                    Full Account List
+                                  </a>
                                 </li>
                               </ul>
                             </li>
-                            <li class="primary-menu-item-bordered primary-menu-item-text pull-right prop-selector">Property</li>
+                            <li class="primary-menu-item-bordered primary-menu-item-text pull-right prop-selector">
+                              Property</li>
                           </ul>
 
                         </div>
@@ -432,7 +474,7 @@
         <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;pull-right primary-menu-item-bordered primary-menu-item-label&quot;</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;label label-success badge-label&quot;</span>&gt;</span>On duty<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dropdown pull-right primary-menu-item-icon&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dropdown pull-right primary-menu-item-icon&quot;</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">&quot;Settings&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;tooltip&quot;</span> <span class="hljs-attribute">data-placement</span>=<span class="hljs-value">&quot;bottom&quot;</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dropdown-toggle primary-menu-item-bordered primary-menu-item-icon&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;dropdown&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">aria-expanded</span>=<span class="hljs-value">&quot;false&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;fa fa-gear&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
@@ -445,9 +487,9 @@
             <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dropdown pull-right primary-menu-item-icon&quot;</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dropdown-toggle primary-menu-item-bordered primary-menu-item-icon&quot;</span> <span class="hljs-attribute">d</span> <span class="hljs-attribute">ata-toggle</span>=<span class="hljs-value">&quot;dropdown&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;button&quot;</span>
-          <span class="hljs-attribute">aria-expanded</span>=<span class="hljs-value">&quot;false&quot;</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">&quot;tooltip&quot;</span> <span class="hljs-attribute">bs-tooltip</span> <span class="hljs-attribute">data-title</span>=<span class="hljs-value">&quot;Help &amp; Feedback&quot;</span> <span class="hljs-attribute">data-placement</span>=<span class="hljs-value">&quot;bottom&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dropdown pull-right primary-menu-item-icon&quot;</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">&quot;Help &amp; Feedback&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;tooltip&quot;</span> <span class="hljs-attribute">data-placement</span>=<span class="hljs-value">&quot;bottom&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dropdown-toggle primary-menu-item-bordered primary-menu-item-icon&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;dropdown&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;button&quot;</span>
+          <span class="hljs-attribute">aria-expanded</span>=<span class="hljs-value">&quot;false&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;fa fa-question-circle&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dropdown-menu&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;menu&quot;</span>&gt;</span>
@@ -465,15 +507,57 @@
             Property
           <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dropdown-menu&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;menu&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;underline account-switcher&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">h4</span>&gt;</span>Switch Accounts<span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;header_account_selector&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;account_selector contact-selector property-selector&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;hidden&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;text property-input form-control&quot;</span> <span class="hljs-attribute">autocomplete</span>=<span class="hljs-value">&quot;off&quot;</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;focus&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;icon icon_magnifying_glass&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;contact-autocomplete&quot;</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;display:none;&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;display:none;&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>type account name...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;underline&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">h4</span>&gt;</span>Recently Accessed<span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;/goto-hotel-id/352/&quot;</span>&gt;</span>
+                    Trump International Hotel Las Vegas, NV
+                  <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;/goto-hotel-id/352/&quot;</span>&gt;</span>
+                    Trump International Hotel Las Vegas, NV
+                  <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;/goto-hotel-id/352/&quot;</span>&gt;</span>
+                    Trump International Hotel Las Vegas, NV
+                  <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;/goto-hotel-id/352/&quot;</span>&gt;</span>
+                    Trump International Hotel Las Vegas, NV
+                  <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;underline full-account-list&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;bordered&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;/hotel-selection&quot;</span>&gt;</span>
+                Full Account List
+              <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;primary-menu-item-bordered primary-menu-item-text pull-right prop-selector&quot;</span>&gt;</span>Property<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;primary-menu-item-bordered primary-menu-item-text pull-right prop-selector&quot;</span>&gt;</span>
+          Property<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>

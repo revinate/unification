@@ -85,7 +85,10 @@ tabbed content is inside `.l-header-bottom`.
           <li class="pull-right primary-menu-item-bordered primary-menu-item-label">
             <span class="label label-success badge-label">On duty</span>
           </li>
-          <li class="dropdown pull-right primary-menu-item-icon">
+          <li class="dropdown pull-right primary-menu-item-icon"
+              title="Settings"
+              data-toggle="tooltip" 
+              data-placement="bottom">
             <a class="dropdown-toggle primary-menu-item-bordered primary-menu-item-icon" data-toggle="dropdown"
                href="#" aria-expanded="false">
               <i class="fa fa-gear"></i>
@@ -95,16 +98,15 @@ tabbed content is inside `.l-header-bottom`.
               <li><a href="#">Another action</a></li>
             </ul>
           </li>
-          <li class="dropdown pull-right primary-menu-item-icon">
-            <a class="dropdown-toggle primary-menu-item-bordered primary-menu-item-icon" d
-                           ata-toggle="dropdown"
+          <li class="dropdown pull-right primary-menu-item-icon"
+              title="Help & Feedback"
+              data-toggle="tooltip"
+              data-placement="bottom">
+            <a class="dropdown-toggle primary-menu-item-bordered primary-menu-item-icon" 
+                           data-toggle="dropdown"
                            href="#"
                            role="button"
-                           aria-expanded="false"
-                           rel="tooltip"
-                           bs-tooltip
-                           data-title="Help & Feedback"
-                           data-placement="bottom">
+                           aria-expanded="false">
               <i class="fa fa-question-circle"></i>
             </a>
             <ul class="dropdown-menu" role="menu">
@@ -119,11 +121,55 @@ tabbed content is inside `.l-header-bottom`.
                Property
             </a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
+              <li class="underline account-switcher">
+                <h4>Switch Accounts</h4>
+                    <ul id="header_account_selector" class="account_selector contact-selector property-selector">
+                        <input type="hidden">
+                            <li>
+                                <input type="text" class="text property-input form-control" autocomplete="off">
+                                <span class="focus"><i class="icon icon_magnifying_glass"></i></span>
+                            </li>
+                    </ul>
+                    <div class="contact-autocomplete" style="display:none;">
+                        <ul style="display:none;">
+                        </ul>
+                    <div>type account name...</div>
+                    </div>
+              </li>
+              <li class="underline">
+                <h4>Recently Accessed</h4>
+                <ul>
+                    <li>
+                        <a href="/goto-hotel-id/352/">
+                            Trump International Hotel Las Vegas, NV
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/goto-hotel-id/352/">
+                            Trump International Hotel Las Vegas, NV
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/goto-hotel-id/352/">
+                            Trump International Hotel Las Vegas, NV
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/goto-hotel-id/352/">
+                            Trump International Hotel Las Vegas, NV
+                        </a>
+                    </li>                                        
+                </ul>
+              </li>
+              <li class="underline full-account-list">
+                <a class="bordered" href="/hotel-selection">
+                    Full Account List
+                </a>
+              </li>
             </ul>
           </li>
-          <li class="primary-menu-item-bordered primary-menu-item-text pull-right prop-selector">Property</li>
+          <li class="primary-menu-item-bordered primary-menu-item-text pull-right prop-selector">
+          Property</li>
         </ul>
 
       </div>

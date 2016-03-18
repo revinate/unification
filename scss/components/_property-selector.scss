@@ -1,0 +1,40 @@
+.prop-selector {
+  li {
+    padding: 0 10px;
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        a {
+          padding: 3px 5px;
+          display: block;
+          max-width: 250px;
+          overflow-x: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+    &.account-switcher {
+      ul {
+        input {
+          margin: 0;
+          height: 26px;
+          display: inline-block;
+        }
+      }
+    }
+    h4 {
+      color: $r_brand-secondary;
+    }
+    &.full-account-list {
+      padding: 0;
+      margin: 0;
+      a {
+        color: $r_brand-secondary !important;
+      }
+    }
+  }
+}

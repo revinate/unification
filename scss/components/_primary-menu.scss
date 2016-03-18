@@ -19,6 +19,7 @@
   font-size: 14px;
   text-transform: uppercase;
   border-bottom: none;
+  letter-spacing: 0.15em;
 }
 
 .primary-menu.nav.nav-tabs > li {
@@ -36,14 +37,14 @@
   }
   &.primary-menu-item-text,
   &.primary-menu-item-label {
-    height: 26px;
+    height: 30px;
     color: $r_brand-primary-light;
   }
   &.primary-menu-item-text {
-    line-height: 30px;
+    line-height: 33px;
   }
   &.primary-menu-item-label {
-    line-height: 26px;
+    line-height: 30px;
     padding: 0 0 0 10px !important;
     a {
       padding: 0;
@@ -101,16 +102,16 @@
   cursor: default;
   margin-right: 0;
   height: 40px;
+  letter-spacing: 0.15em;
   line-height: 50px;
   @media (min-width: $screen-sm-min) {
-    height: 26px;
-    line-height: 30px;
+    height: 30px;
+    line-height: 33px;
   }
   color: $r_brand-primary-light;
   border: none;
   border-radius: 0;
   padding: 0 20px;
-  letter-spacing: .2em;
   transition: all 0.2s ease;
   &:active,
   &:focus {
