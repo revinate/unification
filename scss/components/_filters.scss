@@ -20,6 +20,10 @@
       -webkit-appearance: menulist;
       &.bootstrap-select {
         padding: 0;
+        // override menutext in chrome
+        &.btn-group .dropdown-menu li a {
+          color: inherit !important;
+        }
       }
     }
     .bootstrap-select .btn {
