@@ -2,7 +2,7 @@
 
 	'use strict';
 
-	var app = angular.module('main', ['styleguide', 'mgcrea.ngStrap', 'mgcrea.ngStrap.datepicker', 'nya.bootstrap.select']);
+	var app = angular.module('main', ['styleguide', 'mgcrea.ngStrap', 'mgcrea.ngStrap.datepicker', 'nya.bootstrap.select', 'daterangepicker']);
 
 	app.controller('MainCtrl', function ($scope) {
 		$scope.selectedDate = new Date();
@@ -18,6 +18,13 @@
 		$scope.onChangeExample3 = function(value) {
 			$scope.angularUiSwitch.example3 = !$scope.angularUiSwitch.example3;
 		}
+
+		$scope.datePicker = {
+			date: {
+				startDate: '02/02/2016',
+				endDate: '03/03/2016'
+			}
+		};
 
 		$scope.selectedItem = "1";
 		$scope.selectedItems = ['1'];

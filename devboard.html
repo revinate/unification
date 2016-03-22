@@ -248,6 +248,16 @@
               <p class="help-block">{{model4}}</p>
             </div>
 
+            <div class="form-group col-sm-3">
+              <label class="control-label" for="">Date Range Picker (jQuery)</label>
+              <input class="form-control" type="text" name="daterange" value="01/01/2015 - 01/31/2015" />
+            </div>
+
+            <div class="form-group col-sm-3">
+              <label class="control-label" for="">Date Range Picker (Angular)</label>
+              <input date-range-picker class="form-control" type="text" ng-model="datePicker.date" />
+            </div>
+
           </form>
 
           <h3>Nav Pills Numbered</h3>
@@ -551,6 +561,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 <script src="libs/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
 <script src="libs/angular/angular.min.js"></script>
+<script src="libs/bootstrap-daterangepicker/moment.js"></script>
+<script src="libs/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="libs/bootstrap-daterangepicker/daterangepicker-angular.js"></script>
 <script src="js/angular/styleguide.js"></script>
 <script src="js/angular/rev-ng-switch.js"></script>
 <script src="js/rev-jq-switch.js"></script>
@@ -579,6 +592,9 @@ var fixHelper = function(e, ui) {
 $("#sort tbody").sortable({
     helper: fixHelper
 }).disableSelection();
+
+$('input[name="daterange"]').daterangepicker();
+</script>
 </script>
 </body>
 </html>

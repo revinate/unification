@@ -78,6 +78,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <script src="libs/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
     <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/bootstrap-daterangepicker/moment.js"></script>
+    <script src="libs/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="libs/bootstrap-daterangepicker/daterangepicker-angular.js"></script>
     <script src="libs/angular-strap/dist/angular-strap.min.js"></script>
     <script src="libs/angular-strap/dist/angular-strap.tpl.min.js"></script>
     <script src="js/angular/styleguide.js"></script>
@@ -105,4 +108,6 @@
     $("#sort tbody").sortable({
         helper: fixHelper
     }).disableSelection();
+
+    $('input[name="daterange"]').daterangepicker();
     </script>

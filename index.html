@@ -1353,6 +1353,15 @@
                       <a href="https://silviomoreto.github.io/bootstrap-select/examples/" target="_blank" class="sg">silviomoreto.github.io/bootstrap-select/examples/</a>.</li>
                     <li class="sg">Submit button uses standard button styles, but can be made a block element by applying the
                       <code class="sg">.full-width</code>class.</li>
+                    <li class="sg">Call
+                      <code class="sg">$(&apos;input selector&apos;).daterangepicker()</code>to turn an input field into a Date Range Picker with jQuery</li>
+                    <li class="sg">Date Range Picker depends on
+                      <code class="sg">moment.js</code>
+                    </li>
+                    <li class="sg">Visit
+                      <a href="http://www.daterangepicker.com/" class="sg">http://www.daterangepicker.com/</a>for further instructions and examples with jQuery</li>
+                    <li class="sg">Visit
+                      <a href="https://github.com/fragaria/angular-daterangepicker" class="sg">https://github.com/fragaria/angular-daterangepicker</a>for further instructions and examples with Angular</li>
                   </ul>
                 </div>
                 <div class="sg-example">
@@ -1415,8 +1424,17 @@
                             <option value="3">Option 3</option>
                           </select>
                         </div>
+                        <div class="form-group col-sm-6">
+                          <label class="control-label" for="">Date Range Picker (jQuery)</label>
+                          <input class="form-control" type="text" name="daterange" value="01/01/2015 - 01/31/2015">
+                        </div>
+
+                        <div class="form-group col-sm-6">
+                          <label class="control-label" for="">Date Range Picker (Angular)</label>
+                          <input date-range-picker="" class="form-control" type="text" ng-model="datePicker.date">
+                        </div>
                         <div class="form-group col-sm-12">
-                          <label for="_username">Input w/ icon</label>
+                          <label for="_username">Textarea</label>
                           <textarea class="form-control" rows="6" placeholder="6-column textarea, centered"></textarea>
                           <span class="help-block">Help text goes here.</span>
                         </div>
@@ -1590,8 +1608,17 @@
         <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;3&quot;</span>&gt;</span>Option 3<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group col-sm-6&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;control-label&quot;</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;&quot;</span>&gt;</span>Date Range Picker (jQuery)<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-control&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;daterange&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;01/01/2015 - 01/31/2015&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group col-sm-6&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;control-label&quot;</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;&quot;</span>&gt;</span>Date Range Picker (Angular)<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">date-range-picker</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-control&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">ng-model</span>=<span class="hljs-value">&quot;datePicker.date&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group col-sm-12&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;_username&quot;</span>&gt;</span>Input w/ icon<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;_username&quot;</span>&gt;</span>Textarea<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-control&quot;</span> <span class="hljs-attribute">rows</span>=<span class="hljs-value">&quot;6&quot;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&quot;6-column textarea, centered&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;help-block&quot;</span>&gt;</span>Help text goes here.<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
@@ -3683,6 +3710,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
   <script src="libs/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
   <script src="libs/angular/angular.min.js"></script>
+  <script src="libs/bootstrap-daterangepicker/moment.js"></script>
+  <script src="libs/bootstrap-daterangepicker/daterangepicker.js"></script>
+  <script src="libs/bootstrap-daterangepicker/daterangepicker-angular.js"></script>
   <script src="libs/angular-strap/dist/angular-strap.min.js"></script>
   <script src="libs/angular-strap/dist/angular-strap.tpl.min.js"></script>
   <script src="js/angular/styleguide.js"></script>
@@ -3710,6 +3740,8 @@
     $("#sort tbody").sortable({
       helper: fixHelper
     }).disableSelection();
+
+    $('input[name="daterange"]').daterangepicker();
   </script>
 </body>
 

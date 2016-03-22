@@ -87,7 +87,7 @@ tabbed content is inside `.l-header-bottom`.
           </li>
           <li class="dropdown pull-right primary-menu-item-icon"
               title="Settings"
-              data-toggle="tooltip" 
+              data-toggle="tooltip"
               data-placement="bottom">
             <a class="dropdown-toggle primary-menu-item-bordered primary-menu-item-icon" data-toggle="dropdown"
                href="#" aria-expanded="false">
@@ -102,7 +102,7 @@ tabbed content is inside `.l-header-bottom`.
               title="Help & Feedback"
               data-toggle="tooltip"
               data-placement="bottom">
-            <a class="dropdown-toggle primary-menu-item-bordered primary-menu-item-icon" 
+            <a class="dropdown-toggle primary-menu-item-bordered primary-menu-item-icon"
                            data-toggle="dropdown"
                            href="#"
                            role="button"
@@ -534,6 +534,10 @@ the "Actions" column in the table below.
 - Checkboxes and radio buttons get an additional wrapper div of `.checkbox` and `.radio` respectively.  Labels should also wrap input elements here.
 - Custom select boxes for multiselect, live search and option groups use the bootstrap-select plugin. Details can be found at <a href="https://silviomoreto.github.io/bootstrap-select/examples/" target="_blank">silviomoreto.github.io/bootstrap-select/examples/</a>.
 - Submit button uses standard button styles, but can be made a block element by applying the `.full-width` class.
+- Call `$('input selector').daterangepicker()` to turn an input field into a Date Range Picker with jQuery
+- Date Range Picker depends on `moment.js`
+- Visit http://www.daterangepicker.com/ for further instructions and examples with jQuery
+- Visit https://github.com/fragaria/angular-daterangepicker for further instructions and examples with Angular
 
 
     @example
@@ -595,8 +599,17 @@ the "Actions" column in the table below.
                     <option value="3">Option 3</option>
                 </select>
             </div>
+            <div class="form-group col-sm-6">
+              <label class="control-label" for="">Date Range Picker (jQuery)</label>
+              <input class="form-control" type="text" name="daterange" value="01/01/2015 - 01/31/2015" />
+            </div>
+
+            <div class="form-group col-sm-6">
+              <label class="control-label" for="">Date Range Picker (Angular)</label>
+              <input date-range-picker class="form-control" type="text" ng-model="datePicker.date" />
+            </div>
             <div class="form-group col-sm-12">
-                <label for="_username">Input w/ icon</label>
+                <label for="_username">Textarea</label>
                 <textarea class="form-control" rows="6" placeholder="6-column textarea, centered"></textarea>
                 <span class="help-block">Help text goes here.</span>
             </div>
