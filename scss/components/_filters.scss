@@ -17,6 +17,7 @@
     .form-control, select {
       height: 28px;
       padding: 6px 10px;
+      -webkit-appearance: menulist;
       &.bootstrap-select {
         padding: 0;
       }
