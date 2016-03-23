@@ -125,7 +125,7 @@ tabbed content is inside `.l-header-bottom`.
                 <h4>Switch Accounts</h4>
                     <ul id="header_account_selector" class="account_selector contact-selector property-selector">
                         <input type="hidden">
-                            <li>
+                            <li class="prop-input">
                                 <input type="text" class="text property-input form-control" autocomplete="off">
                                 <span class="focus"><i class="icon icon_magnifying_glass"></i></span>
                             </li>
@@ -136,7 +136,7 @@ tabbed content is inside `.l-header-bottom`.
                     <div>type account name...</div>
                     </div>
               </li>
-              <li class="underline">
+              <li class="recently-accessed">
                 <h4>Recently Accessed</h4>
                 <ul>
                     <li>
