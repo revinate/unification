@@ -44,6 +44,7 @@
                   <li><a href="#primary-menu">Primary Menu</a></li>
                   <li><a href="#headers-and-breadcrumbs">Headers and Breadcrumbs</a></li>
                   <li><a href="#tables">Tables</a></li>
+                  <li><a href="#data-tables">Data Tables</a></li>
                   <li><a href="#buttons">Buttons</a></li>
                   <li><a href="#labels-and-badges">Labels &amp; Badges</a></li>
                   <li><a href="#wizard-navigation">Wizard Navigation</a></li>
@@ -83,6 +84,8 @@
     <script src="libs/bootstrap-daterangepicker/daterangepicker-angular.js"></script>
     <script src="libs/angular-strap/dist/angular-strap.min.js"></script>
     <script src="libs/angular-strap/dist/angular-strap.tpl.min.js"></script>
+    <script src="libs/jquery-datatables/js/jquery.dataTables.js"></script>
+    <script src="libs/angular-datatables/angular-datatables/dist/angular-datatables.min.js"></script>
     <script src="js/angular/styleguide.js"></script>
     <script src="js/angular/rev-ng-switch.js"></script>
     <script src="js/rev-jq-switch.js"></script>
@@ -92,22 +95,25 @@
     <script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
     <script src="js/main.js"></script>
     <script>
-    $('.bs-docs-sidenav li').click(function(){
-        $(this).siblings('li').removeClass('active');
-        $(this).addClass('active');
-    });
-    $('[data-toggle="tooltip"]').tooltip();
-    $('[data-rev-jq-switch=true]').revSwitch();
-    var fixHelper = function(e, ui) {
-        ui.children().each(function() {
-            $(this).width($(this).width());
-        });
-        return ui;
-    };
+      $('.bs-docs-sidenav li').click(function(){
+          $(this).siblings('li').removeClass('active');
+          $(this).addClass('active');
+      });
+      $('[data-toggle="tooltip"]').tooltip();
+      $('[data-rev-jq-switch=true]').revSwitch();
+      var fixHelper = function(e, ui) {
+          ui.children().each(function() {
+              $(this).width($(this).width());
+          });
+          return ui;
+      };
 
-    $("#sort tbody").sortable({
-        helper: fixHelper
-    }).disableSelection();
+      $("#sort tbody").sortable({
+          helper: fixHelper
+      }).disableSelection();
 
-    $('input[name="daterange"]').daterangepicker();
+      $('input[name="daterange"]').daterangepicker({
+          applyClass: 'btn-primary',
+          cancelClass: 'btn-link'
+      });
     </script>

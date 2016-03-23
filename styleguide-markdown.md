@@ -425,6 +425,42 @@ the "Actions" column in the table below.
         </div>
     </div>
 
+###Data Tables
+
+####Setup Instructions
+
+- `bower install angular-datatables`
+- Dependencies: `bower install jquery` and `bower install datatables.net`
+- Add as a dependency of your angular module `angular.module('mymodule', ['datatables']);`
+- Refer to http://l-lin.github.io/angular-datatables/#/welcome for instructions on configuration and extensions
+
+<table class="table table-striped table-bordered" datatable>
+  <thead>
+  <tr>
+      <th>ID</th>
+      <th>First name</th>
+      <th>Last name</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+      <td>1</td>
+      <td>Foo</td>
+      <td>Bar</td>
+  </tr>
+  <tr>
+      <td>123</td>
+      <td>Someone</td>
+      <td>Youknow</td>
+  </tr>
+  <tr>
+      <td>987</td>
+      <td>Iamout</td>
+      <td>Ofinspiration</td>
+  </tr>
+  </tbody>
+</table>
+
 ###Buttons
 
 - `.btn` can be applied to button and anchor elements
@@ -606,7 +642,7 @@ the "Actions" column in the table below.
 
             <div class="form-group col-sm-6">
               <label class="control-label" for="">Date Range Picker (Angular)</label>
-              <input date-range-picker class="form-control" type="text" ng-model="datePicker.date" />
+              <input date-range-picker class="form-control" data-apply-class="btn-primary" data-cancel-class="btn-link" type="text" ng-model="datePicker.date" />
             </div>
             <div class="form-group col-sm-12">
                 <label for="_username">Textarea</label>

@@ -2,7 +2,7 @@
 
 	'use strict';
 
-	var app = angular.module('main', ['styleguide', 'mgcrea.ngStrap', 'mgcrea.ngStrap.datepicker', 'nya.bootstrap.select', 'daterangepicker']);
+	var app = angular.module('main', ['styleguide', 'mgcrea.ngStrap', 'mgcrea.ngStrap.datepicker', 'nya.bootstrap.select', 'daterangepicker', 'datatables']);
 
 	app.controller('MainCtrl', function ($scope) {
 		$scope.selectedDate = new Date();
@@ -23,6 +23,10 @@
 			date: {
 				startDate: '02/02/2016',
 				endDate: '03/03/2016'
+			},
+			options: {
+				applyClass: 'btn-primary',
+				cancelClass: 'btn-link'
 			}
 		};
 
