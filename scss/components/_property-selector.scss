@@ -1,4 +1,4 @@
-.prop-selector {
+.prop-selector, .settings-menu {
   li {
     padding: 0 10px;
     ul {
@@ -14,6 +14,12 @@
           max-width: 250px;
           overflow-x: hidden;
           text-overflow: ellipsis;
+          color: #939BA2 !important;
+          border-bottom: 1px solid #283745;
+          &:hover {
+            color: #ffffff !important;
+            text-decoration: none;
+          }
         }
       }
     }
@@ -27,13 +33,16 @@
       }
     }
     h4 {
-      color: $r_brand-secondary;
+      color: #ffffff;
     }
     &.full-account-list {
       padding: 0;
       margin: 0;
       a {
-        color: $r_brand-secondary !important;
+        color: #939BA2 !important;
+        &:hover {
+          color: #ffffff !important;
+        }
       }
     }
   }

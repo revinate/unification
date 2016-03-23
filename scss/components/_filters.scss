@@ -3,6 +3,7 @@
   border-top: 1px solid #C8DBEE;
   border-bottom: 1px solid #C8DBEE;
   padding: 10px 0 0;
+  margin-top: 25px;
   .form-group {
     display: inline-block;
     width: auto;
@@ -16,8 +17,13 @@
     .form-control, select {
       height: 28px;
       padding: 6px 10px;
+      -webkit-appearance: menulist;
       &.bootstrap-select {
         padding: 0;
+        // override menutext in chrome
+        &.btn-group .dropdown-menu li a {
+          color: inherit !important;
+        }
       }
     }
     .bootstrap-select .btn {
