@@ -1,54 +1,56 @@
 .prop-selector, .settings-menu {
-  li {
-    padding: 0;
-    ul {
-      margin: 0;
+  ul {
+    max-width: 250px;
+    li {
       padding: 0;
-      max-width: 250px;
-      li {
-        list-style-type: none;
-        padding: 0;
+      ul {
         margin: 0;
-        a {
-          padding: 3px 15px;
-          display: block;
-          overflow-x: hidden;
-          text-overflow: ellipsis;
-          color: #939BA2 !important;
-          border-bottom: 1px solid #283745;
-          &:hover {
-            color: #ffffff !important;
-            text-decoration: none;
+        padding: 0;
+        li {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          a {
+            padding: 3px 15px;
+            display: block;
+            overflow-x: hidden;
+            text-overflow: ellipsis;
+            color: #939BA2 !important;
+            border-bottom: 1px solid #283745;
+            &:hover {
+              color: #ffffff !important;
+              text-decoration: none;
+            }
           }
         }
       }
-    }
-    &.account-switcher {
-      ul {
-        input {
-          margin: 0;
-          height: 26px;
-          display: inline-block;
+      &.account-switcher {
+        ul {
+          input {
+            margin: 0;
+            height: 26px;
+            display: inline-block;
+          }
         }
       }
-    }
-    &.prop-input {
-      padding: 0 10px;
-    }
-    h4 {
-      color: #ffffff;
-      padding: 0 10px;
-    }
-    &.recently-accessed {
-      padding: 0;
-    }
-    &.full-account-list {
-      padding: 0;
-      margin: 0;
-      a {
-        color: #939BA2 !important;
-        &:hover {
-          color: #ffffff !important;
+      &.prop-input {
+        padding: 0 10px;
+      }
+      h4 {
+        color: #ffffff;
+        padding: 0 10px;
+      }
+      &.recently-accessed {
+        padding: 0;
+      }
+      &.full-account-list {
+        padding: 0;
+        margin: 0;
+        a {
+          color: #939BA2 !important;
+          &:hover {
+            color: #ffffff !important;
+          }
         }
       }
     }
