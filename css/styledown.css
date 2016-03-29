@@ -288,6 +288,7 @@ code.sg:first-child {
   font-family: Lato;
   color: #283767;
   border-left: 3px solid transparent;
+  padding: 5px 15px;
 }
 #styleguide .sidebar-menu ul li a:hover, #styleguide .sidebar-menu ul li.active a {
   font-family: LatoBold;
