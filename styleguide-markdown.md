@@ -1798,7 +1798,7 @@ the "Actions" column in the table below.
     <div class="row main-filter-bar">
         <div class="col-md-12">
         <div class="form-group">
-            <label>Views/<a href="#">Save as View</a></label>
+            <label>Views / <a href="#">Save as View</a></label>
             <select class="selectpicker form-control" title="Default View">
                 <option value="1">View 1</option>
                 <option value="2">View 2</option>
