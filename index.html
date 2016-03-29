@@ -3794,7 +3794,11 @@
 
     $('input[name="daterange"]').daterangepicker({
       applyClass: 'btn-primary',
-      cancelClass: 'btn-link'
+      cancelClass: 'btn-link',
+      ranges: {
+        'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+        'Last 30 Days': [moment().subtract(29, 'days'), moment()]
+      }
     });
   </script>
 </body>
