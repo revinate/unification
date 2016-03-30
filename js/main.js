@@ -2,9 +2,9 @@
 
 	'use strict';
 
-	var app = angular.module('main', ['styleguide', 'mgcrea.ngStrap', 'mgcrea.ngStrap.datepicker', 'nya.bootstrap.select', 'daterangepicker', 'datatables']);
+	var app = angular.module('main', ['styleguide', 'mgcrea.ngStrap', 'mgcrea.ngStrap.datepicker', 'nya.bootstrap.select', 'daterangepicker', 'datatables', 'datatables.bootstrap']);
 
-	app.controller('MainCtrl', function ($scope) {
+	app.controller('MainCtrl', function ($scope, DTOptionsBuilder, DTColumnBuilder) {
 		$scope.selectedDate = new Date();
 
 		$scope.angularUiSwitch = {
@@ -64,6 +64,8 @@
 		  {name: 'George', class: 'Class C'},
 		  {name: 'Harry', class: 'Class C'}
 		];
+
+    $scope.dtOptions = DTOptionsBuilder.newOptions().withBootstrap();
 
 	});
 

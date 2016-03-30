@@ -434,7 +434,7 @@ the "Actions" column in the table below.
 - Add as a dependency of your angular module `angular.module('mymodule', ['datatables']);`
 - Refer to http://l-lin.github.io/angular-datatables/#/welcome for instructions on configuration and extensions
 
-<table class="table table-striped table-bordered" datatable>
+<table class="table table-striped table-bordered" datatable dt-options="dtOptions">
   <thead>
   <tr>
       <th>ID</th>

@@ -86,6 +86,7 @@
     <script src="libs/angular-strap/dist/angular-strap.tpl.min.js"></script>
     <script src="libs/jquery-datatables/js/jquery.dataTables.js"></script>
     <script src="libs/angular-datatables/angular-datatables/dist/angular-datatables.min.js"></script>
+    <script src="libs/angular-datatables/angular-datatables/dist/plugins/bootstrap/angular-datatables.bootstrap.min.js"></script>
     <script src="js/angular/styleguide.js"></script>
     <script src="js/angular/rev-ng-switch.js"></script>
     <script src="js/rev-jq-switch.js"></script>
