@@ -30,22 +30,19 @@ table.dataTable.nowrap td {
   border-radius: 3px;
 
   .dataTables_length,
-  .dataTables_filter,
-  .dataTables_info,
-  .dataTables_paginate {
-    width: 45%;
-    padding: 10px;
+  .dataTables_filter {
+    padding: 10px 10px 0;
     box-sizing: border-box;
   }
 
-  .dataTables_length,
-  .dataTables_info {
-    float: left;
+  .dataTables_info,
+  .dataTables_paginate {
+    padding: 5px 10px 5px;
+    box-sizing: border-box;
   }
 
-  .dataTables_filter,
-  .dataTables_paginate {
-    float: right;
+  .dataTables_info {
+    line-height: 35px;
   }
 }
 
