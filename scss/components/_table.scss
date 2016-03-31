@@ -32,6 +32,9 @@
       }
     }
   }
+  tbody > tr.subhead > td {
+    font-family: LatoBold;
+  }
   &.upload-table {
     tbody > tr > td {
       span {
