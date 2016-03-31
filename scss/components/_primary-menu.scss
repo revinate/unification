@@ -60,6 +60,17 @@
     @media (min-width: $screen-sm-min) {
       max-width: 36px;
     }
+    ul li.is-superadmin {
+      background: #371E49;
+      a {
+        color: darken(#fff, 40%);
+        &:hover {
+          background: #371E49;
+          color: #fff;
+        }
+
+      }
+    }
   }
   &.prop-selector {
     // see prop selector component for more specifics on dropdown
