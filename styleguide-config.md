@@ -128,6 +128,8 @@
         cb(moment().subtract(29, 'days'), moment());
 
         $('#reportrange').daterangepicker({
+            applyClass: 'btn-primary',
+            cancelClass: 'btn-link',
             ranges: {
                'Today': [moment(), moment()],
                'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
