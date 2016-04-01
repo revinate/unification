@@ -455,6 +455,9 @@ $daterangepicker-ranges-active-border-radius: $daterangepicker-border-radius !de
       color: $daterangepicker-ranges-hover-color;
     }
   }
+  li:last-child {
+    display: none;
+  }
 }
 
 /*  Larger Screen Styling */

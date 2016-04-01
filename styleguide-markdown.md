@@ -635,15 +635,21 @@ the "Actions" column in the table below.
                     <option value="3">Option 3</option>
                 </select>
             </div>
-            <div class="form-group col-sm-6">
+            <div class="form-group col-sm-4">
               <label class="control-label" for="">Date Range Picker (jQuery)</label>
               <input class="form-control" type="text" name="daterange" value="01/01/2015 - 01/31/2015" />
             </div>
 
-            <div class="form-group col-sm-6">
+            <div class="form-group col-sm-4">
               <label class="control-label" for="">Date Range Picker (Angular)</label>
               <input date-range-picker class="form-control" data-apply-class="btn-primary" data-cancel-class="btn-link" type="text" ng-model="datePicker.date" />
             </div>
+
+            <div class="form-group col-sm-4">
+                <label for="reportrange" class="control-label">Custom Data Range Picker</label>
+                <input type="text" id="reportrange" class="form-control">
+            </div>
+
             <div class="form-group col-sm-12">
                 <label for="_username">Textarea</label>
                 <textarea class="form-control" rows="6" placeholder="6-column textarea, centered"></textarea>

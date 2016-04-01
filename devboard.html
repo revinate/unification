@@ -258,6 +258,11 @@
               <input date-range-picker class="form-control" type="text" ng-model="datePicker.date" />
             </div>
 
+            <div class="form-group col-sm-3">
+                <label for="reportrange" class="control-label">Custom Data Range Picker</label>
+                <input type="text" id="reportrange" class="form-control">
+            </div>
+
           </form>
 
           <h3>Data Tables</h3>
@@ -601,6 +606,7 @@
 <!-- datatable -->
 <script src="/libs/jquery-datatables/js/jquery.dataTables.js"></script>
 <script src="/libs/angular-datatables/angular-datatables/dist/angular-datatables.min.js"></script>
+<script src="libs/angular-datatables/angular-datatables/dist/plugins/bootstrap/angular-datatables.bootstrap.min.js"></script>
 
 <script src="libs/bootstrap-daterangepicker/moment.js"></script>
 <script src="libs/bootstrap-daterangepicker/daterangepicker.js"></script>
@@ -636,6 +642,28 @@ $("#sort tbody").sortable({
 
 $('input[name="daterange"]').daterangepicker();
 </script>
+
+<script type="text/javascript">
+$(function() {
+
+    function cb(start, end) {
+        $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+    }
+    cb(moment().subtract(29, 'days'), moment());
+
+    $('#reportrange').daterangepicker({
+        ranges: {
+           'Today': [moment(), moment()],
+           'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+           'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+           'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+           'This Month': [moment().startOf('month'), moment().endOf('month')],
+           'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        }
+    }, cb);
+
+});
 </script>
+
 </body>
 </html>
