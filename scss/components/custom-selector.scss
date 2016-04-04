@@ -7,10 +7,10 @@
   .contact-autocomplete {
     ul {
       background: #ccc;
-    }
-    li {
-      &:hover {
-        background: #fff;
+      li {
+        &.hover {
+          background: #fff;
+        }
       }
     }
   }
