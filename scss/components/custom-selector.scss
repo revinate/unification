@@ -1,8 +1,14 @@
 .custom-selector {
-  ul {
+  .topic_selector, .contact-selector {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    li {
+      input[type="text"] {
+        display: block;
+      }
+    }
+
   }
   .contact-autocomplete {
     ul {
