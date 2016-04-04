@@ -53,3 +53,7 @@ label {
   font-style: italic;
   font-size: 12px;
 }
+
+select.form-control {
+  -webkit-appearance: menulist;
+}
