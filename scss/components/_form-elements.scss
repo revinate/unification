@@ -54,6 +54,12 @@ label {
   font-size: 12px;
 }
 
-select.form-control {
+.form-control, select {
   -webkit-appearance: menulist;
+  &.bootstrap-select {
+    // override menutext in chrome
+    &.btn-group .dropdown-menu li a {
+      color: inherit !important;
+    }
+  }
 }
