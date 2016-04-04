@@ -130,6 +130,7 @@
         $('#reportrange').daterangepicker({
             applyClass: 'btn-primary',
             cancelClass: 'btn-link',
+            opens: 'left',
             ranges: {
                'Today': [moment(), moment()],
                'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
