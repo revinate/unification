@@ -6,16 +6,22 @@
     li {
       input[type="text"] {
         display: block;
+        width: 100%;
       }
     }
 
   }
   .contact-autocomplete {
     ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
       background: #ccc;
       li {
+        padding: 2px 5px;
         &.hover {
           background: #fff;
+          cursor: pointer;
         }
       }
     }
