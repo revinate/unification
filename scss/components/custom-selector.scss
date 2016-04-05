@@ -17,15 +17,24 @@
 
   }
   .contact-autocomplete {
+    background: #f5f5f5;
+    position: absolute;
+    z-index: 1000;
+    width: 255px;
+    height: 200px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    font-size: 12px;
     ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
-      background: #ccc;
       li {
-        padding: 2px 5px;
+        padding: 8px 12px;
+        border-bottom: 1px solid #ccc;
         &.hover {
-          background: #fff;
+          background: #ccc;
           cursor: pointer;
         }
       }
