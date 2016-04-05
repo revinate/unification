@@ -3,8 +3,13 @@ ul.global-actions-nav {
   li {
     display: inline-block;
     font-weight: bold;
+    letter-spacing: 0;
+    margin: 0;
+    padding: 0;
     a {
       color: #333;
+      margin: 0;
+      padding: 0;
       &:hover {
         color: #3BA1F8;
       }
