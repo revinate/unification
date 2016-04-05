@@ -26,6 +26,7 @@
     border-right: 1px solid #ccc;
     border-left: 1px solid #ccc;
     font-size: 12px;
+    overflow-y: scroll;
     ul {
       list-style-type: none;
       margin: 0;
@@ -33,6 +34,9 @@
       li {
         padding: 8px 12px;
         border-bottom: 1px solid #ccc;
+        em {
+          font-weight: bold;
+        }
         &.hover {
           background: #ccc;
           cursor: pointer;
