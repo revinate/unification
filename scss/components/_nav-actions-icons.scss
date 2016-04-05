@@ -3,7 +3,8 @@ ul.global-actions-nav {
   margin: 0;
   padding: 0;
   li {
-    display: inline-block;
+    display: block;
+    float: right;
     font-weight: bold;
     letter-spacing: 0;
     margin: 0 0 0 5px !important;
