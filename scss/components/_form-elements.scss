@@ -54,7 +54,7 @@ label {
   font-size: 12px;
 }
 
-.form-control, select {
+select.form-control {
   -webkit-appearance: menulist;
   &.bootstrap-select {
     // override menutext in chrome
