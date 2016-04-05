@@ -40,5 +40,12 @@
         padding: 6px 12px;
       }
     }
+    .custom-selector {
+      .custom-selector-list {
+        li>input[type="text"] {
+          height: 28px;
+        }
+      }
+    }
   }
 }
