@@ -1,6 +1,24 @@
+//
+// A stylesheet for use with Bootstrap 3.x
+// @author: Dan Grossman http://www.dangrossman.info/
+// @copyright: Copyright (c) 2012-2015 Dan Grossman. All rights reserved.
+// @license: Licensed under the MIT license. See http://www.opensource.org/licenses/mit-license.php
+// @website: https://www.improvely.com/
+//
+
+//
+// VARIABLES
+//
+
+//
+// Settings
+
+// The class name to contain everything within.
 $prefix-class: daterangepicker;
 $arrow-size:     7px !default;
 
+//
+// Colors
 $daterangepicker-color:                      inherit !default;
 $daterangepicker-bg-color:                   #fff !default;
 
@@ -104,6 +122,10 @@ $daterangepicker-ranges-active-border-radius: $daterangepicker-border-radius !de
   padding: $daterangepicker-padding;
   margin-top: $daterangepicker-border-size;
 
+  // TODO: Should these be parameterized??
+  top: 100px;
+  left: 20px;
+
   .applyBtn,
   .cancelBtn {
     float: right;
@@ -114,10 +136,6 @@ $daterangepicker-ranges-active-border-radius: $daterangepicker-border-radius !de
   .cancelBtn.btn-link {
     padding: 6px 10px 5px !important;
   }
-
-  // TODO: Should these be parameterized??
-  top: 100px;
-  left: 20px;
 
   $arrow-prefix-size: $arrow-size;
   $arrow-suffix-size: ($arrow-size - $daterangepicker-border-size);
@@ -422,10 +440,8 @@ $daterangepicker-ranges-active-border-radius: $daterangepicker-border-radius !de
 .ranges {
   font-size: 11px;
   float: none;
-  //margin: 4px;
+  margin: 4px;
   text-align: left;
-  padding: 5px;
-  clear: both;
 
   ul {
     list-style: none;
@@ -440,7 +456,7 @@ $daterangepicker-ranges-active-border-radius: $daterangepicker-border-radius !de
     border: $daterangepicker-ranges-border-size solid $daterangepicker-ranges-border-color;
     border-radius: $daterangepicker-ranges-border-radius;
     color: $daterangepicker-ranges-color;
-    padding: 4px 12px;
+    padding: 3px 12px;
     margin-bottom: 8px;
     cursor: pointer;
 
@@ -463,11 +479,11 @@ $daterangepicker-ranges-active-border-radius: $daterangepicker-border-radius !de
   .#{$prefix-class} {
     width: auto;
 
-    // .ranges {
-    //   ul {
-    //     width: 160px;
-    //   }
-    // }
+    .ranges {
+      ul {
+        width: 160px;
+      }
+    }
 
     &.single {
       .ranges {
@@ -480,7 +496,7 @@ $daterangepicker-ranges-active-border-radius: $daterangepicker-border-radius !de
         clear: none;
       }
 
-      .calendar {
+      .ranges, .calendar {
         float:left;
       }
     }
@@ -516,7 +532,7 @@ $daterangepicker-ranges-active-border-radius: $daterangepicker-border-radius !de
       padding-right: 12px;
     }
 
-    .calendar {
+    .ranges, .calendar {
       float: left;
     }
   }
@@ -525,8 +541,10 @@ $daterangepicker-ranges-active-border-radius: $daterangepicker-border-radius !de
 @media (min-width: 730px) {
   .#{$prefix-class} {
     .ranges {
-      width: 100%;
+      width: auto;
+      float: left;
     }
+
     .calendar.left {
       clear: none;
     }
