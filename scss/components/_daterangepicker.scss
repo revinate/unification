@@ -26,16 +26,16 @@ $daterangepicker-cell-color:                 $daterangepicker-color !default;
 $daterangepicker-cell-border-color:          transparent !default;
 $daterangepicker-cell-bg-color:              $daterangepicker-bg-color !default;
 
-$daterangepicker-cell-hover-color:           $daterangepicker-color !default;
-$daterangepicker-cell-hover-border-color:    $daterangepicker-cell-border-color !default;
-$daterangepicker-cell-hover-bg-color:        #eee !default;
+$daterangepicker-cell-hover-color:           #3BA1F8 !default;
+$daterangepicker-cell-hover-border-color:    transparent !default;
+$daterangepicker-cell-hover-bg-color:        #EBF5FE !default;
 
-$daterangepicker-in-range-color:             #000 !default;
+$daterangepicker-in-range-color:             #28A68A !default;
 $daterangepicker-in-range-border-color:      transparent !default;
-$daterangepicker-in-range-bg-color:          #ebf4f8 !default;
+$daterangepicker-in-range-bg-color:          #DBF0EB !default;
 
-$daterangepicker-active-color:               #fff !default;
-$daterangepicker-active-bg-color:            #3BA1F8 !default;
+$daterangepicker-active-color:               #DBF0EB !default;
+$daterangepicker-active-bg-color:            #28A68A !default;
 $daterangepicker-active-border-color:        transparent !default;
 
 $daterangepicker-unselected-color:           #999 !default;
@@ -94,7 +94,7 @@ $daterangepicker-control-disabled-color:       #ccc !default;
 //
 // Ranges
 $daterangepicker-ranges-color:                darken(#3BA1F8,5%) !default;
-$daterangepicker-ranges-bg-color:             #f5f5f5 !default;
+$daterangepicker-ranges-bg-color:             #DBF0EB !default;
 
 $daterangepicker-ranges-border-size:          1px !default;
 $daterangepicker-ranges-border-color:         $daterangepicker-ranges-bg-color !default;
@@ -287,6 +287,7 @@ $daterangepicker-ranges-active-border-radius: $daterangepicker-border-radius !de
 
     &.available {
       &:hover {
+        color: $daterangepicker-cell-hover-color;
         background: $daterangepicker-cell-hover-bg-color;
       }
     }
@@ -299,6 +300,7 @@ $daterangepicker-ranges-active-border-radius: $daterangepicker-border-radius !de
 
   td {
     &.off {
+      @extend .FontLatoLight;
       &, &.in-range, &.start-date, &.end-date {
         background-color: $daterangepicker-unselected-bg-color;
         border-color: $daterangepicker-unselected-border-color;
@@ -330,11 +332,9 @@ $daterangepicker-ranges-active-border-radius: $daterangepicker-border-radius !de
     }
 
     &.active {
-      &, &:hover {
-        background-color: $daterangepicker-active-bg-color;
-        border-color: $daterangepicker-active-border-color;
-        color: $daterangepicker-active-color;
-      }
+      background-color: $daterangepicker-active-bg-color;
+      border-color: $daterangepicker-active-border-color;
+      color: $daterangepicker-active-color;
     }
   }
 
@@ -452,24 +452,27 @@ $daterangepicker-ranges-active-border-radius: $daterangepicker-border-radius !de
 
   li {
     font-size: 13px;
-    background: $daterangepicker-ranges-bg-color;
-    border: $daterangepicker-ranges-border-size solid $daterangepicker-ranges-border-color;
+    background: #fafafa;
+    border: 1px #fafafa solid;
     border-radius: $daterangepicker-ranges-border-radius;
-    color: $daterangepicker-ranges-color;
-    padding: 3px 12px;
+    color: #000000;
+    padding: 4px 12px;
     margin-bottom: 8px;
     cursor: pointer;
 
     &:hover {
-      background: $daterangepicker-ranges-hover-bg-color;
-      border: $daterangepicker-ranges-hover-border-size solid $daterangepicker-ranges-hover-border-color;
-      color: $daterangepicker-ranges-hover-color;
+      background: #EBF5FE;
+      color: #3BA1F8;
     }
 
     &.active {
-      background: $daterangepicker-ranges-hover-bg-color;
-      border: $daterangepicker-ranges-hover-border-size solid $daterangepicker-ranges-hover-border-color;
-      color: $daterangepicker-ranges-hover-color;
+      background: #DBF0EB;
+      border: transparent;
+      color: #28A68A;
+      &:hover {
+        background: #EBF5FE;
+        color: #3BA1F8;
+      }
     }
   }
 }
