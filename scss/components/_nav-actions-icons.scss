@@ -26,5 +26,13 @@ ul.global-actions-nav {
       cursor: pointer;
       color: #3BA1F8;
     }
+    &.btn.btn-circle.btn-default-secondary {
+      &:hover {
+        border-color: rgba(#3BA1F8, .5);
+        a {
+          color: #3BA1F8;
+        }
+      }
+    }
   }
 }
