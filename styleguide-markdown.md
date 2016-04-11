@@ -498,22 +498,25 @@ the "Actions" column in the table below.
     <button class="btn btn-link btn-sm" disabled="disabled">Link (disabled)</button>
     <br />
     <br />
-    <button class="btn btn-circle btn-xs btn-default-secondary mg-r-xs"
-            data-toggle='tooltip' data-placement='bottom' title='Print'>
-      <i class="fa fa-print"></i>
-    </button>
-    <button class="btn btn-circle btn-xs btn-default-secondary mg-r-xs"
-            data-toggle='tooltip' data-placement='bottom' title='Share'>
-      <i class="fa fa-share-square-o"></i>
-    </button>
-    <button class="btn btn-circle btn-xs btn-default-secondary mg-r-xs"
-            data-toggle='tooltip' data-placement='bottom' title='Export to CSV'>
-      <i class="fa fa-file-text-o"></i>
-    </button>
-    <button class="btn btn-circle btn-xs btn-default-secondary mg-r-xs"
-            data-toggle='tooltip' data-placement='bottom' title='Export to PDF'>
-      <i class="fa fa-file-pdf-o"></i>
-    </button>
+    <ul class="global-actions-nav">
+      <li class="btn btn-circle btn-xs btn-default-secondary mg-r-xs"
+              data-toggle='tooltip' data-placement='bottom' title='Print'>
+        <a href="#"><i class="fa fa-print"></i></a>
+      </li>
+      <li class="btn btn-circle btn-xs btn-default-secondary mg-r-xs"
+              data-toggle='tooltip' data-placement='bottom' title='Share'>
+        <a href="#"><i class="fa fa-share-square-o"></i></a>
+      </li>
+      <li class="btn btn-circle btn-xs btn-default-secondary mg-r-xs"
+              data-toggle='tooltip' data-placement='bottom' title='Export to CSV'>
+        <a href="#"><i class="fa fa-file-text-o"></i></a>
+      </li>
+      <li class="btn btn-circle btn-xs btn-default-secondary mg-r-xs"
+              data-toggle='tooltip' data-placement='bottom' title='Export to PDF'>
+        <a href="#"><i class="fa fa-file-pdf-o"></i></a>
+      </li>
+    </ul>
+
 
 ###Labels and Badges
 
