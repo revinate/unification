@@ -326,3 +326,38 @@
     }
   }
 }
+
+//actions buttons
+.actions-buttons {
+  .btn-group {
+    width: 100%;
+    .dropdown-menu {
+      border-color: #9DD0FB;
+      padding: 0;
+      li {
+        border-bottom: 1px solid  #CEE7FD;
+        a {
+          color: #2295F7;
+        }
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    position: relative;
+    @extend .btn-sm;
+
+    &.btn-reply {
+      margin-bottom: 35px;
+    }
+    i.button-icon {
+      position: absolute;
+      left: 10px;
+    }
+  }
+}

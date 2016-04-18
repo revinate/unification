@@ -482,6 +482,7 @@ the "Actions" column in the table below.
     <button class="btn btn-info">Info</button>
     <button class="btn btn-delete">Delete</button>
     <button class="btn btn-link">Link</button>
+    
     <br />
     <br />
     <button class="btn btn-internal-primary">Internal Use - primary</button>
@@ -516,6 +517,29 @@ the "Actions" column in the table below.
         <a href="#"><i class="fa fa-file-pdf-o"></i></a>
       </li>
     </ul>
+    <br />
+    <br />
+    <div class="row">
+        <div class="col-md-3">
+            <div class="actions-buttons">
+                <button class="btn btn-primary btn-rounded btn-reply">Reply at Revinate</button>
+                <button class="btn btn-secondary btn-rounded"><i class="fa fa-star button-icon"></i>Save Review</button>
+                <button class="btn btn-secondary btn-rounded"><i class="fa fa-tag button-icon"></i>Create Ticket</button>
+                <div class="btn-group">
+                    <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+                        More Actions 
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">action 1</a></li>
+                        <li><a href="#">action 2</a></li>
+                        <li><a href="#">action 3</a></li>
+                        <li><a href="#">action 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 ###Labels and Badges
