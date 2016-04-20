@@ -130,8 +130,9 @@ tabbed content is inside `.l-header-bottom`.
                                 <span class="focus"><i class="icon icon_magnifying_glass"></i></span>
                             </li>
                     </ul>
-                    <div class="contact-autocomplete" style="display:none;">
-                        <ul style="display:none;">
+                    <div class="contact-autocomplete">
+                        <ul>
+                        <li>Property one</li>
                         </ul>
                     <div>type account name...</div>
                     </div>
