@@ -359,6 +359,14 @@
       position: absolute;
       left: 10px;
     }
+    &.btn-action-taken {
+      border-color: #9CDFD0;
+      color: #3CBFA2;
+      background: #fff;
+      &:hover {
+        background-color: darken(#fff, 10%)
+      }
+    }
   }
   p {
     font-size: 12px;

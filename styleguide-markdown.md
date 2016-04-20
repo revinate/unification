@@ -525,7 +525,7 @@ the "Actions" column in the table below.
             <div class="actions-buttons">
                 <button class="btn btn-primary btn-rounded btn-reply">Reply at Revinate</button>
                 <button class="btn btn-secondary btn-rounded"><i class="fa fa-star button-icon"></i>Save Review</button>
-                <button class="btn btn-secondary btn-rounded"><i class="fa fa-tag button-icon"></i>Create Ticket</button>
+                <button class="btn btn-rounded btn-action-taken"><i class="fa fa-tag button-icon"></i>View Ticket</button>
                 <div class="btn-group">
                     <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
                         More Actions 
