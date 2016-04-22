@@ -24,6 +24,9 @@
         // override menutext in chrome
         &.btn-group .dropdown-menu li a {
           color: inherit !important;
+          &:hover {
+            color: #3BA1F8 !important;
+          }
         }
       }
     }
