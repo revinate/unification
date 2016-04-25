@@ -109,6 +109,9 @@
   &.full-width {
     width: 100%;
   }
+  &:focus, &:active, &.active, &:visited, &:enabled {
+    outline: none !important;
+  }
 }
 
 .btn-header {
