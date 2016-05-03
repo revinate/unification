@@ -338,12 +338,14 @@
       border-color: #9DD0FB;
       padding: 0;
       li {
-        border-bottom: 1px solid  #CEE7FD;
         a {
           color: #2295F7;
+          border-bottom: 1px solid  #CEE7FD;
         }
         &:last-child {
-          border-bottom: none;
+          a {
+            border-bottom: none;
+          }
         }
       }
     }
