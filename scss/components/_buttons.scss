@@ -359,6 +359,8 @@
 
     &.btn-reply {
       margin-bottom: 35px;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     i.button-icon {
       position: absolute;
