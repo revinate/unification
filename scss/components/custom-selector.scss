@@ -48,14 +48,14 @@
     border: 1px solid #ccc;
     font-size: 13px;
     overflow-y: scroll;
+    div {
+      color: #999;
+      padding: 6px 12px;
+    }
     ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
-      div {
-        color: #999;
-        padding: 6px 12px;
-      }
       li {
         padding: 6px 12px;
         border: none;
