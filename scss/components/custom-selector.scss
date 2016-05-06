@@ -106,4 +106,5 @@
 .main-filter-bar .form-group .form-control.bootstrap-select.btn-group .dropdown-menu li a.is-unselectable-item:hover,
 .main-filter-bar .form-group select.bootstrap-select.btn-group .dropdown-menu li a.is-unselectable-item:hover {
   color: #333 !important;
+  cursor: default !important;
 }

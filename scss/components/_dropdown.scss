@@ -19,6 +19,16 @@
       outline: none;
     }
   }
+  > li.selected > a {
+    background: #DBF0EB;
+    color: #28A68A;
+    &:hover,
+    &:active,
+    &:focus {
+      background: #DBF0EB;
+      color: #28A68A;
+    }
+  }
   > li:last-child a {
     border-bottom: none;
   }
