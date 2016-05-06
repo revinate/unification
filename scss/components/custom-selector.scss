@@ -75,6 +75,8 @@
   }
 }
 
+
+
 .bootstrap-select {
   a {
     &.is-unselectable-item {
@@ -94,4 +96,10 @@
       padding: 6px 36px;
     }
   }
+}
+
+/* OVERRIDE - PS. we should avoid deep selectors */
+.main-filter-bar .form-group .form-control.bootstrap-select.btn-group .dropdown-menu li a.is-unselectable-item:hover,
+.main-filter-bar .form-group select.bootstrap-select.btn-group .dropdown-menu li a.is-unselectable-item:hover {
+  color: #333 !important;
 }
