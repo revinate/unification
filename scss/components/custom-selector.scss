@@ -95,6 +95,11 @@
     *.triple-indent {
       padding: 6px 36px;
     }
+    &.selector-top-line {
+      font-family: LatoBlack;
+      border-top: 1px #ccc solid;
+      margin-top: 9px;
+    }
   }
 }
 
