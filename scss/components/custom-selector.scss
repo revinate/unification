@@ -74,3 +74,24 @@
     }
   }
 }
+
+.bootstrap-select {
+  a {
+    &.is-unselectable-item {
+      font-family: LatoBlack;
+      &:hover {
+        cursor: default;
+        background: #FFFFFF !important;
+        color: #333 !important;
+      }
+    }
+    &.double-indent-checkbox,
+    &.double-indent {
+      padding: 6px 24px !important;
+    }
+    &.triple-indent-checkbox,
+    *.triple-indent {
+      padding: 6px 36px;
+    }
+  }
+}
