@@ -94,18 +94,3 @@ ul.multiselect-container {
     }
   }
 }
-
-.bootstrap-select {
-  .dropdown-menu {
-    li.selected > a {
-      background: #DBF0EB !important;
-      color: #28A68A !important;
-      &:hover,
-      &:active,
-      &:focus {
-        background-color: #DBF0EB !important;
-        color: #28A68A !important;
-      }
-    }
-  }
-}
