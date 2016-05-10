@@ -806,6 +806,11 @@ the "Actions" column in the table below.
     <div class="row">
         <div class="col-lg-12">
             <h5>Angular</h5>
+            <div class="checkbox checkbox-rev-switch switch-xs">
+              <label for='example6' class='control-label'>
+              <rev-ng-switch id='example6' is-checked="angularUiSwitch.example6"></rev-ng-switch>
+               XS Switch <small>{{angularUiSwitch.example6}}</small></label>
+            </div>
             <div class="checkbox checkbox-rev-switch">
               <label for='example1' class='control-label'>
               <rev-ng-switch id='example1' is-checked="angularUiSwitch.example1"></rev-ng-switch>
@@ -837,6 +842,11 @@ the "Actions" column in the table below.
     <div class="row">
         <div class="col-lg-12">
             <h5>JQuery</h5>
+            <div class="checkbox checkbox-rev-switch switch-xs">
+              <label class='control-label'>
+                <input data-rev-jq-switch='true' on='On' off='Off' checked="checked" type='checkbox'/> XS Switch
+              </label>
+            </div>            
             <div class="checkbox checkbox-rev-switch">
               <label class='control-label'>
                 <input data-rev-jq-switch='true' on='On' off='Off' checked="checked" type='checkbox'/> Default Switch

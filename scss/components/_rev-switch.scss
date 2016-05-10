@@ -97,3 +97,23 @@
 .checkbox.checkbox-rev-switch label {
   padding-left: 0;
 }
+
+.switch-xs {
+  .rev-switch {
+    height: 20px;
+    width: 40px;
+    small {
+      height: 20px;
+      width: 20px;
+    }
+    &.checked {
+      small {
+        left: 20px;
+      }
+    }
+    .rev-switch-text {
+      font-size: 12px;
+      line-height: 1;
+    }
+  }
+}
