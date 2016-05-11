@@ -1,7 +1,5 @@
 {
   "name": "Revinate Unification",
   "version": "0.0.1",
-  "dependencies": {
-    "moment": "~2.13.0"
-  }
+  "dependencies": {}
 }
