@@ -62,6 +62,6 @@
   margin-right: auto;
 }
 // adding this to hide jquery UI datepicker div from the footer.  Can't remove it from the code b/c it is being used by legacy layout
-#ui-datepicker-div {
+#ui-datepicker-div.ui-datepicker {
   display: none;
 }
