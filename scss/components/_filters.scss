@@ -24,6 +24,9 @@
     .form-control, select {
       height: 28px;
       padding: 6px 10px;
+      &.daterange-picker {
+        min-width: 235px;
+      }
       &.bootstrap-select {
         padding: 0;
         // override menutext in chrome
