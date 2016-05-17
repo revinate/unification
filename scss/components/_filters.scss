@@ -65,6 +65,7 @@
     }
     .custom-selector {
       .custom-selector-list {
+        min-width: 260px;
         li>input[type="text"] {
           height: 28px;
         }
