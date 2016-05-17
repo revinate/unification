@@ -355,16 +355,15 @@
     width: 100%;
     margin: 5px 0;
     position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
     @extend .btn-sm;
 
     &.btn-reply {
       margin-bottom: 35px;
-      overflow: hidden;
-      text-overflow: ellipsis;
     }
     i.button-icon {
-      position: absolute;
-      left: 10px;
+      float: left;
     }
     &.btn-action-taken {
       border-color: #9CDFD0;
