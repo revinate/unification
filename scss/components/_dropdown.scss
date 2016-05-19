@@ -49,7 +49,6 @@
   border-top: 1px solid $r_brand-primary;
   margin-top: 0; // overrides .nav-tabs .dropdown-menu
   > li > a {
-    text-transform: capitalize;
     color: $r_brand-primary-lighter;
     &:hover,
     &:active,
@@ -67,6 +66,11 @@
   }
   > li:last-child a {
     border-bottom: none;
+  }
+}
+.l-header-bottom .dropdown-menu {
+  > li > a {
+    text-transform: capitalize;
   }
 }
 
