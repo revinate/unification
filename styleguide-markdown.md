@@ -1882,9 +1882,6 @@ the "Actions" column in the table below.
                 <option value="3">Option 3</option>
             </select>
         </div>  
-        <div class="form-group apply-filters">
-            <button class="btn btn-primary btn-sm">Apply Filter</button>
-        </div>
         </div>
     </div>
 
