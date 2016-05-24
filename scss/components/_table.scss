@@ -3,6 +3,10 @@
     margin-bottom: 0 !important;
     > thead > tr > th {
       padding: 5px;
+      > a {
+        color: #333;
+        text-decoration: none;
+      }
     }
     > thead > tr > th:first-child,
     > tbody > tr > td:first-child,
