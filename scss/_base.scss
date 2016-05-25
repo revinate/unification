@@ -54,3 +54,11 @@ body {
 strong {
   @extend .FontLatoBlack;
 }
+
+.positive {
+  color: $brand-success;
+}
+
+.negative {
+  color: $brand-danger;
+}
