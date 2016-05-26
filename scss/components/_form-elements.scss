@@ -37,6 +37,11 @@ form {
       background-color: #EBF5FE;
       color: #3BA1F8;
     }
+    li > a span.text {
+      max-width: 300px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   }
 }
 
