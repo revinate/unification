@@ -73,4 +73,14 @@
       vertical-align: middle;
     }
   }
+  &.vertical-align-top {
+    > tbody > tr > td {
+      vertical-align: top;
+    }
+  }
+  &.vertical-align-bottom {
+    > tbody > tr > td {
+      vertical-align: bottom;
+    }
+  }
 }

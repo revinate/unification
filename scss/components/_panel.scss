@@ -11,6 +11,9 @@
       small {
         display: block;
         @extend .FontLatoLight;
+        a {
+          color: $brand-primary;
+        }
       }
     }
     .hidden-link {
