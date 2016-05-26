@@ -65,3 +65,10 @@
 #ui-datepicker-div.ui-datepicker {
   display: none;
 }
+
+/* Override .container {width: auto} R/S survey.css line 945 */
+@media (min-width: 1270px) {
+  .container {
+    width: 1270px !important;
+  }
+}
