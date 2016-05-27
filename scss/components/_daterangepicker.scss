@@ -227,7 +227,7 @@ $daterangepicker-ranges-active-border-radius: $daterangepicker-border-radius !de
 
   &.dropdown-menu {
     max-width: none;
-    min-width: auto;
+    min-width: inherit;
     z-index: $daterangepicker-dropdown-z-index;
   }
 
