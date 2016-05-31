@@ -62,3 +62,9 @@ strong {
 .negative {
   color: $brand-danger;
 }
+
+.tooltip {
+  .tooltip-inner {
+    text-align: left;
+  }
+}
