@@ -83,4 +83,10 @@
       vertical-align: bottom;
     }
   }
+  tr.border-top {
+    &.info { td { border-top: 2px $alert-info-border solid; } }
+    &.success { td { border-top: 2px $alert-success-border solid; } }
+    &.danger { td { border-top: 2px $alert-danger-border solid; } }
+    &.warning { td { border-top: 2px $alert-warning-border solid; } }
+  }
 }

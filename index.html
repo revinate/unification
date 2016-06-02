@@ -709,6 +709,12 @@
                       <code class="sg">.fa-sort-asc</code>and
                       <code class="sg">.fa-sort-desc</code>
                     </li>
+                    <li class="sg">For green and red text within tables, use
+                      <code class="sg">.text-success</code>and
+                      <code class="sg">.text-danger</code>respectively</li>
+                    <li class="sg">For (more context) text within parentheses, use
+                      <code class="sg">.text-muted</code>
+                    </li>
                   </ul>
                   <p class="sg">
                     <strong class="sg">Panel Table</strong>
@@ -743,7 +749,9 @@
                         <table class="table table-striped">
                           <thead>
                             <tr>
-                              <th>Column 1</th>
+                              <th>Column 1
+                                <i data-toggle="tooltip" data-placement="bottom" title="Table header tooltip" class="fa fa-question-circle"></i>
+                              </th>
                               <th>
                                 <a href="#">Column 2
                                   <i class="fa fa-sort fa-sort-asc"></i>
@@ -766,10 +774,16 @@
                           </thead>
                           <tbody>
                             <tr>
-                              <td>Data 1</td>
+                              <td>Data 1
+                                <small class="text-muted">(more context)</small>
+                              </td>
                               <td>Data 2</td>
-                              <td>Data 3</td>
-                              <td>Data 4</td>
+                              <td>
+                                <span class="text-success">100%</span>
+                              </td>
+                              <td>
+                                <span class="text-danger">40%</span>
+                              </td>
                               <td>
                                 <div class="dropdown">
                                   <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="menu1">
@@ -787,7 +801,7 @@
                                 </div>
                               </td>
                             </tr>
-                            <tr>
+                            <tr class="info border-top">
                               <td>Data 1</td>
                               <td>Data 2</td>
                               <td>Data 3</td>
@@ -809,16 +823,71 @@
                                 </div>
                               </td>
                             </tr>
+                            <tr class="success border-top">
+                              <td>Data 1</td>
+                              <td>Data 2</td>
+                              <td>Data 3</td>
+                              <td>Data 4</td>
+                              <td>
+                                <a href="#">1 Action</a>
+                              </td>
+                            </tr>
+                            <tr class="danger border-top">
+                              <td>Data 1</td>
+                              <td>Data 2</td>
+                              <td>Data 3</td>
+                              <td>Data 4</td>
+                              <td>
+                                <a href="#">1 Action</a>
+                              </td>
+                            </tr>
                             <tr>
                               <td>Data 1</td>
                               <td>Data 2</td>
                               <td>Data 3</td>
                               <td>Data 4</td>
                               <td>
-                                <a href="#">Action</a>
+                                <a href="#">1 Action</a>
+                              </td>
+                            </tr>
+                            <tr class="warning border-top">
+                              <td>Data 1</td>
+                              <td>Data 2</td>
+                              <td>Data 3</td>
+                              <td>Data 4</td>
+                              <td>
+                                <a href="#">1 Action</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Data 1
+                                <i data-toggle="tooltip" data-placement="bottom" title="Table body tooltip" class="fa fa-question-circle"></i>
+                              </td>
+                              <td>Data 2</td>
+                              <td>Data 3</td>
+                              <td>Data 4</td>
+                              <td>
+                                <div class="checkbox-rev-switch switch-xs">
+                                  <input class="primary" data-rev-jq-switch="true" on="On" off="Off" checked="checked" type="checkbox">
+                                </div>
                               </td>
                             </tr>
                           </tbody>
+                          <tfoot>
+                            <tr>
+                              <td>Summary</td>
+                              <td>
+                                <strong>45%</strong>
+                              </td>
+                              <td>
+                                <strong>24%</strong>
+                              </td>
+                              <td>
+                                <strong>34%</strong>
+                              </td>
+                              <td></td>
+                            </tr>
+                          </tfoot>
                         </table>
                       </div>
                     </div>
@@ -924,7 +993,10 @@
     <span class="hljs-tag">&lt;<span class="hljs-title">table</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;table table-striped&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">thead</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Column 1<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Column 1
+            <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&apos;tooltip&apos;</span> <span class="hljs-attribute">data-placement</span>=<span class="hljs-value">&apos;bottom&apos;</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">&apos;Table header tooltip&apos;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;fa fa-question-circle&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>Column 2
               <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;fa fa-sort fa-sort-asc&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
@@ -947,10 +1019,16 @@
       <span class="hljs-tag">&lt;/<span class="hljs-title">thead</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">tbody</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 1<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 1
+            <span class="hljs-tag">&lt;<span class="hljs-title">small</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;text-muted&quot;</span>&gt;</span>(more context)<span class="hljs-tag">&lt;/<span class="hljs-title">small</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 2<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 3<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 4<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;text-success&quot;</span>&gt;</span>100%<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;text-danger&quot;</span>&gt;</span>40%<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dropdown&quot;</span>&gt;</span>
               <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;dropdown-toggle&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;dropdown&quot;</span> <span class="hljs-attribute">data-target</span>=<span class="hljs-value">&quot;#&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;menu1&quot;</span>&gt;</span>
@@ -968,7 +1046,7 @@
             <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;info border-top&quot;</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 1<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 2<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 3<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
@@ -990,16 +1068,71 @@
             <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;success border-top&apos;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 1<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 2<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 3<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 4<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>1 Action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;danger border-top&apos;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 1<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 2<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 3<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 4<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>1 Action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 1<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 2<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 3<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 4<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>1 Action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;warning border-top&apos;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 1<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 2<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 3<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 4<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>1 Action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 1
+            <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&apos;tooltip&apos;</span> <span class="hljs-attribute">data-placement</span>=<span class="hljs-value">&apos;bottom&apos;</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">&apos;Table body tooltip&apos;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;fa fa-question-circle&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 2<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 3<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Data 4<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;checkbox-rev-switch switch-xs&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;primary&apos;</span> <span class="hljs-attribute">data-rev-jq-switch</span>=<span class="hljs-value">&apos;true&apos;</span> <span class="hljs-attribute">on</span>=<span class="hljs-value">&apos;On&apos;</span> <span class="hljs-attribute">off</span>=<span class="hljs-value">&apos;Off&apos;</span> <span class="hljs-attribute">checked</span>=<span class="hljs-value">&quot;checked&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&apos;checkbox&apos;</span> /&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">tbody</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">tfoot</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Summary<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>45%<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>24%<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>34%<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">tfoot</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>

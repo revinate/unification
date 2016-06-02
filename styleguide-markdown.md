@@ -265,6 +265,8 @@ stick to the bootstrap markup for consistency. For backwards compatibility, both
 - Row striping is controlled by `.table-striped`
 - Hover interaction (only when entire row is interactive), use `.table-hover`
 - Table sortable icons controlled by adding `.fa .fa-sort` and toggling `.fa-sort-asc` and `.fa-sort-desc`
+- For green and red text within tables, use `.text-success` and `.text-danger` respectively
+- For (more context) text within parentheses, use `.text-muted`
 
 
 **Panel Table**
@@ -291,7 +293,8 @@ the "Actions" column in the table below.
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th>Column 1</th>
+                        <th>Column 1 <i data-toggle='tooltip' data-placement='bottom' title='Table header tooltip' class="fa fa-question-circle"></i>
+                        </li></th>
                         <th><a href="#">Column 2 <i class="fa fa-sort fa-sort-asc"></i></a></th>
                         <th><a href="#">Column 3 <i class="fa fa-sort fa-sort-desc"></i></a></th>
                         <th>
@@ -306,10 +309,10 @@ the "Actions" column in the table below.
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Data 1</td>
+                        <td>Data 1 <small class="text-muted">(more context)</small></td>
                         <td>Data 2</td>
-                        <td>Data 3</td>
-                        <td>Data 4</td>
+                        <td><span class="text-success">100%</span></td>
+                        <td><span class="text-danger">40%</span></td>
                         <td>
                             <div class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="menu1">
@@ -323,7 +326,7 @@ the "Actions" column in the table below.
                             </div>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="info border-top">
                         <td>Data 1</td>
                         <td>Data 2</td>
                         <td>Data 3</td>
@@ -341,14 +344,55 @@ the "Actions" column in the table below.
                             </div>
                         </td>
                     </tr>
+                    <tr class='success border-top'>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                        <td><a href="#">1 Action</a></td>
+                    </tr>
+                    <tr class='danger border-top'>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                        <td><a href="#">1 Action</a></td>
+                    </tr>
                     <tr>
                         <td>Data 1</td>
                         <td>Data 2</td>
                         <td>Data 3</td>
                         <td>Data 4</td>
-                        <td><a href="#">Action</a></td>
+                        <td><a href="#">1 Action</a></td>
+                    </tr>
+                    <tr class='warning border-top'>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                        <td><a href="#">1 Action</a></td>
+                    </tr>
+                    <tr>
+                        <td>Data 1 <i data-toggle='tooltip' data-placement='bottom' title='Table body tooltip' class="fa fa-question-circle"></td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                        <td>
+                          <div class="checkbox-rev-switch switch-xs">
+                              <input class='primary' data-rev-jq-switch='true' on='On' off='Off' checked="checked" type='checkbox' />
+                          </div>
+                        </td>
                     </tr>
                 </tbody>
+                <tfoot>
+                  <tr>
+                      <td>Summary</td>
+                      <td><strong>45%</strong></td>
+                      <td><strong>24%</strong></td>
+                      <td><strong>34%</strong></td>
+                      <td></td>
+                  </tr>
+                </tfoot>
             </table>
         </div>
     </div>
@@ -483,7 +527,7 @@ the "Actions" column in the table below.
     <button class="btn btn-info">Info</button>
     <button class="btn btn-delete">Delete</button>
     <button class="btn btn-link">Link</button>
-    
+
     <br />
     <br />
     <button class="btn btn-internal-primary">Internal Use - primary</button>
@@ -528,7 +572,7 @@ the "Actions" column in the table below.
                 <button class="btn btn-rounded btn-action-taken"><i class="fa fa-tag button-icon"></i>View Ticket</button>
                 <div class="btn-group">
                     <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-                        More Actions 
+                        More Actions
                         <i class="fa fa-angle-down"></i>
                     </button>
                     <ul class="dropdown-menu" role="menu">
