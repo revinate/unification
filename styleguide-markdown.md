@@ -95,6 +95,7 @@ tabbed content is inside `.l-header-bottom`.
             </a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="#">Action</a></li>
+              <li class="active"><a href="#">Action Active</a></li>
               <li class="is-superadmin"><a href="#">SuperAdmin action</a></li>
             </ul>
           </li>

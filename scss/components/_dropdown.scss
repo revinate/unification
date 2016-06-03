@@ -64,6 +64,11 @@
       text-align: right;
     }
   }
+  > li.active > a {
+    color: #ffffff;
+    background-color: $r_brand-primary-darker;
+    font-weight: bold;
+  }
   > li:last-child a {
     border-bottom: none;
   }
