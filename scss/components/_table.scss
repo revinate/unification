@@ -90,3 +90,7 @@
     &.warning { td { border-top: 2px $alert-warning-border solid; } }
   }
 }
+
+table.table > thead > tr > th {
+  vertical-align: top;
+}
