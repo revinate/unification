@@ -72,3 +72,9 @@ label {
 .bootstrap-select .btn.dropdown-toggle {
   padding-right: 25px;
 }
+
+// get rid of box shadow appearing in share post modal
+
+input[name="image-file"] {
+  box-shadow: none;
+}
