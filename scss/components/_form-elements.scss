@@ -33,6 +33,9 @@ form {
 // Bootstrap Select Styles
 .bootstrap-select {
   .dropdown-menu {
+    li > a {
+      line-height: 1em;
+    }
     li > a:hover, li > a.active, li > a:active, li.selected > a  {
       background-color: #EBF5FE;
       color: #3BA1F8;
