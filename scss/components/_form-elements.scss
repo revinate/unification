@@ -75,6 +75,6 @@ label {
 
 // get rid of box shadow appearing in share post modal
 
-input[name="image-file"] {
+input[name="image-file"], input[type="file"] {
   box-shadow: none;
 }
