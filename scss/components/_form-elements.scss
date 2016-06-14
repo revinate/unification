@@ -84,3 +84,6 @@ input[name="image-file"], input[type="file"] {
 textarea {
   resize: vertical;
 }
+textarea, input[type="text"], input[type="email"], input[type="password"] {
+  color: #444 !important;
+}
