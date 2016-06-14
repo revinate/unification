@@ -81,3 +81,6 @@ label {
 input[name="image-file"], input[type="file"] {
   box-shadow: none;
 }
+textarea {
+  resize: vertical;
+}
