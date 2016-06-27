@@ -87,3 +87,14 @@ textarea {
 textarea, input[type="text"], input[type="email"], input[type="password"] {
   color: #444 !important;
 }
+
+.form-group {
+  div.inline-label {
+    input[type="text"], input[type="email"], input[type="password"] {
+      @extend .form-control;
+    }
+    .inline-help .error {
+      color: $alert-danger-text;
+    }
+  }
+}
