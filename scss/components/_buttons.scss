@@ -388,6 +388,25 @@
 }
 .translate.dropdown {
   .dropdown-menu {
-    @extend .actions-buttons.btn-group.dropdown-menu;
+    border-color: #9DD0FB;
+    padding: 0;
+    li {
+      a {
+        color: #2295F7;
+        border-bottom: 1px solid  #CEE7FD;
+        &.btn-internal-secondary {
+          color: #6f5499;
+          &:hover {
+            color: #fff;
+            background-color: darken(#6f5499, 10%);
+          }
+        }
+      }
+      &:last-child {
+        a {
+          border-bottom: none;
+        }
+      }
+    }
   }
 }
