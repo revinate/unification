@@ -386,3 +386,8 @@
     line-height: 1.33;
   }
 }
+.translate.dropdown {
+  .dropdown-menu {
+    @extend .actions-buttons.btn-group.dropdown-menu;
+  }
+}
