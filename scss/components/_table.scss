@@ -1,7 +1,8 @@
 .table {
   .panel-body-table & {
     margin-bottom: 0 !important;
-    > thead > tr > th {
+    > thead > tr > th,
+    > tbody > tr > td {
       padding: 5px;
     }
     > thead > tr > th:first-child,
