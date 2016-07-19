@@ -250,8 +250,9 @@
 
 .page-loading-wrapper {
   position: absolute;
-  height: 100%;
-  width: 100%;
+  height: 101%;
+  width: 1240px;
+  margin-left: -15px;
   z-index: 11;
   .bouncer-backdrop {
     background: #000;
@@ -261,8 +262,8 @@
     text-align: center;
   }
   .spinner.page-loading {
-    position: fixed;
-    top: 50%;
+    position: absolute;
+    top: 100px;
     left: 50%;
     margin-left: -35px;
     margin-top: -10px;
