@@ -251,8 +251,9 @@
 .page-loading-wrapper {
   position: absolute;
   height: 101%;
-  width: 1240px;
+  width: 1239px;
   margin-left: -15px;
+  margin-top: -30px;
   z-index: 11;
   .bouncer-backdrop {
     background: #000;
