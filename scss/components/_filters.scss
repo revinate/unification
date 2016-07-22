@@ -70,4 +70,9 @@
       }
     }
   }
+  &.loading {
+    position: absolute;
+    z-index: 21;
+    width: 100%;
+  }
 }
