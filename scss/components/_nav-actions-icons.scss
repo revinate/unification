@@ -34,5 +34,26 @@ ul.global-actions-nav {
         }
       }
     }
+    &:disabled {
+      &:hover {
+        cursor: default;
+        color: #ccc;
+        a {
+          color: #ccc;
+          &:hover {
+            color: #ccc;
+            cursor: default;
+          }
+        }
+      }
+      &.btn.btn-circle.btn-default-secondary {
+        &:hover {
+          border-color: #ccc;
+          a {
+            color: #ccc;
+          }
+        }
+      }
+    }
   }
 }
