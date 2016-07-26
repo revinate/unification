@@ -45,6 +45,13 @@ ul.global-actions-nav {
             cursor: default;
           }
         }
+        i {
+          color: #ccc;
+          &:hover {
+            color: #ccc;
+            cursor: default;
+          }
+        }
       }
       &.btn.btn-circle.btn-default-secondary {
         &:hover {
