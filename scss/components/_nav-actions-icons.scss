@@ -34,7 +34,7 @@ ul.global-actions-nav {
         }
       }
     }
-    &:disabled {
+    &.disabled {
       &:hover {
         cursor: default;
         color: #ccc;
