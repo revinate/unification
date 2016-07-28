@@ -272,3 +272,66 @@
   }
 }
 
+//mobile navigation
+
+.mobile-nav {
+  display: none;
+}
+@media (max-width: 680px) {
+  .l-header {
+    display: none;
+  }
+  .mobile-nav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    z-index: 99999999;
+    background: #283745;
+    li {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: block;
+      float: left;
+      line-height: 60px;
+      text-align: center;
+      border-right: 1px solid #444;
+      &.active {
+        background: #182129;
+      }
+      &:not(.logo) {
+        width: 29%;
+      }
+      &.logo a {
+        padding: 0 15px;
+      }
+      a {
+        color: #fff;
+        Font-family: Lato;
+        text-transform: uppercase;
+        display: block;
+        &:hover, &:active, &:visited, &:focus {
+          text-decoration: none;
+        }
+        &a.rev-logo i {
+          width: 25px;
+          overflow: hidden;
+          display: block;
+          margin: 0 auto;
+          font-size: 22px;
+          line-height: 60px;
+        }
+      }
+    }
+  }
+  .l-main {
+    padding-bottom: 215px;
+  }
+  .l-footer {padding-bottom: 60px;}
+}
+
