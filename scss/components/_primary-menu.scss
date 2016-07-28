@@ -282,7 +282,7 @@
     display: none;
   }
   .mobile-nav {
-    display: flex;
+    display: block;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -296,9 +296,9 @@
       list-style-type: none;
       margin: 0;
       padding: 0;
-      display: block;
-      float: left;
-      line-height: 60px;
+      display: table-cell;
+      vertical-align: middle;
+      height: 60px;
       text-align: center;
       border-right: 1px solid #444;
       &.active {
@@ -314,7 +314,7 @@
         color: #fff;
         Font-family: Lato;
         text-transform: uppercase;
-        display: block;
+        display: inline-block;
         &:hover, &:active, &:visited, &:focus {
           text-decoration: none;
         }
