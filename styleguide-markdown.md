@@ -207,12 +207,12 @@ tabbed content is inside `.l-header-bottom`.
           </button>
 
           <button type="button"
-                  class="btn btn-sm btn-primary btn-header btn-circle pull-right mg-l-sm">
+                  class="btn btn-primary btn-header btn-circle pull-right mg-l-sm">
             <i class="fa fa-bookmark"></i>
           </button>
 
           <button type="button"
-                  class="btn btn-sm btn-primary btn-header btn-circle pull-right mg-l-sm">
+                  class="btn btn-primary btn-header btn-circle pull-right mg-l-sm">
             <i class="fa fa-star"></i>
           </button>
 

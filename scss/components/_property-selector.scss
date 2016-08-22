@@ -15,6 +15,10 @@
             display: block;
             overflow-x: hidden;
             text-overflow: ellipsis;
+            text-transform: Capitalize;
+            font-family: Lato;
+            font0size: 14px;
+            letter-spacing: 1px;
             color: #939BA2 !important;
             border-bottom: 1px solid #283745;
             &:hover {
@@ -36,6 +40,9 @@
           div, li {
             color: #939BA2;
             padding: 2px 15px 0;
+            text-transform: capitalize;
+            font-family: Lato;
+            letter-spacing: 1px;
           }
           li:hover {
             color: #fff;
@@ -59,6 +66,8 @@
         margin: 0;
         a {
           color: #939BA2 !important;
+          text-transform: capitalize;
+          font-family: Lato;
           &:hover {
             color: #ffffff !important;
           }

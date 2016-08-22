@@ -116,9 +116,10 @@
 
 .btn-header {
   letter-spacing: .01em;
-  font-size: 14px;
+  font-size: 16px;
   border: none;
-  color: $r_brand-primary-lighter;
+  //color: $r_brand-primary-lighter;
+  color: #ccc;
   padding: 7px 12px;
   text-transform: capitalize;
 
@@ -137,7 +138,8 @@
   }
 
   &.btn-primary {
-    color: $r_brand-primary-lighter;
+    //color: $r_brand-primary-lighter;
+    color: #ccc;
     background-color: $r_brand-primary-dark;
     &.active,
     &:hover,
@@ -154,6 +156,9 @@
     &:active {
       background-color: $r_brand-primary-dark;
     }
+  }
+  .badge {
+    top: 2px;
   }
 }
 
@@ -174,9 +179,9 @@
 
 .btn.btn-circle {
   border-radius: 100%;
-  width: 33px;
-  height: 33px;
-  padding: 0;
+  width: 35px;
+  height: 35px;
+  padding: 0 0 4px;
   i:first-child {
     font-size: 1.2em;
   }

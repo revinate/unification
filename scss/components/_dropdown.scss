@@ -57,11 +57,12 @@
   border-top: 1px solid $r_brand-primary;
   margin-top: 0; // overrides .nav-tabs .dropdown-menu
   > li > a {
-    color: $r_brand-primary-lighter;
+    color: #d7dbdd;
     &:hover,
     &:active,
     &:focus {
       color: #ffffff;
+      font-weight: bold;
       background-color: $r_brand-primary-darker;
     }
     .badge {
@@ -95,6 +96,9 @@
   > li > a {
     border-bottom: $r_brand-primary 1px solid;
     padding: 6px 10px 3px;
+    font-family: Lato;
+    letter-spacing: 1px;
+    text-transform: capitalize;
   }
 }
 

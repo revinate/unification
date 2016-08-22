@@ -1,7 +1,7 @@
 .primary-menu.nav.nav-tabs .logo {
   color: #FFFFFF;
   font-size: 1.3em;
-  line-height: 40px;
+  line-height: 45px;
   padding: 3px 20px 0 0;
   cursor: default;
   background-color: transparent;
@@ -37,14 +37,15 @@
   }
   &.primary-menu-item-text,
   &.primary-menu-item-label {
-    height: 30px;
-    color: $r_brand-primary-light;
+    height: 45px;
+    //color: $r_brand-primary-light;
+    color: #d7dbdd;
   }
   &.primary-menu-item-text {
-    line-height: 33px;
+    line-height: 45px;
   }
   &.primary-menu-item-label {
-    line-height: 30px;
+    line-height: 45px;
     padding: 0 0 0 10px !important;
     a {
       padding: 0;
@@ -70,7 +71,7 @@
       overflow: hidden;
       white-space: nowrap;
       i {
-        padding: 9px 5px;
+        padding: 15px 5px;
       }
     }
     &.primary-menu-item-text {
@@ -79,15 +80,16 @@
       white-space: nowrap;
     }
     &.always-active {
-      background: $r_brand-primary;
+      background: #42576a;
       a {
         color: #fff;
+        font-weight: bold;
         &:hover {
           background: transparent;
         }
       }
       &:hover {
-        background: $r_brand-primary;
+        background: #42576a;
       }
     }
   }
@@ -103,14 +105,14 @@
 .primary-menu.nav.nav-tabs > li > a {
   cursor: default;
   margin-right: 0;
-  height: 40px;
+  height: 45px;
   letter-spacing: 0.15em;
   line-height: 50px;
   @media (min-width: $screen-sm-min) {
-    height: 30px;
-    line-height: 33px;
+    height: 45px;
+    line-height: 45px;
   }
-  color: $r_brand-primary-light;
+  color: #d7dbdd;
   border: none;
   border-radius: 0;
   padding: 0 20px;
@@ -123,10 +125,12 @@
 
   &:hover {
     color: #ffffff;
+    font-weight: bold;
     background-color: $r_brand-primary;
   }
   &.highlight,
   &.active {
+    font-weight: bold;
     color: #ffffff;
   }
   i {
@@ -137,12 +141,12 @@
   }
   &.primary-menu-item-icon {
     i {
-      font-size: 1.4em;
+      font-size: 20px;
       position: relative;
       right: 1px;
       @media (min-width: $screen-sm-min) {
-        font-size: 1.2em;
-        line-height: 1.5em;
+        font-size: 20px;
+        line-height: 45px;
       }
     }
     &.current-active-page {
@@ -159,6 +163,7 @@
     &:active,
     &:focus {
       color: #ffffff;
+      font-weight: bold;
       background-color: $r_brand-primary-darker;
     }
   }
@@ -181,7 +186,7 @@
 
 .primary-menu.nav.nav-tabs > li.active > a,
 .primary-menu.nav.nav-tabs > li.active > a:hover {
-  background-color: $r_brand-primary;
+  background-color: #42576a;
   color: #ffffff;
   border: none;
   &.primary-menu-item-logo {
