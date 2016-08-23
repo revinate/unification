@@ -342,6 +342,12 @@
   .l-footer {padding-bottom: 60px;}
 }
 
+@media (max-width: 1020px) {
+  .primary-menu.nav.nav-tabs > li.prop-selector {
+    max-width: 200px;
+  }
+}
+
 @media (max-width: 768px) {
   .primary-menu.nav.nav-tabs > li.prop-selector {
     max-width: 135px;
