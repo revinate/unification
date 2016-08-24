@@ -4,7 +4,8 @@
   min-width: 100%;
   max-width: 380px;
   padding: 6px 0;
-  border: 1px $gray-lighter solid;
+  border: 1px #ccc solid;
+  box-shadow: none;
   > li > a {
     position: relative;
     padding: 6px 12px;
@@ -119,4 +120,8 @@ ul.multiselect-container {
 
 .max-height .dropdown-menu {
   max-height: 250px !important;
+}
+
+.btn-group.open .dropdown-toggle {
+  box-shadow: none;
 }
