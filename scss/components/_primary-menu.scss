@@ -80,17 +80,13 @@
       white-space: nowrap;
     }
     &.always-active {
-      background: #42576a;
       a {
-        color: #fff;
-        font-weight: bold;
         &:hover {
           background: transparent;
+          color: #fff;
         }
       }
-      &:hover {
-        background: #42576a;
-      }
+
     }
   }
   &.primary-menu-item-logo {

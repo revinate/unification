@@ -17,8 +17,8 @@
             text-overflow: ellipsis;
             text-transform: Capitalize;
             font-family: Lato;
-            font0size: 14px;
-            letter-spacing: 1px;
+            font-size: 14px;
+            letter-spacing: 0.5px;
             color: #939BA2 !important;
             border-bottom: 1px solid #283745;
             &:hover {
@@ -68,6 +68,7 @@
           color: #939BA2 !important;
           text-transform: capitalize;
           font-family: Lato;
+          letter-spacing: 0.5px;
           &:hover {
             color: #ffffff !important;
           }
