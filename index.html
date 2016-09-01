@@ -21,94 +21,238 @@
 <body data-spy="scroll" data-target="#myScrollSpy" data-offset="50" class="sg">
   <div class="l-app" id="styleguide">
 
-    <main class="l-main">
-      <div class="container">
-        <div class="styleguide-header row pd-xl">
-          <div class="col-lg-12">
-            <span class="logo">
-              <i class="revicon-revinate-logo"></i>
-            </span>
-            <h1>Revinate Style Guide</h1>
-            <p>Our styleguide/css is based off of
-              <a href="http://getbootstrap.com/">Twitter Bootstrap
-              </a>, and uses
-              <a href="https://smacss.com/">SMACSS (Scalable and Modular Architecture for CSS)
-              </a>. This documentation contains code examples, and highlights extra classes needed on top of Twitter Bootstrap classes.</p>
-            <p>PS. In order to optimize css load time, we have removed the following unnecessary Twitter Bootstrap includes: print, glyphicons, progress bars and carousel. If you wish to use any of these styles, please uncomment the respective line(s) in /scss/bootstrap.scss and compile sass.
-            </p>
-          </div>
+    <header class="l-header navbar-fixed-top" style="position: fixed;">
+      <div class="l-header-top">
+        <div class="container">
+
+          <ul class="primary-menu nav nav-tabs" role="tablist">
+            <li class="primary-menu-item-logo primary-menu-item-text">
+              <span class="logo" title="Revinate">
+                <i class="revicon-revinate-logo"></i>
+              </span>
+            </li>
+            <li class="principles">
+              <a href="principles.html" role="tab">
+                Principles
+              </a>
+            </li>
+            <li class="style-guide active">
+              <a href="index.html" role="tab">Style Guide</a>
+            </li>
+            <li class="resources">
+              <a href="resources.html" role="tab">
+                Resources
+              </a>
+            </li>
+          </ul>
+
         </div>
+      </div>
+
+      <div class="l-header-bottom">
+        <div class="tab-content container">
+
+          <!-- principles tab content -->
+          <div role="tabpanel" class="tab-pane active" id="principles">
+
+          </div>
+
+          <!-- style-guide tab content -->
+          <div role="tabpanel" class="tab-pane active" id="style-guide">
+            <div class="btn-group mg-r-sm">
+              <button type="button" class="btn btn-primary btn-header dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Basics
+                <i class="fa fa-caret-down mg-l-xs"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="#colors">Colors</a>
+                </li>
+                <li>
+                  <a href="#typography">Typography
+                  </a>
+                </li>
+                <li>
+                  <a href="#buttons">Buttons
+                  </a>
+                </li>
+                <li>
+                  <a href="#form-elements">Form Elements
+                  </a>
+                </li>
+                <li>
+                  <a href="#labels-and-badges">Labels &amp; Badges
+                  </a>
+                </li>
+                <li>
+                  <a href="#tooltips">Tooltips
+                  </a>
+                </li>
+                <li>
+                  <a href="#waiting-spinner">Waiting Spinner
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="btn-group mg-r-sm">
+              <button type="button" class="btn btn-primary btn-header dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Components
+                <i class="fa fa-caret-down mg-l-xs"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="#general-layout">General Layout</a>
+                </li>
+                <li>
+                  <a href="#primary-menu">Primary Menu</a>
+                </li>
+                <li>
+                  <a href="#headers-and-breadcrumbs">Headers and Breadcrumbs</a>
+                </li>
+                <li>
+                  <a href="#tables">Tables</a>
+                </li>
+                <li>
+                  <a href="#data-tables">Data Tables</a>
+                </li>
+                <li>
+                  <a href="#buttons">Buttons</a>
+                </li>
+                <li>
+                  <a href="#labels-and-badges">Labels &amp; Badges</a>
+                </li>
+                <li>
+                  <a href="#wizard-navigation">Wizard Navigation</a>
+                </li>
+                <li>
+                  <a href="#tertiary-navigation">Tertiary Navigation</a>
+                </li>
+                <li>
+                  <a href="#forms">Forms</a>
+                </li>
+                <li>
+                  <a href="#switches">Switches</a>
+                </li>
+                <li>
+                  <a href="#dashboards">Dashboards</a>
+                </li>
+                <li>
+                  <a href="#collapse-accordion">Collapse/Accordion</a>
+                </li>
+                <li>
+                  <a href="#alerts">Alerts</a>
+                </li>
+                <li>
+                  <a href="#typography-and-lists">Typography &amp; Lists</a>
+                </li>
+                <li>
+                  <a href="#charts">Charts</a>
+                </li>
+                <li>
+                  <a href="#modals">Modals</a>
+                </li>
+                <li>
+                  <a href="#tooltips">Tooltips</a>
+                </li>
+                <li>
+                  <a href="#pagination">Pagination</a>
+                </li>
+                <li>
+                  <a href="#filters">Filters</a>
+                </li>
+                <li>
+                  <a href="#integration">Integration</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="btn-group mg-r-sm">
+              <button type="button" class="btn btn-primary btn-header dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Modules
+                <i class="fa fa-caret-down mg-l-xs"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="#">Action
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Another action
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Something else here this is very large
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Separated link
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="btn-group mg-r-sm">
+              <button type="button" class="btn btn-primary btn-header dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Templates
+                <i class="fa fa-caret-down mg-l-xs"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="#">Action
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Another action
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Something else here this is very large
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Separated link
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="btn-group mg-r-sm">
+              <button type="button" class="btn btn-primary btn-header dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Pages
+                <i class="fa fa-caret-down mg-l-xs"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="#">Action
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Another action
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Something else here this is very large
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Separated link
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- resources tab content -->
+          <div role="tabpanel" class="tab-pane" id="resources">
+
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <main class="l-main">
+      <div class="container" style="padding-top: 135px;">
         <div class="l-main-content row pd-xl">
 
-          <nav class="sidebar-menu col-sm-3 hidden-xs hidden-sm" id="myScrollSpy">
-            <ul class="nav bs-docs-sidenav" data-spy="affix" data-offset-top="270">
-              <li>
-                <a href="#general-layout">General Layout</a>
-              </li>
-              <li>
-                <a href="#primary-menu">Primary Menu</a>
-              </li>
-              <li>
-                <a href="#headers-and-breadcrumbs">Headers and Breadcrumbs</a>
-              </li>
-              <li>
-                <a href="#tables">Tables</a>
-              </li>
-              <li>
-                <a href="#data-tables">Data Tables</a>
-              </li>
-              <li>
-                <a href="#buttons">Buttons</a>
-              </li>
-              <li>
-                <a href="#labels-and-badges">Labels &amp; Badges</a>
-              </li>
-              <li>
-                <a href="#wizard-navigation">Wizard Navigation</a>
-              </li>
-              <li>
-                <a href="#tertiary-navigation">Tertiary Navigation</a>
-              </li>
-              <li>
-                <a href="#forms">Forms</a>
-              </li>
-              <li>
-                <a href="#switches">Switches</a>
-              </li>
-              <li>
-                <a href="#dashboards">Dashboards</a>
-              </li>
-              <li>
-                <a href="#collapse-accordion">Collapse/Accordion</a>
-              </li>
-              <li>
-                <a href="#alerts">Alerts</a>
-              </li>
-              <li>
-                <a href="#typography-and-lists">Typography &amp; Lists</a>
-              </li>
-              <li>
-                <a href="#charts">Charts</a>
-              </li>
-              <li>
-                <a href="#modals">Modals</a>
-              </li>
-              <li>
-                <a href="#tooltips">Tooltips</a>
-              </li>
-              <li>
-                <a href="#pagination">Pagination</a>
-              </li>
-              <li>
-                <a href="#filters">Filters</a>
-              </li>
-              <li>
-                <a href="#integration">Integration</a>
-              </li>
-            </ul>
-          </nav>
-
-          <div class="styleguide col-sm-9" ng-app="main">
+          <div class="styleguide col-sm-12" ng-app="main">
             <div ng-controller="MainCtrl">
               <section class="sg-block sg-section-general-layout">
                 <div class="sg-text">
