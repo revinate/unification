@@ -6,6 +6,7 @@
     "!fonts/*",
     "!libs/",
     "!_site/css/*",
+    "!_site/fonts/*",
     "!node_modules/*"
   ],
   "dependencies": {}
