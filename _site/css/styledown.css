@@ -1,0 +1,36 @@
+/**
+ * Styledown
+ *
+ * This is the basic styles to make a Styledown document look like a proper
+ * style guide. Recommendation: use and remove any pieces as you see fit.
+ */
+
+/**
+ * Basic normalize
+ */
+
+#styleguide .section-anchor {
+  display: block;
+  height: 0;
+  width: 0;
+  position: relative;
+  top: -135px;
+}
+
+#styleguide h2.sg {
+  margin: 40px 0;
+  border-bottom: 1px solid #979797;
+  padding-bottom: 10px;
+}
+
+#styleguide .pull-right {
+  float: right !important;
+}
+
+#styleguide .container {
+  max-width: 100%;
+}
+
+#styleguide .btn-primary.btn-header.active {
+  color: #3CBFA2;
+}

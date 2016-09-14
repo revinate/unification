@@ -1,0 +1,518 @@
+
+<!doctype html>
+    <head>
+    <link rel="stylesheet" href="/css/styledown.css" >
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/app.css" />
+    <link rel="stylesheet" href="/libs/bootstrap-toggle/css/bootstrap-toggle.css" />
+    <link rel="stylesheet" href="/libs/nya-bootstrap-select/dist/css/nya-bs-select.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #sort tbody {
+            cursor: move;
+        }
+    </style>
+    </head>
+<body>
+
+<div class="l-app" id="styleguide">
+    <header class="l-header navbar-fixed-top" style="position: fixed;">
+    <div class="l-header-top">
+        <div class="container">
+
+            <ul class="primary-menu nav nav-tabs" role="tablist">
+                <li class="primary-menu-item-logo primary-menu-item-text">
+              <span class="logo" title="Revinate">
+                <i class="revicon-revinate-logo"></i>
+              </span>
+                </li>
+                <li class="principles">
+                    <a href="/principles" role="tab">
+                        Principles
+                    </a>
+                </li>
+                <li class="style-guide active">
+                    <a href="/" role="tab">Style Guide</a>
+                </li>
+                <li class="resources">
+                    <a href="/resources" role="tab">
+                        Resources
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="l-header-bottom">
+        <div class="tab-content container">
+
+            <!-- principles tab content -->
+            <div role="tabpanel" class="tab-pane" id="principles">
+
+principles nav
+
+            </div>
+            <!-- style-guide tab content -->
+            <div role="tabpanel" class="tab-pane active" id="style-guide">
+                
+                
+                <div class="btn-group mg-r-sm mg-b-md">
+                    
+                    <button type="button" class="btn btn-primary btn-header dropdown-toggle" data-toggle="dropdown" aria-expanded="false">basics
+                        <i class="fa fa-caret-down mg-l-xs"></i>
+                    </button>
+                    
+                    <ul class="dropdown-menu" role="menu">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/basics/#Colors">Colors</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/basics/#Typography">Typography</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/basics/#Buttons">Buttons</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/basics/#Form Elements">Form Elements</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/basics/#Labels & Badges">Labels & Badges</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/basics/#Tooltips">Tooltips</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </div>
+                
+                
+                <div class="btn-group mg-r-sm mg-b-md">
+                    
+                    <button type="button" class="btn btn-primary btn-header dropdown-toggle" data-toggle="dropdown" aria-expanded="false">components
+                        <i class="fa fa-caret-down mg-l-xs"></i>
+                    </button>
+                    
+                    <ul class="dropdown-menu" role="menu">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/components/#Breadcrumbs">Breadcrumbs</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/components/#Switches">Switches</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/components/#Alerts">Alerts</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/components/#Pagination">Pagination</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/components/#Charts">Charts</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/components/#Tables">Tables</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/components/#Form Components">Form Components</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </div>
+                
+                
+                <div class="btn-group mg-r-sm mg-b-md">
+                    
+                    <button type="button" class="btn btn-primary btn-header dropdown-toggle" data-toggle="dropdown" aria-expanded="false">modules
+                        <i class="fa fa-caret-down mg-l-xs"></i>
+                    </button>
+                    
+                    <ul class="dropdown-menu" role="menu">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/modules/#Collapse/Accordion">Collapse/Accordion</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/modules/#Dashboard Widgets">Dashboard Widgets</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/modules/#Filter Bar">Filter Bar</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/modules/#Primary Menu">Primary Menu</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/modules/#Wizard Navigation">Wizard Navigation</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/modules/#Tertiary Navigation">Tertiary Navigation</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </div>
+                
+                
+                <div class="btn-group mg-r-sm mg-b-md">
+                    
+                    <button type="button" class="btn btn-primary btn-header dropdown-toggle" data-toggle="dropdown" aria-expanded="false">templates
+                        <i class="fa fa-caret-down mg-l-xs"></i>
+                    </button>
+                    
+                    <ul class="dropdown-menu" role="menu">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/templates/#General Layout">General Layout</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/templates/#Modals">Modals</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </div>
+                
+
+
+            </div>
+
+            <!-- resources tab content -->
+            <div role="tabpanel" class="tab-pane" id="resources">
+
+resources nav
+
+            </div>
+
+        </div>
+    </div>
+</header>
+    <main class="l-main">
+        <div class="container" style="padding-top: 135px;">
+            <div class="l-main-content row pd-xl">
+
+
+
+                <div class="styleguide col-sm-12" ng-app="main">
+                    <div ng-controller="MainCtrl">
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Buttons</h1>
+    <p class="post-meta"><time datetime="2016-09-01T17:00:02-07:00" itemprop="datePublished">Sep 1, 2016</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p><button class="btn btn-xs btn-default">XSmall</button>
+<button class="btn btn-sm btn-default">Small</button>
+<button class="btn btn-default">Medium</button>
+<button class="btn btn-lg btn-default">Large</button>
+<br />
+<br />
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-primary active">Primary</button>
+<button class="btn btn-primary disabled">Primary</button>
+<br />
+<br />
+<button class="btn btn-secondary">Secondary</button>
+<button class="btn btn-secondary active">Secondary</button>
+<button class="btn btn-secondary disabled">Secondary</button>
+<br />
+<br />
+<button class="btn btn-danger">Danger</button>
+<button class="btn btn-danger active">Danger</button>
+<button class="btn btn-danger disabled">Danger</button>
+<br />
+<br />
+<button class="btn btn-info">Info</button>
+<button class="btn btn-info active">Info</button>
+<button class="btn btn-info disabled">Info</button>
+<br />
+<br />
+<button class="btn btn-delete">Delete</button>
+<button class="btn btn-delete active">Delete</button>
+<button class="btn btn-delete disabled">Delete</button>
+<br />
+<br />
+<button class="btn btn-link">Link</button>
+<button class="btn btn-link active">Link</button>
+<button class="btn btn-link disabled">Link</button>
+<br />
+<br />
+<button class="btn btn-internal-primary">Internal Use - primary</button>
+<button class="btn btn-internal-primary active">Internal Use - primary</button>
+<br />
+<br />
+<button class="btn btn-internal-secondary">Internal Use - secondary</button>
+<button class="btn btn-internal-secondary active">Internal Use - secondary</button>
+<br />
+<br /></p>
+<div class="row">
+  <div class="col-md-3">
+    <div class="actions-buttons">
+      <button class="btn btn-primary btn-rounded btn-reply">Review Action</button>
+      <button class="btn btn-secondary btn-rounded">
+        <i class="fa fa-star button-icon"></i>Secondary</button>
+      <button class="btn btn-rounded btn-action-taken">
+        <i class="fa fa-tag button-icon"></i>Action Taken</button>
+      <div class="btn-group">
+        <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+          More Actions
+          <i class="fa fa-angle-down"></i>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li>
+            <a href="#">action 1</a>
+          </li>
+          <li>
+            <a href="#">action 2</a>
+          </li>
+          <li>
+            <a href="#">action 3</a>
+          </li>
+          <li>
+            <a href="#">action 4</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="col-md-3">
+      <div class="actions-buttons">
+        <button class="btn btn-primary btn-rounded btn-reply active">Review Action</button>
+        <button class="btn btn-secondary btn-rounded active">
+          <i class="fa fa-star button-icon"></i>Secondary</button>
+        <button class="btn btn-rounded btn-action-taken active">
+          <i class="fa fa-tag button-icon"></i>Action Taken</button>
+      <div class="btn-group open">
+        <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+          More Actions
+          <i class="fa fa-angle-down"></i>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li>
+            <a href="#">action 1</a>
+          </li>
+          <li>
+            <a href="#">action 2</a>
+          </li>
+          <li>
+            <a href="#">action 3</a>
+          </li>
+          <li>
+            <a href="#">action 4</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+    
+  <div class="col-md-3">
+    <div class="actions-buttons">
+      <button class="btn btn-primary btn-rounded btn-reply disabled">Review Action</button>
+      <button class="btn btn-secondary btn-rounded disabled">
+        <i class="fa fa-star button-icon"></i>Save Review</button>
+      <button class="btn btn-rounded btn-action-taken disabled">
+        <i class="fa fa-tag button-icon"></i>View Ticket</button>
+
+    </div>
+  </div>
+</div>
+
+<p><br />
+<br /></p>
+<ul class="global-actions-nav">
+  <li class="btn btn-circle btn-xs btn-default-secondary mg-r-xs" data-toggle="tooltip" data-placement="bottom" title="Print" style="float: left">
+    <a href="#">
+      <i class="fa fa-print"></i>
+    </a>
+  </li>
+  <li class="btn btn-circle btn-xs btn-default-secondary mg-r-xs" data-toggle="tooltip" data-placement="bottom" title="Share" style="float: left">
+    <a href="#">
+      <i class="fa fa-share-square-o"></i>
+    </a>
+  </li>
+  <li class="btn btn-circle btn-xs btn-default-secondary mg-r-xs" data-toggle="tooltip" data-placement="bottom" title="Export to CSV" style="float: left">
+    <a href="#">
+      <i class="fa fa-file-text-o"></i>
+    </a>
+  </li>
+  <li class="btn btn-circle btn-xs btn-default-secondary mg-r-xs" data-toggle="tooltip" data-placement="bottom" title="Export to PDF" style="float: left">
+    <a href="#">
+      <i class="fa fa-file-pdf-o"></i>
+    </a>
+  </li>
+</ul>
+
+
+  </div>
+
+</article>
+
+
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="l-footer pd-md">
+    <i class="revicon-revinate-logo"></i>
+</footer>
+</div>
+
+<script src="../libs/jquery/dist/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="../libs/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
+<script src="../libs/angular/angular.min.js"></script>
+<script src="../libs/bootstrap-daterangepicker/moment.js"></script>
+<script src="../libs/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="../libs/bootstrap-daterangepicker/daterangepicker-angular.js"></script>
+<script src="../libs/angular-strap/dist/angular-strap.min.js"></script>
+<script src="../libs/angular-strap/dist/angular-strap.tpl.min.js"></script>
+<script src="../libs/jquery-datatables/js/jquery.dataTables.js"></script>
+<script src="../libs/angular-datatables/angular-datatables/dist/angular-datatables.min.js"></script>
+<script src="../libs/angular-datatables/angular-datatables/dist/plugins/bootstrap/angular-datatables.bootstrap.min.js"></script>
+<script src="../js/angular/styleguide.js"></script>
+<script src="../js/angular/rev-ng-switch.js"></script>
+<script src="../js/rev-jq-switch.js"></script>
+<script src="../libs/bootstrap-toggle/js/bootstrap-toggle.js"></script>
+<script src="../libs/bootstrap-select/js/bootstrap-select.js"></script>
+<script src="../libs/nya-bootstrap-select/dist/js/nya-bs-select.js"></script>
+<script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
+<script src="../js/main.js"></script>
+<script>
+    $('.bs-docs-sidenav li').click(function(){
+        $(this).siblings('li').removeClass('active');
+        $(this).addClass('active');
+    });
+    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-rev-jq-switch=true]').revSwitch();
+    var fixHelper = function(e, ui) {
+        ui.children().each(function() {
+            $(this).width($(this).width());
+        });
+        return ui;
+    };
+
+    $("#sort tbody").sortable({
+        helper: fixHelper
+    }).disableSelection();
+
+    $('input[name="daterange"]').daterangepicker({
+        applyClass: 'btn-primary',
+        cancelClass: 'btn-link'
+    });
+</script>
+
+<script type="text/javascript">
+    $(function() {
+
+        function cb(start, end) {
+            $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+        }
+        cb(moment().subtract(29, 'days'), moment());
+
+        $('#reportrange').daterangepicker({
+            applyClass: 'btn-primary',
+            cancelClass: 'btn-link',
+            opens: 'left',
+            ranges: {
+                'Today': [moment(), moment()],
+                'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                'This Month': [moment().startOf('month'), moment().endOf('month')],
+                'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+            }
+        }, cb);
+
+    });
+</script>
+
+
+</body>
+</html>
