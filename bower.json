@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "ignore": [
     "*",
-    "!fonts/*",
-    "!libs/",
-    "!_site/css/*",
-    "!_site/fonts/*",
+    "!fonts/**",
+    "!libs/**",
+    "!_site/css/**",
+    "!_site/fonts/**",
     "!node_modules/*"
   ],
   "dependencies": {}
