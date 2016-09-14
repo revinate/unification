@@ -1,0 +1,104 @@
+<!doctype html>
+    <head>
+    <link rel="stylesheet" href="/css/styledown.css" >
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/app.css" />
+    <link rel="stylesheet" href="/libs/bootstrap-toggle/css/bootstrap-toggle.css" />
+    <link rel="stylesheet" href="/libs/nya-bootstrap-select/dist/css/nya-bs-select.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #sort tbody {
+            cursor: move;
+        }
+    </style>
+    </head>
+<body>
+{% assign active_page = page.url | downcase %}
+<div class="l-app" id="styleguide">
+    <header class="l-header navbar-fixed-top" style="position: fixed;">
+    <div class="l-header-top">
+        <div class="container">
+
+            <ul class="primary-menu nav nav-tabs" role="tablist">
+                <li class="primary-menu-item-logo primary-menu-item-text">
+              <span class="logo" title="Revinate">
+                <i class="revicon-revinate-logo"></i>
+              </span>
+                </li>
+                <li class="principles{% if active_page == '/principles.html' %} active{% endif %}">
+                    <a href="/principles" role="tab">
+                        Principles
+                    </a>
+                </li>
+                <li class="style-guide{% if active_page != '/resources.html' and active_page != '/principles.html' %} active{% endif %}">
+                    <a href="/" role="tab">Style Guide</a>
+                </li>
+                <li class="resources{% if active_page == '/resources.html' %} active{% endif %}">
+                    <a href="/resources" role="tab">
+                        Resources
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="l-header-bottom">
+        <div class="tab-content container">
+
+            <!-- principles tab content -->
+            <div role="tabpanel" class="tab-pane{% if active_page == '/principles.html' %} active{% endif %}" id="principles">
+
+principles nav
+
+            </div>
+            <!-- style-guide tab content -->
+            <div role="tabpanel" class="tab-pane{% if active_page != '/resources.html' and active_page != '/principles.html' %} active{% endif %}" id="style-guide">
+                {% for category in site.categories %}
+                {% assign active_cat = category | first | prepend: '/' | append: '/' %}
+                <div class="btn-group mg-r-sm mg-b-md">
+                    {% if active_page == active_cat %}
+                    <button type="button" class="btn btn-primary btn-header dropdown-toggle active" data-toggle="dropdown" aria-expanded="false">{{ category | first }}
+                        <i class="fa fa-caret-down mg-l-xs"></i>
+                    </button>
+                    {% else %}
+                    <button type="button" class="btn btn-primary btn-header dropdown-toggle" data-toggle="dropdown" aria-expanded="false">{{ category | first }}
+                        <i class="fa fa-caret-down mg-l-xs"></i>
+                    </button>
+                    {% endif %}
+                    <ul class="dropdown-menu" role="menu">
+                        {% for posts in category %}
+                        {% for post in posts reversed %}
+                        {% if post.url %}
+                        <li class="active">
+                            <a href="/{{ category | first }}/#{{ post.title }}">{{ post.title }}</a>
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endfor %}
+
+
+            </div>
+
+            <!-- resources tab content -->
+            <div role="tabpanel" class="tab-pane{% if active_page == '/resources.html' %} active{% endif %}" id="resources">
+
+resources nav
+
+            </div>
+
+        </div>
+    </div>
+</header>
+    <main class="l-main">
+        <div class="container" style="padding-top: 135px;">
+            <div class="l-main-content row pd-xl">
+
+
+
+                <div class="styleguide col-sm-12" ng-app="main">
+                    <div ng-controller="MainCtrl">

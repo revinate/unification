@@ -1,0 +1,51 @@
+.badge {
+  display: inline-block;
+  min-width: 22px;
+  height: 20px;
+  font-size: .85em;
+  text-align: center;
+  line-height: 20px;
+  padding: 0 5px;
+  &.badge-danger {
+    background-color: $brand-danger;
+    color: #ffffff;
+  }
+  &.badge-default {
+    background-color: transparent;
+    color: inherit;
+    font-size: 1em;
+  }
+  &.on-duty {
+    background-color: $brand-success;
+  }
+  &.off-duty {
+    background-color: $brand-danger;
+  }
+  &.on-property {
+    background-color: $r_brand-tertiary;
+  }
+  &.pre-stay {
+    background-color: $r_brand-secondary;
+  }
+  &.post-stay {
+    background-color: #9B9B9B;
+  }
+  font-weight: normal;
+  @extend .FontLatoLight;
+}
+
+span.label, .badge-label button {
+  text-transform: uppercase;
+  font-family: 'Gram', sans-serif !important;
+  font-weight: normal !important;
+  font-size: 11px !important;
+  line-height: 1.5 !important;
+  letter-spacing: .12em;
+  display: inline-block;
+  padding: 0 5px !important;
+}
+
+//remove margin between on duty list items
+.on-duty-list-item {
+  margin-right: 0;
+}

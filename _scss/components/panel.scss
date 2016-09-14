@@ -1,0 +1,53 @@
+.panel {
+  .panel-heading {
+    padding: 15px 20px;
+    @extend .clearfix;
+    background: #fff;
+    .panel-title {
+      float: left;
+      font-size: 18px;
+      line-height: 1.5;
+      @extend .FontLatoBold;
+      small {
+        display: block;
+        @extend .FontLatoLight;
+        font-size: 14px;
+        line-height: 1.5;
+        a {
+          color: $brand-primary;
+        }
+      }
+    }
+    .hidden-link {
+      font-size: .75em;
+      span {  color: white;  }
+      &:hover {
+        color: $brand-primary;
+        text-decoration: none;
+      }
+    }
+    .btn {
+      float: right;
+      margin-top: 3px;
+    }
+    .btn-group {
+      float: right;
+      margin-top: 0;
+      .btn {
+        margin-top: 0;
+      }
+    }
+  }
+  .panel-body.panel-body-table {
+    padding: 0 !important;
+  }
+  .panel-footer {
+    padding: 15px 20px;
+    .pagination, .pager {
+      margin: 0 !important;
+    }
+  }
+  &.panel-review-card {
+    padding: 30px;
+  }
+}

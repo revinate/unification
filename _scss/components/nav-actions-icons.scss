@@ -1,0 +1,66 @@
+ul.global-actions-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  li {
+    display: block;
+    float: right;
+    font-weight: bold;
+    letter-spacing: 0;
+    margin: 0 0 0 5px !important;
+    padding: 0;
+    i {
+      display: inline-block;
+      padding: 0 !important;
+      letter-spacing: 0 !important;
+    }
+    a {
+      color: #333;
+      margin: 0;
+      padding: 0;
+      &:hover {
+        color: #3BA1F8;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      color: #3BA1F8;
+    }
+    &.btn.btn-circle.btn-default-secondary {
+      &:hover {
+        border-color: rgba(#3BA1F8, .5);
+        a {
+          color: #3BA1F8;
+        }
+      }
+    }
+    &.disabled {
+      &:hover {
+        cursor: not-allowed;
+        color: #ccc;
+        a {
+          color: #ccc;
+          &:hover {
+            color: #ccc;
+            cursor: not-allowed;
+          }
+        }
+        i {
+          color: #ccc;
+          &:hover {
+            color: #ccc;
+            cursor: not-allowed;
+          }
+        }
+      }
+      &.btn.btn-circle.btn-default-secondary {
+        &:hover {
+          border-color: #ccc;
+          a {
+            color: #ccc;
+          }
+        }
+      }
+    }
+  }
+}

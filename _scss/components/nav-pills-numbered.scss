@@ -1,0 +1,95 @@
+.nav-pills-numbered {
+  text-align: center;
+  li {
+    float: none;
+    display: table-cell;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 30px;
+      width: 100%;
+      height: 1px;
+      z-index: 1;
+      left: -50%;
+      background-color: darken(#F3F3F4,3%);
+    }
+    // have this commented out for now until we figure out whether we want previous tabs in the promotion
+    // flow to be disabled or not.
+    //&.disabled {
+    //  &:before {
+    //    background-color: #777;
+    //  }
+    //}
+    //&.active {
+    //  &:before {
+    //    background-color: $brand-primary !important;
+    //  }
+    //}
+    &:first-child {
+      &:before {
+        width: 0;
+        background-color: transparent;
+      }
+    }
+
+    a {
+      background-color: transparent !important;
+      &:hover, &:focus, &:active {
+        background-color: transparent !important;
+        color: $brand-primary;
+        .nav-pills-numbered-index {
+          color: white;
+          background-color: $brand-primary;
+        }
+      }
+    }
+    &.active a {
+      background-color: transparent !important;
+      color: $r_brand-secondary;
+      cursor: default;
+      &:hover, &:active, &:focus {
+        color: $r_brand-secondary !important;
+        .nav-pills-numbered-index {
+          color: white !important;
+          background-color: $r_brand-secondary !important;
+        }
+      }
+    }
+    &.disabled a {
+      &:hover, &:active, &:focus {
+        .nav-pills-numbered-index {
+          color: #777;
+          background-color: #F3F3F4;
+        }
+      }
+    }
+  }
+}
+
+$nav-pills-numbered-index-size: 30px;
+
+.nav-pills-numbered-index {
+  position: relative;
+  z-index: 2;
+  width: $nav-pills-numbered-index-size;
+  height: $nav-pills-numbered-index-size;
+  line-height: $nav-pills-numbered-index-size;
+  border-radius: $nav-pills-numbered-index-size;
+  display: block;
+  text-align: center;
+  margin: 5px auto 15px;
+  color: $brand-primary;
+  border: 1px $brand-primary solid;
+  background-color: white;
+  .active & {
+    color: white !important;
+    background-color: $r_brand-secondary !important;
+    border: 1px $r_brand-secondary solid !important;
+  }
+  .disabled & {
+    color: #777;
+    border: 1px darken(#F3F3F4,3%) solid;
+    background-color: #F3F3F4;
+  }
+}

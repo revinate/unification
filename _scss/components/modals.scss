@@ -1,0 +1,10 @@
+.modal-footer {
+  .btn {
+    float: right;
+    margin: 0 0 0 15px;
+    &.btn-delete {
+      float: left;
+      margin-left: 0;
+    }
+  }
+}

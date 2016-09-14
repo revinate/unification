@@ -1,0 +1,82 @@
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="l-footer pd-md">
+    <i class="revicon-revinate-logo"></i>
+</footer>
+</div>
+
+<script src="../libs/jquery/dist/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="../libs/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
+<script src="../libs/angular/angular.min.js"></script>
+<script src="../libs/bootstrap-daterangepicker/moment.js"></script>
+<script src="../libs/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="../libs/bootstrap-daterangepicker/daterangepicker-angular.js"></script>
+<script src="../libs/angular-strap/dist/angular-strap.min.js"></script>
+<script src="../libs/angular-strap/dist/angular-strap.tpl.min.js"></script>
+<script src="../libs/jquery-datatables/js/jquery.dataTables.js"></script>
+<script src="../libs/angular-datatables/angular-datatables/dist/angular-datatables.min.js"></script>
+<script src="../libs/angular-datatables/angular-datatables/dist/plugins/bootstrap/angular-datatables.bootstrap.min.js"></script>
+<script src="../js/angular/styleguide.js"></script>
+<script src="../js/angular/rev-ng-switch.js"></script>
+<script src="../js/rev-jq-switch.js"></script>
+<script src="../libs/bootstrap-toggle/js/bootstrap-toggle.js"></script>
+<script src="../libs/bootstrap-select/js/bootstrap-select.js"></script>
+<script src="../libs/nya-bootstrap-select/dist/js/nya-bs-select.js"></script>
+<script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
+<script src="../js/main.js"></script>
+<script>
+    $('.bs-docs-sidenav li').click(function(){
+        $(this).siblings('li').removeClass('active');
+        $(this).addClass('active');
+    });
+    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-rev-jq-switch=true]').revSwitch();
+    var fixHelper = function(e, ui) {
+        ui.children().each(function() {
+            $(this).width($(this).width());
+        });
+        return ui;
+    };
+
+    $("#sort tbody").sortable({
+        helper: fixHelper
+    }).disableSelection();
+
+    $('input[name="daterange"]').daterangepicker({
+        applyClass: 'btn-primary',
+        cancelClass: 'btn-link'
+    });
+</script>
+
+<script type="text/javascript">
+    $(function() {
+
+        function cb(start, end) {
+            $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+        }
+        cb(moment().subtract(29, 'days'), moment());
+
+        $('#reportrange').daterangepicker({
+            applyClass: 'btn-primary',
+            cancelClass: 'btn-link',
+            opens: 'left',
+            ranges: {
+                'Today': [moment(), moment()],
+                'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                'This Month': [moment().startOf('month'), moment().endOf('month')],
+                'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+            }
+        }, cb);
+
+    });
+</script>
+
+
+</body>
+</html>

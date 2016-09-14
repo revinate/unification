@@ -1,0 +1,64 @@
+.nav-pills-terciary,
+.nav-pills-tertiary {
+  border-bottom: 2px #F3F3F4 solid;
+  clear: both;
+  float: none !important;
+  > li > a:focus, > li > a:hover {
+    background: transparent !important;
+  }
+  li {
+    a {
+      text-transform: capitalize;
+      color: #3BA1FF;
+      position: relative;
+      background-color: transparent;
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 4px;
+        background-color: transparent;
+      }
+    }
+
+    /* reset bootstrap default styles */
+    &.active, &.disabled, &:hover, &.active:hover, &:active, &:visited, &:focus {
+      a {
+        color: #777;
+        background-color: transparent !important;
+        &:hover, &:focus {
+          color: #777;
+        }
+      }
+    }
+
+    &.active {
+      a {
+        color: #444;
+        @extend .FontLatoBold;
+        &:hover {
+          color: #444 !important;
+        }
+        &:after {
+          background-color: $r-brand-secondary;
+        }
+      }
+    }
+    a {
+      &:hover {
+        color: #444 !important;
+      }
+    }
+    &.disabled {
+      a {
+        color: #ccc;
+        &:hover {
+          color: #ccc !important;
+        }
+      }
+    }
+  }
+
+}
