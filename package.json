@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-
+    "grunt": "^0.4.5",
+    "grunt-serve": "^0.1.6",
+    "grunt-styledown": "0.0.3"
   }
 }
