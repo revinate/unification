@@ -2,16 +2,15 @@
 layout: default
 ---
 <header class="page-header">
-<h1>Basics</h1>
+    <h1>Modules</h1>
 </header>
 
-{% for post in site.categories.basics reversed %}
+{% for post in site.categories.modules reversed %}
 <div class="row">
     <div class="col-md-12">
         <a class="section-anchor" id="{{ post.title }}"></a>
-        <h2 class="sg"">{{ post.title | escape }}</h2>
+        <h2 class="sg">{{ post.title | escape }}</h2>
         {{ post.content }}
     </div>
 </div>
 {% endfor %}
-

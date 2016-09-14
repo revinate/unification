@@ -1,0 +1,149 @@
+---
+layout: post
+title: "Buttons"
+date: 2016-09-02 00:00:02
+---
+
+<button class="btn btn-xs btn-default">XSmall</button>
+<button class="btn btn-sm btn-default">Small</button>
+<button class="btn btn-default">Medium</button>
+<button class="btn btn-lg btn-default">Large</button>
+<br />
+<br />
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-primary active">Primary</button>
+<button class="btn btn-primary disabled">Primary</button>
+<br />
+<br />
+<button class="btn btn-secondary">Secondary</button>
+<button class="btn btn-secondary active">Secondary</button>
+<button class="btn btn-secondary disabled">Secondary</button>
+<br />
+<br />
+<button class="btn btn-danger">Danger</button>
+<button class="btn btn-danger active">Danger</button>
+<button class="btn btn-danger disabled">Danger</button>
+<br />
+<br />
+<button class="btn btn-info">Info</button>
+<button class="btn btn-info active">Info</button>
+<button class="btn btn-info disabled">Info</button>
+<br />
+<br />
+<button class="btn btn-delete">Delete</button>
+<button class="btn btn-delete active">Delete</button>
+<button class="btn btn-delete disabled">Delete</button>
+<br />
+<br />
+<button class="btn btn-link">Link</button>
+<button class="btn btn-link active">Link</button>
+<button class="btn btn-link disabled">Link</button>
+<br />
+<br />
+<button class="btn btn-internal-primary">Internal Use - primary</button>
+<button class="btn btn-internal-primary active">Internal Use - primary</button>
+<br />
+<br />
+<button class="btn btn-internal-secondary">Internal Use - secondary</button>
+<button class="btn btn-internal-secondary active">Internal Use - secondary</button>
+<br />
+<br />
+<div class="row">
+  <div class="col-md-3">
+    <div class="actions-buttons">
+      <button class="btn btn-primary btn-rounded btn-reply">Review Action</button>
+      <button class="btn btn-secondary btn-rounded">
+        <i class="fa fa-star button-icon"></i>Secondary</button>
+      <button class="btn btn-rounded btn-action-taken">
+        <i class="fa fa-tag button-icon"></i>Action Taken</button>
+      <div class="btn-group">
+        <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+          More Actions
+          <i class="fa fa-angle-down"></i>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li>
+            <a href="#">action 1</a>
+          </li>
+          <li>
+            <a href="#">action 2</a>
+          </li>
+          <li>
+            <a href="#">action 3</a>
+          </li>
+          <li>
+            <a href="#">action 4</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="col-md-3">
+      <div class="actions-buttons">
+        <button class="btn btn-primary btn-rounded btn-reply active">Review Action</button>
+        <button class="btn btn-secondary btn-rounded active">
+          <i class="fa fa-star button-icon"></i>Secondary</button>
+        <button class="btn btn-rounded btn-action-taken active">
+          <i class="fa fa-tag button-icon"></i>Action Taken</button>
+      <div class="btn-group open">
+        <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+          More Actions
+          <i class="fa fa-angle-down"></i>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li>
+            <a href="#">action 1</a>
+          </li>
+          <li>
+            <a href="#">action 2</a>
+          </li>
+          <li>
+            <a href="#">action 3</a>
+          </li>
+          <li>
+            <a href="#">action 4</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+    
+  <div class="col-md-3">
+    <div class="actions-buttons">
+      <button class="btn btn-primary btn-rounded btn-reply disabled">Review Action</button>
+      <button class="btn btn-secondary btn-rounded disabled">
+        <i class="fa fa-star button-icon"></i>Save Review</button>
+      <button class="btn btn-rounded btn-action-taken disabled">
+        <i class="fa fa-tag button-icon"></i>View Ticket</button>
+
+    </div>
+  </div>
+</div>
+  
+<br />
+<br />
+<ul class="global-actions-nav">
+  <li class="btn btn-circle btn-xs btn-default-secondary mg-r-xs" data-toggle='tooltip' data-placement='bottom' title='Print' style="float: left">
+    <a href="#">
+      <i class="fa fa-print"></i>
+    </a>
+  </li>
+  <li class="btn btn-circle btn-xs btn-default-secondary mg-r-xs" data-toggle='tooltip' data-placement='bottom' title='Share' style="float: left">
+    <a href="#">
+      <i class="fa fa-share-square-o"></i>
+    </a>
+  </li>
+  <li class="btn btn-circle btn-xs btn-default-secondary mg-r-xs" data-toggle='tooltip' data-placement='bottom' title='Export to CSV' style="float: left">
+    <a href="#">
+      <i class="fa fa-file-text-o"></i>
+    </a>
+  </li>
+  <li class="btn btn-circle btn-xs btn-default-secondary mg-r-xs" data-toggle='tooltip' data-placement='bottom' title='Export to PDF' style="float: left">
+    <a href="#">
+      <i class="fa fa-file-pdf-o"></i>
+    </a>
+  </li>
+</ul>
+
+  

@@ -1,0 +1,94 @@
+---
+layout: post
+title: "Switches"
+date: 2016-09-08 00:00:00
+---
+
+<div class="row">
+  <div class="col-lg-12">
+    <h5>Angular</h5>
+    <div class="checkbox checkbox-rev-switch switch-xs">
+      <label for='example6' class='control-label'>
+        <rev-ng-switch id='example6' is-checked="angularUiSwitch.example6"></rev-ng-switch>
+        XS Switch
+        <small></small>
+      </label>
+    </div>
+    <div class="checkbox checkbox-rev-switch">
+      <label for='example1' class='control-label'>
+        <rev-ng-switch id='example1' is-checked="angularUiSwitch.example1"></rev-ng-switch>
+        Default Switch
+        <small>true</small>
+      </label>
+    </div>
+    <div class="checkbox checkbox-rev-switch">
+      <label for='example4' class='control-label'>
+        <rev-ng-switch class='primary' id='example4' on='Yes' off='No' is-checked="angularUiSwitch.example4"></rev-ng-switch>
+        Primary Switch
+        <small>true</small>
+      </label>
+    </div>
+    <div class="checkbox checkbox-rev-switch">
+      <label for='example5' class='control-label'>
+        <rev-ng-switch class='danger' id='example5' is-checked="angularUiSwitch.example5"></rev-ng-switch>
+        Danger Switch
+        <small>true</small>
+      </label>
+    </div>
+    <div class="checkbox checkbox-rev-switch">
+      <label for='example2' class='control-label'>
+        <rev-ng-switch id='example2' is-disabled='true' is-checked="angularUiSwitch.example2"></rev-ng-switch>
+        Disabled Switch
+        <small>false</small>
+      </label>
+    </div>
+    <div class="checkbox checkbox-rev-switch">
+      <label for='example3' class='control-label'>
+        <rev-ng-switch class='success wide' id='example3' is-checked="angularUiSwitch.example3" on-change="onChangeExample3(value)"></rev-ng-switch>
+        Success Wide Switch
+        <small>true</small>
+      </label>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-lg-12">
+    <h5>JQuery</h5>
+    <div class="checkbox checkbox-rev-switch switch-xs">
+      <label class='control-label'>
+        <input data-rev-jq-switch='true' on='On' off='Off' checked="checked" type='checkbox' />XS Switch
+      </label>
+    </div>
+    <div class="checkbox checkbox-rev-switch">
+      <label class='control-label'>
+        <input data-rev-jq-switch='true' on='On' off='Off' checked="checked" type='checkbox' />Default Switch
+      </label>
+    </div>
+    <div class="checkbox checkbox-rev-switch">
+      <label class='control-label'>
+        <input class='primary' type='checkbox' checked="checked" data-rev-jq-switch='true' on='On' off='Off' />Primary Switch
+      </label>
+    </div>
+    <div class="checkbox checkbox-rev-switch">
+      <label class='control-label'>
+        <input class='danger' type='checkbox' data-rev-jq-switch='true' on='On' off='Off' checked='checked' />Danger Switch
+      </label>
+    </div>
+    <div class="checkbox checkbox-rev-switch">
+      <label class='control-label'>
+        <input type='checkbox' data-rev-jq-switch='true' on='On' off='Off' disabled='disabled' checked='checked' />Disabled Switch (on)
+      </label>
+    </div>
+    <div class="checkbox checkbox-rev-switch">
+      <label class='control-label'>
+        <input type='checkbox' data-rev-jq-switch='true' on='On' off='Off' disabled='disabled' />Disabled Switch (off)
+      </label>
+    </div>
+    <div class="checkbox checkbox-rev-switch">
+      <label class='control-label'>
+        <input class='success wide' data-rev-jq-switch='true' type='checkbox' on='On' off='Off' checked="checked" />Wide Switch
+      </label>
+    </div>
+  </div>
+</div> 

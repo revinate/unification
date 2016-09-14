@@ -1,0 +1,141 @@
+---
+layout: post
+title:  "Colors"
+category: "basics"
+date: 2016-09-02 00:00:00
+---
+
+<div class="col-md-4">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div style="background-color: #3BA1F8; height: 100px; margin-bottom: 20px;"></div>
+            <p align="center">$brand-primary: #3BA1F8</p>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div style="background-color: #83AD47; height: 100px; margin-bottom: 20px;"></div>
+            <p align="center">$brand-success: #83AD47</p>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div style="background-color: #5bc0de; height: 100px; margin-bottom: 20px;"></div>
+            <p align="center">$brand-info: #5bc0de</p>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div style="background-color: #f0ad4e; height: 100px; margin-bottom: 20px;"></div>
+            <p align="center">$brand-warning: #f0ad4e</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-md-4">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div style="background-color: #F55949; height: 100px; margin-bottom: 20px;"></div>
+            <p align="center">$brand-danger: #F55949</p>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div style="background-color: #3CBFA2; height: 100px; margin-bottom: 20px;"></div>
+            <p align="center">$r_brand-secondary: #3CBFA2</p>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div style="background-color: #8F7EC2; height: 100px; margin-bottom: 20px;"></div>
+            <p align="center">$r_brand-tertiary: #8F7EC2</p>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div style="background-color: #283745; height: 100px; margin-bottom: 20px;"></div>
+            <p align="center">$r_brand-primary: #283745</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-md-4">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div style="background-color: #283745; height: 100px; margin-bottom: 20px;"></div>
+            <p align="center">$r_brand-primary-dark: #283745</p>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div style="background-color: #182129; height: 100px; margin-bottom: 20px;"></div>
+            <p align="center">$r_brand-primary-darker: #182129</p>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div style="background-color: #74797E; height: 100px; margin-bottom: 20px;"></div>
+            <p align="center">$r_brand-primary-light: #74797E</p>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div style="background-color: #939BA2; height: 100px; margin-bottom: 20px;"></div>
+            <p align="center">$r_brand-primary-lighter: #939BA2</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-md-4">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div style="background-color: #000; height: 100px; margin-bottom: 20px;"></div>
+            <p align="center">$gray-base: #000</p>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div style="background-color: #222; height: 100px; margin-bottom: 20px;"></div>
+            <p align="center">$gray-darker: #222</p>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div style="background-color: #333; height: 100px; margin-bottom: 20px;"></div>
+            <p align="center">$gray-dark, $text-color: #333</p>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div style="background-color: #555; height: 100px; margin-bottom: 20px;"></div>
+            <p align="center">$gray: #555</p>
+        </div>
+    </div>
+</div>
