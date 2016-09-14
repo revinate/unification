@@ -1,5 +1,12 @@
 {
   "name": "revinateunification",
   "version": "0.0.1",
+  "ignore": [
+    "*",
+    "!fonts/*",
+    "!libs/",
+    "!_site/css/*",
+    "!node_modules/*"
+  ],
   "dependencies": {}
 }
