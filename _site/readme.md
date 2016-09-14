@@ -3,23 +3,23 @@
 ### Pre-requisites
 
 - NodeJS - [https://nodejs.org/]()
-- Compass - `gem install compass`
+- Jekyll - [https://jekyllrb.com/docs/quickstart/]
 
 ### Setup
 
-- Run `npm install`
+- Run `gem install jekyll bundler`
 
 ### Update Styleguide
 
-- Change `styleguide-markdown.md` as needed
-- Run `grunt`
+- create posts in each collection in order to add items to the styleguide, posts need to be created in the format `YYY-MM-DD-name.markdown`
+- multiple posts on the same day default to alphabetical order, to override this, use the date Front Matter inside the post. Change the time field to create heirarchy. 
 
 ### Start local server
 
-- To visualize the styleguide in your local env., run `grunt` from the terminal and visit `http://localhost:9000`
+- To visualize the styleguide in your local env., run `bundle exec jekyll serve --I` from the terminal and visit `http://localhost:4000`
 
 ### Compile Sass
-- `compass compile` or `compass watch`
+- jekyll serve task will watch for changes in the `_posts` and `_sass` directories
 
 ### How to Deploy
 - run `cd deploy_scripts`
