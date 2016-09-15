@@ -19,7 +19,7 @@
 - To visualize the styleguide in your local env., run `bundle exec jekyll serve --I` from the terminal and visit `http://localhost:4000`
 
 ### Compile Sass
-- jekyll serve task will watch for changes in the `_posts` and `_sass` directories
+- jekyll serve task will watch for changes in the `_posts` and `_scss` directories
 
 ### How to Deploy
 - run `cd deploy_scripts`
