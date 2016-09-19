@@ -27,15 +27,15 @@
               </span>
                 </li>
                 <li class="principles{% if active_page == '/principles.html' %} active{% endif %}">
-                    <a href="/principles" role="tab">
+                    <a href="{{ root_url }}/principles" role="tab">
                         Principles
                     </a>
                 </li>
                 <li class="style-guide{% if active_page != '/resources.html' and active_page != '/principles.html' %} active{% endif %}">
-                    <a href="/" role="tab">Style Guide</a>
+                    <a href="{{ root_url }}/" role="tab">Style Guide</a>
                 </li>
                 <li class="resources{% if active_page == '/resources.html' %} active{% endif %}">
-                    <a href="/resources" role="tab">
+                    <a href="{{ root_url }}/resources" role="tab">
                         Resources
                     </a>
                 </li>
