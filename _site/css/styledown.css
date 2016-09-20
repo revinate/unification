@@ -34,3 +34,38 @@
 #styleguide .btn-primary.btn-header.active {
   color: #3CBFA2;
 }
+
+#styleguide .l-main-content .styleguide ul {
+  padding: 0 0 20px 20px;
+}
+
+#styleguide .l-main-content .styleguide ul li {
+  padding: 2px 0;
+}
+
+#styleguide .l-main-content .styleguide .highlight pre code {
+  font-size: 11px;
+  color: #333;
+}
+
+#styleguide .l-main-content .styleguide .highlight pre code table td pre {
+  border: none;
+}
+#styleguide .l-main-content .styleguide .highlight pre code table td pre.lineno {
+  font-style: italic;
+  color: #ccc;
+}
+
+#styleguide .l-main-content .styleguide .highlight pre code span.na {
+  color: #5bc0de;
+}
+#styleguide .l-main-content .styleguide .highlight pre code span.s {
+  color: #83AD47;
+}
+#styleguide .l-main-content .styleguide .highlight pre code span.nt {
+  color: #3CBFA2;
+}
+#styleguide .l-main-content .styleguide .highlight pre code span.c {
+  color: #ccc;
+  font-style: italic;
+}

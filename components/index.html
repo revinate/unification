@@ -8,9 +8,15 @@ layout: default
 {% for post in site.categories.components reversed %}
 <div class="row">
     <div class="col-md-12">
-        <a class="section-anchor" id="{{ post.title }}"></a>
+        <a class="section-anchor" id="{{ post.title | slugify}}"></a>
         <h2 class="sg">{{ post.title | escape }}</h2>
         {{ post.content }}
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="collapse mg-t-md" id="example-{{ post.title | slugify }}">{% highlight html linenos %}{{ post.content | strip }}{% endhighlight %}</div>
+                <button class="btn btn-primary btn-sm mg-t-md" data-toggle="collapse" data-target="#example-{{ post.title | slugify }}">&hellip;</button>
+            </div>
+        </div>
     </div>
 </div>
 {% endfor %}

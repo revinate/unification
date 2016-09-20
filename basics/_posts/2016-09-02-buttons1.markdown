@@ -3,7 +3,6 @@ layout: post
 title: "Buttons"
 date: 2016-09-02 00:00:02
 ---
-
 <button class="btn btn-xs btn-default">XSmall</button>
 <button class="btn btn-sm btn-default">Small</button>
 <button class="btn btn-default">Medium</button>

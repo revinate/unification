@@ -72,7 +72,7 @@ principles nav
                         {% for post in posts reversed %}
                         {% if post.url %}
                         <li class="active">
-                            <a href="/{{ category | first }}/index.html#{{ post.title }}">{{ post.title }}</a>
+                            <a href="/{{ category | first }}/index.html#{{ post.title | slugify }}">{{ post.title }}</a>
                         </li>
                         {% endif %}
                         {% endfor %}
