@@ -1,2 +1,8 @@
 .sass-cache
 .jekyll-metadata
+.idea
+.DS_Store
+/node_modules
+/ruby
+/bower_components
+_site/

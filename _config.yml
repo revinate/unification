@@ -19,15 +19,14 @@ description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "/_site" # the subpath of your site, e.g. /blog
 url: "http://example.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
-
+host: 0.0.0.0
 # Build settings
 markdown: kramdown
 theme: minima
-
+exclude: [deploy_scripts, ruby, node_modules, Makefile, Jenkinsfile, Dockerfile, docker-compose.yml, make_build.sh, make_startup.sh]
 sass:
   load_paths:
   - _scss

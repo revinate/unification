@@ -1,0 +1,19 @@
+version: '2'
+services:
+  nginx:
+    image: registry.revinate.net/common/nginx:1.9.14
+    volumes:
+      - ./_site:/usr/share/nginx/html
+    ports: [ "4000:80"]
+  watch:
+    image: registry.revinate.net/common/ruby:2.1-debian-nodejs
+    command: 'bash -c "cd /var/www/app && make watch"'
+    volumes:
+      - .:/var/www/app
+  build:
+    restart: 'no'
+    image: registry.revinate.net/common/ruby:2.1-debian-nodejs
+    command: 'bash -c "cd /var/www/app && make build"'
+    volumes:
+      - .:/var/www/app
+
