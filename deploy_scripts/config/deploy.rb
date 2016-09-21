@@ -13,7 +13,7 @@ set :normalize_asset_timestamps, false
 
 before "deploy:restart", "deploy:npm"
 after "deploy:npm", "deploy:bower"
-after "deploy:bower", "deploy:grunt"
+after "deploy:bower"
 
 desc "Npm install"
 deploy.task :npm do
@@ -25,10 +25,6 @@ deploy.task :bower do
     run "cd #{release_path} && bower install"
 end
 
-desc "Grunt"
-deploy.task :grunt do
-    run "cd #{release_path} && grunt deploy"
-end
 
 desc "Restart Apache"
 deploy.task :restart, :roles => :app, :except => { :no_restart => true } do
