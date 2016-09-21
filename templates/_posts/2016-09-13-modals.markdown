@@ -2,6 +2,15 @@
 layout: post
 title: "Modals"
 date: 2016-09-13 00:00:01
+desc: "
+- Modals use standard bootstrap modal markup.
+
+- `.modal-sm` and `.modal-lg` are used for small and large modals. Modals are medium-sized by default.
+
+- Small modals may have no more than 2 Calls to Action.
+
+- If a modal contains a Delete action, use `.btn-delete` to apply appropriate styles and float it to the left.
+"
 ---
 
 <!-- Trigger the modal with a button -->

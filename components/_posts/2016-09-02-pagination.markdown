@@ -2,6 +2,11 @@
 layout: post
 title: "Pagination"
 date: 2016-09-08 00:00:02
+desc: "
+- Standard bootstrap pagination applies
+
+- Classes `.disabled` and `.active` are applied to li elements.
+"
 ---
 
 <nav>

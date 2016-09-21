@@ -283,11 +283,17 @@ resources nav
         </header>
 
         
-        <div class="row">
-            <div class="col-md-12">
-                <a class="section-anchor" id="general-layout"></a>
-                <h2 class="sg">General Layout</h2>
-                <div class="l-app">
+<div class="row">
+    <div class="col-xs-12">
+        <a class="section-anchor" id="general-layout"></a>
+        <h2 class="sg">General Layout</h2>
+        <div class="item-description"><p>This is the overall structure of every page. Content goes inside div with class <code class="highlighter-rouge">.l-main-content</code>.
+Everything inside follows the standard Bootstrap 12-column grid, using <code class="highlighter-rouge">.row</code> and <code class="highlighter-rouge">.col-xs- .col-sm- .col-md- .col-lg</code>. Using  <code class="highlighter-rouge">.col-md-*</code> will stack on mobile and tile on desktop.</p>
+<ul>
+  <li>spinner is created using <code class="highlighter-rouge">.spinner</code> and including <code class="highlighter-rouge">.bounce1 .bounce2 .bounce3</code> divs.  For M and E, please use the spinner directive.</li>
+</ul>
+</div>
+        <div class="l-app">
   <header class="l-header">
     <div class="l-header-top"></div>
     <div class="l-header-bottom"></div>
@@ -341,9 +347,11 @@ resources nav
   </footer>
 </div>
 
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="collapse mg-t-md" id="example-general-layout"><figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="collapse mg-t-md" id="example-general-layout"><figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
 2
 3
 4
@@ -449,17 +457,22 @@ resources nav
   <span class="nt">&lt;/footer&gt;</span>
 <span class="nt">&lt;/div&gt;</span><span class="w">
 </span></pre></td></tr></tbody></table></code></pre></figure></div>
-                        <button class="btn btn-primary btn-sm mg-t-md" data-toggle="collapse" data-target="#example-general-layout">&hellip;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <button class="btn btn-primary btn-sm mg-t-md" data-toggle="collapse" data-target="#example-general-layout">&hellip;</button>
+    </div>
+</div>
         
-        <div class="row">
-            <div class="col-md-12">
-                <a class="section-anchor" id="modals"></a>
-                <h2 class="sg">Modals</h2>
-                <!-- Trigger the modal with a button -->
+<div class="row">
+    <div class="col-xs-12">
+        <a class="section-anchor" id="modals"></a>
+        <h2 class="sg">Modals</h2>
+        <div class="item-description"><ul>
+  <li>Modals use standard bootstrap modal markup.</li>
+  <li><code class="highlighter-rouge">.modal-sm</code> and <code class="highlighter-rouge">.modal-lg</code> are used for small and large modals. Modals are medium-sized by default.</li>
+  <li>Small modals may have no more than 2 Calls to Action.</li>
+  <li>If a modal contains a Delete action, use <code class="highlighter-rouge">.btn-delete</code> to apply appropriate styles and float it to the left.</li>
+</ul>
+</div>
+        <!-- Trigger the modal with a button -->
 <p><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#smModal">Small Modal 1CTA
 </button>
 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#smModal2">Small Modal 2CTA
@@ -683,9 +696,11 @@ resources nav
   </div>
 </div>
 
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="collapse mg-t-md" id="example-modals"><figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="collapse mg-t-md" id="example-modals"><figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
 2
 3
 4
@@ -1131,12 +1146,10 @@ resources nav
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span><span class="w">
 </span></pre></td></tr></tbody></table></code></pre></figure></div>
-                        <button class="btn btn-primary btn-sm mg-t-md" data-toggle="collapse" data-target="#example-modals">&hellip;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </title>
+        <button class="btn btn-primary btn-sm mg-t-md" data-toggle="collapse" data-target="#example-modals">&hellip;</button>
+    </div>
+</div>
+        
 
 
 </div>

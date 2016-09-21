@@ -2,6 +2,49 @@
 layout: post
 title: "Tables"
 date: 2016-09-08 00:00:04
+desc: "
+- All tables use `.table`
+
+- Row striping is controlled by `.table-striped`
+
+- Hover interaction (only when entire row is interactive), use `.table-hover`
+
+- Table sortable icons controlled by adding `.fa .fa-sort` and toggling `.fa-sort-asc` and `.fa-sort-desc`
+
+- For green and red text within tables, use `.text-success` and `.text-danger` respectively
+
+- For (more context) text within parentheses, use `.text-muted`
+
+
+**Panel Table**
+
+
+- Panel tables and headers are wrapped in  `.panel`
+
+- `.panel-default` applies the border
+
+- Panel header is wrapped in `header.panel-heading` with title in `h3.panel-title` and subtext in `small` tag
+
+- `button` elements may be included in the header, and will align right by default
+
+- The table below features a multi-select column header.
+
+- When a table row has multiple actions, put the actions under a dropdown, otherwise just use a simple link. Refer to the 'Actions' column in the table below.
+
+- When table rows are clickable or draggable, use hover table.
+
+
+**Data Table**
+
+
+- `bower install angular-datatables`
+
+- Dependencies: `bower install jquery` and `bower install datatables.net`
+
+- Add as a dependency of your angular module `angular.module('mymodule', ['datatables', 'datatables.bootstrap']);`
+
+- Refer to [http://l-lin.github.io/angular-datatables/#/welcome](http://l-lin.github.io/angular-datatables/#/welcome) for instructions on configuration and extensions
+"
 ---
 
 <div class="panel panel-default">

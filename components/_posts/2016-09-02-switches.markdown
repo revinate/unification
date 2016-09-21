@@ -2,6 +2,15 @@
 layout: post
 title: "Switches"
 date: 2016-09-08 00:00:00
+desc: "
+- Since the plugins were mostly developed in-house, you'll find the javascript in the unification repo under `/js/rev-jq-switch.js` (for jquery) and `/js/rev-ng-switch.js` (for angular).
+
+- If you provide an `on-change` function to the Angular directive, make sure this function keeps the `is-checked` value in sync.
+
+- If you don't provide an `on-change` function to the Angular directive, clicking the switch will toggle `is-checked` value.
+
+- The angular directive calls the function setting the parameter called `value` to the current value of `is-checked`.
+"
 ---
 
 <div class="row">

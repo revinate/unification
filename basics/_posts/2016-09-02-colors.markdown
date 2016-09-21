@@ -3,6 +3,7 @@ layout: post
 title:  "Colors"
 category: "basics"
 date: 2016-09-02 00:00:00
+desc: "These are the approved Revinate colors. If you would like to use a color not found here, please **consult the Design Team first.**"
 ---
 
 <div class="col-md-4">

@@ -2,6 +2,13 @@
 layout: post
 title: "General Layout"
 date: 2016-09-13 00:00:00
+desc: "
+This is the overall structure of every page. Content goes inside div with class `.l-main-content`.
+
+Everything inside follows the standard Bootstrap 12-column grid, using `.row` and `.col-xs- .col-sm- .col-md- .col-lg`. Using  `.col-md-*` will stack on mobile and tile on desktop.
+
+- spinner is created using `.spinner` and including `.bounce1 .bounce2 .bounce3` divs.  For M and E, please use the spinner directive.
+"
 ---
 
 <div class="l-app">

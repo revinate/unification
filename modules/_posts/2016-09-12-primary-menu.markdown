@@ -2,6 +2,31 @@
 layout: post
 title: "Primary Menu"
 date: 2016-09-12 00:00:03
+desc: "
+This component is based off of [Twitter Bootstrap tabs component](http://getbootstrap.com/javascript/#tabs). The tabbed menu is inside `.l-header-top` and the
+tabbed content is inside `.l-header-bottom`.
+
+**Extra classes**
+
+- `.primary-menu-item-bordered` adds a border to right menu items
+
+- `.primary-menu-item-icon` needed by icon menu items. i.e. 'Help' & 'Settings'
+
+- `.primary-menu-item-logo` needed by the logo `<li>`
+
+- `.primary-menu-item-text` needed by text only `<li>`. i.e. property name without dropdown
+
+- `.primary-menu-item-label` needed by `<li>` that contains a `.label`. i.e. 'On Duty'
+
+- `.highlight` or `.active` can be added to `<a>` in top right menu items (i.e. settings, help). to indicate the menu
+ item is active.
+
+
+**jQuery vs Angular**
+
+- If you wish to use this component with **jQuery**, make sure the primary menu `<a>` tags have the attribute
+`data-toggle='tab'`, otherwise remove the attribute.
+"
 ---
 
 <header class="l-header">

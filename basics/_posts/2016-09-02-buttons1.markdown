@@ -2,6 +2,13 @@
 layout: post
 title: "Buttons"
 date: 2016-09-02 00:00:02
+desc: "
+- `.btn` can be applied to button and anchor elements 
+
+- 4 buttons sizes `.btn-xs .btn-sm .btn-lg` medium is the default size 
+
+- Button colors are `.btn-default .btn-primary .btn-secondary .btn-success .btn-danger .btn-info .btn-warning .btn-delete`
+"
 ---
 <button class="btn btn-xs btn-default">XSmall</button>
 <button class="btn btn-sm btn-default">Small</button>

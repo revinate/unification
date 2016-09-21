@@ -7,16 +7,17 @@ layout: default
 
 {% for post in site.categories.basics reversed %}
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-xs-12">
         <a class="section-anchor" id="{{ post.title | slugify }}"></a>
         <h2 class="sg">{{ post.title | escape }}</h2>
+        <div class="item-description">{{ post.desc | markdownify }}</div>
         {{ post.content }}
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="collapse mg-t-md" id="example-{{ post.title | slugify }}">{% highlight html linenos %}{{ post.content | strip }}{% endhighlight %}</div>
-                <button class="btn btn-primary btn-sm mg-t-md" data-toggle="collapse" data-target="#example-{{ post.title | slugify }}">&hellip;</button>
-            </div>
-        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="collapse mg-t-md" id="example-{{ post.title | slugify }}">{% highlight html linenos %}{{ post.content | strip }}{% endhighlight %}</div>
+        <button class="btn btn-primary btn-sm mg-t-md" data-toggle="collapse" data-target="#example-{{ post.title | slugify }}">&hellip;</button>
     </div>
 </div>
 {% endfor %}

@@ -6,8 +6,8 @@
 </description>
     <link>http://example.com/</link>
     <atom:link href="http://example.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 20 Sep 2016 16:07:53 -0700</pubDate>
-    <lastBuildDate>Tue, 20 Sep 2016 16:07:53 -0700</lastBuildDate>
+    <pubDate>Wed, 21 Sep 2016 15:35:07 -0700</pubDate>
+    <lastBuildDate>Wed, 21 Sep 2016 15:35:07 -0700</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -825,49 +825,49 @@
       <item>
         <title>Collapse/Accordion</title>
         <description>&lt;div class=&quot;panel-group sg&quot; id=&quot;accordion&quot; role=&quot;tablist&quot; aria-multiselectable=&quot;true&quot;&gt;
-                  &lt;div class=&quot;panel panel-default sg&quot;&gt;
-                    &lt;div class=&quot;panel-heading sg&quot; role=&quot;tab&quot; id=&quot;headingOne&quot;&gt;
-                      &lt;h4 class=&quot;panel-title sg&quot;&gt;
-                        &lt;a role=&quot;button&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseOne&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseOne&quot; class=&quot;sg collapsed&quot;&gt;
-                          Collapsible Group Item #1
-                        &lt;/a&gt;
-                      &lt;/h4&gt;
-                    &lt;/div&gt;
-                    &lt;div id=&quot;collapseOne&quot; class=&quot;panel-collapse sg collapse&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;headingOne&quot; aria-expanded=&quot;false&quot; style=&quot;height: 0px;&quot;&gt;
-                      &lt;div class=&quot;panel-body sg&quot;&gt;
-                        Content goes here
-                      &lt;/div&gt;
-                    &lt;/div&gt;
-                  &lt;/div&gt;
-                  &lt;div class=&quot;panel panel-default sg&quot;&gt;
-                    &lt;div class=&quot;panel-heading sg&quot; role=&quot;tab&quot; id=&quot;headingTwo&quot;&gt;
-                      &lt;h4 class=&quot;panel-title sg&quot;&gt;
-                        &lt;a class=&quot;sg collapsed&quot; role=&quot;button&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseTwo&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseTwo&quot;&gt;
-                          Collapsible Group Item #2
-                        &lt;/a&gt;
-                      &lt;/h4&gt;
-                    &lt;/div&gt;
-                    &lt;div id=&quot;collapseTwo&quot; class=&quot;panel-collapse sg collapse&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;headingTwo&quot; aria-expanded=&quot;false&quot; style=&quot;height: 0px;&quot;&gt;
-                      &lt;div class=&quot;panel-body sg&quot;&gt;
-                        Content goes here
-                      &lt;/div&gt;
-                    &lt;/div&gt;
-                  &lt;/div&gt;
-                  &lt;div class=&quot;panel panel-default sg&quot;&gt;
-                    &lt;div class=&quot;panel-heading sg&quot; role=&quot;tab&quot; id=&quot;headingThree&quot;&gt;
-                      &lt;h4 class=&quot;panel-title sg&quot;&gt;
-                        &lt;a class=&quot;sg collapsed&quot; role=&quot;button&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseThree&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseThree&quot;&gt;
-                          Collapsible Group Item #3
-                        &lt;/a&gt;
-                      &lt;/h4&gt;
-                    &lt;/div&gt;
-                    &lt;div id=&quot;collapseThree&quot; class=&quot;panel-collapse sg collapse&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;headingThree&quot; aria-expanded=&quot;false&quot; style=&quot;height: 0px;&quot;&gt;
-                      &lt;div class=&quot;panel-body sg&quot;&gt;
-                        Content goes here
-                      &lt;/div&gt;
-                    &lt;/div&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
+  &lt;div class=&quot;panel panel-default sg&quot;&gt;
+    &lt;div class=&quot;panel-heading sg&quot; role=&quot;tab&quot; id=&quot;headingOne&quot;&gt;
+      &lt;h4 class=&quot;panel-title sg&quot;&gt;
+        &lt;a role=&quot;button&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseOne&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseOne&quot; class=&quot;sg collapsed&quot;&gt;
+          Collapsible Group Item #1
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;collapseOne&quot; class=&quot;panel-collapse sg collapse&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;headingOne&quot; aria-expanded=&quot;false&quot; style=&quot;height: 0px;&quot;&gt;
+      &lt;div class=&quot;panel-body sg&quot;&gt;
+        Content goes here
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel panel-default sg&quot;&gt;
+    &lt;div class=&quot;panel-heading sg&quot; role=&quot;tab&quot; id=&quot;headingTwo&quot;&gt;
+      &lt;h4 class=&quot;panel-title sg&quot;&gt;
+        &lt;a class=&quot;sg collapsed&quot; role=&quot;button&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseTwo&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseTwo&quot;&gt;
+          Collapsible Group Item #2
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;collapseTwo&quot; class=&quot;panel-collapse sg collapse&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;headingTwo&quot; aria-expanded=&quot;false&quot; style=&quot;height: 0px;&quot;&gt;
+      &lt;div class=&quot;panel-body sg&quot;&gt;
+        Content goes here
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel panel-default sg&quot;&gt;
+    &lt;div class=&quot;panel-heading sg&quot; role=&quot;tab&quot; id=&quot;headingThree&quot;&gt;
+      &lt;h4 class=&quot;panel-title sg&quot;&gt;
+        &lt;a class=&quot;sg collapsed&quot; role=&quot;button&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseThree&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseThree&quot;&gt;
+          Collapsible Group Item #3
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;collapseThree&quot; class=&quot;panel-collapse sg collapse&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;headingThree&quot; aria-expanded=&quot;false&quot; style=&quot;height: 0px;&quot;&gt;
+      &lt;div class=&quot;panel-body sg&quot;&gt;
+        Content goes here
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 </description>
         <pubDate>Sun, 11 Sep 2016 17:00:00 -0700</pubDate>
         <link>http://example.com/modules/2016/09/11/accordions.html</link>

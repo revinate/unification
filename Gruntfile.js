@@ -1,19 +1,7 @@
 module.exports = function(grunt) {
 
 	grunt.initConfig({
-		styledown: {
-			build: {
-				options: {
-					config: 'styleguide-config.md',
-					title: 'Revinate Styleguide'
-				}
-			}
-		},
-		serve: {
-			options: {
-				port: 9000
-			}
-		}
+
 	});
 
 	grunt.loadNpmTasks('grunt-styledown');

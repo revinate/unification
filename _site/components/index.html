@@ -284,9 +284,15 @@ resources nav
 
 
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-xs-12">
         <a class="section-anchor" id="breadcrumbs"></a>
         <h2 class="sg">Breadcrumbs</h2>
+        <div class="item-description"><ul>
+  <li>Every page should have a page header that includes a page title. You can also add breadcrumbs where needed, and acall to action button to the right (Zone 1).</li>
+  <li>All other header tags can go directly into <code class="highlighter-rouge">.l-main-content</code></li>
+  <li>In M&amp;E right now, breadcrumbs are anchor tags inside of <code class="highlighter-rouge">ol.breadcrumb li</code>. We should stick to the bootstrap markup for consistency. For backwards compatibility, both markups work.</li>
+</ul>
+</div>
         <header class="page-header">
   <ol class="breadcrumb">
     <li>
@@ -299,9 +305,11 @@ resources nav
   </ol>
 </header>
 
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="collapse mg-t-md" id="example-breadcrumbs"><figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="collapse mg-t-md" id="example-breadcrumbs"><figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
 2
 3
 4
@@ -323,16 +331,21 @@ resources nav
   <span class="nt">&lt;/ol&gt;</span>
 <span class="nt">&lt;/header&gt;</span><span class="w">
 </span></pre></td></tr></tbody></table></code></pre></figure></div>
-                <button class="btn btn-primary btn-sm mg-t-md" data-toggle="collapse" data-target="#example-breadcrumbs">&hellip;</button>
-            </div>
-        </div>
+        <button class="btn btn-primary btn-sm mg-t-md" data-toggle="collapse" data-target="#example-breadcrumbs">&hellip;</button>
     </div>
 </div>
 
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-xs-12">
         <a class="section-anchor" id="switches"></a>
         <h2 class="sg">Switches</h2>
+        <div class="item-description"><ul>
+  <li>Since the plugins were mostly developed in-house, you’ll find the javascript in the unification repo under <code class="highlighter-rouge">/js/rev-jq-switch.js</code> (for jquery) and <code class="highlighter-rouge">/js/rev-ng-switch.js</code> (for angular).</li>
+  <li>If you provide an <code class="highlighter-rouge">on-change</code> function to the Angular directive, make sure this function keeps the <code class="highlighter-rouge">is-checked</code> value in sync.</li>
+  <li>If you don’t provide an <code class="highlighter-rouge">on-change</code> function to the Angular directive, clicking the switch will toggle <code class="highlighter-rouge">is-checked</code> value.</li>
+  <li>The angular directive calls the function setting the parameter called <code class="highlighter-rouge">value</code> to the current value of <code class="highlighter-rouge">is-checked</code>.</li>
+</ul>
+</div>
         <div class="row">
   <div class="col-lg-12">
     <h5>Angular</h5>
@@ -423,9 +436,11 @@ resources nav
   </div>
 </div>
 
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="collapse mg-t-md" id="example-switches"><figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="collapse mg-t-md" id="example-switches"><figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
 2
 3
 4
@@ -603,16 +618,19 @@ resources nav
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span><span class="w">
 </span></pre></td></tr></tbody></table></code></pre></figure></div>
-                <button class="btn btn-primary btn-sm mg-t-md" data-toggle="collapse" data-target="#example-switches">&hellip;</button>
-            </div>
-        </div>
+        <button class="btn btn-primary btn-sm mg-t-md" data-toggle="collapse" data-target="#example-switches">&hellip;</button>
     </div>
 </div>
 
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-xs-12">
         <a class="section-anchor" id="alerts"></a>
         <h2 class="sg">Alerts</h2>
+        <div class="item-description"><ul>
+  <li>Revinate uses standard bootstrap alerts.</li>
+  <li>Close button can be included with <code class="highlighter-rouge">.fade .in</code> to add a nice little animation on close.</li>
+</ul>
+</div>
         <div class="alert alert-success">
   <strong>
     Success!
@@ -640,9 +658,11 @@ resources nav
   This alert box could indicate a dangerous or potentially negative action.
 </div>
 
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="collapse mg-t-md" id="example-alerts"><figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="collapse mg-t-md" id="example-alerts"><figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
 2
 3
 4
@@ -694,16 +714,19 @@ resources nav
   This alert box could indicate a dangerous or potentially negative action.
 <span class="nt">&lt;/div&gt;</span><span class="w">
 </span></pre></td></tr></tbody></table></code></pre></figure></div>
-                <button class="btn btn-primary btn-sm mg-t-md" data-toggle="collapse" data-target="#example-alerts">&hellip;</button>
-            </div>
-        </div>
+        <button class="btn btn-primary btn-sm mg-t-md" data-toggle="collapse" data-target="#example-alerts">&hellip;</button>
     </div>
 </div>
 
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-xs-12">
         <a class="section-anchor" id="pagination"></a>
         <h2 class="sg">Pagination</h2>
+        <div class="item-description"><ul>
+  <li>Standard bootstrap pagination applies</li>
+  <li>Classes <code class="highlighter-rouge">.disabled</code> and <code class="highlighter-rouge">.active</code> are applied to li elements.</li>
+</ul>
+</div>
         <nav>
   <ul class="pagination">
     <li>
@@ -744,9 +767,11 @@ resources nav
   </ul>
 </nav>
 
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="collapse mg-t-md" id="example-pagination"><figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="collapse mg-t-md" id="example-pagination"><figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
 2
 3
 4
@@ -824,16 +849,22 @@ resources nav
   <span class="nt">&lt;/ul&gt;</span>
 <span class="nt">&lt;/nav&gt;</span><span class="w">
 </span></pre></td></tr></tbody></table></code></pre></figure></div>
-                <button class="btn btn-primary btn-sm mg-t-md" data-toggle="collapse" data-target="#example-pagination">&hellip;</button>
-            </div>
-        </div>
+        <button class="btn btn-primary btn-sm mg-t-md" data-toggle="collapse" data-target="#example-pagination">&hellip;</button>
     </div>
 </div>
 
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-xs-12">
         <a class="section-anchor" id="charts"></a>
         <h2 class="sg">Charts</h2>
+        <div class="item-description"><ul>
+  <li>Charting uses Google Charts</li>
+  <li>Draw charts with reSize function to make them responsive on window resize.</li>
+  <li>Axis labels are LatoBold and all caps.  Capitalization must be done explicitly, as google charts doesn’t support textTransform.</li>
+  <li>jQuery <code class="highlighter-rouge">.extend</code> method is used to merge default options array with custom options per chart.</li>
+  <li>Colors (10-12 hex values for data); should appear in this order for distinctive color contrast purposes <code class="highlighter-rouge">#8F7EC2, #2598B8, #5FC782, #ECDE31, #F55949, #AE85D4, #5FC2C2, #9ACC54, #F5A61D, #B6744A</code></li>
+</ul>
+</div>
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 <script type="text/javascript">
@@ -1056,9 +1087,11 @@ resources nav
   </div>
 </div>
 
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="collapse mg-t-md" id="example-charts"><figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="collapse mg-t-md" id="example-charts"><figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
 2
 3
 4
@@ -1500,16 +1533,44 @@ resources nav
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span><span class="w">
 </span></pre></td></tr></tbody></table></code></pre></figure></div>
-                <button class="btn btn-primary btn-sm mg-t-md" data-toggle="collapse" data-target="#example-charts">&hellip;</button>
-            </div>
-        </div>
+        <button class="btn btn-primary btn-sm mg-t-md" data-toggle="collapse" data-target="#example-charts">&hellip;</button>
     </div>
 </div>
 
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-xs-12">
         <a class="section-anchor" id="tables"></a>
         <h2 class="sg">Tables</h2>
+        <div class="item-description"><ul>
+  <li>All tables use <code class="highlighter-rouge">.table</code></li>
+  <li>Row striping is controlled by <code class="highlighter-rouge">.table-striped</code></li>
+  <li>Hover interaction (only when entire row is interactive), use <code class="highlighter-rouge">.table-hover</code></li>
+  <li>Table sortable icons controlled by adding <code class="highlighter-rouge">.fa .fa-sort</code> and toggling <code class="highlighter-rouge">.fa-sort-asc</code> and <code class="highlighter-rouge">.fa-sort-desc</code></li>
+  <li>For green and red text within tables, use <code class="highlighter-rouge">.text-success</code> and <code class="highlighter-rouge">.text-danger</code> respectively</li>
+  <li>For (more context) text within parentheses, use <code class="highlighter-rouge">.text-muted</code></li>
+</ul>
+
+<p><strong>Panel Table</strong></p>
+
+<ul>
+  <li>Panel tables and headers are wrapped in  <code class="highlighter-rouge">.panel</code></li>
+  <li><code class="highlighter-rouge">.panel-default</code> applies the border</li>
+  <li>Panel header is wrapped in <code class="highlighter-rouge">header.panel-heading</code> with title in <code class="highlighter-rouge">h3.panel-title</code> and subtext in <code class="highlighter-rouge">small</code> tag</li>
+  <li><code class="highlighter-rouge">button</code> elements may be included in the header, and will align right by default</li>
+  <li>The table below features a multi-select column header.</li>
+  <li>When a table row has multiple actions, put the actions under a dropdown, otherwise just use a simple link. Refer to the ‘Actions’ column in the table below.</li>
+  <li>When table rows are clickable or draggable, use hover table.</li>
+</ul>
+
+<p><strong>Data Table</strong></p>
+
+<ul>
+  <li><code class="highlighter-rouge">bower install angular-datatables</code></li>
+  <li>Dependencies: <code class="highlighter-rouge">bower install jquery</code> and <code class="highlighter-rouge">bower install datatables.net</code></li>
+  <li>Add as a dependency of your angular module <code class="highlighter-rouge">angular.module('mymodule', ['datatables', 'datatables.bootstrap']);</code></li>
+  <li>Refer to <a href="http://l-lin.github.io/angular-datatables/#/welcome">http://l-lin.github.io/angular-datatables/#/welcome</a> for instructions on configuration and extensions</li>
+</ul>
+</div>
         <div class="panel panel-default">
   <header class="panel-heading">
     <h3 class="panel-title">Default Table
@@ -1792,9 +1853,11 @@ resources nav
 </div>
 </div>
 
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="collapse mg-t-md" id="example-tables"><figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="collapse mg-t-md" id="example-tables"><figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
 2
 3
 4
@@ -2356,16 +2419,16 @@ resources nav
 <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span><span class="w">
 </span></pre></td></tr></tbody></table></code></pre></figure></div>
-                <button class="btn btn-primary btn-sm mg-t-md" data-toggle="collapse" data-target="#example-tables">&hellip;</button>
-            </div>
-        </div>
+        <button class="btn btn-primary btn-sm mg-t-md" data-toggle="collapse" data-target="#example-tables">&hellip;</button>
     </div>
 </div>
 
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-xs-12">
         <a class="section-anchor" id="form-components"></a>
         <h2 class="sg">Form Components</h2>
+        <div class="item-description">
+</div>
         <div class="row">
   <div class="col-md-3">
   <div class="form-group">
@@ -2375,9 +2438,11 @@ resources nav
   </div>
 </div>
 
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="collapse mg-t-md" id="example-form-components"><figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="collapse mg-t-md" id="example-form-components"><figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
 2
 3
 4
@@ -2393,9 +2458,7 @@ resources nav
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span><span class="w">
 </span></pre></td></tr></tbody></table></code></pre></figure></div>
-                <button class="btn btn-primary btn-sm mg-t-md" data-toggle="collapse" data-target="#example-form-components">&hellip;</button>
-            </div>
-        </div>
+        <button class="btn btn-primary btn-sm mg-t-md" data-toggle="collapse" data-target="#example-form-components">&hellip;</button>
     </div>
 </div>
 
