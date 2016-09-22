@@ -1,0 +1,87 @@
+/**
+ * Styledown
+ *
+ * This is the basic styles to make a Styledown document look like a proper
+ * style guide. Recommendation: use and remove any pieces as you see fit.
+ */
+
+/**
+ * Basic normalize
+ */
+
+#styleguide .section-anchor {
+  display: block;
+  height: 0;
+  width: 0;
+  position: relative;
+  top: -135px;
+}
+
+#styleguide h2.sg {
+  margin: 40px 0;
+  border-bottom: 1px solid #979797;
+  padding-bottom: 10px;
+}
+
+#styleguide .pull-right {
+  float: right !important;
+}
+
+#styleguide .container {
+  max-width: 100%;
+}
+
+#styleguide .btn-primary.btn-header.active {
+  color: #3CBFA2;
+}
+
+#styleguide .l-main-content .styleguide ul li {
+  padding: 2px 0;
+}
+
+#styleguide .l-main-content .styleguide div.item-description {
+  padding: 0 10px 20px;
+}
+
+#styleguide .l-main-content .styleguide .highlight pre code {
+  font-size: 11px;
+  color: #333;
+}
+
+#styleguide .l-main-content .styleguide .highlight pre code table td pre {
+  border: none;
+}
+#styleguide .l-main-content .styleguide .highlight pre code table td pre.lineno {
+  font-style: italic;
+  color: #ccc;
+}
+#styleguide .l-main-content .styleguide .sg-example h1 {
+  margin-top: 0;
+}
+
+/* syntax highlighting rules */
+
+#styleguide .l-main-content .styleguide .highlight pre code span.na,
+#styleguide .l-main-content .styleguide .highlight pre code span.nx {
+  color: #5bc0de;
+}
+#styleguide .l-main-content .styleguide .highlight pre code span.s,
+#styleguide .l-main-content .styleguide .highlight pre code span.s1,
+#styleguide .l-main-content .styleguide .highlight pre code span.mi,
+#styleguide .l-main-content .styleguide .highlight pre code span.mf{
+  color: #83AD47;
+}
+#styleguide .l-main-content .styleguide .highlight pre code span.nt,
+#styleguide .l-main-content .styleguide .highlight pre code span.p{
+  color: #3CBFA2;
+}
+#styleguide .l-main-content .styleguide .highlight pre code span.kd,
+#styleguide .l-main-content .styleguide .highlight pre code span.k,
+#styleguide .l-main-content .styleguide .highlight pre code span.kc{
+  color:#8F7EC2;
+}
+#styleguide .l-main-content .styleguide .highlight pre code span.c,
+#styleguide .l-main-content .styleguide .highlight pre code span.c1 {
+  color: #ccc;
+  font-style: italic;
+}
