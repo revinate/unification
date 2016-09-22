@@ -6,6 +6,7 @@ build:
 	bower --allow-root install
 	bundle install
 	bundle exec jekyll build
+	chown -R `stat -c "%u:%g" /var/www/app` /var/www/app
 watch:
 	bundle install
 	bundle exec jekyll build --watch
