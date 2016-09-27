@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "ignore": [
     "*",
+    "!_scss/**",
     "!fonts/**",
     "!libs/**",
     "!_site/css/**",
