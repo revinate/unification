@@ -1,0 +1,24 @@
+ul.pagination.unified {
+  li a {
+    border: none;
+    background: none;
+    font-family: LatoBold;
+    font-size: 16px;
+    padding: 0 11px;
+    span>i {
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+  >.active {
+    a {
+      color: black;
+    }
+    &:hover {
+      a {
+        background: none;
+        color: black;
+      }
+    }
+  }
+}
