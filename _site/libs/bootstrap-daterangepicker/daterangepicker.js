@@ -1212,7 +1212,8 @@
             if (!$(e.target).hasClass('available')) return;
 
             //have the text inputs above calendars reflect the date being hovered over
-            var title = $(e.target).attr('data-title');
+            // Commenting this bit out, since the test fields still display the hovered dates even after a date range has been selected...confusing to the user.
+            /*var title = $(e.target).attr('data-title');
             var row = title.substr(1, 1);
             var col = title.substr(3, 1);
             var cal = $(e.target).parents('.calendar');
@@ -1247,7 +1248,7 @@
                     }
 
                 });
-            }
+            }*/
 
         },
 
@@ -1304,6 +1305,7 @@
                     date = date.clone().hour(hour).minute(minute).second(second);
                 }
                 this.setEndDate(date.clone());
+                //$(e.target).parents('.daterangepicker.dropdown-menu').prepend('<p>Date Range Selected (' + this.startDate.format('MMMM DD, YYYY') + ' - ' + this.endDate.format('MMMM DD, YYYY')+ ')</p>');
                 if (this.autoApply) {
                   this.calculateChosenLabel();
                   this.clickApply();
