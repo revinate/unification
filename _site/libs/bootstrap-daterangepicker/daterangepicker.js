@@ -67,8 +67,8 @@
             this.drops = 'up';
 
         this.buttonClasses = 'btn btn-sm calendar';
-        this.applyClass = 'btn-success';
-        this.cancelClass = 'btn-default';
+        this.applyClass = 'btn-primary';
+        this.cancelClass = 'btn-link';
 
         this.locale = {
             format: 'MM/DD/YYYY',
@@ -124,8 +124,8 @@
                 '</div>' +
                 '<div class="ranges">' +
                     '<div class="range_inputs">' +
-                        '<button class="applyBtn" disabled="disabled" type="button"></button> ' +
                         '<button class="cancelBtn" type="button"></button>' +
+                        '<button class="applyBtn" disabled="disabled" type="button"></button> ' +
                     '</div>' +
                 '</div>' +
             '</div>';
