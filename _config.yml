@@ -26,7 +26,7 @@ host: 0.0.0.0
 # Build settings
 markdown: kramdown
 theme: minima
-exclude: [deploy_scripts, ruby, node_modules, Makefile, Jenkinsfile, Dockerfile, docker-compose.yml, make_build.sh, make_startup.sh]
+exclude: [deploy_scripts, ruby, node_modules, Makefile, Jenkinsfile, Dockerfile, docker-compose.yml, make_build.sh, make_startup.sh, research]
 sass:
   load_paths:
   - _scss
