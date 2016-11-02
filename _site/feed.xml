@@ -6,8 +6,8 @@
 </description>
     <link>http://example.com/</link>
     <atom:link href="http://example.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 26 Oct 2016 10:14:00 -0700</pubDate>
-    <lastBuildDate>Wed, 26 Oct 2016 10:14:00 -0700</lastBuildDate>
+    <pubDate>Wed, 02 Nov 2016 10:17:32 -0700</pubDate>
+    <lastBuildDate>Wed, 02 Nov 2016 10:17:32 -0700</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -51,6 +51,10 @@
 &lt;br /&gt;
 &lt;br /&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-target=&quot;#deleteModal&quot;&gt;Modal with Delete
+&lt;/button&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-target=&quot;#alertModal&quot;&gt;Modal with Alert
 &lt;/button&gt;&lt;/p&gt;
 
 &lt;!-- Small Modal One CTA --&gt;
@@ -246,6 +250,35 @@
         &lt;/button&gt;
         &lt;button type=&quot;button&quot; class=&quot;btn btn-delete&quot; data-dismiss=&quot;modal&quot;&gt;Delete
         &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Alert Button--&gt;
+&lt;div id=&quot;alertModal&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot;&gt;
+    &lt;!-- Modal content--&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
+        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+      &lt;div class=&quot;alert alert-danger fade in&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot; aria-label=&quot;close&quot;&gt;&amp;times;&lt;/a&gt;
+      &lt;strong&gt;Danger!&lt;/strong&gt; 
+      This alert box could indicate a dangerous or potentially negative action.
+      &lt;/div&gt;
+        &lt;p&gt;Some text in the modal.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
+        &lt;/button&gt;
+       
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot; data-dismiss=&quot;modal&quot;&gt;Cancel
+        &lt;/button&gt;
+
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;

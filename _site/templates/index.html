@@ -502,6 +502,10 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
 <br />
 <br />
 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#deleteModal">Modal with Delete
+</button>
+<br />
+<br />
+<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#alertModal">Modal with Alert
 </button></p>
 
 <!-- Small Modal One CTA -->
@@ -697,6 +701,35 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
         </button>
         <button type="button" class="btn btn-delete" data-dismiss="modal">Delete
         </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Alert Button-->
+<div id="alertModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+      <div class="alert alert-danger fade in">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <strong>Danger!</strong> 
+      This alert box could indicate a dangerous or potentially negative action.
+      </div>
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Primary CTA
+        </button>
+       
+        <button type="button" class="btn btn-link" data-dismiss="modal">Cancel
+        </button>
+
       </div>
     </div>
   </div>
@@ -928,7 +961,40 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
 220
 221
 222
-223</pre></td><td class="code"><pre><span class="c">&lt;!-- Trigger the modal with a button --&gt;</span>
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256</pre></td><td class="code"><pre><span class="c">&lt;!-- Trigger the modal with a button --&gt;</span>
 <span class="nt">&lt;p&gt;&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-sm"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#smModal"</span><span class="nt">&gt;</span>Small Modal 1CTA
 <span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-sm"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#smModal2"</span><span class="nt">&gt;</span>Small Modal 2CTA
@@ -952,6 +1018,10 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
 <span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-sm"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#deleteModal"</span><span class="nt">&gt;</span>Modal with Delete
+<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-sm"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#alertModal"</span><span class="nt">&gt;</span>Modal with Alert
 <span class="nt">&lt;/button&gt;&lt;/p&gt;</span>
 
 <span class="c">&lt;!-- Small Modal One CTA --&gt;</span>
@@ -1147,6 +1217,35 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
         <span class="nt">&lt;/button&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-delete"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Delete
         <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- Alert Button--&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"alertModal"</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">role=</span><span class="s">"dialog"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Modal content--&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"modal-title"</span><span class="nt">&gt;</span>Modal Header<span class="nt">&lt;/h4&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger fade in"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"alert"</span> <span class="na">aria-label=</span><span class="s">"close"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;strong&gt;</span>Danger!<span class="nt">&lt;/strong&gt;</span> 
+      This alert box could indicate a dangerous or potentially negative action.
+      <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Primary CTA
+        <span class="nt">&lt;/button&gt;</span>
+       
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-link"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Cancel
+        <span class="nt">&lt;/button&gt;</span>
+
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
