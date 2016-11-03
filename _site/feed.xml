@@ -1,0 +1,1019 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Revinate Styleguide</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</description>
+    <link>http://example.com/</link>
+    <atom:link href="http://example.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 03 Nov 2016 14:09:56 -0700</pubDate>
+    <lastBuildDate>Thu, 03 Nov 2016 14:09:56 -0700</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Translations</title>
+        <description>&lt;div&gt;
+    &lt;p&gt;&lt;span class=&quot;smartling-notranslate&quot;&gt;This text will not be translated&lt;/span&gt; but this text will.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 19 Oct 2016 17:00:00 -0700</pubDate>
+        <link>http://example.com/basics/2016/10/19/translations.html</link>
+        <guid isPermaLink="true">http://example.com/basics/2016/10/19/translations.html</guid>
+        
+        
+        <category>basics</category>
+        
+      </item>
+    
+      <item>
+        <title>Modals</title>
+        <description>&lt;!-- Trigger the modal with a button --&gt;
+&lt;p&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-target=&quot;#smModal&quot;&gt;Small Modal 1CTA
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-target=&quot;#smModal2&quot;&gt;Small Modal 2CTA
+&lt;/button&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-target=&quot;#mdModal&quot;&gt;Meduim Modal 1CTA
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-target=&quot;#mdModal2&quot;&gt;Meduim Modal 2CTA
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-target=&quot;#mdModal3&quot;&gt;Meduim Modal 3CTA
+&lt;/button&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-target=&quot;#lgModal&quot;&gt;Large Modal 1CTA
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-target=&quot;#lgModal2&quot;&gt;Large Modal 2CTA
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-target=&quot;#lgModal3&quot;&gt;Large Modal 3CTA
+&lt;/button&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-target=&quot;#deleteModal&quot;&gt;Modal with Delete
+&lt;/button&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-target=&quot;#alertModal&quot;&gt;Modal with Alert
+&lt;/button&gt;&lt;/p&gt;
+
+&lt;!-- Small Modal One CTA --&gt;
+&lt;div id=&quot;smModal&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog modal-sm&quot;&gt;
+    &lt;!-- Modal content--&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
+        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;p&gt;Some text in the small modal.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Small Modal Two CTAs --&gt;
+&lt;div id=&quot;smModal2&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog modal-sm&quot;&gt;
+    &lt;!-- Modal content--&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
+        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;p&gt;Some text in the small modal.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot; data-dismiss=&quot;modal&quot;&gt;Link
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Medium Modal 1CTA --&gt;
+&lt;div id=&quot;mdModal&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot;&gt;
+    &lt;!-- Modal content--&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
+        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;p&gt;Some text in the medium modal.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Medium Modal 2CTA --&gt;
+&lt;div id=&quot;mdModal2&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot;&gt;
+    &lt;!-- Modal content--&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
+        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;p&gt;Some text in the medium modal.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt;Link
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Medium Modal 3CTA --&gt;
+&lt;div id=&quot;mdModal3&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot;&gt;
+    &lt;!-- Modal content--&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
+        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;p&gt;Some text in the medium modal.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;Secondary CTA
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot; data-dismiss=&quot;modal&quot;&gt;Link
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Large Modal 1CTA--&gt;
+&lt;div id=&quot;lgModal&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog modal-lg&quot;&gt;
+    &lt;!-- Modal content--&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
+        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;p&gt;Some text in the large modal.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Large Modal 2CTA--&gt;
+&lt;div id=&quot;lgModal2&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog modal-lg&quot;&gt;
+    &lt;!-- Modal content--&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
+        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;p&gt;Some text in the large modal.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt;Link
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Large Modal 3CTA--&gt;
+&lt;div id=&quot;lgModal3&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog modal-lg&quot;&gt;
+    &lt;!-- Modal content--&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
+        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;p&gt;Some text in the large modal.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;Secondary CTA
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot; data-dismiss=&quot;modal&quot;&gt;Link
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Delete Button--&gt;
+&lt;div id=&quot;deleteModal&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog modal-lg&quot;&gt;
+    &lt;!-- Modal content--&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
+        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;p&gt;Some text in the large modal.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;Secondary CTA
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-delete&quot; data-dismiss=&quot;modal&quot;&gt;Delete
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Alert Button--&gt;
+&lt;div id=&quot;alertModal&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot;&gt;
+    &lt;!-- Modal content--&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
+        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+      &lt;div class=&quot;alert alert-danger fade in&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot; aria-label=&quot;close&quot;&gt;&amp;times;&lt;/a&gt;
+      &lt;strong&gt;Danger!&lt;/strong&gt; 
+      This alert box could indicate a dangerous or potentially negative action.
+      &lt;/div&gt;
+        &lt;p&gt;Some text in the modal.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
+        &lt;/button&gt;
+       
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot; data-dismiss=&quot;modal&quot;&gt;Cancel
+        &lt;/button&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 12 Sep 2016 17:00:01 -0700</pubDate>
+        <link>http://example.com/templates/2016/09/12/modals.html</link>
+        <guid isPermaLink="true">http://example.com/templates/2016/09/12/modals.html</guid>
+        
+        
+        <category>templates</category>
+        
+      </item>
+    
+      <item>
+        <title>General Layout</title>
+        <description>&lt;div class=&quot;l-app&quot;&gt;
+  &lt;header class=&quot;l-header&quot;&gt;
+    &lt;div class=&quot;l-header-top&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;l-header-bottom&quot;&gt;&lt;/div&gt;
+  &lt;/header&gt;
+  &lt;main class=&quot;l-main&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;l-main-content pd-md mg-t-xl&quot;&gt;
+        &lt;ul class=&quot;global-actions-nav pull-right&quot;&gt;
+          &lt;li&gt;
+            &lt;a&gt;
+              &lt;i class=&quot;fa fa-file-pdf-o&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;i class=&quot;fa fa-file-pdf-o&quot;&gt;&lt;/i&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;!-- content goes here --&gt;
+        &lt;p&gt;Content Goes Here&lt;/p&gt;
+        &lt;div class=&quot;row&quot;&gt;
+          &lt;div class=&quot;col-md-12&quot;&gt;
+            &lt;div class=&quot;spinner&quot;&gt;
+              &lt;div class=&quot;bounce1&quot;&gt;&lt;/div&gt;
+              &lt;div class=&quot;bounce2&quot;&gt;&lt;/div&gt;
+              &lt;div class=&quot;bounce3&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;row show-grid&quot;&gt;
+          &lt;div class=&quot;col-md-1&quot;&gt;
+            &lt;p&gt;col-1&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;col-md-2&quot;&gt;
+            &lt;p&gt;col-2&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;col-md-3&quot;&gt;
+            &lt;p&gt;col-3&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;col-md-4&quot;&gt;
+            &lt;p&gt;col-4&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;col-md-2&quot;&gt;
+            &lt;p&gt;col-2&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/main&gt;
+  &lt;footer class=&quot;l-footer&quot;&gt;
+    &lt;p class=&quot;copyright pd-md copyright&quot;&gt;&amp;copy; Revinate 2015. All Rights Reserved.&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 12 Sep 2016 17:00:00 -0700</pubDate>
+        <link>http://example.com/templates/2016/09/12/general-layout.html</link>
+        <guid isPermaLink="true">http://example.com/templates/2016/09/12/general-layout.html</guid>
+        
+        
+        <category>templates</category>
+        
+      </item>
+    
+      <item>
+        <title>Tertiary Navigation</title>
+        <description>&lt;ul class=&quot;nav nav-pills nav-pills-terciary&quot;&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot;&gt;Nav Element&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot;&gt;Nav Element&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;active&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;Nav Element&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;disabled&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;Nav Element&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;disabled&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;Nav Element&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 11 Sep 2016 17:00:05 -0700</pubDate>
+        <link>http://example.com/modules/2016/09/11/tertiary-nav.html</link>
+        <guid isPermaLink="true">http://example.com/modules/2016/09/11/tertiary-nav.html</guid>
+        
+        
+        <category>modules</category>
+        
+      </item>
+    
+      <item>
+        <title>Wizard Navigation</title>
+        <description>&lt;ul class=&quot;nav nav-justified nav-pills nav-pills-numbered&quot;&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot;&gt;
+      &lt;span class=&quot;nav-pills-numbered-index&quot;&gt;1&lt;/span&gt;Message Info&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot;&gt;
+      &lt;span class=&quot;nav-pills-numbered-index&quot;&gt;2&lt;/span&gt;Target Audience&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;active&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+      &lt;span class=&quot;nav-pills-numbered-index&quot;&gt;3&lt;/span&gt;Content&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;disabled&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+      &lt;span class=&quot;nav-pills-numbered-index&quot;&gt;4&lt;/span&gt;Preview &amp;amp; Test&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;disabled&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+      &lt;span class=&quot;nav-pills-numbered-index&quot;&gt;5&lt;/span&gt;Schedule&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 11 Sep 2016 17:00:04 -0700</pubDate>
+        <link>http://example.com/modules/2016/09/11/wizard-nav.html</link>
+        <guid isPermaLink="true">http://example.com/modules/2016/09/11/wizard-nav.html</guid>
+        
+        
+        <category>modules</category>
+        
+      </item>
+    
+      <item>
+        <title>Primary Menu</title>
+        <description>&lt;header class=&quot;l-header&quot;&gt;
+  &lt;div class=&quot;l-header-top&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;ul class=&quot;primary-menu nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+        &lt;li class=&quot;primary-menu-item-logo primary-menu-item-text&quot;&gt;
+          &lt;span class=&quot;logo&quot; title=&quot;Revinate&quot;&gt;
+            &lt;i class=&quot;revicon-revinate-logo&quot;&gt;&lt;/i&gt;
+          &lt;/span&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;active&quot;&gt;
+          &lt;a href=&quot;#dashboard&quot; aria-controls=&quot;dashboard&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;
+            Dashboard
+            &lt;i class=&quot;fa fa-circle text-danger&quot;&gt;&lt;/i&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#marketing&quot; aria-controls=&quot;marketing&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Marketing&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;pull-right primary-menu-item-bordered primary-menu-item-label&quot;&gt;
+          &lt;span class=&quot;label label-success badge-label&quot;&gt;On duty&lt;/span&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;dropdown pull-right primary-menu-item-icon&quot; title=&quot;Settings&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot;&gt;
+          &lt;a class=&quot;dropdown-toggle primary-menu-item-bordered primary-menu-item-icon&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot; aria-expanded=&quot;false&quot;&gt;
+            &lt;i class=&quot;fa fa-gear&quot;&gt;&lt;/i&gt;
+          &lt;/a&gt;
+          &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;active&quot;&gt;
+              &lt;a href=&quot;#&quot;&gt;Action Active&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;is-superadmin&quot;&gt;
+              &lt;a href=&quot;#&quot;&gt;SuperAdmin action&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;dropdown pull-right primary-menu-item-icon&quot; title=&quot;Help &amp;amp; Feedback&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot;&gt;
+          &lt;a class=&quot;dropdown-toggle primary-menu-item-bordered primary-menu-item-icon&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;
+            &lt;i class=&quot;fa fa-question-circle&quot;&gt;&lt;/i&gt;
+          &lt;/a&gt;
+          &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;dropdown pull-right prop-selector always-active&quot;&gt;
+          &lt;a class=&quot;dropdown-toggle primary-menu-item-bordered&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot; aria-expanded=&quot;false&quot;&gt;
+            &lt;i class=&quot;fa fa-caret-down pull-right&quot;&gt;&lt;/i&gt;
+            Property
+          &lt;/a&gt;
+          &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+            &lt;li class=&quot;underline account-switcher&quot;&gt;
+              &lt;h4&gt;Switch Accounts&lt;/h4&gt;
+              &lt;ul id=&quot;header_account_selector&quot; class=&quot;account_selector contact-selector property-selector&quot;&gt;
+                &lt;input type=&quot;hidden&quot; /&gt;
+                &lt;li class=&quot;prop-input&quot;&gt;
+                  &lt;input type=&quot;text&quot; class=&quot;text property-input form-control&quot; autocomplete=&quot;off&quot; /&gt;
+                  &lt;span class=&quot;focus&quot;&gt;
+                    &lt;i class=&quot;icon icon_magnifying_glass&quot;&gt;&lt;/i&gt;
+                  &lt;/span&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;div class=&quot;contact-autocomplete&quot;&gt;
+                &lt;ul&gt;
+                  &lt;li&gt;Property one&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;div&gt;type account name...&lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;recently-accessed&quot;&gt;
+              &lt;h4&gt;Recently Accessed&lt;/h4&gt;
+              &lt;ul&gt;
+                &lt;li&gt;
+                  &lt;a href=&quot;/goto-hotel-id/352/&quot;&gt;
+                    Trump International Hotel Las Vegas, NV
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a href=&quot;/goto-hotel-id/352/&quot;&gt;
+                    Trump International Hotel Las Vegas, NV
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a href=&quot;/goto-hotel-id/352/&quot;&gt;
+                    Trump International Hotel Las Vegas, NV
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a href=&quot;/goto-hotel-id/352/&quot;&gt;
+                    Trump International Hotel Las Vegas, NV
+                  &lt;/a&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;underline full-account-list&quot;&gt;
+              &lt;a class=&quot;bordered&quot; href=&quot;/hotel-selection&quot;&gt;
+                Full Account List
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;primary-menu-item-bordered primary-menu-item-text pull-right prop-selector&quot;&gt;
+          Property&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;l-header-bottom&quot;&gt;
+    &lt;div class=&quot;tab-content container&quot;&gt;
+      &lt;!-- dashboard tab content --&gt;
+      &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane active&quot; id=&quot;dashboard&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-header active mg-r-sm&quot;&gt;
+          &lt;i class=&quot;fa fa-user mg-r-xs&quot;&gt;&lt;/i&gt;All Feedback
+        &lt;/button&gt;
+        &lt;div class=&quot;btn-group mg-r-sm&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-header dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+            &lt;i class=&quot;fa fa-heart mg-r-xs&quot;&gt;&lt;/i&gt;Sentiment Analysis
+            &lt;i class=&quot;fa fa-caret-down mg-l-xs&quot;&gt;&lt;/i&gt;
+            &lt;span class=&quot;badge badge-danger pull-right mg-l-sm&quot;&gt;42&lt;/span&gt;
+          &lt;/button&gt;
+          &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+            &lt;li&gt;
+              &lt;a class=&quot;has-badge&quot; href=&quot;#&quot;&gt;Action
+                &lt;span class=&quot;badge badge-default&quot;&gt;6&lt;/span&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a class=&quot;has-badge&quot; href=&quot;#&quot;&gt;Another action
+                &lt;span class=&quot;badge badge-default&quot;&gt;40&lt;/span&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a class=&quot;has-badge&quot; href=&quot;#&quot;&gt;Something else here this is very large
+                &lt;span class=&quot;badge badge-default&quot;&gt;12&lt;/span&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a class=&quot;has-badge&quot; href=&quot;#&quot;&gt;Separated link
+                &lt;span class=&quot;badge badge-default&quot;&gt;212&lt;/span&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-header btn-rounded pull-right mg-l-sm&quot;&gt;
+          &lt;i class=&quot;fa fa-book mg-r-xs&quot;&gt;&lt;/i&gt;Guests
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-header btn-circle pull-right mg-l-sm&quot;&gt;
+          &lt;i class=&quot;fa fa-bookmark&quot;&gt;&lt;/i&gt;
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-header btn-circle pull-right mg-l-sm&quot;&gt;
+          &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;!-- marketing tab content --&gt;
+      &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane&quot; id=&quot;marketing&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-header active mg-r-sm&quot;&gt;
+          &lt;i class=&quot;fa fa-paper-plane mg-r-xs&quot;&gt;&lt;/i&gt;Campaigns
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-header mg-r-sm&quot;&gt;
+          &lt;i class=&quot;fa fa-list-alt mg-r-xs&quot;&gt;&lt;/i&gt;List
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+</description>
+        <pubDate>Sun, 11 Sep 2016 17:00:03 -0700</pubDate>
+        <link>http://example.com/modules/2016/09/11/primary-menu.html</link>
+        <guid isPermaLink="true">http://example.com/modules/2016/09/11/primary-menu.html</guid>
+        
+        
+        <category>modules</category>
+        
+      </item>
+    
+      <item>
+        <title>Filter Bar</title>
+        <description>&lt;div class=&quot;row main-filter-bar&quot;&gt;
+  &lt;div class=&quot;col-md-12&quot;&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+      &lt;label&gt;Views /
+        &lt;a href=&quot;#&quot;&gt;Save as View&lt;/a&gt;
+      &lt;/label&gt;
+      &lt;select class=&quot;selectpicker form-control&quot; title=&quot;Default View&quot;&gt;
+        &lt;option value=&quot;1&quot;&gt;View 1&lt;/option&gt;
+        &lt;option value=&quot;2&quot;&gt;View 2&lt;/option&gt;
+        &lt;option value=&quot;3&quot;&gt;View 3&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+      &lt;label&gt;Filter Label&lt;/label&gt;
+      &lt;input type=&quot;text&quot; class=&quot;form-control&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+      &lt;label class=&quot;control-label&quot;&gt;Date Picker&lt;/label&gt;
+      &lt;input type=&quot;text&quot; class=&quot;form-control&quot; ng-model=&quot;selectedDate&quot; name=&quot;date&quot; bs-datepicker=&quot;&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+      &lt;label&gt;Select with Search Box&lt;/label&gt;
+      &lt;select class=&quot;form-control selectpicker&quot; data-live-search=&quot;true&quot; title=&quot;Search Options&quot;&gt;
+        &lt;option value=&quot;0&quot;&gt;select with search&lt;/option&gt;
+        &lt;option value=&quot;1&quot;&gt;Option 1&lt;/option&gt;
+        &lt;option value=&quot;2&quot;&gt;Option 2&lt;/option&gt;
+        &lt;option value=&quot;3&quot;&gt;Option 3&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+      &lt;label&gt;Select One&lt;/label&gt;
+      &lt;select class=&quot;selectpicker form-control&quot; title=&quot;Select One&quot;&gt;
+        &lt;option value=&quot;1&quot;&gt;Option 1&lt;/option&gt;
+        &lt;option value=&quot;2&quot;&gt;Option 2&lt;/option&gt;
+        &lt;option value=&quot;3&quot;&gt;Option 3&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+      &lt;label&gt;Select Multiple&lt;/label&gt;
+      &lt;select class=&quot;form-control selectpicker&quot; multiple=&quot;&quot; title=&quot;Select Multiple&quot;&gt;
+        &lt;option value=&quot;1&quot;&gt;Option 1&lt;/option&gt;
+        &lt;option value=&quot;2&quot;&gt;Option 2&lt;/option&gt;
+        &lt;option value=&quot;3&quot;&gt;Option 3&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group apply-filters&quot;&gt;
+      &lt;button class=&quot;btn btn-primary btn-sm&quot;&gt;Apply Filter&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sun, 11 Sep 2016 17:00:02 -0700</pubDate>
+        <link>http://example.com/modules/2016/09/11/filter-bar.html</link>
+        <guid isPermaLink="true">http://example.com/modules/2016/09/11/filter-bar.html</guid>
+        
+        
+        <category>modules</category>
+        
+      </item>
+    
+      <item>
+        <title>Dashboard Widgets</title>
+        <description>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;
+    &lt;div class=&quot;dashboard-widget&quot;&gt;
+      &lt;h4 class=&quot;dashboard-widget-title&quot;&gt;
+        Widget Title
+      &lt;/h4&gt;
+      &lt;p class=&quot;dashboard-widget-metrics&quot;&gt;
+        $1,000,000.00
+      &lt;/p&gt;
+      &lt;div class=&quot;table-responsive&quot;&gt;
+        &lt;table class=&quot;dashboard-widget-table table table-striped&quot;&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;
+                Metric Title
+              &lt;/td&gt;
+              &lt;td&gt;
+                $50
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;
+                Metric Title 2
+              &lt;/td&gt;
+              &lt;td&gt;
+                $150
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;col-md-4&quot;&gt;
+    &lt;div class=&quot;dashboard-widget&quot;&gt;
+      &lt;h4 class=&quot;dashboard-widget-title&quot;&gt;
+        Widget Title
+      &lt;/h4&gt;
+      &lt;p class=&quot;dashboard-widget-metrics&quot;&gt;
+        $1,000,000.00
+      &lt;/p&gt;
+      &lt;div class=&quot;table-responsive&quot;&gt;
+        &lt;table class=&quot;dashboard-widget-table table table-striped&quot;&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;
+                Metric Title
+              &lt;/td&gt;
+              &lt;td&gt;
+                $50
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;
+                Metric Title 2
+              &lt;/td&gt;
+              &lt;td&gt;
+                $150
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;col-md-4&quot;&gt;
+    &lt;div class=&quot;dashboard-widget&quot;&gt;
+      &lt;h4 class=&quot;dashboard-widget-title&quot;&gt;
+        Widget Title
+      &lt;/h4&gt;
+      &lt;p class=&quot;dashboard-widget-metrics&quot;&gt;
+        $1,000,000.00
+      &lt;/p&gt;
+      &lt;div class=&quot;table-responsive&quot;&gt;
+        &lt;table class=&quot;dashboard-widget-table table table-striped&quot;&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;
+                Metric Title
+              &lt;/td&gt;
+              &lt;td&gt;
+                $50
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;
+                Metric Title 2
+              &lt;/td&gt;
+              &lt;td&gt;
+                $150
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;
+    &lt;div class=&quot;dashboard-widget&quot;&gt;
+      &lt;h4 class=&quot;dashboard-widget-title&quot;&gt;
+        Widget Title
+      &lt;/h4&gt;
+      &lt;p class=&quot;dashboard-widget-metrics&quot;&gt;
+        $1,000,000.00
+      &lt;/p&gt;
+      &lt;div class=&quot;table-responsive&quot;&gt;
+        &lt;table class=&quot;dashboard-widget-table table table-striped&quot;&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;
+                Metric Title
+              &lt;/td&gt;
+              &lt;td&gt;
+                Metric attribute
+              &lt;/td&gt;
+              &lt;td&gt;
+                Mettric attribute 2
+              &lt;/td&gt;
+              &lt;td&gt;
+                $50
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;
+                Metric Title 2
+              &lt;/td&gt;
+              &lt;td&gt;
+                Metric attribute
+              &lt;/td&gt;
+              &lt;td&gt;
+                Mettric attribute 2
+              &lt;/td&gt;
+              &lt;td&gt;
+                $150
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;
+    &lt;div class=&quot;dashboard-widget&quot;&gt;
+      &lt;h4 class=&quot;dashboard-widget-title&quot;&gt;
+        Widget Title
+      &lt;/h4&gt;
+      &lt;p class=&quot;dashboard-widget-metrics&quot;&gt;
+        $1,000,000.00
+      &lt;/p&gt;
+      &lt;div class=&quot;table-responsive&quot;&gt;
+        &lt;table class=&quot;dashboard-widget-table table table-striped&quot;&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;
+                Metric Title
+              &lt;/td&gt;
+              &lt;td&gt;
+                Metric attribute
+              &lt;/td&gt;
+              &lt;td&gt;
+                Mettric attribute 2
+              &lt;/td&gt;
+              &lt;td&gt;
+                $50
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;
+                &lt;a href=&quot;#&quot;&gt;
+                  Metric Link 2
+                &lt;/a&gt;
+              &lt;/td&gt;
+              &lt;td&gt;
+                Metric attribute
+              &lt;/td&gt;
+              &lt;td&gt;
+                Mettric attribute 2
+              &lt;/td&gt;
+              &lt;td&gt;
+                $150
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-xs-12&quot;&gt;
+        &lt;h3&gt;Custom Dashboard Widgets (Rep and Surveys Only)&lt;/h3&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;unified-dashboard&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-4 col-md-offset-4&quot;&gt;
+            &lt;section class=&quot;custom-widget cw-sm numeric-value ng-scope&quot; id=&quot;widget-6e11ac90-f000-4046-b4d6-00f8f4c0ea5c&quot; data-wid=&quot;6e11ac90-f000-4046-b4d6-00f8f4c0ea5c&quot;&gt;
+                &lt;header&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;cw-header-link&quot; title=&quot;NEW REVIEWS - LAST 7 DAYS&quot;&gt;
+                        &lt;strong&gt;New Reviews&lt;/strong&gt; - &lt;span class=&quot;cw-period&quot;&gt;Last 7 Days&lt;/span&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-arrows cw-dnd-handler&quot;&gt;&lt;/i&gt;&lt;i class=&quot;cw-delete-handler fa fa-close&quot; ng-click=&quot;attemptDelete('6e11ac90-f000-4046-b4d6-00f8f4c0ea5c', 'New Reviews')&quot; ng-hide=&quot;isMinimumReached()&quot;&gt;&lt;/i&gt;
+                &lt;/header&gt;
+                &lt;div class=&quot;cw-body&quot;&gt;177&lt;/div&gt;
+                &lt;footer&gt;
+                    &lt;span class=&quot;r_goal_label&quot;&gt;Goal&lt;/span&gt;: &lt;strong class=&quot;r_goal_value&quot;&gt;30&lt;/strong&gt; - &lt;span class=&quot;r_comparator_label&quot;&gt;Competitor Avg&lt;/span&gt;: &lt;strong class=&quot;r_comparator_value&quot;&gt;248&lt;/strong&gt;
+                &lt;/footer&gt;
+            &lt;/section&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;section class=&quot;custom-widget cw-md document-list recommended-actions recommended-actions-widget ng-scope&quot; id=&quot;widget-recommended-actions&quot; data-wid=&quot;recommended-actions&quot;&gt;&lt;header&gt;&lt;span class=&quot;cw-header-link&quot; title=&quot;RECOMMENDED ACTIONS&quot;&gt;&lt;strong&gt;Recommended Actions&lt;/strong&gt;&lt;/span&gt;&lt;i class=&quot;fa fa-arrows cw-dnd-handler&quot;&gt;&lt;/i&gt;&lt;i class=&quot;cw-delete-handler fa fa-close&quot; ng-click=&quot;attemptDelete('recommended-actions', 'Recommended Actions')&quot; ng-hide=&quot;isMinimumReached()&quot;&gt;&lt;/i&gt;&lt;/header&gt;&lt;div class=&quot;cw-body&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr id=&quot;ra-new-reviews-row&quot; class=&quot;numeric-value&quot; data-wid=&quot;6e11ac90-f000-4046-b4d6-00f8f4c0ea5c&quot;&gt;&lt;td&gt;&lt;div class=&quot;circular-icon-yellow&quot;&gt;&lt;i class=&quot;icon icon_star fa fa-star&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;/td&gt;&lt;td&gt;Read &lt;a href=&quot;#&quot;&gt;182 recent reviews.&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr id=&quot;ra-negative-reviews-row&quot; class=&quot;numeric-value&quot; data-wid=&quot;a5e2366f-d976-4930-8f54-59821b3b7571&quot;&gt;&lt;td&gt;&lt;div class=&quot;circular-icon-red&quot;&gt;&lt;i class=&quot;icon icon_star fa fa-star&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;/td&gt;&lt;td&gt;Respond to &lt;a href=&quot;#&quot;&gt;8 negative reviews.&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr id=&quot;ra-open-tickets-row&quot; class=&quot;numeric-value&quot; data-wid=&quot;66b1e68f-ece2-45ec-a99a-72ab8b2a7e2e&quot;&gt;&lt;td&gt;&lt;div class=&quot;circular-icon-purple&quot;&gt;&lt;i class=&quot;icon icon_tag fa fa-tag&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;/td&gt;&lt;td&gt;Manage &lt;a href=&quot;#&quot;&gt;247 open tickets.&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr id=&quot;ra-new-surveys-row&quot; class=&quot;numeric-value&quot; data-wid=&quot;6e11ac90-f000-4046-b4d6-00f8f4c0ea5c&quot;&gt;&lt;td&gt;&lt;div class=&quot;circular-icon-yellow&quot;&gt;&lt;i class=&quot;icon icon_star fa fa-star&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;/td&gt;&lt;td&gt;Read &lt;a href=&quot;#&quot;&gt;35 new surveys.&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr id=&quot;ra-trending-topics-row&quot;&gt;&lt;td&gt;&lt;div class=&quot;circular-icon-orange&quot;&gt;&lt;i class=&quot;icon icon_stats_up fa fa-line-chart&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;#&quot;&gt;View trending topics.&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/section&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;section class=&quot;custom-widget cw-md document-list latest-feedback-widget ng-scope&quot; id=&quot;widget-c3634b50-0790-4d53-b8cf-c308d0c05e93&quot; data-wid=&quot;c3634b50-0790-4d53-b8cf-c308d0c05e93&quot;&gt;&lt;header&gt;&lt;a href=&quot;#&quot; class=&quot;cw-header-link&quot; title=&quot;LATEST FEEDBACK&quot;&gt;&lt;strong&gt;Latest Feedback&lt;/strong&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-arrows cw-dnd-handler&quot;&gt;&lt;/i&gt;&lt;i class=&quot;cw-delete-handler fa fa-close&quot; ng-click=&quot;attemptDelete('c3634b50-0790-4d53-b8cf-c308d0c05e93', 'Latest Feedback')&quot; ng-hide=&quot;isMinimumReached()&quot;&gt;&lt;/i&gt;&lt;/header&gt;&lt;div class=&quot;cw-body&quot; style=&quot;height: 235px; overflow-y: auto;&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr class=&quot;alt review&quot;&gt;&lt;td&gt;&lt;img alt=&quot;Booking.com&quot; title=&quot;Booking.com&quot; src=&quot;https://static.revinate.com/i/logos/review-site-logo-10.png&quot; /&gt;&lt;/td&gt;&lt;td&gt;&lt;div class=&quot;smartling-notranslate&quot;&gt;&lt;a href=&quot;#&quot; title=&quot;Good: Good to have kitchen facilities in the room. 
+            Bad: Shuttle bus was infrequent&quot;&gt;Good&lt;/a&gt;&lt;/div&gt;&lt;span class=&quot;rating-container&quot;&gt;&lt;span class=&quot;rating r3_5&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;date&quot;&gt;Oct 20, 2016&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;alt review&quot;&gt;&lt;td&gt;&lt;img alt=&quot;Booking.com&quot; title=&quot;Booking.com&quot; src=&quot;https://static.revinate.com/i/logos/review-site-logo-10.png&quot; /&gt;&lt;/td&gt;&lt;td&gt;&lt;div class=&quot;smartling-notranslate&quot;&gt;&lt;a href=&quot;#&quot; title=&quot;&quot;&gt;Exceptional&lt;/a&gt;&lt;/div&gt;&lt;span class=&quot;rating-container&quot;&gt;&lt;span class=&quot;rating r5&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;date&quot;&gt;Oct 20, 2016&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;alt review&quot;&gt;&lt;td&gt;&lt;img alt=&quot;Booking.com&quot; title=&quot;Booking.com&quot; src=&quot;https://static.revinate.com/i/logos/review-site-logo-10.png&quot; /&gt;&lt;/td&gt;&lt;td&gt;&lt;div class=&quot;smartling-notranslate&quot;&gt;&lt;a href=&quot;#&quot; title=&quot;&quot;&gt;Excellent!&lt;/a&gt;&lt;/div&gt;&lt;span class=&quot;rating-container&quot;&gt;&lt;span class=&quot;rating r5&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;date&quot;&gt;Oct 20, 2016&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;alt review&quot;&gt;&lt;td&gt;&lt;img alt=&quot;Booking.com&quot; title=&quot;Booking.com&quot; src=&quot;https://static.revinate.com/i/logos/review-site-logo-10.png&quot; /&gt;&lt;/td&gt;&lt;td&gt;&lt;div class=&quot;smartling-notranslate&quot;&gt;&lt;a href=&quot;#&quot; title=&quot;Good: Front of staff were lovely, which is always a good sign . Room was lush great view of strip , and luxurious bathroom Loved the fact no casino or smoking in it 
+            Bad: Only a small matter why such a uxury hotel has only small bath towels get some big bath sheets can never understand why they don't ,&quot;&gt;Great hotel&lt;/a&gt;&lt;/div&gt;&lt;span class=&quot;rating-container&quot;&gt;&lt;span class=&quot;rating r4_5&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;date&quot;&gt;Oct 20, 2016&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;alt review&quot;&gt;&lt;td&gt;&lt;img alt=&quot;Booking.com&quot; title=&quot;Booking.com&quot; src=&quot;https://static.revinate.com/i/logos/review-site-logo-10.png&quot; /&gt;&lt;/td&gt;&lt;td&gt;&lt;div class=&quot;smartling-notranslate&quot;&gt;&lt;a href=&quot;#&quot; title=&quot;Good: EVERYTHING WAS PERFECT&quot;&gt;Exceptional&lt;/a&gt;&lt;/div&gt;&lt;span class=&quot;rating-container&quot;&gt;&lt;span class=&quot;rating r5&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;date&quot;&gt;Oct 20, 2016&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;alt review&quot;&gt;&lt;td&gt;&lt;img alt=&quot;TripAdvisor&quot; title=&quot;TripAdvisor&quot; src=&quot;https://static.revinate.com/i/logos/review-site-logo-7.png&quot; /&gt;&lt;/td&gt;&lt;td&gt;&lt;div class=&quot;smartling-notranslate&quot;&gt;&lt;a href=&quot;#&quot; title=&quot;My wife and I went for our Anniversary a few years ago. Totally loved it VERY NICE AND CLASSY. The only thing is that there is no casino but not a big deal because you are close to all the casinos. We even brought food along because they have a little cook top in the room.&quot;&gt;VERY NICE&lt;/a&gt;&lt;/div&gt;&lt;span class=&quot;rating-container&quot;&gt;&lt;span class=&quot;rating r5&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;date&quot;&gt;Oct 20, 2016&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/section&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;section class=&quot;custom-widget cw-md word-cloud ng-scope&quot; id=&quot;widget-12e31e37-419b-4052-8ea6-a13a102fa174&quot; data-wid=&quot;12e31e37-419b-4052-8ea6-a13a102fa174&quot;&gt;
+                &lt;header&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;cw-header-link&quot; title=&quot;REVIEW TRENDING TOPICS - LAST 30 DAYS&quot;&gt;
+                    &lt;strong&gt;Review Trending Topics&lt;/strong&gt; - &lt;span class=&quot;cw-period&quot;&gt;Last 30 Days&lt;/span&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-arrows cw-dnd-handler&quot;&gt;&lt;/i&gt;&lt;i class=&quot;cw-delete-handler fa fa-close&quot; ng-click=&quot;attemptDelete('12e31e37-419b-4052-8ea6-a13a102fa174', 'Review Trending Topics')&quot; ng-hide=&quot;isMinimumReached()&quot;&gt;&lt;/i&gt;
+                &lt;/header&gt;
+                &lt;div class=&quot;cw-body&quot;&gt;&lt;span class=&quot;word positive&quot; style=&quot;font-size: 0.96em&quot;&gt;food / beverage freshness (1)&lt;/span&gt;&lt;span class=&quot;word positive&quot; style=&quot;font-size: 0.9199999999999999em&quot;&gt;food / beverage nutrition (1)&lt;/span&gt;&lt;span class=&quot;word positive&quot; style=&quot;font-size: 0.8799999999999999em&quot;&gt;reservations - online (1)&lt;/span&gt;&lt;span class=&quot;word positive&quot; style=&quot;font-size: 0.8399999999999999em&quot;&gt;exterior (2)&lt;/span&gt;&lt;span class=&quot;word positive&quot; style=&quot;font-size: 0.7999999999999998em&quot;&gt;concierge attitude (3)&lt;/span&gt;&lt;span class=&quot;word negative&quot; style=&quot;font-size: 0.7599999999999998em&quot;&gt;housecleaning do not disturb (1)&lt;/span&gt;&lt;span class=&quot;word negative&quot; style=&quot;font-size: 0.7199999999999998em&quot;&gt;liability (1)&lt;/span&gt;&lt;span class=&quot;word negative&quot; style=&quot;font-size: 0.6799999999999997em&quot;&gt;iron &amp;amp; board (1)&lt;/span&gt;&lt;span class=&quot;word negative&quot; style=&quot;font-size: 0.6399999999999997em&quot;&gt;ppv &amp;amp; ondemand (1)&lt;/span&gt;&lt;span class=&quot;word negative&quot; style=&quot;font-size: 0.5999999999999996em&quot;&gt;food / beverage temperature (1)&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/section&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;section class=&quot;custom-widget cw-md barchart-stacked-v ng-scope&quot; id=&quot;widget-1d80a4ae-c15b-498e-bd4f-8eb17d961e09&quot; data-wid=&quot;1d80a4ae-c15b-498e-bd4f-8eb17d961e09&quot;&gt;
+                &lt;header&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;cw-header-link&quot; title=&quot;REVIEW RESPONSE COVERAGE - LAST 30 DAYS&quot;&gt;&lt;strong&gt;Review Response Coverage&lt;/strong&gt; - &lt;span class=&quot;cw-period&quot;&gt;Last 30 Days&lt;/span&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-arrows cw-dnd-handler&quot;&gt;&lt;/i&gt;&lt;i class=&quot;cw-delete-handler fa fa-close&quot; ng-click=&quot;attemptDelete('1d80a4ae-c15b-498e-bd4f-8eb17d961e09', 'Review Response Coverage')&quot; ng-hide=&quot;isMinimumReached()&quot;&gt;&lt;/i&gt;
+                &lt;/header&gt;
+                &lt;div class=&quot;cw-body&quot;&gt;
+                    &lt;div class=&quot;cw-chart clearfix&quot;&gt;&lt;div class=&quot;cw-chart-header-label clearfix&quot;&gt;&lt;div class=&quot;cw-chart-label&quot;&gt;&lt;span class=&quot;negative&quot;&gt;19%&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;cw-chart-label&quot;&gt;&lt;span class=&quot;negative&quot;&gt;0%&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;cw-chart-label&quot;&gt;&lt;span class=&quot;negative&quot;&gt;20%&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;cw-chart-label&quot;&gt;&lt;span class=&quot;negative&quot;&gt;23%&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;cw-chart-label&quot;&gt;&lt;span class=&quot;negative&quot;&gt;20%&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;cw-chart-label&quot;&gt;&lt;span class=&quot;negative&quot;&gt;21%&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;cw-chart-y-axis&quot;&gt;&lt;span class=&quot;cw-chart-scale&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;cw-chart-scale&quot;&gt;75%&lt;/span&gt;&lt;span class=&quot;cw-chart-scale&quot;&gt;50%&lt;/span&gt;&lt;span class=&quot;cw-chart-scale&quot;&gt;25%&lt;/span&gt;&lt;span class=&quot;cw-chart-scale&quot;&gt;0%&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;cw-chart-body&quot;&gt;&lt;div class=&quot;cw-chart-bg&quot;&gt;&lt;div class=&quot;cw-chart-marker-bg-blue&quot;&gt;&lt;/div&gt;&lt;div class=&quot;cw-chart-marker-bg&quot;&gt;&lt;/div&gt;&lt;div class=&quot;cw-chart-marker-bg-blue&quot;&gt;&lt;/div&gt;&lt;div class=&quot;cw-chart-marker-bg&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;cw-bar&quot;&gt;&lt;div class=&quot;cw-bar-stacked&quot;&gt;&lt;div class=&quot;cw-bar-marker&quot; style=&quot;height: 80%&quot;&gt;&lt;/div&gt; &lt;div class=&quot;stack&quot; style=&quot;height: 19%&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;cw-bar&quot;&gt;&lt;div class=&quot;cw-bar-stacked&quot;&gt;&lt;div class=&quot;cw-bar-marker&quot; style=&quot;height: 100%&quot;&gt;&lt;/div&gt; &lt;div class=&quot;stack&quot; style=&quot;height: 0%&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;cw-bar&quot;&gt;&lt;div class=&quot;cw-bar-stacked&quot;&gt;&lt;div class=&quot;cw-bar-marker&quot; style=&quot;height: 100%&quot;&gt;&lt;/div&gt; &lt;div class=&quot;stack&quot; style=&quot;height: 20%&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;cw-bar&quot;&gt;&lt;div class=&quot;cw-bar-stacked&quot;&gt;&lt;div class=&quot;cw-bar-marker&quot; style=&quot;height: 100%&quot;&gt;&lt;/div&gt; &lt;div class=&quot;stack&quot; style=&quot;height: 23%&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;cw-bar&quot;&gt;&lt;div class=&quot;cw-bar-stacked&quot;&gt;&lt;div class=&quot;cw-bar-marker&quot; style=&quot;height: 80%&quot;&gt;&lt;/div&gt; &lt;div class=&quot;stack&quot; style=&quot;height: 20%&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;cw-bar&quot;&gt;&lt;div class=&quot;cw-bar-stacked&quot;&gt;&lt;div class=&quot;cw-bar-marker&quot; style=&quot;height: 80%&quot;&gt;&lt;/div&gt; &lt;div class=&quot;stack&quot; style=&quot;height: 21%&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;cw-chart-x-axis&quot;&gt;&lt;div class=&quot;cw-chart-label&quot;&gt;&lt;strong&gt;Overall&lt;/strong&gt; &lt;p&gt;Goal: &lt;strong&gt;80%&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;cw-chart-label&quot;&gt;&lt;strong&gt;1 Star&lt;/strong&gt; &lt;p&gt;Goal: &lt;strong&gt;100%&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;cw-chart-label&quot;&gt;&lt;strong&gt;2 Stars&lt;/strong&gt; &lt;p&gt;Goal: &lt;strong&gt;100%&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;cw-chart-label&quot;&gt;&lt;strong&gt;3 Stars&lt;/strong&gt; &lt;p&gt;Goal: &lt;strong&gt;100%&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;cw-chart-label&quot;&gt;&lt;strong&gt;4 Stars&lt;/strong&gt; &lt;p&gt;Goal: &lt;strong&gt;80%&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;cw-chart-label&quot;&gt;&lt;strong&gt;5 Stars&lt;/strong&gt; &lt;p&gt;Goal: &lt;strong&gt;80%&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/section&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-6 col-md-offset-3&quot;&gt;
+            &lt;section class=&quot;custom-widget cw-md property-comparator-bar-chart ng-scope&quot; id=&quot;widget-57cb1fe3-a711-4eb2-ad48-6eeb5d1fc920&quot; data-wid=&quot;57cb1fe3-a711-4eb2-ad48-6eeb5d1fc920&quot;&gt;
+                &lt;header&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;cw-header-link&quot; title=&quot;COMPETITOR REVIEWS - LAST 30 DAYS&quot;&gt;&lt;strong&gt;Competitor Reviews&lt;/strong&gt; - &lt;span class=&quot;cw-period&quot;&gt;Last 30 Days&lt;/span&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-arrows cw-dnd-handler&quot;&gt;&lt;/i&gt;&lt;i class=&quot;cw-delete-handler fa fa-close&quot; ng-click=&quot;attemptDelete('57cb1fe3-a711-4eb2-ad48-6eeb5d1fc920', 'Competitor Reviews')&quot; ng-hide=&quot;isMinimumReached()&quot;&gt;&lt;/i&gt;
+                &lt;/header&gt;
+                &lt;div class=&quot;cw-body&quot;&gt;
+                    &lt;div class=&quot;cw-chart&quot;&gt;&lt;div class=&quot;cw-bar clearfix&quot;&gt;&lt;strong class=&quot;cw-bar-hotel-name&quot;&gt;Trump International Hotel Las Vegas&lt;/strong&gt;&lt;div class=&quot;cw-bar-chart&quot;&gt;&lt;span class=&quot;cw-bar-stacked&quot;&gt;&lt;span class=&quot;stack stack-positive&quot; style=&quot;width:81.1%&quot; title=&quot;Positive: 81.1%&quot;&gt;&lt;/span&gt;&lt;span class=&quot;stack stack-neutral&quot; style=&quot;width:9%&quot; title=&quot;Neutral: 9%&quot;&gt;&lt;/span&gt;&lt;span class=&quot;stack stack-negative&quot; style=&quot;width:9.9%&quot; title=&quot;Negative: 9.9%&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;cw-bar-chart-v&quot;&gt;4.3&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;cw-bar clearfix&quot;&gt;&lt;strong class=&quot;cw-bar-hotel-name&quot;&gt;Mandarin Oriental Las Vegas&lt;/strong&gt;&lt;div class=&quot;cw-bar-chart&quot;&gt;&lt;span class=&quot;cw-bar-stacked&quot;&gt;&lt;span class=&quot;stack stack-positive&quot; style=&quot;width:93%&quot; title=&quot;Positive: 93%&quot;&gt;&lt;/span&gt;&lt;span class=&quot;stack stack-neutral&quot; style=&quot;width:4.8%&quot; title=&quot;Neutral: 4.8%&quot;&gt;&lt;/span&gt;&lt;span class=&quot;stack stack-negative&quot; style=&quot;width:2.2%&quot; title=&quot;Negative: 2.2%&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;cw-bar-chart-v&quot;&gt;4.7&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;cw-bar clearfix&quot;&gt;&lt;strong class=&quot;cw-bar-hotel-name&quot;&gt;The Venetian Las Vegas&lt;/strong&gt;&lt;div class=&quot;cw-bar-chart&quot;&gt;&lt;span class=&quot;cw-bar-stacked&quot;&gt;&lt;span class=&quot;stack stack-positive&quot; style=&quot;width:89.1%&quot; title=&quot;Positive: 89.1%&quot;&gt;&lt;/span&gt;&lt;span class=&quot;stack stack-neutral&quot; style=&quot;width:7.6%&quot; title=&quot;Neutral: 7.6%&quot;&gt;&lt;/span&gt;&lt;span class=&quot;stack stack-negative&quot; style=&quot;width:3.3%&quot; title=&quot;Negative: 3.3%&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;cw-bar-chart-v&quot;&gt;4.6&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;cw-bar clearfix&quot;&gt;&lt;strong class=&quot;cw-bar-hotel-name&quot;&gt;Wynn Las Vegas&lt;/strong&gt;&lt;div class=&quot;cw-bar-chart&quot;&gt;&lt;span class=&quot;cw-bar-stacked&quot;&gt;&lt;span class=&quot;stack stack-positive&quot; style=&quot;width:89.2%&quot; title=&quot;Positive: 89.2%&quot;&gt;&lt;/span&gt;&lt;span class=&quot;stack stack-neutral&quot; style=&quot;width:6.3%&quot; title=&quot;Neutral: 6.3%&quot;&gt;&lt;/span&gt;&lt;span class=&quot;stack stack-negative&quot; style=&quot;width:4.5%&quot; title=&quot;Negative: 4.5%&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;cw-bar-chart-v&quot;&gt;4.6&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;cw-bar clearfix&quot;&gt;&lt;strong class=&quot;cw-bar-hotel-name&quot;&gt;Four Seasons Hotel Las Vegas&lt;/strong&gt;&lt;div class=&quot;cw-bar-chart&quot;&gt;&lt;span class=&quot;cw-bar-stacked&quot;&gt;&lt;span class=&quot;stack stack-positive&quot; style=&quot;width:89.7%&quot; title=&quot;Positive: 89.7%&quot;&gt;&lt;/span&gt;&lt;span class=&quot;stack stack-neutral&quot; style=&quot;width:8.2%&quot; title=&quot;Neutral: 8.2%&quot;&gt;&lt;/span&gt;&lt;span class=&quot;stack stack-negative&quot; style=&quot;width:2.1%&quot; title=&quot;Negative: 2.1%&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;cw-bar-chart-v&quot;&gt;4.6&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;cw-bar clearfix&quot;&gt;&lt;strong class=&quot;cw-bar-hotel-name&quot;&gt;Bellagio Las Vegas&lt;/strong&gt;&lt;div class=&quot;cw-bar-chart&quot;&gt;&lt;span class=&quot;cw-bar-stacked&quot;&gt;&lt;span class=&quot;stack stack-positive&quot; style=&quot;width:85.6%&quot; title=&quot;Positive: 85.6%&quot;&gt;&lt;/span&gt;&lt;span class=&quot;stack stack-neutral&quot; style=&quot;width:9.5%&quot; title=&quot;Neutral: 9.5%&quot;&gt;&lt;/span&gt;&lt;span class=&quot;stack stack-negative&quot; style=&quot;width:4.9%&quot; title=&quot;Negative: 4.9%&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;cw-bar-chart-v&quot;&gt;4.5&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/section&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sun, 11 Sep 2016 17:00:01 -0700</pubDate>
+        <link>http://example.com/modules/2016/09/11/dashboard-widget.html</link>
+        <guid isPermaLink="true">http://example.com/modules/2016/09/11/dashboard-widget.html</guid>
+        
+        
+        <category>modules</category>
+        
+      </item>
+    
+      <item>
+        <title>Collapse/Accordion</title>
+        <description>&lt;div class=&quot;panel-group sg&quot; id=&quot;accordion&quot; role=&quot;tablist&quot; aria-multiselectable=&quot;true&quot;&gt;
+  &lt;div class=&quot;panel panel-default sg&quot;&gt;
+    &lt;div class=&quot;panel-heading sg&quot; role=&quot;tab&quot; id=&quot;headingOne&quot;&gt;
+      &lt;h4 class=&quot;panel-title sg&quot;&gt;
+        &lt;a role=&quot;button&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseOne&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseOne&quot; class=&quot;sg collapsed&quot;&gt;
+          Collapsible Group Item #1
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;collapseOne&quot; class=&quot;panel-collapse sg collapse&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;headingOne&quot; aria-expanded=&quot;false&quot; style=&quot;height: 0px;&quot;&gt;
+      &lt;div class=&quot;panel-body sg&quot;&gt;
+        Content goes here
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel panel-default sg&quot;&gt;
+    &lt;div class=&quot;panel-heading sg&quot; role=&quot;tab&quot; id=&quot;headingTwo&quot;&gt;
+      &lt;h4 class=&quot;panel-title sg&quot;&gt;
+        &lt;a class=&quot;sg collapsed&quot; role=&quot;button&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseTwo&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseTwo&quot;&gt;
+          Collapsible Group Item #2
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;collapseTwo&quot; class=&quot;panel-collapse sg collapse&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;headingTwo&quot; aria-expanded=&quot;false&quot; style=&quot;height: 0px;&quot;&gt;
+      &lt;div class=&quot;panel-body sg&quot;&gt;
+        Content goes here
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel panel-default sg&quot;&gt;
+    &lt;div class=&quot;panel-heading sg&quot; role=&quot;tab&quot; id=&quot;headingThree&quot;&gt;
+      &lt;h4 class=&quot;panel-title sg&quot;&gt;
+        &lt;a class=&quot;sg collapsed&quot; role=&quot;button&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseThree&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseThree&quot;&gt;
+          Collapsible Group Item #3
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;collapseThree&quot; class=&quot;panel-collapse sg collapse&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;headingThree&quot; aria-expanded=&quot;false&quot; style=&quot;height: 0px;&quot;&gt;
+      &lt;div class=&quot;panel-body sg&quot;&gt;
+        Content goes here
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sun, 11 Sep 2016 17:00:00 -0700</pubDate>
+        <link>http://example.com/modules/2016/09/11/accordions.html</link>
+        <guid isPermaLink="true">http://example.com/modules/2016/09/11/accordions.html</guid>
+        
+        
+        <category>modules</category>
+        
+      </item>
+    
+      <item>
+        <title>Form Components</title>
+        <description>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-3&quot;&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+  &lt;label class=&quot;control-label&quot;&gt;Form Label&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Placeholder Text&quot; /&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 07 Sep 2016 17:00:05 -0700</pubDate>
+        <link>http://example.com/components/2016/09/07/form-components.html</link>
+        <guid isPermaLink="true">http://example.com/components/2016/09/07/form-components.html</guid>
+        
+        
+        <category>components</category>
+        
+      </item>
+    
+  </channel>
+</rss>
