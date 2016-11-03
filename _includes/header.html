@@ -1,11 +1,11 @@
 <!doctype html>
     <head>
-    <link rel="stylesheet" href="{{ "/css/styledown.css" | relative_url }}" />
-    <link rel="stylesheet" href="{{ "/css/font-awesome.min.css" | relative_url }}" />
-    <link rel="stylesheet" href="{{ "/css/bootstrap.css" | relative_url }}" />
-    <link rel="stylesheet" href="{{ "/css/app.css" | relative_url }}" />
-    <link rel="stylesheet" href="{{ "/libs/bootstrap-toggle/css/bootstrap-toggle.css" | relative_url }}" />
-    <link rel="stylesheet" href="{{ "/libs/nya-bootstrap-select/dist/css/nya-bs-select.css" | relative_url }}" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/styledown.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/app.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/libs/bootstrap-toggle/css/bootstrap-toggle.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/libs/nya-bootstrap-select/dist/css/nya-bs-select.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         #sort tbody {
@@ -27,15 +27,15 @@
               </span>
                 </li>
                 <li class="principles{% if active_page == '/principles.html' %} active{% endif %}">
-                    <a href="{{ root_url }}/principles.html" role="tab">
+                    <a href="{{ site.baseurl }}/principles.html" role="tab">
                         Principles
                     </a>
                 </li>
                 <li class="style-guide{% if active_page != '/resources.html' and active_page != '/principles.html' %} active{% endif %}">
-                    <a href="{{ root_url }}/" role="tab">Style Guide</a>
+                    <a href="{{ site.baseurl }}/" role="tab">Style Guide</a>
                 </li>
                 <li class="resources{% if active_page == '/resources.html' %} active{% endif %}">
-                    <a href="{{ root_url }}/resources.html" role="tab">
+                    <a href="{{ site.baseurl }}/resources.html" role="tab">
                         Resources
                     </a>
                 </li>
@@ -72,7 +72,7 @@ principles nav
                         {% for post in posts reversed %}
                         {% if post.url %}
                         <li class="active">
-                            <a href="/{{ category | first }}/index.html#{{ post.title | slugify }}">{{ post.title }}</a>
+                            <a href="{{ site.baseurl }}/{{ category | first }}/index.html#{{ post.title | slugify }}">{{ post.title }}</a>
                         </li>
                         {% endif %}
                         {% endfor %}
