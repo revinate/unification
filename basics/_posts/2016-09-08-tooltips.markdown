@@ -6,6 +6,8 @@ desc: "
 - Tooltips are controlled with the `data-toggle` and `title` attributes.
 
 - Position tooltips with `data-placement` attribute.
+
+- Help text tooltips should use fontawesome icon .`fa-question-circle`. The default font size is `14px` and color is `#333`.
 "
 ---
 <div>
@@ -13,4 +15,7 @@ desc: "
     <button type="button" class="btn btn-xs btn-primary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
     <button type="button" class="btn btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
     <button type="button" class="btn btn-xs btn-primary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+    <br />
+    <br />
+    Confusing Term <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="top" title="'Confusing' means that it is difficult to understand. 'Term' is a word used to describe something."></i>
 </div>
