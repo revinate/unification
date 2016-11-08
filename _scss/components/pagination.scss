@@ -10,6 +10,16 @@ ul.pagination.unified {
       font-size: 14px;
     }
   }
+  li span {
+    border: none;
+    background: none;
+    font-family: LatoBold;
+    font-size: 16px;
+    padding: 0 11px;
+    &:hover {
+      cursor: default;
+    }
+  }
   >.active {
     a {
       color: black;

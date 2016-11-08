@@ -66,7 +66,7 @@ desc: "
       <a href="#">4</a>
     </li>
     <li>
-    <a href="#">&hellip;</a>
+    <span>&hellip;</span>
     </li>
         <li>
           <a href="#">11</a>
@@ -91,7 +91,7 @@ desc: "
       <a href="#">1</a>
     </li>
     <li>
-    <a href="#">&hellip;</a>
+    <span>&hellip;</span>
     </li>
     <li>
       <a href="#">3</a>
@@ -103,7 +103,7 @@ desc: "
       <a href="#">5</a>
     </li>
     <li>
-    <a href="#">&hellip;</a>
+    <span>&hellip;</span>
     </li>
         <li>
           <a href="#">11</a>
@@ -128,7 +128,7 @@ desc: "
       <a href="#">1</a>
     </li>
     <li>
-    <a href="#">&hellip;</a>
+    <span>&hellip;</span>
     </li>
     <li>
       <a href="#">8</a>
@@ -161,7 +161,7 @@ desc: "
       <a href="#">1</a>
     </li>
     <li>
-    <a href="#">&hellip;</a>
+    <span>&hellip;</span>
     </li>
     <li>
       <a href="#">8</a>
