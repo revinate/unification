@@ -1,0 +1,12 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@import "../libs/bootstrap-sass-official/assets/stylesheets/bootstrap/_mixins";
+@import "../libs/bootstrap-sass-official/assets/stylesheets/bootstrap/_variables";
+@import "../libs/bootstrap-select/sass/variables";
+@import "../libs/bootstrap-select/sass/bootstrap-select";
+@import "variables";
+@import "fonts";
+@import "components/form-elements";

@@ -30,6 +30,7 @@ exclude: [deploy_scripts, ruby, node_modules, Makefile, Jenkinsfile, Dockerfile,
 sass:
   load_paths:
   - _scss
+  - css/components
   - libs/bootstrap-sass-official/assets/stylesheets/bootstrap
   - libs/bootstrap-select/sass/bootstrap-select
   style: compressed
