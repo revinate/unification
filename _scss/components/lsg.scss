@@ -1,0 +1,56 @@
+.lsg-colors {
+.color-box {
+  padding-top: 15px;
+  padding-bottom: 37px;
+  p {
+    color: #fff;
+    font-size: 14px;
+    font-family: Lato;
+  }
+  &.r-brand-primary {
+    background: $r_brand-primary;
+  }
+  &.brand-primary {
+    background: $brand-primary;
+  }
+  &.r-brand-secondary {
+    background: $r_brand-secondary;
+  }
+  &.brand-success {
+    background: $brand-success;
+  }
+  &.brand-info {
+    background: $brand-info;
+  }
+  &.brand-warning {
+    background: $brand-warning;
+  }
+  &.brand-danger {
+    background: $brand-danger;
+  }
+  &.r-brand-tertiary {
+    background: $r_brand-tertiary;
+  }
+  &.r-brand-primary-darker {
+    background: $r_brand-primary-darker;
+  }
+  &.r-brand-primary-light {
+    background: $r_brand-primary-light;
+  }
+  &.r-brand-primary-lighter {
+    background: $r_brand-primary-lighter;
+  }
+  &.gray-base {
+    background: $gray-base;
+  }
+  &.gray-darker {
+    background: $gray-darker;
+  }
+  &.gray-dark, &.text-color {
+    background: $gray-dark;
+  }
+  &.gray {
+    background: $gray;
+  }
+}
+}
