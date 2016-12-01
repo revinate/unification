@@ -100,6 +100,15 @@
       font-family: LatoBlack;
       border-top: 1px #ccc solid;
     }
+    &.triple-indent {
+      padding: 6px 48px;
+    }
+    &.quadruple-indent {
+      padding: 6px 60px;
+    }
+    &.quintuple-indent {
+      padding: 6px 72px;
+    }
   }
 }
 
