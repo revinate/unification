@@ -4,26 +4,35 @@ title: "Typography"
 date: 2016-09-02 00:00:01
 ---
 
-<div class="col-md-4 sg-example">
+<div class="col-md-12 sg-example">
     <h1>Header Level 1</h1>
+    <p>Used for page titles only. There should only ever be one H1 per page. When possible, try not to let this text wrap to a second line.</p>
+
     <h2>Header Level 2</h2>
+    <p>Used for major section titles within a page, such as titles of individual reviews within the All Reviews page.</p>
+    
     <h3>Header Level 3</h3>
+    <p>Used for minor section titles within a page, such as table headers when viewing all Marketing campaigns.</p>
+    
     <h4>Header Level 4</h4>
-    <h5>Header Level 5</h5>
-    <h6>Header Level 6</h6>
-</div>
-<div class="col-md-8">
-    <p>Body copy. Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
-    <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+    <p>Used for modal titles.</p>
+
+    <p>Body copy. Used for most text. Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+       
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    
     <ul>
-        <li>List item 1</li>
-        <li>List item 2</li>
-        <li>List Item 3</li>
+        <li>Bulleted list.</li> 
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+        <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </li>
+        <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
     </ul>
+    
     <ol>
-        <li>List item 1</li>
-        <li>List item 2</li>
-        <li>List Item 3</li>
+        <li>Numbered List.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+        <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </li>
+        <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
     </ol>
 
 </div>
