@@ -2,155 +2,263 @@
 layout: post
 title: "Buttons"
 date: 2016-09-02 00:00:02
-desc: "
-- `.btn` can be applied to button and anchor elements 
 
-- 4 buttons sizes `.btn-xs .btn-sm .btn-lg` medium is the default size 
-
-- Button colors are `.btn-default .btn-primary .btn-secondary .btn-success .btn-danger .btn-info .btn-warning .btn-delete`
-"
 ---
-<button class="btn btn-xs btn-default">XSmall</button>
-<button class="btn btn-sm btn-default">Small</button>
-<button class="btn btn-default">Medium</button>
-<button class="btn btn-lg btn-default">Large</button>
-<br />
-<br />
-<button class="btn btn-primary">Primary</button>
-<button class="btn btn-primary active">Primary</button>
-<button class="btn btn-primary disabled">Primary</button>
-<br />
-<br />
-<button class="btn btn-secondary">Secondary</button>
-<button class="btn btn-secondary active">Secondary</button>
-<button class="btn btn-secondary disabled">Secondary</button>
-<br />
-<br />
-<button class="btn btn-danger">Danger</button>
-<button class="btn btn-danger active">Danger</button>
-<button class="btn btn-danger disabled">Danger</button>
-<br />
-<br />
-<button class="btn btn-info">Info</button>
-<button class="btn btn-info active">Info</button>
-<button class="btn btn-info disabled">Info</button>
-<br />
-<br />
-<button class="btn btn-delete">Delete</button>
-<button class="btn btn-delete active">Delete</button>
-<button class="btn btn-delete disabled">Delete</button>
-<br />
-<br />
-<button class="btn btn-link">Link</button>
-<button class="btn btn-link active">Link</button>
-<button class="btn btn-link disabled">Link</button>
-<br />
-<br />
-<button class="btn btn-internal-primary">Internal Use - primary</button>
-<button class="btn btn-internal-primary active">Internal Use - primary</button>
-<br />
-<br />
-<button class="btn btn-internal-secondary">Internal Use - secondary</button>
-<button class="btn btn-internal-secondary active">Internal Use - secondary</button>
-<br />
-<br />
+
+<p>Generally, use a button to indicate taking action on a piece of data, e.g. creating a ticket, uploading a guest list, or sending a notification email. Buttons can also be used to delete data, cancel an operation, or open a modal (a modal that creates a piece of data, not just something informational).</p>
+
+<p>Do not use buttons where a text link would suffice, such as to link to another page or display informational content.</p>
 
 <div class="row">
-  <div class="col-md-3">
-    <div class="actions-buttons">
-      <button class="btn btn-primary btn-rounded btn-reply">Review Action</button>
-      <button class="btn btn-secondary btn-rounded">
-        <i class="fa fa-star button-icon"></i>Secondary</button>
-      <button class="btn btn-rounded btn-action-taken">
-        <i class="fa fa-tag button-icon"></i>Action Taken</button>
-      <div class="btn-group">
-        <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-          More Actions
-          <i class="fa fa-angle-down"></i>
-        </button>
-        <ul class="dropdown-menu" role="menu">
-          <li>
-            <a href="#">action 1</a>
-          </li>
-          <li>
-            <a href="#">action 2</a>
-          </li>
-          <li>
-            <a href="#">action 3</a>
-          </li>
-          <li>
-            <a href="#">action 4</a>
-          </li>
-        </ul>
-      </div>
+    <div class="col-sm-6">
+    <h3>Primary Buttons</h3>
+    <div class="row mg-t-xl">
+    <div class="col-xs-3 text-center">
+        <button class="btn btn-primary">Primary</button>
+        <br />
+        <small><strong>DEFAULT</strong></small>
+        <button class="btn btn-primary disabled mg-t-md">Primary</button>
+        <br />
+        <small><strong>INACTIVE</strong></small>
     </div>
-  </div>
- 
-  <div class="col-md-3">
-      <div class="actions-buttons">
-        <button class="btn btn-primary btn-rounded btn-reply active">Review Action</button>
-        <button class="btn btn-secondary btn-rounded active">
-          <i class="fa fa-star button-icon"></i>Secondary</button>
-        <button class="btn btn-rounded btn-action-taken active">
-          <i class="fa fa-tag button-icon"></i>Action Taken</button>
-      <div class="btn-group open">
-        <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-          More Actions
-          <i class="fa fa-angle-down"></i>
-        </button>
-        <ul class="dropdown-menu" role="menu">
-          <li>
-            <a href="#">action 1</a>
-          </li>
-          <li>
-            <a href="#">action 2</a>
-          </li>
-          <li>
-            <a href="#">action 3</a>
-          </li>
-          <li>
-            <a href="#">action 4</a>
-          </li>
-        </ul>
-      </div>
-      </div>
+    <div class="col-xs-9">
+        <p>Primary buttons indicate the most important action on a page, such as creating a new report or a new campaign. </p>
+   
+        <p>Generally, there should be only one Primary button per screen. In rare occasions, there may be multiple Primary buttons on a page (one per section, for example) but this should be the exception.</p>
+    </div>
     </div>
     
-  <div class="col-md-3">
-    <div class="actions-buttons">
-      <button class="btn btn-primary btn-rounded btn-reply disabled">Review Action</button>
-      <button class="btn btn-secondary btn-rounded disabled">
-        <i class="fa fa-star button-icon"></i>Save Review</button>
-      <button class="btn btn-rounded btn-action-taken disabled">
-        <i class="fa fa-tag button-icon"></i>View Ticket</button>
-
     </div>
-  </div>
+    <div class="col-sm-6">
+    <h3>Default Buttons - for Sizing Only</h3>
+        <div class="row">
+        <div class="col-xs-3">
+            <button class="btn btn-xs btn-default">XSmall</button>
+            <button class="btn btn-sm btn-default mg-t-md">Small</button>
+            <button class="btn btn-default mg-t-md">Default</button>
+            <button class="btn btn-lg btn-default mg-t-md">Large</button>
+        </div>
+        <div class="col-xs-9">
+            <p>Use this section as a guideline for sizing only — not for color.</p>
+        </div>
+        </div>
+    </div>
 </div>
-  
-<br />
-<br />
-<ul class="global-actions-nav">
-  <li class="btn btn-circle btn-xs btn-default-secondary mg-r-xs" data-toggle='tooltip' data-placement='bottom' title='Print' style="float: left">
-    <a href="#">
-      <i class="fa fa-print"></i>
-    </a>
-  </li>
-  <li class="btn btn-circle btn-xs btn-default-secondary mg-r-xs" data-toggle='tooltip' data-placement='bottom' title='Share' style="float: left">
-    <a href="#">
-      <i class="fa fa-share-square-o"></i>
-    </a>
-  </li>
-  <li class="btn btn-circle btn-xs btn-default-secondary mg-r-xs" data-toggle='tooltip' data-placement='bottom' title='Export to CSV' style="float: left">
-    <a href="#">
-      <i class="fa fa-file-text-o"></i>
-    </a>
-  </li>
-  <li class="btn btn-circle btn-xs btn-default-secondary mg-r-xs" data-toggle='tooltip' data-placement='bottom' title='Export to PDF' style="float: left">
-    <a href="#">
-      <i class="fa fa-file-pdf-o"></i>
-    </a>
-  </li>
-</ul>
+<div class="row mg-t-xl">
+    <div class="col-sm-6">
+    <h3>Secondary Buttons</h3>
+        <div class="row">
+        <div class="col-xs-3 text-center">
+            <button class="btn btn-secondary">Secondary</button>
+        <br />
+            <small><strong>DEFAULT</strong></small>
+                <button class="btn btn-secondary disabled mg-t-md">Secondary</button>
+        <br />
+                <small><strong>INACTIVE</strong></small>
+        </div>
+        <div class="col-xs-9">
+            <p>Secondary buttons indicate secondary — but important — action(s) in a page or section.</p>
+        </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+    <h3>Tertiary Buttons</h3>
+        <div class="row">
+        <div class="col-xs-3 text-center">
+            <button class="btn btn-link">Tertiary</button>
+        <br />
+            <small><strong>DEFAULT</strong></small>
+                <button class="btn btn-link disabled mg-t-md">Tertiary</button>
+        <br />
+                <small><strong>INACTIVE</strong></small>
+        </div>
+        <div class="col-xs-9">
+            <p>Tertiary buttons indicate less important action(s) in a page or section. For example, this could indicate cancelling a workflow in progress (e.g. cancelling a guest list upload, inside of a modal).</p>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="row mg-t-xl">
+    <div class="col-sm-6">
+    <h3>Internal Use Buttons</h3>
+        <div class="row">
+        <div class="col-xs-5">
+            <button class="btn btn-internal-primary">Internal Use - Primary</button>
 
-  
+                <button class="btn btn-internal-secondary mg-t-md">Internal Use - Secondary</button>
+
+        </div>
+        <div class="col-xs-7">
+            <p>Internal use buttons indicate actions that only Revinate staff can take. These buttons are intentionally different so that Revinators can better aid customers in troubleshooting.</p>
+        </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+    <h3>Page-Level Buttons</h3>
+        <div class="row">
+        <div class="col-xs-3">
+            <ul class="global-actions-nav">
+              <li class="btn btn-circle btn-xs btn-default-secondary mg-r-xs" data-toggle="tooltip" data-placement="bottom" title="" style="float: left" data-original-title="Print">
+                <a href="#">
+                  <i class="fa fa-print"></i>
+                </a>
+              </li>
+              <li class="btn btn-circle btn-xs btn-default-secondary mg-r-xs" data-toggle="tooltip" data-placement="bottom" title="" style="float: left" data-original-title="Share">
+                <a href="#">
+                  <i class="fa fa-share-square-o"></i>
+                </a>
+              </li>
+              <li class="btn btn-circle btn-xs btn-default-secondary mg-r-xs" data-toggle="tooltip" data-placement="bottom" title="" style="float: left" data-original-title="Export to CSV">
+                <a href="#">
+                  <i class="fa fa-file-text-o"></i>
+                </a>
+              </li>
+              <li class="btn btn-circle btn-xs btn-default-secondary mg-r-xs" data-toggle="tooltip" data-placement="bottom" title="" style="float: left" data-original-title="Export to PDF">
+                <a href="#">
+                  <i class="fa fa-file-pdf-o"></i>
+                </a>
+              </li>
+            </ul>
+        </div>
+        <div class="col-xs-9">
+            <p>Page-level buttons indicate actions that affect the entire page, e.g. printing, exporting, or sharing.</p> 
+            <p>They should only appear once per page, and always with an explanatory tooltip.</p>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mg-t-xl">
+    <div class="col-xs-12">
+        <h2>Buttons for Card Layouts</h2>
+        <p>These buttons are used in places where we have card-based layouts (e.g. All Reviews, All Surveys), where each card may have a primary action as well as multiple secondary / tertiary actions. Only use these buttons in card-based layouts.</p>
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>Card Primary Buttons</h3>
+                <div class="row mg-t-xl">
+                    <div class="col-xs-5">
+                        <div class="actions-buttons">
+                            <button class="btn btn-primary btn-rounded">Review Action</button>
+                            <small><strong>DEFAULT</strong></small><br />
+                            <button class="btn btn-primary btn-rounded disabled">Review Action</button>
+                            <small><strong>INACTIVE</strong></small>
+                        </div>
+                    </div>
+                    <div class="col-xs-7">
+                        <p>In a card-based layout, Card Primary buttons indicate the most important action in a card, e.g. responding to a review.</p>
+                        <p>If a card has any actions associated with it, there should be one action designated as primary. There should be only one Primary button per card.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <h3>Card Tertiary Buttons / Menu</h3>
+                <div class="row mg-t-xl">
+                    <div class="col-xs-5">
+                        <div class="actions-buttons">
+                             <div class="btn-group">
+                                <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">More Actions
+                                    <i class="fa fa-angle-down"></i>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="#">action 1</a>
+                                    </li>
+                                    <li>
+                                    <a href="#">action 2</a>
+                                    </li>
+                                    <li>
+                                    <a href="#">action 3</a>
+                                    </li>
+                                    <li>
+                                    <a href="#">action 4</a>
+                                    </li>
+                                </ul>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-7">
+                        <p>In a card-based layout, if there are more than three secondary actions to take on a card, the least important should become part of a “More Actions” menu.</p>
+                           
+                         <p>If there are Revinate-internal actions as part of this menu, the item(s) in question should have text the same color as the Internal Only buttons.</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <div class="row mg-t-xl">
+            <div class="col-sm-6">
+                <h3>Card Secondary Buttons</h3>
+                <div class="row mg-t-xl">
+                    <div class="col-xs-5">
+                        <div class="actions-buttons">
+                            <button class="btn btn-secondary btn-rounded"><i class="fa fa-star button-icon"></i> Secondary Action</button>
+                            <small><strong>DEFAULT</strong></small><br />
+                            <button class="btn btn-secondary btn-rounded disabled"><i class="fa fa-star button-icon"></i> Secondary Action</button>
+                            <small><strong>INACTIVE</strong></small><br />
+                            <button class="btn btn-action-taken btn-rounded"><i class="fa fa-star button-icon"></i> Action Done</button>
+                            <small><strong>ACTIVATED</strong></small><br />
+                        </div>
+                    </div>
+                    <div class="col-xs-7">
+                        <p>In a card-based layout, Card Secondary buttons indicate additional action(s) to take on a card, such as creating a ticket associated with a review.</p>
+                        <p>These buttons may have an icon associated with them. If there is an icon, the icon should be left-aligned, with the button label center-aligned.</p>
+                        <p>Activated buttons indicate that an action suggested by a secondary button has already taken place.</p>
+                        <p>For example: TRANSLATE becomes SHOW ORIGINAL SAVE REVIEW becomes UNSAVE REVIEW CREATE A TICKET becomes VIEW TICKET</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="row mg-t-xl">
+    <div class="col-xs-12">
+        <h2>Deprecated Buttons</h2>
+        <p>These buttons are listed here for historical reference, but should not be used in new development, and will be phased out over time.</p>
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>Info Buttons</h3>
+                <div class="row mg-t-xl">
+                    <div class="col-xs-3">
+                        <button class="btn btn-info">Info</button>
+                        <button class="btn btn-info disabled mg-t-md">Info</button>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>Info buttons used to indicate informational or other secondary content.</p>
+                        <p>They will be replaced with either secondary buttons or interactions more suitable for informational content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <h3>Danger Buttons</h3>
+                <div class="row mg-t-xl">
+                    <div class="col-xs-3">
+                        <button class="btn btn-danger">Danger</button>
+                        <button class="btn btn-danger disabled mg-t-md">Danger</button>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>Danger buttons used to indicate potentially dangerous operations, e.g. deleting an email campaign that has already been sent.</p>
+                        <p>These are deprecated in favor of creating workflows and interfaces that don’t require them.</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <div class="row mg-t-xl">
+            <div class="col-sm-6">
+                <h3>Delete Buttons</h3>
+                <div class="row mg-t-xl">
+                    <div class="col-xs-3">
+                        <button class="btn btn-delte">Delete</button>
+                        <button class="btn btn-delete disabled mg-t-md">Delete</button>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>Delete buttons used to be used to indicate a Delete action, as opposed to the Primary button for a Create action.</p>
+                        <p>These are deprecated in favor of creating workflows where the Delete action is either a clear primary action (in which case we use the Primary button), or is a tertiary action with equal weight.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
