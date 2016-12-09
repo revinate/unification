@@ -8,6 +8,7 @@
     "!libs/**",
     "!_site/css/**",
     "!_site/fonts/**",
+    "!_site/img/**",
     "!js/**",
     "!node_modules/*"
   ],
