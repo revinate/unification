@@ -1,0 +1,428 @@
+$color-0: #aa381d;
+$color-1: #ae4521;
+$color-2: #b34f25;
+$color-3: #d18140;
+$color-4: #d68f46;
+$color-5: #bba350;
+$color-6: #aea046;
+$color-7: #a29d46;
+$color-8: #7bab4c;
+$color-9: #6ea848;
+$color-10: #61a544;
+
+.unified-gfs {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 0;
+  .top-header {
+    height: 63px;
+    line-height: 63px;
+    .language-selector {
+      width: 200px;
+      margin: 15px 0;
+      padding: 0;
+    }
+    h3 {
+      font-size: 17px;
+      font-family: 'Lato';
+      margin: 0;
+      padding: 0;
+      line-height: 63px;
+    }
+  }
+  img.mast-head {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-top: 23px;
+  }
+  h4.topic {
+    font-family: 'LatoBold';
+    font-size: 19px;
+    color: #333;
+    line-height: 1.47;
+    margin-bottom: 35px;
+  }
+  .form-group {
+    padding-bottom: 45px;
+
+    // Range Buttons
+    label {
+      font-size: 17px;
+      color: #444;
+      height: 21px;
+      font-family: 'Lato';
+      font-weight: normal;
+      margin-bottom: 22px;
+    }
+    &.nps {
+      border-top: 2px solid #e7e7e7;
+      border-bottom: 2px solid #e7e7e7;
+      padding: 24px 0 34px;
+    }
+    .range-buttons {
+      margin: 0;
+      padding: 0;
+      ul {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        li {
+          //width: 7.26%;
+          width: calc(100% / 13.8);
+          @media screen and (max-width: 680px) {
+            width: 7%;
+          }
+          display: inline-block;
+          text-align: center;
+          &:first-child {
+            text-align: left;
+          }
+          &:last-child {
+            text-align: right;
+          }
+          > i {
+            font-size: 23px;
+            position: relative;
+            top: 3px;
+            color: #939ba2;
+            @media screen and (max-width: 680px) {
+              top: 5px;
+            }
+          }
+          > div {
+            border: 3px solid transparent;
+            background-color: transparent;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            line-height: 26px;
+            margin: auto;
+            font-family: LatoBold;
+            display: block;
+            font-size: 16px;
+            @media screen and (max-width: 680px) {
+              width: 28px;
+              height: 28px;
+              line-height: 24px;
+              font-size: 14px;
+              border-width: 2px;
+            }
+            &:hover {
+              cursor: pointer;
+              background-color: lighten(black, 90%);
+            }
+            &.selected {
+              color: #fff !important;
+            }
+
+            // 11-point (0-10 for NPS etc)
+
+            &.range-11-point {
+              &.value-0 {
+                color: $color-0;
+                border-color: $color-0;
+                &.selected {
+                  background: $color-0;
+                }
+              }
+              &.value-1 {
+                color: $color-1;
+                border-color: $color-1;
+                &.selected {
+                  background: $color-1;
+                }
+              }
+              &.value-2 {
+                color: $color-2;
+                border-color: $color-2;
+                &.selected {
+                  background: $color-2;
+                }
+              }
+              &.value-3 {
+                color: $color-3;
+                border-color: $color-3;
+                &.selected {
+                  background: $color-3;
+                }
+              }
+              &.value-4 {
+                color: $color-4;
+                border-color: $color-4;
+                &.selected {
+                  background: $color-4;
+                }
+              }
+              &.value-5 {
+                color: $color-5;
+                border-color: $color-5;
+                &.selected {
+                  background: $color-5;
+                }
+              }
+              &.value-6 {
+                color: $color-6;
+                border-color: $color-6;
+                &.selected {
+                  background: $color-6;
+                }
+              }
+              &.value-7 {
+                color: $color-7;
+                border-color: $color-7;
+                &.selected {
+                  background: $color-7;
+                }
+              }
+              &.value-8 {
+                color: $color-8;
+                border-color: $color-8;
+                &.selected {
+                  background: $color-8;
+                }
+              }
+              &.value-9 {
+                color: $color-9;
+                border-color: $color-9;
+                &.selected {
+                  background: $color-9;
+                }
+              }
+              &.value-10 {
+                color: $color-10;
+                border-color: $color-10;
+                &.selected {
+                  background: $color-10;
+                }
+              }
+            }
+
+            // 9-point range
+
+            &.range-9-point {
+              &.value-0 {
+                color: $color-0;
+                border-color: $color-0;
+                &.selected {
+                  background: $color-0;
+                }
+              }
+              &.value-1 {
+                color: $color-1;
+                border-color: $color-1;
+                &.selected {
+                  background: $color-1;
+                }
+              }
+              &.value-2 {
+                color: $color-2;
+                border-color: $color-2;
+                &.selected {
+                  background: $color-2;
+                }
+              }
+              &.value-3 {
+                color: $color-4;
+                border-color: $color-4;
+                &.selected {
+                  background: $color-4;
+                }
+              }
+              &.value-4 {
+                color: $color-5;
+                border-color: $color-5;
+                &.selected {
+                  background: $color-5;
+                }
+              }
+              &.value-5 {
+                color: $color-6;
+                border-color: $color-6;
+                &.selected {
+                  background: $color-6;
+                }
+              }
+              &.value-6 {
+                color: $color-7;
+                border-color: $color-7;
+                &.selected {
+                  background: $color-7;
+                }
+              }
+              &.value-7 {
+                color: $color-8;
+                border-color: $color-8;
+                &.selected {
+                  background: $color-8;
+                }
+              }
+              &.value-8 {
+                color: $color-10;
+                border-color: $color-10;
+                &.selected {
+                  background: $color-10;
+                }
+              }
+            }
+
+            // 7-point range
+
+            &.range-7-point {
+              &.value-0 {
+                color: $color-0;
+                border-color: $color-0;
+                &.selected {
+                  background: $color-0;
+                }
+              }
+              &.value-1 {
+                color: $color-2;
+                border-color: $color-2;
+                &.selected {
+                  background: $color-2;
+                }
+              }
+              &.value-2 {
+                color: $color-3;
+                border-color: $color-3;
+                &.selected {
+                  background: $color-3;
+                }
+              }
+              &.value-3 {
+                color: $color-5;
+                border-color: $color-5;
+                &.selected {
+                  background: $color-5;
+                }
+              }
+              &.value-4 {
+                color: $color-7;
+                border-color: $color-7;
+                &.selected {
+                  background: $color-7;
+                }
+              }
+              &.value-5 {
+                color: $color-8;
+                border-color: $color-8;
+                &.selected {
+                  background: $color-8;
+                }
+              }
+              &.value-6 {
+                color: $color-10;
+                border-color: $color-10;
+                &.selected {
+                  background: $color-10;
+                }
+              }
+            }
+
+            // 5-point range
+
+            &.range-5-point {
+              &.value-0 {
+                color: $color-0;
+                border-color: $color-0;
+                &.selected {
+                  background: $color-0;
+                }
+              }
+              &.value-1 {
+                color: $color-2;
+                border-color: $color-2;
+                &.selected {
+                  background: $color-2;
+                }
+              }
+              &.value-2 {
+                color: $color-5;
+                border-color: $color-5;
+                &.selected {
+                  background: $color-5;
+                }
+              }
+              &.value-3 {
+                color: $color-8;
+                border-color: $color-8;
+                &.selected {
+                  background: $color-8;
+                }
+              }
+              &.value-4 {
+                color: $color-10;
+                border-color: $color-10;
+                &.selected {
+                  background: $color-10;
+                }
+              }
+            }
+
+            // 3-point range
+
+            &.range-3-point {
+              &.value-0 {
+                color: $color-0;
+                border-color: $color-0;
+                &.selected {
+                  background: $color-0;
+                }
+              }
+              &.value-1 {
+                color: $color-5;
+                border-color: $color-5;
+                &.selected {
+                  background: $color-5;
+                }
+              }
+              &.value-2 {
+                color: $color-10;
+                border-color: $color-10;
+                &.selected {
+                  background: $color-10;
+                }
+              }
+            }
+          }
+            > input[type="radio"] {
+              display: none;
+            }
+          }
+        }
+      }
+
+    // Checkboxes
+
+    .checkbox {
+      label {
+        margin-left: 0;
+        font-size: 14px;
+        input[type="checkbox"] {
+          position: relative;
+          margin-right: 5px;
+          width: 15px;
+          height: 15px;
+          top: 1px;
+        }
+      }
+      &.not-applicable {
+        padding: 20px 0 0;
+        label {
+          margin-bottom: 0;
+        }
+      }
+    }
+    &.panel-conditional {
+        background: rgba(59, 161, 248, 0.1);
+      }
+    }
+  }
+

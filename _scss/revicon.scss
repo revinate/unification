@@ -1,16 +1,16 @@
 @font-face {
-  font-family: 'revicon';
-  src:    url('../fonts/revicon/icomoon.eot?us6msn');
-  src:    url('../fonts/revicon/icomoon.eot?us6msn#iefix') format('embedded-opentype'),
-  url('../fonts/revicon/icomoon.ttf?us6msn') format('truetype'),
-  url('../fonts/revicon/icomoon.woff?us6msn') format('woff'),
-  url('../fonts/revicon/icomoon.svg?us6msn#icomoon') format('svg');
+  font-family: 'icomoon';
+  src:  url('../fonts/revicon/icomoon.eot?rs66z1');
+  src:  url('../fonts/revicon/icomoon.eot?rs66z1#iefix') format('embedded-opentype'),
+  url('../fonts/revicon/icomoon.ttf?rs66z1') format('truetype'),
+  url('../fonts/revicon/icomoon.woff?rs66z1') format('woff'),
+  url('../fonts/revicon/icomoon.svg?rs66z1#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 [class^="revicon-"], [class*=" revicon-"] {
-  font-family: 'revicon';
+  font-family: 'icomoon';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -23,17 +23,50 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.revicon-fa-file-csv:before {
-  content: "\e900";
+.revicon-BulletedList:before {
+  content: "\e600";
 }
-.revicon-sentiment-analysis:before {
-  content: "\e901";
+.revicon-ButtonImageIcon:before {
+  content: "\e601";
 }
-.revicon-trends-comparison:before {
-  content: "\e902";
+.revicon-ButtonIcon:before {
+  content: "\e602";
+}
+.revicon-DblContentIcon:before {
+  content: "\e603";
+}
+.revicon-uniE604:before {
+  content: "\e604";
+}
+.revicon-uniE605:before {
+  content: "\e605";
+}
+.revicon-DividerIcon:before {
+  content: "\e606";
+}
+.revicon-ImageButtonIcon:before {
+  content: "\e607";
+}
+.revicon-ImageIcon:before {
+  content: "\e608";
+}
+.revicon-SaveEmailTemplateIcon:before {
+  content: "\e609";
+}
+.revicon-SendTestEmailIcon:before {
+  content: "\e60a";
+}
+.revicon-TextIcon:before {
+  content: "\e60b";
 }
 .revicon-compass-2:before {
   content: "\e60c";
+}
+.revicon-DblText:before {
+  content: "\e60d";
+}
+.revicon-Social:before {
+  content: "\e60e";
 }
 .revicon-task-checklist:before {
   content: "\e60f";
@@ -65,48 +98,79 @@
 .revicon-dropdown:before {
   content: "\e618";
 }
-.revicon-DblText:before {
-  content: "\e60d";
+.revicon-fa-file-csv:before {
+  content: "\e900";
 }
-.revicon-Social:before {
-  content: "\e60e";
+.revicon-ICON-SentimentAnalysis:before {
+  content: "\e901";
 }
-.revicon-BulletedList:before {
-  content: "\e600";
+.revicon-ICON-TrendsComparison:before {
+  content: "\e902";
 }
-.revicon-ButtonImageIcon:before {
-  content: "\e601";
+.revicon-uniE619:before {
+  content: "\e619";
 }
-.revicon-ButtonIcon:before {
-  content: "\e602";
+.revicon-uniE61A:before {
+  content: "\e61a";
 }
-.revicon-DblContentIcon:before {
-  content: "\e603";
+.revicon-uniE61B:before {
+  content: "\e61b";
 }
-.revicon-DeleteIcon .path1:before {
-  content: "\e604";
-  color: rgb(233, 99, 81);
+.revicon-uniE61C:before {
+  content: "\e61c";
 }
-.revicon-DeleteIcon .path2:before {
-  content: "\e605";
-  margin-left: -1em;
-  color: rgb(255, 255, 255);
+.revicon-uniE61D:before {
+  content: "\e61d";
 }
-.revicon-DividerIcon:before {
-  content: "\e606";
+.revicon-uniE61E:before {
+  content: "\e61e";
 }
-.revicon-ImageButtonIcon:before {
-  content: "\e607";
+.revicon-uniE61F:before {
+  content: "\e61f";
 }
-.revicon-ImageIcon:before {
-  content: "\e608";
+.revicon-uniE620:before {
+  content: "\e620";
 }
-.revicon-SaveEmailTemplateIcon:before {
-  content: "\e609";
+.revicon-uniE621:before {
+  content: "\e621";
 }
-.revicon-SendTestEmailIcon:before {
-  content: "\e60a";
+.revicon-uniE622:before {
+  content: "\e622";
 }
-.revicon-TextIcon:before {
-  content: "\e60b";
+.revicon-uniE623:before {
+  content: "\e623";
 }
+.revicon-uniE624:before {
+  content: "\e624";
+}
+.revicon-uniE625:before {
+  content: "\e625";
+}
+.revicon-uniE626:before {
+  content: "\e626";
+}
+.revicon-uniE627:before {
+  content: "\e627";
+}
+.revicon-uniE628:before {
+  content: "\e628";
+}
+.revicon-uniE629:before {
+  content: "\e629";
+}
+.revicon-uniE62A:before {
+  content: "\e62a";
+}
+.revicon-uniE62B:before {
+  content: "\e62b";
+}
+.revicon-uniE62C:before {
+  content: "\e62c";
+}
+.revicon-rev-logo-2017:before {
+  content: "\e903";
+}
+.revicon-rev-mark-2017:before {
+  content: "\e904";
+}
+

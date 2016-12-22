@@ -6,9 +6,304 @@
 </description>
     <link>http://example.com/</link>
     <atom:link href="http://example.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 09 Dec 2016 15:02:04 -0800</pubDate>
-    <lastBuildDate>Fri, 09 Dec 2016 15:02:04 -0800</lastBuildDate>
+    <pubDate>Wed, 21 Dec 2016 17:18:21 -0800</pubDate>
+    <lastBuildDate>Wed, 21 Dec 2016 17:18:21 -0800</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Surveys</title>
+        <description>&lt;div class=&quot;unified-gfs&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;header class=&quot;top-header col-xs-12&quot;&gt;
+            &lt;select class=&quot;selectpicker form-control pull-right language-selector&quot;&gt;
+                &lt;option&gt;English&lt;/option&gt;
+                &lt;option&gt;Spanish&lt;/option&gt;
+                &lt;option&gt;Japanese&lt;/option&gt;
+            &lt;/select&gt;    
+        &lt;h3&gt;Avertine Hotel&lt;/h3&gt;
+        &lt;/header&gt;
+    &lt;/div&gt;
+    &lt;img src=&quot;https://img.revinate.com/image/upload/yigsfbuzbb0okk3hbdga.jpg&quot; class=&quot;mast-head&quot; /&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-xs-12&quot;&gt;
+            &lt;h1&gt;Please give us your feedback!&lt;/h1&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-xs-12&quot;&gt;
+            &lt;div class=&quot;form-group nps&quot;&gt;
+                &lt;label&gt;How likely are you to recommend us?&lt;/label&gt;
+                &lt;div class=&quot;range-buttons r_range_buttons question&quot;&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;
+                            &lt;i class=&quot;fa fa-frown-o&quot;&gt;&lt;/i&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-11-point value-0&quot;&gt;0&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_0&quot; type=&quot;radio&quot; value=&quot;0&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-11-point value-1&quot;&gt;1&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_1&quot; type=&quot;radio&quot; value=&quot;1&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-11-point value-2&quot;&gt;2&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_2&quot; type=&quot;radio&quot; value=&quot;2&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-11-point value-3&quot;&gt;3&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_3&quot; type=&quot;radio&quot; value=&quot;3&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-11-point value-4&quot;&gt;4&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_4&quot; type=&quot;radio&quot; value=&quot;4&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-11-point value-5&quot;&gt;5&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_5&quot; type=&quot;radio&quot; value=&quot;5&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-11-point value-6&quot;&gt;6&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_6&quot; type=&quot;radio&quot; value=&quot;6&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-11-point value-7&quot;&gt;7&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_7&quot; type=&quot;radio&quot; value=&quot;7&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-11-point value-8&quot;&gt;8&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_8&quot; type=&quot;radio&quot; value=&quot;8&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-11-point value-9&quot;&gt;9&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_9&quot; type=&quot;radio&quot; value=&quot;9&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-11-point value-10 selected&quot;&gt;10&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_10&quot; type=&quot;radio&quot; value=&quot;10&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;i class=&quot;fa fa-smile-o&quot;&gt;&lt;/i&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-xs-12&quot;&gt;
+        &lt;h4 class=&quot;topic&quot;&gt;Topic Title&lt;/h4&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-xs-12&quot;&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label&gt;9-point range example&lt;/label&gt;
+                &lt;div class=&quot;range-buttons r_range_buttons question&quot;&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;
+                            &lt;i class=&quot;fa fa-frown-o&quot;&gt;&lt;/i&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-9-point value-0&quot;&gt;1&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_1&quot; type=&quot;radio&quot; value=&quot;1&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-9-point value-1&quot;&gt;2&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_2&quot; type=&quot;radio&quot; value=&quot;2&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-9-point value-2&quot;&gt;3&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_3&quot; type=&quot;radio&quot; value=&quot;3&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-9-point value-3&quot;&gt;4&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_4&quot; type=&quot;radio&quot; value=&quot;4&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-9-point value-4&quot;&gt;5&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_5&quot; type=&quot;radio&quot; value=&quot;5&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-9-point value-5&quot;&gt;6&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_6&quot; type=&quot;radio&quot; value=&quot;6&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-9-point value-6&quot;&gt;7&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_7&quot; type=&quot;radio&quot; value=&quot;7&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-9-point value-7&quot;&gt;8&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_8&quot; type=&quot;radio&quot; value=&quot;8&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-9-point value-8&quot;&gt;9&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_9&quot; type=&quot;radio&quot; value=&quot;9&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;i class=&quot;fa fa-smile-o&quot;&gt;&lt;/i&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;         
+        &lt;div class=&quot;col-xs-12&quot;&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label&gt;7-point range example&lt;/label&gt;
+                &lt;div class=&quot;range-buttons r_range_buttons question&quot;&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;
+                            &lt;i class=&quot;fa fa-frown-o&quot;&gt;&lt;/i&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-7-point value-0&quot;&gt;1&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_1&quot; type=&quot;radio&quot; value=&quot;1&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-7-point value-1&quot;&gt;2&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_2&quot; type=&quot;radio&quot; value=&quot;2&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-7-point value-2&quot;&gt;3&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_3&quot; type=&quot;radio&quot; value=&quot;3&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-7-point value-3&quot;&gt;4&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_4&quot; type=&quot;radio&quot; value=&quot;4&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-7-point value-4&quot;&gt;5&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_5&quot; type=&quot;radio&quot; value=&quot;5&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-7-point value-5&quot;&gt;6&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_6&quot; type=&quot;radio&quot; value=&quot;6&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-7-point value-6&quot;&gt;7&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_7&quot; type=&quot;radio&quot; value=&quot;7&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;i class=&quot;fa fa-smile-o&quot;&gt;&lt;/i&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;         
+        &lt;div class=&quot;col-xs-12&quot;&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label&gt;5-point range example&lt;/label&gt;
+                &lt;div class=&quot;range-buttons r_range_buttons question&quot;&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;
+                            &lt;i class=&quot;fa fa-frown-o&quot;&gt;&lt;/i&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-5-point value-0&quot;&gt;1&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_1&quot; type=&quot;radio&quot; value=&quot;1&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-5-point value-1&quot;&gt;2&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_2&quot; type=&quot;radio&quot; value=&quot;2&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-5-point value-2&quot;&gt;3&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_3&quot; type=&quot;radio&quot; value=&quot;3&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-5-point value-3&quot;&gt;4&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_4&quot; type=&quot;radio&quot; value=&quot;4&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-5-point value-4&quot;&gt;5&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_5&quot; type=&quot;radio&quot; value=&quot;5&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;i class=&quot;fa fa-smile-o&quot;&gt;&lt;/i&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;         
+        &lt;div class=&quot;col-xs-12&quot;&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label&gt;3-point range example&lt;/label&gt;
+                &lt;div class=&quot;range-buttons r_range_buttons question&quot;&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;
+                            &lt;i class=&quot;fa fa-frown-o&quot;&gt;&lt;/i&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-3-point value-0&quot;&gt;1&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_1&quot; type=&quot;radio&quot; value=&quot;1&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-3-point value-1&quot;&gt;2&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_2&quot; type=&quot;radio&quot; value=&quot;2&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;range-3-point value-2&quot;&gt;3&lt;/div&gt;
+                            &lt;input class=&quot;r_nps_3&quot; type=&quot;radio&quot; value=&quot;3&quot; name=&quot;question_range_10005&quot; /&gt;
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                            &lt;i class=&quot;fa fa-smile-o&quot;&gt;&lt;/i&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;checkbox not-applicable r_not-applicable&quot;&gt;
+                    &lt;label&gt;&lt;input type=&quot;checkbox&quot; /&gt; Not Applicable&lt;/label&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt; 
+        &lt;div class=&quot;col-xs-12&quot;&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label&gt;We welcome your feedback, here is an example of a textarea&lt;/label&gt;
+                &lt;textarea class=&quot;form-control&quot; rows=&quot;5&quot; placeholder=&quot;Placeholder Text&quot;&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-xs-12&quot;&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label&gt;Yes or No Question&lt;/label&gt;
+                &lt;div class=&quot;question yes-no&quot;&gt;
+                    &lt;input type=&quot;radio&quot; class=&quot;yes-no r_yes&quot; style=&quot;display: none;&quot; /&gt;
+                    &lt;input type=&quot;radio&quot; class=&quot;yes-no r_no&quot; style=&quot;display: none;&quot; /&gt;
+                    &lt;button class=&quot;btn btn-default r_yes trigger pull-left mg-r-md&quot;&gt;Yes&lt;/button&gt;
+                    &lt;button class=&quot;btn btn-default r_no trigger pull-left&quot;&gt;No&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-xs-12 conditional-question&quot;&gt;
+            &lt;div class=&quot;form-group panel panel-conditional&quot;&gt;
+            &lt;div class=&quot;panel-body&quot;&gt;
+                &lt;label&gt;Conditional checkbox questions&lt;/label&gt;
+                    &lt;div class=&quot;question&quot;&gt;
+                        &lt;div class=&quot;checkbox&quot;&gt;
+                            &lt;label&gt;
+                                &lt;input type=&quot;checkbox&quot; /&gt; Option 1
+                            &lt;/label&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;checkbox&quot;&gt;
+                            &lt;label&gt;
+                                &lt;input type=&quot;checkbox&quot; /&gt; Option 2
+                            &lt;/label&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;checkbox&quot;&gt;
+                            &lt;label&gt;
+                                &lt;input type=&quot;checkbox&quot; /&gt; Option 3
+                            &lt;/label&gt;
+                        &lt;/div&gt;                     
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+
+    &lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sun, 18 Dec 2016 16:00:01 -0800</pubDate>
+        <link>http://example.com/templates/2016/12/18/surveys.html</link>
+        <guid isPermaLink="true">http://example.com/templates/2016/12/18/surveys.html</guid>
+        
+        
+        <category>templates</category>
+        
+      </item>
     
       <item>
         <title>Translations</title>
@@ -992,26 +1287,6 @@
         
         
         <category>modules</category>
-        
-      </item>
-    
-      <item>
-        <title>Form Components</title>
-        <description>&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;col-md-3&quot;&gt;
-  &lt;div class=&quot;form-group&quot;&gt;
-  &lt;label class=&quot;control-label&quot;&gt;Form Label&lt;/label&gt;
-  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Placeholder Text&quot; /&gt;
-  &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Wed, 07 Sep 2016 17:00:05 -0700</pubDate>
-        <link>http://example.com/components/2016/09/07/form-components.html</link>
-        <guid isPermaLink="true">http://example.com/components/2016/09/07/form-components.html</guid>
-        
-        
-        <category>components</category>
         
       </item>
     
