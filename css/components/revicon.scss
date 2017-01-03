@@ -6,11 +6,11 @@
 
 @font-face {
   font-family: 'revicon';
-  src:  url('../../fonts/revicon.eot?1yls0z');
-  src:  url('../../fonts/revicon.eot?1yls0z#iefix') format('embedded-opentype'),
-  url('../../fonts/revicon.ttf?1yls0z') format('truetype'),
-  url('../../fonts/revicon.woff?1yls0z') format('woff'),
-  url('../../fonts/revicon.svg?1yls0z#revicon') format('svg');
+  src:  url('../../fonts/revicon.eot?mauffb');
+  src:  url('../../fonts/revicon.eot?mauffb#iefix') format('embedded-opentype'),
+  url('../../fonts/revicon.ttf?mauffb') format('truetype'),
+  url('../../fonts/revicon.woff?mauffb') format('woff'),
+  url('../../fonts/revicon.svg?mauffb#revicon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -138,4 +138,9 @@
 .revicon-rev-mark-2017:before {
   content: "\e904";
 }
-
+.revicon-DblContentButton:before {
+  content: "\e619";
+}
+.revicon-ColTableIcon:before {
+  content: "\e61a";
+}
