@@ -80,6 +80,12 @@ desc: "
                         </li>
                     </ul>
                 </div>
+                <div class="nps-slider range-slider">
+                    <ul><li>-</li></ul>
+                    <input class="r_nps_slider r_range_slider" type="range" name="range_slider_ignore" min="0" max="10" value="0" onclick="">
+                    <i class="fa fa-frown-o pull-left"></i>
+                    <i class="fa fa-smile-o pull-right"></i>
+                </div>
             </div>
         </div>
         <div class="col-xs-12">
