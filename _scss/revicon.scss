@@ -1,16 +1,7 @@
-@font-face {
-  font-family: 'icomoon';
-  src:  url('../fonts/revicon/icomoon.eot?rs66z1');
-  src:  url('../fonts/revicon/icomoon.eot?rs66z1#iefix') format('embedded-opentype'),
-  url('../fonts/revicon/icomoon.ttf?rs66z1') format('truetype'),
-  url('../fonts/revicon/icomoon.woff?rs66z1') format('woff'),
-  url('../fonts/revicon/icomoon.svg?rs66z1#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
 
 [class^="revicon-"], [class*=" revicon-"] {
-  font-family: 'icomoon';
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'revicon' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -56,7 +47,7 @@
 .revicon-SendTestEmailIcon:before {
   content: "\e60a";
 }
-.revicon-TextIcon:before {
+.revicon-TextIcon2:before {
   content: "\e60b";
 }
 .revicon-compass-2:before {
@@ -107,64 +98,25 @@
 .revicon-ICON-TrendsComparison:before {
   content: "\e902";
 }
-.revicon-uniE619:before {
-  content: "\e619";
-}
-.revicon-uniE61A:before {
-  content: "\e61a";
-}
-.revicon-uniE61B:before {
-  content: "\e61b";
-}
-.revicon-uniE61C:before {
-  content: "\e61c";
-}
-.revicon-uniE61D:before {
-  content: "\e61d";
-}
-.revicon-uniE61E:before {
-  content: "\e61e";
-}
-.revicon-uniE61F:before {
-  content: "\e61f";
-}
-.revicon-uniE620:before {
-  content: "\e620";
-}
-.revicon-uniE621:before {
+.revicon-arrow-left:before {
   content: "\e621";
 }
-.revicon-uniE622:before {
+.revicon-arrow-right:before {
   content: "\e622";
 }
-.revicon-uniE623:before {
+.revicon-mobile:before {
   content: "\e623";
 }
-.revicon-uniE624:before {
+.revicon-saveTemplate:before {
   content: "\e624";
 }
-.revicon-uniE625:before {
+.revicon-sendTestMail:before {
   content: "\e625";
 }
-.revicon-uniE626:before {
+.revicon-tabletDesktop:before {
   content: "\e626";
 }
-.revicon-uniE627:before {
-  content: "\e627";
-}
-.revicon-uniE628:before {
-  content: "\e628";
-}
-.revicon-uniE629:before {
-  content: "\e629";
-}
-.revicon-uniE62A:before {
-  content: "\e62a";
-}
-.revicon-uniE62B:before {
-  content: "\e62b";
-}
-.revicon-uniE62C:before {
+.revicon-TextIcon:before {
   content: "\e62c";
 }
 .revicon-rev-logo-2017:before {
@@ -173,4 +125,12 @@
 .revicon-rev-mark-2017:before {
   content: "\e904";
 }
-
+.revicon-fa-file-csv2:before {
+  content: "\e907";
+}
+.revicon-sentiment-analysis:before {
+  content: "\e905";
+}
+.revicon-trends-comparison:before {
+  content: "\e906";
+}

@@ -174,30 +174,12 @@
   font-family: 'Gram';
 }
 @font-face {
-  font-family: 'icomoon';
-  src:url('../fonts/icomoon.eot?-n8cj06');
-  src:url('../fonts/icomoon.eot?#iefix-n8cj06') format('embedded-opentype'),
-  url('../fonts/icomoon.woff?-n8cj06') format('woff'),
-  url('../fonts/icomoon.ttf?-n8cj06') format('truetype'),
-  url('../fonts/icomoon.svg?-n8cj06#icomoon') format('svg');
+  font-family: 'revicon';
+  src:  url('../fonts/revicon.eot?kyq497');
+  src:  url('../fonts/revicon.eot?kyq497#iefix') format('embedded-opentype'),
+  url('../fonts/revicon.ttf?kyq497') format('truetype'),
+  url('../fonts/revicon.woff?kyq497') format('woff'),
+  url('../fonts/revicon.svg?kyq497#revicon') format('svg');
   font-weight: normal;
   font-style: normal;
-}
-
-[class^="icon-"], [class*=" icon-"] {
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-TextIcon:before {
-  content: "\e600";
 }
