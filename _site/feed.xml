@@ -6,8 +6,8 @@
 </description>
     <link>http://example.com/</link>
     <atom:link href="http://example.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 04 Jan 2017 13:33:40 -0800</pubDate>
-    <lastBuildDate>Wed, 04 Jan 2017 13:33:40 -0800</lastBuildDate>
+    <pubDate>Wed, 04 Jan 2017 13:42:41 -0800</pubDate>
+    <lastBuildDate>Wed, 04 Jan 2017 13:42:41 -0800</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -23,7 +23,11 @@
         &lt;h3&gt;Avertine Hotel&lt;/h3&gt;
         &lt;/header&gt;
     &lt;/div&gt;
-    &lt;img src=&quot;https://img.revinate.com/image/upload/yigsfbuzbb0okk3hbdga.jpg&quot; class=&quot;mast-head&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;mast-head-gfs&quot;&gt;
+    &lt;img src=&quot;https://img.revinate.com/image/upload/yigsfbuzbb0okk3hbdga.jpg&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;unified-gfs&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
         &lt;div class=&quot;col-xs-12&quot;&gt;
             &lt;h1&gt;Please give us your feedback!&lt;/h1&gt;
