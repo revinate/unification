@@ -9,13 +9,17 @@ desc: "
 
 <div class="unified-gfs">
     <div class="row">
-        <header class="top-header col-xs-12">
-            <select class="selectpicker form-control pull-right language-selector">
-                <option>English</option>
-                <option>Spanish</option>
-                <option>Japanese</option>
-            </select>    
-        <h3>Avertine Hotel</h3>
+        <header class="top-header">
+            <div class="col-xs-6">
+                <h3>Avertine Hotel</h3>
+            </div>
+            <div class="col-xs-6">
+                <select class="selectpicker form-control pull-right language-selector">
+                    <option>English</option>
+                    <option>Spanish</option>
+                    <option>Japanese</option>
+                </select>  
+             </div>
         </header>
     </div>
 </div>
