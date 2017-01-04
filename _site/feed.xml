@@ -6,8 +6,8 @@
 </description>
     <link>http://example.com/</link>
     <atom:link href="http://example.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 04 Jan 2017 13:51:03 -0800</pubDate>
-    <lastBuildDate>Wed, 04 Jan 2017 13:51:03 -0800</lastBuildDate>
+    <pubDate>Wed, 04 Jan 2017 14:31:54 -0800</pubDate>
+    <lastBuildDate>Wed, 04 Jan 2017 14:31:54 -0800</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -347,18 +347,24 @@
         &lt;div class=&quot;col-xs-12&quot;&gt;
             &lt;div class=&quot;form-group&quot;&gt;
                 &lt;label&gt;Yes or No Question&lt;/label&gt;
-                &lt;div class=&quot;question yes-no&quot;&gt;
-                    &lt;input type=&quot;radio&quot; class=&quot;yes-no r_yes&quot; style=&quot;display: none;&quot; /&gt;
-                    &lt;input type=&quot;radio&quot; class=&quot;yes-no r_no&quot; style=&quot;display: none;&quot; /&gt;
-                    &lt;button class=&quot;btn btn-default r_yes trigger pull-left mg-r-md&quot;&gt;Yes&lt;/button&gt;
-                    &lt;button class=&quot;btn btn-default r_no trigger pull-left&quot;&gt;No&lt;/button&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;question yes-no&quot;&gt;
+                        &lt;div class=&quot;col-sm-2 col-xs-6&quot;&gt;
+                            &lt;input type=&quot;radio&quot; class=&quot;yes-no r_yes&quot; name=&quot;radioyesno&quot; style=&quot;display: none;&quot; /&gt;
+                            &lt;button class=&quot;btn btn-lg btn-primary r_yes trigger&quot;&gt;Yes&lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-sm-2 col-xs-6&quot;&gt;
+                            &lt;input type=&quot;radio&quot; class=&quot;yes-no r_no&quot; name=&quot;radioyesno&quot; style=&quot;display: none;&quot; /&gt;
+                            &lt;button class=&quot;btn btn-lg btn-default r_no trigger&quot;&gt;No&lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
                 &lt;/div&gt;
             &lt;/div&gt;
         &lt;/div&gt;
         &lt;div class=&quot;col-xs-12 conditional-question&quot;&gt;
             &lt;div class=&quot;form-group panel panel-conditional&quot;&gt;
-            &lt;div class=&quot;panel-body&quot;&gt;
-                &lt;label&gt;Conditional checkbox questions&lt;/label&gt;
+                &lt;div class=&quot;panel-body&quot;&gt;
+                    &lt;label&gt;Conditional checkbox questions&lt;/label&gt;
                     &lt;div class=&quot;question&quot;&gt;
                         &lt;div class=&quot;checkbox&quot;&gt;
                             &lt;label&gt;
@@ -376,11 +382,57 @@
                             &lt;/label&gt;
                         &lt;/div&gt;                     
                     &lt;/div&gt;
+                    &lt;label&gt;Conditional radio buttons&lt;/label&gt;
+                    &lt;div class=&quot;question&quot;&gt;
+                        &lt;div class=&quot;radio&quot;&gt;
+                            &lt;label&gt;
+                                &lt;input type=&quot;radio&quot; name=&quot;radio1&quot; /&gt; Option 1
+                            &lt;/label&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;radio&quot;&gt;
+                            &lt;label&gt;
+                                &lt;input type=&quot;radio&quot; name=&quot;radio1&quot; /&gt; Option 2
+                            &lt;/label&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;radio&quot;&gt;
+                            &lt;label&gt;
+                                &lt;input type=&quot;radio&quot; name=&quot;radio1&quot; /&gt; Option 3
+                            &lt;/label&gt;
+                        &lt;/div&gt;  
+                    &lt;/div&gt;
                 &lt;/div&gt;
             &lt;/div&gt;
         &lt;/div&gt;
-
-
+        &lt;div class=&quot;col-xs-12&quot;&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                    &lt;label&gt;Regular checkbox questions&lt;/label&gt;
+                    &lt;div class=&quot;question&quot;&gt;
+                        &lt;div class=&quot;checkbox&quot;&gt;
+                            &lt;label&gt;
+                                &lt;input type=&quot;checkbox&quot; /&gt; Option 1
+                            &lt;/label&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;checkbox&quot;&gt;
+                            &lt;label&gt;
+                                &lt;input type=&quot;checkbox&quot; /&gt; Option 2
+                            &lt;/label&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;checkbox&quot;&gt;
+                            &lt;label&gt;
+                                &lt;input type=&quot;checkbox&quot; /&gt; Option 3
+                            &lt;/label&gt;
+                        &lt;/div&gt;                     
+                    &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-4 col-xs-12&quot;&gt;
+            &lt;button class=&quot;btn btn-success btn-lg btn-block&quot;&gt;Next (Finish)&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-xs-12&quot;&gt;
+            &lt;p class=&quot;submit-help&quot;&gt;By clicking &quot;Next,” I agree to the &lt;a href=&quot;#&quot;&gt;Terms &amp;amp; Conditions&lt;/a&gt; and the &lt;a href=&quot;#&quot;&gt;Privacy policy&lt;/a&gt;.&lt;/p&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 </description>

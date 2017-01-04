@@ -342,18 +342,24 @@ desc: "
         <div class="col-xs-12">
             <div class="form-group">
                 <label>Yes or No Question</label>
-                <div class="question yes-no">
-                    <input type="radio" class="yes-no r_yes" style="display: none;" />
-                    <input type="radio" class="yes-no r_no" style="display: none;" />
-                    <button class="btn btn-default r_yes trigger pull-left mg-r-md">Yes</button>
-                    <button class="btn btn-default r_no trigger pull-left">No</button>
+                <div class="row">
+                    <div class="question yes-no">
+                        <div class="col-sm-2 col-xs-6">
+                            <input type="radio" class="yes-no r_yes" name="radioyesno" style="display: none;" />
+                            <button class="btn btn-lg btn-primary r_yes trigger">Yes</button>
+                        </div>
+                        <div class="col-sm-2 col-xs-6">
+                            <input type="radio" class="yes-no r_no" name="radioyesno" style="display: none;" />
+                            <button class="btn btn-lg btn-default r_no trigger">No</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-xs-12 conditional-question">
             <div class="form-group panel panel-conditional">
-            <div class="panel-body">
-                <label>Conditional checkbox questions</label>
+                <div class="panel-body">
+                    <label>Conditional checkbox questions</label>
                     <div class="question">
                         <div class="checkbox">
                             <label>
@@ -371,10 +377,56 @@ desc: "
                             </label>
                         </div>                     
                     </div>
+                    <label>Conditional radio buttons</label>
+                    <div class="question">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="radio1" /> Option 1
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="radio1" /> Option 2
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="radio1" /> Option 3
+                            </label>
+                        </div>  
+                    </div>
                 </div>
             </div>
         </div>
-
-
+        <div class="col-xs-12">
+            <div class="form-group">
+                    <label>Regular checkbox questions</label>
+                    <div class="question">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" /> Option 1
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" /> Option 2
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" /> Option 3
+                            </label>
+                        </div>                     
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 col-xs-12">
+            <button class="btn btn-success btn-lg btn-block">Next (Finish)</button>
+        </div>
+        <div class="col-xs-12">
+            <p class="submit-help">By clicking "Next,” I agree to the <a href="#">Terms & Conditions</a> and the <a href="#">Privacy policy</a>.</p>
+        </div>
     </div>
 </div>
