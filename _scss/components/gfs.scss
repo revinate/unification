@@ -434,6 +434,7 @@ $color-10: #61a544;
     &.panel-conditional {
       background: rgba(59, 161, 248, 0.1);
       padding-bottom: 0;
+      margin-bottom: 50px;
     }
 
     //Mobile Slider
@@ -723,31 +724,30 @@ $color-10: #61a544;
     }
   }
 
-    // Submit Section
+  // Submit Section
 
-    .submit-help {
-      font-size: 17px;
-      color: #9b9b9b;
-      line-height: 25px;
-      padding: 20px 0;
-      a {
-        color: #308df6;
-        text-decoration: none;
-      }
+  .submit-help {
+    font-size: 17px;
+    color: #9b9b9b;
+    line-height: 25px;
+    padding: 20px 0;
+    a {
+      color: #308df6;
+      text-decoration: none;
     }
+  }
 
-    //hide mobile only and show at lower resolution
+  //hide mobile only and show at lower resolution
 
+  .mobile-show {
+    display: none;
+  }
+  @media (max-width: 600px) {
     .mobile-show {
-      display: none;
+      display: block;
     }
-    @media (max-width: 600px) {
-      .mobile-show {
-        display: block;
-      }
-      .mobile-hide {
-        display: none;
-      }
+    .mobile-hide {
+      display: none;
     }
     .yes-no {
       .btn {
@@ -757,3 +757,4 @@ $color-10: #61a544;
     }
 
   }
+}
