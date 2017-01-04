@@ -742,6 +742,19 @@ $color-10: #61a544;
   .mobile-show {
     display: none;
   }
+  .disabled {
+    opacity: 0.2;
+    &:hover {
+      input[type=range],
+      ul li>div{
+        cursor: not-allowed;
+        background: transparent !important;
+        &:hover {
+          cursor: not-allowed !important;
+        }
+      }
+    }
+  }
   @media (max-width: 600px) {
     .mobile-show {
       display: block;
