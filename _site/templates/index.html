@@ -1288,7 +1288,7 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
         <div class="col-xs-12">
             <div class="form-group nps">
                 <label>How likely are you to recommend us?</label>
-                <div class="range-buttons r_range_buttons question">
+                <div class="range-buttons r_range_buttons question mobile-hide">
                     <ul>
                         <li>
                             <i class="fa fa-frown-o"></i>
@@ -1342,11 +1342,21 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
                         </li>
                     </ul>
                 </div>
-                <div class="nps-slider range-slider">
-                    <ul><li>-</li></ul>
-                    <input class="r_nps_slider r_range_slider" type="range" name="range_slider_ignore" min="0" max="10" value="0" onclick="" />
-                    <i class="fa fa-frown-o pull-left"></i>
-                    <i class="fa fa-smile-o pull-right"></i>
+                <div class="row mobile-show">
+                    <div class="col-xs-12">
+                        <div class="nps-slider range-slider">
+                            <ul><li>Select a score</li></ul>
+                            <input class="r_nps_slider r_range_slider" type="range" name="range_slider_ignore" min="0" max="10" value="" onclick="" />
+                            <div class="slider-values">
+                                <span class="min-val pull-left">0</span>
+                                <span class="max-val pull-right">10</span>
+                            </div>
+                            <div class="slider-values">
+                                <i class="fa fa-frown-o pull-left"></i>
+                                <i class="fa fa-smile-o pull-right"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1356,7 +1366,7 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
         <div class="col-xs-12">
             <div class="form-group">
                 <label>9-point range example</label>
-                <div class="range-buttons r_range_buttons question">
+                <div class="range-buttons r_range_buttons question mobile-hide">
                     <ul>
                         <li>
                             <i class="fa fa-frown-o"></i>
@@ -1402,12 +1412,28 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
                         </li>
                     </ul>
                 </div>
+                <div class="row mobile-show">
+                    <div class="col-xs-12">
+                        <div class="nps-slider range-slider">
+                            <ul><li>Select a score</li></ul>
+                            <input class="r_range_slider" type="range" name="range_slider_ignore" min="1" max="9" value="" onclick="" />
+                            <div class="slider-values">
+                                <span class="min-val pull-left">1</span>
+                                <span class="max-val pull-right">9</span>
+                            </div>
+                            <div class="slider-values">
+                                <i class="fa fa-frown-o pull-left"></i>
+                                <i class="fa fa-smile-o pull-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>         
         <div class="col-xs-12">
             <div class="form-group">
                 <label>7-point range example</label>
-                <div class="range-buttons r_range_buttons question">
+                <div class="range-buttons r_range_buttons question mobile-hide">
                     <ul>
                         <li>
                             <i class="fa fa-frown-o"></i>
@@ -1445,12 +1471,28 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
                         </li>
                     </ul>
                 </div>
+                <div class="row mobile-show">
+                    <div class="col-xs-12">
+                        <div class="nps-slider range-slider">
+                            <ul><li>Select a score</li></ul>
+                            <input class="r_range_slider" type="range" name="range_slider_ignore" min="1" max="7" value="" onclick="" />
+                            <div class="slider-values">
+                                <span class="min-val pull-left">1</span>
+                                <span class="max-val pull-right">7</span>
+                            </div>
+                            <div class="slider-values">
+                                <i class="fa fa-frown-o pull-left"></i>
+                                <i class="fa fa-smile-o pull-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>         
         <div class="col-xs-12">
             <div class="form-group">
                 <label>5-point range example</label>
-                <div class="range-buttons r_range_buttons question">
+                <div class="range-buttons r_range_buttons question mobile-hide">
                     <ul>
                         <li>
                             <i class="fa fa-frown-o"></i>
@@ -1480,12 +1522,28 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
                         </li>
                     </ul>
                 </div>
+                <div class="row mobile-show">
+                    <div class="col-xs-12">
+                        <div class="nps-slider range-slider">
+                            <ul><li>Select a score</li></ul>
+                            <input class="r_range_slider" type="range" name="range_slider_ignore" min="1" max="5" value="" onclick="" />
+                            <div class="slider-values">
+                                <span class="min-val pull-left">1</span>
+                                <span class="max-val pull-right">5</span>
+                            </div>
+                            <div class="slider-values">
+                                <i class="fa fa-frown-o pull-left"></i>
+                                <i class="fa fa-smile-o pull-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>         
         <div class="col-xs-12">
             <div class="form-group">
                 <label>3-point range example</label>
-                <div class="range-buttons r_range_buttons question">
+                <div class="range-buttons r_range_buttons question mobile-hide">
                     <ul>
                         <li>
                             <i class="fa fa-frown-o"></i>
@@ -1507,6 +1565,22 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
                             <i class="fa fa-smile-o"></i>
                         </li>
                     </ul>
+                </div>
+                <div class="row mobile-show">
+                    <div class="col-xs-12">
+                        <div class="nps-slider range-slider">
+                            <ul><li>Select a score</li></ul>
+                            <input class="r_range_slider" type="range" name="range_slider_ignore" min="1" max="3" value="" onclick="" />
+                            <div class="slider-values">
+                                <span class="min-val pull-left">1</span>
+                                <span class="max-val pull-right">3</span>
+                            </div>
+                            <div class="slider-values">
+                                <i class="fa fa-frown-o pull-left"></i>
+                                <i class="fa fa-smile-o pull-right"></i>
+                            </div>
+                        </div>  
+                    </div>
                 </div>
                 <div class="checkbox not-applicable r_not-applicable">
                     <label><input type="checkbox" /> Not Applicable</label>
@@ -1851,7 +1925,81 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
 286
 287
 288
-289</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"unified-gfs"</span><span class="nt">&gt;</span>
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+340
+341
+342
+343
+344
+345
+346
+347
+348
+349
+350
+351
+352
+353
+354
+355
+356
+357
+358
+359
+360
+361
+362
+363</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"unified-gfs"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"top-header col-xs-12"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"selectpicker form-control pull-right language-selector"</span><span class="nt">&gt;</span>
@@ -1870,7 +2018,7 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group nps"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;label&gt;</span>How likely are you to recommend us?<span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"range-buttons r_range_buttons question"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"range-buttons r_range_buttons question mobile-hide"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;ul&gt;</span>
                         <span class="nt">&lt;li&gt;</span>
                             <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-frown-o"</span><span class="nt">&gt;&lt;/i&gt;</span>
@@ -1924,11 +2072,21 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
                         <span class="nt">&lt;/li&gt;</span>
                     <span class="nt">&lt;/ul&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nps-slider range-slider"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;ul&gt;&lt;li&gt;</span>-<span class="nt">&lt;/li&gt;&lt;/ul&gt;</span>
-                    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"r_nps_slider r_range_slider"</span> <span class="na">type=</span><span class="s">"range"</span> <span class="na">name=</span><span class="s">"range_slider_ignore"</span> <span class="na">min=</span><span class="s">"0"</span> <span class="na">max=</span><span class="s">"10"</span> <span class="na">value=</span><span class="s">"0"</span> <span class="na">onclick=</span><span class="s">""</span> <span class="nt">/&gt;</span>
-                    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-frown-o pull-left"</span><span class="nt">&gt;&lt;/i&gt;</span>
-                    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-smile-o pull-right"</span><span class="nt">&gt;&lt;/i&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mobile-show"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nps-slider range-slider"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;ul&gt;&lt;li&gt;</span>Select a score<span class="nt">&lt;/li&gt;&lt;/ul&gt;</span>
+                            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"r_nps_slider r_range_slider"</span> <span class="na">type=</span><span class="s">"range"</span> <span class="na">name=</span><span class="s">"range_slider_ignore"</span> <span class="na">min=</span><span class="s">"0"</span> <span class="na">max=</span><span class="s">"10"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">onclick=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"slider-values"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"min-val pull-left"</span><span class="nt">&gt;</span>0<span class="nt">&lt;/span&gt;</span>
+                                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"max-val pull-right"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/span&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"slider-values"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-frown-o pull-left"</span><span class="nt">&gt;&lt;/i&gt;</span>
+                                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-smile-o pull-right"</span><span class="nt">&gt;&lt;/i&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
@@ -1938,7 +2096,7 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;label&gt;</span>9-point range example<span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"range-buttons r_range_buttons question"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"range-buttons r_range_buttons question mobile-hide"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;ul&gt;</span>
                         <span class="nt">&lt;li&gt;</span>
                             <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-frown-o"</span><span class="nt">&gt;&lt;/i&gt;</span>
@@ -1984,12 +2142,28 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
                         <span class="nt">&lt;/li&gt;</span>
                     <span class="nt">&lt;/ul&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mobile-show"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nps-slider range-slider"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;ul&gt;&lt;li&gt;</span>Select a score<span class="nt">&lt;/li&gt;&lt;/ul&gt;</span>
+                            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"r_range_slider"</span> <span class="na">type=</span><span class="s">"range"</span> <span class="na">name=</span><span class="s">"range_slider_ignore"</span> <span class="na">min=</span><span class="s">"1"</span> <span class="na">max=</span><span class="s">"9"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">onclick=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"slider-values"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"min-val pull-left"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;</span>
+                                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"max-val pull-right"</span><span class="nt">&gt;</span>9<span class="nt">&lt;/span&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"slider-values"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-frown-o pull-left"</span><span class="nt">&gt;&lt;/i&gt;</span>
+                                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-smile-o pull-right"</span><span class="nt">&gt;&lt;/i&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>         
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;label&gt;</span>7-point range example<span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"range-buttons r_range_buttons question"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"range-buttons r_range_buttons question mobile-hide"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;ul&gt;</span>
                         <span class="nt">&lt;li&gt;</span>
                             <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-frown-o"</span><span class="nt">&gt;&lt;/i&gt;</span>
@@ -2027,12 +2201,28 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
                         <span class="nt">&lt;/li&gt;</span>
                     <span class="nt">&lt;/ul&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mobile-show"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nps-slider range-slider"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;ul&gt;&lt;li&gt;</span>Select a score<span class="nt">&lt;/li&gt;&lt;/ul&gt;</span>
+                            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"r_range_slider"</span> <span class="na">type=</span><span class="s">"range"</span> <span class="na">name=</span><span class="s">"range_slider_ignore"</span> <span class="na">min=</span><span class="s">"1"</span> <span class="na">max=</span><span class="s">"7"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">onclick=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"slider-values"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"min-val pull-left"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;</span>
+                                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"max-val pull-right"</span><span class="nt">&gt;</span>7<span class="nt">&lt;/span&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"slider-values"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-frown-o pull-left"</span><span class="nt">&gt;&lt;/i&gt;</span>
+                                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-smile-o pull-right"</span><span class="nt">&gt;&lt;/i&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>         
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;label&gt;</span>5-point range example<span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"range-buttons r_range_buttons question"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"range-buttons r_range_buttons question mobile-hide"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;ul&gt;</span>
                         <span class="nt">&lt;li&gt;</span>
                             <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-frown-o"</span><span class="nt">&gt;&lt;/i&gt;</span>
@@ -2062,12 +2252,28 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
                         <span class="nt">&lt;/li&gt;</span>
                     <span class="nt">&lt;/ul&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mobile-show"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nps-slider range-slider"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;ul&gt;&lt;li&gt;</span>Select a score<span class="nt">&lt;/li&gt;&lt;/ul&gt;</span>
+                            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"r_range_slider"</span> <span class="na">type=</span><span class="s">"range"</span> <span class="na">name=</span><span class="s">"range_slider_ignore"</span> <span class="na">min=</span><span class="s">"1"</span> <span class="na">max=</span><span class="s">"5"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">onclick=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"slider-values"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"min-val pull-left"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;</span>
+                                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"max-val pull-right"</span><span class="nt">&gt;</span>5<span class="nt">&lt;/span&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"slider-values"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-frown-o pull-left"</span><span class="nt">&gt;&lt;/i&gt;</span>
+                                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-smile-o pull-right"</span><span class="nt">&gt;&lt;/i&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>         
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;label&gt;</span>3-point range example<span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"range-buttons r_range_buttons question"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"range-buttons r_range_buttons question mobile-hide"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;ul&gt;</span>
                         <span class="nt">&lt;li&gt;</span>
                             <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-frown-o"</span><span class="nt">&gt;&lt;/i&gt;</span>
@@ -2089,6 +2295,22 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
                             <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-smile-o"</span><span class="nt">&gt;&lt;/i&gt;</span>
                         <span class="nt">&lt;/li&gt;</span>
                     <span class="nt">&lt;/ul&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mobile-show"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nps-slider range-slider"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;ul&gt;&lt;li&gt;</span>Select a score<span class="nt">&lt;/li&gt;&lt;/ul&gt;</span>
+                            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"r_range_slider"</span> <span class="na">type=</span><span class="s">"range"</span> <span class="na">name=</span><span class="s">"range_slider_ignore"</span> <span class="na">min=</span><span class="s">"1"</span> <span class="na">max=</span><span class="s">"3"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">onclick=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"slider-values"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"min-val pull-left"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;</span>
+                                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"max-val pull-right"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/span&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"slider-values"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-frown-o pull-left"</span><span class="nt">&gt;&lt;/i&gt;</span>
+                                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-smile-o pull-right"</span><span class="nt">&gt;&lt;/i&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>  
+                    <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox not-applicable r_not-applicable"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;label&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="nt">/&gt;</span> Not Applicable<span class="nt">&lt;/label&gt;</span>
@@ -2225,7 +2447,7 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
 
     });
 $(document).ready(function(){
-    $('.r_range_slider').on('change', function() {
+    $('.r_range_slider').on('input change', function() {
         var min = $(this).attr('min');
         var max = $(this).attr('max');
         var thisVal = $(this).val();

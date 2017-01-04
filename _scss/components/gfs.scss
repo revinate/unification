@@ -392,12 +392,12 @@ $color-10: #61a544;
               }
             }
           }
-            > input[type="radio"] {
-              display: none;
-            }
+          > input[type="radio"] {
+            display: none;
           }
         }
       }
+    }
 
     // Checkboxes
 
@@ -421,117 +421,296 @@ $color-10: #61a544;
       }
     }
     &.panel-conditional {
-        background: rgba(59, 161, 248, 0.1);
-      }
+      background: rgba(59, 161, 248, 0.1);
     }
+  }
 
   //Mobile Slider
 
-  input[type=range] {
-    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
-    width: 100%; /* Specific width is required for Firefox. */
-    background: transparent; /* Otherwise white in Chrome */
+  .range-slider {
+
+    // visual number indicator
+
+    ul {
+      list-style-type: none;
+      margin: 0 auto;
+      padding: 10px 0;
+      display: block;
+      overflow: auto;
+      height: 60px;
+      font-family: Lato;
+      li {
+        display: block;
+        text-align: center;
+        margin: 0;
+        font-size: 18px;
+        height: 22px;
+        color: #ccc;
+        &.selected {
+          font-size: 25px;
+        }
+        // 11-point
+        &.range-11-point {
+          &.value-0 {
+            color: $color-0;
+          }
+          &.value-1 {
+            color: $color-1;
+          }
+          &.value-2 {
+            color: $color-2;
+          }
+          &.value-3 {
+            color: $color-3;
+          }
+          &.value-4 {
+            color: $color-4;
+          }
+          &.value-5 {
+            color: $color-5;
+          }
+          &.value-6 {
+            color: $color-6;
+          }
+          &.value-7 {
+            color: $color-7;
+          }
+          &.value-8 {
+            color: $color-8;
+          }
+          &.value-9 {
+            color: $color-9;
+          }
+          &.value-10 {
+            color: $color-10;
+          }
+        }
+        // 9-point
+        &.range-9-point {
+          &.value-0 {
+            color: $color-0;
+          }
+          &.value-1 {
+            color: $color-1;
+          }
+          &.value-2 {
+            color: $color-2;
+          }
+          &.value-3 {
+            color: $color-4;
+          }
+          &.value-4 {
+            color: $color-5;
+          }
+          &.value-5 {
+            color: $color-6;
+          }
+          &.value-6 {
+            color: $color-7;
+          }
+          &.value-7 {
+            color: $color-8;
+          }
+          &.value-8 {
+            color: $color-10;
+          }
+        }
+        // 7-point
+        &.range-7-point {
+          &.value-0 {
+            color: $color-0;
+          }
+          &.value-1 {
+            color: $color-2;
+          }
+          &.value-2 {
+            color: $color-3;
+          }
+          &.value-3 {
+            color: $color-5;
+          }
+          &.value-4 {
+            color: $color-7;
+          }
+          &.value-5 {
+            color: $color-8;
+          }
+          &.value-6 {
+            color: $color-10;
+          }
+        }
+        // 5-point
+        &.range-5-point {
+          &.value-0 {
+            color: $color-0;
+          }
+          &.value-1 {
+            color: $color-2;
+          }
+          &.value-2 {
+            color: $color-5;
+          }
+          &.value-3 {
+            color: $color-8;
+          }
+          &.value-4 {
+            color: $color-10;
+          }
+        }
+        // 3-point
+        &.range-3-point {
+          &.value-0 {
+            color: $color-0;
+          }
+          &.value-1 {
+            color: $color-5;
+          }
+          &.value-2 {
+            color: $color-10;
+          }
+        }
+      }
+    }
+
+    // Hiding Defaults
+
+    input[type=range] {
+      -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+      width: 100%; /* Specific width is required for Firefox. */
+      background: transparent; /* Otherwise white in Chrome */
+      height: 35px;
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+    }
+
+    input[type=range]:focus {
+      outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+    }
+
+    input[type=range]::-ms-track {
+      width: 100%;
+      cursor: pointer;
+
+      /* Hides the slider so custom styles can be added */
+      background: transparent;
+      border-color: transparent;
+      color: transparent;
+    }
+
+    // Styling the Thumb
+
+    /* Special styling for WebKit/Blink */
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 37px;
+      height: 37px;
+      background-color: #e6e6e6;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      cursor: pointer;
+      margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    }
+
+    /* All the same stuff for Firefox */
+    input[type=range]::-moz-range-thumb {
+      width: 37px;
+      height: 37px;
+      background-color: #e6e6e6;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    /* All the same stuff for IE */
+    input[type=range]::-ms-thumb {
+      width: 37px;
+      height: 37px;
+      background-color: #e6e6e6;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    // Styling the Track
+
+    input[type=range]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 12px;
+      border-radius: 32px;
+      background-image: linear-gradient(to left, #61a544, #bba350 49%, #aa381d);
+    }
+
+    input[type=range]:focus::-webkit-slider-runnable-track {
+      background-image: linear-gradient(to left, #61a544, #bba350 49%, #aa381d);
+    }
+
+    input[type=range]::-moz-range-track {
+      width: 100%;
+      height: 12px;
+      border-radius: 32px;
+      background-image: linear-gradient(to left, #61a544, #bba350 49%, #aa381d);
+    }
+
+    input[type=range]::-ms-track {
+      width: 100%;
+      height: 8.4px;
+      cursor: pointer;
+      background: transparent;
+      border-color: transparent;
+      border-width: 16px 0;
+      color: transparent;
+    }
+    input[type=range]::-ms-fill-lower {
+      background: #2a6495;
+      border: 0.2px solid #010101;
+      border-radius: 2.6px;
+      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    }
+    input[type=range]:focus::-ms-fill-lower {
+      background: #3071a9;
+    }
+    input[type=range]::-ms-fill-upper {
+      background: #3071a9;
+      border: 0.2px solid #010101;
+      border-radius: 2.6px;
+      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    }
+    input[type=range]:focus::-ms-fill-upper {
+      background: #367ebd;
+    }
+
+    // The Slider Values and Smileys
+    div.slider-values {
+      display: block;
+      position: relative;
+      overflow: auto;
+      color: #939ba2;
+      font-size: 18px;
+      padding: 0 10px;
+      font-family: Lato;
+      i, span {
+        width: 25px;
+        text-align: center;
+        line-height: 1.33;
+      }
+    }
+
   }
 
-  input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
+  //hide mobile only and show at lower resolution
+
+  .mobile-show {
+    display: none;
+  }
+  @media (max-width: 600px) {
+    .mobile-show {
+      display: block;
+    }
+    .mobile-hide {
+      display: none;
+    }
   }
 
-  input[type=range]:focus {
-    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
-  }
-
-  input[type=range]::-ms-track {
-    width: 100%;
-    cursor: pointer;
-
-    /* Hides the slider so custom styles can be added */
-    background: transparent;
-    border-color: transparent;
-    color: transparent;
-  }
-
-  // Styling the Thumb
-
-  /* Special styling for WebKit/Blink */
-  input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 37px;
-    height: 37px;
-    background-color: #e6e6e6;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    cursor: pointer;
-    margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
-  }
-
-  /* All the same stuff for Firefox */
-  input[type=range]::-moz-range-thumb {
-    width: 37px;
-    height: 37px;
-    background-color: #e6e6e6;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    cursor: pointer;
-  }
-
-  /* All the same stuff for IE */
-  input[type=range]::-ms-thumb {
-    width: 37px;
-    height: 37px;
-    background-color: #e6e6e6;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    cursor: pointer;
-  }
-
-  // Styling the Track
-
-  input[type=range]::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 12px;
-    border-radius: 32px;
-    background-image: linear-gradient(to left, #61a544, #bba350 49%, #aa381d);
-  }
-
-  input[type=range]:focus::-webkit-slider-runnable-track {
-    background-image: linear-gradient(to left, #61a544, #bba350 49%, #aa381d);
-  }
-
-  input[type=range]::-moz-range-track {
-    width: 100%;
-    height: 12px;
-    border-radius: 32px;
-    background-image: linear-gradient(to left, #61a544, #bba350 49%, #aa381d);
-  }
-
-  input[type=range]::-ms-track {
-    width: 100%;
-    height: 8.4px;
-    cursor: pointer;
-    background: transparent;
-    border-color: transparent;
-    border-width: 16px 0;
-    color: transparent;
-  }
-  input[type=range]::-ms-fill-lower {
-    background: #2a6495;
-    border: 0.2px solid #010101;
-    border-radius: 2.6px;
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  }
-  input[type=range]:focus::-ms-fill-lower {
-    background: #3071a9;
-  }
-  input[type=range]::-ms-fill-upper {
-    background: #3071a9;
-    border: 0.2px solid #010101;
-    border-radius: 2.6px;
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  }
-  input[type=range]:focus::-ms-fill-upper {
-    background: #367ebd;
-  }
-
-  }
-
+}

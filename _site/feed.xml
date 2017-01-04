@@ -6,8 +6,8 @@
 </description>
     <link>http://example.com/</link>
     <atom:link href="http://example.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 03 Jan 2017 15:52:51 -0800</pubDate>
-    <lastBuildDate>Tue, 03 Jan 2017 15:52:51 -0800</lastBuildDate>
+    <pubDate>Wed, 04 Jan 2017 12:22:05 -0800</pubDate>
+    <lastBuildDate>Wed, 04 Jan 2017 12:22:05 -0800</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -31,7 +31,7 @@
         &lt;div class=&quot;col-xs-12&quot;&gt;
             &lt;div class=&quot;form-group nps&quot;&gt;
                 &lt;label&gt;How likely are you to recommend us?&lt;/label&gt;
-                &lt;div class=&quot;range-buttons r_range_buttons question&quot;&gt;
+                &lt;div class=&quot;range-buttons r_range_buttons question mobile-hide&quot;&gt;
                     &lt;ul&gt;
                         &lt;li&gt;
                             &lt;i class=&quot;fa fa-frown-o&quot;&gt;&lt;/i&gt;
@@ -85,11 +85,21 @@
                         &lt;/li&gt;
                     &lt;/ul&gt;
                 &lt;/div&gt;
-                &lt;div class=&quot;nps-slider range-slider&quot;&gt;
-                    &lt;ul&gt;&lt;li&gt;-&lt;/li&gt;&lt;/ul&gt;
-                    &lt;input class=&quot;r_nps_slider r_range_slider&quot; type=&quot;range&quot; name=&quot;range_slider_ignore&quot; min=&quot;0&quot; max=&quot;10&quot; value=&quot;0&quot; onclick=&quot;&quot; /&gt;
-                    &lt;i class=&quot;fa fa-frown-o pull-left&quot;&gt;&lt;/i&gt;
-                    &lt;i class=&quot;fa fa-smile-o pull-right&quot;&gt;&lt;/i&gt;
+                &lt;div class=&quot;row mobile-show&quot;&gt;
+                    &lt;div class=&quot;col-xs-12&quot;&gt;
+                        &lt;div class=&quot;nps-slider range-slider&quot;&gt;
+                            &lt;ul&gt;&lt;li&gt;Select a score&lt;/li&gt;&lt;/ul&gt;
+                            &lt;input class=&quot;r_nps_slider r_range_slider&quot; type=&quot;range&quot; name=&quot;range_slider_ignore&quot; min=&quot;0&quot; max=&quot;10&quot; value=&quot;&quot; onclick=&quot;&quot; /&gt;
+                            &lt;div class=&quot;slider-values&quot;&gt;
+                                &lt;span class=&quot;min-val pull-left&quot;&gt;0&lt;/span&gt;
+                                &lt;span class=&quot;max-val pull-right&quot;&gt;10&lt;/span&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;slider-values&quot;&gt;
+                                &lt;i class=&quot;fa fa-frown-o pull-left&quot;&gt;&lt;/i&gt;
+                                &lt;i class=&quot;fa fa-smile-o pull-right&quot;&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
                 &lt;/div&gt;
             &lt;/div&gt;
         &lt;/div&gt;
@@ -99,7 +109,7 @@
         &lt;div class=&quot;col-xs-12&quot;&gt;
             &lt;div class=&quot;form-group&quot;&gt;
                 &lt;label&gt;9-point range example&lt;/label&gt;
-                &lt;div class=&quot;range-buttons r_range_buttons question&quot;&gt;
+                &lt;div class=&quot;range-buttons r_range_buttons question mobile-hide&quot;&gt;
                     &lt;ul&gt;
                         &lt;li&gt;
                             &lt;i class=&quot;fa fa-frown-o&quot;&gt;&lt;/i&gt;
@@ -145,12 +155,28 @@
                         &lt;/li&gt;
                     &lt;/ul&gt;
                 &lt;/div&gt;
+                &lt;div class=&quot;row mobile-show&quot;&gt;
+                    &lt;div class=&quot;col-xs-12&quot;&gt;
+                        &lt;div class=&quot;nps-slider range-slider&quot;&gt;
+                            &lt;ul&gt;&lt;li&gt;Select a score&lt;/li&gt;&lt;/ul&gt;
+                            &lt;input class=&quot;r_range_slider&quot; type=&quot;range&quot; name=&quot;range_slider_ignore&quot; min=&quot;1&quot; max=&quot;9&quot; value=&quot;&quot; onclick=&quot;&quot; /&gt;
+                            &lt;div class=&quot;slider-values&quot;&gt;
+                                &lt;span class=&quot;min-val pull-left&quot;&gt;1&lt;/span&gt;
+                                &lt;span class=&quot;max-val pull-right&quot;&gt;9&lt;/span&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;slider-values&quot;&gt;
+                                &lt;i class=&quot;fa fa-frown-o pull-left&quot;&gt;&lt;/i&gt;
+                                &lt;i class=&quot;fa fa-smile-o pull-right&quot;&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
             &lt;/div&gt;
         &lt;/div&gt;         
         &lt;div class=&quot;col-xs-12&quot;&gt;
             &lt;div class=&quot;form-group&quot;&gt;
                 &lt;label&gt;7-point range example&lt;/label&gt;
-                &lt;div class=&quot;range-buttons r_range_buttons question&quot;&gt;
+                &lt;div class=&quot;range-buttons r_range_buttons question mobile-hide&quot;&gt;
                     &lt;ul&gt;
                         &lt;li&gt;
                             &lt;i class=&quot;fa fa-frown-o&quot;&gt;&lt;/i&gt;
@@ -188,12 +214,28 @@
                         &lt;/li&gt;
                     &lt;/ul&gt;
                 &lt;/div&gt;
+                &lt;div class=&quot;row mobile-show&quot;&gt;
+                    &lt;div class=&quot;col-xs-12&quot;&gt;
+                        &lt;div class=&quot;nps-slider range-slider&quot;&gt;
+                            &lt;ul&gt;&lt;li&gt;Select a score&lt;/li&gt;&lt;/ul&gt;
+                            &lt;input class=&quot;r_range_slider&quot; type=&quot;range&quot; name=&quot;range_slider_ignore&quot; min=&quot;1&quot; max=&quot;7&quot; value=&quot;&quot; onclick=&quot;&quot; /&gt;
+                            &lt;div class=&quot;slider-values&quot;&gt;
+                                &lt;span class=&quot;min-val pull-left&quot;&gt;1&lt;/span&gt;
+                                &lt;span class=&quot;max-val pull-right&quot;&gt;7&lt;/span&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;slider-values&quot;&gt;
+                                &lt;i class=&quot;fa fa-frown-o pull-left&quot;&gt;&lt;/i&gt;
+                                &lt;i class=&quot;fa fa-smile-o pull-right&quot;&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
             &lt;/div&gt;
         &lt;/div&gt;         
         &lt;div class=&quot;col-xs-12&quot;&gt;
             &lt;div class=&quot;form-group&quot;&gt;
                 &lt;label&gt;5-point range example&lt;/label&gt;
-                &lt;div class=&quot;range-buttons r_range_buttons question&quot;&gt;
+                &lt;div class=&quot;range-buttons r_range_buttons question mobile-hide&quot;&gt;
                     &lt;ul&gt;
                         &lt;li&gt;
                             &lt;i class=&quot;fa fa-frown-o&quot;&gt;&lt;/i&gt;
@@ -223,12 +265,28 @@
                         &lt;/li&gt;
                     &lt;/ul&gt;
                 &lt;/div&gt;
+                &lt;div class=&quot;row mobile-show&quot;&gt;
+                    &lt;div class=&quot;col-xs-12&quot;&gt;
+                        &lt;div class=&quot;nps-slider range-slider&quot;&gt;
+                            &lt;ul&gt;&lt;li&gt;Select a score&lt;/li&gt;&lt;/ul&gt;
+                            &lt;input class=&quot;r_range_slider&quot; type=&quot;range&quot; name=&quot;range_slider_ignore&quot; min=&quot;1&quot; max=&quot;5&quot; value=&quot;&quot; onclick=&quot;&quot; /&gt;
+                            &lt;div class=&quot;slider-values&quot;&gt;
+                                &lt;span class=&quot;min-val pull-left&quot;&gt;1&lt;/span&gt;
+                                &lt;span class=&quot;max-val pull-right&quot;&gt;5&lt;/span&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;slider-values&quot;&gt;
+                                &lt;i class=&quot;fa fa-frown-o pull-left&quot;&gt;&lt;/i&gt;
+                                &lt;i class=&quot;fa fa-smile-o pull-right&quot;&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
             &lt;/div&gt;
         &lt;/div&gt;         
         &lt;div class=&quot;col-xs-12&quot;&gt;
             &lt;div class=&quot;form-group&quot;&gt;
                 &lt;label&gt;3-point range example&lt;/label&gt;
-                &lt;div class=&quot;range-buttons r_range_buttons question&quot;&gt;
+                &lt;div class=&quot;range-buttons r_range_buttons question mobile-hide&quot;&gt;
                     &lt;ul&gt;
                         &lt;li&gt;
                             &lt;i class=&quot;fa fa-frown-o&quot;&gt;&lt;/i&gt;
@@ -250,6 +308,22 @@
                             &lt;i class=&quot;fa fa-smile-o&quot;&gt;&lt;/i&gt;
                         &lt;/li&gt;
                     &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;row mobile-show&quot;&gt;
+                    &lt;div class=&quot;col-xs-12&quot;&gt;
+                        &lt;div class=&quot;nps-slider range-slider&quot;&gt;
+                            &lt;ul&gt;&lt;li&gt;Select a score&lt;/li&gt;&lt;/ul&gt;
+                            &lt;input class=&quot;r_range_slider&quot; type=&quot;range&quot; name=&quot;range_slider_ignore&quot; min=&quot;1&quot; max=&quot;3&quot; value=&quot;&quot; onclick=&quot;&quot; /&gt;
+                            &lt;div class=&quot;slider-values&quot;&gt;
+                                &lt;span class=&quot;min-val pull-left&quot;&gt;1&lt;/span&gt;
+                                &lt;span class=&quot;max-val pull-right&quot;&gt;3&lt;/span&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;slider-values&quot;&gt;
+                                &lt;i class=&quot;fa fa-frown-o pull-left&quot;&gt;&lt;/i&gt;
+                                &lt;i class=&quot;fa fa-smile-o pull-right&quot;&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;  
+                    &lt;/div&gt;
                 &lt;/div&gt;
                 &lt;div class=&quot;checkbox not-applicable r_not-applicable&quot;&gt;
                     &lt;label&gt;&lt;input type=&quot;checkbox&quot; /&gt; Not Applicable&lt;/label&gt;
