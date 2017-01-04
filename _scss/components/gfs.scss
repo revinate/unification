@@ -578,7 +578,7 @@ $color-10: #61a544;
       -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
       width: 100%; /* Specific width is required for Firefox. */
       background: transparent; /* Otherwise white in Chrome */
-      height: 35px;
+      height: 45px;
     }
 
     input[type=range]::-webkit-slider-thumb {
@@ -604,32 +604,32 @@ $color-10: #61a544;
     /* Special styling for WebKit/Blink */
     input[type=range]::-webkit-slider-thumb {
       -webkit-appearance: none;
-      width: 37px;
-      height: 37px;
-      background-color: #e6e6e6;
-      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      background-image: url(../../img/SliderHandle.png);
+      background-position: center center;
+      background-size: 45px 45px;
       cursor: pointer;
       margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
     }
 
     /* All the same stuff for Firefox */
     input[type=range]::-moz-range-thumb {
-      width: 37px;
-      height: 37px;
-      background-color: #e6e6e6;
-      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      background-image: url(../../img/SliderHandle.png);
+      background-position: center center;
+      background-size: 45px 45px;
       cursor: pointer;
     }
 
     /* All the same stuff for IE */
     input[type=range]::-ms-thumb {
-      width: 37px;
-      height: 37px;
-      background-color: #e6e6e6;
-      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      background-image: url(../../img/SliderHandle.png);
+      background-position: center center;
+      background-size: 45px 45px;
       cursor: pointer;
     }
 
