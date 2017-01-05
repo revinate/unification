@@ -253,13 +253,13 @@ principles nav
                         
                         
                         <li class="active">
-                            <a href="/templates/index.html#modals">Modals</a>
+                            <a href="/templates/index.html#surveys">Surveys</a>
                         </li>
                         
                         
                         
                         <li class="active">
-                            <a href="/templates/index.html#surveys">Surveys</a>
+                            <a href="/templates/index.html#"></a>
                         </li>
                         
                         
@@ -346,80 +346,6 @@ resources nav
 <script src="/libs/nya-bootstrap-select/dist/js/nya-bs-select.js"></script>
 <script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
 <script src="/js/main.js"></script>
-<script>
-    $('.bs-docs-sidenav li').click(function(){
-        $(this).siblings('li').removeClass('active');
-        $(this).addClass('active');
-    });
-    $('[data-toggle="tooltip"]').tooltip();
-    $('[data-rev-jq-switch=true]').revSwitch();
-    var fixHelper = function(e, ui) {
-        ui.children().each(function() {
-            $(this).width($(this).width());
-        });
-        return ui;
-    };
-
-    $("#sort tbody").sortable({
-        helper: fixHelper
-    }).disableSelection();
-
-    $('input[name="daterange"]').daterangepicker({
-        applyClass: 'btn-primary',
-        cancelClass: 'btn-link'
-    });
-</script>
-
-<script type="text/javascript">
-    $(function() {
-
-        function cb(start, end) {
-            $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
-        }
-        cb(moment().subtract(29, 'days'), moment());
-
-        $('#reportrange').daterangepicker({
-            applyClass: 'btn-primary',
-            cancelClass: 'btn-link',
-            opens: 'left',
-            ranges: {
-                'Today': [moment(), moment()],
-                'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-                'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-                'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-                'This Month': [moment().startOf('month'), moment().endOf('month')],
-                'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-            }
-        }, cb);
-
-    });
-$(document).ready(function(){
-    $('.r_range_slider').on('input change', function() {
-        var min = $(this).attr('min');
-        var max = $(this).attr('max');
-        var thisVal = $(this).val();
-        var rangeForClass = max - min + 1;
-        var hintClassRange = 'range-' + rangeForClass + '-point';
-        //the value must go from 0 to n-1 where n is the length of range.
-        //this is to make it the same for the range 1..3 and the range 0..10
-        var valueForClass = thisVal - min;
-        var hintClassValue = 'value-' + valueForClass;
-
-        $(this).parent().prev('div').find('li').removeClass('selected');
-        var liElement = $(this).parent('div').find('ul li');
-        for (var i = 0; i < rangeForClass; i++) {
-            liElement.removeClass('value-' + i);
-        }
-        liElement.addClass('selected').addClass(hintClassRange).addClass(hintClassValue).html($(this).val());
-        if ($(this).hasClass('r_nps_slider')) {
-            $('.r_nps_' + $(this).val()).attr('checked', true).parents('li').addClass('selected');
-        } else {
-            /*the .change() is to trigger the on change function for the inputs*/
-            $('.r_range_' + $(this).attr('data-question-id') + '_' + $(this).val()).attr('checked', true).change().parents('li').addClass('selected');
-        }
-    });
-})
-</script>
 
 
 </body>

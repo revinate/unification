@@ -10,37 +10,39 @@ desc: "
 - Small modals may have no more than 2 Calls to Action.
 
 - If a modal contains a Delete action, use `.btn-delete` to apply appropriate styles and float it to the left.
+
+- Modals should not close on blur or escape key, please use attribute `data-backdrop="static" data-keyboard="false"` in modal trigger markup or `backdrop: 'static', keyboard: false` as a JavaScript option.
 "
 ---
 
 <!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#smModal">Small Modal 1CTA
+<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#smModal">Small Modal 1CTA
 </button>
-<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#smModal2">Small Modal 2CTA
-</button>
-<br />
-<br />
-<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#mdModal">Meduim Modal 1CTA
-</button>
-<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#mdModal2">Meduim Modal 2CTA
-</button>
-<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#mdModal3">Meduim Modal 3CTA
+<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-backdrop="static" data-keyboard="false"  data-target="#smModal2">Small Modal 2CTA
 </button>
 <br />
 <br />
-<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#lgModal">Large Modal 1CTA
+<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-backdrop="static" data-keyboard="false"  data-target="#mdModal">Meduim Modal 1CTA
 </button>
-<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#lgModal2">Large Modal 2CTA
+<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-backdrop="static" data-keyboard="false"  data-target="#mdModal2">Meduim Modal 2CTA
 </button>
-<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#lgModal3">Large Modal 3CTA
-</button>
-<br />
-<br />
-<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#deleteModal">Modal with Delete
+<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-backdrop="static" data-keyboard="false"  data-target="#mdModal3">Meduim Modal 3CTA
 </button>
 <br />
 <br />
-<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#alertModal">Modal with Alert
+<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-backdrop="static" data-keyboard="false"  data-target="#lgModal">Large Modal 1CTA
+</button>
+<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-backdrop="static" data-keyboard="false"  data-target="#lgModal2">Large Modal 2CTA
+</button>
+<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-backdrop="static" data-keyboard="false"  data-target="#lgModal3">Large Modal 3CTA
+</button>
+<br />
+<br />
+<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-backdrop="static" data-keyboard="false"  data-target="#deleteModal">Modal with Delete
+</button>
+<br />
+<br />
+<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-backdrop="static" data-keyboard="false"  data-target="#alertModal">Modal with Alert
 </button>
 
 <!-- Small Modal One CTA -->
