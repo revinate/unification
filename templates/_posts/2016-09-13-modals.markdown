@@ -4,14 +4,15 @@ title: "Modals"
 date: 2016-09-13 00:00:01
 desc: "
 - Modals use standard bootstrap modal markup.
-
+       
 - `.modal-sm` and `.modal-lg` are used for small and large modals. Modals are medium-sized by default.
-
+       
 - Small modals may have no more than 2 Calls to Action.
-
+       
 - If a modal contains a Delete action, use `.btn-delete` to apply appropriate styles and float it to the left.
+    
+- Modals should not close on blur or escape key, please use attribute `data-backdrop='static' data-keyboard='false'` in modal trigger markup or `backdrop: 'static', keyboard: false` as a JavaScript option.
 
-- Modals should not close on blur or escape key, please use attribute `data-backdrop="static" data-keyboard="false"` in modal trigger markup or `backdrop: 'static', keyboard: false` as a JavaScript option.
 "
 ---
 

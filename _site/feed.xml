@@ -6,277 +6,9 @@
 </description>
     <link>http://example.com/</link>
     <atom:link href="http://example.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 05 Jan 2017 11:13:10 -0800</pubDate>
-    <lastBuildDate>Thu, 05 Jan 2017 11:13:10 -0800</lastBuildDate>
+    <pubDate>Thu, 05 Jan 2017 12:07:41 -0800</pubDate>
+    <lastBuildDate>Thu, 05 Jan 2017 12:07:41 -0800</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
-    
-      <item>
-        <title></title>
-        <description>&lt;!-- Trigger the modal with a button --&gt;
-&lt;p&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; data-target=&quot;#smModal&quot;&gt;Small Modal 1CTA
-&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; data-target=&quot;#smModal2&quot;&gt;Small Modal 2CTA
-&lt;/button&gt;
-&lt;br /&gt;
-&lt;br /&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; data-target=&quot;#mdModal&quot;&gt;Meduim Modal 1CTA
-&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; data-target=&quot;#mdModal2&quot;&gt;Meduim Modal 2CTA
-&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; data-target=&quot;#mdModal3&quot;&gt;Meduim Modal 3CTA
-&lt;/button&gt;
-&lt;br /&gt;
-&lt;br /&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; data-target=&quot;#lgModal&quot;&gt;Large Modal 1CTA
-&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; data-target=&quot;#lgModal2&quot;&gt;Large Modal 2CTA
-&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; data-target=&quot;#lgModal3&quot;&gt;Large Modal 3CTA
-&lt;/button&gt;
-&lt;br /&gt;
-&lt;br /&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; data-target=&quot;#deleteModal&quot;&gt;Modal with Delete
-&lt;/button&gt;
-&lt;br /&gt;
-&lt;br /&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; data-target=&quot;#alertModal&quot;&gt;Modal with Alert
-&lt;/button&gt;&lt;/p&gt;
-
-&lt;!-- Small Modal One CTA --&gt;
-&lt;div id=&quot;smModal&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
-  &lt;div class=&quot;modal-dialog modal-sm&quot;&gt;
-    &lt;!-- Modal content--&gt;
-    &lt;div class=&quot;modal-content&quot;&gt;
-      &lt;div class=&quot;modal-header&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
-        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-body&quot;&gt;
-        &lt;p&gt;Some text in the small modal.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-footer&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
-        &lt;/button&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;!-- Small Modal Two CTAs --&gt;
-&lt;div id=&quot;smModal2&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
-  &lt;div class=&quot;modal-dialog modal-sm&quot;&gt;
-    &lt;!-- Modal content--&gt;
-    &lt;div class=&quot;modal-content&quot;&gt;
-      &lt;div class=&quot;modal-header&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
-        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-body&quot;&gt;
-        &lt;p&gt;Some text in the small modal.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-footer&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
-        &lt;/button&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot; data-dismiss=&quot;modal&quot;&gt;Link
-        &lt;/button&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;!-- Medium Modal 1CTA --&gt;
-&lt;div id=&quot;mdModal&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
-  &lt;div class=&quot;modal-dialog&quot;&gt;
-    &lt;!-- Modal content--&gt;
-    &lt;div class=&quot;modal-content&quot;&gt;
-      &lt;div class=&quot;modal-header&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
-        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-body&quot;&gt;
-        &lt;p&gt;Some text in the medium modal.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-footer&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
-        &lt;/button&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;!-- Medium Modal 2CTA --&gt;
-&lt;div id=&quot;mdModal2&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
-  &lt;div class=&quot;modal-dialog&quot;&gt;
-    &lt;!-- Modal content--&gt;
-    &lt;div class=&quot;modal-content&quot;&gt;
-      &lt;div class=&quot;modal-header&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
-        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-body&quot;&gt;
-        &lt;p&gt;Some text in the medium modal.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-footer&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
-        &lt;/button&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt;Link
-        &lt;/button&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;!-- Medium Modal 3CTA --&gt;
-&lt;div id=&quot;mdModal3&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
-  &lt;div class=&quot;modal-dialog&quot;&gt;
-    &lt;!-- Modal content--&gt;
-    &lt;div class=&quot;modal-content&quot;&gt;
-      &lt;div class=&quot;modal-header&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
-        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-body&quot;&gt;
-        &lt;p&gt;Some text in the medium modal.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-footer&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
-        &lt;/button&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;Secondary CTA
-        &lt;/button&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot; data-dismiss=&quot;modal&quot;&gt;Link
-        &lt;/button&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;!-- Large Modal 1CTA--&gt;
-&lt;div id=&quot;lgModal&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
-  &lt;div class=&quot;modal-dialog modal-lg&quot;&gt;
-    &lt;!-- Modal content--&gt;
-    &lt;div class=&quot;modal-content&quot;&gt;
-      &lt;div class=&quot;modal-header&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
-        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-body&quot;&gt;
-        &lt;p&gt;Some text in the large modal.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-footer&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
-        &lt;/button&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;!-- Large Modal 2CTA--&gt;
-&lt;div id=&quot;lgModal2&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
-  &lt;div class=&quot;modal-dialog modal-lg&quot;&gt;
-    &lt;!-- Modal content--&gt;
-    &lt;div class=&quot;modal-content&quot;&gt;
-      &lt;div class=&quot;modal-header&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
-        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-body&quot;&gt;
-        &lt;p&gt;Some text in the large modal.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-footer&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
-        &lt;/button&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt;Link
-        &lt;/button&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;!-- Large Modal 3CTA--&gt;
-&lt;div id=&quot;lgModal3&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
-  &lt;div class=&quot;modal-dialog modal-lg&quot;&gt;
-    &lt;!-- Modal content--&gt;
-    &lt;div class=&quot;modal-content&quot;&gt;
-      &lt;div class=&quot;modal-header&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
-        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-body&quot;&gt;
-        &lt;p&gt;Some text in the large modal.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-footer&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
-        &lt;/button&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;Secondary CTA
-        &lt;/button&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot; data-dismiss=&quot;modal&quot;&gt;Link
-        &lt;/button&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;!-- Delete Button--&gt;
-&lt;div id=&quot;deleteModal&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
-  &lt;div class=&quot;modal-dialog modal-lg&quot;&gt;
-    &lt;!-- Modal content--&gt;
-    &lt;div class=&quot;modal-content&quot;&gt;
-      &lt;div class=&quot;modal-header&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
-        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-body&quot;&gt;
-        &lt;p&gt;Some text in the large modal.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-footer&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
-        &lt;/button&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;Secondary CTA
-        &lt;/button&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-delete&quot; data-dismiss=&quot;modal&quot;&gt;Delete
-        &lt;/button&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;!-- Alert Button--&gt;
-&lt;div id=&quot;alertModal&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
-  &lt;div class=&quot;modal-dialog&quot;&gt;
-    &lt;!-- Modal content--&gt;
-    &lt;div class=&quot;modal-content&quot;&gt;
-      &lt;div class=&quot;modal-header&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
-        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-body&quot;&gt;
-      &lt;div class=&quot;alert alert-danger fade in&quot;&gt;
-      &lt;a href=&quot;#&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot; aria-label=&quot;close&quot;&gt;&amp;times;&lt;/a&gt;
-      &lt;strong&gt;Danger!&lt;/strong&gt; 
-      This alert box could indicate a dangerous or potentially negative action.
-      &lt;/div&gt;
-        &lt;p&gt;Some text in the modal.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-footer&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
-        &lt;/button&gt;
-       
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot; data-dismiss=&quot;modal&quot;&gt;Cancel
-        &lt;/button&gt;
-
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Thu, 05 Jan 2017 11:13:10 -0800</pubDate>
-        <link>http://example.com/templates/2017/01/05/2016-09-13-modals.html</link>
-        <guid isPermaLink="true">http://example.com/templates/2017/01/05/2016-09-13-modals.html</guid>
-        
-        
-        <category>templates</category>
-        
-      </item>
     
       <item>
         <title>Surveys</title>
@@ -727,6 +459,274 @@
         
         
         <category>basics</category>
+        
+      </item>
+    
+      <item>
+        <title>Modals</title>
+        <description>&lt;!-- Trigger the modal with a button --&gt;
+&lt;p&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; data-target=&quot;#smModal&quot;&gt;Small Modal 1CTA
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; data-target=&quot;#smModal2&quot;&gt;Small Modal 2CTA
+&lt;/button&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; data-target=&quot;#mdModal&quot;&gt;Meduim Modal 1CTA
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; data-target=&quot;#mdModal2&quot;&gt;Meduim Modal 2CTA
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; data-target=&quot;#mdModal3&quot;&gt;Meduim Modal 3CTA
+&lt;/button&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; data-target=&quot;#lgModal&quot;&gt;Large Modal 1CTA
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; data-target=&quot;#lgModal2&quot;&gt;Large Modal 2CTA
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; data-target=&quot;#lgModal3&quot;&gt;Large Modal 3CTA
+&lt;/button&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; data-target=&quot;#deleteModal&quot;&gt;Modal with Delete
+&lt;/button&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; data-target=&quot;#alertModal&quot;&gt;Modal with Alert
+&lt;/button&gt;&lt;/p&gt;
+
+&lt;!-- Small Modal One CTA --&gt;
+&lt;div id=&quot;smModal&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog modal-sm&quot;&gt;
+    &lt;!-- Modal content--&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
+        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;p&gt;Some text in the small modal.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Small Modal Two CTAs --&gt;
+&lt;div id=&quot;smModal2&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog modal-sm&quot;&gt;
+    &lt;!-- Modal content--&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
+        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;p&gt;Some text in the small modal.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot; data-dismiss=&quot;modal&quot;&gt;Link
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Medium Modal 1CTA --&gt;
+&lt;div id=&quot;mdModal&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot;&gt;
+    &lt;!-- Modal content--&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
+        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;p&gt;Some text in the medium modal.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Medium Modal 2CTA --&gt;
+&lt;div id=&quot;mdModal2&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot;&gt;
+    &lt;!-- Modal content--&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
+        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;p&gt;Some text in the medium modal.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt;Link
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Medium Modal 3CTA --&gt;
+&lt;div id=&quot;mdModal3&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot;&gt;
+    &lt;!-- Modal content--&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
+        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;p&gt;Some text in the medium modal.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;Secondary CTA
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot; data-dismiss=&quot;modal&quot;&gt;Link
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Large Modal 1CTA--&gt;
+&lt;div id=&quot;lgModal&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog modal-lg&quot;&gt;
+    &lt;!-- Modal content--&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
+        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;p&gt;Some text in the large modal.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Large Modal 2CTA--&gt;
+&lt;div id=&quot;lgModal2&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog modal-lg&quot;&gt;
+    &lt;!-- Modal content--&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
+        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;p&gt;Some text in the large modal.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt;Link
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Large Modal 3CTA--&gt;
+&lt;div id=&quot;lgModal3&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog modal-lg&quot;&gt;
+    &lt;!-- Modal content--&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
+        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;p&gt;Some text in the large modal.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;Secondary CTA
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot; data-dismiss=&quot;modal&quot;&gt;Link
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Delete Button--&gt;
+&lt;div id=&quot;deleteModal&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog modal-lg&quot;&gt;
+    &lt;!-- Modal content--&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
+        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;p&gt;Some text in the large modal.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;Secondary CTA
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-delete&quot; data-dismiss=&quot;modal&quot;&gt;Delete
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Alert Button--&gt;
+&lt;div id=&quot;alertModal&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot;&gt;
+    &lt;!-- Modal content--&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
+        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+      &lt;div class=&quot;alert alert-danger fade in&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot; aria-label=&quot;close&quot;&gt;&amp;times;&lt;/a&gt;
+      &lt;strong&gt;Danger!&lt;/strong&gt; 
+      This alert box could indicate a dangerous or potentially negative action.
+      &lt;/div&gt;
+        &lt;p&gt;Some text in the modal.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary CTA
+        &lt;/button&gt;
+       
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot; data-dismiss=&quot;modal&quot;&gt;Cancel
+        &lt;/button&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 12 Sep 2016 17:00:01 -0700</pubDate>
+        <link>http://example.com/templates/2016/09/12/modals.html</link>
+        <guid isPermaLink="true">http://example.com/templates/2016/09/12/modals.html</guid>
+        
+        
+        <category>templates</category>
         
       </item>
     
