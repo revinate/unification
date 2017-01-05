@@ -420,9 +420,15 @@ $color-10: #61a544;
     // Checkboxes
 
     .checkbox, .radio {
+      margin-bottom: 20px;
+      padding: 0 0 3px 5px;
+      &:hover {
+        background: rgba(0, 0, 0, 0.1);
+      }
       label {
-        margin-left: 0;
+        margin: 0;
         font-size: 14px;
+        display: block;
         input[type="checkbox"], input[type="radio"] {
           position: relative;
           margin-right: 5px;
@@ -432,10 +438,7 @@ $color-10: #61a544;
         }
       }
       &.not-applicable {
-        padding: 20px 0 0;
-        label {
-          margin-bottom: 0;
-        }
+        margin: 20px 0 0;
       }
     }
     &.panel-conditional {
