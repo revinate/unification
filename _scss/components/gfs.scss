@@ -745,13 +745,20 @@ $color-10: #61a544;
   .disabled {
     opacity: 0.2;
     &:hover {
-      input[type=range],
+      cursor: not-allowed;
+      input,
+      button,
+      label,
+      textarea,
+      select,
       ul li>div{
         cursor: not-allowed;
-        background: transparent !important;
         &:hover {
           cursor: not-allowed !important;
         }
+      }
+      ul li>div {
+        background: transparent !important;
       }
     }
   }
