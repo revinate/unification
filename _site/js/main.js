@@ -92,12 +92,12 @@
 
 	});
 
+	/**
+	 * DOCUMENT READY jQuery - for reference on R&S
+	 */
+
 	$(document).ready(function(){
 
-		$('.bs-docs-sidenav li').click(function(){
-			$(this).siblings('li').removeClass('active');
-			$(this).addClass('active');
-		});
 		$('[data-toggle="tooltip"]').tooltip();
 		$('[data-rev-jq-switch=true]').revSwitch();
 		var fixHelper = function(e, ui) {
@@ -142,6 +142,14 @@
 				/*the .change() is to trigger the on change function for the inputs*/
 				$('.r_range_' + $(this).attr('data-question-id') + '_' + $(this).val()).attr('checked', true).change().parents('li').addClass('selected');
 			}
+		});
+
+		/**
+		 * Override Default Modal Options to prevent closing when clicked outside of the modal or press the escape key
+ 		 */
+		$('.modal').on('show.bs.modal', function(){
+			$(this).data('bs.modal').options.keyboard = false;
+			$(this).data('bs.modal').options.backdrop = 'static';
 		});
 	})
 

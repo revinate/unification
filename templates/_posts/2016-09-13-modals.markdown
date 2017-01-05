@@ -11,7 +11,7 @@ desc: "
        
 - If a modal contains a Delete action, use `.btn-delete` to apply appropriate styles and float it to the left.
     
-- Modals should not close on blur or escape key, please use attribute `data-backdrop='static' data-keyboard='false'` in modal trigger markup or `backdrop: 'static', keyboard: false` as a JavaScript option.
+- Modals should not close on blur or escape key, please use attribute `data-backdrop='static' data-keyboard='false'` in modal trigger markup or `backdrop: 'static', keyboard: false` as a JavaScript option - see https://design.revinate.com/js/main.js for example.
 
 "
 ---
