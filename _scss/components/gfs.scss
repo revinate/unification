@@ -798,4 +798,13 @@ $color-10: #61a544;
     }
 
   }
+  address, .copyright {
+    font-size: 13px;
+    color: #9b9b9b;
+    text-align: center;
+    font-family: LatoLight;
+  }
+  address {
+    padding-top: 20px;
+  }
 }

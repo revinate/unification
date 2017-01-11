@@ -431,4 +431,17 @@ desc: "
             <p class="submit-help">By clicking "Next", I agree to the <a href="#">Terms & Conditions</a> and the <a href="#">Privacy policy</a>.</p>
         </div>
     </div>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <address>
+                <strong>Avertine International Las Vegas</strong><br>
+                Fashion Show Drive<br>Las Vegas, NV 89109
+            </address>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <p class="copyright text-center">&copy; 2017 Revinate, Inc.</p>
+        </div>
+    </div>
 </div>

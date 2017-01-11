@@ -6,8 +6,8 @@
 </description>
     <link>http://example.com/</link>
     <atom:link href="http://example.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 10 Jan 2017 10:41:53 -0800</pubDate>
-    <lastBuildDate>Tue, 10 Jan 2017 10:41:53 -0800</lastBuildDate>
+    <pubDate>Wed, 11 Jan 2017 09:50:06 -0800</pubDate>
+    <lastBuildDate>Wed, 11 Jan 2017 09:50:06 -0800</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -434,6 +434,19 @@
         &lt;/div&gt;
         &lt;div class=&quot;col-xs-12&quot;&gt;
             &lt;p class=&quot;submit-help&quot;&gt;By clicking &quot;Next&quot;, I agree to the &lt;a href=&quot;#&quot;&gt;Terms &amp;amp; Conditions&lt;/a&gt; and the &lt;a href=&quot;#&quot;&gt;Privacy policy&lt;/a&gt;.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-12 text-center&quot;&gt;
+            &lt;address&gt;
+                &lt;strong&gt;Avertine International Las Vegas&lt;/strong&gt;&lt;br /&gt;
+                Fashion Show Drive&lt;br /&gt;Las Vegas, NV 89109
+            &lt;/address&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-12&quot;&gt;
+            &lt;p class=&quot;copyright text-center&quot;&gt;&amp;copy; 2017 Revinate, Inc.&lt;/p&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
