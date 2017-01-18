@@ -13,6 +13,7 @@
             cursor: move;
         }
     </style>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     </head>
 <body>
 
@@ -260,6 +261,12 @@ principles nav
                         
                         <li class="active">
                             <a href="/templates/index.html#surveys">Surveys</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/templates/index.html#sender-score">Sender Score</a>
                         </li>
                         
                         
@@ -1228,177 +1235,7 @@ resources nav
   <li>Colors (10-12 hex values for data); should appear in this order for distinctive color contrast purposes <code class="highlighter-rouge">#8F7EC2, #2598B8, #5FC782, #ECDE31, #F55949, #AE85D4, #5FC2C2, #9ACC54, #F5A61D, #B6744A</code></li>
 </ul>
 </div>
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-<script type="text/javascript">
-  google.charts.load('current', {
-    packages: ['corechart']
-  });
-  google.charts.setOnLoadCallback(drawChart);
-
-  // Callback that creates and populates a data table,
-  // instantiates the pie chart, passes in the data and
-  // draws it.
-  function drawChart() {
-
-    // Create the data table.
-    var data = new google.visualization.DataTable();
-    data.addColumn('string', 'Topping');
-    data.addColumn('number', 'Slices');
-    data.addRows([
-      ['Mushrooms', 3],
-      ['Onions', 1],
-      ['Olives', 15],
-      ['Zucchini', 1],
-      ['Pepperoni', 2]
-    ]);
-    // Create the data table.
-    var data2 = new google.visualization.DataTable();
-    data2.addColumn('string', 'Year');
-    data2.addColumn('number', 'Sales');
-    data2.addColumn('number', 'Expenses');
-    data2.addRows([
-      ['2004', 1000, 400],
-      ['2005', 1170, 460],
-      ['2006', 860, 580],
-      ['2007', 1030, 540]
-    ]);
-    // Create the data table.
-    var data3 = new google.visualization.DataTable();
-    data3.addColumn('string', 'Month');
-    data3.addColumn('number', 'Future Bookings');
-    data3.addColumn('number', 'Percentage Occupied');
-    data3.addColumn('number', 'Percentage Unoccupied');
-    data3.addRows([
-      ['March', 180, 0.8, 0.2],
-      ['April', 22, 0.45, 0.55],
-      ['May', 79, 0.35, 0.65],
-      ['June', 10, 0.25, 0.75]
-    ]);
-    // Set chart options
-    var defaultColors = ['#8F7EC2', '#2598B8', '#5FC782', '#ECDE31', '#F55949', '#AE85D4', '#5FC2C2', '#9ACC54',
-      '#F5A61D', '#B6744A'
-    ];
-    var comboColors = ['#ECDE31', '#8F7EC2', '#2598B8', '#5FC782', '#F55949', '#AE85D4', '#5FC2C2', '#9ACC54',
-      '#F5A61D', '#B6744A'
-    ];
-    var bookingsColors = ['#ECDE31', '#2598B8', '#EEEEEE'];
-    var defaultOptions = {
-      colors: defaultColors,
-      backgroundColor: 'transparent',
-      height: 300,
-      //is3D: true,
-      fontName: 'Lato',
-      fontSize: 13,
-      pointSize: '5',
-      pointShape: {
-        type: 'circle'
-      },
-      titleTextStyle: {
-        fontName: 'LatoBold',
-        fontSize: 14
-      },
-      vAxis: {
-        gridlines: {
-          count: 4
-        },
-        titleTextStyle: {
-          fontSize: 10,
-          color: '#AAAAAA',
-          fontName: 'LatoBold',
-          italic: false
-        }
-      },
-      hAxis: {
-        titleTextStyle: {
-          fontSize: 10,
-          color: '#AAAAAA',
-          fontName: 'LatoBold',
-          italic: false
-        },
-        slantedText: true
-      }
-    };
-    var options1 = {
-      title: 'Popularity of Pizza Toppings'
-    };
-    var options2 = {
-      title: 'Popularity of Pizza Toppings by Slice',
-      vAxis: {
-        title: 'PIZZA TOPPINGS'
-      },
-      hAxis: {
-        title: '# OF SLICES'
-      }
-    };
-    var options3 = {
-      title: 'Sales vs Expenditures',
-      vAxis: {
-        title: 'AMOUNT OF DOLLARS (USD)'
-      },
-      hAxis: {
-        title: 'YEAR'
-      },
-      focusTarget: 'category'
-    };
-    var options4 = {
-      colors: bookingsColors,
-      title: 'Future Bookings vs %Occupied',
-      isStacked: true,
-      hAxis: {
-        title: 'Month'
-      },
-      series: {
-        0: {
-          targetAxisIndex: 0
-        },
-        1: {
-          type: 'bars',
-          targetAxisIndex: 1,
-        },
-        2: {
-          type: 'bars',
-          targetAxisIndex: 1
-        }
-      },
-      vAxes: {
-        0: {
-          title: 'Future Bookings',
-          format: '#,###'
-        },
-        1: {
-          title: 'Percentage Occupied',
-          format: 'percent',
-          viewWindow: {
-            max: 1
-          }
-        }
-      }
-    };
-
-    // Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive
-    function reSize() {
-      var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-      chart.draw(data, $.extend(true, {}, defaultOptions, options1));
-      var chart2 = new google.visualization.BarChart(document.getElementById('chart_div2'));
-      chart2.draw(data, $.extend(true, {}, defaultOptions, options2));
-      var chart3 = new google.visualization.LineChart(document.getElementById('chart_div3'));
-      chart3.draw(data2, $.extend(true, {}, defaultOptions, options3));
-      var chart4 = new google.visualization.PieChart(document.getElementById('chart_div4'));
-      chart4.draw(data, $.extend(true, {}, defaultOptions, options1));
-      var chart5 = new google.visualization.BarChart(document.getElementById('chart_div5'));
-      chart5.draw(data, $.extend(true, {}, defaultOptions, options2));
-      var chart6 = new google.visualization.LineChart(document.getElementById('chart_div6'));
-      chart6.draw(data2, $.extend(true, {}, defaultOptions, options3));
-      var chart7 = new google.visualization.LineChart(document.getElementById('chart_div7'));
-      chart7.draw(data3, $.extend(true, {}, defaultOptions, options4));
-    }
-    window.onload = reSize();
-    window.onresize = reSize;
-  }
-</script>
-
-<h3>Pie Chart</h3>
+        <h3>Pie Chart</h3>
 <div id="chart_div"></div>
 
 <h3>Bar Chart</h3>
@@ -1449,6 +1286,176 @@ resources nav
     </div>
   </div>
 </div>
+<script type="text/javascript">
+    google.charts.load('current', {
+        packages: ['corechart']
+    });
+    google.charts.setOnLoadCallback(drawChart);
+
+    // Callback that creates and populates a data table,
+    // instantiates the pie chart, passes in the data and
+    // draws it.
+    function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+            ['Mushrooms', 3],
+            ['Onions', 1],
+            ['Olives', 15],
+            ['Zucchini', 1],
+            ['Pepperoni', 2]
+        ]);
+        // Create the data table.
+        var data2 = new google.visualization.DataTable();
+        data2.addColumn('string', 'Year');
+        data2.addColumn('number', 'Sales');
+        data2.addColumn('number', 'Expenses');
+        data2.addRows([
+            ['2004', 1000, 400],
+            ['2005', 1170, 460],
+            ['2006', 860, 580],
+            ['2007', 1030, 540]
+        ]);
+        // Create the data table.
+        var data3 = new google.visualization.DataTable();
+        data3.addColumn('string', 'Month');
+        data3.addColumn('number', 'Future Bookings');
+        data3.addColumn('number', 'Percentage Occupied');
+        data3.addColumn('number', 'Percentage Unoccupied');
+        data3.addRows([
+            ['March', 180, 0.8, 0.2],
+            ['April', 22, 0.45, 0.55],
+            ['May', 79, 0.35, 0.65],
+            ['June', 10, 0.25, 0.75]
+        ]);
+        // Set chart options
+        var defaultColors = ['#8F7EC2', '#2598B8', '#5FC782', '#ECDE31', '#F55949', '#AE85D4', '#5FC2C2', '#9ACC54',
+            '#F5A61D', '#B6744A'
+        ];
+        var comboColors = ['#ECDE31', '#8F7EC2', '#2598B8', '#5FC782', '#F55949', '#AE85D4', '#5FC2C2', '#9ACC54',
+            '#F5A61D', '#B6744A'
+        ];
+        var bookingsColors = ['#ECDE31', '#2598B8', '#EEEEEE'];
+        var defaultOptions = {
+            colors: defaultColors,
+            backgroundColor: 'transparent',
+            height: 300,
+            //is3D: true,
+            fontName: 'Lato',
+            fontSize: 13,
+            pointSize: '5',
+            pointShape: {
+                type: 'circle'
+            },
+            titleTextStyle: {
+                fontName: 'LatoBold',
+                fontSize: 14
+            },
+            vAxis: {
+                gridlines: {
+                    count: 4
+                },
+                titleTextStyle: {
+                    fontSize: 10,
+                    color: '#AAAAAA',
+                    fontName: 'LatoBold',
+                    italic: false
+                }
+            },
+            hAxis: {
+                titleTextStyle: {
+                    fontSize: 10,
+                    color: '#AAAAAA',
+                    fontName: 'LatoBold',
+                    italic: false
+                },
+                slantedText: true
+            }
+        };
+        var options1 = {
+            title: 'Popularity of Pizza Toppings'
+        };
+        var options2 = {
+            title: 'Popularity of Pizza Toppings by Slice',
+            vAxis: {
+                title: 'PIZZA TOPPINGS'
+            },
+            hAxis: {
+                title: '# OF SLICES'
+            }
+        };
+        var options3 = {
+            title: 'Sales vs Expenditures',
+            vAxis: {
+                title: 'AMOUNT OF DOLLARS (USD)'
+            },
+            hAxis: {
+                title: 'YEAR'
+            },
+            focusTarget: 'category'
+        };
+        var options4 = {
+            colors: bookingsColors,
+            title: 'Future Bookings vs %Occupied',
+            isStacked: true,
+            hAxis: {
+                title: 'Month'
+            },
+            series: {
+                0: {
+                    targetAxisIndex: 0
+                },
+                1: {
+                    type: 'bars',
+                    targetAxisIndex: 1,
+                },
+                2: {
+                    type: 'bars',
+                    targetAxisIndex: 1
+                }
+            },
+            vAxes: {
+                0: {
+                    title: 'Future Bookings',
+                    format: '#,###'
+                },
+                1: {
+                    title: 'Percentage Occupied',
+                    format: 'percent',
+                    viewWindow: {
+                        max: 1
+                    }
+                }
+            }
+        };
+
+        // Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive
+        function reSize() {
+            var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+            chart.draw(data, $.extend(true, {}, defaultOptions, options1));
+            var chart2 = new google.visualization.BarChart(document.getElementById('chart_div2'));
+            chart2.draw(data, $.extend(true, {}, defaultOptions, options2));
+            var chart3 = new google.visualization.LineChart(document.getElementById('chart_div3'));
+            chart3.draw(data2, $.extend(true, {}, defaultOptions, options3));
+            var chart4 = new google.visualization.PieChart(document.getElementById('chart_div4'));
+            chart4.draw(data, $.extend(true, {}, defaultOptions, options1));
+            var chart5 = new google.visualization.BarChart(document.getElementById('chart_div5'));
+            chart5.draw(data, $.extend(true, {}, defaultOptions, options2));
+            var chart6 = new google.visualization.LineChart(document.getElementById('chart_div6'));
+            chart6.draw(data2, $.extend(true, {}, defaultOptions, options3));
+            var chart7 = new google.visualization.LineChart(document.getElementById('chart_div7'));
+            chart7.draw(data3, $.extend(true, {}, defaultOptions, options4));
+            var chart1 = new google.visualization.LineChart(document.getElementById('chart_div1'));
+            chart1.draw(data2, $.extend(true, {}, defaultOptions, options3));
+        }
+        window.onload = reSize();
+        window.onresize = reSize;
+    }
+</script>
+
 
     </div>
 </div>
@@ -1673,178 +1680,7 @@ resources nav
 217
 218
 219
-220
-221</pre></td><td class="code"><pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"https://www.gstatic.com/charts/loader.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
-  <span class="nx">google</span><span class="p">.</span><span class="nx">charts</span><span class="p">.</span><span class="nx">load</span><span class="p">(</span><span class="s1">'current'</span><span class="p">,</span> <span class="p">{</span>
-    <span class="na">packages</span><span class="p">:</span> <span class="p">[</span><span class="s1">'corechart'</span><span class="p">]</span>
-  <span class="p">});</span>
-  <span class="nx">google</span><span class="p">.</span><span class="nx">charts</span><span class="p">.</span><span class="nx">setOnLoadCallback</span><span class="p">(</span><span class="nx">drawChart</span><span class="p">);</span>
-
-  <span class="c1">// Callback that creates and populates a data table,</span>
-  <span class="c1">// instantiates the pie chart, passes in the data and</span>
-  <span class="c1">// draws it.</span>
-  <span class="kd">function</span> <span class="nx">drawChart</span><span class="p">()</span> <span class="p">{</span>
-
-    <span class="c1">// Create the data table.</span>
-    <span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">visualization</span><span class="p">.</span><span class="nx">DataTable</span><span class="p">();</span>
-    <span class="nx">data</span><span class="p">.</span><span class="nx">addColumn</span><span class="p">(</span><span class="s1">'string'</span><span class="p">,</span> <span class="s1">'Topping'</span><span class="p">);</span>
-    <span class="nx">data</span><span class="p">.</span><span class="nx">addColumn</span><span class="p">(</span><span class="s1">'number'</span><span class="p">,</span> <span class="s1">'Slices'</span><span class="p">);</span>
-    <span class="nx">data</span><span class="p">.</span><span class="nx">addRows</span><span class="p">([</span>
-      <span class="p">[</span><span class="s1">'Mushrooms'</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
-      <span class="p">[</span><span class="s1">'Onions'</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
-      <span class="p">[</span><span class="s1">'Olives'</span><span class="p">,</span> <span class="mi">15</span><span class="p">],</span>
-      <span class="p">[</span><span class="s1">'Zucchini'</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
-      <span class="p">[</span><span class="s1">'Pepperoni'</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
-    <span class="p">]);</span>
-    <span class="c1">// Create the data table.</span>
-    <span class="kd">var</span> <span class="nx">data2</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">visualization</span><span class="p">.</span><span class="nx">DataTable</span><span class="p">();</span>
-    <span class="nx">data2</span><span class="p">.</span><span class="nx">addColumn</span><span class="p">(</span><span class="s1">'string'</span><span class="p">,</span> <span class="s1">'Year'</span><span class="p">);</span>
-    <span class="nx">data2</span><span class="p">.</span><span class="nx">addColumn</span><span class="p">(</span><span class="s1">'number'</span><span class="p">,</span> <span class="s1">'Sales'</span><span class="p">);</span>
-    <span class="nx">data2</span><span class="p">.</span><span class="nx">addColumn</span><span class="p">(</span><span class="s1">'number'</span><span class="p">,</span> <span class="s1">'Expenses'</span><span class="p">);</span>
-    <span class="nx">data2</span><span class="p">.</span><span class="nx">addRows</span><span class="p">([</span>
-      <span class="p">[</span><span class="s1">'2004'</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">400</span><span class="p">],</span>
-      <span class="p">[</span><span class="s1">'2005'</span><span class="p">,</span> <span class="mi">1170</span><span class="p">,</span> <span class="mi">460</span><span class="p">],</span>
-      <span class="p">[</span><span class="s1">'2006'</span><span class="p">,</span> <span class="mi">860</span><span class="p">,</span> <span class="mi">580</span><span class="p">],</span>
-      <span class="p">[</span><span class="s1">'2007'</span><span class="p">,</span> <span class="mi">1030</span><span class="p">,</span> <span class="mi">540</span><span class="p">]</span>
-    <span class="p">]);</span>
-    <span class="c1">// Create the data table.</span>
-    <span class="kd">var</span> <span class="nx">data3</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">visualization</span><span class="p">.</span><span class="nx">DataTable</span><span class="p">();</span>
-    <span class="nx">data3</span><span class="p">.</span><span class="nx">addColumn</span><span class="p">(</span><span class="s1">'string'</span><span class="p">,</span> <span class="s1">'Month'</span><span class="p">);</span>
-    <span class="nx">data3</span><span class="p">.</span><span class="nx">addColumn</span><span class="p">(</span><span class="s1">'number'</span><span class="p">,</span> <span class="s1">'Future Bookings'</span><span class="p">);</span>
-    <span class="nx">data3</span><span class="p">.</span><span class="nx">addColumn</span><span class="p">(</span><span class="s1">'number'</span><span class="p">,</span> <span class="s1">'Percentage Occupied'</span><span class="p">);</span>
-    <span class="nx">data3</span><span class="p">.</span><span class="nx">addColumn</span><span class="p">(</span><span class="s1">'number'</span><span class="p">,</span> <span class="s1">'Percentage Unoccupied'</span><span class="p">);</span>
-    <span class="nx">data3</span><span class="p">.</span><span class="nx">addRows</span><span class="p">([</span>
-      <span class="p">[</span><span class="s1">'March'</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">],</span>
-      <span class="p">[</span><span class="s1">'April'</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mf">0.45</span><span class="p">,</span> <span class="mf">0.55</span><span class="p">],</span>
-      <span class="p">[</span><span class="s1">'May'</span><span class="p">,</span> <span class="mi">79</span><span class="p">,</span> <span class="mf">0.35</span><span class="p">,</span> <span class="mf">0.65</span><span class="p">],</span>
-      <span class="p">[</span><span class="s1">'June'</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">]</span>
-    <span class="p">]);</span>
-    <span class="c1">// Set chart options</span>
-    <span class="kd">var</span> <span class="nx">defaultColors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'#8F7EC2'</span><span class="p">,</span> <span class="s1">'#2598B8'</span><span class="p">,</span> <span class="s1">'#5FC782'</span><span class="p">,</span> <span class="s1">'#ECDE31'</span><span class="p">,</span> <span class="s1">'#F55949'</span><span class="p">,</span> <span class="s1">'#AE85D4'</span><span class="p">,</span> <span class="s1">'#5FC2C2'</span><span class="p">,</span> <span class="s1">'#9ACC54'</span><span class="p">,</span>
-      <span class="s1">'#F5A61D'</span><span class="p">,</span> <span class="s1">'#B6744A'</span>
-    <span class="p">];</span>
-    <span class="kd">var</span> <span class="nx">comboColors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'#ECDE31'</span><span class="p">,</span> <span class="s1">'#8F7EC2'</span><span class="p">,</span> <span class="s1">'#2598B8'</span><span class="p">,</span> <span class="s1">'#5FC782'</span><span class="p">,</span> <span class="s1">'#F55949'</span><span class="p">,</span> <span class="s1">'#AE85D4'</span><span class="p">,</span> <span class="s1">'#5FC2C2'</span><span class="p">,</span> <span class="s1">'#9ACC54'</span><span class="p">,</span>
-      <span class="s1">'#F5A61D'</span><span class="p">,</span> <span class="s1">'#B6744A'</span>
-    <span class="p">];</span>
-    <span class="kd">var</span> <span class="nx">bookingsColors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'#ECDE31'</span><span class="p">,</span> <span class="s1">'#2598B8'</span><span class="p">,</span> <span class="s1">'#EEEEEE'</span><span class="p">];</span>
-    <span class="kd">var</span> <span class="nx">defaultOptions</span> <span class="o">=</span> <span class="p">{</span>
-      <span class="na">colors</span><span class="p">:</span> <span class="nx">defaultColors</span><span class="p">,</span>
-      <span class="na">backgroundColor</span><span class="p">:</span> <span class="s1">'transparent'</span><span class="p">,</span>
-      <span class="na">height</span><span class="p">:</span> <span class="mi">300</span><span class="p">,</span>
-      <span class="c1">//is3D: true,</span>
-      <span class="na">fontName</span><span class="p">:</span> <span class="s1">'Lato'</span><span class="p">,</span>
-      <span class="na">fontSize</span><span class="p">:</span> <span class="mi">13</span><span class="p">,</span>
-      <span class="na">pointSize</span><span class="p">:</span> <span class="s1">'5'</span><span class="p">,</span>
-      <span class="na">pointShape</span><span class="p">:</span> <span class="p">{</span>
-        <span class="na">type</span><span class="p">:</span> <span class="s1">'circle'</span>
-      <span class="p">},</span>
-      <span class="na">titleTextStyle</span><span class="p">:</span> <span class="p">{</span>
-        <span class="na">fontName</span><span class="p">:</span> <span class="s1">'LatoBold'</span><span class="p">,</span>
-        <span class="na">fontSize</span><span class="p">:</span> <span class="mi">14</span>
-      <span class="p">},</span>
-      <span class="na">vAxis</span><span class="p">:</span> <span class="p">{</span>
-        <span class="na">gridlines</span><span class="p">:</span> <span class="p">{</span>
-          <span class="na">count</span><span class="p">:</span> <span class="mi">4</span>
-        <span class="p">},</span>
-        <span class="na">titleTextStyle</span><span class="p">:</span> <span class="p">{</span>
-          <span class="na">fontSize</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
-          <span class="na">color</span><span class="p">:</span> <span class="s1">'#AAAAAA'</span><span class="p">,</span>
-          <span class="na">fontName</span><span class="p">:</span> <span class="s1">'LatoBold'</span><span class="p">,</span>
-          <span class="na">italic</span><span class="p">:</span> <span class="kc">false</span>
-        <span class="p">}</span>
-      <span class="p">},</span>
-      <span class="na">hAxis</span><span class="p">:</span> <span class="p">{</span>
-        <span class="na">titleTextStyle</span><span class="p">:</span> <span class="p">{</span>
-          <span class="na">fontSize</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
-          <span class="na">color</span><span class="p">:</span> <span class="s1">'#AAAAAA'</span><span class="p">,</span>
-          <span class="na">fontName</span><span class="p">:</span> <span class="s1">'LatoBold'</span><span class="p">,</span>
-          <span class="na">italic</span><span class="p">:</span> <span class="kc">false</span>
-        <span class="p">},</span>
-        <span class="na">slantedText</span><span class="p">:</span> <span class="kc">true</span>
-      <span class="p">}</span>
-    <span class="p">};</span>
-    <span class="kd">var</span> <span class="nx">options1</span> <span class="o">=</span> <span class="p">{</span>
-      <span class="na">title</span><span class="p">:</span> <span class="s1">'Popularity of Pizza Toppings'</span>
-    <span class="p">};</span>
-    <span class="kd">var</span> <span class="nx">options2</span> <span class="o">=</span> <span class="p">{</span>
-      <span class="na">title</span><span class="p">:</span> <span class="s1">'Popularity of Pizza Toppings by Slice'</span><span class="p">,</span>
-      <span class="na">vAxis</span><span class="p">:</span> <span class="p">{</span>
-        <span class="na">title</span><span class="p">:</span> <span class="s1">'PIZZA TOPPINGS'</span>
-      <span class="p">},</span>
-      <span class="na">hAxis</span><span class="p">:</span> <span class="p">{</span>
-        <span class="na">title</span><span class="p">:</span> <span class="s1">'# OF SLICES'</span>
-      <span class="p">}</span>
-    <span class="p">};</span>
-    <span class="kd">var</span> <span class="nx">options3</span> <span class="o">=</span> <span class="p">{</span>
-      <span class="na">title</span><span class="p">:</span> <span class="s1">'Sales vs Expenditures'</span><span class="p">,</span>
-      <span class="na">vAxis</span><span class="p">:</span> <span class="p">{</span>
-        <span class="na">title</span><span class="p">:</span> <span class="s1">'AMOUNT OF DOLLARS (USD)'</span>
-      <span class="p">},</span>
-      <span class="na">hAxis</span><span class="p">:</span> <span class="p">{</span>
-        <span class="na">title</span><span class="p">:</span> <span class="s1">'YEAR'</span>
-      <span class="p">},</span>
-      <span class="na">focusTarget</span><span class="p">:</span> <span class="s1">'category'</span>
-    <span class="p">};</span>
-    <span class="kd">var</span> <span class="nx">options4</span> <span class="o">=</span> <span class="p">{</span>
-      <span class="na">colors</span><span class="p">:</span> <span class="nx">bookingsColors</span><span class="p">,</span>
-      <span class="na">title</span><span class="p">:</span> <span class="s1">'Future Bookings vs %Occupied'</span><span class="p">,</span>
-      <span class="na">isStacked</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-      <span class="na">hAxis</span><span class="p">:</span> <span class="p">{</span>
-        <span class="na">title</span><span class="p">:</span> <span class="s1">'Month'</span>
-      <span class="p">},</span>
-      <span class="na">series</span><span class="p">:</span> <span class="p">{</span>
-        <span class="mi">0</span><span class="p">:</span> <span class="p">{</span>
-          <span class="na">targetAxisIndex</span><span class="p">:</span> <span class="mi">0</span>
-        <span class="p">},</span>
-        <span class="mi">1</span><span class="p">:</span> <span class="p">{</span>
-          <span class="na">type</span><span class="p">:</span> <span class="s1">'bars'</span><span class="p">,</span>
-          <span class="na">targetAxisIndex</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-        <span class="p">},</span>
-        <span class="mi">2</span><span class="p">:</span> <span class="p">{</span>
-          <span class="na">type</span><span class="p">:</span> <span class="s1">'bars'</span><span class="p">,</span>
-          <span class="na">targetAxisIndex</span><span class="p">:</span> <span class="mi">1</span>
-        <span class="p">}</span>
-      <span class="p">},</span>
-      <span class="na">vAxes</span><span class="p">:</span> <span class="p">{</span>
-        <span class="mi">0</span><span class="p">:</span> <span class="p">{</span>
-          <span class="na">title</span><span class="p">:</span> <span class="s1">'Future Bookings'</span><span class="p">,</span>
-          <span class="na">format</span><span class="p">:</span> <span class="s1">'#,###'</span>
-        <span class="p">},</span>
-        <span class="mi">1</span><span class="p">:</span> <span class="p">{</span>
-          <span class="na">title</span><span class="p">:</span> <span class="s1">'Percentage Occupied'</span><span class="p">,</span>
-          <span class="na">format</span><span class="p">:</span> <span class="s1">'percent'</span><span class="p">,</span>
-          <span class="na">viewWindow</span><span class="p">:</span> <span class="p">{</span>
-            <span class="na">max</span><span class="p">:</span> <span class="mi">1</span>
-          <span class="p">}</span>
-        <span class="p">}</span>
-      <span class="p">}</span>
-    <span class="p">};</span>
-
-    <span class="c1">// Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive</span>
-    <span class="kd">function</span> <span class="nx">reSize</span><span class="p">()</span> <span class="p">{</span>
-      <span class="kd">var</span> <span class="nx">chart</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">visualization</span><span class="p">.</span><span class="nx">PieChart</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'chart_div'</span><span class="p">));</span>
-      <span class="nx">chart</span><span class="p">.</span><span class="nx">draw</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="nx">$</span><span class="p">.</span><span class="nx">extend</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="p">{},</span> <span class="nx">defaultOptions</span><span class="p">,</span> <span class="nx">options1</span><span class="p">));</span>
-      <span class="kd">var</span> <span class="nx">chart2</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">visualization</span><span class="p">.</span><span class="nx">BarChart</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'chart_div2'</span><span class="p">));</span>
-      <span class="nx">chart2</span><span class="p">.</span><span class="nx">draw</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="nx">$</span><span class="p">.</span><span class="nx">extend</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="p">{},</span> <span class="nx">defaultOptions</span><span class="p">,</span> <span class="nx">options2</span><span class="p">));</span>
-      <span class="kd">var</span> <span class="nx">chart3</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">visualization</span><span class="p">.</span><span class="nx">LineChart</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'chart_div3'</span><span class="p">));</span>
-      <span class="nx">chart3</span><span class="p">.</span><span class="nx">draw</span><span class="p">(</span><span class="nx">data2</span><span class="p">,</span> <span class="nx">$</span><span class="p">.</span><span class="nx">extend</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="p">{},</span> <span class="nx">defaultOptions</span><span class="p">,</span> <span class="nx">options3</span><span class="p">));</span>
-      <span class="kd">var</span> <span class="nx">chart4</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">visualization</span><span class="p">.</span><span class="nx">PieChart</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'chart_div4'</span><span class="p">));</span>
-      <span class="nx">chart4</span><span class="p">.</span><span class="nx">draw</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="nx">$</span><span class="p">.</span><span class="nx">extend</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="p">{},</span> <span class="nx">defaultOptions</span><span class="p">,</span> <span class="nx">options1</span><span class="p">));</span>
-      <span class="kd">var</span> <span class="nx">chart5</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">visualization</span><span class="p">.</span><span class="nx">BarChart</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'chart_div5'</span><span class="p">));</span>
-      <span class="nx">chart5</span><span class="p">.</span><span class="nx">draw</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="nx">$</span><span class="p">.</span><span class="nx">extend</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="p">{},</span> <span class="nx">defaultOptions</span><span class="p">,</span> <span class="nx">options2</span><span class="p">));</span>
-      <span class="kd">var</span> <span class="nx">chart6</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">visualization</span><span class="p">.</span><span class="nx">LineChart</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'chart_div6'</span><span class="p">));</span>
-      <span class="nx">chart6</span><span class="p">.</span><span class="nx">draw</span><span class="p">(</span><span class="nx">data2</span><span class="p">,</span> <span class="nx">$</span><span class="p">.</span><span class="nx">extend</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="p">{},</span> <span class="nx">defaultOptions</span><span class="p">,</span> <span class="nx">options3</span><span class="p">));</span>
-      <span class="kd">var</span> <span class="nx">chart7</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">visualization</span><span class="p">.</span><span class="nx">LineChart</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'chart_div7'</span><span class="p">));</span>
-      <span class="nx">chart7</span><span class="p">.</span><span class="nx">draw</span><span class="p">(</span><span class="nx">data3</span><span class="p">,</span> <span class="nx">$</span><span class="p">.</span><span class="nx">extend</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="p">{},</span> <span class="nx">defaultOptions</span><span class="p">,</span> <span class="nx">options4</span><span class="p">));</span>
-    <span class="p">}</span>
-    <span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="nx">reSize</span><span class="p">();</span>
-    <span class="nb">window</span><span class="p">.</span><span class="nx">onresize</span> <span class="o">=</span> <span class="nx">reSize</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="nt">&lt;/script&gt;</span>
-
-<span class="nt">&lt;h3&gt;</span>Pie Chart<span class="nt">&lt;/h3&gt;</span>
+220</pre></td><td class="code"><pre><span class="nt">&lt;h3&gt;</span>Pie Chart<span class="nt">&lt;/h3&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"chart_div"</span><span class="nt">&gt;&lt;/div&gt;</span>
 
 <span class="nt">&lt;h3&gt;</span>Bar Chart<span class="nt">&lt;/h3&gt;</span>
@@ -1894,7 +1730,176 @@ resources nav
       <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"chart_div7"</span><span class="nt">&gt;&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span><span class="w">
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+    <span class="nx">google</span><span class="p">.</span><span class="nx">charts</span><span class="p">.</span><span class="nx">load</span><span class="p">(</span><span class="s1">'current'</span><span class="p">,</span> <span class="p">{</span>
+        <span class="na">packages</span><span class="p">:</span> <span class="p">[</span><span class="s1">'corechart'</span><span class="p">]</span>
+    <span class="p">});</span>
+    <span class="nx">google</span><span class="p">.</span><span class="nx">charts</span><span class="p">.</span><span class="nx">setOnLoadCallback</span><span class="p">(</span><span class="nx">drawChart</span><span class="p">);</span>
+
+    <span class="c1">// Callback that creates and populates a data table,</span>
+    <span class="c1">// instantiates the pie chart, passes in the data and</span>
+    <span class="c1">// draws it.</span>
+    <span class="kd">function</span> <span class="nx">drawChart</span><span class="p">()</span> <span class="p">{</span>
+
+        <span class="c1">// Create the data table.</span>
+        <span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">visualization</span><span class="p">.</span><span class="nx">DataTable</span><span class="p">();</span>
+        <span class="nx">data</span><span class="p">.</span><span class="nx">addColumn</span><span class="p">(</span><span class="s1">'string'</span><span class="p">,</span> <span class="s1">'Topping'</span><span class="p">);</span>
+        <span class="nx">data</span><span class="p">.</span><span class="nx">addColumn</span><span class="p">(</span><span class="s1">'number'</span><span class="p">,</span> <span class="s1">'Slices'</span><span class="p">);</span>
+        <span class="nx">data</span><span class="p">.</span><span class="nx">addRows</span><span class="p">([</span>
+            <span class="p">[</span><span class="s1">'Mushrooms'</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+            <span class="p">[</span><span class="s1">'Onions'</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+            <span class="p">[</span><span class="s1">'Olives'</span><span class="p">,</span> <span class="mi">15</span><span class="p">],</span>
+            <span class="p">[</span><span class="s1">'Zucchini'</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+            <span class="p">[</span><span class="s1">'Pepperoni'</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+        <span class="p">]);</span>
+        <span class="c1">// Create the data table.</span>
+        <span class="kd">var</span> <span class="nx">data2</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">visualization</span><span class="p">.</span><span class="nx">DataTable</span><span class="p">();</span>
+        <span class="nx">data2</span><span class="p">.</span><span class="nx">addColumn</span><span class="p">(</span><span class="s1">'string'</span><span class="p">,</span> <span class="s1">'Year'</span><span class="p">);</span>
+        <span class="nx">data2</span><span class="p">.</span><span class="nx">addColumn</span><span class="p">(</span><span class="s1">'number'</span><span class="p">,</span> <span class="s1">'Sales'</span><span class="p">);</span>
+        <span class="nx">data2</span><span class="p">.</span><span class="nx">addColumn</span><span class="p">(</span><span class="s1">'number'</span><span class="p">,</span> <span class="s1">'Expenses'</span><span class="p">);</span>
+        <span class="nx">data2</span><span class="p">.</span><span class="nx">addRows</span><span class="p">([</span>
+            <span class="p">[</span><span class="s1">'2004'</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">400</span><span class="p">],</span>
+            <span class="p">[</span><span class="s1">'2005'</span><span class="p">,</span> <span class="mi">1170</span><span class="p">,</span> <span class="mi">460</span><span class="p">],</span>
+            <span class="p">[</span><span class="s1">'2006'</span><span class="p">,</span> <span class="mi">860</span><span class="p">,</span> <span class="mi">580</span><span class="p">],</span>
+            <span class="p">[</span><span class="s1">'2007'</span><span class="p">,</span> <span class="mi">1030</span><span class="p">,</span> <span class="mi">540</span><span class="p">]</span>
+        <span class="p">]);</span>
+        <span class="c1">// Create the data table.</span>
+        <span class="kd">var</span> <span class="nx">data3</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">visualization</span><span class="p">.</span><span class="nx">DataTable</span><span class="p">();</span>
+        <span class="nx">data3</span><span class="p">.</span><span class="nx">addColumn</span><span class="p">(</span><span class="s1">'string'</span><span class="p">,</span> <span class="s1">'Month'</span><span class="p">);</span>
+        <span class="nx">data3</span><span class="p">.</span><span class="nx">addColumn</span><span class="p">(</span><span class="s1">'number'</span><span class="p">,</span> <span class="s1">'Future Bookings'</span><span class="p">);</span>
+        <span class="nx">data3</span><span class="p">.</span><span class="nx">addColumn</span><span class="p">(</span><span class="s1">'number'</span><span class="p">,</span> <span class="s1">'Percentage Occupied'</span><span class="p">);</span>
+        <span class="nx">data3</span><span class="p">.</span><span class="nx">addColumn</span><span class="p">(</span><span class="s1">'number'</span><span class="p">,</span> <span class="s1">'Percentage Unoccupied'</span><span class="p">);</span>
+        <span class="nx">data3</span><span class="p">.</span><span class="nx">addRows</span><span class="p">([</span>
+            <span class="p">[</span><span class="s1">'March'</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">],</span>
+            <span class="p">[</span><span class="s1">'April'</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mf">0.45</span><span class="p">,</span> <span class="mf">0.55</span><span class="p">],</span>
+            <span class="p">[</span><span class="s1">'May'</span><span class="p">,</span> <span class="mi">79</span><span class="p">,</span> <span class="mf">0.35</span><span class="p">,</span> <span class="mf">0.65</span><span class="p">],</span>
+            <span class="p">[</span><span class="s1">'June'</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">]</span>
+        <span class="p">]);</span>
+        <span class="c1">// Set chart options</span>
+        <span class="kd">var</span> <span class="nx">defaultColors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'#8F7EC2'</span><span class="p">,</span> <span class="s1">'#2598B8'</span><span class="p">,</span> <span class="s1">'#5FC782'</span><span class="p">,</span> <span class="s1">'#ECDE31'</span><span class="p">,</span> <span class="s1">'#F55949'</span><span class="p">,</span> <span class="s1">'#AE85D4'</span><span class="p">,</span> <span class="s1">'#5FC2C2'</span><span class="p">,</span> <span class="s1">'#9ACC54'</span><span class="p">,</span>
+            <span class="s1">'#F5A61D'</span><span class="p">,</span> <span class="s1">'#B6744A'</span>
+        <span class="p">];</span>
+        <span class="kd">var</span> <span class="nx">comboColors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'#ECDE31'</span><span class="p">,</span> <span class="s1">'#8F7EC2'</span><span class="p">,</span> <span class="s1">'#2598B8'</span><span class="p">,</span> <span class="s1">'#5FC782'</span><span class="p">,</span> <span class="s1">'#F55949'</span><span class="p">,</span> <span class="s1">'#AE85D4'</span><span class="p">,</span> <span class="s1">'#5FC2C2'</span><span class="p">,</span> <span class="s1">'#9ACC54'</span><span class="p">,</span>
+            <span class="s1">'#F5A61D'</span><span class="p">,</span> <span class="s1">'#B6744A'</span>
+        <span class="p">];</span>
+        <span class="kd">var</span> <span class="nx">bookingsColors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'#ECDE31'</span><span class="p">,</span> <span class="s1">'#2598B8'</span><span class="p">,</span> <span class="s1">'#EEEEEE'</span><span class="p">];</span>
+        <span class="kd">var</span> <span class="nx">defaultOptions</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="na">colors</span><span class="p">:</span> <span class="nx">defaultColors</span><span class="p">,</span>
+            <span class="na">backgroundColor</span><span class="p">:</span> <span class="s1">'transparent'</span><span class="p">,</span>
+            <span class="na">height</span><span class="p">:</span> <span class="mi">300</span><span class="p">,</span>
+            <span class="c1">//is3D: true,</span>
+            <span class="na">fontName</span><span class="p">:</span> <span class="s1">'Lato'</span><span class="p">,</span>
+            <span class="na">fontSize</span><span class="p">:</span> <span class="mi">13</span><span class="p">,</span>
+            <span class="na">pointSize</span><span class="p">:</span> <span class="s1">'5'</span><span class="p">,</span>
+            <span class="na">pointShape</span><span class="p">:</span> <span class="p">{</span>
+                <span class="na">type</span><span class="p">:</span> <span class="s1">'circle'</span>
+            <span class="p">},</span>
+            <span class="na">titleTextStyle</span><span class="p">:</span> <span class="p">{</span>
+                <span class="na">fontName</span><span class="p">:</span> <span class="s1">'LatoBold'</span><span class="p">,</span>
+                <span class="na">fontSize</span><span class="p">:</span> <span class="mi">14</span>
+            <span class="p">},</span>
+            <span class="na">vAxis</span><span class="p">:</span> <span class="p">{</span>
+                <span class="na">gridlines</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="na">count</span><span class="p">:</span> <span class="mi">4</span>
+                <span class="p">},</span>
+                <span class="na">titleTextStyle</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="na">fontSize</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+                    <span class="na">color</span><span class="p">:</span> <span class="s1">'#AAAAAA'</span><span class="p">,</span>
+                    <span class="na">fontName</span><span class="p">:</span> <span class="s1">'LatoBold'</span><span class="p">,</span>
+                    <span class="na">italic</span><span class="p">:</span> <span class="kc">false</span>
+                <span class="p">}</span>
+            <span class="p">},</span>
+            <span class="na">hAxis</span><span class="p">:</span> <span class="p">{</span>
+                <span class="na">titleTextStyle</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="na">fontSize</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+                    <span class="na">color</span><span class="p">:</span> <span class="s1">'#AAAAAA'</span><span class="p">,</span>
+                    <span class="na">fontName</span><span class="p">:</span> <span class="s1">'LatoBold'</span><span class="p">,</span>
+                    <span class="na">italic</span><span class="p">:</span> <span class="kc">false</span>
+                <span class="p">},</span>
+                <span class="na">slantedText</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">};</span>
+        <span class="kd">var</span> <span class="nx">options1</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="na">title</span><span class="p">:</span> <span class="s1">'Popularity of Pizza Toppings'</span>
+        <span class="p">};</span>
+        <span class="kd">var</span> <span class="nx">options2</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="na">title</span><span class="p">:</span> <span class="s1">'Popularity of Pizza Toppings by Slice'</span><span class="p">,</span>
+            <span class="na">vAxis</span><span class="p">:</span> <span class="p">{</span>
+                <span class="na">title</span><span class="p">:</span> <span class="s1">'PIZZA TOPPINGS'</span>
+            <span class="p">},</span>
+            <span class="na">hAxis</span><span class="p">:</span> <span class="p">{</span>
+                <span class="na">title</span><span class="p">:</span> <span class="s1">'# OF SLICES'</span>
+            <span class="p">}</span>
+        <span class="p">};</span>
+        <span class="kd">var</span> <span class="nx">options3</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="na">title</span><span class="p">:</span> <span class="s1">'Sales vs Expenditures'</span><span class="p">,</span>
+            <span class="na">vAxis</span><span class="p">:</span> <span class="p">{</span>
+                <span class="na">title</span><span class="p">:</span> <span class="s1">'AMOUNT OF DOLLARS (USD)'</span>
+            <span class="p">},</span>
+            <span class="na">hAxis</span><span class="p">:</span> <span class="p">{</span>
+                <span class="na">title</span><span class="p">:</span> <span class="s1">'YEAR'</span>
+            <span class="p">},</span>
+            <span class="na">focusTarget</span><span class="p">:</span> <span class="s1">'category'</span>
+        <span class="p">};</span>
+        <span class="kd">var</span> <span class="nx">options4</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="na">colors</span><span class="p">:</span> <span class="nx">bookingsColors</span><span class="p">,</span>
+            <span class="na">title</span><span class="p">:</span> <span class="s1">'Future Bookings vs %Occupied'</span><span class="p">,</span>
+            <span class="na">isStacked</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="na">hAxis</span><span class="p">:</span> <span class="p">{</span>
+                <span class="na">title</span><span class="p">:</span> <span class="s1">'Month'</span>
+            <span class="p">},</span>
+            <span class="na">series</span><span class="p">:</span> <span class="p">{</span>
+                <span class="mi">0</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="na">targetAxisIndex</span><span class="p">:</span> <span class="mi">0</span>
+                <span class="p">},</span>
+                <span class="mi">1</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="na">type</span><span class="p">:</span> <span class="s1">'bars'</span><span class="p">,</span>
+                    <span class="na">targetAxisIndex</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="p">},</span>
+                <span class="mi">2</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="na">type</span><span class="p">:</span> <span class="s1">'bars'</span><span class="p">,</span>
+                    <span class="na">targetAxisIndex</span><span class="p">:</span> <span class="mi">1</span>
+                <span class="p">}</span>
+            <span class="p">},</span>
+            <span class="na">vAxes</span><span class="p">:</span> <span class="p">{</span>
+                <span class="mi">0</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="na">title</span><span class="p">:</span> <span class="s1">'Future Bookings'</span><span class="p">,</span>
+                    <span class="na">format</span><span class="p">:</span> <span class="s1">'#,###'</span>
+                <span class="p">},</span>
+                <span class="mi">1</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="na">title</span><span class="p">:</span> <span class="s1">'Percentage Occupied'</span><span class="p">,</span>
+                    <span class="na">format</span><span class="p">:</span> <span class="s1">'percent'</span><span class="p">,</span>
+                    <span class="na">viewWindow</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="na">max</span><span class="p">:</span> <span class="mi">1</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">};</span>
+
+        <span class="c1">// Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive</span>
+        <span class="kd">function</span> <span class="nx">reSize</span><span class="p">()</span> <span class="p">{</span>
+            <span class="kd">var</span> <span class="nx">chart</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">visualization</span><span class="p">.</span><span class="nx">PieChart</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'chart_div'</span><span class="p">));</span>
+            <span class="nx">chart</span><span class="p">.</span><span class="nx">draw</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="nx">$</span><span class="p">.</span><span class="nx">extend</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="p">{},</span> <span class="nx">defaultOptions</span><span class="p">,</span> <span class="nx">options1</span><span class="p">));</span>
+            <span class="kd">var</span> <span class="nx">chart2</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">visualization</span><span class="p">.</span><span class="nx">BarChart</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'chart_div2'</span><span class="p">));</span>
+            <span class="nx">chart2</span><span class="p">.</span><span class="nx">draw</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="nx">$</span><span class="p">.</span><span class="nx">extend</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="p">{},</span> <span class="nx">defaultOptions</span><span class="p">,</span> <span class="nx">options2</span><span class="p">));</span>
+            <span class="kd">var</span> <span class="nx">chart3</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">visualization</span><span class="p">.</span><span class="nx">LineChart</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'chart_div3'</span><span class="p">));</span>
+            <span class="nx">chart3</span><span class="p">.</span><span class="nx">draw</span><span class="p">(</span><span class="nx">data2</span><span class="p">,</span> <span class="nx">$</span><span class="p">.</span><span class="nx">extend</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="p">{},</span> <span class="nx">defaultOptions</span><span class="p">,</span> <span class="nx">options3</span><span class="p">));</span>
+            <span class="kd">var</span> <span class="nx">chart4</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">visualization</span><span class="p">.</span><span class="nx">PieChart</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'chart_div4'</span><span class="p">));</span>
+            <span class="nx">chart4</span><span class="p">.</span><span class="nx">draw</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="nx">$</span><span class="p">.</span><span class="nx">extend</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="p">{},</span> <span class="nx">defaultOptions</span><span class="p">,</span> <span class="nx">options1</span><span class="p">));</span>
+            <span class="kd">var</span> <span class="nx">chart5</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">visualization</span><span class="p">.</span><span class="nx">BarChart</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'chart_div5'</span><span class="p">));</span>
+            <span class="nx">chart5</span><span class="p">.</span><span class="nx">draw</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="nx">$</span><span class="p">.</span><span class="nx">extend</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="p">{},</span> <span class="nx">defaultOptions</span><span class="p">,</span> <span class="nx">options2</span><span class="p">));</span>
+            <span class="kd">var</span> <span class="nx">chart6</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">visualization</span><span class="p">.</span><span class="nx">LineChart</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'chart_div6'</span><span class="p">));</span>
+            <span class="nx">chart6</span><span class="p">.</span><span class="nx">draw</span><span class="p">(</span><span class="nx">data2</span><span class="p">,</span> <span class="nx">$</span><span class="p">.</span><span class="nx">extend</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="p">{},</span> <span class="nx">defaultOptions</span><span class="p">,</span> <span class="nx">options3</span><span class="p">));</span>
+            <span class="kd">var</span> <span class="nx">chart7</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">visualization</span><span class="p">.</span><span class="nx">LineChart</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'chart_div7'</span><span class="p">));</span>
+            <span class="nx">chart7</span><span class="p">.</span><span class="nx">draw</span><span class="p">(</span><span class="nx">data3</span><span class="p">,</span> <span class="nx">$</span><span class="p">.</span><span class="nx">extend</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="p">{},</span> <span class="nx">defaultOptions</span><span class="p">,</span> <span class="nx">options4</span><span class="p">));</span>
+            <span class="kd">var</span> <span class="nx">chart1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">visualization</span><span class="p">.</span><span class="nx">LineChart</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'chart_div1'</span><span class="p">));</span>
+            <span class="nx">chart1</span><span class="p">.</span><span class="nx">draw</span><span class="p">(</span><span class="nx">data2</span><span class="p">,</span> <span class="nx">$</span><span class="p">.</span><span class="nx">extend</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="p">{},</span> <span class="nx">defaultOptions</span><span class="p">,</span> <span class="nx">options3</span><span class="p">));</span>
+        <span class="p">}</span>
+        <span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="nx">reSize</span><span class="p">();</span>
+        <span class="nb">window</span><span class="p">.</span><span class="nx">onresize</span> <span class="o">=</span> <span class="nx">reSize</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="nt">&lt;/script&gt;</span><span class="w">
 </span></pre></td></tr></tbody></table></code></pre></figure></div>
         <button class="btn btn-primary btn-sm mg-t-md" data-toggle="collapse" data-target="#example-charts">&hellip;</button>
     </div>
@@ -2856,6 +2861,7 @@ resources nav
 <script src="/libs/nya-bootstrap-select/dist/js/nya-bs-select.js"></script>
 <script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
 <script src="/js/main.js"></script>
+
 
 
 </body>

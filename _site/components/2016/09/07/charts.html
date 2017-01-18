@@ -13,6 +13,7 @@
             cursor: move;
         }
     </style>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     </head>
 <body>
 
@@ -264,6 +265,12 @@ principles nav
                         
                         
                         
+                        <li class="active">
+                            <a href="/templates/index.html#sender-score">Sender Score</a>
+                        </li>
+                        
+                        
+                        
                     </ul>
                 </div>
                 
@@ -298,177 +305,7 @@ resources nav
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-<script type="text/javascript">
-  google.charts.load('current', {
-    packages: ['corechart']
-  });
-  google.charts.setOnLoadCallback(drawChart);
-
-  // Callback that creates and populates a data table,
-  // instantiates the pie chart, passes in the data and
-  // draws it.
-  function drawChart() {
-
-    // Create the data table.
-    var data = new google.visualization.DataTable();
-    data.addColumn('string', 'Topping');
-    data.addColumn('number', 'Slices');
-    data.addRows([
-      ['Mushrooms', 3],
-      ['Onions', 1],
-      ['Olives', 15],
-      ['Zucchini', 1],
-      ['Pepperoni', 2]
-    ]);
-    // Create the data table.
-    var data2 = new google.visualization.DataTable();
-    data2.addColumn('string', 'Year');
-    data2.addColumn('number', 'Sales');
-    data2.addColumn('number', 'Expenses');
-    data2.addRows([
-      ['2004', 1000, 400],
-      ['2005', 1170, 460],
-      ['2006', 860, 580],
-      ['2007', 1030, 540]
-    ]);
-    // Create the data table.
-    var data3 = new google.visualization.DataTable();
-    data3.addColumn('string', 'Month');
-    data3.addColumn('number', 'Future Bookings');
-    data3.addColumn('number', 'Percentage Occupied');
-    data3.addColumn('number', 'Percentage Unoccupied');
-    data3.addRows([
-      ['March', 180, 0.8, 0.2],
-      ['April', 22, 0.45, 0.55],
-      ['May', 79, 0.35, 0.65],
-      ['June', 10, 0.25, 0.75]
-    ]);
-    // Set chart options
-    var defaultColors = ['#8F7EC2', '#2598B8', '#5FC782', '#ECDE31', '#F55949', '#AE85D4', '#5FC2C2', '#9ACC54',
-      '#F5A61D', '#B6744A'
-    ];
-    var comboColors = ['#ECDE31', '#8F7EC2', '#2598B8', '#5FC782', '#F55949', '#AE85D4', '#5FC2C2', '#9ACC54',
-      '#F5A61D', '#B6744A'
-    ];
-    var bookingsColors = ['#ECDE31', '#2598B8', '#EEEEEE'];
-    var defaultOptions = {
-      colors: defaultColors,
-      backgroundColor: 'transparent',
-      height: 300,
-      //is3D: true,
-      fontName: 'Lato',
-      fontSize: 13,
-      pointSize: '5',
-      pointShape: {
-        type: 'circle'
-      },
-      titleTextStyle: {
-        fontName: 'LatoBold',
-        fontSize: 14
-      },
-      vAxis: {
-        gridlines: {
-          count: 4
-        },
-        titleTextStyle: {
-          fontSize: 10,
-          color: '#AAAAAA',
-          fontName: 'LatoBold',
-          italic: false
-        }
-      },
-      hAxis: {
-        titleTextStyle: {
-          fontSize: 10,
-          color: '#AAAAAA',
-          fontName: 'LatoBold',
-          italic: false
-        },
-        slantedText: true
-      }
-    };
-    var options1 = {
-      title: 'Popularity of Pizza Toppings'
-    };
-    var options2 = {
-      title: 'Popularity of Pizza Toppings by Slice',
-      vAxis: {
-        title: 'PIZZA TOPPINGS'
-      },
-      hAxis: {
-        title: '# OF SLICES'
-      }
-    };
-    var options3 = {
-      title: 'Sales vs Expenditures',
-      vAxis: {
-        title: 'AMOUNT OF DOLLARS (USD)'
-      },
-      hAxis: {
-        title: 'YEAR'
-      },
-      focusTarget: 'category'
-    };
-    var options4 = {
-      colors: bookingsColors,
-      title: 'Future Bookings vs %Occupied',
-      isStacked: true,
-      hAxis: {
-        title: 'Month'
-      },
-      series: {
-        0: {
-          targetAxisIndex: 0
-        },
-        1: {
-          type: 'bars',
-          targetAxisIndex: 1,
-        },
-        2: {
-          type: 'bars',
-          targetAxisIndex: 1
-        }
-      },
-      vAxes: {
-        0: {
-          title: 'Future Bookings',
-          format: '#,###'
-        },
-        1: {
-          title: 'Percentage Occupied',
-          format: 'percent',
-          viewWindow: {
-            max: 1
-          }
-        }
-      }
-    };
-
-    // Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive
-    function reSize() {
-      var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-      chart.draw(data, $.extend(true, {}, defaultOptions, options1));
-      var chart2 = new google.visualization.BarChart(document.getElementById('chart_div2'));
-      chart2.draw(data, $.extend(true, {}, defaultOptions, options2));
-      var chart3 = new google.visualization.LineChart(document.getElementById('chart_div3'));
-      chart3.draw(data2, $.extend(true, {}, defaultOptions, options3));
-      var chart4 = new google.visualization.PieChart(document.getElementById('chart_div4'));
-      chart4.draw(data, $.extend(true, {}, defaultOptions, options1));
-      var chart5 = new google.visualization.BarChart(document.getElementById('chart_div5'));
-      chart5.draw(data, $.extend(true, {}, defaultOptions, options2));
-      var chart6 = new google.visualization.LineChart(document.getElementById('chart_div6'));
-      chart6.draw(data2, $.extend(true, {}, defaultOptions, options3));
-      var chart7 = new google.visualization.LineChart(document.getElementById('chart_div7'));
-      chart7.draw(data3, $.extend(true, {}, defaultOptions, options4));
-    }
-    window.onload = reSize();
-    window.onresize = reSize;
-  }
-</script>
-
-<h3>Pie Chart</h3>
+    <h3>Pie Chart</h3>
 <div id="chart_div"></div>
 
 <h3>Bar Chart</h3>
@@ -519,6 +356,176 @@ resources nav
     </div>
   </div>
 </div>
+<script type="text/javascript">
+    google.charts.load('current', {
+        packages: ['corechart']
+    });
+    google.charts.setOnLoadCallback(drawChart);
+
+    // Callback that creates and populates a data table,
+    // instantiates the pie chart, passes in the data and
+    // draws it.
+    function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+            ['Mushrooms', 3],
+            ['Onions', 1],
+            ['Olives', 15],
+            ['Zucchini', 1],
+            ['Pepperoni', 2]
+        ]);
+        // Create the data table.
+        var data2 = new google.visualization.DataTable();
+        data2.addColumn('string', 'Year');
+        data2.addColumn('number', 'Sales');
+        data2.addColumn('number', 'Expenses');
+        data2.addRows([
+            ['2004', 1000, 400],
+            ['2005', 1170, 460],
+            ['2006', 860, 580],
+            ['2007', 1030, 540]
+        ]);
+        // Create the data table.
+        var data3 = new google.visualization.DataTable();
+        data3.addColumn('string', 'Month');
+        data3.addColumn('number', 'Future Bookings');
+        data3.addColumn('number', 'Percentage Occupied');
+        data3.addColumn('number', 'Percentage Unoccupied');
+        data3.addRows([
+            ['March', 180, 0.8, 0.2],
+            ['April', 22, 0.45, 0.55],
+            ['May', 79, 0.35, 0.65],
+            ['June', 10, 0.25, 0.75]
+        ]);
+        // Set chart options
+        var defaultColors = ['#8F7EC2', '#2598B8', '#5FC782', '#ECDE31', '#F55949', '#AE85D4', '#5FC2C2', '#9ACC54',
+            '#F5A61D', '#B6744A'
+        ];
+        var comboColors = ['#ECDE31', '#8F7EC2', '#2598B8', '#5FC782', '#F55949', '#AE85D4', '#5FC2C2', '#9ACC54',
+            '#F5A61D', '#B6744A'
+        ];
+        var bookingsColors = ['#ECDE31', '#2598B8', '#EEEEEE'];
+        var defaultOptions = {
+            colors: defaultColors,
+            backgroundColor: 'transparent',
+            height: 300,
+            //is3D: true,
+            fontName: 'Lato',
+            fontSize: 13,
+            pointSize: '5',
+            pointShape: {
+                type: 'circle'
+            },
+            titleTextStyle: {
+                fontName: 'LatoBold',
+                fontSize: 14
+            },
+            vAxis: {
+                gridlines: {
+                    count: 4
+                },
+                titleTextStyle: {
+                    fontSize: 10,
+                    color: '#AAAAAA',
+                    fontName: 'LatoBold',
+                    italic: false
+                }
+            },
+            hAxis: {
+                titleTextStyle: {
+                    fontSize: 10,
+                    color: '#AAAAAA',
+                    fontName: 'LatoBold',
+                    italic: false
+                },
+                slantedText: true
+            }
+        };
+        var options1 = {
+            title: 'Popularity of Pizza Toppings'
+        };
+        var options2 = {
+            title: 'Popularity of Pizza Toppings by Slice',
+            vAxis: {
+                title: 'PIZZA TOPPINGS'
+            },
+            hAxis: {
+                title: '# OF SLICES'
+            }
+        };
+        var options3 = {
+            title: 'Sales vs Expenditures',
+            vAxis: {
+                title: 'AMOUNT OF DOLLARS (USD)'
+            },
+            hAxis: {
+                title: 'YEAR'
+            },
+            focusTarget: 'category'
+        };
+        var options4 = {
+            colors: bookingsColors,
+            title: 'Future Bookings vs %Occupied',
+            isStacked: true,
+            hAxis: {
+                title: 'Month'
+            },
+            series: {
+                0: {
+                    targetAxisIndex: 0
+                },
+                1: {
+                    type: 'bars',
+                    targetAxisIndex: 1,
+                },
+                2: {
+                    type: 'bars',
+                    targetAxisIndex: 1
+                }
+            },
+            vAxes: {
+                0: {
+                    title: 'Future Bookings',
+                    format: '#,###'
+                },
+                1: {
+                    title: 'Percentage Occupied',
+                    format: 'percent',
+                    viewWindow: {
+                        max: 1
+                    }
+                }
+            }
+        };
+
+        // Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive
+        function reSize() {
+            var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+            chart.draw(data, $.extend(true, {}, defaultOptions, options1));
+            var chart2 = new google.visualization.BarChart(document.getElementById('chart_div2'));
+            chart2.draw(data, $.extend(true, {}, defaultOptions, options2));
+            var chart3 = new google.visualization.LineChart(document.getElementById('chart_div3'));
+            chart3.draw(data2, $.extend(true, {}, defaultOptions, options3));
+            var chart4 = new google.visualization.PieChart(document.getElementById('chart_div4'));
+            chart4.draw(data, $.extend(true, {}, defaultOptions, options1));
+            var chart5 = new google.visualization.BarChart(document.getElementById('chart_div5'));
+            chart5.draw(data, $.extend(true, {}, defaultOptions, options2));
+            var chart6 = new google.visualization.LineChart(document.getElementById('chart_div6'));
+            chart6.draw(data2, $.extend(true, {}, defaultOptions, options3));
+            var chart7 = new google.visualization.LineChart(document.getElementById('chart_div7'));
+            chart7.draw(data3, $.extend(true, {}, defaultOptions, options4));
+            var chart1 = new google.visualization.LineChart(document.getElementById('chart_div1'));
+            chart1.draw(data2, $.extend(true, {}, defaultOptions, options3));
+        }
+        window.onload = reSize();
+        window.onresize = reSize;
+    }
+</script>
+
 
   </div>
 
@@ -556,6 +563,7 @@ resources nav
 <script src="/libs/nya-bootstrap-select/dist/js/nya-bs-select.js"></script>
 <script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
 <script src="/js/main.js"></script>
+
 
 
 </body>

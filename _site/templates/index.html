@@ -13,6 +13,7 @@
             cursor: move;
         }
     </style>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     </head>
 <body>
 
@@ -260,6 +261,12 @@ principles nav
                         
                         <li class="active">
                             <a href="/templates/index.html#surveys">Surveys</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/templates/index.html#sender-score">Sender Score</a>
                         </li>
                         
                         
@@ -2593,6 +2600,807 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
     </div>
 </div>
         
+<div class="row">
+    <div class="col-xs-12">
+        <a class="section-anchor" id="sender-score"></a>
+        <h2 class="sg">Sender Score</h2>
+        <div class="item-description"><ul>
+  <li>POC for frontend of email deliverability report</li>
+</ul>
+</div>
+        <div class="senderscore">
+<header class="page-header">
+    <h1>Sender Score for ((Account Name))</h1>
+</header>
+  <div class="row">
+  <div class="col-xs-12">
+      <p>Your current Sender score is 68. Your score may be low for several factors, please see the table below to resolve recent issues and increase your score</p>
+    </div>
+      <div class="col-md-6">
+        <div class="dashboard-widget">
+                <h4 class="dashboard-widget-title">
+                    Current Score
+                </h4>
+          <p class="dashboard-widget-metrics">
+              <div id="overallscore" style="width: 153px; margin: 0 auto;"></div>
+          </p>
+          <div class="table-responsive">
+            <table class="dashboard-widget-table table table-striped">
+              <tbody>
+                 <tr>
+                  <td>
+                      Source 1
+                  </td>
+                  <td>
+                      $50
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                      Source 2
+                  </td>
+                  <td>
+                      $150
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                      Source 3
+                  </td>
+                  <td>
+                      $150
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      
+    <div class="col-md-6">
+      <div class="dashboard-widget">
+        <h4 class="dashboard-widget-title">
+            Last 7 Days
+        </h4>
+              <div id="senderscore1"></div>
+        <div class="table-responsive">
+          <table class="dashboard-widget-table table table-striped">
+            <tbody>
+               <tr>
+                <td>
+                    Sunday
+                </td>
+                <td>
+                    $50
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    Monday
+                </td>
+                <td>
+                    $150
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    Tuesday
+                </td>
+                <td>
+                    $150
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12">
+    <div class="panel panel-default">
+    <header class="panel-heading">
+    <h3 class="panel-title">Recent Issues <small>These may adversely affect your Sender score. Follow the links on the right to correct these errors</small></h3>
+    </header>
+    <div class="panel-body panel-body-table">
+    <table class="table table-striped">
+    <thead>
+    <th>Source</th>
+    <th>Error</th>
+    <th>Description</th>
+    <th>Action</th>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Site</td>
+    <td>Unknown Recipient</td>
+    <td>Lorem Ipsum</td>
+    <td><a href="#">link to fix</a></td>
+    </tr>
+    <tr>
+    <td>Site</td>
+    <td>Unknown Recipient</td>
+    <td>Lorem Ipsum</td>
+    <td><a href="#">link to fix</a></td>
+    </tr>
+    <tr>
+    <td>Site</td>
+    <td>Unknown Recipient</td>
+    <td>Lorem Ipsum</td>
+    <td><a href="#">link to fix</a></td>
+    </tr>
+    <tr>
+    <td>Site</td>
+    <td>Unknown Recipient</td>
+    <td>Lorem Ipsum</td>
+    <td><a href="#">link to fix</a></td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
+    </div>
+
+  </div>
+</div>
+
+<script type="text/javascript">
+  google.charts.load('current', {
+    packages: ['corechart', 'gauge']
+  });
+  google.charts.setOnLoadCallback(drawChart);
+
+  // Callback that creates and populates a data table,
+  // instantiates the pie chart, passes in the data and
+  // draws it.
+  function drawChart() {
+
+    // Create the data table.
+    var data = google.visualization.arrayToDataTable([
+      ['Label', 'Value'],
+      ['Score', 68]
+    ]);
+    // Create the data table.
+    var data2 = new google.visualization.DataTable();
+    data2.addColumn('string', 'Month');
+    data2.addColumn({type: 'string', role: 'tooltip', 'p': {'html': true}} );
+    data2.addColumn('number', 'Score');
+    
+    data2.addRows([
+      ['Sun', '<p align="left" style="padding: 5px;"><strong>Sun</strong><br /> Score: <span>99</span> <br /> Event: Promo&nbsp;1</p>', 50 ],
+      ['Mon', '<p align="left" style="padding: 5px;"><strong>Mon</strong><br /> Score: <span>99</span> <br /> Event: Promo&nbsp;2</p>', 60 ],
+      ['Tues', '<p align="left" style="padding: 5px;"><strong>Tues</strong><br /> Score: <span>99</span> <br /> Event: Promo&nbsp;3</p>', 57 ],
+      ['Wed', '<p align="left" style="padding: 5px;"><strong>Wed</strong><br /> Score: <span>99</span> <br /> Event: Promo&nbsp;4</p>', 85 ],
+      ['Thurs', '<p align="left" style="padding: 5px;"><strong>Thurs</strong><br /> Score: <span>99</span> <br /> Event: Promo&nbsp;5</p>', 99 ],
+      ['Fri', '<p align="left" style="padding: 5px;"><strong>Fri</strong><br /> Score: <span>99</span> <br /> Event: Promo&nbsp;6</p>', 80 ],
+      ['Sat', '<p align="left" style="padding: 5px;"><strong>Sat</strong><br /> Score: <span>99</span> <br /> Event: Promo&nbsp;7</p>', 62 ],
+    ]);
+   
+    // Set chart options
+    var defaultColors = ['#8F7EC2', '#2598B8', '#5FC782', '#ECDE31', '#F55949', '#AE85D4', '#5FC2C2', '#9ACC54',
+      '#F5A61D', '#B6744A'
+    ];
+    var comboColors = ['#ECDE31', '#8F7EC2', '#2598B8', '#5FC782', '#F55949', '#AE85D4', '#5FC2C2', '#9ACC54',
+      '#F5A61D', '#B6744A'
+    ];
+    var bookingsColors = ['#ECDE31', '#2598B8', '#EEEEEE'];
+    var defaultOptions = {
+      colors: defaultColors,
+      backgroundColor: 'transparent',
+      height: 160,
+      //is3D: true,
+      fontName: 'Lato',
+      fontSize: 13,
+      pointSize: '5',
+      pointShape: {
+        //type: 'circle'
+      },
+      titleTextStyle: {
+        fontName: 'LatoBold',
+        fontSize: 14
+      },
+      tooltip: {
+        isHtml: true
+      },
+      legend: {
+        position: 'none'
+      },
+      vAxis: {
+        gridlines: {
+          count: 0
+        },
+        titleTextStyle: {
+          fontSize: 10,
+          color: '#AAAAAA',
+          fontName: 'LatoBold',
+          italic: false
+        }
+      },
+      hAxis: {
+        titleTextStyle: {
+          fontSize: 10,
+          color: '#AAAAAA',
+          fontName: 'LatoBold',
+          italic: false
+        },
+        slantedText: true
+      }
+    };
+            var options = {
+              width: 153, 
+              height: 153,
+              redFrom: 0, 
+              redTo: 60,
+              yellowFrom:60, 
+              yellowTo: 80,
+              greenFrom:80, 
+              greenTo: 100,
+              minorTicks: 5,
+              animation: {
+                duration: 10000,
+                easing: 'out'
+                }
+            };
+
+    var options3 = {
+      //title: 'Sales vs Expenditures',
+      
+      vAxis: {
+        //title: 'AMOUNT OF DOLLARS (USD)'
+      },
+      hAxis: {
+        //title: 'YEAR'
+      },
+      focusTarget: 'category'
+    };
+
+
+    // Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive
+    function reSize() {
+    var overallscore = new google.visualization.Gauge(document.getElementById('overallscore'));
+    overallscore.draw(data, options);
+      var senderscore1 = new google.visualization.LineChart(document.getElementById('senderscore1'));
+      senderscore1.draw(data2, $.extend(true, {}, defaultOptions, options3));
+      var senderscore2 = new google.visualization.LineChart(document.getElementById('senderscore2'));
+            senderscore2.draw(data2, $.extend(true, {}, defaultOptions, options3));
+      var senderscore3 = new google.visualization.LineChart(document.getElementById('senderscore3'));
+            senderscore1.draw(data2, $.extend(true, {}, defaultOptions, options3));
+    }
+    window.onload = reSize();
+    window.onresize = reSize;
+  }
+</script>
+
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="collapse mg-t-md" id="example-sender-score"><figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"senderscore"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"page-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Sender Score for ((Account Name))<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;/header&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Your current Sender score is 68. Your score may be low for several factors, please see the table below to resolve recent issues and increase your score<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-6"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dashboard-widget"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"dashboard-widget-title"</span><span class="nt">&gt;</span>
+                    Current Score
+                <span class="nt">&lt;/h4&gt;</span>
+          <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"dashboard-widget-metrics"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"overallscore"</span> <span class="na">style=</span><span class="s">"width: 153px; margin: 0 auto;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"table-responsive"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"dashboard-widget-table table table-striped"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;tbody&gt;</span>
+                 <span class="nt">&lt;tr&gt;</span>
+                  <span class="nt">&lt;td&gt;</span>
+                      Source 1
+                  <span class="nt">&lt;/td&gt;</span>
+                  <span class="nt">&lt;td&gt;</span>
+                      $50
+                  <span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;/tr&gt;</span>
+                <span class="nt">&lt;tr&gt;</span>
+                  <span class="nt">&lt;td&gt;</span>
+                      Source 2
+                  <span class="nt">&lt;/td&gt;</span>
+                  <span class="nt">&lt;td&gt;</span>
+                      $150
+                  <span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;/tr&gt;</span>
+                <span class="nt">&lt;tr&gt;</span>
+                  <span class="nt">&lt;td&gt;</span>
+                      Source 3
+                  <span class="nt">&lt;/td&gt;</span>
+                  <span class="nt">&lt;td&gt;</span>
+                      $150
+                  <span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;/tr&gt;</span>
+              <span class="nt">&lt;/tbody&gt;</span>
+            <span class="nt">&lt;/table&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-6"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dashboard-widget"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"dashboard-widget-title"</span><span class="nt">&gt;</span>
+            Last 7 Days
+        <span class="nt">&lt;/h4&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"senderscore1"</span><span class="nt">&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"table-responsive"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"dashboard-widget-table table table-striped"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;tbody&gt;</span>
+               <span class="nt">&lt;tr&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                    Sunday
+                <span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                    $50
+                <span class="nt">&lt;/td&gt;</span>
+              <span class="nt">&lt;/tr&gt;</span>
+              <span class="nt">&lt;tr&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                    Monday
+                <span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                    $150
+                <span class="nt">&lt;/td&gt;</span>
+              <span class="nt">&lt;/tr&gt;</span>
+              <span class="nt">&lt;tr&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                    Tuesday
+                <span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                    $150
+                <span class="nt">&lt;/td&gt;</span>
+              <span class="nt">&lt;/tr&gt;</span>
+
+            <span class="nt">&lt;/tbody&gt;</span>
+          <span class="nt">&lt;/table&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"panel-heading"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"panel-title"</span><span class="nt">&gt;</span>Recent Issues <span class="nt">&lt;small&gt;</span>These may adversely affect your Sender score. Follow the links on the right to correct these errors<span class="nt">&lt;/small&gt;&lt;/h3&gt;</span>
+    <span class="nt">&lt;/header&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body panel-body-table"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-striped"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;thead&gt;</span>
+    <span class="nt">&lt;th&gt;</span>Source<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;th&gt;</span>Error<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;th&gt;</span>Description<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;th&gt;</span>Action<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;/thead&gt;</span>
+    <span class="nt">&lt;tbody&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Site<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Unknown Recipient<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Lorem Ipsum<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>link to fix<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Site<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Unknown Recipient<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Lorem Ipsum<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>link to fix<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Site<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Unknown Recipient<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Lorem Ipsum<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>link to fix<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Site<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Unknown Recipient<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Lorem Ipsum<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>link to fix<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/tbody&gt;</span>
+    <span class="nt">&lt;/table&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+  <span class="nx">google</span><span class="p">.</span><span class="nx">charts</span><span class="p">.</span><span class="nx">load</span><span class="p">(</span><span class="s1">'current'</span><span class="p">,</span> <span class="p">{</span>
+    <span class="na">packages</span><span class="p">:</span> <span class="p">[</span><span class="s1">'corechart'</span><span class="p">,</span> <span class="s1">'gauge'</span><span class="p">]</span>
+  <span class="p">});</span>
+  <span class="nx">google</span><span class="p">.</span><span class="nx">charts</span><span class="p">.</span><span class="nx">setOnLoadCallback</span><span class="p">(</span><span class="nx">drawChart</span><span class="p">);</span>
+
+  <span class="c1">// Callback that creates and populates a data table,</span>
+  <span class="c1">// instantiates the pie chart, passes in the data and</span>
+  <span class="c1">// draws it.</span>
+  <span class="kd">function</span> <span class="nx">drawChart</span><span class="p">()</span> <span class="p">{</span>
+
+    <span class="c1">// Create the data table.</span>
+    <span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="nx">google</span><span class="p">.</span><span class="nx">visualization</span><span class="p">.</span><span class="nx">arrayToDataTable</span><span class="p">([</span>
+      <span class="p">[</span><span class="s1">'Label'</span><span class="p">,</span> <span class="s1">'Value'</span><span class="p">],</span>
+      <span class="p">[</span><span class="s1">'Score'</span><span class="p">,</span> <span class="mi">68</span><span class="p">]</span>
+    <span class="p">]);</span>
+    <span class="c1">// Create the data table.</span>
+    <span class="kd">var</span> <span class="nx">data2</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">visualization</span><span class="p">.</span><span class="nx">DataTable</span><span class="p">();</span>
+    <span class="nx">data2</span><span class="p">.</span><span class="nx">addColumn</span><span class="p">(</span><span class="s1">'string'</span><span class="p">,</span> <span class="s1">'Month'</span><span class="p">);</span>
+    <span class="nx">data2</span><span class="p">.</span><span class="nx">addColumn</span><span class="p">({</span><span class="na">type</span><span class="p">:</span> <span class="s1">'string'</span><span class="p">,</span> <span class="na">role</span><span class="p">:</span> <span class="s1">'tooltip'</span><span class="p">,</span> <span class="s1">'p'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'html'</span><span class="p">:</span> <span class="kc">true</span><span class="p">}}</span> <span class="p">);</span>
+    <span class="nx">data2</span><span class="p">.</span><span class="nx">addColumn</span><span class="p">(</span><span class="s1">'number'</span><span class="p">,</span> <span class="s1">'Score'</span><span class="p">);</span>
+    
+    <span class="nx">data2</span><span class="p">.</span><span class="nx">addRows</span><span class="p">([</span>
+      <span class="p">[</span><span class="s1">'Sun'</span><span class="p">,</span> <span class="s1">'&lt;p align="left" style="padding: 5px;"&gt;&lt;strong&gt;Sun&lt;/strong&gt;&lt;br /&gt; Score: &lt;span&gt;99&lt;/span&gt; &lt;br /&gt; Event: Promo&amp;nbsp;1&lt;/p&gt;'</span><span class="p">,</span> <span class="mi">50</span> <span class="p">],</span>
+      <span class="p">[</span><span class="s1">'Mon'</span><span class="p">,</span> <span class="s1">'&lt;p align="left" style="padding: 5px;"&gt;&lt;strong&gt;Mon&lt;/strong&gt;&lt;br /&gt; Score: &lt;span&gt;99&lt;/span&gt; &lt;br /&gt; Event: Promo&amp;nbsp;2&lt;/p&gt;'</span><span class="p">,</span> <span class="mi">60</span> <span class="p">],</span>
+      <span class="p">[</span><span class="s1">'Tues'</span><span class="p">,</span> <span class="s1">'&lt;p align="left" style="padding: 5px;"&gt;&lt;strong&gt;Tues&lt;/strong&gt;&lt;br /&gt; Score: &lt;span&gt;99&lt;/span&gt; &lt;br /&gt; Event: Promo&amp;nbsp;3&lt;/p&gt;'</span><span class="p">,</span> <span class="mi">57</span> <span class="p">],</span>
+      <span class="p">[</span><span class="s1">'Wed'</span><span class="p">,</span> <span class="s1">'&lt;p align="left" style="padding: 5px;"&gt;&lt;strong&gt;Wed&lt;/strong&gt;&lt;br /&gt; Score: &lt;span&gt;99&lt;/span&gt; &lt;br /&gt; Event: Promo&amp;nbsp;4&lt;/p&gt;'</span><span class="p">,</span> <span class="mi">85</span> <span class="p">],</span>
+      <span class="p">[</span><span class="s1">'Thurs'</span><span class="p">,</span> <span class="s1">'&lt;p align="left" style="padding: 5px;"&gt;&lt;strong&gt;Thurs&lt;/strong&gt;&lt;br /&gt; Score: &lt;span&gt;99&lt;/span&gt; &lt;br /&gt; Event: Promo&amp;nbsp;5&lt;/p&gt;'</span><span class="p">,</span> <span class="mi">99</span> <span class="p">],</span>
+      <span class="p">[</span><span class="s1">'Fri'</span><span class="p">,</span> <span class="s1">'&lt;p align="left" style="padding: 5px;"&gt;&lt;strong&gt;Fri&lt;/strong&gt;&lt;br /&gt; Score: &lt;span&gt;99&lt;/span&gt; &lt;br /&gt; Event: Promo&amp;nbsp;6&lt;/p&gt;'</span><span class="p">,</span> <span class="mi">80</span> <span class="p">],</span>
+      <span class="p">[</span><span class="s1">'Sat'</span><span class="p">,</span> <span class="s1">'&lt;p align="left" style="padding: 5px;"&gt;&lt;strong&gt;Sat&lt;/strong&gt;&lt;br /&gt; Score: &lt;span&gt;99&lt;/span&gt; &lt;br /&gt; Event: Promo&amp;nbsp;7&lt;/p&gt;'</span><span class="p">,</span> <span class="mi">62</span> <span class="p">],</span>
+    <span class="p">]);</span>
+   
+    <span class="c1">// Set chart options</span>
+    <span class="kd">var</span> <span class="nx">defaultColors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'#8F7EC2'</span><span class="p">,</span> <span class="s1">'#2598B8'</span><span class="p">,</span> <span class="s1">'#5FC782'</span><span class="p">,</span> <span class="s1">'#ECDE31'</span><span class="p">,</span> <span class="s1">'#F55949'</span><span class="p">,</span> <span class="s1">'#AE85D4'</span><span class="p">,</span> <span class="s1">'#5FC2C2'</span><span class="p">,</span> <span class="s1">'#9ACC54'</span><span class="p">,</span>
+      <span class="s1">'#F5A61D'</span><span class="p">,</span> <span class="s1">'#B6744A'</span>
+    <span class="p">];</span>
+    <span class="kd">var</span> <span class="nx">comboColors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'#ECDE31'</span><span class="p">,</span> <span class="s1">'#8F7EC2'</span><span class="p">,</span> <span class="s1">'#2598B8'</span><span class="p">,</span> <span class="s1">'#5FC782'</span><span class="p">,</span> <span class="s1">'#F55949'</span><span class="p">,</span> <span class="s1">'#AE85D4'</span><span class="p">,</span> <span class="s1">'#5FC2C2'</span><span class="p">,</span> <span class="s1">'#9ACC54'</span><span class="p">,</span>
+      <span class="s1">'#F5A61D'</span><span class="p">,</span> <span class="s1">'#B6744A'</span>
+    <span class="p">];</span>
+    <span class="kd">var</span> <span class="nx">bookingsColors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'#ECDE31'</span><span class="p">,</span> <span class="s1">'#2598B8'</span><span class="p">,</span> <span class="s1">'#EEEEEE'</span><span class="p">];</span>
+    <span class="kd">var</span> <span class="nx">defaultOptions</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="na">colors</span><span class="p">:</span> <span class="nx">defaultColors</span><span class="p">,</span>
+      <span class="na">backgroundColor</span><span class="p">:</span> <span class="s1">'transparent'</span><span class="p">,</span>
+      <span class="na">height</span><span class="p">:</span> <span class="mi">160</span><span class="p">,</span>
+      <span class="c1">//is3D: true,</span>
+      <span class="na">fontName</span><span class="p">:</span> <span class="s1">'Lato'</span><span class="p">,</span>
+      <span class="na">fontSize</span><span class="p">:</span> <span class="mi">13</span><span class="p">,</span>
+      <span class="na">pointSize</span><span class="p">:</span> <span class="s1">'5'</span><span class="p">,</span>
+      <span class="na">pointShape</span><span class="p">:</span> <span class="p">{</span>
+        <span class="c1">//type: 'circle'</span>
+      <span class="p">},</span>
+      <span class="na">titleTextStyle</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">fontName</span><span class="p">:</span> <span class="s1">'LatoBold'</span><span class="p">,</span>
+        <span class="na">fontSize</span><span class="p">:</span> <span class="mi">14</span>
+      <span class="p">},</span>
+      <span class="na">tooltip</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">isHtml</span><span class="p">:</span> <span class="kc">true</span>
+      <span class="p">},</span>
+      <span class="na">legend</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">position</span><span class="p">:</span> <span class="s1">'none'</span>
+      <span class="p">},</span>
+      <span class="na">vAxis</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">gridlines</span><span class="p">:</span> <span class="p">{</span>
+          <span class="na">count</span><span class="p">:</span> <span class="mi">0</span>
+        <span class="p">},</span>
+        <span class="na">titleTextStyle</span><span class="p">:</span> <span class="p">{</span>
+          <span class="na">fontSize</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+          <span class="na">color</span><span class="p">:</span> <span class="s1">'#AAAAAA'</span><span class="p">,</span>
+          <span class="na">fontName</span><span class="p">:</span> <span class="s1">'LatoBold'</span><span class="p">,</span>
+          <span class="na">italic</span><span class="p">:</span> <span class="kc">false</span>
+        <span class="p">}</span>
+      <span class="p">},</span>
+      <span class="na">hAxis</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">titleTextStyle</span><span class="p">:</span> <span class="p">{</span>
+          <span class="na">fontSize</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+          <span class="na">color</span><span class="p">:</span> <span class="s1">'#AAAAAA'</span><span class="p">,</span>
+          <span class="na">fontName</span><span class="p">:</span> <span class="s1">'LatoBold'</span><span class="p">,</span>
+          <span class="na">italic</span><span class="p">:</span> <span class="kc">false</span>
+        <span class="p">},</span>
+        <span class="na">slantedText</span><span class="p">:</span> <span class="kc">true</span>
+      <span class="p">}</span>
+    <span class="p">};</span>
+            <span class="kd">var</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span>
+              <span class="na">width</span><span class="p">:</span> <span class="mi">153</span><span class="p">,</span> 
+              <span class="na">height</span><span class="p">:</span> <span class="mi">153</span><span class="p">,</span>
+              <span class="na">redFrom</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+              <span class="na">redTo</span><span class="p">:</span> <span class="mi">60</span><span class="p">,</span>
+              <span class="na">yellowFrom</span><span class="p">:</span><span class="mi">60</span><span class="p">,</span> 
+              <span class="na">yellowTo</span><span class="p">:</span> <span class="mi">80</span><span class="p">,</span>
+              <span class="na">greenFrom</span><span class="p">:</span><span class="mi">80</span><span class="p">,</span> 
+              <span class="na">greenTo</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+              <span class="na">minorTicks</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+              <span class="na">animation</span><span class="p">:</span> <span class="p">{</span>
+                <span class="na">duration</span><span class="p">:</span> <span class="mi">10000</span><span class="p">,</span>
+                <span class="na">easing</span><span class="p">:</span> <span class="s1">'out'</span>
+                <span class="p">}</span>
+            <span class="p">};</span>
+
+    <span class="kd">var</span> <span class="nx">options3</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="c1">//title: 'Sales vs Expenditures',</span>
+      
+      <span class="na">vAxis</span><span class="p">:</span> <span class="p">{</span>
+        <span class="c1">//title: 'AMOUNT OF DOLLARS (USD)'</span>
+      <span class="p">},</span>
+      <span class="na">hAxis</span><span class="p">:</span> <span class="p">{</span>
+        <span class="c1">//title: 'YEAR'</span>
+      <span class="p">},</span>
+      <span class="na">focusTarget</span><span class="p">:</span> <span class="s1">'category'</span>
+    <span class="p">};</span>
+
+
+    <span class="c1">// Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive</span>
+    <span class="kd">function</span> <span class="nx">reSize</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">overallscore</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">visualization</span><span class="p">.</span><span class="nx">Gauge</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'overallscore'</span><span class="p">));</span>
+    <span class="nx">overallscore</span><span class="p">.</span><span class="nx">draw</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="nx">options</span><span class="p">);</span>
+      <span class="kd">var</span> <span class="nx">senderscore1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">visualization</span><span class="p">.</span><span class="nx">LineChart</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'senderscore1'</span><span class="p">));</span>
+      <span class="nx">senderscore1</span><span class="p">.</span><span class="nx">draw</span><span class="p">(</span><span class="nx">data2</span><span class="p">,</span> <span class="nx">$</span><span class="p">.</span><span class="nx">extend</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="p">{},</span> <span class="nx">defaultOptions</span><span class="p">,</span> <span class="nx">options3</span><span class="p">));</span>
+      <span class="kd">var</span> <span class="nx">senderscore2</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">visualization</span><span class="p">.</span><span class="nx">LineChart</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'senderscore2'</span><span class="p">));</span>
+            <span class="nx">senderscore2</span><span class="p">.</span><span class="nx">draw</span><span class="p">(</span><span class="nx">data2</span><span class="p">,</span> <span class="nx">$</span><span class="p">.</span><span class="nx">extend</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="p">{},</span> <span class="nx">defaultOptions</span><span class="p">,</span> <span class="nx">options3</span><span class="p">));</span>
+      <span class="kd">var</span> <span class="nx">senderscore3</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">visualization</span><span class="p">.</span><span class="nx">LineChart</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'senderscore3'</span><span class="p">));</span>
+            <span class="nx">senderscore1</span><span class="p">.</span><span class="nx">draw</span><span class="p">(</span><span class="nx">data2</span><span class="p">,</span> <span class="nx">$</span><span class="p">.</span><span class="nx">extend</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="p">{},</span> <span class="nx">defaultOptions</span><span class="p">,</span> <span class="nx">options3</span><span class="p">));</span>
+    <span class="p">}</span>
+    <span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="nx">reSize</span><span class="p">();</span>
+    <span class="nb">window</span><span class="p">.</span><span class="nx">onresize</span> <span class="o">=</span> <span class="nx">reSize</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="nt">&lt;/script&gt;</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure></div>
+        <button class="btn btn-primary btn-sm mg-t-md" data-toggle="collapse" data-target="#example-sender-score">&hellip;</button>
+    </div>
+</div>
+        
 
 
 </div>
@@ -2625,6 +3433,7 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
 <script src="/libs/nya-bootstrap-select/dist/js/nya-bs-select.js"></script>
 <script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
 <script src="/js/main.js"></script>
+
 
 
 </body>
