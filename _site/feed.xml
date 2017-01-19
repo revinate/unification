@@ -6,283 +6,9 @@
 </description>
     <link>http://example.com/</link>
     <atom:link href="http://example.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 17 Jan 2017 23:04:19 -0800</pubDate>
-    <lastBuildDate>Tue, 17 Jan 2017 23:04:19 -0800</lastBuildDate>
+    <pubDate>Thu, 19 Jan 2017 10:08:11 -0800</pubDate>
+    <lastBuildDate>Thu, 19 Jan 2017 10:08:11 -0800</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
-    
-      <item>
-        <title>Sender Score</title>
-        <description>&lt;div class=&quot;senderscore&quot;&gt;
-&lt;header class=&quot;page-header&quot;&gt;
-    &lt;h1&gt;Sender Score for ((Account Name))&lt;/h1&gt;
-&lt;/header&gt;
-  &lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;col-xs-12&quot;&gt;
-      &lt;p&gt;Your current Sender score is 68. Your score may be low for several factors, please see the table below to resolve recent issues and increase your score&lt;/p&gt;
-    &lt;/div&gt;
-      &lt;div class=&quot;col-md-6&quot;&gt;
-        &lt;div class=&quot;dashboard-widget&quot;&gt;
-                &lt;h4 class=&quot;dashboard-widget-title&quot;&gt;
-                    Current Score
-                &lt;/h4&gt;
-          &lt;p class=&quot;dashboard-widget-metrics&quot;&gt;
-              &lt;div id=&quot;overallscore&quot; style=&quot;width: 153px; margin: 0 auto;&quot;&gt;&lt;/div&gt;
-          &lt;/p&gt;
-          &lt;div class=&quot;table-responsive&quot;&gt;
-            &lt;table class=&quot;dashboard-widget-table table table-striped&quot;&gt;
-              &lt;tbody&gt;
-                 &lt;tr&gt;
-                  &lt;td&gt;
-                      Source 1
-                  &lt;/td&gt;
-                  &lt;td&gt;
-                      $50
-                  &lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                  &lt;td&gt;
-                      Source 2
-                  &lt;/td&gt;
-                  &lt;td&gt;
-                      $150
-                  &lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                  &lt;td&gt;
-                      Source 3
-                  &lt;/td&gt;
-                  &lt;td&gt;
-                      $150
-                  &lt;/td&gt;
-                &lt;/tr&gt;
-              &lt;/tbody&gt;
-            &lt;/table&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      
-    &lt;div class=&quot;col-md-6&quot;&gt;
-      &lt;div class=&quot;dashboard-widget&quot;&gt;
-        &lt;h4 class=&quot;dashboard-widget-title&quot;&gt;
-            Last 7 Days
-        &lt;/h4&gt;
-              &lt;div id=&quot;senderscore1&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;table-responsive&quot;&gt;
-          &lt;table class=&quot;dashboard-widget-table table table-striped&quot;&gt;
-            &lt;tbody&gt;
-               &lt;tr&gt;
-                &lt;td&gt;
-                    Sunday
-                &lt;/td&gt;
-                &lt;td&gt;
-                    $50
-                &lt;/td&gt;
-              &lt;/tr&gt;
-              &lt;tr&gt;
-                &lt;td&gt;
-                    Monday
-                &lt;/td&gt;
-                &lt;td&gt;
-                    $150
-                &lt;/td&gt;
-              &lt;/tr&gt;
-              &lt;tr&gt;
-                &lt;td&gt;
-                    Tuesday
-                &lt;/td&gt;
-                &lt;td&gt;
-                    $150
-                &lt;/td&gt;
-              &lt;/tr&gt;
-
-            &lt;/tbody&gt;
-          &lt;/table&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-xs-12&quot;&gt;
-    &lt;div class=&quot;panel panel-default&quot;&gt;
-    &lt;header class=&quot;panel-heading&quot;&gt;
-    &lt;h3 class=&quot;panel-title&quot;&gt;Recent Issues &lt;small&gt;These may adversely affect your Sender score. Follow the links on the right to correct these errors&lt;/small&gt;&lt;/h3&gt;
-    &lt;/header&gt;
-    &lt;div class=&quot;panel-body panel-body-table&quot;&gt;
-    &lt;table class=&quot;table table-striped&quot;&gt;
-    &lt;thead&gt;
-    &lt;th&gt;Source&lt;/th&gt;
-    &lt;th&gt;Error&lt;/th&gt;
-    &lt;th&gt;Description&lt;/th&gt;
-    &lt;th&gt;Action&lt;/th&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-    &lt;tr&gt;
-    &lt;td&gt;Site&lt;/td&gt;
-    &lt;td&gt;Unknown Recipient&lt;/td&gt;
-    &lt;td&gt;Lorem Ipsum&lt;/td&gt;
-    &lt;td&gt;&lt;a href=&quot;#&quot;&gt;link to fix&lt;/a&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-    &lt;td&gt;Site&lt;/td&gt;
-    &lt;td&gt;Unknown Recipient&lt;/td&gt;
-    &lt;td&gt;Lorem Ipsum&lt;/td&gt;
-    &lt;td&gt;&lt;a href=&quot;#&quot;&gt;link to fix&lt;/a&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-    &lt;td&gt;Site&lt;/td&gt;
-    &lt;td&gt;Unknown Recipient&lt;/td&gt;
-    &lt;td&gt;Lorem Ipsum&lt;/td&gt;
-    &lt;td&gt;&lt;a href=&quot;#&quot;&gt;link to fix&lt;/a&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-    &lt;td&gt;Site&lt;/td&gt;
-    &lt;td&gt;Unknown Recipient&lt;/td&gt;
-    &lt;td&gt;Lorem Ipsum&lt;/td&gt;
-    &lt;td&gt;&lt;a href=&quot;#&quot;&gt;link to fix&lt;/a&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;/tbody&gt;
-    &lt;/table&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;
-
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;script type=&quot;text/javascript&quot;&gt;
-  google.charts.load('current', {
-    packages: ['corechart', 'gauge']
-  });
-  google.charts.setOnLoadCallback(drawChart);
-
-  // Callback that creates and populates a data table,
-  // instantiates the pie chart, passes in the data and
-  // draws it.
-  function drawChart() {
-
-    // Create the data table.
-    var data = google.visualization.arrayToDataTable([
-      ['Label', 'Value'],
-      ['Score', 68]
-    ]);
-    // Create the data table.
-    var data2 = new google.visualization.DataTable();
-    data2.addColumn('string', 'Month');
-    data2.addColumn({type: 'string', role: 'tooltip', 'p': {'html': true}} );
-    data2.addColumn('number', 'Score');
-    
-    data2.addRows([
-      ['Sun', '&lt;p align=&quot;left&quot; style=&quot;padding: 5px;&quot;&gt;&lt;strong&gt;Sun&lt;/strong&gt;&lt;br /&gt; Score: &lt;span&gt;99&lt;/span&gt; &lt;br /&gt; Event: Promo&amp;nbsp;1&lt;/p&gt;', 50 ],
-      ['Mon', '&lt;p align=&quot;left&quot; style=&quot;padding: 5px;&quot;&gt;&lt;strong&gt;Mon&lt;/strong&gt;&lt;br /&gt; Score: &lt;span&gt;99&lt;/span&gt; &lt;br /&gt; Event: Promo&amp;nbsp;2&lt;/p&gt;', 60 ],
-      ['Tues', '&lt;p align=&quot;left&quot; style=&quot;padding: 5px;&quot;&gt;&lt;strong&gt;Tues&lt;/strong&gt;&lt;br /&gt; Score: &lt;span&gt;99&lt;/span&gt; &lt;br /&gt; Event: Promo&amp;nbsp;3&lt;/p&gt;', 57 ],
-      ['Wed', '&lt;p align=&quot;left&quot; style=&quot;padding: 5px;&quot;&gt;&lt;strong&gt;Wed&lt;/strong&gt;&lt;br /&gt; Score: &lt;span&gt;99&lt;/span&gt; &lt;br /&gt; Event: Promo&amp;nbsp;4&lt;/p&gt;', 85 ],
-      ['Thurs', '&lt;p align=&quot;left&quot; style=&quot;padding: 5px;&quot;&gt;&lt;strong&gt;Thurs&lt;/strong&gt;&lt;br /&gt; Score: &lt;span&gt;99&lt;/span&gt; &lt;br /&gt; Event: Promo&amp;nbsp;5&lt;/p&gt;', 99 ],
-      ['Fri', '&lt;p align=&quot;left&quot; style=&quot;padding: 5px;&quot;&gt;&lt;strong&gt;Fri&lt;/strong&gt;&lt;br /&gt; Score: &lt;span&gt;99&lt;/span&gt; &lt;br /&gt; Event: Promo&amp;nbsp;6&lt;/p&gt;', 80 ],
-      ['Sat', '&lt;p align=&quot;left&quot; style=&quot;padding: 5px;&quot;&gt;&lt;strong&gt;Sat&lt;/strong&gt;&lt;br /&gt; Score: &lt;span&gt;99&lt;/span&gt; &lt;br /&gt; Event: Promo&amp;nbsp;7&lt;/p&gt;', 62 ],
-    ]);
-   
-    // Set chart options
-    var defaultColors = ['#8F7EC2', '#2598B8', '#5FC782', '#ECDE31', '#F55949', '#AE85D4', '#5FC2C2', '#9ACC54',
-      '#F5A61D', '#B6744A'
-    ];
-    var comboColors = ['#ECDE31', '#8F7EC2', '#2598B8', '#5FC782', '#F55949', '#AE85D4', '#5FC2C2', '#9ACC54',
-      '#F5A61D', '#B6744A'
-    ];
-    var bookingsColors = ['#ECDE31', '#2598B8', '#EEEEEE'];
-    var defaultOptions = {
-      colors: defaultColors,
-      backgroundColor: 'transparent',
-      height: 160,
-      //is3D: true,
-      fontName: 'Lato',
-      fontSize: 13,
-      pointSize: '5',
-      pointShape: {
-        //type: 'circle'
-      },
-      titleTextStyle: {
-        fontName: 'LatoBold',
-        fontSize: 14
-      },
-      tooltip: {
-        isHtml: true
-      },
-      legend: {
-        position: 'none'
-      },
-      vAxis: {
-        gridlines: {
-          count: 0
-        },
-        titleTextStyle: {
-          fontSize: 10,
-          color: '#AAAAAA',
-          fontName: 'LatoBold',
-          italic: false
-        }
-      },
-      hAxis: {
-        titleTextStyle: {
-          fontSize: 10,
-          color: '#AAAAAA',
-          fontName: 'LatoBold',
-          italic: false
-        },
-        slantedText: true
-      }
-    };
-            var options = {
-              width: 153, 
-              height: 153,
-              redFrom: 0, 
-              redTo: 60,
-              yellowFrom:60, 
-              yellowTo: 80,
-              greenFrom:80, 
-              greenTo: 100,
-              minorTicks: 5,
-              animation: {
-                duration: 10000,
-                easing: 'out'
-                }
-            };
-
-    var options3 = {
-      //title: 'Sales vs Expenditures',
-      
-      vAxis: {
-        //title: 'AMOUNT OF DOLLARS (USD)'
-      },
-      hAxis: {
-        //title: 'YEAR'
-      },
-      focusTarget: 'category'
-    };
-
-
-    // Instantiate and draw our charts, passing in some options. Add reSize function to make charts responsive
-    function reSize() {
-    var overallscore = new google.visualization.Gauge(document.getElementById('overallscore'));
-    overallscore.draw(data, options);
-      var senderscore1 = new google.visualization.LineChart(document.getElementById('senderscore1'));
-      senderscore1.draw(data2, $.extend(true, {}, defaultOptions, options3));
-      var senderscore2 = new google.visualization.LineChart(document.getElementById('senderscore2'));
-            senderscore2.draw(data2, $.extend(true, {}, defaultOptions, options3));
-      var senderscore3 = new google.visualization.LineChart(document.getElementById('senderscore3'));
-            senderscore1.draw(data2, $.extend(true, {}, defaultOptions, options3));
-    }
-    window.onload = reSize();
-    window.onresize = reSize;
-  }
-&lt;/script&gt;
-
-</description>
-        <pubDate>Sun, 18 Dec 2016 16:00:01 -0800</pubDate>
-        <link>http://example.com/templates/2016/12/18/senderscore.html</link>
-        <guid isPermaLink="true">http://example.com/templates/2016/12/18/senderscore.html</guid>
-        
-        
-        <category>templates</category>
-        
-      </item>
     
       <item>
         <title>Surveys</title>
@@ -1657,6 +1383,62 @@
         <pubDate>Sun, 11 Sep 2016 17:00:01 -0700</pubDate>
         <link>http://example.com/modules/2016/09/11/dashboard-widget.html</link>
         <guid isPermaLink="true">http://example.com/modules/2016/09/11/dashboard-widget.html</guid>
+        
+        
+        <category>modules</category>
+        
+      </item>
+    
+      <item>
+        <title>Collapse/Accordion</title>
+        <description>&lt;div class=&quot;panel-group sg&quot; id=&quot;accordion&quot; role=&quot;tablist&quot; aria-multiselectable=&quot;true&quot;&gt;
+  &lt;div class=&quot;panel panel-default sg&quot;&gt;
+    &lt;div class=&quot;panel-heading sg&quot; role=&quot;tab&quot; id=&quot;headingOne&quot;&gt;
+      &lt;h4 class=&quot;panel-title sg&quot;&gt;
+        &lt;a role=&quot;button&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseOne&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseOne&quot; class=&quot;sg collapsed&quot;&gt;
+          Collapsible Group Item #1
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;collapseOne&quot; class=&quot;panel-collapse sg collapse&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;headingOne&quot; aria-expanded=&quot;false&quot; style=&quot;height: 0px;&quot;&gt;
+      &lt;div class=&quot;panel-body sg&quot;&gt;
+        Content goes here
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel panel-default sg&quot;&gt;
+    &lt;div class=&quot;panel-heading sg&quot; role=&quot;tab&quot; id=&quot;headingTwo&quot;&gt;
+      &lt;h4 class=&quot;panel-title sg&quot;&gt;
+        &lt;a class=&quot;sg collapsed&quot; role=&quot;button&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseTwo&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseTwo&quot;&gt;
+          Collapsible Group Item #2
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;collapseTwo&quot; class=&quot;panel-collapse sg collapse&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;headingTwo&quot; aria-expanded=&quot;false&quot; style=&quot;height: 0px;&quot;&gt;
+      &lt;div class=&quot;panel-body sg&quot;&gt;
+        Content goes here
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel panel-default sg&quot;&gt;
+    &lt;div class=&quot;panel-heading sg&quot; role=&quot;tab&quot; id=&quot;headingThree&quot;&gt;
+      &lt;h4 class=&quot;panel-title sg&quot;&gt;
+        &lt;a class=&quot;sg collapsed&quot; role=&quot;button&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseThree&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseThree&quot;&gt;
+          Collapsible Group Item #3
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;collapseThree&quot; class=&quot;panel-collapse sg collapse&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;headingThree&quot; aria-expanded=&quot;false&quot; style=&quot;height: 0px;&quot;&gt;
+      &lt;div class=&quot;panel-body sg&quot;&gt;
+        Content goes here
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sun, 11 Sep 2016 17:00:00 -0700</pubDate>
+        <link>http://example.com/modules/2016/09/11/accordions.html</link>
+        <guid isPermaLink="true">http://example.com/modules/2016/09/11/accordions.html</guid>
         
         
         <category>modules</category>
