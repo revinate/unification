@@ -1,6 +1,6 @@
 /**
  * angular-strap
- * @version v2.3.7 - 2016-01-16
+ * @version v2.3.12 - 2017-01-26
  * @link http://mgcrea.github.io/angular-strap
  * @author Olivier Louvignes <olivier@mg-crea.com> (https://github.com/mgcrea)
  * @license MIT License, http://www.opensource.org/licenses/MIT
@@ -70,6 +70,9 @@ angular.module('mgcrea.ngStrap.typeahead', [ 'mgcrea.ngStrap.tooltip', 'mgcrea.n
         scope.$resetMatches();
         if (parentScope) parentScope.$digest();
         scope.$emit(options.prefixEvent + '.select', value, index, $typeahead);
+        if (angular.isDefined(options.onSelect) && angular.isFunction(options.onSelect)) {
+          options.onSelect(value, index, $typeahead);
+        }
       };
       $typeahead.$isVisible = function() {
         if (!options.minLength || !controller) {
@@ -88,6 +91,20 @@ angular.module('mgcrea.ngStrap.typeahead', [ 'mgcrea.ngStrap.tooltip', 'mgcrea.n
         evt.preventDefault();
         evt.stopPropagation();
       };
+      $typeahead.$$updateScrollTop = function(container, index) {
+        if (index > -1 && index < container.children.length) {
+          var active = container.children[index];
+          var clientTop = active.offsetTop;
+          var clientBottom = active.offsetTop + active.clientHeight;
+          var highWatermark = container.scrollTop;
+          var lowWatermark = container.scrollTop + container.clientHeight;
+          if (clientBottom >= highWatermark && clientTop < highWatermark) {
+            container.scrollTop = Math.max(0, container.scrollTop - container.clientHeight);
+          } else if (clientBottom > lowWatermark) {
+            container.scrollTop = clientTop;
+          }
+        }
+      };
       $typeahead.$onKeyDown = function(evt) {
         if (!/(38|40|13)/.test(evt.keyCode)) return;
         if ($typeahead.$isVisible() && !(evt.keyCode === 13 && scope.$activeIndex === -1)) {
@@ -96,7 +113,14 @@ angular.module('mgcrea.ngStrap.typeahead', [ 'mgcrea.ngStrap.tooltip', 'mgcrea.n
         }
         if (evt.keyCode === 13 && scope.$matches.length) {
           $typeahead.select(scope.$activeIndex);
-        } else if (evt.keyCode === 38 && scope.$activeIndex > 0) scope.$activeIndex--; else if (evt.keyCode === 40 && scope.$activeIndex < scope.$matches.length - 1) scope.$activeIndex++; else if (angular.isUndefined(scope.$activeIndex)) scope.$activeIndex = 0;
+        } else if (evt.keyCode === 38 && scope.$activeIndex > 0) {
+          scope.$activeIndex--;
+        } else if (evt.keyCode === 40 && scope.$activeIndex < scope.$matches.length - 1) {
+          scope.$activeIndex++;
+        } else if (angular.isUndefined(scope.$activeIndex)) {
+          scope.$activeIndex = 0;
+        }
+        $typeahead.$$updateScrollTop($typeahead.$element[0], scope.$activeIndex);
         scope.$digest();
       };
       var show = $typeahead.show;
@@ -145,6 +169,7 @@ angular.module('mgcrea.ngStrap.typeahead', [ 'mgcrea.ngStrap.tooltip', 'mgcrea.n
     restrict: 'EAC',
     require: 'ngModel',
     link: function postLink(scope, element, attr, controller) {
+      element.off('change');
       var options = {
         scope: scope
       };
@@ -152,16 +177,24 @@ angular.module('mgcrea.ngStrap.typeahead', [ 'mgcrea.ngStrap.tooltip', 'mgcrea.n
         if (angular.isDefined(attr[key])) options[key] = attr[key];
       });
       var falseValueRegExp = /^(false|0|)$/i;
-      angular.forEach([ 'html', 'container', 'trimValue' ], function(key) {
+      angular.forEach([ 'html', 'container', 'trimValue', 'filter' ], function(key) {
         if (angular.isDefined(attr[key]) && falseValueRegExp.test(attr[key])) options[key] = false;
       });
+      angular.forEach([ 'onBeforeShow', 'onShow', 'onBeforeHide', 'onHide', 'onSelect' ], function(key) {
+        var bsKey = 'bs' + key.charAt(0).toUpperCase() + key.slice(1);
+        if (angular.isDefined(attr[bsKey])) {
+          options[key] = scope.$eval(attr[bsKey]);
+        }
+      });
       if (!element.attr('autocomplete')) element.attr('autocomplete', 'off');
-      var filter = options.filter || defaults.filter;
+      var filter = angular.isDefined(options.filter) ? options.filter : defaults.filter;
       var limit = options.limit || defaults.limit;
       var comparator = options.comparator || defaults.comparator;
       var bsOptions = attr.bsOptions;
-      if (filter) bsOptions += ' | ' + filter + ':$viewValue';
-      if (comparator) bsOptions += ':' + comparator;
+      if (filter) {
+        bsOptions += ' | ' + filter + ':$viewValue';
+        if (comparator) bsOptions += ':' + comparator;
+      }
       if (limit) bsOptions += ' | limitTo:' + limit;
       var parsedOptions = $parseOptions(bsOptions);
       var typeahead = $typeahead(element, controller, options);
@@ -191,7 +224,7 @@ angular.module('mgcrea.ngStrap.typeahead', [ 'mgcrea.ngStrap.tooltip', 'mgcrea.n
         if (displayValue) {
           return displayValue;
         }
-        if (modelValue && typeof modelValue !== 'object') {
+        if (angular.isDefined(modelValue) && typeof modelValue !== 'object') {
           return modelValue;
         }
         return '';
@@ -204,7 +237,10 @@ angular.module('mgcrea.ngStrap.typeahead', [ 'mgcrea.ngStrap.tooltip', 'mgcrea.n
         var selected = index !== -1 ? typeahead.$scope.$matches[index].label : controller.$viewValue;
         selected = angular.isObject(selected) ? parsedOptions.displayValue(selected) : selected;
         var value = selected ? selected.toString().replace(/<(?:.|\n)*?>/gm, '') : '';
+        var ss = element[0].selectionStart;
+        var sd = element[0].selectionEnd;
         element.val(options.trimValue === false ? value : value.trim());
+        element[0].setSelectionRange(ss, sd);
       };
       scope.$on('$destroy', function() {
         if (typeahead) typeahead.destroy();

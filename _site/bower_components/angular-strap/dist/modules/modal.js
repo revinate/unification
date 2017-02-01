@@ -1,6 +1,6 @@
 /**
  * angular-strap
- * @version v2.3.7 - 2016-01-16
+ * @version v2.3.12 - 2017-01-26
  * @link http://mgcrea.github.io/angular-strap
  * @author Olivier Louvignes <olivier@mg-crea.com> (https://github.com/mgcrea)
  * @license MIT License, http://www.opensource.org/licenses/MIT
@@ -23,7 +23,9 @@ angular.module('mgcrea.ngStrap.modal', [ 'mgcrea.ngStrap.core', 'mgcrea.ngStrap.
     backdrop: true,
     keyboard: true,
     html: false,
-    show: true
+    show: true,
+    size: null,
+    zIndex: null
   };
   this.$get = [ '$window', '$rootScope', '$bsCompiler', '$animate', '$timeout', '$sce', 'dimensions', function($window, $rootScope, $bsCompiler, $animate, $timeout, $sce, dimensions) {
     var forEach = angular.forEach;
@@ -32,6 +34,10 @@ angular.module('mgcrea.ngStrap.modal', [ 'mgcrea.ngStrap.core', 'mgcrea.ngStrap.
     var backdropCount = 0;
     var dialogBaseZindex = 1050;
     var backdropBaseZindex = 1040;
+    var validSizes = {
+      lg: 'modal-lg',
+      sm: 'modal-sm'
+    };
     function ModalFactory(config) {
       var $modal = {};
       var options = $modal.$options = angular.extend({}, defaults, config);
@@ -39,6 +45,10 @@ angular.module('mgcrea.ngStrap.modal', [ 'mgcrea.ngStrap.core', 'mgcrea.ngStrap.
       var scope = $modal.$scope = options.scope && options.scope.$new() || $rootScope.$new();
       if (!options.element && !options.container) {
         options.container = 'body';
+      }
+      if (options.zIndex) {
+        dialogBaseZindex = parseInt(options.zIndex, 10);
+        backdropBaseZindex = dialogBaseZindex - 10;
       }
       $modal.$id = options.id || options.element && options.element.attr('id') || '';
       forEach([ 'title', 'content' ], function(key) {
@@ -121,11 +131,17 @@ angular.module('mgcrea.ngStrap.modal', [ 'mgcrea.ngStrap.core', 'mgcrea.ngStrap.
         if (scope.$emit(options.prefixEvent + '.show.before', $modal).defaultPrevented) {
           return;
         }
+        if (angular.isDefined(options.onBeforeShow) && angular.isFunction(options.onBeforeShow)) {
+          options.onBeforeShow($modal);
+        }
         modalElement.css({
           display: 'block'
         }).addClass(options.placement);
         if (options.customClass) {
           modalElement.addClass(options.customClass);
+        }
+        if (options.size && validSizes[options.size]) {
+          angular.element(findElement('.modal-dialog', modalElement[0])).addClass(validSizes[options.size]);
         }
         if (options.animation) {
           if (options.backdrop) {
@@ -156,14 +172,17 @@ angular.module('mgcrea.ngStrap.modal', [ 'mgcrea.ngStrap.core', 'mgcrea.ngStrap.
       };
       function enterAnimateCallback() {
         scope.$emit(options.prefixEvent + '.show', $modal);
+        if (angular.isDefined(options.onShow) && angular.isFunction(options.onShow)) {
+          options.onShow($modal);
+        }
       }
       $modal.hide = function() {
         if (!$modal.$isShown) return;
-        if (options.backdrop) {
-          backdropCount--;
-        }
         if (scope.$emit(options.prefixEvent + '.hide.before', $modal).defaultPrevented) {
           return;
+        }
+        if (angular.isDefined(options.onBeforeHide) && angular.isFunction(options.onBeforeHide)) {
+          options.onBeforeHide($modal);
         }
         if (angular.version.minor <= 2) {
           $animate.leave(modalElement, leaveAnimateCallback);
@@ -171,6 +190,7 @@ angular.module('mgcrea.ngStrap.modal', [ 'mgcrea.ngStrap.core', 'mgcrea.ngStrap.
           $animate.leave(modalElement).then(leaveAnimateCallback);
         }
         if (options.backdrop) {
+          backdropCount--;
           $animate.leave(backdropElement);
         }
         $modal.$isShown = scope.$isShown = false;
@@ -180,7 +200,12 @@ angular.module('mgcrea.ngStrap.modal', [ 'mgcrea.ngStrap.core', 'mgcrea.ngStrap.
       };
       function leaveAnimateCallback() {
         scope.$emit(options.prefixEvent + '.hide', $modal);
-        bodyElement.removeClass(options.prefixClass + '-open');
+        if (angular.isDefined(options.onHide) && angular.isFunction(options.onHide)) {
+          options.onHide($modal);
+        }
+        if (findElement('.modal').length <= 0) {
+          bodyElement.removeClass(options.prefixClass + '-open');
+        }
         if (options.animation) {
           bodyElement.removeClass(options.prefixClass + '-with-' + options.animation);
         }
@@ -260,7 +285,7 @@ angular.module('mgcrea.ngStrap.modal', [ 'mgcrea.ngStrap.core', 'mgcrea.ngStrap.
     }
     return ModalFactory;
   } ];
-}).directive('bsModal', [ '$window', '$sce', '$modal', function($window, $sce, $modal) {
+}).directive('bsModal', [ '$window', '$sce', '$parse', '$modal', function($window, $sce, $parse, $modal) {
   return {
     restrict: 'EAC',
     scope: true,
@@ -270,7 +295,7 @@ angular.module('mgcrea.ngStrap.modal', [ 'mgcrea.ngStrap.core', 'mgcrea.ngStrap.
         element: element,
         show: false
       };
-      angular.forEach([ 'template', 'templateUrl', 'controller', 'controllerAs', 'contentTemplate', 'placement', 'backdrop', 'keyboard', 'html', 'container', 'animation', 'backdropAnimation', 'id', 'prefixEvent', 'prefixClass', 'customClass', 'modalClass' ], function(key) {
+      angular.forEach([ 'template', 'templateUrl', 'controller', 'controllerAs', 'contentTemplate', 'placement', 'backdrop', 'keyboard', 'html', 'container', 'animation', 'backdropAnimation', 'id', 'prefixEvent', 'prefixClass', 'customClass', 'modalClass', 'size', 'zIndex' ], function(key) {
         if (angular.isDefined(attr[key])) options[key] = attr[key];
       });
       if (options.modalClass) {
@@ -279,6 +304,12 @@ angular.module('mgcrea.ngStrap.modal', [ 'mgcrea.ngStrap.core', 'mgcrea.ngStrap.
       var falseValueRegExp = /^(false|0|)$/i;
       angular.forEach([ 'backdrop', 'keyboard', 'html', 'container' ], function(key) {
         if (angular.isDefined(attr[key]) && falseValueRegExp.test(attr[key])) options[key] = false;
+      });
+      angular.forEach([ 'onBeforeShow', 'onShow', 'onBeforeHide', 'onHide' ], function(key) {
+        var bsKey = 'bs' + key.charAt(0).toUpperCase() + key.slice(1);
+        if (angular.isDefined(attr[bsKey])) {
+          options[key] = scope.$eval(attr[bsKey]);
+        }
       });
       angular.forEach([ 'title', 'content' ], function(key) {
         if (attr[key]) {

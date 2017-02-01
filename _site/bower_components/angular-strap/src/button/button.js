@@ -20,7 +20,7 @@ angular.module('mgcrea.ngStrap.button', [])
     return {
       restrict: 'A',
       require: 'ngModel',
-      compile: function postLink(element, attr) {
+      compile: function postLink (element, attr) {
         element.attr('data-toggle', 'buttons');
         element.removeAttr('ng-model');
         var children = element[0].querySelectorAll('input[type="checkbox"]');
@@ -43,7 +43,7 @@ angular.module('mgcrea.ngStrap.button', [])
     return {
       restrict: 'A',
       require: 'ngModel',
-      link: function postLink(scope, element, attr, controller) {
+      link: function postLink (scope, element, attr, controller) {
 
         var options = defaults;
 
@@ -72,16 +72,12 @@ angular.module('mgcrea.ngStrap.button', [])
              // console.warn('$formatter("%s"): modelValue=%o (%o)', element.attr('ng-model'), modelValue, typeof modelValue);
             return angular.equals(modelValue, trueValue);
           });
-          // Fix rendering for exotic values
-          scope.$watch(attr.ngModel, function (newValue, oldValue) {
-            controller.$render();
-          });
         }
 
         // model -> view
         controller.$render = function () {
           // console.warn('$render', element.attr('ng-model'), 'controller.$modelValue', typeof controller.$modelValue, controller.$modelValue, 'controller.$viewValue', typeof controller.$viewValue, controller.$viewValue);
-          var isActive = angular.equals(controller.$modelValue, trueValue);
+          var isActive = !!controller.$viewValue;
           $$rAF(function () {
             if (isInput) element[0].checked = isActive;
             activeElement.toggleClass(options.activeClass, isActive);
@@ -95,9 +91,7 @@ angular.module('mgcrea.ngStrap.button', [])
             if (!isInput) {
               controller.$setViewValue(!activeElement.hasClass('active'));
             }
-            if (!hasExoticValues) {
-              controller.$render();
-            }
+            controller.$render();
           });
         });
 
@@ -112,7 +106,7 @@ angular.module('mgcrea.ngStrap.button', [])
     return {
       restrict: 'A',
       require: 'ngModel',
-      compile: function postLink(element, attr) {
+      compile: function postLink (element, attr) {
         element.attr('data-toggle', 'buttons');
         element.removeAttr('ng-model');
         var children = element[0].querySelectorAll('input[type="radio"]');
@@ -134,7 +128,7 @@ angular.module('mgcrea.ngStrap.button', [])
     return {
       restrict: 'A',
       require: 'ngModel',
-      link: function postLink(scope, element, attr, controller) {
+      link: function postLink (scope, element, attr, controller) {
 
         var options = defaults;
 
@@ -144,14 +138,18 @@ angular.module('mgcrea.ngStrap.button', [])
 
         var value;
         attr.$observe('value', function (v) {
-          value = constantValueRegExp.test(v) ? scope.$eval(v) : v;
+          if (typeof v !== 'boolean' && constantValueRegExp.test(v)) {
+            value = scope.$eval(v);
+          } else {
+            value = v;
+          }
           controller.$render();
         });
 
         // model -> view
         controller.$render = function () {
           // console.warn('$render', element.attr('value'), 'controller.$modelValue', typeof controller.$modelValue, controller.$modelValue, 'controller.$viewValue', typeof controller.$viewValue, controller.$viewValue);
-          var isActive = angular.equals(controller.$modelValue, value);
+          var isActive = angular.equals(controller.$viewValue, value);
           $$rAF(function () {
             if (isInput) element[0].checked = isActive;
             activeElement.toggleClass(options.activeClass, isActive);

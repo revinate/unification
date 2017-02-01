@@ -32,3 +32,16 @@ ul.pagination.unified {
     }
   }
 }
+ul.pagination:not(.unified)>li>a,
+ul.pagination:not(.unified)>li>span {
+  position: relative;
+  float: left;
+  font-size: 30px;
+  padding: 0 12px 5px;
+  line-height: 1.42857;
+  text-decoration: none;
+  color: #3BA1F8;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-left: -1px;
+}
