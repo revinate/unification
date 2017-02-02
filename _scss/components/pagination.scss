@@ -32,8 +32,8 @@ ul.pagination.unified {
     }
   }
 }
-ul.pagination:not(.unified)>li>a,
-ul.pagination:not(.unified)>li>span {
+ul.pagination.legacy>li>a,
+ul.pagination.legacy>li>span {
 font-size: 30px;
   padding: 0 12px 5px;
 
