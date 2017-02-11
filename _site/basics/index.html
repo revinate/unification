@@ -1675,6 +1675,11 @@ resources nav
               <input date-range-picker="" class="form-control" data-apply-class="btn-primary" data-cancel-class="btn-link" type="text" ng-model="datePicker.date" />
             </div>
 
+            <div class="col-sm-4 form-group">
+                <label>React.js DateRangePicker</label>
+                <div id="reactDatePicker"></div>
+            </div>
+
             <div class="form-group col-sm-4 daterangepicker-custom">
                 <label for="reportrange" class="control-label">Custom Data Range Picker</label>
                 <input type="text" id="reportrange" class="form-control" />
@@ -1983,7 +1988,12 @@ resources nav
 185
 186
 187
-188</pre></td><td class="code"><pre><span class="nt">&lt;form</span> <span class="na">role=</span><span class="s">"form"</span> <span class="na">action=</span><span class="s">""</span> <span class="na">method=</span><span class="s">"POST"</span><span class="nt">&gt;</span>
+188
+189
+190
+191
+192
+193</pre></td><td class="code"><pre><span class="nt">&lt;form</span> <span class="na">role=</span><span class="s">"form"</span> <span class="na">action=</span><span class="s">""</span> <span class="na">method=</span><span class="s">"POST"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-sm-6 col-md-4"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control-label"</span><span class="nt">&gt;</span>Date Picker<span class="nt">&lt;/label&gt;</span>
@@ -2053,6 +2063,11 @@ resources nav
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-sm-4"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control-label"</span> <span class="na">for=</span><span class="s">""</span><span class="nt">&gt;</span>Date Range Picker (Angular)<span class="nt">&lt;/label&gt;</span>
               <span class="nt">&lt;input</span> <span class="na">date-range-picker=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">data-apply-class=</span><span class="s">"btn-primary"</span> <span class="na">data-cancel-class=</span><span class="s">"btn-link"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">ng-model=</span><span class="s">"datePicker.date"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-4 form-group"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label&gt;</span>React.js DateRangePicker<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"reactDatePicker"</span><span class="nt">&gt;&lt;/div&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
 
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-sm-4 daterangepicker-custom"</span><span class="nt">&gt;</span>
@@ -2324,6 +2339,7 @@ resources nav
 </div>
 
 
+
 </div>
 </div>
 </div>
@@ -2355,7 +2371,7 @@ resources nav
 <script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
 <script src="/js/main.js"></script>
 
-
+<script type="text/javascript" src="/js/bundle.js"></script>
 
 </body>
 </html>

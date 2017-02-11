@@ -91,6 +91,11 @@ desc: "
               <input date-range-picker class="form-control" data-apply-class="btn-primary" data-cancel-class="btn-link" type="text" ng-model="datePicker.date" />
             </div>
 
+            <div class="col-sm-4 form-group">
+                <label>React.js DateRangePicker</label>
+                <div id="reactDatePicker"></div>
+            </div>
+
             <div class="form-group col-sm-4 daterangepicker-custom">
                 <label for="reportrange" class="control-label">Custom Data Range Picker</label>
                 <input type="text" id="reportrange" class="form-control">
