@@ -4,6 +4,7 @@ help:
 build:
 	npm install -g bower
 	npm install -g webpack
+	npm install -g babel-cli babel-preset-es2015
 	npm install -g react
 	bower --allow-root install
 	bundle install
