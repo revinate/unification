@@ -12,4 +12,5 @@ build:
 	chown -R `stat -c "%u:%g" /var/www/app` /var/www/app
 watch:
 	bundle install
+	webpack -w
 	bundle exec jekyll build --watch
