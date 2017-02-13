@@ -5,8 +5,10 @@ build:
 	npm install -g bower
 	bower --allow-root install
 	bundle install
+	webpack
 	bundle exec jekyll build
 	chown -R `stat -c "%u:%g" /var/www/app` /var/www/app
 watch:
 	bundle install
+	webpack -w
 	bundle exec jekyll build --watch
