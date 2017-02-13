@@ -2,8 +2,7 @@
 help:
 	@grep '^[^#[:space:]].*:' Makefile | grep -v .PHONY | sed "s/://g"
 build:
-	npm install -g bower
-	npm install -g webpack
+	npm install -g bower webpack es2015 react
 	bower --allow-root install
 	bundle install
 	webpack
