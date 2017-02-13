@@ -3,7 +3,7 @@ help:
 	@grep '^[^#[:space:]].*:' Makefile | grep -v .PHONY | sed "s/://g"
 build:
     npm update -g
-	npm install -g bower
+    npm install -g bower
 	npm install -g webpack
 	npm install -g react
 	bower --allow-root install
