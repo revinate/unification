@@ -97,7 +97,7 @@ desc: "
             </div>
 
             <div class="form-group col-sm-4 daterangepicker-custom">
-                <label for="reportrange" class="control-label">Custom Data Range Picker</label>
+                <label for="reportrange" class="control-label">Custom Date Range Picker</label>
                 <input type="text" id="reportrange" class="form-control">
             </div>
 
