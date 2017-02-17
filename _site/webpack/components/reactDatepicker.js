@@ -39,7 +39,7 @@ var ReactDateRangePicker = React.createClass({
         }
         return (
             <DateRangePicker startDate={this.state.startDate} endDate={this.state.endDate} ranges={this.state.ranges} onEvent={this.handleEvent}>
-                <BS.FormControl type="text" style={{width:'100%'}} value={label}>
+                <BS.FormControl type="text" style={{width:'100%'}} value={label} onChange={this.handleEvent}>
                 </BS.FormControl>
             </DateRangePicker>
     )
