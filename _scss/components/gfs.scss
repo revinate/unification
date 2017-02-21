@@ -226,6 +226,81 @@ $color-10: #61a544;
               }
             }
 
+            // 10-point range
+
+            &.range-10-point {
+              &.value-0 {
+                color: $color-0;
+                border-color: $color-0;
+                &.selected {
+                  background: $color-0;
+                }
+              }
+              &.value-1 {
+                color: $color-1;
+                border-color: $color-1;
+                &.selected {
+                  background: $color-1;
+                }
+              }
+              &.value-2 {
+                color: $color-2;
+                border-color: $color-2;
+                &.selected {
+                  background: $color-2;
+                }
+              }
+              &.value-3 {
+                color: $color-3;
+                border-color: $color-3;
+                &.selected {
+                  background: $color-3;
+                }
+              }
+              &.value-4 {
+                color: $color-4;
+                border-color: $color-4;
+                &.selected {
+                  background: $color-4;
+                }
+              }
+              &.value-5 {
+                color: $color-6;
+                border-color: $color-6;
+                &.selected {
+                  background: $color-6;
+                }
+              }
+              &.value-6 {
+                color: $color-7;
+                border-color: $color-7;
+                &.selected {
+                  background: $color-7;
+                }
+              }
+              &.value-7 {
+                color: $color-8;
+                border-color: $color-8;
+                &.selected {
+                  background: $color-8;
+                }
+              }
+              &.value-8 {
+                color: $color-9;
+                border-color: $color-9;
+                &.selected {
+                  background: $color-9;
+                }
+              }
+              &.value-9 {
+                color: $color-10;
+                border-color: $color-10;
+                &.selected {
+                  background: $color-10;
+                }
+              }
+            }
+
             // 9-point range
 
             &.range-9-point {
@@ -380,6 +455,39 @@ $color-10: #61a544;
                 }
               }
               &.value-4 {
+                color: $color-10;
+                border-color: $color-10;
+                &.selected {
+                  background: $color-10;
+                }
+              }
+            }
+
+            // 4-point range
+
+            &.range-4-point {
+              &.value-0 {
+                color: $color-0;
+                border-color: $color-0;
+                &.selected {
+                  background: $color-0;
+                }
+              }
+              &.value-1 {
+                color: $color-3;
+                border-color: $color-3;
+                &.selected {
+                  background: $color-3;
+                }
+              }
+              &.value-2 {
+                color: $color-6;
+                border-color: $color-6;
+                &.selected {
+                  background: $color-6;
+                }
+              }
+              &.value-3 {
                 color: $color-10;
                 border-color: $color-10;
                 &.selected {

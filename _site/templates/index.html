@@ -1373,6 +1373,80 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
                 </div>
             </div>
         </div>
+       <div class="col-xs-12">
+            <h4 class="topic">Topic Title</h4>
+            </div>
+            <div class="col-xs-12">
+                <div class="form-group">
+                    <label>10-point range example</label>
+                    <div class="range-buttons r_range_buttons question mobile-hide">
+                        <ul>
+                            <li>
+                                <i class="fa fa-frown-o"></i>
+                            </li>
+                            <li>
+                                <div class="range-10-point value-0">1</div>
+                                <input class="r_nps_1" type="radio" value="1" name="question_range_10005" />
+                            </li>
+                            <li>
+                                <div class="range-10-point value-1">2</div>
+                                <input class="r_nps_2" type="radio" value="2" name="question_range_10005" />
+                            </li>
+                            <li>
+                                <div class="range-10-point value-2">3</div>
+                                <input class="r_nps_3" type="radio" value="3" name="question_range_10005" />
+                            </li>
+                            <li>
+                                <div class="range-10-point value-3">4</div>
+                                <input class="r_nps_4" type="radio" value="4" name="question_range_10005" />
+                            </li>
+                            <li>
+                                <div class="range-10-point value-4">5</div>
+                                <input class="r_nps_5" type="radio" value="5" name="question_range_10005" />
+                            </li>
+                            <li>
+                                <div class="range-10-point value-5">6</div>
+                                <input class="r_nps_6" type="radio" value="6" name="question_range_10005" />
+                            </li>
+                            <li>
+                                <div class="range-10-point value-6">7</div>
+                                <input class="r_nps_7" type="radio" value="7" name="question_range_10005" />
+                            </li>
+                            <li>
+                                <div class="range-10-point value-7">8</div>
+                                <input class="r_nps_8" type="radio" value="8" name="question_range_10005" />
+                            </li>
+                            <li>
+                                <div class="range-10-point value-8">9</div>
+                                <input class="r_nps_9" type="radio" value="9" name="question_range_10005" />
+                            </li>
+                            <li>
+                                <div class="range-10-point value-9">10</div>
+                                <input class="r_nps_10" type="radio" value="10" name="question_range_10005" />
+                            </li>
+                            <li>
+                                <i class="fa fa-smile-o"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row mobile-show">
+                        <div class="col-xs-12">
+                            <div class="nps-slider range-slider">
+                                <ul><li>Select a score</li></ul>
+                                <input class="r_range_slider" type="range" name="range_slider_ignore" min="1" max="10" value="" onclick="" />
+                                <div class="slider-values">
+                                    <span class="min-val pull-left">1</span>
+                                    <span class="max-val pull-right">10</span>
+                                </div>
+                                <div class="slider-values">
+                                    <i class="fa fa-frown-o pull-left"></i>
+                                    <i class="fa fa-smile-o pull-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         <div class="col-xs-12">
         <h4 class="topic">Topic Title</h4>
         </div>
@@ -1552,7 +1626,54 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
                     </div>
                 </div>
             </div>
-        </div>         
+        </div>
+         <div class="col-xs-12">
+             <div class="form-group">
+                 <label>4-point range example</label>
+                 <div class="range-buttons r_range_buttons question mobile-hide">
+                     <ul>
+                         <li>
+                             <i class="fa fa-frown-o"></i>
+                         </li>
+                         <li>
+                             <div class="range-4-point value-0">1</div>
+                             <input class="r_nps_1" type="radio" value="1" name="question_range_10005" />
+                         </li>
+                         <li>
+                             <div class="range-4-point value-1">2</div>
+                             <input class="r_nps_2" type="radio" value="2" name="question_range_10005" />
+                         </li>
+                         <li>
+                             <div class="range-4-point value-2">3</div>
+                             <input class="r_nps_3" type="radio" value="3" name="question_range_10005" />
+                         </li>
+                         <li>
+                             <div class="range-4-point value-3">4</div>
+                             <input class="r_nps_4" type="radio" value="4" name="question_range_10005" />
+                         </li>
+                         <li>
+                             <i class="fa fa-smile-o"></i>
+                         </li>
+                     </ul>
+                 </div>
+                 <div class="row mobile-show">
+                     <div class="col-xs-12">
+                         <div class="nps-slider range-slider">
+                             <ul><li>Select a score</li></ul>
+                             <input class="r_range_slider" type="range" name="range_slider_ignore" min="1" max="4" value="" onclick="" />
+                             <div class="slider-values">
+                                 <span class="min-val pull-left">1</span>
+                                 <span class="max-val pull-right">4</span>
+                             </div>
+                             <div class="slider-values">
+                                 <i class="fa fa-frown-o pull-left"></i>
+                                 <i class="fa fa-smile-o pull-right"></i>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
         <div class="col-xs-12">
             <div class="form-group">
                 <label>3-point range example (disabled)</label>
@@ -2152,7 +2273,128 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
 435
 436
 437
-438</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"unified-gfs"</span><span class="nt">&gt;</span>
+438
+439
+440
+441
+442
+443
+444
+445
+446
+447
+448
+449
+450
+451
+452
+453
+454
+455
+456
+457
+458
+459
+460
+461
+462
+463
+464
+465
+466
+467
+468
+469
+470
+471
+472
+473
+474
+475
+476
+477
+478
+479
+480
+481
+482
+483
+484
+485
+486
+487
+488
+489
+490
+491
+492
+493
+494
+495
+496
+497
+498
+499
+500
+501
+502
+503
+504
+505
+506
+507
+508
+509
+510
+511
+512
+513
+514
+515
+516
+517
+518
+519
+520
+521
+522
+523
+524
+525
+526
+527
+528
+529
+530
+531
+532
+533
+534
+535
+536
+537
+538
+539
+540
+541
+542
+543
+544
+545
+546
+547
+548
+549
+550
+551
+552
+553
+554
+555
+556
+557
+558
+559</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"unified-gfs"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"top-header"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-6 col-xs-12"</span><span class="nt">&gt;</span>
@@ -2253,6 +2495,80 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
                 <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
+       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"topic"</span><span class="nt">&gt;</span>Topic Title<span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;label&gt;</span>10-point range example<span class="nt">&lt;/label&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"range-buttons r_range_buttons question mobile-hide"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;ul&gt;</span>
+                            <span class="nt">&lt;li&gt;</span>
+                                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-frown-o"</span><span class="nt">&gt;&lt;/i&gt;</span>
+                            <span class="nt">&lt;/li&gt;</span>
+                            <span class="nt">&lt;li&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"range-10-point value-0"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"r_nps_1"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">value=</span><span class="s">"1"</span> <span class="na">name=</span><span class="s">"question_range_10005"</span> <span class="nt">/&gt;</span>
+                            <span class="nt">&lt;/li&gt;</span>
+                            <span class="nt">&lt;li&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"range-10-point value-1"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"r_nps_2"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">value=</span><span class="s">"2"</span> <span class="na">name=</span><span class="s">"question_range_10005"</span> <span class="nt">/&gt;</span>
+                            <span class="nt">&lt;/li&gt;</span>
+                            <span class="nt">&lt;li&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"range-10-point value-2"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"r_nps_3"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">value=</span><span class="s">"3"</span> <span class="na">name=</span><span class="s">"question_range_10005"</span> <span class="nt">/&gt;</span>
+                            <span class="nt">&lt;/li&gt;</span>
+                            <span class="nt">&lt;li&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"range-10-point value-3"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"r_nps_4"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">value=</span><span class="s">"4"</span> <span class="na">name=</span><span class="s">"question_range_10005"</span> <span class="nt">/&gt;</span>
+                            <span class="nt">&lt;/li&gt;</span>
+                            <span class="nt">&lt;li&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"range-10-point value-4"</span><span class="nt">&gt;</span>5<span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"r_nps_5"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">value=</span><span class="s">"5"</span> <span class="na">name=</span><span class="s">"question_range_10005"</span> <span class="nt">/&gt;</span>
+                            <span class="nt">&lt;/li&gt;</span>
+                            <span class="nt">&lt;li&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"range-10-point value-5"</span><span class="nt">&gt;</span>6<span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"r_nps_6"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">value=</span><span class="s">"6"</span> <span class="na">name=</span><span class="s">"question_range_10005"</span> <span class="nt">/&gt;</span>
+                            <span class="nt">&lt;/li&gt;</span>
+                            <span class="nt">&lt;li&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"range-10-point value-6"</span><span class="nt">&gt;</span>7<span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"r_nps_7"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">value=</span><span class="s">"7"</span> <span class="na">name=</span><span class="s">"question_range_10005"</span> <span class="nt">/&gt;</span>
+                            <span class="nt">&lt;/li&gt;</span>
+                            <span class="nt">&lt;li&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"range-10-point value-7"</span><span class="nt">&gt;</span>8<span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"r_nps_8"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">value=</span><span class="s">"8"</span> <span class="na">name=</span><span class="s">"question_range_10005"</span> <span class="nt">/&gt;</span>
+                            <span class="nt">&lt;/li&gt;</span>
+                            <span class="nt">&lt;li&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"range-10-point value-8"</span><span class="nt">&gt;</span>9<span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"r_nps_9"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">value=</span><span class="s">"9"</span> <span class="na">name=</span><span class="s">"question_range_10005"</span> <span class="nt">/&gt;</span>
+                            <span class="nt">&lt;/li&gt;</span>
+                            <span class="nt">&lt;li&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"range-10-point value-9"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"r_nps_10"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">value=</span><span class="s">"10"</span> <span class="na">name=</span><span class="s">"question_range_10005"</span> <span class="nt">/&gt;</span>
+                            <span class="nt">&lt;/li&gt;</span>
+                            <span class="nt">&lt;li&gt;</span>
+                                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-smile-o"</span><span class="nt">&gt;&lt;/i&gt;</span>
+                            <span class="nt">&lt;/li&gt;</span>
+                        <span class="nt">&lt;/ul&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mobile-show"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nps-slider range-slider"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;ul&gt;&lt;li&gt;</span>Select a score<span class="nt">&lt;/li&gt;&lt;/ul&gt;</span>
+                                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"r_range_slider"</span> <span class="na">type=</span><span class="s">"range"</span> <span class="na">name=</span><span class="s">"range_slider_ignore"</span> <span class="na">min=</span><span class="s">"1"</span> <span class="na">max=</span><span class="s">"10"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">onclick=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"slider-values"</span><span class="nt">&gt;</span>
+                                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"min-val pull-left"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;</span>
+                                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"max-val pull-right"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/span&gt;</span>
+                                <span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"slider-values"</span><span class="nt">&gt;</span>
+                                    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-frown-o pull-left"</span><span class="nt">&gt;&lt;/i&gt;</span>
+                                    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-smile-o pull-right"</span><span class="nt">&gt;&lt;/i&gt;</span>
+                                <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"topic"</span><span class="nt">&gt;</span>Topic Title<span class="nt">&lt;/h4&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
@@ -2432,7 +2748,54 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
                     <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>         
+        <span class="nt">&lt;/div&gt;</span>
+         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12"</span><span class="nt">&gt;</span>
+             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                 <span class="nt">&lt;label&gt;</span>4-point range example<span class="nt">&lt;/label&gt;</span>
+                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"range-buttons r_range_buttons question mobile-hide"</span><span class="nt">&gt;</span>
+                     <span class="nt">&lt;ul&gt;</span>
+                         <span class="nt">&lt;li&gt;</span>
+                             <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-frown-o"</span><span class="nt">&gt;&lt;/i&gt;</span>
+                         <span class="nt">&lt;/li&gt;</span>
+                         <span class="nt">&lt;li&gt;</span>
+                             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"range-4-point value-0"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/div&gt;</span>
+                             <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"r_nps_1"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">value=</span><span class="s">"1"</span> <span class="na">name=</span><span class="s">"question_range_10005"</span> <span class="nt">/&gt;</span>
+                         <span class="nt">&lt;/li&gt;</span>
+                         <span class="nt">&lt;li&gt;</span>
+                             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"range-4-point value-1"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/div&gt;</span>
+                             <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"r_nps_2"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">value=</span><span class="s">"2"</span> <span class="na">name=</span><span class="s">"question_range_10005"</span> <span class="nt">/&gt;</span>
+                         <span class="nt">&lt;/li&gt;</span>
+                         <span class="nt">&lt;li&gt;</span>
+                             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"range-4-point value-2"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/div&gt;</span>
+                             <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"r_nps_3"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">value=</span><span class="s">"3"</span> <span class="na">name=</span><span class="s">"question_range_10005"</span> <span class="nt">/&gt;</span>
+                         <span class="nt">&lt;/li&gt;</span>
+                         <span class="nt">&lt;li&gt;</span>
+                             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"range-4-point value-3"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/div&gt;</span>
+                             <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"r_nps_4"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">value=</span><span class="s">"4"</span> <span class="na">name=</span><span class="s">"question_range_10005"</span> <span class="nt">/&gt;</span>
+                         <span class="nt">&lt;/li&gt;</span>
+                         <span class="nt">&lt;li&gt;</span>
+                             <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-smile-o"</span><span class="nt">&gt;&lt;/i&gt;</span>
+                         <span class="nt">&lt;/li&gt;</span>
+                     <span class="nt">&lt;/ul&gt;</span>
+                 <span class="nt">&lt;/div&gt;</span>
+                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mobile-show"</span><span class="nt">&gt;</span>
+                     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12"</span><span class="nt">&gt;</span>
+                         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nps-slider range-slider"</span><span class="nt">&gt;</span>
+                             <span class="nt">&lt;ul&gt;&lt;li&gt;</span>Select a score<span class="nt">&lt;/li&gt;&lt;/ul&gt;</span>
+                             <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"r_range_slider"</span> <span class="na">type=</span><span class="s">"range"</span> <span class="na">name=</span><span class="s">"range_slider_ignore"</span> <span class="na">min=</span><span class="s">"1"</span> <span class="na">max=</span><span class="s">"4"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">onclick=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+                             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"slider-values"</span><span class="nt">&gt;</span>
+                                 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"min-val pull-left"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;</span>
+                                 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"max-val pull-right"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/span&gt;</span>
+                             <span class="nt">&lt;/div&gt;</span>
+                             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"slider-values"</span><span class="nt">&gt;</span>
+                                 <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-frown-o pull-left"</span><span class="nt">&gt;&lt;/i&gt;</span>
+                                 <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-smile-o pull-right"</span><span class="nt">&gt;&lt;/i&gt;</span>
+                             <span class="nt">&lt;/div&gt;</span>
+                         <span class="nt">&lt;/div&gt;</span>
+                     <span class="nt">&lt;/div&gt;</span>
+                 <span class="nt">&lt;/div&gt;</span>
+             <span class="nt">&lt;/div&gt;</span>
+         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;label&gt;</span>3-point range example (disabled)<span class="nt">&lt;/label&gt;</span>
