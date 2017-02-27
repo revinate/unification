@@ -73,7 +73,7 @@ $color-10: #61a544;
     label {
       font-size: 17px;
       color: #444;
-      height: 21px;
+      min-height: 21px;
       font-family: 'Lato';
       font-weight: normal;
       margin-bottom: 22px;
@@ -954,6 +954,30 @@ $color-10: #61a544;
         width: 100%;
       }
     }
+    .survey-title {
+      h1 {
+        font-size: 17px;
+        line-height: 1.5
+      }
+    }
+    .form-group {
+      padding-bottom: 15px;
+      label {
+        margin-bottom: 15px;
+      }
+      .range-slider {
+        ul {
+          padding: 0;
+          height: 40px;
+        }
+      }
+      .yes-no {
+        .btn-lg {
+          padding: 7px 40px 5px;
+          }
+        }
+      }
+
 
   }
   address, .copyright {
