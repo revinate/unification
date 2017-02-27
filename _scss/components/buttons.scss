@@ -35,6 +35,18 @@
     }
   }
 
+  &.btn-primary {
+    background-color: $btn-primary;
+    border-color: darken($btn-primary, 10%);
+    &:focus {
+      background-color:#0a89f6;
+      border-color:#055395;
+    }
+    &:active, &:hover {
+      background-color: darken($btn-primary, 10%);
+    }
+  }
+
   &.btn-secondary {
     color: #2295F7;
     background-color: white;
