@@ -55,7 +55,10 @@ $color-10: #61a544;
     padding-bottom: 25px;
     h1 {
       font-size: 24px;
-      margin: 0 0 25px;
+      margin: 0;
+    }
+    p.text-danger {
+      margin: 10px 0 0;
     }
   }
 
@@ -565,7 +568,7 @@ $color-10: #61a544;
         }
       }
       &.not-applicable {
-        margin: 20px 0 0;
+        margin: 10px 0 0;
       }
     }
     .question {
