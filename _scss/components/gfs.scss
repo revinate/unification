@@ -64,11 +64,15 @@ $color-10: #61a544;
     font-size: 19px;
     color: #333;
     line-height: 1.47;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
   }
   .form-group {
-    padding-bottom: 45px;
-
+    padding-bottom: 25px;
+    // Error message
+    p.text-danger {
+      position: relative;
+      top: -10px;
+    }
     // Range Buttons
     label {
       font-size: 17px;
@@ -76,7 +80,7 @@ $color-10: #61a544;
       min-height: 21px;
       font-family: 'Lato';
       font-weight: normal;
-      margin-bottom: 22px;
+      margin-bottom: 10px;
       span.text-danger {
         font-size: 26px;
       }
@@ -532,15 +536,18 @@ $color-10: #61a544;
     // Yes No Buttons
 
     .yes-no {
-      .btn.selected {
-        @extend .btn-primary;
+      .btn {
+        width: 100%;
+        &.selected {
+          @extend .btn-primary;
+        }
       }
     }
 
     // Checkboxes
 
     .checkbox, .radio {
-      margin-bottom: 20px;
+      margin: 0 0 10px;
       padding: 0 0 3px 5px;
       &:hover {
         background: rgba(0, 0, 0, 0.1);
@@ -554,17 +561,23 @@ $color-10: #61a544;
           margin-right: 5px;
           width: 15px;
           height: 15px;
-          top: 1px;
+          top: 0;
         }
       }
       &.not-applicable {
         margin: 20px 0 0;
       }
     }
+    .question {
+      .checkbox:last-child, .radio:last-child {
+        margin-bottom: 20px;
+      }
+    }
     &.panel-conditional {
       background: rgba(59, 161, 248, 0.1);
       padding-bottom: 0;
-      margin-bottom: 50px;
+      top: -25px;
+      margin-bottom: 10px;
     }
 
     //Mobile Slider
@@ -916,6 +929,7 @@ $color-10: #61a544;
     }
   }
 
+
   //hide mobile only and show at lower resolution
 
   .mobile-show {
@@ -976,6 +990,9 @@ $color-10: #61a544;
           padding: 7px 40px 5px;
           }
         }
+      &.panel-conditional {
+        top: -15px;
+      }
       }
 
 
