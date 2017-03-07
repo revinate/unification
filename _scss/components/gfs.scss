@@ -1010,3 +1010,49 @@ $color-10: #61a544;
     padding-top: 20px;
   }
 }
+
+// Arabic RTL Styles
+
+body[dir=rtl] {
+  .unified-gfs {
+    input[type="radio"], input[type="checkbox"] {
+      margin-left: 5px;
+    }
+    input[type="range"] {
+      direction: ltr;
+      -webkit-transform: scaleX(-1);
+      -moz-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      transform: scaleX(-1);
+    }
+    .slider-values {
+      .min-val {
+        &.pull-left {
+          float: right !important;
+        }
+      }
+      .max-val {
+        &.pull-right {
+          float: left !important;
+        }
+      }
+      .fa {
+        &.pull-left {
+          float: right !important;
+          margin: 0;
+        }
+        &.pull-right {
+          float: left !important;
+          margin: 0;
+        }
+      }
+    }
+    .question {
+      &.yes-no {
+        display: flex;
+      }
+    }
+  }
+}
+
