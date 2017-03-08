@@ -377,3 +377,38 @@
     -webkit-transform: rotate(1turn);
   }
 }
+
+/*
+  OVERRIDES
+  - Make React Select input the same height as other inputs
+  - When the input is invalid, ensure it has a red border as the other inputs in the form
+ */
+
+
+.Select .Select-control {
+  height: 32px;
+}
+
+.has-error .Select .Select-control {
+  border: 1px solid #DA4C3E;
+}
+
+.Select .Select-control .Select-placeholder {
+  height: 32px;
+}
+
+.Select .Select-control .Select-value {
+  line-height: 32px !important;
+}
+
+.Select.Select--multi .Select-control .Select-value {
+  line-height: 16px !important;
+}
+
+.Select .Select-control .Select-value .Select-value-label {
+  line-height: 16px !important;
+}
+
+.Select-input {
+  height: 32px;
+}
