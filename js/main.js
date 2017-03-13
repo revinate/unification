@@ -151,6 +151,25 @@
 			$(this).data('bs.modal').options.keyboard = false;
 			$(this).data('bs.modal').options.backdrop = 'static';
 		});
-	})
+
+        /**
+		 * Global alert demo
+         */
+        $('.trigger-global-alert').on('click', function(){
+        	var globalContainer = $('.global-alert-container');
+        	var alertHtml = '<div class="alert alert-success fade in">' +
+                '<strong>' +
+                'Success! ' +
+                '</strong>' +
+                'This global alert box could indicate a success message.' +
+                '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>' +
+                '</div>';
+        	globalContainer.append(alertHtml);
+        	setTimeout(function(){
+                globalContainer.empty();
+        	}, 10000);
+            return false;
+			});
+	});
 
 }());

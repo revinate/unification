@@ -6,6 +6,8 @@ desc: "
 - Revinate uses standard bootstrap alerts.
 
 - Close button can be included with `.fade .in` to add a nice little animation on close.
+
+- Global alerts are added to the container `.global-alert-container`, should always include a close button, and should timeout after 10000ms (10 seconds).
 "
 ---
 
@@ -35,3 +37,5 @@ desc: "
   </strong>
   This alert box could indicate a dangerous or potentially negative action.
 </div>
+
+<button class="btn btn-sm btn-primary trigger-global-alert">Trigger Global Alert</button>

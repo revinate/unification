@@ -1,0 +1,9 @@
+.global-alert-container {
+  position: fixed;
+  width: 100%;
+  top: 120px;
+  z-index: 1;
+  .alert {
+    margin-bottom: 10px;
+  }
+}
