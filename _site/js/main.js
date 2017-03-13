@@ -165,8 +165,11 @@
                 '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>' +
                 '</div>';
         	globalContainer.append(alertHtml);
+            var newAlert = globalContainer.find('.alert');
         	setTimeout(function(){
-                globalContainer.empty();
+                newAlert.fadeOut(1000, function(){
+                	$(this).remove();
+				})
         	}, 10000);
             return false;
 			});

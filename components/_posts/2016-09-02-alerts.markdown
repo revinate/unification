@@ -7,7 +7,7 @@ desc: "
 
 - Close button can be included with `.fade .in` to add a nice little animation on close.
 
-- Global alerts are added to the container `.global-alert-container`, should always include a close button, and should timeout after 10000ms (10 seconds).
+- Global alerts are added to the container `.global-alert-container`, should always include a close button, and should fade out after 10000ms (10 seconds).
 "
 ---
 
