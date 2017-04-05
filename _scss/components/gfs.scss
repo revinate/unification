@@ -25,6 +25,10 @@ $color-10: #61a544;
   max-width: 840px;
   margin: 0 auto;
   padding: 0 20px;
+  .help-block {
+    font-size: 14px;
+    font-style: normal;
+  }
   .top-header {
     .language-selector {
       max-width: 200px;
@@ -71,7 +75,7 @@ $color-10: #61a544;
     font-size: 19px;
     color: #333;
     line-height: 1.47;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
   }
   .form-group {
     padding-bottom: 25px;
@@ -87,7 +91,7 @@ $color-10: #61a544;
       min-height: 21px;
       font-family: 'Lato';
       font-weight: normal;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       span.text-danger {
         font-size: 26px;
       }
@@ -577,7 +581,7 @@ $color-10: #61a544;
     }
     .question {
       .checkbox:last-child, .radio:last-child {
-        margin-bottom: 20px;
+        margin-bottom: 0;
       }
     }
     &.panel-conditional {
@@ -585,6 +589,14 @@ $color-10: #61a544;
       padding-bottom: 0;
       top: -25px;
       margin-bottom: 10px;
+      .panel-body {
+        .question {
+          margin-bottom: 20px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
     }
 
     //Mobile Slider
@@ -600,7 +612,7 @@ $color-10: #61a544;
         display: block;
         overflow: auto;
         height: 60px;
-        font-family: Lato;
+        font-family: LatoLight;
         li {
           display: block;
           text-align: center;
@@ -982,7 +994,7 @@ $color-10: #61a544;
       }
     }
     .form-group {
-      padding-bottom: 15px;
+      padding-bottom: 35px;
       label {
         margin-bottom: 15px;
       }
@@ -1012,6 +1024,8 @@ $color-10: #61a544;
   }
   address {
     padding-top: 20px;
+    font-size: 14px;
+    font-family: Lato;
   }
 }
 
