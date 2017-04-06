@@ -91,7 +91,7 @@ $color-10: #61a544;
       min-height: 21px;
       font-family: 'Lato';
       font-weight: normal;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       span.text-danger {
         font-size: 26px;
       }
@@ -576,7 +576,7 @@ $color-10: #61a544;
         }
       }
       &.not-applicable {
-        margin: 10px 0 0;
+        margin: 14px 0 0;
       }
     }
     .question {
@@ -612,7 +612,7 @@ $color-10: #61a544;
         display: block;
         overflow: auto;
         height: 60px;
-        font-family: LatoLight;
+        font-family: Lato;
         li {
           display: block;
           text-align: center;
@@ -996,12 +996,12 @@ $color-10: #61a544;
     .form-group {
       padding-bottom: 35px;
       label {
-        margin-bottom: 15px;
+        margin-bottom: 6px;
       }
       .range-slider {
         ul {
           padding: 0;
-          height: 40px;
+          height: 34px;
         }
       }
       .yes-no {
@@ -1018,14 +1018,16 @@ $color-10: #61a544;
   }
   address, .copyright {
     font-size: 13px;
-    color: #9b9b9b;
+    color: #ccc;
     text-align: center;
     font-family: LatoLight;
   }
   address {
     padding-top: 20px;
+    color: #9b9b9b;
     font-size: 14px;
     font-family: Lato;
+    font-weight: normal;
   }
 }
 
