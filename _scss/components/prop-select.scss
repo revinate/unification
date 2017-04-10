@@ -3,23 +3,25 @@
   background: #f6fbfe;
   border-radius: 3px;
   border: 1px solid #d8d8d8;
-  padding: 30px 10px 0;
+  padding: 20px 10px 0;
   margin: 15px;
   text-align: center;
   img {
     margin: 0 auto 10px;
   }
   span.is-group-account {
-    position: absolute;
-    top: 5px;
-    left: 0;
+    margin: 0 auto 10px;
     width: 100%;
     display: block;
     color: lighten(#444, 20%);
   }
   div.property-select-item-logo.no-logo {
-    width: 65px;
-    opacity: 0.3;
+    padding: 10px 20px;
+    i {
+      color: #ccc;
+      font-size: 35px;
+      width: auto;
+    }
   }
   .property-select-item-title {
     color: #444;
