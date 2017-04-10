@@ -6,13 +6,15 @@
   margin-bottom: 20px;
   margin-top: 10px;
   //min-height for marketing dashboard
-  min-height: 211px;
+  min-height: 227px;
 }
 
 .dashboard-widget-title {
   margin: 20px 10px 10px;
   font-size: 18px;
   @extend .FontLatoBold;
+  //min-height for marketing dashboard
+  height: 35px;
 }
 
 .dashboard-widget-metrics {
