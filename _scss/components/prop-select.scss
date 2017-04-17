@@ -16,17 +16,12 @@
     color: lighten(#444, 20%);
   }
   div.property-select-item-logo.no-logo {
-    // commenting out until updates to account selection page have been pushed
-   /* padding: 10px 20px;
+    padding: 10px 20px;
     i {
       color: #ccc;
       font-size: 35px;
       width: auto;
-    }*/
-    opacity: 0.5;
-    width: 90px;
-    height: 50px;
-    min-height: 0;
+    }
   }
   .property-select-item-title {
     color: #444;
