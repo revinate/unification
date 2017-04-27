@@ -173,6 +173,15 @@
         	}, 10000);
             return false;
 			});
+        $('#styleguide #principles.tab-pane .btn').on('click', function(){
+        	if ($(this).hasClass('active')) {
+
+			}
+			else {
+                $(this).parents('.btn-group').siblings().find('.btn').removeClass('active');
+                $(this).addClass('active');
+            }
+		});
 	});
 
 }());
