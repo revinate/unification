@@ -45,6 +45,10 @@ desc: "
 <br />
 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-backdrop="static" data-keyboard="false"  data-target="#alertModal">Modal with Alert
 </button>
+<br />
+<br />
+<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-backdrop="static" data-keyboard="false"  data-target="#overflowModal">Modal with Overflow
+</button>
 
 <!-- Small Modal One CTA -->
 <div id="smModal" class="modal fade" role="dialog">
@@ -265,6 +269,58 @@ desc: "
         <button type="button" class="btn btn-primary">Primary CTA
         </button>
        
+        <button type="button" class="btn btn-link" data-dismiss="modal">Cancel
+        </button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Overflow Modal has overflow body area-->
+<div id="overflowModal" class="modal modal-overflow fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Primary CTA
+        </button>
+
         <button type="button" class="btn btn-link" data-dismiss="modal">Cancel
         </button>
 

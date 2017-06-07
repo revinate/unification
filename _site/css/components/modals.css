@@ -1,1 +1,1 @@
-.modal-footer .btn{float:right;margin:0 0 0 15px}.modal-footer .btn.btn-delete{float:left;margin-left:0}
+.modal-footer .btn{float:right;margin:0 0 0 15px}.modal-footer .btn.btn-delete{float:left;margin-left:0}.modal.modal-overflow .modal-body{max-height:550px;overflow:scroll}

@@ -8,3 +8,10 @@
     }
   }
 }
+
+.modal.modal-overflow {
+  .modal-body {
+    max-height: 550px;
+    overflow: scroll;
+  }
+}

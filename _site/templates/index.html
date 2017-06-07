@@ -534,6 +534,10 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
 <br />
 <br />
 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#alertModal">Modal with Alert
+</button>
+<br />
+<br />
+<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#overflowModal">Modal with Overflow
 </button></p>
 
 <!-- Small Modal One CTA -->
@@ -755,6 +759,58 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
         <button type="button" class="btn btn-primary">Primary CTA
         </button>
        
+        <button type="button" class="btn btn-link" data-dismiss="modal">Cancel
+        </button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Overflow Modal has overflow body area-->
+<div id="overflowModal" class="modal modal-overflow fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Primary CTA
+        </button>
+
         <button type="button" class="btn btn-link" data-dismiss="modal">Cancel
         </button>
 
@@ -1022,7 +1078,63 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
 253
 254
 255
-256</pre></td><td class="code"><pre><span class="c">&lt;!-- Trigger the modal with a button --&gt;</span>
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312</pre></td><td class="code"><pre><span class="c">&lt;!-- Trigger the modal with a button --&gt;</span>
 <span class="nt">&lt;p&gt;&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-sm"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-backdrop=</span><span class="s">"static"</span> <span class="na">data-keyboard=</span><span class="s">"false"</span> <span class="na">data-target=</span><span class="s">"#smModal"</span><span class="nt">&gt;</span>Small Modal 1CTA
 <span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-sm"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-backdrop=</span><span class="s">"static"</span> <span class="na">data-keyboard=</span><span class="s">"false"</span> <span class="na">data-target=</span><span class="s">"#smModal2"</span><span class="nt">&gt;</span>Small Modal 2CTA
@@ -1050,6 +1162,10 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
 <span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-sm"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-backdrop=</span><span class="s">"static"</span> <span class="na">data-keyboard=</span><span class="s">"false"</span> <span class="na">data-target=</span><span class="s">"#alertModal"</span><span class="nt">&gt;</span>Modal with Alert
+<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-sm"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-backdrop=</span><span class="s">"static"</span> <span class="na">data-keyboard=</span><span class="s">"false"</span> <span class="na">data-target=</span><span class="s">"#overflowModal"</span><span class="nt">&gt;</span>Modal with Overflow
 <span class="nt">&lt;/button&gt;&lt;/p&gt;</span>
 
 <span class="c">&lt;!-- Small Modal One CTA --&gt;</span>
@@ -1271,6 +1387,58 @@ Everything inside follows the standard Bootstrap 12-column grid, using <code cla
         <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Primary CTA
         <span class="nt">&lt;/button&gt;</span>
        
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-link"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Cancel
+        <span class="nt">&lt;/button&gt;</span>
+
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- Overflow Modal has overflow body area--&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"overflowModal"</span> <span class="na">class=</span><span class="s">"modal modal-overflow fade"</span> <span class="na">role=</span><span class="s">"dialog"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Modal content--&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"modal-title"</span><span class="nt">&gt;</span>Modal Header<span class="nt">&lt;/h4&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some text in the modal.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Primary CTA
+        <span class="nt">&lt;/button&gt;</span>
+
         <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-link"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Cancel
         <span class="nt">&lt;/button&gt;</span>
 
