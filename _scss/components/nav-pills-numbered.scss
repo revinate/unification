@@ -27,7 +27,9 @@
     .fa {
       font-size: 20px;
       position: relative;
-      top: 3px;
+      top: 9px;
+      left: 0;
+      float: left;
     }
     &.active a {
       background-color: transparent !important;
