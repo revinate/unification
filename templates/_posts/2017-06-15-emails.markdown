@@ -1,0 +1,209 @@
+---
+layout: post
+title: "Emails"
+date: 2017-06-15 00:00:01
+desc: "
+- Basic Email Template uses Foundation by Zurb and should be inlined using their inliner.
+
+- nested tables should get also get a class of `.row`. They have been removed here because they conflict with bootstrap styles.
+"
+---
+
+<!-- Wrapper for the body of the email -->
+<table class="body" data-made-with-foundation style="border-spacing:0;border-collapse:collapse;vertical-align:top;background:#f3f3f3;height:100%;width:100%;color:#0a0a0a;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;font-family:'Lato', sans-serif;font-weight:400;">
+    <tr style="padding:0;vertical-align:top;text-align:left;">
+        <!-- The class, align, and <center> tag center the container -->
+        <td class="float-center" align="center" valign="top" style="word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;float:none;text-align:center;border-collapse:collapse !important;">
+            <center style="width:100%;min-width:580px;">
+                <!-- The content of your email goes here. -->
+                <table class="container" style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;background:#fefefe;width:580px !important;margin:0 auto;Margin:0 auto;text-align:inherit;">
+                    <tr style="padding:0;vertical-align:top;text-align:left;">
+                        <td style="word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;border-collapse:collapse !important;">
+                            <!-- HEADER -->
+                            <table class="header bg-blue" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;background:#0C223C;padding:0;width:100%;position:relative;display:table;">
+                                <tbody>
+                                <tr style="padding:0;vertical-align:top;text-align:left;">
+                                    <th class="small-12 first last columns " style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;padding-right:16px;padding-bottom:0 !important;">
+                                        <img alt="Revinate" class="rev-logo" width="125" height="60" src="https://img.revinate.com/image/upload/z7wkmfy8p8gervklibfa.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block;"></th>
+                                    <th class="expander" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;visibility:hidden;width:0;padding:0 !important;"></th>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!-- SPACER -->
+                            <table class="spacer" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;position:relative;width:100%;display:table;">
+                                <tbody>
+                                <tr style="padding:0;vertical-align:top;text-align:left;">
+                                    <th class="small-12 columns" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;height:20px;"></th>
+                                    <th class="expander" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;visibility:hidden;width:0;height:20px;padding:0 !important;"></th>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!-- BODY -->
+                            <table class="" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;width:100%;position:relative;display:table;">
+                                <tbody>
+                                <tr style="padding:0;vertical-align:top;text-align:left;">
+                                    <th class="small-12 first last columns text-salutation" style="color:#0a0a0a;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;font-family:'Lato', sans-serif;font-weight:700;font-size:14px;color:#064479;line-height:17px;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;padding-right:16px;">
+                                        {% if property.getIsLastNameFirst %}
+                                            Hello {{ invitee.getLastNameFirstFullName }},
+                                        {% else %}
+                                            Hello {{ invitee.getFullName }},
+                                        {% endif %}</th>
+                                    <th class="expander" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;visibility:hidden;width:0;padding:0 !important;"></th>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <table class="" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;width:100%;position:relative;display:table;">
+                                <tbody>
+                                <tr style="padding:0;vertical-align:top;text-align:left;">
+                                    <th class="small-12 first last columns body-text" style="color:#0a0a0a;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;font-family:'Lato', sans-serif;font-weight:400;font-size:14px;color:#0D243F;line-height:17px;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;padding-right:16px;">
+                                            You have been invited
+
+                                        to Revinate Marketing<sup style="line-height:0.3;">&trade;</sup> for <strong>{{ property.getName }}.</strong>
+                                    </th>
+                                    <th class="expander" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;visibility:hidden;width:0;padding:0 !important;"></th>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!-- SPACER -->
+                            <table class=" spacer" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;position:relative;width:100%;display:table;">
+                                <tbody>
+                                <tr style="padding:0;vertical-align:top;text-align:left;">
+                                    <th class="small-12 columns" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;height:20px;"></th>
+                                    <th class="expander" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;visibility:hidden;width:0;height:20px;padding:0 !important;"></th>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!-- BUTTON -->
+                            <table class="" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;width:100%;position:relative;display:table;">
+                                <tbody>
+                                <tr style="padding:0;vertical-align:top;text-align:left;">
+                                    <th class="small-12 large-6 large-offset-3 first last columns" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-bottom:16px;width:274px;padding-left:8px;padding-right:8px;padding-left:16px;padding-right:16px;padding-left:161px;">
+                                        <table class="button btn-primary small-expanded" style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:auto;margin:0 0 16px 0;Margin:0 0 16px 0;">
+                                            <tr style="padding:0;vertical-align:top;text-align:left;">
+                                                <td style="word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;border-collapse:collapse !important;">
+                                                    <table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+                                                        <tr style="padding:0;vertical-align:top;text-align:left;">
+                                                            <td style="word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;font-size:16px;line-height:1.3;text-align:left;color:#fefefe;background:#2199e8;border:2px solid #2199e8;background:#1CAADE;border:2px solid #1CAADE;padding:18px;border-collapse:collapse !important;">
+                                                                <center style="width:100%;min-width:580px;min-width:242px;"><a href="{{ joinLink }}" style="color:#0a0a0a;font-weight:400;margin:0;Margin:0;text-align:left;line-height:1.3;color:#2199e8;font-family:Helvetica, Arial, sans-serif;font-weight:bold;color:#fefefe;display:inline-block;padding:8px 16px 8px 16px;border:0 solid #2199e8;border-radius:3px;text-transform:uppercase;font-family:'Lato', sans-serif;font-weight:700;font-size:16px;line-height:19px;height:19px;padding:0;text-decoration:none;">Activate Your Account</a></center>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </th>
+                                    <th class="expander" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;visibility:hidden;width:0;padding:0 !important;"></th>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!-- SPACER -->
+                            <table class=" spacer" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;position:relative;width:100%;display:table;">
+                                <tbody>
+                                <tr style="padding:0;vertical-align:top;text-align:left;">
+                                    <th class="small-12 columns" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;height:20px;"></th>
+                                    <th class="expander" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;visibility:hidden;width:0;height:20px;padding:0 !important;"></th>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!-- HR -->
+                            <table class="" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;width:100%;position:relative;display:table;">
+                                <tbody>
+                                <tr style="padding:0;vertical-align:top;text-align:left;">
+                                    <th class="small-3 columns" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;"></th>
+                                    <th class="small-6 columns horizontal-rule" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;border-top:1px solid #979797;height:20px;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;"></th>
+                                    <th class="small-3 columns" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;"></th>
+                                    <th class="expander" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;visibility:hidden;width:0;padding:0 !important;"></th>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!-- SPACER -->
+                            <table class=" spacer" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;position:relative;width:100%;display:table;">
+                                <tbody>
+                                <tr style="padding:0;vertical-align:top;text-align:left;">
+                                    <th class="small-12 columns" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;height:20px;"></th>
+                                    <th class="expander" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;visibility:hidden;width:0;height:20px;padding:0 !important;"></th>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <table class="" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;width:100%;position:relative;display:table;">
+                                <tbody>
+                                <tr style="padding:0;vertical-align:top;text-align:left;">
+                                    <th class="small-12 first last columns body-text" style="color:#0a0a0a;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;font-family:'Lato', sans-serif;font-weight:400;font-size:14px;color:#0D243F;line-height:17px;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;padding-right:16px;">
+                                        <h3 style="color:#0a0a0a;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:inherit;word-wrap:normal;font-weight:700;margin-bottom:10px;Margin-bottom:10px;font-size:28px;font-family:'Lato', sans-serif;font-weight:900;font-size:14px;color:#0D243F;line-height:17px;margin-bottom:5px;">About Revinate Marketing<sup style="line-height:0.3;">&trade;</sup>
+                                        </h3>
+                                        Revinate Marketing<sup style="line-height:0.3;">&trade;</sup> allows you to send personalized email campaigns. You can:
+
+                                        <ul>
+                                            <li>increase direct bookings</li>
+                                            <li>promote upcoming events</li>
+                                            <li>increase revenue with pre-arrival upgrades</li>
+                                            <li>and more.</li>
+                                        </ul>
+                                        Learn more by viewing our <a href="https://revinate.desk.com/customer/en/portal/topics/891025-how-to-videos/articles?b_id=13850" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#2199e8;text-decoration:none;text-decoration:underline;color:#0D243F;">tutorials</a>, or signing up for a <a href="https://revinate.desk.com/customer/en/portal/articles/2792856-live-marketing-trainings?b_id=13851" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#2199e8;text-decoration:none;text-decoration:underline;color:#0D243F;">training webinar</a>.
+                                    </th>
+                                    <th class="expander" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;visibility:hidden;width:0;padding:0 !important;"></th>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!-- SPACER -->
+                            <table class=" spacer" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;position:relative;width:100%;display:table;">
+                                <tbody>
+                                <tr style="padding:0;vertical-align:top;text-align:left;">
+                                    <th class="small-12 columns" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;height:20px;"></th>
+                                    <th class="expander" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;visibility:hidden;width:0;height:20px;padding:0 !important;"></th>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <table class="" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;width:100%;position:relative;display:table;">
+                                <tbody>
+                                <tr style="padding:0;vertical-align:top;text-align:left;">
+                                    <th class="small-12 first last columns body-text" style="color:#0a0a0a;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;font-family:'Lato', sans-serif;font-weight:400;font-size:14px;color:#0D243F;line-height:17px;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;padding-right:16px;">
+                                        <h3 style="color:#0a0a0a;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:inherit;word-wrap:normal;font-weight:700;margin-bottom:10px;Margin-bottom:10px;font-size:28px;font-family:'Lato', sans-serif;font-weight:900;font-size:14px;color:#0D243F;line-height:17px;margin-bottom:5px;">Get inspired</h3>
+                                        Explore our <a href="https://learn.revinate.com/insiders-corner" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#2199e8;text-decoration:none;text-decoration:underline;color:#0D243F;">Insider’s Corner</a> for tips, email marketing best practices, and successful campaign ideas from other hotels.
+                                    </th>
+                                    <th class="expander" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;visibility:hidden;width:0;padding:0 !important;"></th>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!-- SPACER -->
+                            <table class=" spacer" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;position:relative;width:100%;display:table;">
+                                <tbody>
+                                <tr style="padding:0;vertical-align:top;text-align:left;">
+                                    <th class="small-12 columns" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;height:20px;"></th>
+                                    <th class="expander" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;visibility:hidden;width:0;height:20px;padding:0 !important;"></th>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!-- FOOT LINKS -->
+                            <table class=" foot-links" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;width:100%;position:relative;background:#0F1820;color:#ffffff;display:table;">
+                                <tbody>
+                                <tr style="padding:0;vertical-align:top;text-align:left;">
+                                    <th class="small-6 first columns top-link" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;border-right:2px solid #fff;border-bottom:2px solid #ffffff;background:#0F1820;color:#ffffff;width:50%;height:75px;vertical-align:middle;text-align:center;Padding:0;display:table-cell !important;padding:0 !important;"><a href="https://revinate.desk.com" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#2199e8;text-align:center;color:#ffffff;font-weight:300;font-size:14px;display:block;text-decoration:none;background:#0F1820 !important;">Help Desk</a></th>
+                                    <th class="small-6 last columns top-link" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;padding-right:16px;border-bottom:2px solid #ffffff;background:#0F1820;color:#ffffff;width:50%;height:75px;vertical-align:middle;text-align:center;Padding:0;display:table-cell !important;padding:0 !important;"><a href="https://learn.revinate.com/insiders-corner" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#2199e8;text-align:center;color:#ffffff;font-weight:300;font-size:14px;display:block;text-decoration:none;background:#0F1820 !important;">Best Practices</a></th>
+                                    <th class="expander" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;visibility:hidden;width:0;padding:0 !important;"></th>
+                                </tr>
+                                <tr style="padding:0;vertical-align:top;text-align:left;">
+                                    <th class="small-6 first columns" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;border-right:2px solid #fff;background:#0F1820;color:#ffffff;width:50%;height:75px;vertical-align:middle;text-align:center;Padding:0;display:table-cell !important;padding:0 !important;"><a href="https://revinate.desk.com/?b_id=13851" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#2199e8;text-align:center;color:#ffffff;font-weight:300;font-size:14px;display:block;text-decoration:none;background:#0F1820 !important;">Training<br/>Webinars</a></th>
+                                    <th class="small-6 last columns" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;padding-right:16px;background:#0F1820;color:#ffffff;width:50%;height:75px;vertical-align:middle;text-align:center;Padding:0;display:table-cell !important;padding:0 !important;"><a href="https://learn.revinate.com/blog" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#2199e8;text-align:center;color:#ffffff;font-weight:300;font-size:14px;display:block;text-decoration:none;background:#0F1820 !important;">Blog</a></th>
+                                    <th class="expander" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;visibility:hidden;width:0;padding:0 !important;"></th>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!-- FOOTER -->
+                            <table class=" footer" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;background:#0D243F;height:93px;color:#97A0AB;vertical-align:middle;padding:0;width:100%;position:relative;display:table;">
+                                <tbody>
+                                <tr style="padding:0;vertical-align:top;text-align:left;">
+                                    <th class="small-12 columns left right" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;background:#0D243F;height:93px;color:#97A0AB;vertical-align:middle;"><center style="width:100%;min-width:580px;">
+                                            <a href="http://www.revinate.com/terms/" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#2199e8;text-decoration:none;color:#97A0AB;line-height:93px;font-size:12px;">Terms</a> | <a href="http://www.revinate.com/privacy/" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#2199e8;text-decoration:none;color:#97A0AB;line-height:93px;font-size:12px;">Privacy</a> | <a href="https://www.revinate.com/company/about/" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#2199e8;text-decoration:none;color:#97A0AB;line-height:93px;font-size:12px;">About Us</a>
+                                        </center></th>
+                                    <th class="expander" style="color:#0a0a0a;font-family:'Lato', sans-serif;font-weight:400;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;visibility:hidden;width:0;background:#0D243F;height:93px;color:#97A0AB;vertical-align:middle;padding:0 !important;"></th>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+        </td>
+    </tr>
+</table>
