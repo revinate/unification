@@ -777,6 +777,7 @@ resources nav
   <li>ellipsis to go backward appears on page 4 of results</li>
   <li>first/last page number always displayed</li>
   <li>right/left carets advance to next page, and are always visible if more than one page of results, unless first or last page are selected, in which case that respective caret is not displayed</li>
+  <li>Segment card pagination - Show 12 segment cards as default, one button for <code class="highlighter-rouge">Show X More</code> and one for <code class="highlighter-rouge">Show All</code></li>
 </ul>
 </div>
         <nav>
@@ -933,6 +934,14 @@ resources nav
         </li>
   </ul>
 </nav>
+
+<h3>Segment Card Pagination</h3>
+<div class="row">
+    <div class="col-xs-12 text-center">
+        <button class="btn btn-secondary">Show 10 More</button>
+        <button class="btn btn-secondary">Show All</button>
+    </div>
+</div>
 
 <h3>Legacy Pagination</h3>
 <ul class="pagination legacy">
@@ -1103,7 +1112,15 @@ resources nav
 157
 158
 159
-160</pre></td><td class="code"><pre><span class="nt">&lt;nav&gt;</span>
+160
+161
+162
+163
+164
+165
+166
+167
+168</pre></td><td class="code"><pre><span class="nt">&lt;nav&gt;</span>
   <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination unified"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;</span>
@@ -1257,6 +1274,14 @@ resources nav
         <span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;/ul&gt;</span>
 <span class="nt">&lt;/nav&gt;</span>
+
+<span class="nt">&lt;h3&gt;</span>Segment Card Pagination<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 text-center"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>Show 10 More<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>Show All<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 
 <span class="nt">&lt;h3&gt;</span>Legacy Pagination<span class="nt">&lt;/h3&gt;</span>
 <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination legacy"</span><span class="nt">&gt;</span>

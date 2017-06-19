@@ -18,6 +18,8 @@ desc: "
 - first/last page number always displayed
 
 - right/left carets advance to next page, and are always visible if more than one page of results, unless first or last page are selected, in which case that respective caret is not displayed
+
+- Segment card pagination - Show 12 segment cards as default, one button for `Show X More` and one for `Show All`
 "
 ---
 
@@ -177,6 +179,14 @@ desc: "
         </li>
   </ul>
 </nav>
+
+<h3>Segment Card Pagination</h3>
+<div class="row">
+    <div class="col-xs-12 text-center">
+        <button class="btn btn-secondary">Show 10 More</button>
+        <button class="btn btn-secondary">Show All</button>
+    </div>
+</div>
 
 <h3>Legacy Pagination</h3>
 <ul class="pagination legacy">
