@@ -134,6 +134,9 @@
   color: #d7dbdd;
   padding: 7px 12px;
   text-transform: capitalize;
+  @media screen and (max-width: 1024px) {
+    font-size: 14px;
+  }
 
   @extend .FontLato;
   font-weight: normal;

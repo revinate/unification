@@ -13,9 +13,8 @@
   &:hover {
     background-color: transparent;
   }
-  @media (min-width: $screen-sm-min) {
+  @media (max-width: $screen-sm-min) {
     font-size: .95em;
-    line-height: 26px;
   }
 }
 
@@ -108,14 +107,17 @@
   height: 45px;
   letter-spacing: 0.15em;
   line-height: 50px;
-  @media (min-width: $screen-sm-min) {
-    height: 45px;
+  @media (max-width: $screen-sm-min) {
+    //height: 45px;
     line-height: 45px;
   }
   color: #d7dbdd;
   border: none;
   border-radius: 0;
   padding: 0 20px;
+  @media (max-width: 1020px) {
+    padding: 0 10px;
+  }
   transition: all 0.2s ease;
   &:active,
   &:focus {
@@ -281,12 +283,12 @@
 
 @media (max-width: 1020px) {
   .primary-menu.nav.nav-tabs > li.prop-selector {
-    max-width: 200px;
+    max-width: 130px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 730px) {
   .primary-menu.nav.nav-tabs > li.prop-selector {
-    max-width: 135px;
+    max-width: 85px;
   }
 }

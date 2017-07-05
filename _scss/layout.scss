@@ -10,6 +10,11 @@
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
   box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
   position: relative;
+  @media (max-width: 768px) {
+    .container {
+      width: auto;
+    }
+  }
 }
 
 .l-header-top {
@@ -29,6 +34,9 @@
   background-color: #42576a;
   font-family: Lato;
   position: relative;
+  @media screen and (max-width: 1024px) {
+    padding-top: 20px;
+  }
 }
 
 .l-main-content {
