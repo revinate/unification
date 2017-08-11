@@ -125,3 +125,7 @@ ul.multiselect-container {
 .btn-group.open .dropdown-toggle {
   box-shadow: none;
 }
+
+.bootstrap-select.btn-group .dropdown-menu {
+  z-index: 9999;
+}
