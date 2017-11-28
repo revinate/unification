@@ -52,7 +52,7 @@
   }
 }
 
-.panel-v2 {
+.panel-v2.panel-table {
   padding: 15px 0;
   border: none;
   box-shadow: none;
@@ -60,9 +60,14 @@
     padding: 10px 0;
   }
   .panel-heading {
+    background: #F0F0F0;
+    padding: 20px 15px;
     .Select {
       float: right;
       width: 200px;
     }
+  }
+  .panel-body {
+    padding-top: 0;
   }
 }

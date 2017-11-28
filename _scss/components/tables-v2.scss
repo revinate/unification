@@ -26,22 +26,31 @@ table.tables-v2 {
       text-align: right;
       transition: 0.2s background cubic-bezier(0.25, 0.1, 0.25, 1);
       button.header {
-        i.fa-arrow-up, i.fa-arrow-down {
+        i.iv2-arrow-down2 {
           color: #3BA1F8;
-          display: none;
+          display: inline-block;
+          visibility: hidden;
         }
         &.arrow-down {
           color: #000;
           font-weight: bold;
-          i.fa-arrow-down {
-            display: inline-block;
+          i.iv2-arrow-down2 {
+            visibility: visible;
           }
         }
         &.arrow-up {
           color: #000;
           font-weight: bold;
-          i.fa-arrow-up {
-            display: inline-block;
+          i.iv2-arrow-down2 {
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+            visibility: visible;
+          }
+        }
+        &:hover {
+          i.iv2-arrow-down2 {
+            visibility: visible;
+            transition: 0.2s background cubic-bezier(0.25, 0.1, 0.25, 1);
           }
         }
       }
@@ -102,6 +111,21 @@ table.tables-v2 {
       td {
         color: #FFF;
         padding: 16px;
+        .iv2-smile, .iv2-sad, .iv2-smile2, .iv2-sad2 {
+          font-size: 1.5em;
+          position: relative;
+          top: 2px;
+          padding: 0 4px 0 0;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        .iv2-sad2 {
+          color: #F55949;
+        }
+        .iv2-smile2 {
+          color: #83AD47;
+        }
       }
       &:hover td {
         background-color: inherit;
