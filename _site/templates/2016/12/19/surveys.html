@@ -1,0 +1,937 @@
+
+<!doctype html>
+    <head>
+    <link rel="stylesheet" href="/css/styledown.css" />
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /-->
+    <link rel="stylesheet" href="/css/app.css" />
+    <link rel="stylesheet" href="/libs/bootstrap-toggle/css/bootstrap-toggle.css" />
+    <link rel="stylesheet" href="/libs/nya-bootstrap-select/dist/css/nya-bs-select.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <style>
+        #sort tbody {
+            cursor: move;
+        }
+    </style>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    </head>
+<body>
+
+<div class="l-app" id="styleguide">
+    <header class="l-header navbar-fixed-top" style="position: fixed;">
+    <div class="l-header-top">
+        <div class="container">
+
+            <ul class="primary-menu nav nav-tabs" role="tablist">
+                <li class="primary-menu-item-logo primary-menu-item-text">
+              <span class="logo" title="Revinate">
+                <i class="revicon-rev-logo-2017"></i>
+              </span>
+                </li>
+                <li class="principles">
+                    <a href="/principles.html" role="tab">
+                        Principles
+                    </a>
+                </li>
+                <li class="style-guide active">
+                    <a href="/" role="tab">Style Guide</a>
+                </li>
+                <li class="resources">
+                    <a href="/resources.html" role="tab">
+                        Resources
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="l-header-bottom">
+        <div class="tab-content container">
+            <a class="btn btn-primary btn-header btn-circle pull-right mg-l-sm " href="/tickets/352" name="Tickets">
+                <i class="fa icon_tag fa-tags" data-toggle="tooltip" title="" data-original-title="Tickets">
+                </i>
+            </a>
+            <a class="btn btn-primary btn-header btn-circle pull-right mg-l-sm " href="/tickets/352" name="Tickets">
+                <i class="fa icon_tag fa-tags" data-toggle="tooltip" title="" data-original-title="Tickets">
+                </i>
+            </a>
+
+            <!-- principles tab content -->
+            <div role="tabpanel" class="tab-pane" id="principles">
+
+                <div class="btn-group mg-r-sm mg-b-md">
+                    <a type="button" class="btn btn-primary btn-header active" href="#design-principles">Design Principles</a>
+                </div>
+                <div class="btn-group mg-r-sm mg-b-md">
+                    <a type="button" class="btn btn-primary btn-header" href="#voice">Brand Voice</a>
+                </div>
+
+            </div>
+            <!-- style-guide tab content -->
+            <div role="tabpanel" class="tab-pane active" id="style-guide">
+                
+                
+                <div class="btn-group mg-r-sm mg-b-md">
+                    
+                    <button type="button" class="btn btn-primary btn-header dropdown-toggle" data-toggle="dropdown" aria-expanded="false">basics
+                        <i class="fa fa-caret-down mg-l-xs"></i>
+                    </button>
+                    
+                    <ul class="dropdown-menu" role="menu">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/basics/index.html#colors">Colors</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/basics/index.html#typography">Typography</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/basics/index.html#buttons">Buttons</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/basics/index.html#form-elements">Form Elements</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/basics/index.html#labels-badges">Labels & Badges</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/basics/index.html#tooltips">Tooltips</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/basics/index.html#translations">Translations</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </div>
+                
+                
+                <div class="btn-group mg-r-sm mg-b-md">
+                    
+                    <button type="button" class="btn btn-primary btn-header dropdown-toggle" data-toggle="dropdown" aria-expanded="false">components
+                        <i class="fa fa-caret-down mg-l-xs"></i>
+                    </button>
+                    
+                    <ul class="dropdown-menu" role="menu">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/components/index.html#breadcrumbs">Breadcrumbs</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/components/index.html#switches">Switches</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/components/index.html#alerts">Alerts</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/components/index.html#pagination">Pagination</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/components/index.html#charts">Charts</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/components/index.html#tables">Tables</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/components/index.html#form-components">Form Components</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </div>
+                
+                
+                <div class="btn-group mg-r-sm mg-b-md">
+                    
+                    <button type="button" class="btn btn-primary btn-header dropdown-toggle" data-toggle="dropdown" aria-expanded="false">modules
+                        <i class="fa fa-caret-down mg-l-xs"></i>
+                    </button>
+                    
+                    <ul class="dropdown-menu" role="menu">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/modules/index.html#collapse-accordion">Collapse/Accordion</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/modules/index.html#dashboard-widgets">Dashboard Widgets</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/modules/index.html#filter-bar">Filter Bar</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/modules/index.html#primary-menu">Primary Menu</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/modules/index.html#wizard-navigation">Wizard Navigation</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/modules/index.html#tertiary-navigation">Tertiary Navigation</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </div>
+                
+                
+                <div class="btn-group mg-r-sm mg-b-md">
+                    
+                    <button type="button" class="btn btn-primary btn-header dropdown-toggle" data-toggle="dropdown" aria-expanded="false">templates
+                        <i class="fa fa-caret-down mg-l-xs"></i>
+                    </button>
+                    
+                    <ul class="dropdown-menu" role="menu">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/templates/index.html#general-layout">General Layout</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/templates/index.html#modals">Modals</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/templates/index.html#surveys">Surveys</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/templates/index.html#emails">Emails</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </div>
+                
+
+
+            </div>
+
+            <!-- resources tab content -->
+            <div role="tabpanel" class="tab-pane" id="resources">
+
+resources nav
+
+            </div>
+
+        </div>
+    </div>
+</header>
+    <div class="global-alert-container">
+    </div>
+    <main class="l-main">
+        <div class="container" style="padding-top: 135px;">
+            <div class="l-main-content row pd-xl">
+
+
+
+                <div class="styleguide col-sm-12" ng-app="main">
+                    <div ng-controller="MainCtrl">
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Surveys</h1>
+    <p class="post-meta"><time datetime="2016-12-18T16:00:01-08:00" itemprop="datePublished">Dec 19, 2016</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <div class="unified-gfs">
+    <div class="row">
+        <header class="top-header">
+            <div class="col-sm-6 col-xs-12">
+                <h3>Avertine Hotel</h3>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+                <select class="selectpicker form-control pull-right language-selector">
+                    <option>English</option>
+                    <option>Spanish</option>
+                    <option>Japanese</option>
+                </select>  
+             </div>
+        </header>
+    </div>
+</div>
+<div class="mast-head-gfs">
+    <img src="https://img.revinate.com/image/upload/yigsfbuzbb0okk3hbdga.jpg" />
+</div>
+<div class="unified-gfs">
+    <div class="row">
+        <div class="col-xs-12 survey-title">
+            <h1>Please give us your feedback!</h1>
+            <p class="text-danger">*&nbsp;Required</p>
+        </div>
+        <div class="col-xs-12">
+            <div class="form-group nps required">
+                <label>How likely are you to recommend us?&nbsp;<span class="text-danger">*</span></label>
+                <p class="text-danger">Answer this question to proceed</p>
+                <div class="range-buttons r_range_buttons question mobile-hide">
+                    <ul>
+                        <li>
+                            <i class="fa fa-frown-o"></i>
+                        </li>
+                        <li>
+                            <div class="range-11-point value-0">0</div>
+                            <input class="r_nps_0" type="radio" value="0" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-11-point value-1">1</div>
+                            <input class="r_nps_1" type="radio" value="1" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-11-point value-2">2</div>
+                            <input class="r_nps_2" type="radio" value="2" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-11-point value-3">3</div>
+                            <input class="r_nps_3" type="radio" value="3" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-11-point value-4">4</div>
+                            <input class="r_nps_4" type="radio" value="4" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-11-point value-5">5</div>
+                            <input class="r_nps_5" type="radio" value="5" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-11-point value-6">6</div>
+                            <input class="r_nps_6" type="radio" value="6" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-11-point value-7">7</div>
+                            <input class="r_nps_7" type="radio" value="7" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-11-point value-8">8</div>
+                            <input class="r_nps_8" type="radio" value="8" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-11-point value-9">9</div>
+                            <input class="r_nps_9" type="radio" value="9" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-11-point value-10 selected">10</div>
+                            <input class="r_nps_10" type="radio" value="10" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <i class="fa fa-smile-o"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row mobile-show">
+                    <div class="col-xs-12">
+                        <div class="nps-slider range-slider">
+                            <ul><li>Select a score</li></ul>
+                            <input class="r_nps_slider r_range_slider" type="range" name="range_slider_ignore" min="0" max="10" value="" onclick="" />
+                            <div class="slider-values">
+                                <span class="min-val pull-left">0</span>
+                                <span class="max-val pull-right">10</span>
+                            </div>
+                            <div class="slider-values">
+                                <i class="fa fa-frown-o pull-left"></i>
+                                <i class="fa fa-smile-o pull-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="col-xs-12">
+            <h4 class="topic">Topic Title</h4>
+            </div>
+            <div class="col-xs-12">
+                <div class="form-group">
+                    <label>10-point range example</label>
+                    <div class="range-buttons r_range_buttons question mobile-hide">
+                        <ul>
+                            <li>
+                                <i class="fa fa-frown-o"></i>
+                            </li>
+                            <li>
+                                <div class="range-10-point value-0">1</div>
+                                <input class="r_nps_1" type="radio" value="1" name="question_range_10005" />
+                            </li>
+                            <li>
+                                <div class="range-10-point value-1">2</div>
+                                <input class="r_nps_2" type="radio" value="2" name="question_range_10005" />
+                            </li>
+                            <li>
+                                <div class="range-10-point value-2">3</div>
+                                <input class="r_nps_3" type="radio" value="3" name="question_range_10005" />
+                            </li>
+                            <li>
+                                <div class="range-10-point value-3">4</div>
+                                <input class="r_nps_4" type="radio" value="4" name="question_range_10005" />
+                            </li>
+                            <li>
+                                <div class="range-10-point value-4">5</div>
+                                <input class="r_nps_5" type="radio" value="5" name="question_range_10005" />
+                            </li>
+                            <li>
+                                <div class="range-10-point value-5">6</div>
+                                <input class="r_nps_6" type="radio" value="6" name="question_range_10005" />
+                            </li>
+                            <li>
+                                <div class="range-10-point value-6">7</div>
+                                <input class="r_nps_7" type="radio" value="7" name="question_range_10005" />
+                            </li>
+                            <li>
+                                <div class="range-10-point value-7">8</div>
+                                <input class="r_nps_8" type="radio" value="8" name="question_range_10005" />
+                            </li>
+                            <li>
+                                <div class="range-10-point value-8">9</div>
+                                <input class="r_nps_9" type="radio" value="9" name="question_range_10005" />
+                            </li>
+                            <li>
+                                <div class="range-10-point value-9">10</div>
+                                <input class="r_nps_10" type="radio" value="10" name="question_range_10005" />
+                            </li>
+                            <li>
+                                <i class="fa fa-smile-o"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row mobile-show">
+                        <div class="col-xs-12">
+                            <div class="nps-slider range-slider">
+                                <ul><li>Select a score</li></ul>
+                                <input class="r_range_slider" type="range" name="range_slider_ignore" min="1" max="10" value="" onclick="" />
+                                <div class="slider-values">
+                                    <span class="min-val pull-left">1</span>
+                                    <span class="max-val pull-right">10</span>
+                                </div>
+                                <div class="slider-values">
+                                    <i class="fa fa-frown-o pull-left"></i>
+                                    <i class="fa fa-smile-o pull-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="col-xs-12">
+        <h4 class="topic">Topic Title</h4>
+        </div>
+        <div class="col-xs-12">
+            <div class="form-group">
+                <label>9-point range example</label>
+                <div class="range-buttons r_range_buttons question mobile-hide">
+                    <ul>
+                        <li>
+                            <i class="fa fa-frown-o"></i>
+                        </li>
+                        <li>
+                            <div class="range-9-point value-0">1</div>
+                            <input class="r_nps_1" type="radio" value="1" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-9-point value-1">2</div>
+                            <input class="r_nps_2" type="radio" value="2" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-9-point value-2">3</div>
+                            <input class="r_nps_3" type="radio" value="3" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-9-point value-3">4</div>
+                            <input class="r_nps_4" type="radio" value="4" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-9-point value-4">5</div>
+                            <input class="r_nps_5" type="radio" value="5" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-9-point value-5">6</div>
+                            <input class="r_nps_6" type="radio" value="6" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-9-point value-6">7</div>
+                            <input class="r_nps_7" type="radio" value="7" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-9-point value-7">8</div>
+                            <input class="r_nps_8" type="radio" value="8" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-9-point value-8">9</div>
+                            <input class="r_nps_9" type="radio" value="9" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <i class="fa fa-smile-o"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row mobile-show">
+                    <div class="col-xs-12">
+                        <div class="nps-slider range-slider">
+                            <ul><li>Select a score</li></ul>
+                            <input class="r_range_slider" type="range" name="range_slider_ignore" min="1" max="9" value="" onclick="" />
+                            <div class="slider-values">
+                                <span class="min-val pull-left">1</span>
+                                <span class="max-val pull-right">9</span>
+                            </div>
+                            <div class="slider-values">
+                                <i class="fa fa-frown-o pull-left"></i>
+                                <i class="fa fa-smile-o pull-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>         
+        <div class="col-xs-12">
+            <div class="form-group">
+                <label>7-point range example</label>
+                <div class="range-buttons r_range_buttons question mobile-hide">
+                    <ul>
+                        <li>
+                            <i class="fa fa-frown-o"></i>
+                        </li>
+                        <li>
+                            <div class="range-7-point value-0">1</div>
+                            <input class="r_nps_1" type="radio" value="1" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-7-point value-1">2</div>
+                            <input class="r_nps_2" type="radio" value="2" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-7-point value-2">3</div>
+                            <input class="r_nps_3" type="radio" value="3" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-7-point value-3">4</div>
+                            <input class="r_nps_4" type="radio" value="4" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-7-point value-4">5</div>
+                            <input class="r_nps_5" type="radio" value="5" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-7-point value-5">6</div>
+                            <input class="r_nps_6" type="radio" value="6" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-7-point value-6">7</div>
+                            <input class="r_nps_7" type="radio" value="7" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <i class="fa fa-smile-o"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row mobile-show">
+                    <div class="col-xs-12">
+                        <div class="nps-slider range-slider">
+                            <ul><li>Select a score</li></ul>
+                            <input class="r_range_slider" type="range" name="range_slider_ignore" min="1" max="7" value="" onclick="" />
+                            <div class="slider-values">
+                                <span class="min-val pull-left">1</span>
+                                <span class="max-val pull-right">7</span>
+                            </div>
+                            <div class="slider-values">
+                                <i class="fa fa-frown-o pull-left"></i>
+                                <i class="fa fa-smile-o pull-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>         
+        <div class="col-xs-12">
+            <div class="form-group">
+                <label>5-point range example</label>
+                <div class="range-buttons r_range_buttons question mobile-hide">
+                    <ul>
+                        <li>
+                            <i class="fa fa-frown-o"></i>
+                        </li>
+                        <li>
+                            <div class="range-5-point value-0">1</div>
+                            <input class="r_nps_1" type="radio" value="1" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-5-point value-1">2</div>
+                            <input class="r_nps_2" type="radio" value="2" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-5-point value-2">3</div>
+                            <input class="r_nps_3" type="radio" value="3" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-5-point value-3">4</div>
+                            <input class="r_nps_4" type="radio" value="4" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-5-point value-4">5</div>
+                            <input class="r_nps_5" type="radio" value="5" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <i class="fa fa-smile-o"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row mobile-show">
+                    <div class="col-xs-12">
+                        <div class="nps-slider range-slider">
+                            <ul><li>Select a score</li></ul>
+                            <input class="r_range_slider" type="range" name="range_slider_ignore" min="1" max="5" value="" onclick="" />
+                            <div class="slider-values">
+                                <span class="min-val pull-left">1</span>
+                                <span class="max-val pull-right">5</span>
+                            </div>
+                            <div class="slider-values">
+                                <i class="fa fa-frown-o pull-left"></i>
+                                <i class="fa fa-smile-o pull-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="col-xs-12">
+             <div class="form-group">
+                 <label>4-point range example</label>
+                 <div class="range-buttons r_range_buttons question mobile-hide">
+                     <ul>
+                         <li>
+                             <i class="fa fa-frown-o"></i>
+                         </li>
+                         <li>
+                             <div class="range-4-point value-0">1</div>
+                             <input class="r_nps_1" type="radio" value="1" name="question_range_10005" />
+                         </li>
+                         <li>
+                             <div class="range-4-point value-1">2</div>
+                             <input class="r_nps_2" type="radio" value="2" name="question_range_10005" />
+                         </li>
+                         <li>
+                             <div class="range-4-point value-2">3</div>
+                             <input class="r_nps_3" type="radio" value="3" name="question_range_10005" />
+                         </li>
+                         <li>
+                             <div class="range-4-point value-3">4</div>
+                             <input class="r_nps_4" type="radio" value="4" name="question_range_10005" />
+                         </li>
+                         <li>
+                             <i class="fa fa-smile-o"></i>
+                         </li>
+                     </ul>
+                 </div>
+                 <div class="row mobile-show">
+                     <div class="col-xs-12">
+                         <div class="nps-slider range-slider">
+                             <ul><li>Select a score</li></ul>
+                             <input class="r_range_slider" type="range" name="range_slider_ignore" min="1" max="4" value="" onclick="" />
+                             <div class="slider-values">
+                                 <span class="min-val pull-left">1</span>
+                                 <span class="max-val pull-right">4</span>
+                             </div>
+                             <div class="slider-values">
+                                 <i class="fa fa-frown-o pull-left"></i>
+                                 <i class="fa fa-smile-o pull-right"></i>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+        <div class="col-xs-12">
+            <div class="form-group">
+                <label>3-point range example (disabled)</label>
+                <div class="range-buttons r_range_buttons question mobile-hide disabled">
+                    <ul>
+                        <li>
+                            <i class="fa fa-frown-o"></i>
+                        </li>
+                        <li>
+                            <div class="range-3-point value-0">1</div>
+                            <input class="r_nps_1" type="radio" value="1" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-3-point value-1">2</div>
+                            <input class="r_nps_2" type="radio" value="2" name="question_range_10005" />
+                        </li>
+                        <li>
+                            <div class="range-3-point value-2">3</div>
+                            <input class="r_nps_3" type="radio" value="3" name="question_range_10005" />
+                        </li>
+
+                        <li>
+                            <i class="fa fa-smile-o"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row mobile-show">
+                    <div class="col-xs-12">
+                        <div class="nps-slider range-slider disabled">
+                            <ul><li>Select a score</li></ul>
+                            <input class="r_range_slider" type="range" name="range_slider_ignore" min="1" max="3" value="" onclick="" disabled="" />
+                            <div class="slider-values">
+                                <span class="min-val pull-left">1</span>
+                                <span class="max-val pull-right">3</span>
+                            </div>
+                            <div class="slider-values">
+                                <i class="fa fa-frown-o pull-left"></i>
+                                <i class="fa fa-smile-o pull-right"></i>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="checkbox not-applicable r_not-applicable">
+                    <label><input type="checkbox" checked="" /> Not Applicable</label>
+                </div>
+            </div>
+        </div> 
+        <div class="col-xs-12">
+            <div class="form-group">
+                <label>We welcome your feedback, here is an example of a textarea</label>
+                <textarea class="form-control" rows="5" placeholder="Placeholder Text"></textarea>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="form-group">
+                <label>Yes or No Question</label>
+                <div class="row">
+                    <div class="question yes-no">
+                        <div class="col-sm-2 col-xs-6">
+                            <input type="radio" class="yes-no r_yes" name="radioyesno" style="display: none;" />
+                            <button class="btn btn-md btn-primary r_yes trigger">Yes</button>
+                        </div>
+                        <div class="col-sm-2 col-xs-6">
+                            <input type="radio" class="yes-no r_no" name="radioyesno" style="display: none;" />
+                            <button class="btn btn-md btn-default r_no trigger">No</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 conditional-question">
+            <div class="form-group panel panel-conditional">
+                <div class="panel-body">
+                    <label>Conditional checkbox questions</label>
+                    <div class="question">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" /> Option 1
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" /> Option 2
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" /> Option 3
+                            </label>
+                        </div>                     
+                    </div>
+                    <label>Conditional radio buttons</label>
+                    <div class="question">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="radio1" /> Option 1
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="radio1" /> Option 2
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="radio1" /> Option 3
+                            </label>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="form-group">
+                    <label>Regular checkbox questions</label>
+                    <div class="question">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" /> Option 1
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" /> Option 2
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" /> Option 3
+                            </label>
+                        </div>                     
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 col-xs-12">
+            <button class="btn btn-success btn-lg btn-block">Finish</button>
+        </div>
+        <div class="col-xs-12">
+            <p class="submit-help">By clicking "Next", I agree to the <a href="#">Terms &amp; Conditions</a> and the <a href="#">Privacy policy</a>.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <address>
+                <strong>Avertine International Las Vegas</strong><br />
+                Fashion Show Drive<br />Las Vegas, NV 89109
+            </address>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <p class="copyright text-center">&copy; 2017 Revinate, Inc.</p>
+        </div>
+    </div>
+</div>
+
+  </div>
+
+  
+</article>
+
+
+
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="l-footer pd-md">
+    <i class="revicon-rev-logo-2017"></i>
+</footer>
+</div>
+
+<script src="/libs/jquery/dist/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="/libs/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
+<script src="/libs/angular/angular.min.js"></script>
+<script src="/libs/bootstrap-daterangepicker/moment.js"></script>
+<script src="/libs/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="/libs/bootstrap-daterangepicker/daterangepicker-angular.js"></script>
+<script src="/libs/angular-strap/dist/angular-strap.min.js"></script>
+<script src="/libs/angular-strap/dist/angular-strap.tpl.min.js"></script>
+<script src="/libs/jquery-datatables/js/jquery.dataTables.js"></script>
+<script src="/libs/angular-datatables/angular-datatables/dist/angular-datatables.min.js"></script>
+<script src="/libs/angular-datatables/angular-datatables/dist/plugins/bootstrap/angular-datatables.bootstrap.min.js"></script>
+<script src="/js/angular/styleguide.js"></script>
+<script src="/js/angular/rev-ng-switch.js"></script>
+<script src="/js/rev-jq-switch.js"></script>
+<script src="/libs/bootstrap-toggle/js/bootstrap-toggle.js"></script>
+<script src="/libs/bootstrap-select/js/bootstrap-select.js"></script>
+<script src="/libs/nya-bootstrap-select/dist/js/nya-bs-select.js"></script>
+<script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
+<script src="/js/main.js"></script>
+
+<script type="text/javascript" src="/js/bundle.js"></script>
+
+</body>
+</html>

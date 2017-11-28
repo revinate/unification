@@ -1,0 +1,633 @@
+
+<!doctype html>
+    <head>
+    <link rel="stylesheet" href="/css/styledown.css" />
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /-->
+    <link rel="stylesheet" href="/css/app.css" />
+    <link rel="stylesheet" href="/libs/bootstrap-toggle/css/bootstrap-toggle.css" />
+    <link rel="stylesheet" href="/libs/nya-bootstrap-select/dist/css/nya-bs-select.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <style>
+        #sort tbody {
+            cursor: move;
+        }
+    </style>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    </head>
+<body>
+
+<div class="l-app" id="styleguide">
+    <header class="l-header navbar-fixed-top" style="position: fixed;">
+    <div class="l-header-top">
+        <div class="container">
+
+            <ul class="primary-menu nav nav-tabs" role="tablist">
+                <li class="primary-menu-item-logo primary-menu-item-text">
+              <span class="logo" title="Revinate">
+                <i class="revicon-rev-logo-2017"></i>
+              </span>
+                </li>
+                <li class="principles">
+                    <a href="/principles.html" role="tab">
+                        Principles
+                    </a>
+                </li>
+                <li class="style-guide active">
+                    <a href="/" role="tab">Style Guide</a>
+                </li>
+                <li class="resources">
+                    <a href="/resources.html" role="tab">
+                        Resources
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="l-header-bottom">
+        <div class="tab-content container">
+            <a class="btn btn-primary btn-header btn-circle pull-right mg-l-sm " href="/tickets/352" name="Tickets">
+                <i class="fa icon_tag fa-tags" data-toggle="tooltip" title="" data-original-title="Tickets">
+                </i>
+            </a>
+            <a class="btn btn-primary btn-header btn-circle pull-right mg-l-sm " href="/tickets/352" name="Tickets">
+                <i class="fa icon_tag fa-tags" data-toggle="tooltip" title="" data-original-title="Tickets">
+                </i>
+            </a>
+
+            <!-- principles tab content -->
+            <div role="tabpanel" class="tab-pane" id="principles">
+
+                <div class="btn-group mg-r-sm mg-b-md">
+                    <a type="button" class="btn btn-primary btn-header active" href="#design-principles">Design Principles</a>
+                </div>
+                <div class="btn-group mg-r-sm mg-b-md">
+                    <a type="button" class="btn btn-primary btn-header" href="#voice">Brand Voice</a>
+                </div>
+
+            </div>
+            <!-- style-guide tab content -->
+            <div role="tabpanel" class="tab-pane active" id="style-guide">
+                
+                
+                <div class="btn-group mg-r-sm mg-b-md">
+                    
+                    <button type="button" class="btn btn-primary btn-header dropdown-toggle" data-toggle="dropdown" aria-expanded="false">basics
+                        <i class="fa fa-caret-down mg-l-xs"></i>
+                    </button>
+                    
+                    <ul class="dropdown-menu" role="menu">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/basics/index.html#colors">Colors</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/basics/index.html#typography">Typography</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/basics/index.html#buttons">Buttons</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/basics/index.html#form-elements">Form Elements</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/basics/index.html#labels-badges">Labels & Badges</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/basics/index.html#tooltips">Tooltips</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/basics/index.html#translations">Translations</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </div>
+                
+                
+                <div class="btn-group mg-r-sm mg-b-md">
+                    
+                    <button type="button" class="btn btn-primary btn-header dropdown-toggle" data-toggle="dropdown" aria-expanded="false">components
+                        <i class="fa fa-caret-down mg-l-xs"></i>
+                    </button>
+                    
+                    <ul class="dropdown-menu" role="menu">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/components/index.html#breadcrumbs">Breadcrumbs</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/components/index.html#switches">Switches</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/components/index.html#alerts">Alerts</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/components/index.html#pagination">Pagination</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/components/index.html#charts">Charts</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/components/index.html#tables">Tables</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/components/index.html#form-components">Form Components</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </div>
+                
+                
+                <div class="btn-group mg-r-sm mg-b-md">
+                    
+                    <button type="button" class="btn btn-primary btn-header dropdown-toggle" data-toggle="dropdown" aria-expanded="false">modules
+                        <i class="fa fa-caret-down mg-l-xs"></i>
+                    </button>
+                    
+                    <ul class="dropdown-menu" role="menu">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/modules/index.html#collapse-accordion">Collapse/Accordion</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/modules/index.html#dashboard-widgets">Dashboard Widgets</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/modules/index.html#filter-bar">Filter Bar</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/modules/index.html#primary-menu">Primary Menu</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/modules/index.html#wizard-navigation">Wizard Navigation</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/modules/index.html#tertiary-navigation">Tertiary Navigation</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </div>
+                
+                
+                <div class="btn-group mg-r-sm mg-b-md">
+                    
+                    <button type="button" class="btn btn-primary btn-header dropdown-toggle" data-toggle="dropdown" aria-expanded="false">templates
+                        <i class="fa fa-caret-down mg-l-xs"></i>
+                    </button>
+                    
+                    <ul class="dropdown-menu" role="menu">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/templates/index.html#general-layout">General Layout</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/templates/index.html#modals">Modals</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/templates/index.html#surveys">Surveys</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/templates/index.html#emails">Emails</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </div>
+                
+
+
+            </div>
+
+            <!-- resources tab content -->
+            <div role="tabpanel" class="tab-pane" id="resources">
+
+resources nav
+
+            </div>
+
+        </div>
+    </div>
+</header>
+    <div class="global-alert-container">
+    </div>
+    <main class="l-main">
+        <div class="container" style="padding-top: 135px;">
+            <div class="l-main-content row pd-xl">
+
+
+
+                <div class="styleguide col-sm-12" ng-app="main">
+                    <div ng-controller="MainCtrl">
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Buttons</h1>
+    <p class="post-meta"><time datetime="2016-09-01T17:00:02-07:00" itemprop="datePublished">Sep 2, 2016</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>Generally, use a button to indicate taking action on a piece of data, e.g. creating a ticket, uploading a guest list, or sending a notification email. Buttons can also be used to delete data, cancel an operation, or open a modal (a modal that creates a piece of data, not just something informational).</p>
+
+<p>Do not use buttons where a text link would suffice, such as to link to another page or display informational content.</p>
+
+<div class="row">
+    <div class="col-sm-6">
+    <h3>Primary Buttons</h3>
+    <div class="row mg-t-xl">
+    <div class="col-xs-3 text-center">
+        <button class="btn btn-primary">Primary</button>
+        <br />
+        <small><strong>DEFAULT</strong></small>
+        <button class="btn btn-primary disabled mg-t-md">Primary</button>
+        <br />
+        <small><strong>INACTIVE</strong></small>
+    </div>
+    <div class="col-xs-9">
+        <p>Primary buttons indicate the most important action on a page, such as creating a new report or a new campaign. </p>
+   
+        <p>Generally, there should be only one Primary button per screen. In rare occasions, there may be multiple Primary buttons on a page (one per section, for example) but this should be the exception.</p>
+    </div>
+    </div>
+    
+    </div>
+    <div class="col-sm-6">
+    <h3>Default Buttons - for Sizing Only</h3>
+        <div class="row">
+        <div class="col-xs-3">
+            <button class="btn btn-xs btn-default">XSmall</button>
+            <button class="btn btn-sm btn-default mg-t-md">Small</button>
+            <button class="btn btn-default mg-t-md">Default</button>
+            <button class="btn btn-lg btn-default mg-t-md">Large</button>
+        </div>
+        <div class="col-xs-9">
+            <p>Use this section as a guideline for sizing only — not for color.</p>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="row mg-t-xl">
+    <div class="col-sm-6">
+    <h3>Secondary Buttons</h3>
+        <div class="row">
+        <div class="col-xs-3 text-center">
+            <button class="btn btn-secondary">Secondary</button>
+        <br />
+            <small><strong>DEFAULT</strong></small>
+                <button class="btn btn-secondary disabled mg-t-md">Secondary</button>
+        <br />
+                <small><strong>INACTIVE</strong></small>
+        </div>
+        <div class="col-xs-9">
+            <p>Secondary buttons indicate secondary — but important — action(s) in a page or section.</p>
+        </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+    <h3>Tertiary Buttons</h3>
+        <div class="row">
+        <div class="col-xs-3 text-center">
+            <button class="btn btn-link">Tertiary</button>
+        <br />
+            <small><strong>DEFAULT</strong></small>
+                <button class="btn btn-link disabled mg-t-md">Tertiary</button>
+        <br />
+                <small><strong>INACTIVE</strong></small>
+        </div>
+        <div class="col-xs-9">
+            <p>Tertiary buttons indicate less important action(s) in a page or section. For example, this could indicate cancelling a workflow in progress (e.g. cancelling a guest list upload, inside of a modal).</p>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="row mg-t-xl">
+    <div class="col-sm-6">
+    <h3>Internal Use Buttons</h3>
+        <div class="row">
+        <div class="col-xs-5">
+            <button class="btn btn-internal-primary">Internal Use - Primary</button>
+
+                <button class="btn btn-internal-secondary mg-t-md">Internal Use - Secondary</button>
+
+        </div>
+        <div class="col-xs-7">
+            <p>Internal use buttons indicate actions that only Revinate staff can take. These buttons are intentionally different so that Revinators can better aid customers in troubleshooting.</p>
+        </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+    <h3>Page-Level Buttons</h3>
+        <div class="row">
+        <div class="col-xs-3">
+            <ul class="global-actions-nav">
+              <li class="btn btn-circle btn-xs btn-default-secondary mg-r-xs" data-toggle="tooltip" data-placement="bottom" title="" style="float: left" data-original-title="Print">
+                <a href="#">
+                  <i class="fa fa-print"></i>
+                </a>
+              </li>
+              <li class="btn btn-circle btn-xs btn-default-secondary mg-r-xs" data-toggle="tooltip" data-placement="bottom" title="" style="float: left" data-original-title="Share">
+                <a href="#">
+                  <i class="fa fa-share-square-o"></i>
+                </a>
+              </li>
+              <li class="btn btn-circle btn-xs btn-default-secondary mg-r-xs" data-toggle="tooltip" data-placement="bottom" title="" style="float: left" data-original-title="Export to CSV">
+                <a href="#">
+                  <i class="fa fa-file-text-o"></i>
+                </a>
+              </li>
+              <li class="btn btn-circle btn-xs btn-default-secondary mg-r-xs" data-toggle="tooltip" data-placement="bottom" title="" style="float: left" data-original-title="Export to PDF">
+                <a href="#">
+                  <i class="fa fa-file-pdf-o"></i>
+                </a>
+              </li>
+            </ul>
+        </div>
+        <div class="col-xs-9">
+            <p>Page-level buttons indicate actions that affect the entire page, e.g. printing, exporting, or sharing.</p> 
+            <p>They should only appear once per page, and always with an explanatory tooltip.</p>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mg-t-xl">
+    <div class="col-xs-12">
+        <h2>Buttons for Card Layouts</h2>
+        <p>These buttons are used in places where we have card-based layouts (e.g. All Reviews, All Surveys), where each card may have a primary action as well as multiple secondary / tertiary actions. Only use these buttons in card-based layouts.</p>
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>Card Primary Buttons</h3>
+                <div class="row mg-t-xl">
+                    <div class="col-xs-5">
+                        <div class="actions-buttons">
+                            <button class="btn btn-primary btn-rounded">Review Action</button>
+                            <small><strong>DEFAULT</strong></small><br />
+                            <button class="btn btn-primary btn-rounded disabled">Review Action</button>
+                            <small><strong>INACTIVE</strong></small>
+                        </div>
+                    </div>
+                    <div class="col-xs-7">
+                        <p>In a card-based layout, Card Primary buttons indicate the most important action in a card, e.g. responding to a review.</p>
+                        <p>If a card has any actions associated with it, there should be one action designated as primary. There should be only one Primary button per card.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <h3>Card Tertiary Buttons / Menu</h3>
+                <div class="row mg-t-xl">
+                    <div class="col-xs-5">
+                        <div class="actions-buttons">
+                             <div class="btn-group">
+                                <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">More Actions
+                                    <i class="fa fa-angle-down"></i>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="#">action 1</a>
+                                    </li>
+                                    <li>
+                                    <a href="#">action 2</a>
+                                    </li>
+                                    <li>
+                                    <a href="#">action 3</a>
+                                    </li>
+                                    <li>
+                                    <a href="#">action 4</a>
+                                    </li>
+                                </ul>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-7">
+                        <p>In a card-based layout, if there are more than three secondary actions to take on a card, the least important should become part of a “More Actions” menu.</p>
+                           
+                         <p>If there are Revinate-internal actions as part of this menu, the item(s) in question should have text the same color as the Internal Only buttons.</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <div class="row mg-t-xl">
+            <div class="col-sm-6">
+                <h3>Card Secondary Buttons</h3>
+                <div class="row mg-t-xl">
+                    <div class="col-xs-5">
+                        <div class="actions-buttons">
+                            <button class="btn btn-secondary btn-rounded"><i class="fa fa-star button-icon"></i> Secondary Action</button>
+                            <small><strong>DEFAULT</strong></small><br />
+                            <button class="btn btn-secondary btn-rounded disabled"><i class="fa fa-star button-icon"></i> Secondary Action</button>
+                            <small><strong>INACTIVE</strong></small><br />
+                            <button class="btn btn-action-taken btn-rounded"><i class="fa fa-star button-icon"></i> Action Done</button>
+                            <small><strong>ACTIVATED</strong></small><br />
+                        </div>
+                    </div>
+                    <div class="col-xs-7">
+                        <p>In a card-based layout, Card Secondary buttons indicate additional action(s) to take on a card, such as creating a ticket associated with a review.</p>
+                        <p>These buttons may have an icon associated with them. If there is an icon, the icon should be left-aligned, with the button label center-aligned.</p>
+                        <p>Activated buttons indicate that an action suggested by a secondary button has already taken place.</p>
+                        <p>For example: TRANSLATE becomes SHOW ORIGINAL SAVE REVIEW becomes UNSAVE REVIEW CREATE A TICKET becomes VIEW TICKET</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mg-t-xl">
+    <div class="col-xs-12">
+        <h2>Deprecated Buttons</h2>
+        <p>These buttons are listed here for historical reference, but should not be used in new development, and will be phased out over time.</p>
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>Info Buttons</h3>
+                <div class="row mg-t-xl">
+                    <div class="col-xs-3">
+                        <button class="btn btn-info">Info</button>
+                        <button class="btn btn-info disabled mg-t-md">Info</button>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>Info buttons used to indicate informational or other secondary content.</p>
+                        <p>They will be replaced with either secondary buttons or interactions more suitable for informational content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <h3>Danger Buttons</h3>
+                <div class="row mg-t-xl">
+                    <div class="col-xs-3">
+                        <button class="btn btn-danger">Danger</button>
+                        <button class="btn btn-danger disabled mg-t-md">Danger</button>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>Danger buttons used to indicate potentially dangerous operations, e.g. deleting an email campaign that has already been sent.</p>
+                        <p>These are deprecated in favor of creating workflows and interfaces that don’t require them.</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <div class="row mg-t-xl">
+            <div class="col-sm-6">
+                <h3>Delete Buttons</h3>
+                <div class="row mg-t-xl">
+                    <div class="col-xs-3">
+                        <button class="btn btn-delte">Delete</button>
+                        <button class="btn btn-delete disabled mg-t-md">Delete</button>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>Delete buttons used to be used to indicate a Delete action, as opposed to the Primary button for a Create action.</p>
+                        <p>These are deprecated in favor of creating workflows where the Delete action is either a clear primary action (in which case we use the Primary button), or is a tertiary action with equal weight.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  </div>
+
+  
+</article>
+
+
+
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="l-footer pd-md">
+    <i class="revicon-rev-logo-2017"></i>
+</footer>
+</div>
+
+<script src="/libs/jquery/dist/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="/libs/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
+<script src="/libs/angular/angular.min.js"></script>
+<script src="/libs/bootstrap-daterangepicker/moment.js"></script>
+<script src="/libs/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="/libs/bootstrap-daterangepicker/daterangepicker-angular.js"></script>
+<script src="/libs/angular-strap/dist/angular-strap.min.js"></script>
+<script src="/libs/angular-strap/dist/angular-strap.tpl.min.js"></script>
+<script src="/libs/jquery-datatables/js/jquery.dataTables.js"></script>
+<script src="/libs/angular-datatables/angular-datatables/dist/angular-datatables.min.js"></script>
+<script src="/libs/angular-datatables/angular-datatables/dist/plugins/bootstrap/angular-datatables.bootstrap.min.js"></script>
+<script src="/js/angular/styleguide.js"></script>
+<script src="/js/angular/rev-ng-switch.js"></script>
+<script src="/js/rev-jq-switch.js"></script>
+<script src="/libs/bootstrap-toggle/js/bootstrap-toggle.js"></script>
+<script src="/libs/bootstrap-select/js/bootstrap-select.js"></script>
+<script src="/libs/nya-bootstrap-select/dist/js/nya-bs-select.js"></script>
+<script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
+<script src="/js/main.js"></script>
+
+<script type="text/javascript" src="/js/bundle.js"></script>
+
+</body>
+</html>

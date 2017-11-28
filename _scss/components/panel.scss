@@ -51,3 +51,18 @@
     padding: 30px;
   }
 }
+
+.panel-v2 {
+  padding: 15px 0;
+  border: none;
+  box-shadow: none;
+  .panel-heading, .panel-body {
+    padding: 10px 0;
+  }
+  .panel-heading {
+    .Select {
+      float: right;
+      width: 200px;
+    }
+  }
+}

@@ -13,4 +13,5 @@ import MySelect from './components/reactMultiSelectTypeahead';
 
 ReactDOM.render(<ReactDateRangePicker />, document.getElementById('reactDatePicker'));
 ReactDOM.render(<MySelect multi={true}/>, document.getElementById('reactSelectExample'));
+ReactDOM.render(<MySelect multi={true}/>, document.getElementById('reactSelectExample2'));
 

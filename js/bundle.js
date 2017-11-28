@@ -70560,6 +70560,7 @@ var ReactDOM = __webpack_require__(20);
 
 ReactDOM.render(React.createElement(_reactDatepicker2.default, null), document.getElementById('reactDatePicker'));
 ReactDOM.render(React.createElement(_reactMultiSelectTypeahead2.default, { multi: true }), document.getElementById('reactSelectExample'));
+ReactDOM.render(React.createElement(_reactMultiSelectTypeahead2.default, { multi: true }), document.getElementById('reactSelectExample2'));
 
 /***/ })
 /******/ ]);
