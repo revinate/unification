@@ -44,6 +44,8 @@ desc: "
 - Add as a dependency of your angular module `angular.module('mymodule', ['datatables', 'datatables.bootstrap']);`
 
 - Refer to [http://l-lin.github.io/angular-datatables/#/welcome](http://l-lin.github.io/angular-datatables/#/welcome) for instructions on configuration and extensions
+
+**2018 Table**
 "
 ---
 
@@ -330,3 +332,47 @@ desc: "
 </table>
 </div>
 </div>
+
+<table class="tables-v2">
+  <thead>
+    <tr>
+      <th scope="col"><button class="header">Property  <i class="fa fa-arrow-up"></i><i class="fa fa-arrow-down"></i></button></th>
+      <th scope="col"><button class="header arrow-down">Sent Date  <i class="fa fa-arrow-up"></i><i class="fa fa-arrow-down"></i></button></th>
+      <th scope="col"><button class="header">Revenue  <i class="fa fa-arrow-up"></i><i class="fa fa-arrow-down"></i></button></th>
+      <th scope="col"><button class="header">Unsubscribe %  <i class="fa fa-arrow-up"></i><i class="fa fa-arrow-down"></i></button></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="avg">
+      <td data-label="Property">BRAND AVERAGE</td>
+      <td data-label="Sent Date">&mdash;</td>
+      <td data-label="Revenue">$2,100</td>
+      <td data-label="Unsubscribe">1.7%</td>
+    </tr>
+    <tr>
+      <td data-label="Property"><a href="">Avertine New York</a></td>
+      <td data-label="Sent Date">04/01/2016</td>
+      <td data-label="Revenue"><span class="avg above">$1,190</span></td>
+      <td data-label="Unsubscribe"><span class="avg above">1.2%</span></td>
+    </tr>
+    <tr>
+      <td scope="row" data-label="Property"><a href="">Avertine Miami</a></td>
+      <td data-label="Sent Date">03/01/2016</td>
+      <td data-label="Revenue"><span class="avg below">$2,443</span></td>
+      <td data-label="Unsubscribe"><span class="avg below">1.8%</span></td>
+    </tr>
+    <tr>
+      <td scope="row" data-label="Property"><a href="">Avertine Paris</a></td>
+      <td data-label="Sent Date">03/01/2016</td>
+      <td data-label="Revenue"><span class="avg below">$1,181</span></td>
+      <td data-label="Unsubscribe"><span class="avg below">2.4%</span></td>
+    </tr>
+    <tr>
+      <td scope="row" data-label="Property"><a href="">Avertine Inn</a></td>
+      <td data-label="Sent Date">02/01/2016</td>
+      <td data-label="Revenue"><span class="avg below">$842</span></td>
+      <td data-label="Unsubscribe"><span class="avg above">0.8%</span></td>
+    </tr>
+  </tbody>
+</table>
+

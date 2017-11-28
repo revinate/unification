@@ -1,0 +1,132 @@
+
+table.tables-v2 {
+  border: none;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  line-height: 1em;
+  a {
+    text-decoration: none;
+    color: #3BA1F8;
+  }
+  caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  tr {
+    background: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    padding: .3em;
+    th, td {
+      padding: 1em;
+      text-align: right;
+      transition: 0.2s background cubic-bezier(0.25, 0.1, 0.25, 1);
+      button.header {
+        i.fa-arrow-up, i.fa-arrow-down {
+          color: #3BA1F8;
+          display: none;
+        }
+        &.arrow-down {
+          color: #000;
+          font-weight: bold;
+          i.fa-arrow-down {
+            display: inline-block;
+          }
+        }
+        &.arrow-up {
+          color: #000;
+          font-weight: bold;
+          i.fa-arrow-up {
+            display: inline-block;
+          }
+        }
+      }
+
+    }
+    th {
+      font-size: .65em;
+      text-transform: uppercase;
+      background-color: #FFF;
+      font-weight: normal;
+      border-top: 1px solid #ddd;
+      padding: 16px;
+      letter-spacing: 0.1em;
+      a, button.header {
+        border: none;
+        outline: none;
+        text-transform: uppercase;
+        background-color: #FFF;
+        font-weight: normal;
+        letter-spacing: 0.1em;
+        color: #888;
+        transition: 0.2s color cubic-bezier(0.25,0.1,0.25,1);
+        &:hover {
+          color: #000;
+          font-weight: bold;
+        }
+      }
+    }
+    td {
+      color:#444;
+      font-size:0.8em;
+      .avg {
+        padding:5px;
+        border-radius:3px;
+        color:#FFF;
+        &.below {
+          background-color:#F55949;
+        }
+        &.above{
+          background-color:#83AD47;
+        }
+      }
+    }
+    &:hover td {
+      background-color:#eee;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      cursor: pointer;
+      &:first-child {
+        border-left:1px solid #ccc;
+      }
+      &:last-child {
+        border-right:1px solid #ccc;
+      }
+    }
+    &.avg{
+      background: #444;
+      td {
+        color: #FFF;
+        padding: 16px;
+      }
+      &:hover td {
+        background-color: inherit;
+        opacity: 1.0;
+        cursor: default;
+      }
+    }
+    td:first-child,
+    th:first-child {
+      text-align: left;
+    }
+    &:nth-child(even) {
+    background-color: #FFF;
+    }
+    td:first-child {
+      border-left:1px solid transparent;
+    }
+    td:last-child {
+      border-right:1px solid transparent;
+    }
+  }
+  // for POC purposes only
+  tr, tr.avg {
+    td[data-label="Sent Date"] {
+      font-weight: bold;
+    }
+  }
+}
