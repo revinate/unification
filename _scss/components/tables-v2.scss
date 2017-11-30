@@ -26,14 +26,21 @@ table.tables-v2 {
       text-align: right;
       transition: 0.2s background cubic-bezier(0.25, 0.1, 0.25, 1);
       button.header {
+        padding: 0;
+        position: relative;
         i.iv2-arrow-down2 {
           color: #3BA1F8;
           display: inline-block;
           visibility: hidden;
+          position: absolute;
+          top: 50%;
+          right: -12px;
+          margin-top: -5px;
         }
         &.arrow-down {
           color: #000;
           font-weight: bold;
+          padding: 0;
           i.iv2-arrow-down2 {
             visibility: visible;
           }
