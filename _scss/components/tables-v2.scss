@@ -130,6 +130,9 @@ table.tables-v2 {
             cursor: pointer;
           }
         }
+        &:first-child {
+          white-space: nowrap;
+        }
         .iv2-sad2 {
           color: #F55949;
         }
