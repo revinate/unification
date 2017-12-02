@@ -71,7 +71,7 @@ table.tables-v2 {
       font-weight: normal;
       border-top: 1px solid #ddd;
       padding: 16px;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.1em;  
       a, button.header {
         border: none;
         outline: none;
@@ -133,13 +133,26 @@ table.tables-v2 {
           }
         }
         &:first-child {
-          white-space: nowrap;
+          position: relative;
+          padding-left: 60px;
         }
         .iv2-sad2 {
           color: #F55949;
         }
         .iv2-smile2 {
           color: #83AD47;
+        }
+        .iv2-smile, .iv2-smile2 {
+          position: absolute;
+          left: 10px;
+          top: 50%;
+          margin-top: -10px;
+        }
+        .iv2-sad, .iv2-sad2 {
+          position: absolute;
+          left: 35px;
+          top: 50%;
+          margin-top: -10px;
         }
       }
       &:hover td {
