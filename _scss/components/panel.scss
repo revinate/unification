@@ -84,6 +84,9 @@
     .Select {
       float: right;
       width: 200px;
+      &.benchmark-selector {
+        font-size: 14px;
+      }
     }
   }
   .panel-body {
