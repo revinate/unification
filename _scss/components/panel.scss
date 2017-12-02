@@ -68,6 +68,9 @@
         color: #3BA1FF;
         text-decoration: none;
       }
+      &.benchmark-group {
+        line-height: 2;
+      }
     }
     div.datepicker {
       float: right;
