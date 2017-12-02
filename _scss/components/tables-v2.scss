@@ -90,6 +90,10 @@ table.tables-v2 {
     td {
       color:#444;
       font-size:0.8em;
+      a {
+        word-wrap: break-word;
+        word-break: break-all;
+      }
       .avg {
         padding:5px;
         border-radius:3px;
