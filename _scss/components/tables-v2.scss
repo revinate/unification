@@ -67,6 +67,9 @@ table.tables-v2 {
       &.metric {
         text-align: right;
       }
+      &.fixed-width {
+        width: 100px;
+      }
     }
     th {
       font-size: .65em;
