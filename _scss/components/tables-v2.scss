@@ -5,11 +5,12 @@ table.tables-v2 {
   margin: 0;
   padding: 0;
   width: 100%;
-  table-layout: fixed;
   font-family: 'Lato', sans-serif;
   font-weight: normal;
   line-height: 1em;
   font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
   a {
     text-decoration: none;
     color: #3BA1F8;
@@ -24,7 +25,7 @@ table.tables-v2 {
     padding: .3em;
     th, td {
       padding: 1em;
-      text-align: right;
+      text-align: left ;
       transition: 0.2s background cubic-bezier(0.25, 0.1, 0.25, 1);
       button.header {
         padding: 0;
@@ -40,6 +41,7 @@ table.tables-v2 {
         }
         &.arrow-down {
           color: #000;
+          font-family: LatoBold, Helvetica, sans-serif;
           font-weight: bold;
           padding: 0;
           i.iv2-arrow-down2 {
@@ -48,7 +50,7 @@ table.tables-v2 {
         }
         &.arrow-up {
           color: #000;
-          font-weight: bold;
+          font-family: LatoBold, Helvetica, sans-serif;
           i.iv2-arrow-down2 {
             -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
@@ -62,7 +64,9 @@ table.tables-v2 {
           }
         }
       }
-
+      &.metric {
+        text-align: right;
+      }
     }
     th {
       font-size: .65em;
@@ -83,7 +87,7 @@ table.tables-v2 {
         transition: 0.2s color cubic-bezier(0.25,0.1,0.25,1);
         &:hover {
           color: #000;
-          font-weight: bold;
+          font-family: LatoBold;
         }
       }
     }
@@ -105,12 +109,23 @@ table.tables-v2 {
           background-color:#83AD47;
         }
       }
+      &[data-label="name"]{
+        a {
+          display: inline-block;
+          width: 200px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+      &[data-label="type"]{
+        width: 120px;
+      }
     }
     &:hover td {
       background-color:#eee;
       border-top: 1px solid #ccc;
       border-bottom: 1px solid #ccc;
-      cursor: pointer;
       &:first-child {
         border-left:1px solid #ccc;
       }
