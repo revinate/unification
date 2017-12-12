@@ -96,11 +96,13 @@
         line-height: 1.5;
       }
     }
-    i.fa-question-circle {
+    a.fa-question-circle {
       position: relative;
       top: -13px;
+      color: #333333;
       &:hover {
         cursor: pointer;
+        text-decoration: none;
       }
     }
   }
