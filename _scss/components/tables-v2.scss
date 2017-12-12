@@ -101,16 +101,18 @@ table.tables-v2 {
         word-wrap: break-word;
         word-break: break-all;
       }
-      .avg {
+      span {
         padding:5px;
-        border-radius:3px;
-        color:#FFF;
-        &.below {
-          background-color:#F55949;
-        }
-        &.above{
-          background-color:#83AD47;
-        }
+        .avg {
+          border-radius:3px;
+          color:#FFF;
+          &.below {
+            background-color:#F55949;
+          }
+          &.above{
+            background-color:#83AD47;
+          }
+      }
       }
       &[data-label="name"]{
         a {
