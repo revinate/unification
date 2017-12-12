@@ -103,7 +103,7 @@ table.tables-v2 {
       }
       span {
         padding:5px;
-        .avg {
+        &.avg {
           border-radius:3px;
           color:#FFF;
           &.below {
