@@ -96,6 +96,9 @@
     i.fa-question-circle {
       position: relative;
       top: -13px;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
   .panel-body {
