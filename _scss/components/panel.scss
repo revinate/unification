@@ -73,8 +73,8 @@
       }
     }
     div.datepicker {
-      float: right;
-      margin-left: 15px;
+      display: inline-block;
+      margin-right: 15px;
       input {
         height: 36px;
         font-weight: normal;
@@ -85,7 +85,7 @@
       }
     }
     .Select {
-      float: right;
+      display: inline-block;
       width: 200px;
       &.benchmark-selector {
         font-size: 14px;
