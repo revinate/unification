@@ -125,6 +125,13 @@ table.tables-v2 {
       }
       &[data-label="type"]{
         width: 120px;
+        span {
+          display: inline-block;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          padding: 0;
+        }
       }
     }
     &:hover td {
