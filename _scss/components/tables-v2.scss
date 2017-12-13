@@ -123,15 +123,13 @@ table.tables-v2 {
           text-overflow: ellipsis;
         }
       }
-      &[data-label="type"]{
-        width: 120px;
-        span {
-          display: inline-block;
-          overflow: hidden;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-          padding: 0;
-        }
+      span.text-ellipsis {
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding: 0;
+        width: 90px;
       }
     }
     &:hover td {
