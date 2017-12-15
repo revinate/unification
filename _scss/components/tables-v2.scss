@@ -142,6 +142,9 @@ table.tables-v2 {
           text-overflow: ellipsis;
         }
       }
+      &[data-label="sentOn"] {
+        white-space: nowrap;
+      }
       span.text-ellipsis {
         display: inline-block;
         overflow: hidden;
@@ -213,14 +216,6 @@ table.tables-v2 {
         cursor: default;
       }
     }
-    td:first-child {
-      @media (max-width: 1270px) {
-        min-height: 62px;
-        a {
-          line-height: 31px;
-        }
-      }
-    }
     td:first-child,
     th:first-child {
       text-align: left;
@@ -236,11 +231,6 @@ table.tables-v2 {
     }
     td:last-child {
       border-right:1px solid transparent;
-    }
-    &:last-child td:first-child {
-      @media (max-width: 1270px) {
-        min-height: 0;
-      }
     }
   }
   // for POC purposes only
