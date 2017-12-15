@@ -213,6 +213,11 @@ table.tables-v2 {
         cursor: default;
       }
     }
+    &:first-child {
+      @media (max-width: 1270px) {
+        min-height: 62px;
+      }
+    }
     td:first-child,
     th:first-child {
       text-align: left;
@@ -228,11 +233,6 @@ table.tables-v2 {
     }
     td:last-child {
       border-right:1px solid transparent;
-    }
-    &:last-child {
-      td:first-child {
-        height: 46px;
-      }
     }
   }
   // for POC purposes only
