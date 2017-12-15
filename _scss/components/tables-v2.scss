@@ -237,6 +237,11 @@ table.tables-v2 {
     td:last-child {
       border-right:1px solid transparent;
     }
+    &:last-child td:first-child {
+      @media (max-width: 1270px) {
+        min-height: 0;
+      }
+    }
   }
   // for POC purposes only
   tr, tr.avg {
