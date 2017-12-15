@@ -342,7 +342,6 @@ desc: "
       </div>
     </header>
     <div class="panel-body">
-    <div class="shadow-pane"></div>
         <table class="tables-v2">
           <thead>
             <tr>
