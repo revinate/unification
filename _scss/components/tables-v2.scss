@@ -216,6 +216,9 @@ table.tables-v2 {
     td:first-child {
       @media (max-width: 1270px) {
         min-height: 62px;
+        a {
+          line-height: 31px;
+        }
       }
     }
     td:first-child,
