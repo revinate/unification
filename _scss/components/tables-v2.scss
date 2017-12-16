@@ -30,6 +30,7 @@ table.tables-v2 {
       padding: 1em;
       text-align: left ;
       transition: 0.2s background cubic-bezier(0.25, 0.1, 0.25, 1);
+      position: relative;
       button.header {
         padding: 0;
         position: relative;
@@ -74,13 +75,8 @@ table.tables-v2 {
         width: 100px;
       }
       &:first-child {
-        position: absolute;
-        width: 220px;
-        margin-top: -1px;
-        left: 0;
         border-top: 1px solid #ddd;
         border-bottom: 1px solid #ddd;
-        border-right: 1px solid #ccc;
       }
     }
     th {
@@ -93,10 +89,8 @@ table.tables-v2 {
       letter-spacing: 0.1em;
       white-space: nowrap;
       &:first-child {
-        margin-top: 0;
         border-bottom: none;
         background-color: #fff;
-        z-index: 2;
       }
       a, button.header {
         border: none;
@@ -156,8 +150,6 @@ table.tables-v2 {
     }
     &:hover td {
       background-color:#eee;
-      //border-top: 1px solid #ccc;
-      //border-bottom: 1px solid #ccc;
       &:first-child {
         border-left:1px solid #ccc;
       }
@@ -186,10 +178,6 @@ table.tables-v2 {
         }
         &:first-child {
           padding-left: 60px;
-          position: absolute;
-          width: 220px;
-          margin-top: -1px;
-          left: 0;
         }
         .iv2-sad2 {
           color: #F55949;
@@ -237,6 +225,41 @@ table.tables-v2 {
   tr, tr.avg {
     td[data-label="Sent Date"] {
       font-weight: bold;
+    }
+  }
+}
+
+.panel-body.scrollable {
+  .tables-v2 {
+    tr {
+      &.avg {
+        td:first-child {
+          position: absolute;
+          width: 220px;
+          margin-top: -1px;
+          left: 0;
+        }
+      }
+      th:first-child, td:first-child {
+        border-right: 1px solid #ccc;
+        position: absolute;
+        width: 220px;
+        margin-top: -1px;
+        left: 0;
+      }
+      th:first-child {
+        margin-top: 0;
+        background: #fff;
+        z-index: 2;
+      }
+      &:last-child {
+        td:first-child {
+          height: 46px;
+        }
+      }
+      th, td {
+        position: static;
+      }
     }
   }
 }

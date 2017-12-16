@@ -113,8 +113,11 @@
     }
   }
   .panel-body {
+    overflow: auto;
     padding-top: 0;
-    overflow-x: scroll;
-    padding-left: 215px !important;
+    &.scrollable {
+      overflow-x: scroll;
+      padding-left: 215px !important;
+    }
   }
 }

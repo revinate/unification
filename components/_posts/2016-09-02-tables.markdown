@@ -341,7 +341,7 @@ desc: "
         </div>
       </div>
     </header>
-    <div class="panel-body">
+    <div class="panel-body panel-body-table scrollable">
         <table class="tables-v2">
           <thead>
             <tr>
