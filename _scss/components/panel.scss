@@ -92,6 +92,7 @@
     .Select {
       display: inline-block;
       width: 200px;
+      z-index: 2;
       &.benchmark-selector {
         font-size: 14px;
         line-height: 1.5;
