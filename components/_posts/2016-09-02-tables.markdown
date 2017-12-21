@@ -378,7 +378,7 @@ desc: "
 
             </tr>
             <tr>
-              <td data-label="name"><a href="">Avertine New York</a></td>
+              <td data-label="name" class="block-link"><a href="">Avertine New York</a></td>
               <td data-label="type">OTA Winback</td>
               <td data-label="Sent Date">04/01/2016</td>
               <td data-label="Revenue" class="metric"><span class="avg above">$1,190</span></td>
@@ -393,7 +393,7 @@ desc: "
                                           <td data-label="Unsubscribe" class="metric"><span class="avg above">0.8%</span></td>
             </tr>
             <tr>
-              <td scope="row" data-label="name"><a href="">Avertine Miami</a></td>
+              <td scope="row" data-label="name" class="block-link"><a href="">Avertine Miami</a></td>
               <td data-label="type"><span class="text-ellipsis">Events &amp; Announcements (no room offer)</span></td>
               <td data-label="Sent Date">03/01/2016</td>
               <td data-label="Revenue" class="metric"><span class="avg below">$2,443</span></td>
@@ -408,7 +408,7 @@ desc: "
                                           <td data-label="Unsubscribe" class="metric"><span class="avg above">0.8%</span></td>
             </tr>
             <tr>
-              <td scope="row" data-label="name"><a href="">Avertine Paris</a></td>
+              <td scope="row" data-label="name" class="block-link"><a href="">Avertine Paris</a></td>
               <td data-label="type">&mdash;</td>
               <td data-label="Sent Date">03/01/2016</td>
               <td data-label="Revenue" class="metric"><span class="avg below">$1,181</span></td>
@@ -423,7 +423,7 @@ desc: "
                                           <td data-label="Unsubscribe" class="metric"><span class="avg above">0.8%</span></td>
             </tr>
             <tr>
-              <td scope="row" data-label="name"><a href="">Avertine Inn</a></td>
+              <td scope="row" data-label="name" class="block-link"><a href="">Avertine Inn</a></td>
               <td data-label="type">&mdash;</td>
               <td data-label="Sent Date">02/01/2016</td>
               <td data-label="Revenue" class="metric"><span class="avg below">$842</span></td>

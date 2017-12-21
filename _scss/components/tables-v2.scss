@@ -113,6 +113,17 @@ table.tables-v2 {
       a {
         word-wrap: break-word;
         word-break: break-all;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      &.block-link {
+        padding: 0 1em;
+        a {
+          display: block;
+          height: 100%;
+          line-height: 49px;
+        }
       }
       span {
         padding:5px;
