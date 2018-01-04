@@ -156,7 +156,7 @@ table.tables-v2 {
         white-space: nowrap;
         text-overflow: ellipsis;
         padding: 0;
-        width: 90px;
+        max-width: 275px;
       }
     }
     &:hover td {
