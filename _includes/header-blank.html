@@ -1,0 +1,127 @@
+<!doctype html>
+<head>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/styledown.css"/>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.css"/>
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /-->
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/app-alt.css"/>
+    <link rel="stylesheet" href="{{ site.baseurl }}/libs/bootstrap-toggle/css/bootstrap-toggle.css"/>
+    <link rel="stylesheet" href="{{ site.baseurl }}/libs/nya-bootstrap-select/dist/css/nya-bs-select.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <style>
+        #sort tbody {
+            cursor: move;
+        }
+    </style>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+{% assign active_page = page.url | downcase %}
+<div class="l-app" id="styleguide">
+
+    <div class="global-alert-container">
+    </div>
+    <main class="l-main">
+        <div class="container-fluid" style="padding-top: 135px;">
+            <div class="l-main-content row pd-xl">
+
+                <header class="l-header navbar-fixed-top">
+                    <div class="l-header-top">
+                        <div class="container">
+                            <ul class="primary-menu nav nav-tabs">
+                                <li class="primary-menu-item-logo primary-menu-item-text"><span class="logo"><i
+                                        class="revicon-rev-logo-2017"></i></span></li>
+                                <li role="presentation" class="active"><a id="rTest-nav-tabs-dashboard" role="button"
+                                                                          href="#">Dashboards</a></li>
+                                <li role="presentation" class=""><a id="rTest-nav-tabs-marketing" role="button"
+                                                                    href="#">Marketing</a></li>
+                                <li role="presentation" class=""><a id="rTest-nav-tabs-rgdb" role="button" href="#">Guests
+                                    &amp; Segments</a></li>
+                                <li role="presentation" class=""><a id="rTest-nav-tabs-upsell" role="button" href="#">Upsells</a>
+                                </li>
+                                <li class="dropdown pull-right primary-menu-item-icon"><a type="button"
+                                                                                          data-toggle="dropdown"
+                                                                                          class="primary-menu-item-bordered primary-menu-item-icon rTest-nav-bar-user-menu-dropdown-toggle-link"
+                                                                                          title="Settings"><i
+                                        class="revicon-cog"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="rTest-nav-bar-user-dropdown-manage-user-link"
+                                               href="/mgmt/user/manage/avertine">User Settings</a></li>
+                                        <li><a class="rTest-nav-bar-user-dropdown-report-subscription-setting-link"
+                                               href="/mgmt/property-reports/avertine/subscription">Report
+                                            Subscriptions</a></li>
+                                        <li><a class="rTest-nav-bar-user-dropdown-account-settings-link"
+                                               href="/mgmt/settings/avertine">Account Settings</a></li>
+                                        <li><a class="rTest-nav-bar-user-dropdown-guest-list-import-setting-link"
+                                               href="/mgmt/guest-list-import/avertine">Guest List Import Settings</a>
+                                        </li>
+                                        <li role="presentation" class=""><a role="button" href="#">Admin Tools</a></li>
+                                        <li class="is-superadmin"><a class="nav-bar-user-dropdown-switch-mode-link"
+                                                                     type="button" role="button" tabindex="0"
+                                                                     style="color: rgb(59, 161, 248);">In Demo Mode</a>
+                                        </li>
+                                        <li><a class="nav-bar-user-dropdown-logout-link" href="/mgmt/logout">Logout</a>
+                                        </li>
+                                        <li>
+                                            <div class="internal-only admin-email-indicator nav-bar-user-dropdown-user-indicator">
+                                                jeff@revinate.com is logged in
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown pull-right
+      primary-menu-item-icon "><a type="button" data-toggle="dropdown"
+                                  class="primary-menu-item-bordered primary-menu-item-icon rTest-nav-bar-user-menu-dropdown-toggle-link"
+                                  title="Need Help?"> <i class="fa fa-question-circle"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a id="rTest-nav-bar-feedback-helpdesk"
+                                               href="/mgmt/nav/redirect/deskcom/avertine" target="_blank">Helpdesk</a>
+                                        </li>
+                                        <li><a id="rTest-nav-bar-feedback-link" href="/mgmt/feedback/avertine"
+                                               target="_self">Contact Support</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown pull-right
+       visible-lg"><a type="button" data-toggle="dropdown"
+                      class="primary-menu-item-bordered primary-menu-item-icon nav-bar-account-lg-menu-dropdown-toggle-link">Avertine
+                                    Inn <i class="fa fa-caret-down pull-right"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a id="nav-bar-all-accounts" class="text-blue" href="/mgmt/account-select"
+                                               target="_self">All Accounts</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown pull-right
+      primary-menu-item-icon hidden-xs hidden-lg"><a type="button" data-toggle="dropdown"
+                                                     class="primary-menu-item-bordered primary-menu-item-icon nav-bar-account-md-menu-dropdown-toggle-link">
+                                    <i class="revicon-compass-2"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a id="nav-bar-all-accounts" class="text-blue" href="/mgmt/account-select"
+                                               target="_self">All Accounts</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="l-header-bottom">
+                        <div class="tab-content container">
+                            <div role="tabpanel"><a id="rTest-nav-bar-report-home-link"
+                                                    href="/mgmt/app/avertine/dashboard"
+                                                    class="btn-header mg-r-sm active btn btn-primary"><i
+                                    class="fa fa-dashboard mg-r-sm"></i>Main</a></div>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="styleguide col-sm-12" ng-app="main">
+                    <div ng-controller="MainCtrl">
+
+
+
+
+
+
+
+
+
+
