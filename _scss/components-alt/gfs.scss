@@ -1,0 +1,1078 @@
+$color-0: #aa381d;
+$color-1: #ae4521;
+$color-2: #b34f25;
+$color-3: #d18140;
+$color-4: #d68f46;
+$color-5: #bba350;
+$color-6: #aea046;
+$color-7: #a29d46;
+$color-8: #7bab4c;
+$color-9: #6ea848;
+$color-10: #61a544;
+
+.mast-head-gfs {
+  img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.unified-gfs {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 0 20px;
+  .help-block {
+    font-size: 14px;
+    font-style: normal;
+  }
+  .top-header {
+    .language-selector {
+      max-width: 200px;
+      margin: 15px 0;
+      padding: 0;
+      &.pull-right {
+      @media (max-width: 768px) {
+        margin: 15px auto;
+        float: none !important;
+        display: block !important;
+        max-width: 100%;
+      }
+    }
+    }
+    h3 {
+      font-size: 17px;
+      font-family: 'Lato';
+      margin: 15px 0;
+      padding: 0;
+      line-height: 1.5;
+      @media (max-width: 768px) {
+        text-align: center;
+        line-height: 1.5;
+        width: 100%;
+        margin: 15px auto;
+        padding: 25px 0 0;
+      }
+    }
+  }
+  .survey-title {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+    p.text-danger {
+      margin: 10px 0 0;
+    }
+  }
+
+  h4.topic {
+    font-family: 'LatoBold';
+    font-size: 19px;
+    color: #333;
+    line-height: 1.47;
+    margin-bottom: 35px;
+  }
+  .form-group {
+    padding-bottom: 25px;
+    // Error message
+    p.text-danger {
+      position: relative;
+      top: -10px;
+    }
+    // Range Buttons
+    label {
+      font-size: 17px;
+      color: #444;
+      min-height: 21px;
+      font-family: 'Lato';
+      font-weight: normal;
+      margin-bottom: 10px;
+      span.text-danger {
+        font-size: 26px;
+      }
+    }
+    &.nps {
+      border-top: 2px solid #e7e7e7;
+      border-bottom: 2px solid #e7e7e7;
+      padding: 24px 0 34px;
+    }
+    .range-buttons {
+      margin: 0;
+      padding: 0;
+      ul {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        li {
+          //width: 7.26%;
+          width: calc(100% / 13.8);
+          @media screen and (max-width: 680px) {
+            width: 7%;
+          }
+          display: inline-block;
+          text-align: center;
+          &:first-child {
+            text-align: left;
+          }
+          &:last-child {
+            text-align: right;
+          }
+          > i {
+            font-size: 23px;
+            position: relative;
+            top: 3px;
+            color: #939ba2;
+            @media screen and (max-width: 680px) {
+              top: 5px;
+            }
+          }
+          > div {
+            border: 3px solid transparent;
+            background-color: transparent;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            line-height: 26px;
+            margin: auto;
+            font-family: LatoBold;
+            display: block;
+            font-size: 16px;
+            @media screen and (max-width: 680px) {
+              width: 28px;
+              height: 28px;
+              line-height: 24px;
+              font-size: 14px;
+              border-width: 2px;
+            }
+            &:hover {
+              cursor: pointer;
+              background-color: lighten(black, 90%);
+            }
+            &.selected {
+              color: #fff !important;
+            }
+
+            // 11-point (0-10 for NPS etc)
+
+            &.range-11-point {
+              &.value-0 {
+                color: $color-0;
+                border-color: $color-0;
+                &.selected {
+                  background: $color-0;
+                }
+              }
+              &.value-1 {
+                color: $color-1;
+                border-color: $color-1;
+                &.selected {
+                  background: $color-1;
+                }
+              }
+              &.value-2 {
+                color: $color-2;
+                border-color: $color-2;
+                &.selected {
+                  background: $color-2;
+                }
+              }
+              &.value-3 {
+                color: $color-3;
+                border-color: $color-3;
+                &.selected {
+                  background: $color-3;
+                }
+              }
+              &.value-4 {
+                color: $color-4;
+                border-color: $color-4;
+                &.selected {
+                  background: $color-4;
+                }
+              }
+              &.value-5 {
+                color: $color-5;
+                border-color: $color-5;
+                &.selected {
+                  background: $color-5;
+                }
+              }
+              &.value-6 {
+                color: $color-6;
+                border-color: $color-6;
+                &.selected {
+                  background: $color-6;
+                }
+              }
+              &.value-7 {
+                color: $color-7;
+                border-color: $color-7;
+                &.selected {
+                  background: $color-7;
+                }
+              }
+              &.value-8 {
+                color: $color-8;
+                border-color: $color-8;
+                &.selected {
+                  background: $color-8;
+                }
+              }
+              &.value-9 {
+                color: $color-9;
+                border-color: $color-9;
+                &.selected {
+                  background: $color-9;
+                }
+              }
+              &.value-10 {
+                color: $color-10;
+                border-color: $color-10;
+                &.selected {
+                  background: $color-10;
+                }
+              }
+            }
+
+            // 10-point range
+
+            &.range-10-point {
+              &.value-0 {
+                color: $color-0;
+                border-color: $color-0;
+                &.selected {
+                  background: $color-0;
+                }
+              }
+              &.value-1 {
+                color: $color-1;
+                border-color: $color-1;
+                &.selected {
+                  background: $color-1;
+                }
+              }
+              &.value-2 {
+                color: $color-2;
+                border-color: $color-2;
+                &.selected {
+                  background: $color-2;
+                }
+              }
+              &.value-3 {
+                color: $color-3;
+                border-color: $color-3;
+                &.selected {
+                  background: $color-3;
+                }
+              }
+              &.value-4 {
+                color: $color-4;
+                border-color: $color-4;
+                &.selected {
+                  background: $color-4;
+                }
+              }
+              &.value-5 {
+                color: $color-6;
+                border-color: $color-6;
+                &.selected {
+                  background: $color-6;
+                }
+              }
+              &.value-6 {
+                color: $color-7;
+                border-color: $color-7;
+                &.selected {
+                  background: $color-7;
+                }
+              }
+              &.value-7 {
+                color: $color-8;
+                border-color: $color-8;
+                &.selected {
+                  background: $color-8;
+                }
+              }
+              &.value-8 {
+                color: $color-9;
+                border-color: $color-9;
+                &.selected {
+                  background: $color-9;
+                }
+              }
+              &.value-9 {
+                color: $color-10;
+                border-color: $color-10;
+                &.selected {
+                  background: $color-10;
+                }
+              }
+            }
+
+            // 9-point range
+
+            &.range-9-point {
+              &.value-0 {
+                color: $color-0;
+                border-color: $color-0;
+                &.selected {
+                  background: $color-0;
+                }
+              }
+              &.value-1 {
+                color: $color-1;
+                border-color: $color-1;
+                &.selected {
+                  background: $color-1;
+                }
+              }
+              &.value-2 {
+                color: $color-2;
+                border-color: $color-2;
+                &.selected {
+                  background: $color-2;
+                }
+              }
+              &.value-3 {
+                color: $color-4;
+                border-color: $color-4;
+                &.selected {
+                  background: $color-4;
+                }
+              }
+              &.value-4 {
+                color: $color-5;
+                border-color: $color-5;
+                &.selected {
+                  background: $color-5;
+                }
+              }
+              &.value-5 {
+                color: $color-6;
+                border-color: $color-6;
+                &.selected {
+                  background: $color-6;
+                }
+              }
+              &.value-6 {
+                color: $color-7;
+                border-color: $color-7;
+                &.selected {
+                  background: $color-7;
+                }
+              }
+              &.value-7 {
+                color: $color-8;
+                border-color: $color-8;
+                &.selected {
+                  background: $color-8;
+                }
+              }
+              &.value-8 {
+                color: $color-10;
+                border-color: $color-10;
+                &.selected {
+                  background: $color-10;
+                }
+              }
+            }
+
+            // 7-point range
+
+            &.range-7-point {
+              &.value-0 {
+                color: $color-0;
+                border-color: $color-0;
+                &.selected {
+                  background: $color-0;
+                }
+              }
+              &.value-1 {
+                color: $color-2;
+                border-color: $color-2;
+                &.selected {
+                  background: $color-2;
+                }
+              }
+              &.value-2 {
+                color: $color-3;
+                border-color: $color-3;
+                &.selected {
+                  background: $color-3;
+                }
+              }
+              &.value-3 {
+                color: $color-5;
+                border-color: $color-5;
+                &.selected {
+                  background: $color-5;
+                }
+              }
+              &.value-4 {
+                color: $color-7;
+                border-color: $color-7;
+                &.selected {
+                  background: $color-7;
+                }
+              }
+              &.value-5 {
+                color: $color-8;
+                border-color: $color-8;
+                &.selected {
+                  background: $color-8;
+                }
+              }
+              &.value-6 {
+                color: $color-10;
+                border-color: $color-10;
+                &.selected {
+                  background: $color-10;
+                }
+              }
+            }
+
+            // 5-point range
+
+            &.range-5-point {
+              &.value-0 {
+                color: $color-0;
+                border-color: $color-0;
+                &.selected {
+                  background: $color-0;
+                }
+              }
+              &.value-1 {
+                color: $color-2;
+                border-color: $color-2;
+                &.selected {
+                  background: $color-2;
+                }
+              }
+              &.value-2 {
+                color: $color-5;
+                border-color: $color-5;
+                &.selected {
+                  background: $color-5;
+                }
+              }
+              &.value-3 {
+                color: $color-8;
+                border-color: $color-8;
+                &.selected {
+                  background: $color-8;
+                }
+              }
+              &.value-4 {
+                color: $color-10;
+                border-color: $color-10;
+                &.selected {
+                  background: $color-10;
+                }
+              }
+            }
+
+            // 4-point range
+
+            &.range-4-point {
+              &.value-0 {
+                color: $color-0;
+                border-color: $color-0;
+                &.selected {
+                  background: $color-0;
+                }
+              }
+              &.value-1 {
+                color: $color-3;
+                border-color: $color-3;
+                &.selected {
+                  background: $color-3;
+                }
+              }
+              &.value-2 {
+                color: $color-6;
+                border-color: $color-6;
+                &.selected {
+                  background: $color-6;
+                }
+              }
+              &.value-3 {
+                color: $color-10;
+                border-color: $color-10;
+                &.selected {
+                  background: $color-10;
+                }
+              }
+            }
+
+            // 3-point range
+
+            &.range-3-point {
+              &.value-0 {
+                color: $color-0;
+                border-color: $color-0;
+                &.selected {
+                  background: $color-0;
+                }
+              }
+              &.value-1 {
+                color: $color-5;
+                border-color: $color-5;
+                &.selected {
+                  background: $color-5;
+                }
+              }
+              &.value-2 {
+                color: $color-10;
+                border-color: $color-10;
+                &.selected {
+                  background: $color-10;
+                }
+              }
+            }
+          }
+          > input[type="radio"] {
+            display: none;
+          }
+        }
+      }
+    }
+
+    // Yes No Buttons
+
+    .yes-no {
+      .btn {
+        width: 100%;
+        &.selected {
+          @extend .btn-primary;
+        }
+      }
+    }
+
+    // Checkboxes
+
+    .checkbox, .radio {
+      margin: 0 0 10px;
+      padding: 0 0 3px 5px;
+      &:hover {
+        background: rgba(0, 0, 0, 0.1);
+      }
+      label {
+        margin: 0;
+        font-size: 14px;
+        display: block;
+        input[type="checkbox"], input[type="radio"] {
+          position: relative;
+          margin-right: 5px;
+          width: 15px;
+          height: 15px;
+          top: 0;
+        }
+      }
+      &.not-applicable {
+        margin: 14px 0 0;
+      }
+    }
+    .question {
+      .checkbox:last-child, .radio:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &.panel-conditional {
+      background: rgba(59, 161, 248, 0.1);
+      padding-bottom: 0;
+      top: -25px;
+      margin-bottom: 10px;
+      .panel-body {
+        .question {
+          margin-bottom: 20px;
+          &:last-child {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+
+    //Mobile Slider
+
+    .range-slider {
+
+      // visual number indicator
+
+      ul {
+        list-style-type: none;
+        margin: 0 auto;
+        padding: 10px 0;
+        display: block;
+        overflow: auto;
+        height: 60px;
+        font-family: Lato;
+        li {
+          display: block;
+          text-align: center;
+          margin: 0;
+          font-size: 18px;
+          height: 22px;
+          color: #ccc;
+          &.selected {
+            font-size: 25px;
+          }
+          // 11-point
+          &.range-11-point {
+            &.value-0 {
+              color: $color-0;
+            }
+            &.value-1 {
+              color: $color-1;
+            }
+            &.value-2 {
+              color: $color-2;
+            }
+            &.value-3 {
+              color: $color-3;
+            }
+            &.value-4 {
+              color: $color-4;
+            }
+            &.value-5 {
+              color: $color-5;
+            }
+            &.value-6 {
+              color: $color-6;
+            }
+            &.value-7 {
+              color: $color-7;
+            }
+            &.value-8 {
+              color: $color-8;
+            }
+            &.value-9 {
+              color: $color-9;
+            }
+            &.value-10 {
+              color: $color-10;
+            }
+          }
+          // 10-point
+          &.range-10-point {
+            &.value-0 {
+              color: $color-0;
+            }
+            &.value-1 {
+              color: $color-1;
+            }
+            &.value-2 {
+              color: $color-2;
+            }
+            &.value-3 {
+              color: $color-3;
+            }
+            &.value-4 {
+              color: $color-4;
+            }
+            &.value-5 {
+              color: $color-6;
+            }
+            &.value-6 {
+              color: $color-7;
+            }
+            &.value-7 {
+              color: $color-8;
+            }
+            &.value-8 {
+              color: $color-9;
+            }
+            &.value-9 {
+              color: $color-10;
+            }
+          }
+          // 9-point
+          &.range-9-point {
+            &.value-0 {
+              color: $color-0;
+            }
+            &.value-1 {
+              color: $color-1;
+            }
+            &.value-2 {
+              color: $color-2;
+            }
+            &.value-3 {
+              color: $color-4;
+            }
+            &.value-4 {
+              color: $color-5;
+            }
+            &.value-5 {
+              color: $color-6;
+            }
+            &.value-6 {
+              color: $color-7;
+            }
+            &.value-7 {
+              color: $color-8;
+            }
+            &.value-8 {
+              color: $color-10;
+            }
+          }
+          // 7-point
+          &.range-7-point {
+            &.value-0 {
+              color: $color-0;
+            }
+            &.value-1 {
+              color: $color-2;
+            }
+            &.value-2 {
+              color: $color-3;
+            }
+            &.value-3 {
+              color: $color-5;
+            }
+            &.value-4 {
+              color: $color-7;
+            }
+            &.value-5 {
+              color: $color-8;
+            }
+            &.value-6 {
+              color: $color-10;
+            }
+          }
+          // 5-point
+          &.range-5-point {
+            &.value-0 {
+              color: $color-0;
+            }
+            &.value-1 {
+              color: $color-2;
+            }
+            &.value-2 {
+              color: $color-5;
+            }
+            &.value-3 {
+              color: $color-8;
+            }
+            &.value-4 {
+              color: $color-10;
+            }
+          }
+          // 4-point
+          &.range-4-point {
+            &.value-0 {
+              color: $color-0;
+            }
+            &.value-1 {
+              color: $color-3;
+            }
+            &.value-2 {
+              color: $color-6;
+            }
+            &.value-3 {
+              color: $color-10;
+            }
+
+          }
+          // 3-point
+          &.range-3-point {
+            &.value-0 {
+              color: $color-0;
+            }
+            &.value-1 {
+              color: $color-5;
+            }
+            &.value-2 {
+              color: $color-10;
+            }
+          }
+        }
+      }
+
+      // Hiding Defaults
+
+      input[type=range] {
+        -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+        width: 100%; /* Specific width is required for Firefox. */
+        background: transparent; /* Otherwise white in Chrome */
+        height: 45px;
+      }
+
+      input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+      }
+
+      input[type=range]:focus {
+        outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+      }
+
+      input[type=range]::-ms-track {
+        width: 100%;
+        cursor: pointer;
+
+        /* Hides the slider so custom styles can be added */
+        background: transparent;
+        border-color: transparent;
+        color: transparent;
+      }
+
+      // Styling the Thumb
+
+      /* Special styling for WebKit/Blink */
+      input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 45px;
+        height: 45px;
+        background-color: transparent !important;
+        background-image: url(../../img/SliderHandle.png);
+        background-position: center center;
+        background-size: 45px 45px;
+        outline: none !important;
+        border: none !important;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+      }
+
+      /* All the same stuff for Firefox */
+      input[type=range]::-moz-range-thumb {
+        width: 45px;
+        height: 45px;
+        background-color: transparent !important;
+        background-image: url(../../img/SliderHandle.png);
+        background-position: center center;
+        background-size: 45px 45px;
+        outline: none !important;
+        border: none !important;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      /* All the same stuff for IE */
+      input[type=range]::-ms-thumb {
+        width: 45px;
+        height: 45px;
+        background-color: transparent !important;
+        background-image: url(../../img/SliderHandle.png);
+        background-position: center center;
+        background-size: 45px 45px;
+        outline: none !important;
+        border: none !important;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      // Styling the Track
+
+      input[type=range]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 12px;
+        border-radius: 32px;
+        background-image: linear-gradient(to left, #61a544, #bba350 49%, #aa381d);
+      }
+
+      input[type=range]:focus::-webkit-slider-runnable-track {
+        background-image: linear-gradient(to left, #61a544, #bba350 49%, #aa381d);
+      }
+
+      input[type=range]::-moz-range-track {
+        width: 100%;
+        height: 12px;
+        border-radius: 32px;
+        background-image: linear-gradient(to left, #61a544, #bba350 49%, #aa381d);
+      }
+
+      input[type=range]::-ms-track {
+        width: 100%;
+        height: 8.4px;
+        cursor: pointer;
+        background: transparent;
+        border-color: transparent;
+        border-width: 16px 0;
+        color: transparent;
+      }
+      input[type=range]::-ms-fill-lower {
+        background: #2a6495;
+        border: 0.2px solid #010101;
+        border-radius: 2.6px;
+        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+      }
+      input[type=range]:focus::-ms-fill-lower {
+        background: #3071a9;
+      }
+      input[type=range]::-ms-fill-upper {
+        background: #3071a9;
+        border: 0.2px solid #010101;
+        border-radius: 2.6px;
+        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+      }
+      input[type=range]:focus::-ms-fill-upper {
+        background: #367ebd;
+      }
+
+      // The Slider Values and Smileys
+      div.slider-values {
+        display: block;
+        position: relative;
+        overflow: auto;
+        color: #939ba2;
+        font-size: 18px;
+        padding: 0 10px;
+        font-family: Lato;
+        i, span {
+          width: 25px;
+          text-align: center;
+          line-height: 1.33;
+        }
+      }
+
+    }
+  }
+
+  // Submit Section
+
+  .submit-help {
+    font-size: 17px;
+    color: #9b9b9b;
+    line-height: 25px;
+    padding: 20px 0;
+    a {
+      color: #308df6;
+      text-decoration: none;
+    }
+  }
+
+
+  //hide mobile only and show at lower resolution
+
+  .mobile-show {
+    display: none;
+  }
+  .disabled {
+    opacity: 0.2;
+    &:hover {
+      cursor: not-allowed;
+      input,
+      button,
+      label,
+      textarea,
+      select,
+      ul li>div{
+        cursor: not-allowed;
+        &:hover {
+          cursor: not-allowed !important;
+        }
+      }
+      ul li>div {
+        background: transparent !important;
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    .mobile-show {
+      display: block;
+    }
+    .mobile-hide {
+      display: none;
+    }
+    .yes-no {
+      .btn {
+        display: block;
+        width: 100%;
+      }
+    }
+    .survey-title {
+      h1 {
+        font-size: 17px;
+        line-height: 1.5
+      }
+    }
+    .form-group {
+      padding-bottom: 35px;
+      label {
+        margin-bottom: 6px;
+      }
+      .range-slider {
+        ul {
+          padding: 0;
+          height: 34px;
+        }
+      }
+      .yes-no {
+        .btn-lg {
+          padding: 7px 40px 5px;
+          }
+        }
+      &.panel-conditional {
+        top: -15px;
+      }
+      }
+
+
+  }
+  address, .copyright {
+    font-size: 13px;
+    color: #ccc;
+    text-align: center;
+    font-family: LatoLight;
+  }
+  address {
+    padding-top: 20px;
+    color: #9b9b9b;
+    font-size: 14px;
+    font-family: Lato;
+    font-weight: normal;
+  }
+}
+
+// Arabic RTL Styles
+
+body[dir=rtl] {
+  .unified-gfs {
+    input[type="radio"], input[type="checkbox"] {
+      margin-left: 5px;
+    }
+    input[type="range"] {
+      direction: ltr;
+      -webkit-transform: scaleX(-1);
+      -moz-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      transform: scaleX(-1);
+    }
+    .slider-values {
+      .min-val {
+        &.pull-left {
+          float: right !important;
+        }
+      }
+      .max-val {
+        &.pull-right {
+          float: left !important;
+        }
+      }
+      .fa {
+        &.pull-left {
+          float: right !important;
+          margin: 0;
+        }
+        &.pull-right {
+          float: left !important;
+          margin: 0;
+        }
+      }
+    }
+    .question {
+      &.yes-no {
+        display: flex;
+      }
+    }
+  }
+}
+

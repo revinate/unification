@@ -1,0 +1,124 @@
+.panel {
+  .panel-heading {
+    padding: 15px 20px;
+    @extend .clearfix;
+    background: #fff;
+    .panel-title {
+      float: left;
+      font-size: 18px;
+      line-height: 1.5;
+      @extend .FontLatoBold;
+      small {
+        display: block;
+        @extend .FontLatoLight;
+        font-size: 14px;
+        line-height: 1.5;
+        a {
+          color: $brand-primary;
+        }
+      }
+    }
+    .hidden-link {
+      font-size: .75em;
+      span {  color: white;  }
+      &:hover {
+        color: $brand-primary;
+        text-decoration: none;
+      }
+    }
+    .btn {
+      float: right;
+      margin-top: 3px;
+    }
+    .btn-group {
+      float: right;
+      margin-top: 0;
+      .btn {
+        margin-top: 0;
+      }
+    }
+  }
+  .panel-body.panel-body-table {
+    padding: 0 !important;
+  }
+  .panel-footer {
+    padding: 15px 20px;
+    .pagination, .pager {
+      margin: 0 !important;
+    }
+  }
+  &.panel-review-card {
+    padding: 30px;
+  }
+}
+
+.panel-v2.panel-table {
+  padding: 15px 0;
+  border: none;
+  box-shadow: none;
+  position: relative;
+  .panel-heading, .panel-body {
+    padding: 10px 0;
+  }
+  .panel-heading {
+    background: #F0F0F0;
+    padding: 25px 15px 15px;
+    border-bottom: none;
+    h3 {
+      a {
+        color: #3BA1FF;
+        text-decoration: none;
+      }
+      &.benchmark-group {
+        line-height: 2;
+      }
+    }
+    div.datepicker {
+      display: inline-block;
+      position: relative;
+      top: -13px;
+      .form-group {
+        margin-bottom: 0;
+        input {
+          height: 36px;
+          font-weight: normal;
+          padding: 5px 10px;
+          border-radius: 4px;
+          box-shadow: none;
+          border: 1px solid #ccc;
+        }
+      }
+    }
+    .Select {
+      display: inline-block;
+      width: 200px;
+      z-index: 2;
+      &.benchmark-selector {
+        font-size: 14px;
+        line-height: 1.5;
+        top: 10px;
+      }
+    }
+    a.fa-question-circle {
+      position: relative;
+      top: -13px;
+      color: #333333;
+      &:hover {
+        cursor: pointer;
+        text-decoration: none;
+      }
+      &:focus {
+        outline: none;
+        text-decoration: none;
+      }
+    }
+  }
+  .panel-body {
+    overflow: auto;
+    padding-top: 0;
+    &.scrollable {
+      overflow-x: scroll;
+      padding-left: 215px !important;
+    }
+  }
+}

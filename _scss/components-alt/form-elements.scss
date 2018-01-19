@@ -1,0 +1,105 @@
+.search-form {
+  input[type=text] {
+    border-radius: 25px 0 0 25px;
+  }
+  .search-btn {
+    float: none;
+    margin-top: 0;
+    border-radius: 0 25px 25px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+
+form {
+  .row, .form-group {
+    margin-bottom: 15px;
+    .fa {
+      position: absolute;
+      top: 11px;
+      left: 22px;
+      color: #4c4c4c;
+    }
+    input[type="text"], input[type="email"], input[type="password"] {
+      width: 100%;
+      &.with-icon {
+        padding-left: 27px;
+      }
+    }
+  }
+}
+
+// Bootstrap Select Styles
+.bootstrap-select {
+  .dropdown-menu {
+    li > a {
+      line-height: 1em;
+    }
+    li > a:hover, li > a.active, li > a:active, li.selected > a  {
+      background-color: #EBF5FE;
+      color: #3BA1F8;
+    }
+    > ul li > a > span.text {
+      max-width: 300px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+label {
+  @extend .FontLatoBold;
+  .checkbox &,
+  .radio & {
+    @extend .FontLato;
+  }
+}
+
+.help-block {
+  color: #999999;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.bootstrap-select {
+    padding: 0;
+    // override menutext in chrome
+    &.btn-group .dropdown-menu li a {
+      color: inherit !important;
+      &:hover {
+        color: #3BA1F8 !important;
+      }
+    }
+  }
+.bootstrap-select .btn.dropdown-toggle {
+  padding-right: 25px;
+}
+
+// get rid of box shadow appearing in share post modal
+
+input[name="image-file"], input[type="file"] {
+  box-shadow: none;
+}
+textarea {
+  resize: vertical;
+}
+textarea, input[type="text"], input[type="email"], input[type="password"] {
+  color: #444 !important;
+}
+
+.form-group {
+  div.inline-label {
+    input[type="text"], input[type="email"], input[type="password"] {
+      height: 35px !important;
+      @extend .form-control;
+    }
+    .inline-help .error {
+      color: $alert-danger-text;
+    }
+  }
+}
+
+.Select .Select-control .Select-placeholder {
+  color: #333;
+}

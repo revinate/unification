@@ -1,0 +1,279 @@
+
+table.tables-v2 {
+  border: none;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  line-height: 1em;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+  a {
+    text-decoration: none;
+    color: #3BA1F8;
+  }
+  caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  tr {
+    background: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    padding: .3em;
+    td {
+      background-color: #f9f9f9;
+    }
+    th, td {
+      padding: 1em;
+      text-align: left ;
+      transition: 0.2s background cubic-bezier(0.25, 0.1, 0.25, 1);
+      position: relative;
+      button.header {
+        padding: 0;
+        position: relative;
+        i.iv2-arrow-down2 {
+          color: #3BA1F8;
+          display: inline-block;
+          visibility: hidden;
+          position: absolute;
+          top: 50%;
+          right: -12px;
+          margin-top: -5px;
+        }
+        &.arrow-down {
+          color: #000;
+          font-family: LatoBold, Helvetica, sans-serif;
+          font-weight: bold;
+          padding: 0;
+          i.iv2-arrow-down2 {
+            visibility: visible;
+          }
+        }
+        &.arrow-up {
+          color: #000;
+          font-family: LatoBold, Helvetica, sans-serif;
+          i.iv2-arrow-down2 {
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+            visibility: visible;
+          }
+        }
+        &:hover {
+          i.iv2-arrow-down2 {
+            visibility: visible;
+            transition: 0.2s background cubic-bezier(0.25, 0.1, 0.25, 1);
+          }
+        }
+      }
+      &.metric {
+        text-align: right;
+      }
+      &.fixed-width {
+        width: 100px;
+      }
+      &:first-child {
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+      }
+    }
+    th {
+      font-size: .65em;
+      text-transform: uppercase;
+      background-color: #FFF;
+      font-weight: normal;
+      border-top: 1px solid #ddd;
+      padding: 16px;
+      letter-spacing: 0.1em;
+      white-space: nowrap;
+      &:first-child {
+        border-bottom: none;
+        background-color: #fff;
+      }
+      a, button.header {
+        border: none;
+        outline: none;
+        text-transform: uppercase;
+        background-color: #FFF;
+        font-weight: normal;
+        letter-spacing: 0.1em;
+        color: #888;
+        transition: 0.2s color cubic-bezier(0.25,0.1,0.25,1);
+        &:hover {
+          color: #000;
+          font-family: LatoBold;
+        }
+      }
+    }
+    td {
+      color:#444;
+      font-size:0.9em;
+      a {
+        word-wrap: break-word;
+        word-break: break-all;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      &.block-link {
+        padding: 0 1em;
+        a {
+          display: block;
+          height: 100%;
+          line-height: 49px;
+        }
+      }
+      span {
+        padding:5px;
+        &.avg {
+          border-radius:3px;
+          color:#FFF;
+          &.below {
+            background-color:#F55949;
+          }
+          &.above{
+            background-color:#83AD47;
+          }
+      }
+      }
+      &[data-label="name"]{
+        a {
+          display: inline-block;
+          width: 200px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+      &[data-label="sentOn"] {
+        white-space: nowrap;
+      }
+      span.text-ellipsis {
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding: 0;
+        max-width: 275px;
+      }
+    }
+    &:hover td {
+      background-color:#eee;
+      &:first-child {
+        border-left:1px solid #ccc;
+      }
+      &:last-child {
+        border-right:1px solid #ccc;
+      }
+    }
+    &.avg{
+      background: #444;
+      td {
+        background: #444;
+        color: #FFF;
+        padding: 16px;
+        text-transform: uppercase;
+        .iv2-smile, .iv2-sad, .iv2-smile2, .iv2-sad2 {
+          border: none;
+          background: none;
+          outline: none;
+          font-size: 1.5em;
+          position: relative;
+          top: 2px;
+          padding: 0 4px 0 0;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        &:first-child {
+          padding-left: 60px;
+        }
+        .iv2-sad2 {
+          color: #F55949;
+        }
+        .iv2-smile2 {
+          color: #83AD47;
+        }
+        .iv2-smile, .iv2-smile2 {
+          position: absolute;
+          left: 10px;
+          top: 50%;
+          margin-top: -10px;
+        }
+        .iv2-sad, .iv2-sad2 {
+          position: absolute;
+          left: 35px;
+          top: 50%;
+          margin-top: -10px;
+        }
+      }
+      &:hover td {
+        background-color: inherit;
+        opacity: 1.0;
+        cursor: default;
+      }
+    }
+    td:first-child,
+    th:first-child {
+      text-align: left;
+    }
+    &:nth-child(even) {
+    background-color: #FFF;
+      td {
+        background-color: #fff;
+      }
+    }
+    td:first-child {
+      border-left:1px solid transparent;
+    }
+    td:last-child {
+      border-right:1px solid transparent;
+    }
+  }
+  // for POC purposes only
+  tr, tr.avg {
+    td[data-label="Sent Date"] {
+      font-weight: bold;
+    }
+  }
+}
+
+.panel-body.scrollable {
+  .tables-v2 {
+    tr {
+      &.avg {
+        td:first-child {
+          position: absolute;
+          width: 220px;
+          margin-top: -1px;
+          left: 0;
+        }
+      }
+      th:first-child, td:first-child {
+        border-right: 1px solid #ccc;
+        position: absolute;
+        width: 220px;
+        margin-top: -1px;
+        left: 0;
+        border-bottom: 0;
+      }
+      th:first-child {
+        margin-top: 0;
+        background: #fff;
+        z-index: 1;
+      }
+      &:last-child {
+        td:first-child {
+          height: 50px;
+          border-bottom: 1px solid #ddd;
+        }
+      }
+      th, td {
+        position: static;
+        height: 49px;
+      }
+    }
+  }
+}

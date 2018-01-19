@@ -1,0 +1,97 @@
+.pagination {
+  display:inline-block;
+  padding-left:0;
+  margin:20px 0;
+  border-radius:4px;
+}
+.pagination>li {
+   display:inline;
+ }
+.pagination>li>a,
+.pagination>li>span {
+  position:relative;
+  float:left;
+  padding:6px 12px;
+  line-height:1.42857;
+  text-decoration:none;
+  color:#3BA1F8;
+  background-color:#fff;
+  border:1px solid #ddd;
+  margin-left:-1px
+}.pagination>li:first-child>a,
+ .pagination>li:first-child>span {
+   margin-left:0;
+   border-bottom-left-radius:4px;
+   border-top-left-radius:4px;
+ }
+.pagination>li:last-child>a,
+.pagination>li:last-child>span{
+  border-bottom-right-radius:4px;
+  border-top-right-radius:4px;
+}
+.pagination>li>a:hover,
+.pagination>li>a:focus,
+.pagination>li>span:hover,
+.pagination>li>span:focus{
+  z-index:3;
+  color:#087cdf;
+  background-color:#eee;
+  border-color:#ddd;
+}
+.pagination>.active>a,
+.pagination>.active>a:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span,
+.pagination>.active>span:hover,
+.pagination>.active>span:focus{
+  z-index:2;
+  color:#fff;
+  background-color:#3BA1F8;
+  border-color:#3BA1F8;
+  cursor:default
+}
+ul.pagination.unified {
+  li a {
+    border: none;
+    background: none;
+    font-family: LatoBold;
+    font-size: 16px;
+    padding: 0 11px;
+    span>i {
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+  li.active {
+    a:after {
+      background-color: transparent;
+    }
+  }
+  li span {
+    border: none;
+    background: none;
+    font-family: LatoBold;
+    font-size: 16px;
+    padding: 0 11px;
+    &:hover {
+      cursor: default;
+    }
+  }
+  >.active {
+    a {
+      color: black;
+    }
+    &:hover {
+      a {
+        background: none;
+        color: black;
+      }
+    }
+  }
+}
+ul.pagination.legacy>li>a,
+ul.pagination.legacy>li>span {
+font-size: 30px;
+  padding: 0 12px 5px;
+
+}

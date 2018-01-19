@@ -1,0 +1,55 @@
+.nav-pills-numbered {
+  text-align: center;
+  li {
+    float: none;
+    display: table-cell;
+    position: relative;
+    font-family: LatoBold;
+    text-transform: uppercase;
+    color: #888888;
+    font-size: 12px;
+    letter-spacing: .15em;
+    &:first-child {
+      &:before {
+        width: 0;
+        background-color: transparent;
+      }
+    }
+    a {
+      background-color: transparent !important;
+      display: inline-block;
+      color: #888888;
+      &:hover, &:focus, &:active {
+        background-color: transparent !important;
+        color: $brand-primary;
+      }
+    }
+    .fa {
+      font-size: 20px;
+      position: relative;
+      top: 9px;
+      left: 0;
+      float: left;
+    }
+    &.active a {
+      background-color: transparent !important;
+      color: #21B2AA;
+      cursor: default;
+      &:hover, &:active, &:focus {
+        color: #21B2AA !important;
+      }
+    }
+    &.disabled a {
+        color: lighten(#888888, 30%);
+      &:hover, &:active, &:focus {
+        color: lighten(#888888, 30%);
+      }
+    }
+  }
+}
+
+$nav-pills-numbered-index-size: 30px;
+
+.nav-pills-numbered-index {
+  display: none !important;
+}
