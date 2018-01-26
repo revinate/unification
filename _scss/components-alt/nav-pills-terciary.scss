@@ -1,15 +1,16 @@
 .nav-pills-terciary,
 .nav-pills-tertiary {
-  border-bottom: 2px #F3F3F4 solid;
+  border-bottom: 1px $table-border-color solid;
   clear: both;
   float: none !important;
+  letter-spacing: 0.015em;
   > li > a:focus, > li > a:hover {
     background: transparent !important;
   }
   li {
     a {
       text-transform: capitalize;
-      color: #3BA1FF;
+      color: $r_brand_primary;
       position: relative;
       background-color: transparent;
       &:after {
@@ -52,6 +53,7 @@
       }
     }
     &.disabled {
+     font-family: 'Lato';
       a {
         color: #ccc;
         &:hover {

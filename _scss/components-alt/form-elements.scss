@@ -37,8 +37,8 @@ form {
       line-height: 1em;
     }
     li > a:hover, li > a.active, li > a:active, li.selected > a  {
-      background-color: #EBF5FE;
-      color: #3BA1F8;
+      background-color: lighten($r_brand-primary, 67%);
+      color: $r_brand-primary;
     }
     > ul li > a > span.text {
       max-width: 300px;
@@ -68,7 +68,7 @@ label {
     &.btn-group .dropdown-menu li a {
       color: inherit !important;
       &:hover {
-        color: #3BA1F8 !important;
+        color: $r_brand-primary !important;
       }
     }
   }
@@ -85,7 +85,10 @@ textarea {
   resize: vertical;
 }
 textarea, input[type="text"], input[type="email"], input[type="password"] {
-  color: #444 !important;
+  color: $gray !important;
+  font-family: LatoLight;
+  letter-spacing: 0.03em;
+  font-size: 13px;
 }
 
 .form-group {

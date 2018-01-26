@@ -1,12 +1,18 @@
 .dashboard-widget {
   text-align: center;
-  border: 1px #ddd solid;
+  border: 1px solid transparent;
+  box-shadow: 0 0 2px 0 rgba(0,0,0,.2);
+  transition: all ease 0.4s;
   background-color: white;
-  border-radius: 4px;
+  border-radius: 3px;
   margin-bottom: 20px;
   margin-top: 10px;
   //min-height for marketing dashboard
   min-height: 227px;
+  &:hover {
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,.25);
+    transform: translateY(-2px);
+  }
 }
 
 .dashboard-widget-title {
@@ -21,7 +27,7 @@
   margin: 10px;
   font-size: 30px;
   @extend .FontLatoLight;
-  color: $brand-primary;
+  color: $r_brand-primary;
 }
 
 .dashboard-widget-graph {
@@ -757,7 +763,7 @@
     font-size: 12px;
   }
   #unified-dashboard .custom-widget.numeric-value .cw-body {
-    color: #3BA1F8;
+    color: $r_brand-primary;
     padding: 19px 0;
   }
   #unified-dashboard .custom-widget:hover .cw-dnd-handler,
@@ -887,7 +893,7 @@
     font-size: 12px;
   }
   .create-widget-modal-wrapper .custom-widget.numeric-value .cw-body {
-    color: #3BA1F8;
+    color: #r_brand-primary;
     padding: 15px 0;
   }
   #unified-dashboard .custom-widget {

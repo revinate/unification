@@ -252,12 +252,13 @@ table.tables-v2 {
         }
       }
       th:first-child, td:first-child {
-        border-right: 1px solid #ccc;
+        //border-right: 1px solid #ccc;
         position: absolute;
         width: 220px;
         margin-top: -1px;
         left: 0;
         border-bottom: 0;
+        box-shadow: 3px 0 1px rgba(0,0,0,0.1);
       }
       th:first-child {
         margin-top: 0;

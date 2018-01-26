@@ -1,6 +1,9 @@
 .prop-selector, .settings-menu {
   > ul {
     max-width: 250px;
+    letter-spacing: 0.5px;
+    margin-top: -1px !important;
+    margin-right: -1px;
     li {
       padding: 0;
       ul {
@@ -8,21 +11,29 @@
         padding: 0;
         li {
           list-style-type: none;
-          padding: 0;
+          padding: 0 !important;
           margin: 0;
+          border:1px solid transparent;
+          -webkit-transition: all .2s;
+             -moz-transition: all .2s;
+                  transition: all .2s;
+          &:hover {
+            background-color: lighten($r_brand-primary, 67%) ;
+            border:1px solid lighten($r_brand-primary, 62%) !important;
+          }
           a {
-            padding: 3px 15px;
+            padding: 8px 16px;
             display: block;
             overflow-x: hidden;
             text-overflow: ellipsis;
             text-transform: Capitalize;
             font-family: Lato;
-            font-size: 14px;
+            font-size: 13px;
             letter-spacing: 0.5px;
-            color: #939BA2 !important;
-            border-bottom: 1px solid #283745;
+            color: $r_brand-primary !important;
+            //border-bottom: 1px solid rgba(0, 78, 155, 0.15);
             &:hover {
-              color: #ffffff !important;
+              color: $gray !important;
               text-decoration: none;
             }
           }
@@ -31,31 +42,35 @@
       &.account-switcher {
         ul {
           input {
-            margin: 0;
-            height: 26px;
+            margin: 4px 0 4px 8px;
+            //height: 26px;
             display: inline-block;
           }
         }
         div.contact-autocomplete {
           div, li {
-            color: #939BA2;
-            padding: 2px 15px 0;
+            color: $gray;
+            padding: 8px 16px !important;
             text-transform: capitalize;
             font-family: Lato;
-            letter-spacing: 1px;
+            font-size: 13px;
           }
           li:hover {
-            color: #fff;
+            color: $gray-darker;
             cursor: pointer;
           }
         }
       }
       &.prop-input {
         padding: 0 10px;
-        width: 100%;
+        width: 92%;
+        &:hover {
+          background-color: transparent !important;
+          border-color: transparent !important;
+        }
       }
       h4 {
-        color: #ffffff;
+        color: $r_brand-primary;
         padding: 0 10px;
       }
       &.recently-accessed {
@@ -65,12 +80,12 @@
         padding: 0;
         margin: 0;
         a {
-          color: #939BA2 !important;
-          text-transform: capitalize;
-          font-family: Lato;
-          letter-spacing: 0.5px;
+          color: $r_brand-primary !important;
+          text-transform: uppercase;
+          font-family: 'Lato';
+          font-size: 12px;
           &:hover {
-            color: #ffffff !important;
+            color: $gray-darker !important;
           }
         }
       }

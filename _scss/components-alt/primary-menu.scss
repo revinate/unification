@@ -5,8 +5,8 @@
 .primary-menu.nav.nav-tabs .logo {
   color: #FFFFFF;
   font-size: 1.3em;
-  line-height: 45px;
-  padding: 3px 20px 0 0;
+  line-height: 40px;
+  padding: 0 20px 0 0;
   cursor: default;
   background-color: transparent;
   display: inline-block;
@@ -19,10 +19,10 @@
 }
 
 .primary-menu.nav.nav-tabs {
-  font-size: 14px;
+  font-size: 0.75em;
   text-transform: uppercase;
   border-bottom: none;
-  letter-spacing: 0.15em;
+  letter-spacing: normal;
 }
 
 .primary-menu.nav.nav-tabs > li {
@@ -40,15 +40,15 @@
   }
   &.primary-menu-item-text,
   &.primary-menu-item-label {
-    height: 45px;
+    height: 40px;
     //color: $r_brand-primary-light;
-    color: #d7dbdd;
+    color: $white-base;
   }
   &.primary-menu-item-text {
-    line-height: 45px;
+    line-height: 40px;
   }
   &.primary-menu-item-label {
-    line-height: 45px;
+    line-height: 40px;
     padding: 0 0 0 10px !important;
     a {
       padding: 0;
@@ -85,8 +85,9 @@
     &.always-active {
       a {
         &:hover {
-          background: transparent;
-          color: #fff;
+          //background: $white-base;
+          //color: $r_brand-primary;
+          z-index: 9999;
         }
       }
 
@@ -104,14 +105,13 @@
 .primary-menu.nav.nav-tabs > li > a {
   cursor: default;
   margin-right: 0;
-  height: 45px;
-  letter-spacing: 0.15em;
-  line-height: 50px;
+  height: 40px;
+  letter-spacing: 0.1em;
+  line-height: 40px;
   @media (max-width: $screen-sm-min) {
-    //height: 45px;
-    line-height: 45px;
+    line-height: 40px;
   }
-  color: #d7dbdd;
+  color: $white-75;
   border: none;
   border-radius: 0;
   padding: 0 20px;
@@ -126,9 +126,9 @@
   }
 
   &:hover {
-    color: #ffffff;
+    color: $r_brand-primary;
     font-weight: bold;
-    background-color: $r_brand-primary;
+    background-color: $white-base;
     cursor: pointer;
   }
   &.highlight,
@@ -144,12 +144,12 @@
   }
   &.primary-menu-item-icon {
     i {
-      font-size: 20px;
+      font-size: 13px;
       position: relative;
       right: 1px;
       @media (min-width: $screen-sm-min) {
         font-size: 20px;
-        line-height: 45px;
+        line-height: 40px;
       }
     }
     &.current-active-page {
@@ -158,6 +158,9 @@
   }
   &.primary-menu-item-bordered {
     padding: 0;
+    -webkit-transition: all .2s;
+       -moz-transition: all .2s;
+            transition: all .2s;
     @media (min-width: $screen-sm-min) {
       border-left: 1px $r_brand-primary solid;
       padding: 0 10px;
@@ -165,9 +168,9 @@
     &:hover,
     &:active,
     &:focus {
-      color: #ffffff;
+      color: $r_brand-primary;
       font-weight: bold;
-      background-color: $r_brand-primary-darker;
+      background-color: $white-base;
     }
   }
   &.primary-menu-item-logo {
@@ -183,14 +186,15 @@
 .primary-menu.nav.nav-tabs > li.open > a:hover,
 .primary-menu.nav.nav-tabs > li.open > a:focus,
 .primary-menu.nav.nav-tabs > li.open > a:active {
-  color: #ffffff;
+  color: $white-base;
   background-color: transparent;
 }
 
 .primary-menu.nav.nav-tabs > li.active > a,
 .primary-menu.nav.nav-tabs > li.active > a:hover {
-  background-color: #42576a;
-  color: #ffffff;
+  background-color: $white-base;
+  color: $gray;
+  font-weight: bold;
   border: none;
   &.primary-menu-item-logo {
     background-color: transparent;
@@ -202,8 +206,8 @@
 .primary-menu.nav.nav-tabs > li.current-active-page.active > a:hover,
 .primary-menu.nav.nav-tabs > li.current-active-page.active > a:focus,
 .primary-menu.nav.nav-tabs > li.current-active-page.active > a:active {
-  color: #FFFFFF;
-  background-color: #42576a;
+  color: $r_brand-primary;
+  background-color: $white-base;
   border: none;
   &.primary-menu-item-logo {
     background-color: transparent;
@@ -244,12 +248,13 @@
 }
 
 .l-header li.is-superadmin {
-  background: #371E49;
+  background: #000;
   a {
-    color: darken(#fff, 40%);
+    color: $white-base;
     &:hover {
-      background: #371E49;
-      color: #fff;
+      background-color: #000;
+      color: $white-base;
+      border:1px solid transparent;
     }
 
   }

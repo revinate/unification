@@ -61,10 +61,10 @@
             <!-- principles tab content -->
             <div role="tabpanel" class="tab-pane{% if active_page == '/principles.html' %} active{% endif %}" id="principles">
 
-                <div class="btn-group mg-r-sm mg-b-md">
+                <div class="btn-group mg-r-sm">
                     <a type="button" class="btn btn-primary btn-header active" href="#design-principles">Design Principles</a>
                 </div>
-                <div class="btn-group mg-r-sm mg-b-md">
+                <div class="btn-group mg-r-sm ">
                     <a type="button" class="btn btn-primary btn-header" href="#voice">Brand Voice</a>
                 </div>
 
@@ -73,7 +73,7 @@
             <div role="tabpanel" class="tab-pane{% if active_page != '/resources.html' and active_page != '/principles.html' %} active{% endif %}" id="style-guide">
                 {% for category in site.categories %}
                 {% assign active_cat = category | first | prepend: '/' | append: '/' %}
-                <div class="btn-group mg-r-sm mg-b-md">
+                <div class="btn-group mg-r-sm ">
                     {% if active_page == active_cat %}
                     <button type="button" class="btn btn-primary btn-header dropdown-toggle active" data-toggle="dropdown" aria-expanded="false">{{ category | first }}
                         <i class="fa fa-caret-down mg-l-xs"></i>
@@ -103,7 +103,9 @@
             <!-- resources tab content -->
             <div role="tabpanel" class="tab-pane{% if active_page == '/resources.html' %} active{% endif %}" id="resources">
 
-resources nav
+               <div class="btn-group mg-r-sm">
+                <a type="button" class="btn btn-primary btn-header active" href="#">Other</a>
+                </div>
 
             </div>
 

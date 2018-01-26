@@ -15,23 +15,31 @@ $gray:                  lighten($gray-base, 33.5%) ; // #555
 $gray-light:            lighten($gray-base, 46.7%) ; // #777
 $gray-lighter:          lighten($gray-base, 93.5%) ; // #eee
 
-$brand-primary:         #00a9e0 ;
+$gray-active:           lighten($gray-base, 70%) ; //active page, breadcrumb, etc.
+
+$brand-primary:         #ff6400 ;
 $brand-success:         #83AD47 ;
 $brand-info:            #5bc0de ;
 $brand-warning:         #f0ad4e ;
-$brand-danger:          #F55949 ;
+$brand-danger:          #EF0F0F ;
 
-$r_brand-secondary:          #00b2a9;
-$r_brand-tertiary:           #8f7ec2;
+$r_brand-primary:       #004E9B ;
+$r_brand-primary2:      #ff6400 ;
+
+$r_brand-secondary:     #ff6400 ;
+$r_brand-tertiary:      #8f7ec2 ;
 
 
-$r_brand-primary:           #0C2340;
+
 $r_brand-primary-dark:      #202C37;
 $r_brand-primary-darker:    #182129;
 $r_brand-primary-light:     #74797e;
 $r_brand-primary-lighter:   #939ba2;
 
-$btn-primary: #3BA1F8;
+$btn-primary: 				$r_brand-primary2 ;
+
+$white-base:             rgba(255,255,255,1) ;
+$white-75:             	 rgba(255,255,255,0.75) ;
 
 //== Scaffolding
 //
@@ -43,7 +51,7 @@ $body-bg:               #F3F3F4;
 $text-color:            $gray-dark ;
 
 //** Global textual link color.
-$link-color:            $brand-primary ;
+$link-color:            $r_brand-primary ;
 //** Link hover color set via `darken()` function.
 $link-hover-color:      darken($link-color, 15%) ;
 //** Link hover decoration.
@@ -170,7 +178,7 @@ $btn-default-bg:                 #fff ;
 $btn-default-border:             #ccc ;
 
 $btn-primary-color:              #fff ;
-$btn-primary-bg:                 $brand-primary ;
+$btn-primary-bg:                 $r_brand-primary2 ;
 $btn-primary-border:             darken($btn-primary-bg, 5%) ;
 
 $btn-success-color:              #fff ;

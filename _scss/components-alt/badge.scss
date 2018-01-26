@@ -1,11 +1,12 @@
 .badge {
   display: inline-block;
   min-width: 22px;
-  height: 20px;
-  font-size: .85em;
+  //height: 20px;
+  font-size: .7em;
   text-align: center;
-  line-height: 20px;
-  padding: 0 5px;
+  line-height: 2em;
+  padding: 0 8px;
+  text-transform: uppercase;
   &.badge-danger {
     background-color: $brand-danger;
     color: #ffffff;

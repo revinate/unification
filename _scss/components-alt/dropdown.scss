@@ -3,9 +3,10 @@
   margin-top: 0;
   min-width: 100%;
   max-width: 380px;
-  padding: 6px 0;
-  border: 1px #ccc solid;
-  box-shadow: none;
+  padding: 4px 0;
+  border: 1px solid rgba($r_brand-primary, 0.1);
+  border-radius:2px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
   > li > a {
     position: relative;
     padding: 6px 12px;
@@ -17,19 +18,19 @@
     &:hover,
     &:active,
     &:focus {
-      background-color: #EBF5FE;
-      color: #3BA1F8;
+      background-color: lighten($r_brand-primary, 67%);
+      color: $r_brand-primary;
       outline: none;
     }
   }
   > li.selected > a {
-    background: #DBF0EB !important;
-    color: #28A68A !important;
+    background: lighten($r_brand-primary, 67%) !important;
+    color: $r_brand-primary !important;
     &:hover,
     &:active,
     &:focus {
-      background-color: #DBF0EB !important;
-      color: #28A68A !important;
+      background-color:lighten($r_brand-primary, 67%) !important;
+      color: $r_brand-primary !important;
     }
   }
   > li:last-child a {
@@ -53,53 +54,64 @@
 
 
 .l-header .dropdown-menu {
-  background-color: $r_brand-primary-darker;
-  border: none;
-  border-top: 1px solid $r_brand-primary;
+  background-color: $white-base;
+  color: $gray;
+
+  //border-top: 1px solid $r_brand-primary;
   margin-top: 0; // overrides .nav-tabs .dropdown-menu
+  > li.active > a {
+    color: $r_brand-primary;
+    background-color: $white-base;
+    font-weight: normal;
+  }
+  > li:last-child a {
+    //border-bottom: none;
+  }
   > li > a {
-    color: #d7dbdd;
+    color: $r_brand-primary;
+    border:1px solid transparent;
     &:hover,
     &:active,
     &:focus {
-      color: #ffffff;
-      font-weight: bold;
-      background-color: $r_brand-primary-darker;
+      border:1px solid lighten($r_brand-primary, 62%);
+      color: $gray;
+      font-weight: normal;
+      background-color: lighten($r_brand-primary, 67%);
     }
     .badge {
-      color: #ffffff;
+      color: $gray;
       font-weight: bold;
       position: absolute;
-      right: 12px;
+      top: 2px;
+      right: 8px;
       text-align: right;
     }
   }
-  > li.active > a {
-    color: #ffffff;
-    background-color: $r_brand-primary-darker;
-    font-weight: bold;
-  }
-  > li:last-child a {
-    border-bottom: none;
-  }
+  
 }
+
+
 .l-header-bottom .dropdown-menu {
   > li > a {
     text-transform: capitalize;
+    font-weight: 400;
+    font-size: 0.9em;
   }
 }
 
 
 .l-header .primary-menu .primary-menu-item-icon .dropdown-menu {
-  font-size: 14px;
-  padding: 0;
+  font-size: 13px;
+  //padding: 0;
   min-width: 120px;
+  margin-top: -1px;
   > li > a {
-    border-bottom: $r_brand-primary 1px solid;
-    padding: 6px 10px 3px;
+    //border-bottom: $r_brand-primary 1px solid;
+    //padding: 6px 10px 3px;
     font-family: Lato;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     text-transform: capitalize;
+    font-size: 13px;
   }
 }
 

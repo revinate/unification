@@ -18,21 +18,21 @@
 }
 
 .l-header-top {
-  height: 45px;
-  background-color: black;
-  font-family: 'Gram', sans-serif;
-  font-weight: 300;
-  letter-spacing: .12em;
+  height: 40px;
+  background-color: $r_brand-primary;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: normal;
   @media (min-width: $screen-sm-min) {
-    height: 45px;
+    height: 40px;
   }
 }
 
 .l-header-bottom {
-  min-height: 75px;
-  padding-top: 18px;
-  background-color: #42576a;
-  font-family: Lato;
+  min-height: 50px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  background-color: $white-base;
+  font-family: 'Lato';
   position: relative;
   @media screen and (max-width: 1024px) {
     padding-top: 20px;
@@ -40,9 +40,9 @@
 }
 
 .l-main-content {
-  background-color: #FFFFFF;
-  border: 1px #D9D9D9 solid;
-  border-radius: 3px;
+  // background-color: $white-base;
+  // border: 1px #D9D9D9 solid;
+  // border-radius: 3px;
   position: relative;
   @media (max-width: $screen-sm-min) {
     margin-top: 15px !important;

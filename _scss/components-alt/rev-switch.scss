@@ -58,7 +58,7 @@
 }
 /*styles for switch-text*/
 .rev-switch .rev-switch-text {
-  font-family:Arial, Helvetica, sans-serif;
+  font-family:Lato;
   font-size:13px;
 }
 
@@ -101,18 +101,18 @@
 .switch-xs {
   .rev-switch {
     height: 20px;
-    width: 40px;
+    width: 42px;
     small {
       height: 20px;
       width: 20px;
     }
     &.checked {
       small {
-        left: 20px;
+        left: 22px;
       }
     }
     .rev-switch-text {
-      font-size: 12px;
+      font-size: 11px;
       line-height: 1;
     }
   }

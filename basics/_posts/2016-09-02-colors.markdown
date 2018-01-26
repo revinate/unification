@@ -10,52 +10,100 @@ date: 2016-09-02 00:00:00
         <div class="col-xs-12 color-box r-brand-primary">
             <p>$r_brand-primary<br />
             HEX: #0C2340<br />
-            RGB: 12 35 64<br />
+            RGB: 0 78 155<br />
             Used for: logo, backgrounds</p>
         </div>
-        <div class="col-xs-6 color-box brand-primary">
-            <p>$brand-primary<br />
-            HEX: #00a9e0<br />
-            RGB: 0 169 224<br />
+        <div class="col-xs-12 color-box r-brand-primary2">
+            <p>$r_brand-primary2<br />
+            HEX: #ff6400<br />
+            RGB: 255 100 0<br />
             Used for: primary CTAs</p>
         </div>
-        <div class="col-xs-6 color-box r-brand-secondary">
-            <p>$r_brand-primary<br />
-            HEX: #00b2a9<br />
-            RGB: 0 178 169<br />
-            Used for: secondary CTAs</p>
-        </div>
     </div>
+    
+
     <div class="row">
         <div class="col-xs-12">
-            <h3>Brand-only secondary colors</h3>
+            <h3>Secondary colors</h3>
         </div>
     </div>
     <div class="row">
-        <div class="col-xs-3 color-box" style="background: #4797a8;">
-            <p>HEX: #4797a8<br />
-            RGB: 71 151 168<br />
-            Used for: marketing collateral</p>
+        <div class="col-xs-4 color-box" style="background: #00A891;">
+            <p>HEX: #00A891<br /><br /><br />
+            <!-- RGB: 71 151 168<br /> 
+            Used for: marketing collateral--></p>
         </div>
-        <div class="col-xs-3 color-box" style="background: #00437b;">
-            <p>HEX: #00437b<br />
-            RGB:  0 67 123<br />
-            Used for: marketing collateral</p>
+        <div class="col-xs-4 color-box" style="background: #9700C6;">
+            <p>HEX: #9700C6<br /><br /><br />
+            <!-- RGB:  0 67 123<br /> 
+            Used for: marketing collateral--></p>
         </div>
-        <div class="col-xs-3 color-box" style="background: #0f1820;">
-            <p>HEX: #0f1820<br />
-            RGB: 15 24 32<br />
-            Used for: marketing collateral</p>
-        </div>
-        <div class="col-xs-3 color-box" style="background: #bea150;">
-            <p>HEX: #bea150<br />
-            RGB: 190 161 80<br />
-            Used for: marketing collateral</p>
+        <div class="col-xs-4 color-box" style="background: #00B0F2;">
+            <p>HEX: #00B0F2<br /><br /><br />
+            <!-- RGB: 15 24 32<br /> 
+            Used for: marketing collateral--></p>
         </div>
     </div>
+        <div class="row">
+        <div class="col-xs-4 color-box" style="background: #00AF14;">
+            <p>HEX: #00AF14<br /><br /><br />
+            <!-- RGB: 71 151 168<br /> 
+            Used for: marketing collateral--></p>
+        </div>
+        <div class="col-xs-4 color-box" style="background: #FFBF00;">
+            <p>HEX: #FFBF00<br /><br /><br />
+            <!-- RGB:  0 67 123<br /> 
+            Used for: marketing collateral--></p>
+        </div>
+        <div class="col-xs-4 color-box" style="background: #FF5333;">
+            <p>HEX: #FF5333<br /><br /><br />
+            <!-- RGB: 15 24 32<br /> 
+            Used for: marketing collateral--></p>
+        </div>
+    </div>
+
+
     <div class="row">
         <div class="col-xs-12">
-            <h3>Semantic colors and grays</h3>
+            <h3>Tertiary colors</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-2 color-box" style="background: #3FEBD5;">
+            <p>HEX: #3FEBD5
+            <!-- RGB: 71 151 168<br /> 
+            Used for: marketing collateral--></p>
+        </div>
+        <div class="col-xs-2 color-box" style="background: #CE33EF;">
+            <p>HEX: #CE33EF
+            <!-- RGB:  0 67 123<br /> 
+            Used for: marketing collateral--></p>
+        </div>
+        <div class="col-xs-2 color-box" style="background: #F243A1;">
+            <p>HEX: #F243A1
+            <!-- RGB: 15 24 32<br /> 
+            Used for: marketing collateral--></p>
+        </div>
+        <div class="col-xs-2 color-box" style="background: #00E63D;">
+            <p>HEX: #00E63D
+            <!-- RGB: 71 151 168<br /> 
+            Used for: marketing collateral--></p>
+        </div>
+        <div class="col-xs-2 color-box" style="background: #EF0F0F;">
+            <p>HEX: #EF0F0F
+            <!-- RGB:  0 67 123<br /> 
+            Used for: marketing collateral--></p>
+        </div>
+        <div class="col-xs-2 color-box" style="background: #B30C4D;">
+            <p>HEX: #B30C4D
+            <!-- RGB: 15 24 32<br /> 
+            Used for: marketing collateral--></p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <h3>Utility colors</h3>
         </div>
     </div>  
       <div class="row">

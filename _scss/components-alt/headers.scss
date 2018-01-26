@@ -33,7 +33,11 @@ h1 {
     font-weight: 300;
     padding: 0 0 10px;
     margin-bottom: 0;
-    background-color: white;
+    background-color: transparent;
+    &>li.active {
+      font-family: 'Lato';
+      color: $gray-active;
+    }
   }
   .breadcrumb>li+li:before {
     content: "/ ";
