@@ -29,13 +29,12 @@
 
 .l-header-bottom {
   min-height: 50px;
-  padding-top: 10px;
-  padding-bottom: 8px;
+  padding-top: 8px;
   background-color: $white-base;
   font-family: 'Lato';
   position: relative;
   @media screen and (max-width: 1024px) {
-    padding-top: 20px;
+    padding-top: 8px;
   }
 }
 
