@@ -44,15 +44,16 @@ form {
       max-width: 300px;
       overflow: hidden;
       text-overflow: ellipsis;
+      font-size: 12px;
     }
   }
 }
 
 label {
-  @extend .FontLatoBold;
+  font-weight: 700;
   .checkbox &,
   .radio & {
-    @extend .FontLato;
+    font-weight: 500;
   }
 }
 
@@ -74,6 +75,7 @@ label {
   }
 .bootstrap-select .btn.dropdown-toggle {
   padding-right: 25px;
+  line-height: 1.6em;
 }
 
 // get rid of box shadow appearing in share post modal
@@ -86,7 +88,7 @@ textarea {
 }
 textarea, input[type="text"], input[type="email"], input[type="password"] {
   color: $gray !important;
-  font-family: LatoLight;
+  //font-family: LatoLight;
   letter-spacing: 0.03em;
   font-size: 13px;
 }

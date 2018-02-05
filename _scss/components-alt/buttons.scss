@@ -4,22 +4,20 @@
   transition: all .2s;
   text-transform: uppercase;
   line-height: 1.5;
-  letter-spacing: .1em;
+  letter-spacing: .05em;
   border-radius: 2px;
   padding: 10px 20px 8px;
   font-size: 12px;
-  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.1);
-
-  @extend .FontLatoBold;
-  font-weight: normal;
-
-  color: #444;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0);
+  font-weight: 600;
+ // color: $white-base;
+  //background-color: $btn-primary;
   &.btn-primary,
   &.btn-success,
   &.btn-danger,
   &.btn-warning,
   &.btn-info {
-    color: white;
+    color: $btn-primary-color;
   }
 
   &.btn-primary {
@@ -27,14 +25,20 @@
   }
 
   &.btn-default {
-    background-color: #E6E6E6;
+    background-color: inherit;
     &:hover {
-      background-color: darken(#E6E6E6, 5%);
+      //background-color: darken($btn-primary, 5%);
+      transform: translateY(0);
+      //color: $btn-primary-color;
     }
     &[disabled=disabled] {
       &:hover {
-        background-color: #E6E6E6;
+        background-color: $btn-primary;
       }
+    }
+    span {
+      color: $gray-light;
+      font-size: 13px;
     }
   }
 
@@ -42,12 +46,15 @@
     background-color: $btn-primary-bg;
     border-color: transparent;
     &:focus {
-      background-color: darken($btn-primary-bg, 10%);
+      background-color: darken($btn-primary-bg, 5%);
       border-color:transparent;
     }
     &:active, &:hover {
-      background-color: darken($btn-primary-bg, 10%);
+      background-color: darken($btn-primary-bg, 5%);
       box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.25);
+    }
+    &:hover {
+      transform: translateY(-1px);
     }
     &.disabled {
       &:hover {
@@ -59,19 +66,20 @@
   }
 
   &.btn-secondary {
-    color: $r_brand-primary2;
-    background-color: $white-base;
-    border-color: $r_brand-primary2;
+    color: $btn-secondary-color;
+    background-color: $btn-secondary-bg;
+    border-color:$btn-secondary-border;
     box-shadow: none;
     &:hover {
-      background-color: $r_brand-primary2;
-      color: $white-base;
+      background-color:$btn-primary-bg;
+      color: $btn-primary-color;
+      transform: translateY(-1px);
     }
     &.disabled {
       &:hover {
         box-shadow: none;
-        color: $r_brand-primary2;
-        background-color: $white-base;
+        color: $btn-secondary-color;
+        background-color: $btn-secondary-bg;
       }
     }
   }
@@ -79,10 +87,11 @@
   &.btn-internal-primary {
     color: #ffffff;
     background-color: #6f5499;
-    border-color: darken(#6f5499, 10%);
+    border-color: darken(#6f5499, 5%);
     &:hover {
       color: #ffffff;
-      background-color: darken(#6f5499, 10%);
+      background-color: darken(#6f5499, 5%);
+      transform: translateY(-1px);
     }
   }
 
@@ -92,7 +101,8 @@
     border-color: #6f5499;
     &:hover {
       color: #ffffff;
-      background-color: darken(#6f5499, 10%);
+      background-color: darken(#6f5499, 5%);
+      transform: translateY(-1px);
     }
   }
 
@@ -101,8 +111,8 @@
     background-color:$btn-danger-bg;
     //border-color: #888;
     &:hover {
-      background-color: darken($btn-danger-bg, 10%);
-      //border-color: darken(#888, 10%);
+      background-color: darken($btn-danger-bg, 5%);
+      transform: translateY(-1px);
     }
   }
 
@@ -112,7 +122,7 @@
 
   &.btn-xs {
     padding: 3px 7px 2px;
-    font-size: 11px;
+    font-size: 10px;
   }
 
   &.btn-sm {
@@ -152,8 +162,6 @@
   @media screen and (max-width: 1024px) {
     font-size: 14px;
   }
-
-  @extend .FontLato;
   font-weight: normal;
 
   &.active {
@@ -173,16 +181,18 @@
     text-transform: uppercase;
     font-size: 0.8em;
     padding-top: 9px;
-    opacity: 0.75;
+    //opacity: 0.75;
     &:active,
     &:focus,
     &:hover,
     &.active {
-      opacity: 1;
-      background-color: lighten($r_brand-primary, 67%);
-      border: 1px solid lighten($r_brand-primary, 62%);
+      background-color: $white-base;
+      border: 1px solid $r_brand-primary;
       color: $r_brand-primary !important;
       box-shadow: none;
+    }
+    &:hover {
+      border: 1px solid $r_brand-primary;
     }
   }
 
@@ -193,9 +203,9 @@
     }
   }
   .badge {
-    font-size: 0.8em;
+    font-size: 1em;
     top: -1px;
-    line-height: 2.1em;
+    line-height: 1em;
   }
 }
 
@@ -207,7 +217,6 @@
     color: $white-base !important;
     background-color: $r_brand-primary;
     border: 1px solid $r_brand-primary;
-    background-color: $r_brand-primary;
     &.active,
     &:hover,
     &:active {
@@ -228,9 +237,11 @@
   height: 34px;
   padding:6px 9px;
   font-size: 14px;  
+  border: 1px solid transparent;
   &:hover {
-    background-color: lighten($r_brand-primary, 67%);
-    border: 1px solid lighten($r_brand-primary, 62%);
+    //background-color: $r_brand-primary;
+    border: 1px solid $r_brand-primary;
+    //color: $white-base;
   }
   i:first-child {
     font-size: 14px !important;
@@ -266,12 +277,12 @@
 
 .btn.btn-link {
   box-shadow: none;
-  color: $gray-light;
+  background-color: transparent;
+  color: $btn-secondary-color;
   text-decoration: none;
   padding: 10px 10px 8px;
-  font-family: 'Lato';
   &:hover {
-    color: darken($gray-dark, 10%);
+    color: darken($btn-secondary-color, 10%);
   }
     &.disabled {
     &:hover {
@@ -283,7 +294,7 @@
 
 .btn-group-bordered {
   border-radius: 3px;
-  border-color: $brand-primary;
+  border-color: $btn-primary-border;
   border-style: solid;
   border-top-width: 2px;
   border-bottom-width: 2px;
@@ -293,9 +304,9 @@
   .btn-default.dropdown-toggle {
     background-color: white;
     border-color: white;
-    border-left-color: $brand-primary;
-    border-right-color: $brand-primary;
-    color: $brand-primary !important;
+    border-left-color: $btn-primary-border;
+    border-right-color: $btn-primary-border;
+    color: $r_brand-primary !important;
     &:hover, &.active, &:active, &:focus {
       color: white !important;
       background-color: $brand-primary !important;
@@ -366,7 +377,7 @@
       letter-spacing: normal;
       span {
         font-weight: normal;
-        font-family: Lato;
+        color: $gray;
       }
       &:hover, &.active, &:active, &:focus {
         background: white;

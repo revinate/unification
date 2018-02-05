@@ -26,16 +26,16 @@ $daterangepicker-cell-color:                 $daterangepicker-color !default;
 $daterangepicker-cell-border-color:          transparent !default;
 $daterangepicker-cell-bg-color:              $daterangepicker-bg-color !default;
 
-$daterangepicker-cell-hover-color:           #3BA1F8 !default;
+$daterangepicker-cell-hover-color:           #fff !default;
 $daterangepicker-cell-hover-border-color:    transparent !default;
-$daterangepicker-cell-hover-bg-color:        #EBF5FE !default;
+$daterangepicker-cell-hover-bg-color:        $r_brand-primary !default;
 
 $daterangepicker-in-range-color:             #28A68A !default;
 $daterangepicker-in-range-border-color:      transparent !default;
-$daterangepicker-in-range-bg-color:          #DBF0EB !default;
+$daterangepicker-in-range-bg-color:          lighten($r_brand-primary, 67%) !default;
 
-$daterangepicker-active-color:               #DBF0EB !default;
-$daterangepicker-active-bg-color:            #28A68A !default;
+$daterangepicker-active-color:               $white-base !default;
+$daterangepicker-active-bg-color:            $r_brand-primary !default;
 $daterangepicker-active-border-color:        transparent !default;
 
 $daterangepicker-unselected-color:           #999 !default;
@@ -101,7 +101,7 @@ $daterangepicker-ranges-border-color:         $daterangepicker-ranges-bg-color !
 $daterangepicker-ranges-border-radius:        $daterangepicker-border-radius !default;
 
 $daterangepicker-ranges-hover-color:          #fff !default;
-$daterangepicker-ranges-hover-bg-color:       $daterangepicker-ranges-color !default;
+$daterangepicker-ranges-hover-bg-color:       $r_brand-primary !default;
 $daterangepicker-ranges-hover-border-size:    $daterangepicker-ranges-border-size !default;
 $daterangepicker-ranges-hover-border-color:   $daterangepicker-ranges-hover-bg-color !default;
 $daterangepicker-ranges-hover-border-radius:  $daterangepicker-border-radius !default;

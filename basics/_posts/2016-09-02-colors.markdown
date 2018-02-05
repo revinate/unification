@@ -13,12 +13,12 @@ date: 2016-09-02 00:00:00
             RGB: 0 78 155<br />
             Used for: logo, backgrounds</p>
         </div>
-        <div class="col-xs-12 color-box r-brand-primary2">
+<!--         <div class="col-xs-12 color-box r-brand-primary2">
             <p>$r_brand-primary2<br />
             HEX: #ff6400<br />
             RGB: 255 100 0<br />
             Used for: primary CTAs</p>
-        </div>
+        </div> -->
     </div>
     
 

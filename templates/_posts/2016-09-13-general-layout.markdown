@@ -17,7 +17,7 @@ Everything inside follows the standard Bootstrap 12-column grid, using `.row` an
     <div class="l-header-bottom"></div>
   </header>
   <main class="l-main">
-    <div class="container">
+    <div class="container-fluid">
       <div class="l-main-content pd-md mg-t-xl">
         <ul class="global-actions-nav pull-right">
           <li>

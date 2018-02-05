@@ -193,7 +193,7 @@
 .primary-menu.nav.nav-tabs > li.active > a,
 .primary-menu.nav.nav-tabs > li.active > a:hover {
   background-color: $white-base;
-  color: $gray;
+  color:$r_brand-primary;
   font-weight: bold;
   border: none;
   &.primary-menu-item-logo {

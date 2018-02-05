@@ -1,12 +1,15 @@
 .badge {
+  font-family: 'Gram', sans-serif !important;
   display: inline-block;
   min-width: 22px;
-  //height: 20px;
-  font-size: .7em;
+  //height: 22px;
+  font-size: 1em;
   text-align: center;
-  line-height: 2em;
-  padding: 0 8px;
+  //line-height: 1.7em;
+  padding: 4px 12px;
   text-transform: uppercase;
+  border-radius: 14px;
+  letter-spacing: 0.1em;
   &.badge-danger {
     background-color: $brand-danger;
     color: #ffffff;

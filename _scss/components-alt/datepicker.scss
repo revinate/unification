@@ -1,33 +1,58 @@
 .datepicker.dropdown-menu,
 .timepicker.dropdown-menu {
+  //color: $gray;
   .btn {
-    padding: 5px;
+    padding: 5px 10px;
     background: transparent;
     border: none;
-    @extend .FontLato;
+    font-weight: 400;
+    border:1px solid transparent;
+    span {
+      color: $gray-dark;
+    }
     &.btn-default,
     &.btn-primary,
     &.btn-info,
     &.btn-today {
-      border: none;
+      color: $gray-base !important;
+      //border: none;
     }
     .text-muted {
-      color: #999;
-      @extend .FontLatoLight;
+      color: #AAA;
     }
-    &:hover {
-      background: #EBF5FE;
-      color: #3BA1F8;
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $r_brand-primary;
+      border-color: $r_brand-primary;
+      color: $white-base !important;
+      transform: translateY(0);
+      box-shadow: none;
       .text-muted {
-        color: #3BA1F8;
+        color: $white-base;
+      }
+      span {
+        color: $white-base;
       }
     }
   }
   .btn-today {
-    color: #333;
+    font-weight: 700;
+    span {
+      color: $gray-base;
+    }
   }
   .btn-primary {
-    color: #28A68A;
-    background: #DBF0EB;
+    color: $white-base !important;
+    background: $r_brand-primary;
+    span {
+      color: $white-base !important;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      background: $r_brand-primary;
+       color: $white-base !important;
+    }
   }
 }

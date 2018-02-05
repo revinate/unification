@@ -29,14 +29,13 @@ $r_brand-primary2:      #ff6400 ;
 $r_brand-secondary:     #ff6400 ;
 $r_brand-tertiary:      #8f7ec2 ;
 
-
-
 $r_brand-primary-dark:      #202C37;
 $r_brand-primary-darker:    #182129;
 $r_brand-primary-light:     #74797e;
 $r_brand-primary-lighter:   #939ba2;
 
-$btn-primary: 				$r_brand-primary2 ;
+//$btn-primary: 				#00A891;
+$btn-primary: 				 #00B0F2 ;
 
 $white-base:             rgba(255,255,255,1) ;
 $white-75:             	 rgba(255,255,255,0.75) ;
@@ -173,13 +172,17 @@ $table-border-color:            #dddddd ;
 
 $btn-font-weight:                normal ;
 
-$btn-default-color:              #333 ;
-$btn-default-bg:                 #fff ;
-$btn-default-border:             #ccc ;
+$btn-default-color:              $white-base ;
+$btn-default-bg:                 $btn-primary ;
+$btn-default-border:             $btn-primary ;
 
-$btn-primary-color:              #fff ;
-$btn-primary-bg:                 $r_brand-primary2 ;
-$btn-primary-border:             darken($btn-primary-bg, 5%) ;
+$btn-primary-color:              $white-base ;
+$btn-primary-bg:                 $btn-primary ;
+$btn-primary-border:             $btn-primary-bg ;
+
+$btn-secondary-color:            $btn-primary ;
+$btn-secondary-bg:               $white-base ;
+$btn-secondary-border:           $btn-primary-bg ;
 
 $btn-success-color:              #fff ;
 $btn-success-bg:                 $brand-success ;

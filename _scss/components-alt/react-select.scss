@@ -9,7 +9,7 @@
   position: relative;
   font-family: inherit;
   @extend .form-control;
-  font-family: Lato !important;
+  //font-family: Lato !important;
   font-weight: normal;
 }
 .Select,
@@ -103,7 +103,7 @@
 .has-value.is-pseudo-focused.Select--single > .Select-control .Select-value a.Select-value-label:hover,
 .has-value.Select--single > .Select-control .Select-value a.Select-value-label:focus,
 .has-value.is-pseudo-focused.Select--single > .Select-control .Select-value a.Select-value-label:focus {
-  color: #007eff;
+  color: #red;
   outline: none;
   text-decoration: underline;
 }
@@ -257,10 +257,13 @@
 .Select-option {
   box-sizing: border-box;
   background-color: #fff;
-  color: #666666;
+  color: $gray;
   cursor: pointer;
   display: block;
   padding: 8px 10px;
+  &:hover {
+    color: $r_brand-primary !important;
+  }
 }
 .Select-option:last-child {
   border-bottom-right-radius: 4px;
@@ -298,14 +301,14 @@
   margin-left: 5px;
 }
 .Select--multi .Select-value {
-  background-color: #ebf5ff;
+  background-color: $r_brand-primary !important;
   /* Fallback color for IE 8 */
   background-color: rgba(0, 126, 255, 0.08);
   border-radius: 2px;
   border: 1px solid #c2e0ff;
   /* Fallback color for IE 8 */
   border: 1px solid rgba(0, 126, 255, 0.24);
-  color: #007eff;
+  color: #fff;
   display: inline-block;
   font-size: 0.9em;
   line-height: 1.4;
@@ -338,20 +341,21 @@
   border-top-left-radius: 2px;
   border-right: 1px solid #c2e0ff;
   /* Fallback color for IE 8 */
-  border-right: 1px solid rgba(0, 126, 255, 0.24);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
   padding: 1px 5px 3px;
+  background-color: rgba(255,255,255, 0.2) !important;
 }
 .Select--multi .Select-value-icon:hover,
 .Select--multi .Select-value-icon:focus {
-  background-color: #d8eafd;
+  background-color: rgba(255,255,255, 0.1) !important;
   /* Fallback color for IE 8 */
-  background-color: rgba(0, 113, 230, 0.08);
-  color: #0071e6;
+  //background-color: rgba(0, 113, 230, 0.08);
+  color: #FFF;
 }
 .Select--multi .Select-value-icon:active {
-  background-color: #c2e0ff;
+  background-color: $r_brand-primary;
   /* Fallback color for IE 8 */
-  background-color: rgba(0, 126, 255, 0.24);
+  //background-color: rgba(0, 126, 255, 0.24);
 }
 .Select--multi.is-disabled .Select-value {
   background-color: #fcfcfc;

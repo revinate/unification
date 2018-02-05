@@ -25,9 +25,10 @@
 
 .dashboard-widget-metrics {
   margin: 10px;
-  font-size: 30px;
-  @extend .FontLatoLight;
-  color: $r_brand-primary;
+  font-size: 36px;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  color: $gray;
 }
 
 .dashboard-widget-graph {
@@ -91,12 +92,13 @@
   }
   .custom-widget header .cw-header-link {
     text-transform: capitalize;
-    color: #333333;
+    color: $gray;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
     display: inline-block;
     width: 75%;
+    text-transform: uppercase;
   }
   .custom-widget header .cw-header-link[href=""] {
     pointer-events: none;
@@ -120,7 +122,7 @@
   }
   .numeric-value .cw-body {
     border-bottom: 1px solid #ddd;
-    color: #0070cc;
+    color: $gray;
     font-size: 61px;
     line-height: 1;
     padding: 3px 0 15px;
@@ -684,7 +686,7 @@
   .cw-delete-modal .modal-content {
     overflow: visible;
   }
-  @media print {
+  @media print { 
     .cw-container .cw-sm,
     .cw-container .cw-md,
     .cw-container .cw-lg {
@@ -763,7 +765,7 @@
     font-size: 12px;
   }
   #unified-dashboard .custom-widget.numeric-value .cw-body {
-    color: $r_brand-primary;
+    color: $gray;
     padding: 19px 0;
   }
   #unified-dashboard .custom-widget:hover .cw-dnd-handler,
@@ -886,8 +888,9 @@
   }
   .create-widget-modal-wrapper .custom-widget header .cw-header-link {
     text-transform: capitalize;
-    color: #333333;
+    color: $gray;
     width: 100%;
+    text-transform: uppercase;
   }
   .create-widget-modal-wrapper .custom-widget footer {
     font-size: 12px;
