@@ -184,4 +184,18 @@
 		});
 	});
 
+    function swapStyleSheet(sheet) {
+        document.getElementById("pagestyle").setAttribute("href", sheet);
+    }
+
+    function initate() {
+        var style1 = document.getElementById("defaultStyles");
+        var style2 = document.getElementById("altStyles");
+
+        style1.onclick = function () { swapStyleSheet("/css/app.css") };
+        style2.onclick = function () { swapStyleSheet("/css/app-alt.css"); };
+    }
+
+    window.onload = initate;
+
 }());
