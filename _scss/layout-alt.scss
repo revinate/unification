@@ -74,11 +74,7 @@
   display: none;
 }
 
-.container.fixed-nav-padding {
-  padding-top: 65px;
-  width: 100% !important;
-}
-.container-fluid.fixed-nav-padding {
+.container.fixed-nav-padding, .container-fluid.fixed-nav-padding {
   padding-top: 65px;
   width: 100% !important;
 }
