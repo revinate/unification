@@ -74,8 +74,12 @@
   display: none;
 }
 
-.container.fixed-nav-padding, .container-fluid.fixed-nav-padding {
+.container.fixed-nav-padding {
   padding-top: 130px;
+}
+.container-fluid.fixed-nav-padding {
+  padding-top: 65px;
+  width: 100% !important;
 }
 
 /* Override .container {width: auto} R/S survey.css line 945 */
