@@ -1,0 +1,528 @@
+<!doctype html>
+<head>
+    <link rel="stylesheet" href="/css/styledown.css"/>
+    <link rel="stylesheet" href="/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.css"/>
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /-->
+    <link rel="stylesheet" href="/css/app-alt.css"/>
+    <link rel="stylesheet" href="/libs/bootstrap-toggle/css/bootstrap-toggle.css"/>
+    <link rel="stylesheet" href="/libs/nya-bootstrap-select/dist/css/nya-bs-select.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <style>
+        #sort tbody {
+            cursor: move;
+        }
+    </style>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+
+<div class="l-app" id="styleguide">
+
+    <div class="global-alert-container">
+    </div>
+    <main class="l-main">
+        <div class="container-fluid" style="padding-top: 135px;">
+            <div class="l-main-content row pd-xl">
+
+                <header class="l-header navbar-fixed-top">
+                    <div class="l-header-top">
+                        <div class="container">
+                            <ul class="primary-menu nav nav-tabs">
+                                <li class="primary-menu-item-logo primary-menu-item-text"><span class="logo"><i
+                                        class="revicon-rev-logo-2017"></i></span></li>
+                                <li role="presentation" class="active"><a id="rTest-nav-tabs-dashboard" role="button"
+                                                                          href="#">Dashboards</a></li>
+                                <li role="presentation" class=""><a id="rTest-nav-tabs-marketing" role="button"
+                                                                    href="#">Marketing</a></li>
+                                <li role="presentation" class=""><a id="rTest-nav-tabs-rgdb" role="button" href="#">Guests
+                                    &amp; Segments</a></li>
+                                <li role="presentation" class=""><a id="rTest-nav-tabs-upsell" role="button" href="#">Upsells</a>
+                                </li>
+                                <li class="dropdown pull-right primary-menu-item-icon"><a type="button"
+                                                                                          data-toggle="dropdown"
+                                                                                          class="primary-menu-item-bordered primary-menu-item-icon rTest-nav-bar-user-menu-dropdown-toggle-link"
+                                                                                          title="Settings"><i
+                                        class="revicon-cog"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="rTest-nav-bar-user-dropdown-manage-user-link"
+                                               href="/mgmt/user/manage/avertine">User Settings</a></li>
+                                        <li><a class="rTest-nav-bar-user-dropdown-report-subscription-setting-link"
+                                               href="/mgmt/property-reports/avertine/subscription">Report
+                                            Subscriptions</a></li>
+                                        <li><a class="rTest-nav-bar-user-dropdown-account-settings-link"
+                                               href="/mgmt/settings/avertine">Account Settings</a></li>
+                                        <li><a class="rTest-nav-bar-user-dropdown-guest-list-import-setting-link"
+                                               href="/mgmt/guest-list-import/avertine">Guest List Import Settings</a>
+                                        </li>
+                                        <li role="presentation" class=""><a role="button" href="#">Admin Tools</a></li>
+                                        <li class="is-superadmin"><a class="nav-bar-user-dropdown-switch-mode-link"
+                                                                     type="button" role="button" tabindex="0"
+                                                                     style="color: rgb(59, 161, 248);">In Demo Mode</a>
+                                        </li>
+                                        <li><a class="nav-bar-user-dropdown-logout-link" href="/mgmt/logout">Logout</a>
+                                        </li>
+                                        <li>
+                                            <div class="internal-only admin-email-indicator nav-bar-user-dropdown-user-indicator">
+                                                jeff@revinate.com is logged in
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown pull-right
+      primary-menu-item-icon "><a type="button" data-toggle="dropdown"
+                                  class="primary-menu-item-bordered primary-menu-item-icon rTest-nav-bar-user-menu-dropdown-toggle-link"
+                                  title="Need Help?"> <i class="fa fa-question-circle"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a id="rTest-nav-bar-feedback-helpdesk"
+                                               href="/mgmt/nav/redirect/deskcom/avertine" target="_blank">Helpdesk</a>
+                                        </li>
+                                        <li><a id="rTest-nav-bar-feedback-link" href="/mgmt/feedback/avertine"
+                                               target="_self">Contact Support</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown pull-right
+       visible-lg"><a type="button" data-toggle="dropdown"
+                      class="primary-menu-item-bordered primary-menu-item-icon nav-bar-account-lg-menu-dropdown-toggle-link">Avertine
+                                    Inn <i class="fa fa-caret-down pull-right"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a id="nav-bar-all-accounts" class="text-blue" href="/mgmt/account-select"
+                                               target="_self">All Accounts</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown pull-right
+      primary-menu-item-icon hidden-xs hidden-lg"><a type="button" data-toggle="dropdown"
+                                                     class="primary-menu-item-bordered primary-menu-item-icon nav-bar-account-md-menu-dropdown-toggle-link">
+                                    <i class="revicon-compass-2"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a id="nav-bar-all-accounts" class="text-blue" href="/mgmt/account-select"
+                                               target="_self">All Accounts</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="l-header-bottom">
+                        <div class="tab-content container">
+                            <div role="tabpanel"><a id="rTest-nav-bar-report-home-link"
+                                                    href="/mgmt/app/avertine/dashboard"
+                                                    class="btn-header mg-r-sm active btn btn-primary"><i
+                                    class="fa fa-dashboard mg-r-sm"></i>Main</a></div>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="styleguide col-sm-12" ng-app="main">
+                    <div ng-controller="MainCtrl">
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="page-header"><p class="text-center dashboard-property-logo-container"><img
+                src="https://img.revinate.com/image/upload/c_fit,h_100/avertine-400x226_z2tvdv.png"
+                class="dashboard-property-logo" alt="Avertine Inn"></p>
+            <h1 class="text-center dashboard-logo-text" hidden="">Avertine Inn</h1></div>
+        <div id="rTest_dashboard_lifetime_revenue" class="dashboard-lifetime-revenue">Lifetime Revenue With Revinate:&nbsp;<span>$289,275</span>
+        </div>
+        <div class="row dashboard-row">
+            <div class="col-md-4 dashboard-card">
+                <div class="dashboard-widget fixed-height">
+                    <h4 class="dashboard-widget-title title-size"><i class="fa fa-bed icon"></i>
+                        <p class="title">Campaign Room Revenue</p>
+                        <p class="range">YTD</p></h4>
+                    <div hidden="">
+                        <div class="spinner undefined">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                    </div>
+                    <div><p class="dashboard-widget-value" id="rTest_dashboard_campaign_room_revenue"><span>$0</span>
+                    </p>
+                        <div class="table-responsive dashboard-table">
+                            <table class="dashboard-widget-table table table-striped">
+                                <thead>
+                                <tr>
+                                    <th class="dashboard-table-header">Month*</th>
+                                    <th class="dashboard-table-header right-align">Revenue</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td id="rTest_dashboard_campaign_room_month_January">January</td>
+                                    <td id="rTest_dashboard_campaign_room_revenue_January"><span>$0</span></td>
+                                </tr>
+                                <tr>
+                                    <td id="rTest_dashboard_campaign_room_month_December">December</td>
+                                    <td id="rTest_dashboard_campaign_room_revenue_December"><span>$0</span></td>
+                                </tr>
+                                <tr>
+                                    <td id="rTest_dashboard_campaign_room_month_November">November</td>
+                                    <td id="rTest_dashboard_campaign_room_revenue_November"><span>$0</span></td>
+                                </tr>
+                                <tr>
+                                    <td id="rTest_dashboard_campaign_room_month_October">October</td>
+                                    <td id="rTest_dashboard_campaign_room_revenue_October"><span>$159</span></td>
+                                </tr>
+                                <tr>
+                                    <td id="rTest_dashboard_campaign_room_month_September">September</td>
+                                    <td id="rTest_dashboard_campaign_room_revenue_September"><span>$4,798</span></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="dashboard-widget-footer"></div>
+                </div>
+            </div>
+            <div class="col-md-4 dashboard-card">
+                <div class="dashboard-widget fixed-height">
+                    <h4 class="dashboard-widget-title title-size"><i class="revicon-email-send-1 icon"></i>
+                        <p class="title">One-Time Campaign Revenue</p>
+                        <p class="range">Last 5</p></h4>
+                    <div hidden="">
+                        <div class="spinner undefined">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                    </div>
+                    <div><p class="dashboard-widget-value" id="rTest_dashboard_onetime_revenue"><span>$73,530</span></p>
+                        <div class="table-responsive dashboard-table">
+                            <table class="dashboard-widget-table table table-striped">
+                                <thead>
+                                <tr>
+                                    <th class="dashboard-table-header">Campaign Name</th>
+                                    <th class="dashboard-table-header right-align">Sends</th>
+                                    <th class="dashboard-table-header right-align">Revenue</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td id="rTest_dashboard_onetime_name_0" class="overflow-able">OTA Winback</td>
+                                    <td class="right-align" id="rTest_dashboard_onetime_sent_0">17000</td>
+                                    <td id="rTest_dashboard_onetime_revenue_0"><span>$15,011</span></td>
+                                </tr>
+                                <tr>
+                                    <td id="rTest_dashboard_onetime_name_1" class="overflow-able">Locals Special - Wine
+                                        &amp; Dine
+                                    </td>
+                                    <td class="right-align" id="rTest_dashboard_onetime_sent_1">5000</td>
+                                    <td id="rTest_dashboard_onetime_revenue_1"><span>$16,460</span></td>
+                                </tr>
+                                <tr>
+                                    <td id="rTest_dashboard_onetime_name_2" class="overflow-able">Pre-season Sale: Past
+                                        Ski Guests
+                                    </td>
+                                    <td class="right-align" id="rTest_dashboard_onetime_sent_2">5000</td>
+                                    <td id="rTest_dashboard_onetime_revenue_2"><span>$18,194</span></td>
+                                </tr>
+                                <tr>
+                                    <td id="rTest_dashboard_onetime_name_3" class="overflow-able">ssdasfdadfsa</td>
+                                    <td class="right-align" id="rTest_dashboard_onetime_sent_3">29</td>
+                                    <td id="rTest_dashboard_onetime_revenue_3"><span>$496</span></td>
+                                </tr>
+                                <tr>
+                                    <td id="rTest_dashboard_onetime_name_4" class="overflow-able">July 4th Getaway!</td>
+                                    <td class="right-align" id="rTest_dashboard_onetime_sent_4">1</td>
+                                    <td id="rTest_dashboard_onetime_revenue_4"><span>$23,369</span></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="dashboard-widget-footer"><a href="https://inguest.revinate.com/mgmt/promotions/avertine"
+                                                            id="rTest_dashboard_promotion_list">See All Campaigns</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 dashboard-card">
+                <div class="dashboard-widget fixed-height" hidden="">
+                    <h4 class="dashboard-widget-title title-size"><i class="fa fa-cart-plus icon"></i>
+                        <p class="title">Total Upsells Revenue</p></h4>
+                    <div hidden="">
+                        <div class="spinner undefined">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                    </div>
+                    <div><p class="dashboard-explanation">Drive more revenue to your property with Upsells.</p>
+                        <div class="dashboard-upper-link"><a
+                                href="https://inguest.revinate.com/mgmt/settings/avertine/upsell"
+                                id="rTest_dashboard_upsell_settings">Set Up Upsells</a></div>
+                        <div><i class="fa fa-cart-plus dashboard-blank-icon"></i></div>
+                    </div>
+                </div>
+                <div class="dashboard-widget fixed-height">
+                    <h4 class="dashboard-widget-title title-size"><i class="fa fa-cart-plus icon"></i>
+                        <p class="title">Total Upsells Revenue</p>
+                        <p class="range">YTD</p></h4>
+                    <div hidden="">
+                        <div class="spinner undefined">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                    </div>
+                    <div><p class="dashboard-widget-value" id="rTest_dashboard_upsell_revenue"><span>$0</span></p>
+                        <div class="table-responsive dashboard-table">
+                            <table class="dashboard-widget-table table table-striped">
+                                <thead>
+                                <tr>
+                                    <th class="dashboard-table-header">Month**</th>
+                                    <th class="dashboard-table-header right-align">Revenue</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td id="rTest_dashboard_upsell_month_January">January</td>
+                                    <td id="rTest_dashboard_upsell_revenue_January"><span>$0</span></td>
+                                </tr>
+                                <tr>
+                                    <td id="rTest_dashboard_upsell_month_December">December</td>
+                                    <td id="rTest_dashboard_upsell_revenue_December"><span>$160</span></td>
+                                </tr>
+                                <tr>
+                                    <td id="rTest_dashboard_upsell_month_November">November</td>
+                                    <td id="rTest_dashboard_upsell_revenue_November"><span>$3,795</span></td>
+                                </tr>
+                                <tr>
+                                    <td id="rTest_dashboard_upsell_month_October">October</td>
+                                    <td id="rTest_dashboard_upsell_revenue_October"><span>$4,760</span></td>
+                                </tr>
+                                <tr>
+                                    <td id="rTest_dashboard_upsell_month_September">September</td>
+                                    <td id="rTest_dashboard_upsell_revenue_September"><span>$3,418</span></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="dashboard-widget-footer"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row dashboard-row">
+            <div class="col-md-4 dashboard-card">
+                <div class="dashboard-widget fixed-height" hidden="">
+                    <h4 class="dashboard-widget-title title-size"><i class="fa fa-calendar icon"></i>
+                        <p class="title">Pending Upsells Requests</p></h4>
+                    <div hidden="">
+                        <div class="spinner undefined">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                    </div>
+                    <div><p class="dashboard-explanation">Easily handle and track upsells requests.</p>
+                        <div class="dashboard-upper-link"><a
+                                href="https://inguest.revinate.com/mgmt/settings/avertine/upsell"
+                                id="rTest_dashboard_upsell_settings">Set Up Upsells</a></div>
+                        <div><i class="fa fa-calendar dashboard-blank-icon"></i></div>
+                    </div>
+                </div>
+                <div class="dashboard-widget fixed-height">
+                    <h4 class="dashboard-widget-title title-size"><i class="fa fa-calendar icon"></i>
+                        <p class="title">Pending Upsells Requests</p>
+                        <p class="range">Next 5 Days</p></h4>
+                    <div hidden="">
+                        <div class="spinner undefined">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                    </div>
+                    <div><p class="dashboard-widget-value" id="rTest_dashboard_pending_upsell_total">6</p>
+                        <div class="table-responsive dashboard-table">
+                            <table class="dashboard-widget-table table table-striped">
+                                <thead>
+                                <tr>
+                                    <th class="dashboard-table-header">Check-in Date</th>
+                                    <th class="dashboard-table-header right-align">Pending Requests</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td id="rTest_dashboard_pending_upsell_Today">Today</td>
+                                    <td id="rTest_dashboard_pending_upsell_count_Today">2</td>
+                                </tr>
+                                <tr>
+                                    <td id="rTest_dashboard_pending_upsell_Tomorrow">Tomorrow</td>
+                                    <td id="rTest_dashboard_pending_upsell_count_Tomorrow">0</td>
+                                </tr>
+                                <tr>
+                                    <td id="rTest_dashboard_pending_upsell_Sunday">Sunday</td>
+                                    <td id="rTest_dashboard_pending_upsell_count_Sunday">4</td>
+                                </tr>
+                                <tr>
+                                    <td id="rTest_dashboard_pending_upsell_Monday">Monday</td>
+                                    <td id="rTest_dashboard_pending_upsell_count_Monday">0</td>
+                                </tr>
+                                <tr>
+                                    <td id="rTest_dashboard_pending_upsell_Tuesday">Tuesday</td>
+                                    <td id="rTest_dashboard_pending_upsell_count_Tuesday">0</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="dashboard-widget-footer"><a id="rTest_dashboard_pending_upsell_link"
+                                                            href="/mgmt/app/avertine/upgrades">More Requests</a></div>
+                </div>
+            </div>
+            <div class="col-md-4 dashboard-card">
+                <div class="dashboard-widget fixed-height" hidden="">
+                    <h4 class="dashboard-widget-title title-size"><i class="fa fa-cart-plus icon"></i>
+                        <p class="title">Room Upsells</p></h4>
+                    <div hidden="">
+                        <div class="spinner undefined">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                    </div>
+                    <div><p class="dashboard-explanation">Discover which room upgrades drive the most revenue for your
+                        property.</p>
+                        <div class="dashboard-upper-link"><a
+                                href="https://inguest.revinate.com/mgmt/settings/avertine/upsell"
+                                id="rTest_dashboard_upsell_settings">Set Up Upsells</a></div>
+                        <div><i class="fa fa-cart-plus dashboard-blank-icon"></i></div>
+                    </div>
+                </div>
+                <div class="dashboard-widget fixed-height">
+                    <h4 class="dashboard-widget-title title-size"><i class="fa fa-cart-plus icon"></i>
+                        <p class="title">Room Upsells</p>
+                        <p class="range">YTD</p></h4>
+                    <div hidden="">
+                        <div class="spinner undefined">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                    </div>
+                    <div><p class="dashboard-widget-value" id="rTest_dashboard_room_upsell_revenue"><span>$0</span></p>
+                        <div class="table-responsive dashboard-table">
+                            <table class="dashboard-widget-table table table-striped">
+                                <thead>
+                                <tr>
+                                    <th class="dashboard-table-header">Room Type</th>
+                                    <th class="dashboard-table-header right-align">Approved Nights</th>
+                                    <th class="dashboard-table-header right-align">Revenue</th>
+                                </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="dashboard-widget-footer"><a id="rTest_dashboard_room_upsell_all" hidden=""
+                                                            href="/mgmt/app/avertine/dashboard">See All Room Upsells</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 dashboard-card">
+                <div class="dashboard-widget fixed-height" hidden="">
+                    <h4 class="dashboard-widget-title title-size"><i class="fa fa-cart-plus icon"></i>
+                        <p class="title">Amenity Upsells</p></h4>
+                    <div hidden="">
+                        <div class="spinner undefined">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                    </div>
+                    <div><p class="dashboard-explanation">Discover which amenity upgrades drive the most revenue for
+                        your property.</p>
+                        <div class="dashboard-upper-link"><a
+                                href="https://inguest.revinate.com/mgmt/settings/avertine/upsell"
+                                id="rTest_dashboard_upsell_settings">Set Up Upsells</a></div>
+                        <div><i class="fa fa-cart-plus dashboard-blank-icon"></i></div>
+                    </div>
+                </div>
+                <div class="dashboard-widget fixed-height">
+                    <h4 class="dashboard-widget-title title-size"><i class="fa fa-cart-plus icon"></i>
+                        <p class="title">Amenity Upsells</p>
+                        <p class="range">YTD</p></h4>
+                    <div hidden="">
+                        <div class="spinner undefined">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                    </div>
+                    <div><p class="dashboard-widget-value" id="rTest_dashboard_amenity_upsell_revenue"><span>$0</span>
+                    </p>
+                        <div class="table-responsive dashboard-table">
+                            <table class="dashboard-widget-table table table-striped">
+                                <thead>
+                                <tr>
+                                    <th class="dashboard-table-header">Amenity</th>
+                                    <th class="dashboard-table-header right-align">Approved Requests</th>
+                                    <th class="dashboard-table-header right-align">Revenue</th>
+                                </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="dashboard-widget-footer"><a id="rTest_dashboard_amenity_upsell_all" hidden=""
+                                                            href="/mgmt/app/avertine/dashboard">See All Amenity
+                        Upsells</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="row dashboard-row">
+            <div class="col-md-4 dashboard-table-header"><span>* Revenue attributed by date of booking</span><br><span>** Revenue attributed by date of request for approved Upsells</span>
+            </div>
+        </div>
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="l-footer pd-md">
+    <i class="revicon-rev-logo-2017"></i>
+    <br />
+    <a id="defaultStyles">Default Styles</a> /
+    <a id="altStyles">Alternate Styles</a>
+</footer>
+</div>
+
+<script src="/libs/jquery/dist/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="/libs/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
+<script src="/libs/angular/angular.min.js"></script>
+<script src="/libs/bootstrap-daterangepicker/moment.js"></script>
+<script src="/libs/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="/libs/bootstrap-daterangepicker/daterangepicker-angular.js"></script>
+<script src="/libs/angular-strap/dist/angular-strap.min.js"></script>
+<script src="/libs/angular-strap/dist/angular-strap.tpl.min.js"></script>
+<script src="/libs/jquery-datatables/js/jquery.dataTables.js"></script>
+<script src="/libs/angular-datatables/angular-datatables/dist/angular-datatables.min.js"></script>
+<script src="/libs/angular-datatables/angular-datatables/dist/plugins/bootstrap/angular-datatables.bootstrap.min.js"></script>
+<script src="/js/angular/styleguide.js"></script>
+<script src="/js/angular/rev-ng-switch.js"></script>
+<script src="/js/rev-jq-switch.js"></script>
+<script src="/libs/bootstrap-toggle/js/bootstrap-toggle.js"></script>
+<script src="/libs/bootstrap-select/js/bootstrap-select.js"></script>
+<script src="/libs/nya-bootstrap-select/dist/js/nya-bs-select.js"></script>
+<script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
+<script src="/js/main.js"></script>
+
+<script type="text/javascript" src="/js/bundle.js"></script>
+
+</body>
+</html>
