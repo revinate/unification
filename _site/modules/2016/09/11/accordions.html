@@ -1,0 +1,427 @@
+
+<!doctype html>
+    <head>
+    <link rel="stylesheet" href="/css/styledown.css" />
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /-->
+    <link rel="stylesheet" id="pagestyle" href="/css/app.css" />
+    <link rel="stylesheet" href="/libs/bootstrap-toggle/css/bootstrap-toggle.css" />
+    <link rel="stylesheet" href="/libs/nya-bootstrap-select/dist/css/nya-bs-select.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <style>
+        #sort tbody {
+            cursor: move;
+        }
+    </style>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    </head>
+<body>
+
+<div class="l-app" id="styleguide">
+    <header class="l-header navbar-fixed-top" style="position: fixed;">
+    <div class="l-header-top">
+        <div class="container-fluid">
+
+            <ul class="primary-menu nav nav-tabs" role="tablist">
+                <li class="primary-menu-item-logo primary-menu-item-text">
+              <span class="logo" title="Revinate">
+                <i class="revicon-rev-logo-2017"></i>
+              </span>
+                </li>
+                <li class="principles">
+                    <a href="/principles.html" role="tab">
+                        Principles
+                    </a>
+                </li>
+                <li class="style-guide active">
+                    <a href="/" role="tab">Style Guide</a>
+                </li>
+                <li class="resources">
+                    <a href="/resources.html" role="tab">
+                        Resources
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="l-header-bottom">
+        <div class="tab-content container-fluid">
+            <a class="btn btn-primary btn-header btn-circle pull-right mg-l-sm " href="/tickets/352" name="Tickets">
+                <i class="fa icon_tag fa-tags" data-toggle="tooltip" title="" data-original-title="Tickets">
+                </i>
+            </a>
+            <a class="btn btn-primary btn-header btn-circle pull-right mg-l-sm " href="/tickets/352" name="Tickets">
+                <i class="fa icon_tag fa-tags" data-toggle="tooltip" title="" data-original-title="Tickets">
+                </i>
+            </a>
+
+            <!-- principles tab content -->
+            <div role="tabpanel" class="tab-pane" id="principles">
+
+                <div class="btn-group mg-r-sm">
+                    <a type="button" class="btn btn-primary btn-header active" href="#design-principles">Design Principles</a>
+                </div>
+                <div class="btn-group mg-r-sm ">
+                    <a type="button" class="btn btn-primary btn-header" href="#voice">Brand Voice</a>
+                </div>
+
+            </div>
+            <!-- style-guide tab content -->
+            <div role="tabpanel" class="tab-pane active" id="style-guide">
+                
+                
+                <div class="btn-group mg-r-sm ">
+                    
+                    <button type="button" class="btn btn-primary btn-header dropdown-toggle" data-toggle="dropdown" aria-expanded="false">basics
+                        <i class="fa fa-caret-down mg-l-xs"></i>
+                    </button>
+                    
+                    <ul class="dropdown-menu" role="menu">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/basics/index.html#colors">Colors</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/basics/index.html#typography">Typography</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/basics/index.html#buttons">Buttons</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/basics/index.html#form-elements">Form Elements</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/basics/index.html#labels-badges">Labels & Badges</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/basics/index.html#tooltips">Tooltips</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/basics/index.html#translations">Translations</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </div>
+                
+                
+                <div class="btn-group mg-r-sm ">
+                    
+                    <button type="button" class="btn btn-primary btn-header dropdown-toggle" data-toggle="dropdown" aria-expanded="false">components
+                        <i class="fa fa-caret-down mg-l-xs"></i>
+                    </button>
+                    
+                    <ul class="dropdown-menu" role="menu">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/components/index.html#breadcrumbs">Breadcrumbs</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/components/index.html#switches">Switches</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/components/index.html#alerts">Alerts</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/components/index.html#pagination">Pagination</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/components/index.html#charts">Charts</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/components/index.html#tables">Tables</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/components/index.html#form-components">Form Components</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </div>
+                
+                
+                <div class="btn-group mg-r-sm ">
+                    
+                    <button type="button" class="btn btn-primary btn-header dropdown-toggle" data-toggle="dropdown" aria-expanded="false">modules
+                        <i class="fa fa-caret-down mg-l-xs"></i>
+                    </button>
+                    
+                    <ul class="dropdown-menu" role="menu">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/modules/index.html#collapse-accordion">Collapse/Accordion</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/modules/index.html#dashboard-widgets">Dashboard Widgets</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/modules/index.html#filter-bar">Filter Bar</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/modules/index.html#primary-menu">Primary Menu</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/modules/index.html#wizard-navigation">Wizard Navigation</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/modules/index.html#tertiary-navigation">Tertiary Navigation</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </div>
+                
+                
+                <div class="btn-group mg-r-sm ">
+                    
+                    <button type="button" class="btn btn-primary btn-header dropdown-toggle" data-toggle="dropdown" aria-expanded="false">templates
+                        <i class="fa fa-caret-down mg-l-xs"></i>
+                    </button>
+                    
+                    <ul class="dropdown-menu" role="menu">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/templates/index.html#general-layout">General Layout</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/templates/index.html#modals">Modals</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/templates/index.html#surveys">Surveys</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="active">
+                            <a href="/templates/index.html#emails">Emails</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </div>
+                
+
+
+            </div>
+
+            <!-- resources tab content -->
+            <div role="tabpanel" class="tab-pane" id="resources">
+
+               <div class="btn-group mg-r-sm">
+                <a type="button" class="btn btn-primary btn-header active" href="#">Other</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</header>
+    <div class="global-alert-container">
+    </div>
+    <main class="l-main">
+        <div class="container-fluid" style="padding-top: 135px;">
+            <div class="l-main-content row pd-xl">
+
+
+
+                <div class="styleguide col-sm-12" ng-app="main">
+                    <div ng-controller="MainCtrl">
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Collapse/Accordion</h1>
+    <p class="post-meta"><time datetime="2016-09-11T17:00:00-07:00" itemprop="datePublished">Sep 11, 2016</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <div class="panel-group sg" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default sg">
+    <div class="panel-heading sg" role="tab" id="headingOne">
+      <h4 class="panel-title sg">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="sg collapsed">
+          Collapsible Group Item #1
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse sg collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+      <div class="panel-body sg">
+        Content goes here
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default sg">
+    <div class="panel-heading sg" role="tab" id="headingTwo">
+      <h4 class="panel-title sg">
+        <a class="sg collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Collapsible Group Item #2
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse sg collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
+      <div class="panel-body sg">
+        Content goes here
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default sg">
+    <div class="panel-heading sg" role="tab" id="headingThree">
+      <h4 class="panel-title sg">
+        <a class="sg collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Collapsible Group Item #3
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse sg collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
+      <div class="panel-body sg">
+        Content goes here
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  
+</article>
+
+
+
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="l-footer pd-md">
+    <i class="revicon-rev-logo-2017"></i>
+    <br />
+    <a id="defaultStyles">Default Styles</a> /
+    <a id="altStyles">Alternate Styles</a>
+</footer>
+</div>
+
+<script src="/libs/jquery/dist/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="/libs/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
+<script src="/libs/angular/angular.min.js"></script>
+<script src="/libs/bootstrap-daterangepicker/moment.js"></script>
+<script src="/libs/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="/libs/bootstrap-daterangepicker/daterangepicker-angular.js"></script>
+<script src="/libs/angular-strap/dist/angular-strap.min.js"></script>
+<script src="/libs/angular-strap/dist/angular-strap.tpl.min.js"></script>
+<script src="/libs/jquery-datatables/js/jquery.dataTables.js"></script>
+<script src="/libs/angular-datatables/angular-datatables/dist/angular-datatables.min.js"></script>
+<script src="/libs/angular-datatables/angular-datatables/dist/plugins/bootstrap/angular-datatables.bootstrap.min.js"></script>
+<script src="/js/angular/styleguide.js"></script>
+<script src="/js/angular/rev-ng-switch.js"></script>
+<script src="/js/rev-jq-switch.js"></script>
+<script src="/libs/bootstrap-toggle/js/bootstrap-toggle.js"></script>
+<script src="/libs/bootstrap-select/js/bootstrap-select.js"></script>
+<script src="/libs/nya-bootstrap-select/dist/js/nya-bs-select.js"></script>
+<script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
+<script src="/js/main.js"></script>
+
+<script type="text/javascript" src="/js/bundle.js"></script>
+
+</body>
+</html>

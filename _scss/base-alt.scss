@@ -1,0 +1,79 @@
+html, body {
+  height: 100%;
+}
+body {
+  background: $body-bg;
+  font-family: 'Open Sans';
+  font-weight: normal;
+  -webkit-font-smoothing: subpixel-antialiased;
+  &.l-no-navigation-page {
+    background-color: $r_brand-primary;
+    span.logo {
+      color: #fff;
+      display: block;
+      clear: both;
+      margin: 0 auto;
+      padding: 20px 0 0;
+      font-size: 1.5em;
+      text-align: center;
+    }
+  }
+}
+
+.form-group,
+.form-inline {
+  position: relative;
+}
+
+.text-blue {
+  color: #3BA1F8 !important;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+
+.input-group {
+  input.form-control {
+    height: 38px;
+  }
+}
+
+.text-off {
+  color: #F55949;
+}
+
+.text-on {
+  color: $brand-success;
+}
+strong {
+  @extend .FontLatoBlack;
+}
+
+.positive {
+  color: $brand-success;
+}
+
+.negative {
+  color: $brand-danger;
+}
+
+.tooltip {
+  .tooltip-inner {
+    text-align: left;
+  }
+}
+a {
+  color: $r_brand-primary;
+  text-decoration: none;
+  &:focus,
+  &:hover {
+    color: darken($r_brand-primary, 10%);
+  }
+}
