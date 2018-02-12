@@ -184,16 +184,32 @@
 		});
 	});
 
-    function swapStyleSheet(sheet) {
-        document.getElementById("pagestyle").setAttribute("href", sheet);
+    function swapStyleSheet() {
+    	var sheet1 = "/css/app.css";
+    	var sheet2 = "css/app-alt.css";
+    	var styleSheet = document.getElementById("pagestyle");
+    	var sheetref = styleSheet.getAttribute('href');
+    	if (sheetref == sheet1) {
+            styleSheet.setAttribute("href", sheet2);
+        }
+        else {
+            styleSheet.setAttribute("href", sheet1);
+		}
     }
 
     function initate() {
-        var style1 = document.getElementById("defaultStyles");
-        var style2 = document.getElementById("altStyles");
+        var button = document.getElementById("swapStyles");
 
-        style1.onclick = function () { swapStyleSheet("/css/app.css") };
-        style2.onclick = function () { swapStyleSheet("/css/app-alt.css"); };
+        button.onclick = function () {
+        	swapStyleSheet();
+        	var text = button.text;
+        	if (text == "Show Alt CSS") {
+        		button.textContent = "Show Default CSS";
+			}
+			else {
+        		button.textContent = "Show Alt CSS";
+			}
+        };
     }
 
     window.onload = initate;
