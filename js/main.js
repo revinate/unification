@@ -186,7 +186,7 @@
 
     function swapStyleSheet() {
     	var sheet1 = "/css/app.css";
-    	var sheet2 = "css/app-alt.css";
+    	var sheet2 = "/css/app-alt.css";
     	var styleSheet = document.getElementById("pagestyle");
     	var sheetref = styleSheet.getAttribute('href');
     	if (sheetref == sheet1) {
