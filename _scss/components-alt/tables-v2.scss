@@ -20,11 +20,11 @@ table.tables-v2 {
     margin: .5em 0 .75em;
   }
   tr {
-    background: #f9f9f9;
-    border-bottom: 1px solid #E2E2E7;
+    background: $white-base;
+    border-bottom: 1px solid $table-border-color;
     padding: .3em;
     td {
-      background-color: #f9f9f9;
+      background-color: $white-base;
     }
     th, td {
       padding: 1em;
@@ -75,8 +75,8 @@ table.tables-v2 {
         width: 100px;
       }
       &:first-child {
-        border-top: 1px solid #ddd;
-        border-bottom: 1px solid #ddd;
+        border-top: 1px solid $table-border-color;
+        border-bottom: 1px solid $table-border-color;
       }
     }
     th {
@@ -84,7 +84,7 @@ table.tables-v2 {
       text-transform: uppercase;
       background-color: #FFF;
       font-weight: normal;
-      border-top: 1px solid #E2E2E7;
+      border-top: 1px solid $table-border-color;
       padding: 16px;
       letter-spacing: 0.1em;
       white-space: nowrap;
@@ -109,7 +109,7 @@ table.tables-v2 {
     }
     td {
       color:#444;
-      font-size:0.9em;
+      font-size:0.85em;
       a {
         word-wrap: break-word;
         word-break: break-all;
@@ -159,12 +159,12 @@ table.tables-v2 {
         max-width: 275px;
       }
     }
-    &:nth-child(even) {
-    background-color: #FFF;
-      td {
-        background-color: #fff;
-      }
-    }
+    // &:nth-child(even) {
+    // background-color: #FFF;
+    //   td {
+    //     background-color: #fff;
+    //   }
+    // }
     td:first-child {
       border-left:1px solid transparent;
     }
@@ -173,7 +173,7 @@ table.tables-v2 {
     }
 
     &:hover td {
-      background-color:#eee;
+      background-color: lighten($r_brand-primary, 67%);
       &:first-child {
         border-left:4px solid $r_brand-primary2;
       }
@@ -182,9 +182,9 @@ table.tables-v2 {
       // }
     }
     &.avg{
-      background: #444;
+      background-color: $r_brand-primary;
       td {
-        background: #444;
+        background-color: $r_brand-primary;
         color: #FFF;
         padding: 16px;
         text-transform: uppercase;
@@ -271,7 +271,7 @@ tr.avg {
         margin-top: -1px;
         left: 0;
         border-bottom: 0;
-        box-shadow: 3px 0 1px rgba(0,0,0,0.1);
+        box-shadow: 2px 0 0px rgba(0,0,0,0.1);
       }
       th:first-child {
         margin-top: 0;
