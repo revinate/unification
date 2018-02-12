@@ -8,6 +8,7 @@
     background: transparent !important;
   }
   li {
+    padding-bottom: 0 !important;
     a {
       text-transform: capitalize;
       color: $r_brand_primary;
@@ -41,15 +42,16 @@
     }
 
     &.active {
+
       a {
         color: #444;
-        @extend .FontLatoBold;
-        &:hover {
+        // @extend .FontLatoBold;
+        &:hover, &.active:hover, &:active, &:visited, &:focus {
           color: #444 !important;
           transform: translateY(0px) !important;
         }
         &:after {
-          background-color: $r-brand-secondary;
+          background-color: $r_brand_primary;
         }
       }
     }

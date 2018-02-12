@@ -9,7 +9,7 @@ table.tables-v2 {
   font-weight: normal;
   line-height: 1em;
   font-size: 16px;
-  -webkit-font-smoothing: antialiased;
+  // -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto;
   a {
     text-decoration: none;
@@ -21,7 +21,7 @@ table.tables-v2 {
   }
   tr {
     background: #f9f9f9;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #E2E2E7;
     padding: .3em;
     td {
       background-color: #f9f9f9;
@@ -29,7 +29,7 @@ table.tables-v2 {
     th, td {
       padding: 1em;
       text-align: left ;
-      transition: 0.2s background cubic-bezier(0.25, 0.1, 0.25, 1);
+      transition: 0.2s all cubic-bezier(0.25, 0.1, 0.25, 1);
       position: relative;
       button.header {
         padding: 0;
@@ -84,7 +84,7 @@ table.tables-v2 {
       text-transform: uppercase;
       background-color: #FFF;
       font-weight: normal;
-      border-top: 1px solid #ddd;
+      border-top: 1px solid #E2E2E7;
       padding: 16px;
       letter-spacing: 0.1em;
       white-space: nowrap;
@@ -159,14 +159,27 @@ table.tables-v2 {
         max-width: 275px;
       }
     }
+    &:nth-child(even) {
+    background-color: #FFF;
+      td {
+        background-color: #fff;
+      }
+    }
+    td:first-child {
+      border-left:1px solid transparent;
+    }
+    td:last-child {
+      border-right:1px solid transparent;
+    }
+
     &:hover td {
       background-color:#eee;
       &:first-child {
-        border-left:1px solid #ccc;
+        border-left:4px solid $r_brand-primary2;
       }
-      &:last-child {
-        border-right:1px solid #ccc;
-      }
+      // &:last-child {
+      //   border-right:1px solid #999;
+      // }
     }
     &.avg{
       background: #444;
@@ -175,6 +188,11 @@ table.tables-v2 {
         color: #FFF;
         padding: 16px;
         text-transform: uppercase;
+        &:hover {
+          &:first-child { 
+            border-left: solid 1px transparent !important;
+          }
+        }
         .iv2-smile, .iv2-sad, .iv2-smile2, .iv2-sad2 {
           border: none;
           background: none;
@@ -219,19 +237,14 @@ table.tables-v2 {
     th:first-child {
       text-align: left;
     }
-    &:nth-child(even) {
-    background-color: #FFF;
-      td {
-        background-color: #fff;
-      }
-    }
-    td:first-child {
-      border-left:1px solid transparent;
-    }
-    td:last-child {
-      border-right:1px solid transparent;
+  }
+tr.avg {
+  &:hover {
+    td:first-child { 
+        border-left: solid 1px transparent !important;
     }
   }
+}
   // for POC purposes only
   tr, tr.avg {
     td[data-label="Sent Date"] {
@@ -268,7 +281,7 @@ table.tables-v2 {
       &:last-child {
         td:first-child {
           height: 50px;
-          border-bottom: 1px solid #ddd;
+          border-bottom: 1px solid #E2E2E7;
         }
       }
       th, td {
