@@ -30,7 +30,7 @@ $daterangepicker-cell-hover-color:           #fff !default;
 $daterangepicker-cell-hover-border-color:    transparent !default;
 $daterangepicker-cell-hover-bg-color:        $r_brand-primary !default;
 
-$daterangepicker-in-range-color:             #28A68A !default;
+$daterangepicker-in-range-color:             $r_brand-primary !default;
 $daterangepicker-in-range-border-color:      transparent !default;
 $daterangepicker-in-range-bg-color:          lighten($r_brand-primary, 67%) !default;
 
@@ -453,8 +453,8 @@ $daterangepicker-ranges-active-border-radius: $daterangepicker-border-radius !de
 
   li {
     font-size: 13px;
-    background: #fafafa;
-    border: 1px #fafafa solid;
+    //background: #fafafa;
+    //border: 1px #fafafa solid;
     border-radius: $daterangepicker-ranges-border-radius;
     color: #000000;
     padding: 4px 12px;
@@ -467,11 +467,11 @@ $daterangepicker-ranges-active-border-radius: $daterangepicker-border-radius !de
     }
 
     &.active {
-      background: #DBF0EB;
-      border: transparent;
-      color: #28A68A;
+      background: lighten($r_brand-primary, 67%);
+      //border: transparent;
+      color: $r_brand-primary;
       &:hover {
-        background: #DBF0EB;
+        background: lighten($r_brand-primary, 67%);
         color: #28A68A;
       }
     }
@@ -487,7 +487,7 @@ $daterangepicker-ranges-active-border-radius: $daterangepicker-border-radius !de
       ul {
         width: 160px;
       }
-    }
+    } 
 
     &.single {
       .ranges {

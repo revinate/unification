@@ -33,19 +33,26 @@
           line-height: 1;
           font-size: 12px;
           color: $gray-light;
+          border:1px solid transparent;
+
           &:hover {
             color: $r_brand-primary !important;
             background-color: lighten($r_brand-primary, 67%) !important;
+            border:1px solid lighten($r_brand-primary, 62%) !important;
+
           }
         }
         &.btn-group .dropdown-menu li.selected a {
           background-color: lighten($r_brand-primary, 67%) !important;
           color: $r_brand-primary !important;
+          border:1px solid lighten($r_brand-primary, 62%) !important;
           &:hover,
           &:active,
           &:focus {
             background-color: lighten($r_brand-primary, 67%) !important;
             color: $r_brand-primary !important;
+            border:1px solid lighten($r_brand-primary, 62%) !important;
+
           }
         }
       }

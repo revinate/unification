@@ -1,6 +1,6 @@
 .nav-pills-terciary,
 .nav-pills-tertiary {
-  border-bottom: 1px $table-border-color solid;
+  border-bottom: 1px $border-color-base solid;
   clear: both;
   float: none !important;
   letter-spacing: 0.015em;
@@ -21,9 +21,9 @@
         content: '';
         position: absolute;
         left: 0;
-        bottom: 0px;
+        bottom: -2px;
         width: 100%;
-        height: 2px;
+        height: 4px;
         background-color: transparent;
       }
     }

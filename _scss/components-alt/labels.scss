@@ -15,3 +15,33 @@
     background-color: #9B9B9B;
   }
 }
+
+.alert,
+.global-alert-container {
+  &.alert-success {
+    background-color: $brand-success;
+    border-color: $brand-success;
+    color: $white-base;
+  }
+  &.alert-info {
+    background-color: $brand-info;
+    border-color: $brand-info;
+    color: $white-base;
+      
+  }
+  &.alert-warning {
+    background-color: $brand-warning;
+    border-color: $brand-warning;
+    color: $white-base;
+  }
+  &.alert-danger {
+    background-color: $brand-danger;
+    border-color: $brand-danger;
+    color: $white-base;
+  }
+  a.close {
+    color: $white-base !important;
+    text-shadow: none;
+    opacity: 0.8;
+  }
+}
