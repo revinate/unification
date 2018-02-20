@@ -261,8 +261,11 @@
   cursor: pointer;
   display: block;
   padding: 8px 10px;
+  border: 1px solid transparent;
   &:hover {
     color: $r_brand-primary !important;
+    background-color: lighten($r_brand-primary, 67%) ;
+    border:1px solid lighten($r_brand-primary, 62%) !important;
   }
 }
 .Select-option:last-child {
@@ -270,15 +273,13 @@
   border-bottom-left-radius: 4px;
 }
 .Select-option.is-selected {
-  background-color: #f5faff;
-  /* Fallback color for IE 8 */
-  background-color: rgba(0, 126, 255, 0.04);
+  background-color: lighten($r_brand-primary, 67%) ;
+  border:1px solid lighten($r_brand-primary, 62%) !important;
   color: #333;
 }
 .Select-option.is-focused {
-  background-color: #EBF5FE;
-  /* Fallback color for IE 8 */
-  background-color: rgba(0, 126, 255, 0.08);
+  background-color: lighten($r_brand-primary, 67%) ;
+  border:1px solid lighten($r_brand-primary, 62%) !important;
   color: #3BA1F8;
 }
 .Select-option.is-disabled {
