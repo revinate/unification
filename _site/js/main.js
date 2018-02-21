@@ -189,7 +189,7 @@
     	var sheet2 = "/css/app-alt.css";
     	var styleSheet = document.getElementById("pagestyle");
     	var sheetref = styleSheet.getAttribute('href');
-    	if (sheetref == sheet1) {
+    	if (sheetref != sheet2) {
             styleSheet.setAttribute("href", sheet2);
         }
         else {
