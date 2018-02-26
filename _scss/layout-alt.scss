@@ -68,8 +68,8 @@
   bottom: 0;
   width: 100%;
 }
-.l-no-navigation-page {
-  background: #f3f3f4;
+body.l-no-navigation-page {
+  background-color: #f3f3f4;
   .l-main {
     padding-bottom: 100px;
     .container.fixed-nav-padding {
