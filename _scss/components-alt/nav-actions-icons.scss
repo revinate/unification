@@ -15,23 +15,25 @@ ul.global-actions-nav {
       letter-spacing: 0 !important;
     }
     a {
-      color: #333;
+      color: $r_brand-primary;
       margin: 0;
       padding: 0;
       &:hover {
-        color: #3BA1F8;
+        color: $r_brand-primary;
       }
     }
     &:hover {
       cursor: pointer;
-      color: #3BA1F8;
+      color: $r_brand-primary;
     }
     &.btn.btn-circle.btn-default-secondary {
       border-color: transparent;
+      background-color: transparent;
+      padding: 4px;
       &:hover {
-        border-color: rgba(#3BA1F8, .5);
+        border-color: $r_brand-primary;
         a {
-          color: #3BA1F8;
+          color: $r_brand-primary;
         }
       }
     }
