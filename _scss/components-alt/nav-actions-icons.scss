@@ -10,6 +10,7 @@ ul.global-actions-nav {
     margin: 0 0 0 5px !important;
     padding: 0;
     i {
+      color: $r_brand-primary;
       display: inline-block;
       padding: 0 !important;
       letter-spacing: 0 !important;
@@ -29,7 +30,6 @@ ul.global-actions-nav {
     &.btn.btn-circle.btn-default-secondary {
       border-color: transparent;
       background-color: transparent;
-      padding: 4px;
       &:hover {
         border-color: $r_brand-primary;
         a {

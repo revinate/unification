@@ -257,10 +257,9 @@
     height: 23px;
     line-height: 23px;
     text-align: center;
-    padding: 0;
+    padding: 4px;
     i {
-      margin-left: 2px;
-      vertical-align: baseline;
+      display: block;
     }
   }
   &.btn-default-secondary {
