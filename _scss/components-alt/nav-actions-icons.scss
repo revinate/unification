@@ -27,6 +27,7 @@ ul.global-actions-nav {
       color: #3BA1F8;
     }
     &.btn.btn-circle.btn-default-secondary {
+      border-color: transparent;
       &:hover {
         border-color: rgba(#3BA1F8, .5);
         a {

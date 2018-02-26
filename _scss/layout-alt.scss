@@ -28,6 +28,9 @@
   @media (min-width: $screen-sm-min) {
     height: 40px;
   }
+  >.container {
+    width: 100% !important;
+  }
 }
 
 .l-header-bottom {
@@ -38,6 +41,9 @@
   position: relative;
   @media screen and (max-width: 1024px) {
     padding-top: 8px;
+  }
+  >.container {
+    width: 100% !important;
   }
 }
 
