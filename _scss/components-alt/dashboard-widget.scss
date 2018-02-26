@@ -59,6 +59,8 @@
 
 .dashboard-widget-fixed-height {
   height: 200px;
+}
+.dashboard-widget.fixed-height {
   > div {
     min-height: 280px;
   }
