@@ -59,6 +59,15 @@
 
 .dashboard-widget-fixed-height {
   height: 200px;
+  > div {
+    min-height: 280px;
+  }
+  .dashboard-widget-footer {
+    position: static;
+    float: right;
+    line-height: 45px;
+    padding-right: 15px;
+  }
 }
 
 
