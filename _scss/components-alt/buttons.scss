@@ -211,16 +211,11 @@
 
 .btn-header.dropdown-toggle {
   .btn-group.open & {
-    i:first-child {
-      color: $white-base;
-    }
-    color: $white-base !important;
     background-color: $r_brand-primary;
     border: 1px solid $r_brand-primary;
     &.active,
     &:hover,
     &:active {
-      color: $white-base !important;
       background-color: $r_brand-primary;
       border: 1px solid $r_brand-primary;
     }
