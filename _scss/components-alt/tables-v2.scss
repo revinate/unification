@@ -182,9 +182,9 @@ table.tables-v2 {
       // }
     }
     &.avg{
-      background-color: $r_brand-primary;
+      background-color: $table-avg-bg;
       td {
-        background-color: $r_brand-primary;
+        background-color: $table-avg-bg;
         color: #FFF;
         padding: 16px;
         text-transform: uppercase;
