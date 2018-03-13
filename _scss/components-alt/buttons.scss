@@ -71,7 +71,7 @@
     border-color:$btn-secondary-border;
     box-shadow: none;
     &:hover {
-      background-color:$btn-primary-bg;
+      background-color:$btn-primary-bg !important;
       color: $btn-primary-color;
       transform: translateY(-1px);
     }

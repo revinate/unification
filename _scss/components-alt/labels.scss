@@ -21,23 +21,23 @@
   &.alert-success {
     background-color: $brand-success;
     border-color: $brand-success;
-    color: $white-base;
+    color: $gray;
   }
   &.alert-info {
     background-color: $brand-info;
     border-color: $brand-info;
-    color: $white-base;
+    color: $gray;
       
   }
   &.alert-warning {
     background-color: $brand-warning;
     border-color: $brand-warning;
-    color: $white-base;
+    color: $gray;
   }
   &.alert-danger {
     background-color: $brand-danger;
     border-color: $brand-danger;
-    color: $white-base;
+    color: $gray;
   }
   a.close {
     color: $white-base !important;
