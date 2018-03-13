@@ -10,9 +10,6 @@
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
   box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
   position: relative;
-  .container {
-    width: 100%;
-  }
   @media (max-width: 768px) {
     .container {
       width: auto;
@@ -28,9 +25,6 @@
   @media (min-width: $screen-sm-min) {
     height: 40px;
   }
-  >.container {
-    width: 100% !important;
-  }
 }
 
 .l-header-bottom {
@@ -41,9 +35,6 @@
   position: relative;
   @media screen and (max-width: 1024px) {
     padding-top: 8px;
-  }
-  >.container {
-    width: 100% !important;
   }
 }
 
