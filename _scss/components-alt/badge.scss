@@ -11,7 +11,7 @@
   border-radius: 14px;
   letter-spacing: 0.1em;
   &.badge-danger {
-    background-color: $brand-danger;
+    background-color: $badge-danger;
     color: #ffffff;
   }
   &.badge-default {
@@ -20,10 +20,10 @@
     font-size: 1em;
   }
   &.on-duty {
-    background-color: $brand-success;
+    background-color: $badge-success;
   }
   &.off-duty {
-    background-color: $brand-danger;
+    background-color: $badge-danger;
   }
   &.on-property {
     background-color: $r_brand-tertiary;
