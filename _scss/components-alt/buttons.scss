@@ -72,9 +72,10 @@
     border-color:$btn-secondary-border;
     box-shadow: none;
     &:hover {
-      background-color:$btn-primary-bg !important;
+      background-color: darken($btn-primary-bg, 5%) !important;
       color: $btn-primary-color;
       transform: translateY(-1px);
+      box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.15);
     }
     &.disabled {
       &:hover {
@@ -278,12 +279,14 @@
   text-decoration: none;
   padding: 10px 10px 8px;
   &:hover {
-    color: darken($btn-secondary-color, 10%);
+    color: darken($btn-primary-bg, 10%);
+    transform: translateY(-1px);
   }
     &.disabled {
     &:hover {
       color: $gray-light;
       opacity: 0.65;
+      transform: translateY(0);
       }
     }
 }

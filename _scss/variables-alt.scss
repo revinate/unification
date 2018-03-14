@@ -190,7 +190,7 @@ $btn-secondary-bg:               $white-base ;
 $btn-secondary-border:           $btn-primary-bg ;
 
 $btn-success-color:              #fff ;
-$btn-success-bg:                 $brand-success ;
+$btn-success-bg:                 $badge-success ;
 $btn-success-border:             darken($btn-success-bg, 5%) ;
 
 $btn-info-color:                 #fff ;
@@ -202,7 +202,7 @@ $btn-warning-bg:                 $brand-warning ;
 $btn-warning-border:             darken($btn-warning-bg, 5%) ;
 
 $btn-danger-color:               #fff ;
-$btn-danger-bg:                  $brand-danger ;
+$btn-danger-bg:                  $badge-danger ;
 $btn-danger-border:              darken($btn-danger-bg, 5%) ;
 
 $btn-link-disabled-color:        $gray-light ;
