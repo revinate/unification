@@ -125,3 +125,11 @@
     }
   }
 }
+
+//overrides for sentiment page on R&S
+
+.sentiment-overview-wrapper {
+  .overview.drilldown {
+    background: #fff;
+  }
+}
