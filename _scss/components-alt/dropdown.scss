@@ -123,6 +123,12 @@
   }
 }
 
+.l-header-bottom {
+  .btn-primary:active, .btn-primary.active, .open>.btn-primary.dropdown-toggle {
+    color: $r_brand-primary;
+  }
+}
+
 .revicon-dropdown {
   vertical-align: middle;
   font-size: .7em;
