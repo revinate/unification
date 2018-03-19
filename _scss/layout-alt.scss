@@ -107,3 +107,33 @@ body.l-no-navigation-page {
 }
 
 
+//override for walkme launcher and r&s specific stuff
+
+.walkme-launcher {
+  background: $brand-success !important;
+  color: $white-base !important;
+}
+
+.l-header-bottom .revicon-trends-comparison {
+  top: 0 !important;
+}
+
+.info-tile-topic .content {
+  padding: 0 !important;
+}
+
+.r_social_buzz_mgmt {
+    background: #fff;
+
+}
+
+.survey-editor .questions .editor-heading {
+  color: #fff;
+  background: #707074 !important;
+  strong {
+    font-family: Lato;
+    font-weight: normal !important;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
