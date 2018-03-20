@@ -18,10 +18,10 @@ $gray-lighter:          lighten($gray-base, 93.5%) ; // #eee
 $gray-active:           lighten($gray-base, 70%) ; //active page, breadcrumb, etc.
 
 $brand-primary:         #ff6400 ;
-$brand-success:         rgba(0,175,20, 0.35); //#00AF14
-$brand-info:            rgba(0,176,242,0.35); //#00B0F2 
-$brand-warning:         rgba(255,100,0,0.35); //FF6400 
-$brand-danger:          rgba(223,16,16, 0.35); //#DF1010
+$brand-success:         #8fc56b;
+$brand-info:            #66cff7;
+$brand-warning:         #ffa266;
+$brand-danger:          #f29f9f;
 
 $badge-success:         rgb(0,175,20); //#00AF14
 $badge-danger:          rgb(223,16,16); //#DF1010
