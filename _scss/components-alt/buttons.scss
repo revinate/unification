@@ -276,10 +276,10 @@
     color: darken($r_brand-primary2, 10%);
   }
     &.disabled {
-    &:hover {
-      color: $gray-light;
-      opacity: 0.65;
-      transform: translateY(0);
+      &:hover {
+        color: $gray-light;
+        opacity: 0.65;
+        transform: translateY(0);
       }
     }
 }
