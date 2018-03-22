@@ -53,9 +53,6 @@
       background-color: darken($btn-primary-bg, 5%);
       box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.15);
     }
-    &:hover {
-      transform: translateY(-1px);
-    }
     &.disabled {
       &:hover {
         box-shadow: none;
@@ -94,7 +91,6 @@
     &:hover {
       color: #ffffff;
       background-color: darken(#6f5499, 5%);
-      transform: translateY(-1px);
     }
   }
 
@@ -105,7 +101,6 @@
     &:hover {
       color: #ffffff;
       background-color: darken(#6f5499, 5%);
-      transform: translateY(-1px);
     }
   }
 
@@ -115,7 +110,6 @@
     //border-color: #888;
     &:hover {
       background-color: darken($btn-danger-bg, 5%);
-      transform: translateY(-1px);
     }
   }
 
@@ -280,7 +274,6 @@
   padding: 10px 10px 8px;
   &:hover {
     color: darken($btn-primary-bg, 10%);
-    transform: translateY(-1px);
   }
     &.disabled {
     &:hover {
