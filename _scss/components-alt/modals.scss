@@ -15,3 +15,10 @@
     overflow: scroll;
   }
 }
+
+//overlay fix for old modals
+
+#overlay {
+  opacity: 0.8 !important;
+  z-index: 9999!important;
+}

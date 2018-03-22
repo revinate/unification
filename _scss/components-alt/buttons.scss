@@ -496,3 +496,10 @@
     }
   }
 }
+
+
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
+  opacity: 0.25 !important;
+}
