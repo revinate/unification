@@ -74,8 +74,11 @@
 }
 
 
+//override for campaign stats wells on Marketing App
 
-
+.well-inguest {
+  background-color: $white-base !important;
+}
 
 
 // Custom Widgets - wrapping with #styleguide since this CSS also lives on R&S and DOES NOT LIVE ON M&E
