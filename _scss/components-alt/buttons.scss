@@ -269,11 +269,11 @@
 .btn.btn-link {
   box-shadow: none;
   background-color: transparent;
-  color: $btn-secondary-color;
+  color: $r_brand-primary2;
   text-decoration: none;
   padding: 10px 10px 8px;
   &:hover {
-    color: darken($btn-primary-bg, 10%);
+    color: darken($r_brand-primary2, 10%);
   }
     &.disabled {
     &:hover {

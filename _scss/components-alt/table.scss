@@ -93,10 +93,10 @@
   }
   td {
     a.dropdown-toggle {
-      color: $r_brand-primary;
+      color: $r_brand-primary2;
     }
     .dropdown-menu {
-      border: 1px solid rgba($r_brand-primary, 0.1);
+      border: 1px solid rgba($r_brand-primary2, 0.1);
       border-radius:2px;
       box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
       padding: 0;
@@ -105,7 +105,7 @@
         padding-top: 0 !important;
         padding-bottom: 0 !important;
         a {
-          color: $r_brand-primary;
+          color: $r_brand-primary2;
           font-size: 0.85em;
           border: 1px solid transparent;
           // border-bottom: 1px solid  #CEE7FD;
