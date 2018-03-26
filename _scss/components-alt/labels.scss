@@ -14,34 +14,7 @@
   &.post-stay {
     background-color: #9B9B9B;
   }
-}
-
-.alert,
-.global-alert-container {
-  &.alert-success {
-    background-color: $brand-success;
-    border-color: $brand-success;
-    color: $gray;
-  }
-  &.alert-info {
-    background-color: $brand-info;
-    border-color: $brand-info;
-    color: $gray;
-      
-  }
-  &.alert-warning {
-    background-color: $brand-warning;
-    border-color: $brand-warning;
-    color: $gray;
-  }
-  &.alert-danger {
-    background-color: $brand-danger;
-    border-color: $brand-danger;
-    color: $gray;
-  }
-  a.close {
-    color: $gray !important;
-    text-shadow: none;
-    opacity: 0.8;
+  a, a.close {
+    color: $white-base;
   }
 }

@@ -17,11 +17,17 @@ $gray-lighter:          lighten($gray-base, 93.5%) ; // #eee
 
 $gray-active:           lighten($gray-base, 50%) ; //active page, breadcrumb, etc.
 
-$brand-primary:         #ff6400 ;
+$brand-primary:         #00B0F2;
 $brand-success:         #8fc56b;
 $brand-info:            #66cff7;
 $brand-warning:         #ffa266;
 $brand-danger:          #f29f9f;
+
+$alert-primary:         #ff6400;
+$alert-success:         #c1dbb2;
+$alert-info:            #aee1f5;
+$alert-warning:         #f8cab0;
+$alert-danger:          #f3b0b0;
 
 $badge-success:         rgb(0,175,20); //#00AF14
 $badge-danger:          rgb(223,16,16); //#DF1010

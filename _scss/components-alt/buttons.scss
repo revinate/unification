@@ -444,7 +444,9 @@
       color: #00A891;
       background: #fff;
       &:hover {
-        background-color: darken(#fff, 10%)
+        background: #00A891 !important;
+        color: $white-base !important;
+        border-color: #00A891 !important;
       }
     }
   }

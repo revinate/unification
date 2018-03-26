@@ -4,6 +4,8 @@
   clear: both;
   float: none !important;
   letter-spacing: 0.015em;
+  font-family: Lato, sans-serif;
+  font-weight: normal;
   > li > a:focus, > li > a:hover {
     background: transparent !important;
   }
@@ -47,7 +49,7 @@
         color: #444;
         // @extend .FontLatoBold;
         &:hover, &.active:hover, &:active, &:visited, &:focus {
-          color: #444 !important;
+          color: $btn-primary-bg !important;
           transform: translateY(0px) !important;
         }
         &:after {
@@ -57,7 +59,7 @@
     }
     a {
       &:hover {
-        color: #444 !important;
+        color: $btn-primary-bg !important;
       }
     }
     &.disabled {

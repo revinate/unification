@@ -80,6 +80,9 @@ body.l-no-navigation-page {
 
 .container.fixed-nav-padding, .container-fluid.fixed-nav-padding {
   padding-top: 65px;
+  @media (max-width: 1024px) {
+    padding-top: 100px;
+  }
   //width: 100% !important;
 }
 
@@ -112,6 +115,7 @@ body.l-no-navigation-page {
 .walkme-launcher {
   background: $brand-success !important;
   color: $white-base !important;
+  z-index: 99999;
 }
 
 .l-header-bottom .revicon-trends-comparison {
