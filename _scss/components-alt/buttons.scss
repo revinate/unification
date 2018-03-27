@@ -46,11 +46,11 @@
     background-color: $btn-primary-bg;
     border-color: transparent;
     &:focus {
-      background-color: darken($btn-primary-bg, 5%);
+      background-color: $link-color;
       border-color:transparent;
     }
     &:active, &:hover {
-      background-color: darken($btn-primary-bg, 5%);
+      background-color: $link-color;
       box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.15);
     }
     &.disabled {
@@ -69,8 +69,9 @@
     border-color:$btn-secondary-border;
     box-shadow: none;
     &:hover {
-      background-color: darken($btn-primary-bg, 5%) !important;
+      background-color: $link-color !important;
       color: $btn-primary-color;
+      border-color: $link-color;
       transform: translateY(-1px);
       box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.15);
     }
@@ -273,7 +274,7 @@
   text-decoration: none;
   padding: 10px 10px 8px;
   &:hover {
-    color: darken($r_brand-primary2, 10%);
+    color: $link-color;
   }
     &.disabled {
     &:hover {

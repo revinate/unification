@@ -13,7 +13,7 @@
     padding-bottom: 0 !important;
     a {
       text-transform: capitalize;
-      color: $r_brand-primary2;
+      color: $link-color;
       position: relative;
       background-color: transparent;
       -webkit-transition: all .2s;
@@ -44,7 +44,7 @@
     }
     a {
       &:hover {
-        color: $btn-primary-bg !important;
+        color: $r_brand-primary !important;
       }
     }
     &.active {

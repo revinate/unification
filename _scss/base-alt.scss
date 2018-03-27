@@ -70,10 +70,10 @@ strong {
   }
 }
 a {
-  color: $r_brand-primary;
+  color: $link-color;
   text-decoration: none;
   &:focus,
   &:hover {
-    color: darken($r_brand-primary, 10%);
+    color: $r_brand-primary;
   }
 }

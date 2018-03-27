@@ -18,13 +18,13 @@
     a {
       background-color: transparent !important;
       display: inline-block;
-      color: $r_brand_primary;
+      color: $link-color;
       -webkit-transition: all .2s;
       -moz-transition: all .2s;
       transition: all .2s;
       &:hover, &:focus, &:active {
         background-color: transparent !important;
-        color: darken($r_brand-primary, 10%);
+        color: $r_brand-primary;
         transform: translateY(-2px);
       }
     }
@@ -60,4 +60,16 @@ $nav-pills-numbered-index-size: 30px;
 
 .nav-pills-numbered-index {
   display: none !important;
+}
+
+
+//override for wizard header
+
+.promotion-page-header {
+  background: $r_brand-primary !important;
+  h1.promotion-page-title {
+    span {
+      opacity: 0.8 !important;
+    }
+  }
 }
