@@ -6,7 +6,7 @@ date: 2016-09-02 00:00:01
 
 <div class="col-md-12 sg-example">
     <h1>Header Level 1</h1>
-    <p>Used for page titles only. There should only ever be one H1 per page. When possible, try not to let this text wrap to a second line.</p>
+    <p>Used for page titles only. There should only ever be one H1 per page. When possible, try not to let this text wrap to a second line. <a>Link text</a></p>
 
     <h2>Header Level 2</h2>
     <p>Used for major section titles within a page, such as titles of individual reviews within the All Reviews page.</p>

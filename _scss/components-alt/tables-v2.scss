@@ -13,7 +13,6 @@ table.tables-v2 {
   -moz-osx-font-smoothing: auto;
   a {
     text-decoration: none;
-    color: #3BA1F8;
   }
   caption {
     font-size: 1.5em;
@@ -159,23 +158,16 @@ table.tables-v2 {
         max-width: 275px;
       }
     }
-    // &:nth-child(even) {
-    // background-color: #FFF;
-    //   td {
-    //     background-color: #fff;
-    //   }
-    // }
     td:first-child {
       border-left:1px solid transparent;
     }
     td:last-child {
       border-right:1px solid transparent;
     }
-
     &:hover td {
       background-color: lighten($r_brand-primary, 67%);
       &:first-child {
-        border-left:4px solid $r_brand-primary2;
+        border-left:4px solid $link-color !important;
       }
       // &:last-child {
       //   border-right:1px solid #999;

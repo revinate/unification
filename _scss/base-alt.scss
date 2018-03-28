@@ -3,8 +3,8 @@ html, body {
 }
 body {
   background: $body-bg;
-  font-family: 'Open Sans';
-  font-weight: normal;
+  font-family: "Lato", sans-serif !important;
+  font-weight: normal !important;
   -webkit-font-smoothing: subpixel-antialiased;
   &.l-no-navigation-page {
     background-color: $r_brand-primary;
@@ -57,11 +57,11 @@ strong {
 }
 
 .positive {
-  color: $brand-success;
+  color: #6eac3c;
 }
 
 .negative {
-  color: $brand-danger;
+  color: #df1010;
 }
 
 .tooltip {
@@ -70,10 +70,10 @@ strong {
   }
 }
 a {
-  color: $r_brand-primary;
+  color: $link-color;
   text-decoration: none;
   &:focus,
   &:hover {
-    color: darken($r_brand-primary, 10%);
+    color: $r_brand-primary;
   }
 }
