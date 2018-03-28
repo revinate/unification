@@ -155,3 +155,29 @@ ul.multiselect-container {
 .bootstrap-select.btn-group .dropdown-menu {
   z-index: 9999;
 }
+
+
+table tbody tr td {
+  .dropdown {
+    a.btn.dropdown-toggle.btn-link,
+    button.btn.dropdown-toggle.btn-link {
+      color: $link-color;
+      &:hover, &:active {
+        color: $r_brand-primary;
+      }
+    }
+    >ul.dropdown-menu li a {
+      color: $link-color;
+      &:hover {
+        color: $r_brand-primary;
+      }
+    }
+  }
+}
+
+.promotion-list .promotion-list-button-actions-dropdown .dropdown-menu>li>a {
+  color: $link-color !important;
+  &:hover {
+    color: $r_brand-primary !important;
+  }
+}

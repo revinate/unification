@@ -292,7 +292,7 @@ $daterangepicker-ranges-active-border-radius: $daterangepicker-border-radius !de
     &.available {
       &:hover {
         color: $daterangepicker-cell-hover-color;
-        background: $daterangepicker-cell-hover-bg-color;
+        background: $link-color;
       }
     }
 
@@ -336,8 +336,8 @@ $daterangepicker-ranges-active-border-radius: $daterangepicker-border-radius !de
     }
 
     &.active {
-      background-color: $daterangepicker-active-bg-color;
-      border-color: $daterangepicker-active-border-color;
+      background-color: $link-color;
+      border-color: transparent;
       color: $daterangepicker-active-color;
     }
   }
