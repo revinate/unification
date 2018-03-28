@@ -138,3 +138,10 @@
     background: #fff;
   }
 }
+
+.panel-title>a {
+  color: $link-color !important;
+  &:hover {
+    color: $r_brand-primary !important;
+  }
+}
