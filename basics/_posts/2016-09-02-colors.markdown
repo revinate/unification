@@ -7,179 +7,210 @@ date: 2016-09-02 00:00:00
 
 <div class="lsg-colors">
     <div class="row">
-        <div class="col-xs-12 color-box r-brand-primary">
-            <p>$r_brand-primary<br />
-            HEX: #0C2340<br />
-            RGB: 0 78 155<br />
-            Used for: logo, backgrounds</p>
-        </div>
-<!--         <div class="col-xs-12 color-box r-brand-primary2">
-            <p>$r_brand-primary2<br />
-            HEX: #ff6400<br />
-            RGB: 255 100 0<br />
-            Used for: primary CTAs</p>
-        </div> -->
-    </div>
-    
-
-    <div class="row">
-        <div class="col-xs-12">
-            <h3>Secondary colors</h3>
+        <div class="col-xs-10">
+            <h3>Primary color (Revinate Blue)</h3>
         </div>
     </div>
-    <div class="row">
-        <div class="col-xs-4 color-box" style="background: #00A891;">
-            <p>HEX: #00A891<br /><br /><br />
-            <!-- RGB: 71 151 168<br /> 
-            Used for: marketing collateral--></p>
-        </div>
-        <div class="col-xs-4 color-box" style="background: #9700C6;">
-            <p>HEX: #9700C6<br /><br /><br />
-            <!-- RGB:  0 67 123<br /> 
-            Used for: marketing collateral--></p>
-        </div>
-        <div class="col-xs-4 color-box" style="background: #00B0F2;">
-            <p>HEX: #00B0F2<br /><br /><br />
-            <!-- RGB: 15 24 32<br /> 
-            Used for: marketing collateral--></p>
-        </div>
-    </div>
-        <div class="row">
-        <div class="col-xs-4 color-box" style="background: #00AF14;">
-            <p>HEX: #00AF14<br /><br /><br />
-            <!-- RGB: 71 151 168<br /> 
-            Used for: marketing collateral--></p>
-        </div>
-        <div class="col-xs-4 color-box" style="background: #FFBF00;">
-            <p>HEX: #FFBF00<br /><br /><br />
-            <!-- RGB:  0 67 123<br /> 
-            Used for: marketing collateral--></p>
-        </div>
-        <div class="col-xs-4 color-box" style="background: #FF5333;">
-            <p>HEX: #FF5333<br /><br /><br />
-            <!-- RGB: 15 24 32<br /> 
-            Used for: marketing collateral--></p>
+    <div class="row mg-b-xl" style="color:#FFF;">
+        <div class="col-xs-10 color-box" style="background: #004E9B;">
+            <p><h4>#004E9B</h4>
+            Logo, backgrounds</p><br />
         </div>
     </div>
 
 
     <div class="row">
-        <div class="col-xs-12">
-            <h3>Tertiary colors</h3>
+        <div class="col-xs-10">
+            <h3>Secondary colors (Web/App CTAs, Links)</h3>
         </div>
     </div>
-    <div class="row">
-        <div class="col-xs-2 color-box" style="background: #3FEBD5;">
-            <p>HEX: #3FEBD5
-            <!-- RGB: 71 151 168<br /> 
-            Used for: marketing collateral--></p>
+    <div class="row mg-b-xl" style="color:#FFF;">
+        <div class="col-xs-3 color-box" style="background: #00B0F2;">
+            <p><h4>#00B0F2</h4>
+            App - Main CTA <br>
+            Website - Secondary CTA</p>
         </div>
-        <div class="col-xs-2 color-box" style="background: #CE33EF;">
-            <p>HEX: #CE33EF
-            <!-- RGB:  0 67 123<br /> 
-            Used for: marketing collateral--></p>
+        <div class="col-xs-3 color-box" style="background: #008CC1;">
+            <p><h4>#008CC1</h4>
+            App/Website - Links, CTA (hover)</p><br>
+        </div>        
+        <div class="col-xs-2 color-box" style="background: #FF6400;">
+            <p><h4>#FF6400</h4>
+            Website - Main CTA</p><br>
         </div>
-        <div class="col-xs-2 color-box" style="background: #F243A1;">
-            <p>HEX: #F243A1
-            <!-- RGB: 15 24 32<br /> 
-            Used for: marketing collateral--></p>
-        </div>
-        <div class="col-xs-2 color-box" style="background: #00E63D;">
-            <p>HEX: #00E63D
-            <!-- RGB: 71 151 168<br /> 
-            Used for: marketing collateral--></p>
-        </div>
-        <div class="col-xs-2 color-box" style="background: #EF0F0F;">
-            <p>HEX: #EF0F0F
-            <!-- RGB:  0 67 123<br /> 
-            Used for: marketing collateral--></p>
-        </div>
-        <div class="col-xs-2 color-box" style="background: #B30C4D;">
-            <p>HEX: #B30C4D
-            <!-- RGB: 15 24 32<br /> 
-            Used for: marketing collateral--></p>
+        <div class="col-xs-2 color-box" style="background: #CC5000;">
+            <p><h4>#CC5000</h4>
+            Website - Main CTA (hover, border)</p>
         </div>
     </div>
 
+
     <div class="row">
-        <div class="col-xs-12">
-            <h3>Utility colors</h3>
+        <div class="col-xs-10">
+            <h3>Tertiary colors (Charts &amp; Infographics)</h3>
         </div>
-    </div>  
-      <div class="row">
-          <div class="col-xs-3 color-box brand-success">
-              <p>$brand-success<br />
-              HEX: #83ad47<br />
-              RGB: 131 173 71<br />
-              Used for: indicating success</p>
-          </div>
-          <div class="col-xs-3 color-box brand-info">
-              <p>$brand-info<br />
-              HEX: #5bc0de<br />
-              RGB: 91 192 222<br /> 
-              Used for: indicating "informational" content</p>
-          </div>
-          <div class="col-xs-3 color-box brand-warning">
-              <p>$brand-warning<br />
-              HEX: #f0ad4e<br />
-              RGB: 240 173 78<br />
-              Used for: indicating warning</p>
-          </div>
-          <div class="col-xs-3 color-box brand-danger">
-              <p>$brand-danger<br />
-              HEX: #f55949<br />
-              RGB: 245 89 73<br />
-              Used for: indicating danger</p>
-          </div>
-          
-        <div class="col-xs-3 color-box r-brand-tertiary">
-            <p>$r_brand-tertiary<br />
-            HEX: #8f7ec2<br />
-            RGB: 143 126 194</br />
-            Used for: indicating success</p>
+    </div>
+    <div class="row mg-b-xs" style="color:#FFF;">
+        <div class="col-xs-1 color-box" style="background: #4292A3;">
+            <h5>#4292A3</h5>
         </div>
-        <div class="col-xs-3 color-box r-brand-primary-darker">
-            <p>$r_brand-primary-darker<br />
-            HEX: #182129<br />
-            RGB: 24 33 41<br />
-            Used for: indicating "informational" content</p>
+        <div class="col-xs-1 color-box" style="background: #47ACC0;">
+            <h5>#47ACC0</h5>
         </div>
-        <div class="col-xs-3 color-box r-brand-primary-light">
-            <p>$r_brand-primary-light<br />
-            HEX: #74797e<br />
-            RGB: 116 121 126<br />
-            Used for: indicating warning</p>
+        <div class="col-xs-1 color-box" style="background: #C5764C;">
+            <h5>#C5764C</h5>
         </div>
-        <div class="col-xs-3 color-box r-brand-primary-lighter">
-            <p>$r_brand-primary-lighter<br />
-            HEX: #939ba2<br />
-            RGB: 147 155 162<br />
-            Used for: indicating error state</p>
+        <div class="col-xs-1 color-box" style="background: #E88E6D;">
+            <h5>#E88E6D</h5>
         </div>
-        
-        <div class="col-xs-3 color-box gray-base">
-            <p>$gray-base<br />
-            HEX: #000<br />
-            RGB: 0 0 0<br />
-            Used for: accent color</p>
+        <div class="col-xs-1 color-box" style="background: #E96763;">
+            <h5>#E96763</h5>
         </div>
-        <div class="col-xs-3 color-box gray-darker">
-            <p>$gray-darker<br />
-            HEX: #222<br />
-            RGB: 34 34 34<br />
-            Used for: accent color</p>
+        <div class="col-xs-1 color-box" style="background: #F98181;">
+            <h5>#F98181</h5>
         </div>
-        <div class="col-xs-3 color-box gray-dark text-color">
-            <p>$gray-dark $text-color<br />
-            HEX: #333<br />
-            RGB: 51 51 51<br />
-            Used for: accent color, text color</p>
+        <div class="col-xs-1 color-box" style="background: #6EAC3C;">
+            <h5>#6EAC3C</h5>
         </div>
-        <div class="col-xs-3 color-box gray">
-            <p>$gray<br />
-            HEX: #555<br />
-            RGB: 85 85 85<br />
-            Used for: accent color</p>
+        <div class="col-xs-1 color-box" style="background: #8FC56B;">
+            <h5>#8FC56B</h5>
         </div>
-      </div>
+        <div class="col-xs-1 color-box" style="background: #E68429;">
+            <h5>#E68429</h5>
+        </div>
+        <div class="col-xs-1 color-box" style="background: #F89B43;">
+            <h5>#F89B43</h5>
+        </div>       
+    </div>
+    <div class="row  mg-b-xl" style="color:#FFF;">
+        <div class="col-xs-1 color-box" style="background: #E860C3;">
+            <h5>#E860C3</h5>
+        </div>
+        <div class="col-xs-1 color-box" style="background: #F378E5;">
+            <h5>#F378E5</h5>
+        </div>
+        <div class="col-xs-1 color-box" style="background: #D1A625;">
+            <h5>#D1A625</h5>
+        </div>
+        <div class="col-xs-1 color-box" style="background: #E8C766;">
+            <h5>#E8C766</h5>
+        </div>
+        <div class="col-xs-1 color-box" style="background: #4CB278;">
+            <h5>#4CB278</h5>
+        </div>
+        <div class="col-xs-1 color-box" style="background: #6EC594;">
+            <h5>#6EC594</h5>
+        </div>
+        <div class="col-xs-1 color-box" style="background: #8B799B;">
+            <h5>#8B799B</h5>
+        </div>
+        <div class="col-xs-1 color-box" style="background: #9695BA;">
+            <h5>#9695BA</h5>
+        </div>
+        <div class="col-xs-1 color-box" style="background: #7798C0;">
+            <h5>#7798C0</h5>
+        </div>
+        <div class="col-xs-1 color-box" style="background: #7CB5EC;">
+            <h5>#7CB5EC</h5>
+        </div>       
+    </div>
+
+
+    <div class="row">
+        <div class="col-xs-10">
+            <h3>Quadrinary colors (App Utility)</h3>
+        </div>
+    </div>
+
+    <div class="row" style="color:#000;">
+        <div class="col-xs-2" style="text-align: center; border-bottom: solid 2px #00AF14; color: #00AF14;">
+            SUCCESS
+        </div>
+        <div class="col-xs-2" style="text-align: center; border-bottom: solid 2px #00B0F2; color: #00B0F2;">
+            INFO
+        </div>
+        <div class="col-xs-2" style="text-align: center; border-bottom: solid 2px #FF6400; color: #FF6400;">
+            WARNING
+        </div>
+        <div class="col-xs-2" style="text-align: center; border-bottom: solid 2px #DF1010; color: #DF1010;">
+            ERROR
+        </div>
+        <div class="col-xs-2" style="text-align: center; border-bottom: solid 2px #BE2FEB; color: #BE2FEB;">
+            INTERNAL
+        </div>
+    </div>
+    <div class="row mg-b-md" style="color:#fff;">
+        <div class="col-xs-1 color-box" style="background: #99DFA1;">
+            <h5>#99DFA1</h5>
+        </div>
+        <div class="col-xs-1 color-box" style="background: #00AF14;">
+            <h5>#00AF14</h5>
+        </div>
+        <div class="col-xs-1 color-box" style="background: #99DFF9;">
+            <h5>#99DFF9</h5>
+        </div>
+        <div class="col-xs-1 color-box" style="background: #00B0F2;">
+            <h5>#00B0F2</h5>
+        </div>
+        <div class="col-xs-1 color-box" style="background: #FFC199;">
+            <h5>#FFC199</h5>
+        </div>
+        <div class="col-xs-1 color-box" style="background: #FF6400;">
+            <h5>#FF6400</h5>
+        </div>
+        <div class="col-xs-1 color-box" style="background: #F29F9F;">
+            <h5>#F29F9F</h5>
+        </div>
+        <div class="col-xs-1 color-box" style="background: #DF1010;">
+            <h5>#DF1010</h5>
+        </div>
+        <div class="col-xs-1 color-box" style="background: #E5ABF7;">
+            <h5>#E5ABF7</h5>
+        </div>
+        <div class="col-xs-1 color-box" style="background: #BE2FEB;">
+            <h5>#BE2FEB</h5>
+        </div>    
+    </div>
+    <div class="row" style="color:#000;">
+        <div class="col-xs-10" style="text-align: center; border-bottom: solid 2px #000; color: #000;">
+            GRAYS
+        </div>
+    </div>
+    <div class="row mg-b-xs" style="color:#FFF;">
+        <div class="col-xs-1 color-box" style="background: #F3F3F4; color: #000;">
+            <h5>#F3F3F4</h5>
+        </div>      
+        <div class="col-xs-1 color-box" style="background: #EBEBEC; color: #000;">
+            <h5>#EBEBEC</h5>
+        </div>
+        <div class="col-xs-1 color-box" style="background: #D0D0D1;">
+            <h5>#D0D0D1</h5>
+        </div>
+        <div class="col-xs-1 color-box" style="background: #CDCDD0;">
+            <h5>#CDCDD0</h5>
+        </div>
+        <div class="col-xs-1 color-box" style="background: #BCBCBD;">
+            <h5>#BCBCBD</h5>
+        </div>
+        <div class="col-xs-1 color-box" style="background: #A9A9A9;">
+            <h5>#A9A9A9</h5>
+        </div>
+        <div class="col-xs-1 color-box" style="background: #8A8A8E;">
+            <h5>#8A8A8E</h5>
+        </div>
+        <div class="col-xs-1 color-box" style="background: #59595C;">
+            <h5>#59595C</h5>
+        </div>
+        <div class="col-xs-1 color-box" style="background: #282828;">
+            <h5>#282828</h5>
+        </div>
+        <div class="col-xs-1 color-box" style="background: #000;">
+            <h5>#000000</h5>
+        </div>          
+    </div>
+
+
+
+
+
 </div>
