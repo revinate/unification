@@ -136,6 +136,10 @@ $daterangepicker-ranges-active-border-radius: $daterangepicker-border-radius !de
     margin-bottom: 5px;
   }
 
+  .applyBtn.btn-success {
+    @extend .btn-primary;
+  }
+
   .cancelBtn.btn-link {
     padding: 6px 10px 5px !important;
   }
@@ -291,8 +295,8 @@ $daterangepicker-ranges-active-border-radius: $daterangepicker-border-radius !de
 
     &.available {
       &:hover {
-        color: $daterangepicker-cell-hover-color;
-        background: $link-color;
+        color: $daterangepicker-cell-hover-color !important;
+        background-color: $link-color !important;
       }
     }
 
@@ -445,6 +449,7 @@ $daterangepicker-ranges-active-border-radius: $daterangepicker-border-radius !de
   font-size: 11px;
   float: none;
   text-align: left;
+  margin: 0 !important;
 
   ul {
     list-style: none;
@@ -454,25 +459,26 @@ $daterangepicker-ranges-active-border-radius: $daterangepicker-border-radius !de
   }
 
   li {
-    border-radius: 0;
-    color: rgb(85, 85, 85);
-    padding: 6px 12px;
+    border-radius: 0 !important;
+    color: rgb(85, 85, 85) !important;
+    padding: 6px 12px !important;
     cursor: pointer;
-    border: 1px solid transparent;
-    font-size: 12px;
-
+    border: 1px solid transparent !important;
+    font-size: 12px !important;
+    margin-bottom: 0 !important;
+    background-color: $white-base !important;
     &:hover {
-      background: #f2f8ff;
-      color: #004E9B;
-      border-color: #d8ecff;
+      background: #f2f8ff !important;
+      color: #004E9B !important;
+      border-color: #d8ecff !important;
     }
 
     &.active {
-      background: lighten($r_brand-primary, 67%);
-      border-color: #d8ecff;
-      color: rgb(85, 85, 85);
+      background: lighten($r_brand-primary, 67%) !important;
+      border-color: #d8ecff !important;
+      color: rgb(85, 85, 85) !important;
       &:hover {
-        color: #004E9B;
+        color: #004E9B !important;
       }
     }
   }
@@ -560,5 +566,5 @@ $daterangepicker-ranges-active-border-radius: $daterangepicker-border-radius !de
   right: 10px;
 }
 .opensleft .range_inputs {
-  right: 185px;
+  right: 165px;
 }
