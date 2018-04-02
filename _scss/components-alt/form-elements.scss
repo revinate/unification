@@ -111,3 +111,13 @@ textarea, input[type="text"], input[type="email"], input[type="password"] {
 .Select .Select-control .Select-placeholder {
   color: #333;
 }
+
+// Overrides for multiselect value labels
+
+.Select--multi .Select-value-icon {
+  padding: 2px 5px !important;
+  &:hover {
+    color: #fff !important;
+    opacity: 0.8 !important;
+  }
+}
