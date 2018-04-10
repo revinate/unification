@@ -248,7 +248,6 @@ $daterangepicker-ranges-active-border-radius: $daterangepicker-border-radius !de
   &.show-calendar {
     .calendar {
       display: block;
-      margin-bottom: 40px;
     }
   }
 
@@ -278,6 +277,7 @@ $daterangepicker-ranges-active-border-radius: $daterangepicker-border-radius !de
     border-radius: $daterangepicker-calendar-border-radius;
     background: $daterangepicker-calendar-bg-color;
     font-size: 12px !important;
+    margin-bottom: 40px;
   }
 
   table {
