@@ -6,12 +6,12 @@
   letter-spacing: 0.015em;
   font-family: Lato, sans-serif;
   font-weight: normal;
-  > li > a:focus, > li > a:hover {
+  > ul > li > a:focus, > li > a:hover {
     background: transparent !important;
   }
-  li {
+  > ul > li, > li {
     padding-bottom: 0 !important;
-    a {
+    > a {
       text-transform: capitalize;
       color: $link-color;
       position: relative;
