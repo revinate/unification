@@ -411,10 +411,10 @@
         a {
           color: $r_brand-primary;
           &.btn-internal-secondary {
-            color: #6f5499;
+            color: #FF6400;
             &:hover {
-              color: #fff;
-              background-color: lighten($r_brand-primary, 67%);
+              color: #CC5000;
+              //background-color: lighten($r_brand-primary, 67%);
             }
           }
         }
@@ -442,13 +442,13 @@
       float: left;
     }
     &.btn-action-taken {
-      border-color: #00A891;
-      color: #00A891;
+      border-color: $alert-success;
+      color: $alert-success;
       background: #fff;
       &:hover {
-        background: #00A891 !important;
+        background: $alert-success !important;
         color: $white-base !important;
-        border-color: #00A891 !important;
+        border-color: $alert-success !important;
       }
     }
   }

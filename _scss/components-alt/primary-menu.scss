@@ -306,3 +306,11 @@
 #nav-bar-all-accounts, li a[r_test="nav-bar-user-dropdown-property-select-link"] {
   font-size: 12px;
 }
+
+.l-header-bottom {
+  .tab-content {
+    .btn.btn-circle {
+      margin-left: 2px;
+    }
+  }
+}
