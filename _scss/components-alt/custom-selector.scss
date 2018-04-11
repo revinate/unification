@@ -16,11 +16,11 @@
       &.contact{
         display: inline-block;
         border-radius: 3px;
-        background-color: rgba(1,175,242,0.2) !important;
-        color: #008cc1;
-        border: 1px solid #008cc1 !important;
+        background-color: $brand-primary !important;
+        color: $white-base;
+        border: 1px solid $brand-primary !important;
         padding: 3px 20px 3px 5px;
-        margin: 1px 0 3px 0 !important;
+        margin: 1px 2px 3px 0 !important;
         line-height: 1.5em;
         position: relative;
         cursor: default;
@@ -28,12 +28,15 @@
           display: block;
           position: absolute;
           right: 0;
-          top: 0;
+          top: 50% !important;
+          margin-top: -7px;
           width: 12px;
           height: 12px;
           font-size: 12px;
           line-height: 1;
-          color: #28a68a;
+          color: $white-base;
+          background: none;
+          text-indent: 0;
           &:hover {
             text-decoration: none;
           }
@@ -126,4 +129,21 @@
 .user-activity-search-status {
   line-height: 30px;
   color: #666;
+}
+
+//Chzen overrides for rep and surveys
+
+.chzn-container-multi .chzn-choices .search-choice {
+  color: $white-base !important;
+  background: $brand-primary !important;
+  border-color: $brand-primary !important;
+  font-size: 12px !important;
+  line-height: 1.5em !important;
+  margin: 1px 2px 3px 0 !important;
+}
+.chzn-container-multi .chzn-choices .search-choice .search-choice-close {
+  color: #fff !important;
+  right: 0 !important;
+  top: 50% !important;
+  margin-top: -8px !important;
 }
