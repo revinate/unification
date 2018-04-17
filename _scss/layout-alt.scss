@@ -116,6 +116,9 @@ body.l-no-navigation-page {
   background: $alert-success !important;
   color: $white-base !important;
   z-index: 99999;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .l-header-bottom .revicon-trends-comparison {
