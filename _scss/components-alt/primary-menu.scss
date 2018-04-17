@@ -252,11 +252,11 @@
 }
 
 .l-header li.is-superadmin {
-  background: #000;
+  background: #6f5499;
   a {
     color: $white-base;
     &:hover {
-      background-color: #000;
+      background-color: darken(#6f5499, 20%);
       color: $white-base;
       border:1px solid transparent;
     }
