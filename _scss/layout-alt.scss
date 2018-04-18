@@ -113,7 +113,7 @@ body.l-no-navigation-page {
 //override for walkme launcher and r&s specific stuff
 
 .walkme-launcher {
-  background: $alert-success !important;
+  background: $badge-success !important;
   color: $white-base !important;
   z-index: 99999;
   text-overflow: ellipsis;
