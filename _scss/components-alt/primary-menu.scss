@@ -256,7 +256,7 @@
   a {
     color: $white-base;
     &:hover {
-      background-color: darken(#6f5499, 20%);
+      background-color: darken(#6f5499, 5%);
       color: $white-base;
       border:1px solid transparent;
     }
