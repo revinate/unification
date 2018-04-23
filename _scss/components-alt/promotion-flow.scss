@@ -191,18 +191,42 @@ fieldset[disabled] label {
 .promotion-page-content-title {
   .ab-test-name {
     input[type="text"] {
-      height: 30px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      padding: 0 8px;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 16px;
+      border: 0px #66afe9 solid;
+      height: 32px;
+      border-radius: 2px;
+      margin-left: 12px;
+      transition: border .15s;
+      cursor: pointer;
+      z-index: 2;
+      padding: 0 30px 0 12px;
       position: relative;
-      top: -2px;
-      margin: 0 5px 0 10px;
+      background: transparent;
+    }
+    &:focus {
+      outline: none;
+      border-width: 1px;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
     }
   }
   .fa-pencil {
+    font-size: 16px;
+    margin-left: -24px;
+    z-index: 1;
+  }
+  &.has-error {
+    input[type="text"] {
+      border-color: #DA4C3E;
+    }
+  }
+  span.text-danger {
     font-size: 14px;
-    position: relative;
-    top: -2px;
+    margin-left: 24px;
+    line-height: 1;
   }
 }
+
+
+
