@@ -7,6 +7,7 @@
 .global-alert-container {
   border: none;
   color: #444 !important;
+  background: #EBEBEC;
   &.alert-success {
     background-color: $alert-success;
     border-color: $alert-success;
