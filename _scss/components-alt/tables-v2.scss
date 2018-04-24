@@ -220,8 +220,6 @@ table.tables-v2 {
         }
       }
       &:hover td {
-        background-color: inherit;
-        opacity: 1.0;
         cursor: default;
       }
     }
@@ -241,6 +239,21 @@ tr.avg {
   tr, tr.avg {
     td[data-label="Sent Date"] {
       font-weight: bold;
+    }
+  }
+  >tfoot>tr:hover {
+    >td, >th {
+      background: $table-avg-bg;
+    }
+    >td:first-child {
+      border-left: 1px solid transparent !important;
+    }
+  }
+  >tfoot>tr>td, >tfoot>tr>th {
+    background: $table-avg-bg;
+    color: $white-base;
+    &:hover {
+      background: $table-avg-bg;
     }
   }
 }
