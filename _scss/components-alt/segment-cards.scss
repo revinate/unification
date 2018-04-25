@@ -112,6 +112,9 @@
   .clear-right {
     clear: right !important;
   }
+  .dropdown-menu {
+    z-index: 1;
+  }
   // This will make the tooltip 'trigger' element to get 100% width within the drop-down item
   .dropdown-menu a > * {
     display: block;
