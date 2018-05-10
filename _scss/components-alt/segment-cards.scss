@@ -154,34 +154,6 @@
   }
 }
 
-// Segment Preview
-
-.segment-preview-dialog {
-  width: 90%;
-  ul {
-    padding-left: 15px;
-    padding-top: 15px;
-    margin-bottom: 15px;
-  }
-  .segl-card-subsection {
-    margin-bottom: 15px;
-  }
-  .seg-pv-create-campaign {
-    margin-top: 25px;
-  }
-  .stats-container {
-    padding: 10px;
-    color: #39393a;
-  }
-  .filters-container li {
-    white-space: normal;
-    overflow: auto;
-    i {
-      line-height: 2.0;
-    }
-  }
-}
-
 .seg-pv-title {
   border-bottom: 1px solid #cccccc;
   margin-left: -15px;
@@ -216,6 +188,40 @@
         height: 28px;
         font-size: 14px;
       }
+    }
+  }
+}
+
+// Segment Preview
+
+.segment-preview-dialog {
+  width: 90%;
+  ul {
+    padding-left: 15px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+  }
+  .segl-card-subsection {
+    margin-bottom: 15px;
+  }
+  .seg-pv-create-campaign {
+    margin-top: 25px;
+  }
+  .stats-container {
+    padding: 10px;
+    color: #39393a;
+  }
+  .rTestRgdb-segment-filters.filters-container ul li {
+    white-space: normal;
+    overflow: auto;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 8px;
+    i {
+      line-height: 1.3;
+      position: absolute;
+      left: 0;
+      top: 0;
     }
   }
 }
