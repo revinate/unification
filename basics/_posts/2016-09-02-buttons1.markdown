@@ -130,6 +130,23 @@ date: 2016-09-02 00:00:02
 
 <div class="row mg-t-xl">
     <div class="col-xs-12">
+        <h2>Button Groups for Toggles</h2>
+        <p>Button groups are used for tabs/toggling for tables and reports</p>
+        <div class="row">
+        <div class="col-xs-12">
+            <div class="btn-group btn-group-sm">
+                <button class="btn btn-info btn-toggle">Test Duration</button>
+                <button class="btn btn-info btn-toggle">Current Stats</button>
+                <button class="btn btn-info btn-toggle active">Option 3</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="row mg-t-xl">
+    <div class="col-xs-12">
         <h2>Buttons for Card Layouts</h2>
         <p>These buttons are used in places where we have card-based layouts (e.g. All Reviews, All Surveys), where each card may have a primary action as well as multiple secondary / tertiary actions. Only use these buttons in card-based layouts.</p>
         <div class="row">
