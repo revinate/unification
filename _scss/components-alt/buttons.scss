@@ -500,3 +500,18 @@
 fieldset[disabled] .btn {
   opacity: 0.25 !important;
 }
+
+
+// Toggle button groups for filtering data
+
+.btn-group {
+  .btn-info.btn-toggle {
+    background: $white-base;
+    color: $table-avg-bg;
+    border-color: $table-avg-bg;
+    &.active {
+      color: $white-base;
+      background: $table-avg-bg;
+    }
+  }
+}
