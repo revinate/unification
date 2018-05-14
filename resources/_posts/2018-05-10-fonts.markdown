@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Brand Resources"
+date: 2018-05-10 00:00:01
+desc: "
+- Here you will find all of the brand guidelines, fonts and icons that we use. Please consult these resources before creating any marketing materials.
+
+
+"
+---
+
+<ul>
+  <li><a href="https://drive.google.com/file/d/1L1y0bdPzHps_0firdZ81_egRDmVzVc65/view?usp=sharing" target="_blank">Brand Guidelines</a></li>
+  <li>Fonts
+    <ul>
+        <li><a href="https://drive.google.com/file/d/1K5McvUSEPFfIesXt0_HXuxD4fgj0Ia4z/view?usp=sharing" target="_blank">Lato</a></li>
+        <li><a href="https://drive.google.com/file/d/1IwYOF-VWBDpKoquI5QKBPu8AGYsQi8x4/view?usp=sharing" target="_blank">Open Sans</a></li>
+    </ul>
+  </li>
+  <li><a href="https://drive.google.com/drive/folders/1qqI5TwsHVt8J-adk_D8iWG9d9_jAQPLP" target="_blank">Icons</a></li>
+  <li><a href="https://drive.google.com/drive/folders/1eUJl-xkSSIA25CkrNaiF5FpbeGErT7dE" target="_blank">Logos</a></li>
+</ul>
