@@ -28,11 +28,11 @@
                 <i class="revicon-rev-logo-2017"></i>
               </span>
                 </li>
-                <li class="style-guide{% if active_page != '/resources.html' and active_page != '/principles.html' %} active{% endif %}">
+                <li class="style-guide{% if active_page != '/resources/' %} active{% endif %}">
                     <a href="{{ site.baseurl }}/" role="tab">Style Guide</a>
                 </li>
-                <li class="resources{% if active_page == '/resources.html' %} active{% endif %}">
-                    <a href="{{ site.baseurl }}/resources.html" role="tab">
+                <li class="resources{% if active_page == '/resources/' %} active{% endif %}">
+                    <a href="{{ site.baseurl }}/resources/index.html" role="tab">
                         Resources
                     </a>
                 </li>
@@ -43,29 +43,20 @@
 
     <div class="l-header-bottom">
         <div class="tab-content container-fluid">
-            <a class="btn btn-primary btn-header btn-circle pull-right mg-l-sm " href="/tickets/352" name="Tickets">
+            <a class="btn btn-primary btn-header btn-circle pull-right mg-l-sm " href="#" name="Tickets">
                 <i class="fa icon_tag fa-tags" data-toggle="tooltip" title="" data-original-title="Tickets">
                 </i>
             </a>
-            <a class="btn btn-primary btn-header btn-circle pull-right mg-l-sm " href="/tickets/352" name="Tickets">
+            <a class="btn btn-primary btn-header btn-circle pull-right mg-l-sm " href="#" name="Tickets">
                 <i class="fa icon_tag fa-tags" data-toggle="tooltip" title="" data-original-title="Tickets">
                 </i>
             </a>
 
-            <!-- principles tab content -->
-            <div role="tabpanel" class="tab-pane{% if active_page == '/principles.html' %} active{% endif %}" id="principles">
 
-                <div class="btn-group mg-r-sm">
-                    <a type="button" class="btn btn-primary btn-header active" href="#design-principles">Design Principles</a>
-                </div>
-                <div class="btn-group mg-r-sm ">
-                    <a type="button" class="btn btn-primary btn-header" href="#voice">Brand Voice</a>
-                </div>
-
-            </div>
             <!-- style-guide tab content -->
-            <div role="tabpanel" class="tab-pane{% if active_page != '/resources.html' and active_page != '/principles.html' %} active{% endif %}" id="style-guide">
+            <div role="tabpanel" class="tab-pane{% if active_page != '/resources/' %} active{% endif %}" id="style-guide">
                 {% for category in site.categories %}
+                {% unless category contains 'resources' %}
                 {% assign active_cat = category | first | prepend: '/' | append: '/' %}
                 <div class="btn-group mg-r-sm ">
                     {% if active_page == active_cat %}
@@ -89,17 +80,28 @@
                         {% endfor %}
                     </ul>
                 </div>
+                {% endunless %}
                 {% endfor %}
 
 
             </div>
 
             <!-- resources tab content -->
-            <div role="tabpanel" class="tab-pane{% if active_page == '/resources.html' %} active{% endif %}" id="resources">
-
-               <div class="btn-group mg-r-sm">
-                <a type="button" class="btn btn-primary btn-header active" href="#">Other</a>
+            <div role="tabpanel" class="tab-pane{% if active_page == '/resources/' %} active{% endif %}" id="resources">
+                {% for category in site.categories %}
+                {% if category contains 'resources' %}
+                {% assign active_cat = category | first | prepend: '/' | append: '/' %}
+                <div class="btn-group mg-r-sm ">
+                        {% for posts in category %}
+                        {% for post in posts reversed %}
+                        {% if post.url %}
+                        <a class="btn btn-primary btn-header active" href="{{ site.baseurl }}/{{ category | first }}/index.html#{{ post.title | slugify }}">{{ post.title }}</a>
+                        {% endif %}
+                        {% endfor %}
+                        {% endfor %}
                 </div>
+                {% endif %}
+                {% endfor %}
 
             </div>
 
@@ -109,7 +111,7 @@
     <div class="global-alert-container">
     </div>
     <main class="l-main">
-        <div class="container-fluid" style="padding-top: 135px;">
+        <div class="container-fluid" style="padding-top: 80px;">
             <div class="l-main-content row pd-xl">
 
 
