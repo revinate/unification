@@ -8,21 +8,61 @@ desc: "
 
 "
 ---
-
-<ul>
-  <li>Brand Guidelines - <a href="https://drive.google.com/file/d/1L1y0bdPzHps_0firdZ81_egRDmVzVc65/view?usp=sharing" target="_blank">[PDF]</a></li>
-  <li>Fonts
-    <ul>
-        <li>Lato - <a href="https://drive.google.com/open?id=1K5McvUSEPFfIesXt0_HXuxD4fgj0Ia4z" target="_blank">[ZIP]</a></li>
-        <li>Open Sans - <a href="https://drive.google.com/open?id=1IwYOF-VWBDpKoquI5QKBPu8AGYsQi8x4" target="_blank">[ZIP]</a></li>
-    </ul>
-  </li>
-  <li>Icons
-    <ul>
-      <li>FontAwesome Icons - <a href="https://drive.google.com/open?id=1KBN3zGIuy7UqyII0ow-0sUFXs7dENgQL" target="_blank">[ZIP]</a></li>
-      <li><a href="https://drive.google.com/open?id=1qvifui2YfuGXdcSktELzYY-0t3WdlR1c" target="_blank">PNG Icons</a></li>
-      <li><a href="https://drive.google.com/open?id=158BxQNo4ijxpiUMkRF2m8b4wwhZRJ6WI" target="_blank">SVG Icons</a></li>
-    </ul>
-  </li>
-  <li>Revinate Logos - <a href="https://drive.google.com/open?id=1K89Zo0c6cvk8Vm8017ZwrelqV-nlzAcH" target="_blank">[ZIP]</a></li>
-</ul>
+<div class="row">
+  <div class="col-md-8">
+    <div class="row dashboard-row">
+      <div class="col-md-6 dashboard-card">
+        <div class="dashboard-widget" style="position: relative;">
+         <h4 class="dashboard-widget-title title-size" style="text-align: left;">Logos</h4>
+         <div>
+           <p class="dashboard-widget-metrics" style="font-size: 30px; padding-top: 25px;">
+             <i class="revicon-rev-logo-2017"></i>
+           </p>
+         </div>
+         <div class="dashboard-widget-footer" style="position: absolute; width: 100%; bottom: 10px;">
+           <a href="https://drive.google.com/drive/folders/1eUJl-xkSSIA25CkrNaiF5FpbeGErT7dE?usp=sharing" target="_blank" class="pull-right pd-r-md">View in Drive</a>
+         </div>
+        </div>
+      </div>
+      <div class="col-md-6 dashboard-card">
+        <div class="dashboard-widget" style="position: relative;">
+          <h4 class="dashboard-widget-title" style="text-align: left;">Fonts</h4>
+          <div>
+           <p class="dashboard-widget-metrics">
+             <i class="fa fa-font"></i>
+           </p>
+          </div>
+         <div class="dashboard-widget-footer" style="position: absolute; width: 100%; bottom: 10px;">
+           <a href="https://drive.google.com/drive/folders/1k6vXSrxnqWJSrpLbQogAeefeKoi-pzzT?usp=sharing" target="_blank" class="pull-right pd-r-md">View in Drive</a>
+         </div>
+        </div>
+      </div>
+      <div class="col-md-6 dashboard-card">
+        <div class="dashboard-widget" style="position: relative;">
+          <h4 class="dashboard-widget-title" style="text-align: left;">Brand Guidelines</h4>
+          <div>
+           <p class="dashboard-widget-metrics">
+             <i class="fa fa-file-pdf-o"></i>
+           </p>
+          </div>
+          <div class="dashboard-widget-footer" style="position: absolute; width: 100%; bottom: 10px;">
+            <a href="https://drive.google.com/file/d/1L1y0bdPzHps_0firdZ81_egRDmVzVc65/view?usp=sharing" target="_blank" class="pull-right pd-r-md">View PDF</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 dashboard-card">
+        <div class="dashboard-widget" style="position: relative;">
+          <h4 class="dashboard-widget-title" style="text-align: left;">Icons</h4>
+          <div>
+           <p class="dashboard-widget-metrics">
+             <i class="fa fa-desktop"></i>
+           </p>
+          </div>
+          <div class="dashboard-widget-footer" style="position: absolute; width: 100%; bottom: 10px;">
+            <a href="https://drive.google.com/drive/folders/1qqI5TwsHVt8J-adk_D8iWG9d9_jAQPLP?usp=sharing" target="_blank" class="pull-right pd-r-md">View in Drive</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

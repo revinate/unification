@@ -13,6 +13,9 @@
     box-shadow: 0 4px 12px 0 rgba(0,0,0,.25);
     transform: translateY(-2px);
   }
+  &.fixed-height {
+    height: 375px;
+  }
 }
 
 .dashboard-widget-title {
@@ -21,6 +24,10 @@
   @extend .FontLatoBold;
   //min-height for marketing dashboard
   height: 35px;
+  &.title-size {
+    margin: 20px 0 10px 20px;
+    height: 15px;
+  }
 }
 
 .dashboard-widget-metrics {
