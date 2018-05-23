@@ -14,10 +14,4 @@ layout: default
         {{ post.content }}
     </div>
 </div>
-<div class="row">
-    <div class="col-xs-12">
-        <div class="collapse mg-t-md" id="example-{{ post.title | slugify }}">{% highlight html linenos %}{{ post.content | strip }}{% endhighlight %}</div>
-        <button class="btn btn-primary btn-sm mg-t-md" data-toggle="collapse" data-target="#example-{{ post.title | slugify }}">&hellip;</button>
-    </div>
-</div>
 {% endfor %}
