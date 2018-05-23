@@ -141,6 +141,10 @@ body.l-no-navigation-page {
     &:hover {
       border-color: $r_brand-primary;
     }
+    &:focus {
+      text-decoration: none;
+      outline: none !important;
+    }
   }
 }
 
