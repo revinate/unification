@@ -115,7 +115,7 @@ body.l-no-navigation-page {
 .walkme-launcher {
   background: $badge-success !important;
   color: $white-base !important;
-  z-index: 99999;
+  z-index: 1;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
