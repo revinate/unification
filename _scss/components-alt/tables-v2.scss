@@ -181,7 +181,7 @@ table.tables-v2 {
         padding: 16px;
         text-transform: uppercase;
         &:first-child {
-          border-left: 1px solid transparent;
+          border-left: solid 1px transparent !important;
         }
         &:hover {
           &:first-child { 
@@ -242,6 +242,11 @@ tr.avg {
   tr, tr.avg {
     td[data-label="Sent Date"] {
       font-weight: bold;
+    }
+  }
+  >tfoot>tr {
+    >td:first-child {
+      border-left: 1px solid transparent !important;
     }
   }
   >tfoot>tr:hover {
