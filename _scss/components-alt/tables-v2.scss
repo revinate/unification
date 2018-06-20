@@ -244,6 +244,11 @@ tr.avg {
       font-weight: bold;
     }
   }
+  >tfoot>tr {
+    >td:first-child {
+      border-left: 1px solid transparent !important;
+    }
+  }
   >tfoot>tr:hover {
     >td, >th {
       background: $table-avg-bg;
