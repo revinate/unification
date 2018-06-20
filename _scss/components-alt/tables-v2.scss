@@ -159,7 +159,7 @@ table.tables-v2 {
       }
     }
     td:first-child {
-      border-left:1px solid transparent;
+      border-left:4px solid transparent;
     }
     td:last-child {
       border-right:1px solid transparent;
@@ -180,6 +180,9 @@ table.tables-v2 {
         color: #FFF;
         padding: 16px;
         text-transform: uppercase;
+        &:first-child {
+          border-left: solid 1px transparent !important;
+        }
         &:hover {
           &:first-child { 
             border-left: solid 1px transparent !important;
@@ -239,6 +242,11 @@ tr.avg {
   tr, tr.avg {
     td[data-label="Sent Date"] {
       font-weight: bold;
+    }
+  }
+  >tfoot>tr {
+    >td:first-child {
+      border-left: 1px solid transparent !important;
     }
   }
   >tfoot>tr:hover {
