@@ -180,6 +180,9 @@ table.tables-v2 {
         color: #FFF;
         padding: 16px;
         text-transform: uppercase;
+        &:first-child {
+          border-left: solid 1px transparent !important;
+        }
         &:hover {
           &:first-child { 
             border-left: solid 1px transparent !important;
