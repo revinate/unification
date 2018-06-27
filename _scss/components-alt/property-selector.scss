@@ -120,4 +120,30 @@
       font-size: 14px !important;
     }
   }
+  .account-switcher-dropdown-input {
+    height: auto;
+    margin: 4px 0;
+    border: none;
+    > .Select-control {
+      margin-left: 8px;
+      margin-right: 8px;
+      width: 198px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+  }
+  .Select-menu-outer {
+    position: relative !important;
+    display: block !important;
+    clear: both !important;
+    border: none !important;
+    top: 1px !important;
+    .Select-option {
+      font-size: 13px !important;
+      text-transform: capitalize !important;
+    }
+  }
+  .Select-arrow {
+    display: none !important;
+  }
 }
