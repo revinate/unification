@@ -96,3 +96,28 @@
 .prop-selector > ul {
   width: 250px !important;
 }
+
+.property-selector.marketing {
+  .account-switcher-dropdown {
+    h4 {
+      color: #333;
+      padding: 0 10px;
+      font-size: 14px;
+      font-weight: 600;
+      &.mg-b-10 {
+        margin-bottom: 10px;
+      }
+    }
+    .recently-accessed-item {
+      font-size: 13px;
+      > a {
+        padding: 6px 15px;
+      }
+    }
+    .full-account-list {
+      color: #004E9B !important;
+      font-weight: 600;
+      font-size: 14px !important;
+    }
+  }
+}
