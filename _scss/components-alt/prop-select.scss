@@ -34,3 +34,7 @@
     }
   }
 }
+// keep input from floating so long properties don't break it in R&S
+.contact-selector>li.prop-input {
+  float: none !important;
+}
