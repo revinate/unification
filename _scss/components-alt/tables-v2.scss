@@ -100,7 +100,13 @@ table.tables-v2 {
         letter-spacing: 0.1em;
         color: #888;
         transition: 0.2s color cubic-bezier(0.25,0.1,0.25,1);
-        &:hover {
+      }
+      button.header:hover {
+        cursor: default;
+      }
+      &.sortable {
+        button.header:hover {
+          cursor: pointer;
           color: #000;
           font-family: LatoBold;
         }
