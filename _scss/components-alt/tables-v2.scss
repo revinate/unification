@@ -122,6 +122,12 @@ table.tables-v2 {
           text-decoration: underline;
         }
       }
+      &.good {
+        color: $brand-success;
+      }
+      &.bad {
+        color: $brand-danger;
+      }
       &.block-link {
         padding: 0 1em;
         a {
