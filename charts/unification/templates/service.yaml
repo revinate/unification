@@ -1,0 +1,22 @@
+{{- if not .Values.rackspace }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ template "unification.fullname" . }}
+  labels:
+    app: {{ template "unification.name" . }}
+    chart: {{ template "unification.chart" . }}
+    release: {{ .Release.Name | quote }}
+    heritage: {{ .Release.Service | quote }}
+spec:
+  type: {{ .Values.service.type | quote }}
+  ports:
+    - name: {{ template "unification.name" . }}
+      port: {{ .Values.service.port }}
+      targetPort: http-alt
+      protocol: TCP
+    {{- end }}
+  selector:
+    app: {{ template "unification.name" . }}
+    release: {{ .Release.Name | quote }}
+{{- end }}
