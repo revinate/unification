@@ -21,10 +21,7 @@ service:
 readinessInitialDelaySeconds: 5
 readinessTimeoutSeconds: 1
 
-ingressInternal:
-  enabled: false
-
-ingressExternal:
+ingress:
   enabled: false
 
 resources:

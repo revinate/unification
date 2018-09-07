@@ -1,4 +1,3 @@
-{{- if not .Values.rackspace }}
 apiVersion: v1
 kind: Service
 metadata:
@@ -13,10 +12,8 @@ spec:
   ports:
     - name: {{ template "unification.name" . }}
       port: {{ .Values.service.port }}
-      targetPort: http-alt
+      targetPort: http
       protocol: TCP
-    {{- end }}
   selector:
     app: {{ template "unification.name" . }}
     release: {{ .Release.Name | quote }}
-{{- end }}
