@@ -20,7 +20,6 @@ table.tables-v2 {
   }
   tr {
     background: $white-base;
-    border-bottom: 1px solid $table-border-color;
     padding: .3em;
     td {
       background-color: $white-base;
@@ -30,6 +29,7 @@ table.tables-v2 {
       text-align: left ;
       transition: 0.2s all cubic-bezier(0.25, 0.1, 0.25, 1);
       position: relative;
+      border-bottom: 1px solid $table-border-color;
       button.header {
         padding: 0;
         position: relative;
@@ -281,6 +281,10 @@ tr.avg {
 .panel-body.scrollable {
   .tables-v2 {
     tr {
+      border-bottom: 1px solid $table-border-color;
+      th, td {
+        border-bottom: none;
+      }
       &.avg {
         td:first-child {
           position: absolute;
