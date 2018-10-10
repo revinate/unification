@@ -1,5 +1,4 @@
 {{- if .Values.ingress.enabled -}}
-{{- $webFullName := template "unification.webFullname" . -}}
 {{- $ingressWebPath := .Values.ingress.webPath -}}
 apiVersion: extensions/v1beta1
 kind: Ingress
