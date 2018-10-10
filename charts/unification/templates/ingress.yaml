@@ -1,5 +1,5 @@
 {{- if .Values.ingress.enabled -}}
-{{- $webFullName := include "unification.webFullname" . -}}
+{{- $webFullName := template "unification.webFullname" . -}}
 {{- $ingressWebPath := .Values.ingress.webPath -}}
 apiVersion: extensions/v1beta1
 kind: Ingress
@@ -33,7 +33,7 @@ spec:
         paths:
           - path: {{ $ingressWebPath }}
             backend:
-              serviceName: {{ $webFullName }}
+              serviceName: {{ template "unification.fullname" . }}
               servicePort: http
   {{- end }}
 {{- end }}

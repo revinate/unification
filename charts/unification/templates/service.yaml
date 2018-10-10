@@ -10,7 +10,7 @@ metadata:
 spec:
   type: {{ .Values.service.type | quote }}
   ports:
-    - name: {{ template "unification.name" . }}
+    - name: {{ template "unification.fullname" . }}
       port: {{ .Values.service.port }}
       targetPort: http
       protocol: TCP
