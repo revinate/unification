@@ -1,12 +1,11 @@
 {{- if .Values.ingress.enabled -}}
-{{- $webFullName :=  "unification.webFullname" . -}}
 {{- $ingressWebPath := .Values.ingress.webPath -}}
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: {{ template "unification.fullname" . }}
   labels:
-    app: {{ template "unification.name" . }}
+    app: unification
     chart: {{ template "unification.chart" . }}
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
@@ -32,7 +31,7 @@ spec:
         paths:
           - path: {{ $ingressWebPath }}
             backend:
-              serviceName: {{ $webFullName }}
+              serviceName: unification
               servicePort: http
   {{- end }}
 {{- end }}
