@@ -10,7 +10,6 @@ metadata:
     chart: {{ template "unification.chart" . }}
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
-    traffic-type: external
 {{- with .Values.ingress.annotations }}
   annotations:
 {{ toYaml . | indent 4 }}
