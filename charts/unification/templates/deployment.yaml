@@ -38,13 +38,20 @@ spec:
               - service
               - nginx
               - stop
+        ports:
+          - name: http
+            containerPort: {{ .Values.service.targetPort }}
+            protocol: TCP
         readinessProbe:
           httpGet:
             path: /
             port: http
           initialDelaySeconds: {{ .Values.readinessInitialDelaySeconds }}
           timeoutSeconds: {{ .Values.readinessTimeoutSeconds }}
+{{- with .Values.resources }}
         resources:
+{{ toYaml . | indent 10 }}
+{{- end }}
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       terminationGracePeriodSeconds: 10
