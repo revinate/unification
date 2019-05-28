@@ -2,7 +2,7 @@
 .jekyll-metadata
 .idea
 .DS_Store
-/node_modules
+node_modules
 /ruby
 /bower_components
 #/js/bundle.js

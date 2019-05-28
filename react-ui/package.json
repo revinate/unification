@@ -1,0 +1,65 @@
+{
+  "name": "revinatereactui",
+  "version": "0.0.1",
+  "description": "Revinate shared React UI components",
+  "main": "index.js",
+  "scripts": {
+    "flow": "flow",
+    "build": "webpack --config webpack.config.js --env=production",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "author": "Cyril Gorrieri",
+  "license": "MIT",
+  "dependencies": {
+    "@bit/revinate.react-utils.compilers.react": "file:./components/compilers/react",
+    "react": "^16.8.6",
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.8.6",
+    "react-router": "^5.0.1",
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "^5.0.1",
+    "react-select-plus": "^1.1.0",
+    "styled-components": "^4.3.1"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.2.0",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^5.1.8",
+    "@storybook/addon-console": "^1.1.0",
+    "@storybook/addon-links": "^5.1.8",
+    "@storybook/addon-storysource": "^5.1.8",
+    "@storybook/addons": "^5.1.8",
+    "@storybook/react": "^5.1.8",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-preval": "^3.0.1",
+    "chai": "^4.2.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "flow-bin": "^0.98.1",
+    "mini-css-extract-plugin": "^0.7.0",
+    "sinon": "^7.3.2",
+    "sinon-chai": "^3.3.0",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "bit": {
+    "env": {
+      "compiler": "revinate.react-utils/compilers/react@1.0.4",
+      "tester": "bit.envs/testers/mocha@5.0.2"
+    },
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm"
+  }
+}
