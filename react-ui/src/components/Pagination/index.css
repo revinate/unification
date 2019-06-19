@@ -1,0 +1,22 @@
+.pagination-container {
+  text-align: center;
+}
+
+.pagination-container .pagination .active a:active,
+.pagination-container .pagination .active a:visited,
+.pagination-container .pagination .active a:focus,
+.pagination-container .pagination .active a:hover {
+  background: none;
+}
+
+/*
+ * i.fa inside forms has very strange styles to absolutely position icons. This
+ * affects the prev/next icons in the pagination. Below resets fix this issue
+ * when you add pagination inside a form.
+ */
+.pagination-container i.fa {
+  color: inherit;
+  position: relative;
+  left: 0 !important;
+  top: 0 !important;
+}
